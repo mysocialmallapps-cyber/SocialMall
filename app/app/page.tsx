@@ -78,6 +78,7 @@ const products = [
 
 export default function Home() {
   const [searchInput, setSearchInput] = useState("");
+  const [refineInput, setRefineInput] = useState("");
   const [activeQuery, setActiveQuery] = useState("quiet luxury");
   const [isLoading, setIsLoading] = useState(false);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -107,6 +108,19 @@ export default function Home() {
     runSearch(suggestion);
   };
 
+  const handleRefineSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const refinement = refineInput.trim();
+    if (!refinement) return;
+
+    const nextQuery = activeQuery
+      ? `${activeQuery} ${refinement}`.trim()
+      : refinement;
+    setRefineInput("");
+    setSearchInput(nextQuery);
+    runSearch(nextQuery);
+  };
+
   useEffect(() => {
     return () => {
       if (timeoutRef.current) {
@@ -117,7 +131,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white text-zinc-900">
-      <main className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 pb-16 pt-12 sm:px-6 lg:px-8 lg:pt-16">
+      <main className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 pb-44 pt-12 sm:px-6 lg:px-8 lg:pt-16">
         <section className="mx-auto flex w-full max-w-3xl flex-col items-center gap-6">
           <h1 className="text-center text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
             Discover your next look
@@ -187,6 +201,21 @@ export default function Home() {
           </div>
         </section>
       </main>
+
+      <div className="fixed inset-x-0 bottom-0 border-t border-zinc-100 bg-white/95 px-4 pb-4 pt-3 backdrop-blur-sm sm:px-6">
+        <form
+          className="mx-auto w-full max-w-3xl rounded-[2rem] border border-zinc-100 bg-white p-2 shadow-[0_18px_40px_-24px_rgba(0,0,0,0.3)]"
+          onSubmit={handleRefineSubmit}
+        >
+          <input
+            type="text"
+            value={refineInput}
+            onChange={(event) => setRefineInput(event.target.value)}
+            placeholder="Refine your search..."
+            className="h-16 w-full rounded-[1.5rem] border border-zinc-200 bg-white px-6 text-base text-zinc-900 outline-none transition placeholder:text-zinc-400 focus:border-zinc-300"
+          />
+        </form>
+      </div>
     </div>
   );
 }
