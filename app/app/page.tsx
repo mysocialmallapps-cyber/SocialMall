@@ -81,6 +81,7 @@ export default function Home() {
   const [refineInput, setRefineInput] = useState("");
   const [activeQuery, setActiveQuery] = useState("quiet luxury");
   const [isLoading, setIsLoading] = useState(false);
+  const [gridAnimationKey, setGridAnimationKey] = useState(0);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const runSearch = (rawQuery: string) => {
@@ -94,6 +95,7 @@ export default function Home() {
     setIsLoading(true);
     timeoutRef.current = setTimeout(() => {
       setActiveQuery(query);
+      setGridAnimationKey((currentKey) => currentKey + 1);
       setIsLoading(false);
     }, 500);
   };
@@ -131,13 +133,13 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white text-zinc-900">
-      <main className="mx-auto flex w-full max-w-6xl flex-col gap-10 px-4 pb-44 pt-12 sm:px-6 lg:px-8 lg:pt-16">
-        <section className="mx-auto flex w-full max-w-3xl flex-col items-center gap-6">
+      <main className="mx-auto flex w-full max-w-6xl flex-col gap-14 px-4 pb-44 pt-14 sm:px-6 lg:gap-16 lg:px-8 lg:pt-20">
+        <section className="mx-auto flex w-full max-w-3xl flex-col items-center gap-8">
           <h1 className="text-center text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
             Discover your next look
           </h1>
           <form
-            className="w-full rounded-[2rem] border border-zinc-100 bg-white p-2 shadow-[0_18px_40px_-24px_rgba(0,0,0,0.3)]"
+            className="w-full rounded-[2rem] border border-zinc-200 bg-white p-2.5 shadow-[0_24px_55px_-28px_rgba(0,0,0,0.35)]"
             onSubmit={handleSubmit}
           >
             <input
@@ -145,7 +147,7 @@ export default function Home() {
               value={searchInput}
               onChange={(event) => setSearchInput(event.target.value)}
               placeholder="Describe what you want… outfits, styles, brands"
-              className="h-16 w-full rounded-[1.5rem] border border-zinc-200 bg-white px-6 text-base text-zinc-900 outline-none transition placeholder:text-zinc-400 focus:border-zinc-300"
+              className="h-[4.5rem] w-full rounded-[1.5rem] border border-zinc-200 bg-white px-6 text-[1.05rem] text-zinc-900 outline-none transition placeholder:text-zinc-400 focus:border-zinc-300 focus:shadow-[0_0_0_3px_rgba(24,24,27,0.06)]"
             />
           </form>
           <div className="flex w-full flex-wrap items-center justify-center gap-2">
@@ -162,7 +164,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="space-y-4">
+        <section className="space-y-6">
           <p className="text-sm text-zinc-500">
             {isLoading ? (
               "Updating results..."
@@ -175,14 +177,18 @@ export default function Home() {
           </p>
 
           <div
-            className={`grid grid-cols-2 gap-x-4 gap-y-8 transition-opacity md:grid-cols-4 md:gap-x-6 md:gap-y-10 ${
+            key={gridAnimationKey}
+            className={`animate-grid-fade-in grid grid-cols-2 gap-x-4 gap-y-10 transition-opacity md:grid-cols-4 md:gap-x-6 md:gap-y-12 ${
               isLoading ? "opacity-70" : "opacity-100"
             }`}
           >
             {products.map((product) => (
-              <article key={product.id} className="group">
+              <article
+                key={product.id}
+                className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
+              >
                 <div
-                  className="aspect-[3/4] overflow-hidden rounded-2xl bg-zinc-100 bg-cover bg-center transition duration-500 group-hover:scale-[1.01]"
+                  className="aspect-[2/3] overflow-hidden rounded-2xl bg-zinc-100 bg-cover bg-center transition duration-500 group-hover:scale-[1.04]"
                   style={{ backgroundImage: `url(${product.image})` }}
                   aria-label={product.name}
                   role="img"
