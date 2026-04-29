@@ -169,6 +169,7 @@ export default function Home() {
   const [refineInput, setRefineInput] = useState("");
   const [activeQuery, setActiveQuery] = useState("");
   const [currentQuery, setCurrentQuery] = useState("");
+  const [querySegments, setQuerySegments] = useState<string[]>([]);
   const [hasSearched, setHasSearched] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [gridAnimationKey, setGridAnimationKey] = useState(0);
@@ -199,11 +200,15 @@ export default function Home() {
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    runSearch(searchInput);
+    const query = searchInput.trim();
+    if (!query) return;
+    setQuerySegments([query]);
+    runSearch(query);
   };
 
   const handleSuggestionClick = (suggestion: string) => {
     setSearchInput(suggestion);
+    setQuerySegments([suggestion]);
     runSearch(suggestion);
   };
 
@@ -212,8 +217,14 @@ export default function Home() {
     const refinement = refineInput.trim();
     if (!refinement) return;
 
-    const baseQuery = currentQuery.trim();
-    const nextQuery = baseQuery ? `${baseQuery} ${refinement}`.trim() : refinement;
+    const baseSegments = querySegments.length
+      ? querySegments
+      : currentQuery
+        ? [currentQuery]
+        : [];
+    const nextSegments = [...baseSegments, refinement];
+    const nextQuery = nextSegments.join(" ").trim();
+    setQuerySegments(nextSegments);
     setRefineInput("");
     setSearchInput(nextQuery);
     runSearch(nextQuery);
@@ -229,6 +240,7 @@ export default function Home() {
     setRefineInput("");
     setActiveQuery("");
     setCurrentQuery("");
+    setQuerySegments([]);
     setHasSearched(false);
     setIsLoading(false);
     setGridAnimationKey(0);
