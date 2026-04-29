@@ -128,6 +128,21 @@ export default function Home() {
     runSearch(nextQuery);
   };
 
+  const handleLogoClick = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+      timeoutRef.current = null;
+    }
+
+    setSearchInput("");
+    setRefineInput("");
+    setActiveQuery("");
+    setCurrentQuery("");
+    setHasSearched(false);
+    setIsLoading(false);
+    setGridAnimationKey(0);
+  };
+
   useEffect(() => {
     return () => {
       if (timeoutRef.current) {
@@ -138,8 +153,21 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white text-zinc-900">
+      <header className="mx-auto w-full max-w-6xl px-4 pt-6 sm:px-6 lg:px-8 lg:pt-7">
+        <nav className="flex items-center">
+          <button
+            type="button"
+            onClick={handleLogoClick}
+            className="cursor-pointer text-[1.05rem] font-semibold tracking-tight text-[#111111] transition-opacity duration-200 hover:opacity-70"
+            aria-label="Go to homepage"
+          >
+            SocialMall
+          </button>
+        </nav>
+      </header>
+
       <main
-        className={`mx-auto flex w-full max-w-6xl flex-col px-4 pt-14 sm:px-6 lg:px-8 lg:pt-20 ${
+        className={`mx-auto flex w-full max-w-6xl flex-col px-4 pt-10 sm:px-6 lg:px-8 lg:pt-12 ${
           hasSearched ? "gap-8 pb-44 lg:gap-10" : "gap-14 pb-16 lg:gap-16"
         }`}
       >
