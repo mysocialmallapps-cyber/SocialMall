@@ -250,18 +250,34 @@ export default function Home() {
       </main>
 
       {hasSearched ? (
-        <div className="fixed inset-x-0 bottom-0 border-t border-zinc-100 bg-white/95 px-4 pb-4 pt-3 backdrop-blur-sm sm:px-6">
+        <div className="fixed inset-x-0 bottom-0 border-t border-zinc-200/80 bg-white/95 px-4 pb-5 pt-4 backdrop-blur-md sm:px-6">
           <form
-            className="mx-auto w-full max-w-3xl rounded-[2rem] border border-zinc-100 bg-white p-2 shadow-[0_18px_40px_-24px_rgba(0,0,0,0.3)]"
+            className="mx-auto w-full max-w-4xl rounded-[2.1rem] border border-zinc-200 bg-white px-3 py-3 shadow-[0_26px_55px_-28px_rgba(0,0,0,0.45)] transition duration-200 hover:shadow-[0_30px_64px_-30px_rgba(0,0,0,0.52)] focus-within:border-zinc-300 focus-within:shadow-[0_32px_70px_-34px_rgba(0,0,0,0.58)]"
             onSubmit={handleRefineSubmit}
           >
-            <input
-              type="text"
-              value={refineInput}
-              onChange={(event) => setRefineInput(event.target.value)}
-              placeholder="Refine your search..."
-              className="h-16 w-full rounded-[1.5rem] border border-zinc-200 bg-white px-6 text-base text-zinc-900 outline-none transition placeholder:text-zinc-400 focus:border-zinc-300"
-            />
+            <div className="flex items-center gap-3 rounded-[1.6rem] border border-zinc-200 bg-white px-4 transition focus-within:border-zinc-300">
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                className="h-5 w-5 shrink-0 text-zinc-400"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+              >
+                <path
+                  d="M12 3.5l1.9 4.6 4.6 1.9-4.6 1.9L12 16.5l-1.9-4.6-4.6-1.9 4.6-1.9L12 3.5Z"
+                  strokeLinejoin="round"
+                />
+                <path d="M18 14.5l.95 2.3 2.3.95-2.3.95L18 21l-.95-2.3-2.3-.95 2.3-.95L18 14.5Z" />
+              </svg>
+              <input
+                type="text"
+                value={refineInput}
+                onChange={(event) => setRefineInput(event.target.value)}
+                placeholder="Refine your look… try 'cheaper', 'black', 'more casual'"
+                className="h-[4.5rem] w-full bg-transparent pr-2 text-[1.02rem] text-zinc-900 outline-none placeholder:text-zinc-400"
+              />
+            </div>
           </form>
         </div>
       ) : null}
