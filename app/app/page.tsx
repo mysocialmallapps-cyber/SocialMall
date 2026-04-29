@@ -158,7 +158,7 @@ export default function Home() {
           <button
             type="button"
             onClick={handleLogoClick}
-            className="cursor-pointer text-[1.05rem] font-semibold tracking-tight text-[#111111] transition-opacity duration-200 hover:opacity-70"
+            className="cursor-pointer text-[1.3rem] font-semibold tracking-tight text-[#111111] transition-opacity duration-200 hover:opacity-70"
             aria-label="Go to homepage"
           >
             SocialMall
