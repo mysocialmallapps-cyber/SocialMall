@@ -13,25 +13,96 @@ type Product = {
   id: number;
   brand: string;
   name: string;
-  price: string;
+  price: number;
   image: string;
-  tags: string[];
+  category: string;
+  color: string;
+  material: string;
+  styleTags: string[];
+  vibeTags: string[];
 };
 
-const queryAliases: Record<string, string[]> = {
-  outfit: ["outfit", "look", "set", "co-ord", "dress"],
-  summer: ["summer", "linen", "resort", "beach"],
-  luxury: ["luxury", "premium", "designer", "tailored"],
-  casual: ["casual", "relaxed", "oversized", "easy"],
-  black: ["black", "dark"],
-  hoodie: ["hoodie", "sweatshirt"],
+type QueryIntent = {
+  words: string[];
+  colors: string[];
+  materials: string[];
+  categories: string[];
+  vibes: string[];
+  maxPrice: number | null;
+  sortCheapest: boolean;
+  explicitJewellery: boolean;
+  clothingMaterialIntent: boolean;
 };
 
-const luxuryKeywords = new Set(["luxury", "premium", "designer"]);
-const budgetKeywords = new Set(["cheap", "cheaper", "budget", "affordable", "under"]);
+type FilterResult = {
+  items: Product[];
+  showFallbackNotice: boolean;
+};
 
-const toPriceNumber = (price: string) =>
-  Number.parseFloat(price.replace(/,/g, "").replace(/[^\d.]/g, ""));
+const colorKeywords: Record<string, string[]> = {
+  black: ["black"],
+  white: ["white"],
+  beige: ["beige", "sand"],
+  blue: ["blue", "navy"],
+  red: ["red", "burgundy"],
+};
+
+const materialKeywords: Record<string, string[]> = {
+  linen: ["linen"],
+  cotton: ["cotton"],
+  leather: ["leather"],
+  denim: ["denim"],
+  wool: ["wool"],
+};
+
+const categoryKeywords: Record<string, string[]> = {
+  shirt: ["shirt", "shirts"],
+  trousers: ["trousers", "trouser", "pants"],
+  hoodie: ["hoodie", "hoodies", "sweatshirt"],
+  dress: ["dress", "dresses"],
+  blazer: ["blazer", "blazers"],
+  sandals: ["sandals", "sandal"],
+  shoes: ["shoes", "shoe", "sneakers", "loafers"],
+  bag: ["bag", "bags", "tote"],
+  jewellery: ["jewellery", "jewelry"],
+};
+
+const vibeKeywords: Record<string, string[]> = {
+  summer: ["summer"],
+  marbella: ["marbella"],
+  beach: ["beach", "beach club"],
+  "quiet luxury": ["quiet luxury", "luxury"],
+  casual: ["casual", "relaxed"],
+  formal: ["formal"],
+  minimal: ["minimal", "minimalist"],
+  resort: ["resort"],
+};
+
+const clothingMaterials = new Set(["linen", "cotton", "denim", "wool"]);
+const fillerWords = new Set([
+  "under",
+  "below",
+  "less",
+  "than",
+  "euro",
+  "euros",
+  "look",
+  "style",
+  "styles",
+  "outfit",
+  "cheaper",
+]);
+
+const escapeRegExp = (value: string) =>
+  value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+
+const containsTerm = (query: string, term: string) => {
+  if (term.includes(" ")) {
+    return query.includes(term);
+  }
+
+  return new RegExp(`\\b${escapeRegExp(term)}\\b`, "i").test(query);
+};
 
 const tokenizeQuery = (query: string) =>
   query
@@ -40,52 +111,152 @@ const tokenizeQuery = (query: string) =>
     .map((word) => word.replace(/[^a-z0-9]/g, ""))
     .filter(Boolean);
 
-const getFilteredProducts = (query: string, items: Product[]) => {
-  const tokens = tokenizeQuery(query);
-  if (!tokens.length) {
-    return items;
+const detectIntentValues = (
+  query: string,
+  dictionary: Record<string, string[]>,
+) =>
+  Object.entries(dictionary).reduce<string[]>((matches, [key, terms]) => {
+    if (terms.some((term) => containsTerm(query, term))) {
+      matches.push(key);
+    }
+    return matches;
+  }, []);
+
+const parseQueryIntent = (query: string): QueryIntent => {
+  const normalizedQuery = query.toLowerCase();
+  const allTokens = tokenizeQuery(query);
+  const meaningfulWords = Array.from(
+    new Set(
+      allTokens.filter((word) => word.length > 2 && !fillerWords.has(word)),
+    ),
+  );
+
+  const maxPriceMatch = normalizedQuery.match(
+    /(?:under|below|less than)\s*(?:€|eur|euro)?\s*(\d{2,4})/i,
+  );
+
+  const categories = detectIntentValues(normalizedQuery, categoryKeywords);
+  const materials = detectIntentValues(normalizedQuery, materialKeywords);
+
+  return {
+    words: meaningfulWords,
+    colors: detectIntentValues(normalizedQuery, colorKeywords),
+    materials,
+    categories,
+    vibes: detectIntentValues(normalizedQuery, vibeKeywords),
+    maxPrice: maxPriceMatch ? Number.parseInt(maxPriceMatch[1], 10) : null,
+    sortCheapest: containsTerm(normalizedQuery, "cheaper"),
+    explicitJewellery: categories.includes("jewellery"),
+    clothingMaterialIntent: materials.some((material) =>
+      clothingMaterials.has(material),
+    ),
+  };
+};
+
+const scoreProduct = (product: Product, intent: QueryIntent) => {
+  let score = 0;
+
+  if (intent.categories.length) {
+    if (intent.categories.includes(product.category)) {
+      score += 4;
+    } else {
+      score -= 5;
+    }
   }
 
-  const wantsLuxury = tokens.some((token) => luxuryKeywords.has(token));
-  const wantsBudget = tokens.some((token) => budgetKeywords.has(token));
+  if (intent.materials.length && intent.materials.includes(product.material)) {
+    score += 3;
+  }
 
-  const scoredProducts = items.map((item) => {
-    const tags = item.tags.map((tag) => tag.toLowerCase());
-    const searchableText = `${item.brand} ${item.name}`.toLowerCase();
-    const priceValue = toPriceNumber(item.price);
-    let score = 0;
+  if (intent.colors.length && intent.colors.includes(product.color)) {
+    score += 3;
+  }
 
-    tokens.forEach((token) => {
-      const aliases = queryAliases[token] ?? [token];
-      const hasTagMatch = aliases.some((alias) =>
-        tags.some((tag) => tag.includes(alias)),
-      );
+  const vibeOrStyleMatches = intent.vibes.filter(
+    (vibe) =>
+      product.vibeTags.includes(vibe) || product.styleTags.includes(vibe),
+  ).length;
+  score += vibeOrStyleMatches * 2;
 
-      if (hasTagMatch) {
-        score += 3;
-      } else if (searchableText.includes(token)) {
-        score += 1;
-      }
-    });
-
-    if (wantsLuxury && (tags.includes("luxury") || priceValue >= 500)) {
-      score += 3;
+  const searchableText = `${product.name} ${product.brand}`.toLowerCase();
+  intent.words.forEach((word) => {
+    if (searchableText.includes(word)) {
+      score += 1;
     }
-
-    if (wantsBudget && priceValue <= 250) {
-      score += 2;
-    }
-
-    return { item, score };
   });
 
-  const strongMatches = scoredProducts
-    .filter(({ score }) => score >= 3)
-    .sort((a, b) => b.score - a.score)
-    .map(({ item }) => item);
+  return score;
+};
 
-  // Keep the experience alive even for vague queries.
-  return strongMatches.length ? strongMatches : items;
+const formatPrice = (amount: number) => {
+  const hasDecimals = !Number.isInteger(amount);
+  return new Intl.NumberFormat("en-IE", {
+    style: "currency",
+    currency: "EUR",
+    minimumFractionDigits: hasDecimals ? 2 : 0,
+    maximumFractionDigits: hasDecimals ? 2 : 0,
+  }).format(amount);
+};
+
+const getFilteredProducts = (
+  query: string,
+  items: Product[],
+  fallbackItems: Product[],
+): FilterResult => {
+  const intent = parseQueryIntent(query);
+  if (!query.trim()) {
+    return { items, showFallbackNotice: false };
+  }
+
+  const applyHardFilters = (list: Product[]) => {
+    let filtered = list;
+
+    if (intent.maxPrice !== null) {
+      filtered = filtered.filter((item) => item.price <= intent.maxPrice!);
+    }
+
+    if (intent.clothingMaterialIntent && !intent.explicitJewellery) {
+      filtered = filtered.filter((item) => item.category !== "jewellery");
+    }
+
+    return filtered;
+  };
+
+  const fallbackPool = applyHardFilters(fallbackItems);
+  const candidates = applyHardFilters(items);
+
+  if (!candidates.length) {
+    return { items: fallbackPool.length ? fallbackPool : fallbackItems, showFallbackNotice: true };
+  }
+
+  const ranked = candidates.map((item) => ({
+    item,
+    score: scoreProduct(item, intent),
+  }));
+
+  ranked.sort((a, b) => {
+    if (intent.sortCheapest && a.item.price !== b.item.price) {
+      return a.item.price - b.item.price;
+    }
+
+    if (a.score !== b.score) {
+      return b.score - a.score;
+    }
+
+    return a.item.price - b.item.price;
+  });
+
+  const strongMatches = ranked.filter(({ score }) => score >= 3);
+  const hasPricingIntent = intent.maxPrice !== null || intent.sortCheapest;
+  const hasStrongMatches = hasPricingIntent
+    ? ranked.length > 0
+    : strongMatches.length > 0;
+
+  if (!hasStrongMatches) {
+    return { items: fallbackPool.length ? fallbackPool : fallbackItems, showFallbackNotice: true };
+  }
+
+  return { items: ranked.map(({ item }) => item), showFallbackNotice: false };
 };
 
 const products: Product[] = [
@@ -93,78 +264,138 @@ const products: Product[] = [
     id: 1,
     brand: "The Row",
     name: "Cashmere Blend Wide-Leg Trousers",
-    price: "€1,190",
+    price: 1190,
     image:
       "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
-    tags: ["luxury", "tailored", "black", "minimal", "quiet"],
+    category: "trousers",
+    color: "black",
+    material: "wool",
+    styleTags: ["tailored", "minimal"],
+    vibeTags: ["quiet luxury", "formal", "minimal"],
   },
   {
     id: 2,
     brand: "Jacquemus",
     name: "Le Chouchou Draped Linen Shirt",
-    price: "€520",
+    price: 520,
     image:
       "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
-    tags: ["luxury", "summer", "linen", "resort", "outfit"],
+    category: "shirt",
+    color: "beige",
+    material: "linen",
+    styleTags: ["draped", "resort"],
+    vibeTags: ["summer", "marbella", "resort"],
   },
   {
     id: 3,
     brand: "COS",
     name: "Relaxed Oversized Black Hoodie",
-    price: "€135",
+    price: 135,
     image:
       "https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=1200&q=80",
-    tags: ["black", "hoodie", "casual", "oversized", "streetwear"],
+    category: "hoodie",
+    color: "black",
+    material: "cotton",
+    styleTags: ["oversized", "streetwear"],
+    vibeTags: ["casual", "minimal"],
   },
   {
     id: 4,
     brand: "Toteme",
     name: "Minimalist Structured Wool Blazer",
-    price: "€790",
+    price: 790,
     image:
       "https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=1200&q=80",
-    tags: ["luxury", "tailored", "structured", "black", "formal"],
+    category: "blazer",
+    color: "black",
+    material: "wool",
+    styleTags: ["structured", "tailored"],
+    vibeTags: ["quiet luxury", "formal", "minimal"],
   },
   {
     id: 5,
     brand: "Aeyde",
     name: "Leather Slip-On Sandals",
-    price: "€280",
+    price: 280,
     image:
       "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=80",
-    tags: ["summer", "casual", "beach", "minimal", "resort"],
+    category: "sandals",
+    color: "beige",
+    material: "leather",
+    styleTags: ["minimal", "slip-on"],
+    vibeTags: ["summer", "beach", "resort"],
   },
   {
     id: 6,
     brand: "Loulou Studio",
     name: "Silk Resort Shirt in Sand",
-    price: "€310",
+    price: 310,
     image:
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
-    tags: ["summer", "resort", "casual", "outfit", "beach"],
+    category: "shirt",
+    color: "white",
+    material: "cotton",
+    styleTags: ["relaxed", "resort"],
+    vibeTags: ["summer", "beach", "casual"],
   },
   {
     id: 7,
     brand: "Arket",
     name: "Linen Blend Summer Co-ord Set",
-    price: "€180",
+    price: 180,
     image:
       "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80",
-    tags: ["summer", "outfit", "co-ord", "casual", "budget"],
+    category: "trousers",
+    color: "blue",
+    material: "denim",
+    styleTags: ["co-ord", "relaxed"],
+    vibeTags: ["summer", "casual", "minimal"],
   },
   {
     id: 8,
     brand: "Mango",
     name: "Open Knit Beach Club Dress",
-    price: "€89.99",
+    price: 89.99,
     image:
       "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
-    tags: ["summer", "beach", "outfit", "dress", "budget"],
+    category: "dress",
+    color: "red",
+    material: "cotton",
+    styleTags: ["flowy", "beach club"],
+    vibeTags: ["summer", "beach", "marbella", "resort"],
+  },
+  {
+    id: 9,
+    brand: "Demellier",
+    name: "Minimal Leather Shoulder Bag",
+    price: 360,
+    image:
+      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80",
+    category: "bag",
+    color: "white",
+    material: "leather",
+    styleTags: ["structured", "minimal"],
+    vibeTags: ["quiet luxury", "formal", "minimal"],
+  },
+  {
+    id: 10,
+    brand: "Mejuri",
+    name: "Gold Everyday Hoop Earrings",
+    price: 110,
+    image:
+      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&q=80",
+    category: "jewellery",
+    color: "beige",
+    material: "leather",
+    styleTags: ["delicate", "everyday"],
+    vibeTags: ["minimal", "casual"],
   },
 ];
 
+const fallbackTrendingProducts = products.slice(0, 8);
+
 export default function Home() {
-  const previewProducts = products.slice(0, 4);
+  const previewProducts = fallbackTrendingProducts.slice(0, 4);
   const [searchInput, setSearchInput] = useState("");
   const [refineInput, setRefineInput] = useState("");
   const [activeQuery, setActiveQuery] = useState("");
@@ -174,8 +405,8 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [gridAnimationKey, setGridAnimationKey] = useState(0);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const filteredProducts = useMemo(
-    () => getFilteredProducts(activeQuery, products),
+  const filteredResults = useMemo(
+    () => getFilteredProducts(activeQuery, products, fallbackTrendingProducts),
     [activeQuery],
   );
 
@@ -326,7 +557,7 @@ export default function Home() {
                       </p>
                       <p className="truncate text-sm text-zinc-800">{product.name}</p>
                       <p className="text-sm font-semibold text-zinc-900">
-                        {product.price}
+                        {formatPrice(product.price)}
                       </p>
                     </div>
                   </article>
@@ -346,6 +577,11 @@ export default function Home() {
                 </>
               )}
             </p>
+            {!isLoading && filteredResults.showFallbackNotice ? (
+              <p className="text-sm text-zinc-500">
+                No exact match — showing similar styles.
+              </p>
+            ) : null}
 
             <div
               key={gridAnimationKey}
@@ -353,7 +589,7 @@ export default function Home() {
                 isLoading ? "opacity-70" : "opacity-100"
               }`}
             >
-              {filteredProducts.map((product) => (
+              {filteredResults.items.map((product) => (
                 <article
                   key={product.id}
                   className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
@@ -370,7 +606,7 @@ export default function Home() {
                     </p>
                     <p className="truncate text-sm text-zinc-800">{product.name}</p>
                     <p className="text-sm font-semibold text-zinc-900">
-                      {product.price}
+                      {formatPrice(product.price)}
                     </p>
                   </div>
                 </article>
