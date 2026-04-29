@@ -1,6 +1,6 @@
 "use client";
 
-import { FormEvent, useEffect, useRef, useState } from "react";
+import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
 
 const suggestions = [
   "quiet luxury",
@@ -9,7 +9,86 @@ const suggestions = [
   "summer outfit under €200",
 ];
 
-const products = [
+type Product = {
+  id: number;
+  brand: string;
+  name: string;
+  price: string;
+  image: string;
+  tags: string[];
+};
+
+const queryAliases: Record<string, string[]> = {
+  outfit: ["outfit", "look", "set", "co-ord", "dress"],
+  summer: ["summer", "linen", "resort", "beach"],
+  luxury: ["luxury", "premium", "designer", "tailored"],
+  casual: ["casual", "relaxed", "oversized", "easy"],
+  black: ["black", "dark"],
+  hoodie: ["hoodie", "sweatshirt"],
+};
+
+const luxuryKeywords = new Set(["luxury", "premium", "designer"]);
+const budgetKeywords = new Set(["cheap", "cheaper", "budget", "affordable", "under"]);
+
+const toPriceNumber = (price: string) =>
+  Number.parseFloat(price.replace(/,/g, "").replace(/[^\d.]/g, ""));
+
+const tokenizeQuery = (query: string) =>
+  query
+    .toLowerCase()
+    .split(/\s+/)
+    .map((word) => word.replace(/[^a-z0-9]/g, ""))
+    .filter(Boolean);
+
+const getFilteredProducts = (query: string, items: Product[]) => {
+  const tokens = tokenizeQuery(query);
+  if (!tokens.length) {
+    return items;
+  }
+
+  const wantsLuxury = tokens.some((token) => luxuryKeywords.has(token));
+  const wantsBudget = tokens.some((token) => budgetKeywords.has(token));
+
+  const scoredProducts = items.map((item) => {
+    const tags = item.tags.map((tag) => tag.toLowerCase());
+    const searchableText = `${item.brand} ${item.name}`.toLowerCase();
+    const priceValue = toPriceNumber(item.price);
+    let score = 0;
+
+    tokens.forEach((token) => {
+      const aliases = queryAliases[token] ?? [token];
+      const hasTagMatch = aliases.some((alias) =>
+        tags.some((tag) => tag.includes(alias)),
+      );
+
+      if (hasTagMatch) {
+        score += 3;
+      } else if (searchableText.includes(token)) {
+        score += 1;
+      }
+    });
+
+    if (wantsLuxury && (tags.includes("luxury") || priceValue >= 500)) {
+      score += 3;
+    }
+
+    if (wantsBudget && priceValue <= 250) {
+      score += 2;
+    }
+
+    return { item, score };
+  });
+
+  const strongMatches = scoredProducts
+    .filter(({ score }) => score >= 3)
+    .sort((a, b) => b.score - a.score)
+    .map(({ item }) => item);
+
+  // Keep the experience alive even for vague queries.
+  return strongMatches.length ? strongMatches : items;
+};
+
+const products: Product[] = [
   {
     id: 1,
     brand: "The Row",
@@ -17,6 +96,7 @@ const products = [
     price: "€1,190",
     image:
       "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
+    tags: ["luxury", "tailored", "black", "minimal", "quiet"],
   },
   {
     id: 2,
@@ -25,6 +105,7 @@ const products = [
     price: "€520",
     image:
       "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
+    tags: ["luxury", "summer", "linen", "resort", "outfit"],
   },
   {
     id: 3,
@@ -33,6 +114,7 @@ const products = [
     price: "€135",
     image:
       "https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=1200&q=80",
+    tags: ["black", "hoodie", "casual", "oversized", "streetwear"],
   },
   {
     id: 4,
@@ -41,6 +123,7 @@ const products = [
     price: "€790",
     image:
       "https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=1200&q=80",
+    tags: ["luxury", "tailored", "structured", "black", "formal"],
   },
   {
     id: 5,
@@ -49,6 +132,7 @@ const products = [
     price: "€280",
     image:
       "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=80",
+    tags: ["summer", "casual", "beach", "minimal", "resort"],
   },
   {
     id: 6,
@@ -57,6 +141,7 @@ const products = [
     price: "€310",
     image:
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
+    tags: ["summer", "resort", "casual", "outfit", "beach"],
   },
   {
     id: 7,
@@ -65,6 +150,7 @@ const products = [
     price: "€180",
     image:
       "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80",
+    tags: ["summer", "outfit", "co-ord", "casual", "budget"],
   },
   {
     id: 8,
@@ -73,6 +159,7 @@ const products = [
     price: "€89.99",
     image:
       "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
+    tags: ["summer", "beach", "outfit", "dress", "budget"],
   },
 ];
 
@@ -86,6 +173,10 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [gridAnimationKey, setGridAnimationKey] = useState(0);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const filteredProducts = useMemo(
+    () => getFilteredProducts(activeQuery, products),
+    [activeQuery],
+  );
 
   const runSearch = (rawQuery: string) => {
     const query = rawQuery.trim();
@@ -250,7 +341,7 @@ export default function Home() {
                 isLoading ? "opacity-70" : "opacity-100"
               }`}
             >
-              {products.map((product) => (
+              {filteredProducts.map((product) => (
                 <article
                   key={product.id}
                   className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
