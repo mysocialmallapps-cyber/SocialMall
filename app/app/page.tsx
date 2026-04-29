@@ -77,6 +77,7 @@ const products = [
 ];
 
 export default function Home() {
+  const previewProducts = products.slice(0, 4);
   const [searchInput, setSearchInput] = useState("");
   const [refineInput, setRefineInput] = useState("");
   const [activeQuery, setActiveQuery] = useState("");
@@ -143,35 +144,65 @@ export default function Home() {
         }`}
       >
         {!hasSearched ? (
-          <section className="mx-auto flex w-full max-w-3xl flex-col items-center gap-8">
-            <h1 className="text-center text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
-              Discover your next look
-            </h1>
-            <form
-              className="w-full rounded-[2rem] border border-zinc-200 bg-white p-2.5 shadow-[0_24px_55px_-28px_rgba(0,0,0,0.35)]"
-              onSubmit={handleSubmit}
-            >
-              <input
-                type="text"
-                value={searchInput}
-                onChange={(event) => setSearchInput(event.target.value)}
-                placeholder="Describe what you want… outfits, styles, brands"
-                className="h-[4.5rem] w-full rounded-[1.5rem] border border-zinc-200 bg-white px-6 text-[1.05rem] text-zinc-900 outline-none transition placeholder:text-zinc-400 focus:border-zinc-300 focus:shadow-[0_0_0_3px_rgba(24,24,27,0.06)]"
-              />
-            </form>
-            <div className="flex w-full flex-wrap items-center justify-center gap-2">
-              {suggestions.map((suggestion) => (
-                <button
-                  key={suggestion}
-                  type="button"
-                  onClick={() => handleSuggestionClick(suggestion)}
-                  className="rounded-full border border-zinc-200 bg-zinc-50 px-4 py-2 text-sm text-zinc-600 transition hover:border-zinc-300 hover:bg-zinc-100"
-                >
-                  {suggestion}
-                </button>
-              ))}
-            </div>
-          </section>
+          <>
+            <section className="mx-auto flex w-full max-w-3xl flex-col items-center gap-8">
+              <h1 className="text-center text-3xl font-semibold tracking-tight text-zinc-900 sm:text-4xl">
+                Discover your next look
+              </h1>
+              <form
+                className="w-full rounded-[2rem] border border-zinc-200 bg-white p-2.5 shadow-[0_24px_55px_-28px_rgba(0,0,0,0.35)]"
+                onSubmit={handleSubmit}
+              >
+                <input
+                  type="text"
+                  value={searchInput}
+                  onChange={(event) => setSearchInput(event.target.value)}
+                  placeholder="Describe what you want… outfits, styles, brands"
+                  className="h-[4.5rem] w-full rounded-[1.5rem] border border-zinc-200 bg-white px-6 text-[1.05rem] text-zinc-900 outline-none transition placeholder:text-zinc-400 focus:border-zinc-300 focus:shadow-[0_0_0_3px_rgba(24,24,27,0.06)]"
+                />
+              </form>
+              <div className="flex w-full flex-wrap items-center justify-center gap-2">
+                {suggestions.map((suggestion) => (
+                  <button
+                    key={suggestion}
+                    type="button"
+                    onClick={() => handleSuggestionClick(suggestion)}
+                    className="rounded-full border border-zinc-200 bg-zinc-50 px-4 py-2 text-sm text-zinc-600 transition hover:border-zinc-300 hover:bg-zinc-100"
+                  >
+                    {suggestion}
+                  </button>
+                ))}
+              </div>
+            </section>
+
+            <section className="space-y-5">
+              <p className="text-sm font-medium text-zinc-500">Trending now</p>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-4 md:gap-x-6 md:gap-y-10">
+                {previewProducts.map((product) => (
+                  <article
+                    key={product.id}
+                    className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
+                  >
+                    <div
+                      className="aspect-[2/3] overflow-hidden rounded-2xl bg-zinc-100 bg-cover bg-center transition duration-500 group-hover:scale-[1.04]"
+                      style={{ backgroundImage: `url(${product.image})` }}
+                      aria-label={product.name}
+                      role="img"
+                    />
+                    <div className="mt-3 space-y-1">
+                      <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
+                        {product.brand}
+                      </p>
+                      <p className="truncate text-sm text-zinc-800">{product.name}</p>
+                      <p className="text-sm font-semibold text-zinc-900">
+                        {product.price}
+                      </p>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            </section>
+          </>
         ) : (
           <section className="space-y-6">
             <p className="text-sm text-zinc-500">
