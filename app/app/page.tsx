@@ -16,22 +16,36 @@ type Product = {
   price: number;
   image: string;
   category: string;
-  color: string;
-  material: string;
-  styleTags: string[];
+  gender: "men" | "women" | "unisex";
+  colors: string[];
+  materials: string[];
+  fitTags: string[];
+  occasionTags: string[];
+  seasonTags: string[];
   vibeTags: string[];
+  styleTags: string[];
+  url: string;
 };
 
 type QueryIntent = {
   words: string[];
+  genders: string[];
   colors: string[];
   materials: string[];
   categories: string[];
+  occasions: string[];
+  seasons: string[];
+  fits: string[];
   vibes: string[];
+  hardColorFilters: string[];
+  hardMaterialFilters: string[];
+  excludedCategories: string[];
   maxPrice: number | null;
   sortCheapest: boolean;
-  explicitJewellery: boolean;
-  clothingMaterialIntent: boolean;
+  clothingIntent: boolean;
+  footwearIntent: boolean;
+  bagIntent: boolean;
+  jewelleryIntent: boolean;
 };
 
 type FilterResult = {
@@ -42,9 +56,15 @@ type FilterResult = {
 const colorKeywords: Record<string, string[]> = {
   black: ["black"],
   white: ["white"],
-  beige: ["beige", "sand"],
-  blue: ["blue", "navy"],
+  beige: ["beige", "cream"],
+  cream: ["cream", "off white", "offwhite"],
+  brown: ["brown", "tan", "camel"],
+  navy: ["navy"],
+  blue: ["blue"],
   red: ["red", "burgundy"],
+  green: ["green", "olive"],
+  grey: ["grey", "gray", "charcoal"],
+  pink: ["pink", "rose"],
 };
 
 const materialKeywords: Record<string, string[]> = {
@@ -53,43 +73,122 @@ const materialKeywords: Record<string, string[]> = {
   leather: ["leather"],
   denim: ["denim"],
   wool: ["wool"],
+  silk: ["silk", "satin"],
+  suede: ["suede"],
+  knit: ["knit", "knitted"],
 };
 
 const categoryKeywords: Record<string, string[]> = {
-  shirt: ["shirt", "shirts"],
-  trousers: ["trousers", "trouser", "pants"],
+  tshirt: ["tshirt", "t-shirt", "tee", "t shirt"],
+  shirt: ["shirt", "shirts", "linen shirt", "button up", "button-up"],
   hoodie: ["hoodie", "hoodies", "sweatshirt"],
+  trousers: ["trousers", "trouser", "pants"],
+  jeans: ["jeans", "jean", "denim"],
   dress: ["dress", "dresses"],
-  blazer: ["blazer", "blazers"],
-  sandals: ["sandals", "sandal"],
-  shoes: ["shoes", "shoe", "sneakers", "loafers"],
-  bag: ["bag", "bags", "tote"],
-  jewellery: ["jewellery", "jewelry"],
+  blazer: ["blazer", "blazers", "jacket", "jackets", "coat"],
+  footwear: [
+    "shoes",
+    "shoe",
+    "trainers",
+    "sneakers",
+    "sandals",
+    "loafers",
+    "boots",
+  ],
+  bag: ["bag", "bags", "handbag", "handbags", "tote", "totes"],
+  jewellery: ["jewellery", "jewelry", "earrings", "necklace", "ring", "rings"],
+};
+
+const genderKeywords: Record<string, string[]> = {
+  men: ["men", "mens", "male", "guy"],
+  women: ["women", "womens", "female", "girl"],
+  unisex: ["unisex"],
+};
+
+const occasionKeywords: Record<string, string[]> = {
+  "date night": ["date night"],
+  "beach club": ["beach club"],
+  holiday: ["holiday"],
+  "wedding guest": ["wedding guest"],
+  office: ["office", "work"],
+  gym: ["gym", "training", "workout"],
+  "airport outfit": ["airport outfit", "airport"],
+  dinner: ["dinner"],
+  party: ["party"],
+  casual: ["casual", "everyday"],
+  formal: ["formal"],
+};
+
+const seasonKeywords: Record<string, string[]> = {
+  summer: ["summer", "hot weather", "holiday", "beach"],
+  winter: ["winter", "cold", "jacket", "coat"],
+  spring: ["spring"],
+  autumn: ["autumn", "fall"],
+};
+
+const fitKeywords: Record<string, string[]> = {
+  oversized: ["oversized"],
+  "slim fit": ["slim fit", "slim"],
+  relaxed: ["relaxed"],
+  tailored: ["tailored"],
+  cropped: ["cropped"],
+  "wide leg": ["wide leg", "wide-leg"],
+  baggy: ["baggy"],
 };
 
 const vibeKeywords: Record<string, string[]> = {
-  summer: ["summer"],
-  marbella: ["marbella"],
-  beach: ["beach", "beach club"],
-  "quiet luxury": ["quiet luxury", "luxury"],
-  casual: ["casual", "relaxed"],
-  formal: ["formal"],
-  minimal: ["minimal", "minimalist"],
+  "quiet luxury": ["quiet luxury"],
+  "old money": ["old money"],
+  streetwear: ["streetwear"],
+  minimalist: ["minimalist", "minimal", "clean"],
   resort: ["resort"],
+  marbella: ["marbella"],
+  dubai: ["dubai"],
+  ibiza: ["ibiza"],
+  paris: ["paris"],
+  classy: ["classy"],
+  elegant: ["elegant"],
+  casual: ["casual", "relaxed"],
+  "smart casual": ["smart casual"],
 };
 
-const clothingMaterials = new Set(["linen", "cotton", "denim", "wool"]);
+const clothingCategories = new Set([
+  "tshirt",
+  "shirt",
+  "hoodie",
+  "trousers",
+  "jeans",
+  "dress",
+  "blazer",
+]);
+const pricingSortWords = new Set([
+  "cheap",
+  "cheaper",
+  "cheapest",
+  "affordable",
+  "budget",
+]);
 const fillerWords = new Set([
   "under",
   "below",
   "less",
   "than",
+  "max",
+  "budget",
+  "make",
+  "it",
+  "only",
+  "show",
+  "similar",
   "euro",
   "euros",
+  "pounds",
+  "pound",
   "look",
   "style",
   "styles",
   "outfit",
+  "query",
   "cheaper",
 ]);
 
@@ -122,6 +221,41 @@ const detectIntentValues = (
     return matches;
   }, []);
 
+const detectExcludedCategories = (query: string) =>
+  Object.entries(categoryKeywords).reduce<string[]>((excluded, [category, terms]) => {
+    const excludedMatch = terms.some((term) =>
+      new RegExp(
+        `\\b(?:no|not|without|exclude)\\s+${escapeRegExp(term)}\\b`,
+        "i",
+      ).test(query),
+    );
+
+    if (excludedMatch) {
+      excluded.push(category);
+    }
+
+    return excluded;
+  }, []);
+
+const detectOnlyFilters = (
+  query: string,
+  dictionary: Record<string, string[]>,
+) =>
+  Object.entries(dictionary).reduce<string[]>((hardMatches, [key, terms]) => {
+    const onlyMatch = terms.some((term) =>
+      new RegExp(
+        `\\b(?:only\\s+${escapeRegExp(term)}|${escapeRegExp(term)}\\s+only)\\b`,
+        "i",
+      ).test(query),
+    );
+
+    if (onlyMatch) {
+      hardMatches.push(key);
+    }
+
+    return hardMatches;
+  }, []);
+
 const parseQueryIntent = (query: string): QueryIntent => {
   const normalizedQuery = query.toLowerCase();
   const allTokens = tokenizeQuery(query);
@@ -130,26 +264,62 @@ const parseQueryIntent = (query: string): QueryIntent => {
       allTokens.filter((word) => word.length > 2 && !fillerWords.has(word)),
     ),
   );
-
-  const maxPriceMatch = normalizedQuery.match(
-    /(?:under|below|less than)\s*(?:€|eur|euro)?\s*(\d{2,4})/i,
-  );
-
   const categories = detectIntentValues(normalizedQuery, categoryKeywords);
   const materials = detectIntentValues(normalizedQuery, materialKeywords);
+  const colors = detectIntentValues(normalizedQuery, colorKeywords);
+  const genders = detectIntentValues(normalizedQuery, genderKeywords);
+  const occasions = detectIntentValues(normalizedQuery, occasionKeywords);
+  const seasons = detectIntentValues(normalizedQuery, seasonKeywords);
+  const fits = detectIntentValues(normalizedQuery, fitKeywords);
+  const vibes = detectIntentValues(normalizedQuery, vibeKeywords);
+  const hardColorFilters = detectOnlyFilters(normalizedQuery, colorKeywords);
+  const hardMaterialFilters = detectOnlyFilters(normalizedQuery, materialKeywords);
+  const excludedCategories = detectExcludedCategories(normalizedQuery);
+
+  const priceMatches = [
+    ...Array.from(
+      normalizedQuery.matchAll(
+        /(?:under|below|less than|max|budget)\s*(?:£|€)?\s*(\d{2,4})/gi,
+      ),
+    ),
+    ...Array.from(normalizedQuery.matchAll(/(?:£|€)\s*(\d{2,4})/gi)),
+    ...Array.from(
+      normalizedQuery.matchAll(/\b(\d{2,4})\s*(?:euros?|pounds?)\b/gi),
+    ),
+  ]
+    .map((match) => Number.parseInt(match[1], 10))
+    .filter((value) => !Number.isNaN(value));
+
+  const hasClothingSignals =
+    categories.some((category) => clothingCategories.has(category)) ||
+    materials.length > 0 ||
+    fits.length > 0 ||
+    containsTerm(normalizedQuery, "outfit") ||
+    containsTerm(normalizedQuery, "look");
+  const footwearIntent = categories.includes("footwear");
+  const bagIntent = categories.includes("bag");
+  const jewelleryIntent = categories.includes("jewellery");
 
   return {
     words: meaningfulWords,
-    colors: detectIntentValues(normalizedQuery, colorKeywords),
+    genders,
+    colors,
     materials,
     categories,
-    vibes: detectIntentValues(normalizedQuery, vibeKeywords),
-    maxPrice: maxPriceMatch ? Number.parseInt(maxPriceMatch[1], 10) : null,
-    sortCheapest: containsTerm(normalizedQuery, "cheaper"),
-    explicitJewellery: categories.includes("jewellery"),
-    clothingMaterialIntent: materials.some((material) =>
-      clothingMaterials.has(material),
-    ),
+    occasions,
+    seasons,
+    fits,
+    vibes,
+    hardColorFilters,
+    hardMaterialFilters,
+    excludedCategories,
+    maxPrice: priceMatches.length ? Math.min(...priceMatches) : null,
+    sortCheapest: allTokens.some((token) => pricingSortWords.has(token)),
+    clothingIntent:
+      hasClothingSignals && !footwearIntent && !bagIntent && !jewelleryIntent,
+    footwearIntent,
+    bagIntent,
+    jewelleryIntent,
   };
 };
 
@@ -158,29 +328,87 @@ const scoreProduct = (product: Product, intent: QueryIntent) => {
 
   if (intent.categories.length) {
     if (intent.categories.includes(product.category)) {
-      score += 4;
+      score += 5;
     } else {
-      score -= 5;
+      score -= 8;
     }
   }
 
-  if (intent.materials.length && intent.materials.includes(product.material)) {
+  if (
+    intent.excludedCategories.length &&
+    intent.excludedCategories.includes(product.category)
+  ) {
+    score -= 10;
+  }
+
+  if (
+    intent.clothingIntent &&
+    (product.category === "jewellery" || product.category === "bag")
+  ) {
+    score -= 8;
+  }
+
+  const hasColorMatch =
+    intent.colors.length &&
+    intent.colors.some((color) => product.colors.includes(color));
+  if (hasColorMatch) {
+    score += intent.hardColorFilters.length ? 4 : 3;
+  }
+
+  const hasMaterialMatch =
+    intent.materials.length &&
+    intent.materials.some((material) => product.materials.includes(material));
+  if (hasMaterialMatch) {
+    score += intent.hardMaterialFilters.length ? 4 : 3;
+  }
+
+  if (
+    intent.genders.length &&
+    (intent.genders.includes(product.gender) || product.gender === "unisex")
+  ) {
     score += 3;
   }
 
-  if (intent.colors.length && intent.colors.includes(product.color)) {
+  if (
+    intent.occasions.length &&
+    intent.occasions.some((occasion) => product.occasionTags.includes(occasion))
+  ) {
     score += 3;
   }
 
-  const vibeOrStyleMatches = intent.vibes.filter(
-    (vibe) =>
-      product.vibeTags.includes(vibe) || product.styleTags.includes(vibe),
-  ).length;
-  score += vibeOrStyleMatches * 2;
+  if (
+    intent.vibes.length &&
+    intent.vibes.some(
+      (vibe) => product.vibeTags.includes(vibe) || product.styleTags.includes(vibe),
+    )
+  ) {
+    score += 3;
+  }
+
+  if (
+    intent.seasons.length &&
+    intent.seasons.some((season) => product.seasonTags.includes(season))
+  ) {
+    score += 2;
+  }
+
+  if (
+    intent.fits.length &&
+    intent.fits.some((fit) => product.fitTags.includes(fit))
+  ) {
+    score += 2;
+  }
 
   const searchableText = `${product.name} ${product.brand}`.toLowerCase();
+  const lowerName = product.name.toLowerCase();
+  const lowerBrand = product.brand.toLowerCase();
   intent.words.forEach((word) => {
-    if (searchableText.includes(word)) {
+    if (lowerName.includes(word)) {
+      score += 1;
+    }
+    if (lowerBrand.includes(word)) {
+      score += 1;
+    } else if (searchableText.includes(word)) {
       score += 1;
     }
   });
@@ -208,55 +436,103 @@ const getFilteredProducts = (
     return { items, showFallbackNotice: false };
   }
 
-  const applyHardFilters = (list: Product[]) => {
+  const applyHardFilters = (list: Product[], includePrice = true) => {
     let filtered = list;
 
-    if (intent.maxPrice !== null) {
+    if (intent.excludedCategories.length) {
+      filtered = filtered.filter(
+        (item) => !intent.excludedCategories.includes(item.category),
+      );
+    }
+
+    if (intent.categories.length) {
+      filtered = filtered.filter((item) => intent.categories.includes(item.category));
+    }
+
+    if (intent.genders.length) {
+      filtered = filtered.filter(
+        (item) => intent.genders.includes(item.gender) || item.gender === "unisex",
+      );
+    }
+
+    if (intent.hardColorFilters.length) {
+      filtered = filtered.filter((item) =>
+        intent.hardColorFilters.some((color) => item.colors.includes(color)),
+      );
+    }
+
+    if (intent.hardMaterialFilters.length) {
+      filtered = filtered.filter((item) =>
+        intent.hardMaterialFilters.some((material) =>
+          item.materials.includes(material),
+        ),
+      );
+    }
+
+    if (includePrice && intent.maxPrice !== null) {
       filtered = filtered.filter((item) => item.price <= intent.maxPrice!);
     }
 
-    if (intent.clothingMaterialIntent && !intent.explicitJewellery) {
-      filtered = filtered.filter((item) => item.category !== "jewellery");
+    if (intent.clothingIntent && !intent.bagIntent && !intent.jewelleryIntent) {
+      filtered = filtered.filter(
+        (item) => item.category !== "bag" && item.category !== "jewellery",
+      );
     }
 
     return filtered;
   };
 
-  const fallbackPool = applyHardFilters(fallbackItems);
-  const candidates = applyHardFilters(items);
+  const rankProducts = (list: Product[]) =>
+    list
+      .map((item) => ({
+        item,
+        score: scoreProduct(item, intent),
+      }))
+      .sort((a, b) => {
+        if (intent.sortCheapest && a.item.price !== b.item.price) {
+          return a.item.price - b.item.price;
+        }
 
-  if (!candidates.length) {
-    return { items: fallbackPool.length ? fallbackPool : fallbackItems, showFallbackNotice: true };
-  }
+        if (a.score !== b.score) {
+          return b.score - a.score;
+        }
 
-  const ranked = candidates.map((item) => ({
-    item,
-    score: scoreProduct(item, intent),
-  }));
+        return a.item.price - b.item.price;
+      });
 
-  ranked.sort((a, b) => {
-    if (intent.sortCheapest && a.item.price !== b.item.price) {
-      return a.item.price - b.item.price;
+  const constrainedCandidates = applyHardFilters(items, true);
+  const constrainedFallback = applyHardFilters(fallbackItems, true);
+  const relaxedPriceCandidates =
+    intent.maxPrice !== null ? applyHardFilters(items, false) : [];
+
+  if (!constrainedCandidates.length) {
+    if (relaxedPriceCandidates.length) {
+      return {
+        items: rankProducts(relaxedPriceCandidates).map(({ item }) => item),
+        showFallbackNotice: true,
+      };
     }
 
-    if (a.score !== b.score) {
-      return b.score - a.score;
-    }
-
-    return a.item.price - b.item.price;
-  });
-
-  const strongMatches = ranked.filter(({ score }) => score >= 3);
-  const hasPricingIntent = intent.maxPrice !== null || intent.sortCheapest;
-  const hasStrongMatches = hasPricingIntent
-    ? ranked.length > 0
-    : strongMatches.length > 0;
-
-  if (!hasStrongMatches) {
-    return { items: fallbackPool.length ? fallbackPool : fallbackItems, showFallbackNotice: true };
+    return {
+      items: constrainedFallback.length ? constrainedFallback : fallbackItems,
+      showFallbackNotice: true,
+    };
   }
 
-  return { items: ranked.map(({ item }) => item), showFallbackNotice: false };
+  const rankedCandidates = rankProducts(constrainedCandidates);
+  const strongMatches = rankedCandidates.filter(({ score }) => score >= 5);
+
+  if (!strongMatches.length) {
+    return {
+      items: rankedCandidates.map(({ item }) => item),
+      showFallbackNotice: true,
+    };
+  }
+
+  return {
+    items: rankedCandidates.map(({ item }) => item),
+    showFallbackNotice: false,
+  };
 };
 
 const products: Product[] = [
@@ -268,10 +544,15 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
     category: "trousers",
-    color: "black",
-    material: "wool",
-    styleTags: ["tailored", "minimal"],
-    vibeTags: ["quiet luxury", "formal", "minimal"],
+    gender: "women",
+    colors: ["black"],
+    materials: ["wool"],
+    fitTags: ["wide leg", "tailored"],
+    occasionTags: ["dinner", "office", "formal"],
+    seasonTags: ["winter", "autumn"],
+    vibeTags: ["quiet luxury", "elegant", "minimalist"],
+    styleTags: ["minimalist", "clean", "classy"],
+    url: "#",
   },
   {
     id: 2,
@@ -281,10 +562,15 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
     category: "shirt",
-    color: "beige",
-    material: "linen",
-    styleTags: ["draped", "resort"],
-    vibeTags: ["summer", "marbella", "resort"],
+    gender: "men",
+    colors: ["beige", "cream"],
+    materials: ["linen"],
+    fitTags: ["relaxed"],
+    occasionTags: ["holiday", "beach club", "dinner"],
+    seasonTags: ["summer", "spring"],
+    vibeTags: ["marbella", "resort", "elegant"],
+    styleTags: ["resort", "smart casual", "minimalist"],
+    url: "#",
   },
   {
     id: 3,
@@ -294,10 +580,15 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=1200&q=80",
     category: "hoodie",
-    color: "black",
-    material: "cotton",
-    styleTags: ["oversized", "streetwear"],
-    vibeTags: ["casual", "minimal"],
+    gender: "unisex",
+    colors: ["black"],
+    materials: ["cotton", "knit"],
+    fitTags: ["oversized", "relaxed"],
+    occasionTags: ["airport outfit", "casual"],
+    seasonTags: ["winter", "autumn"],
+    vibeTags: ["casual", "streetwear", "minimalist"],
+    styleTags: ["streetwear", "clean"],
+    url: "#",
   },
   {
     id: 4,
@@ -307,88 +598,195 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=1200&q=80",
     category: "blazer",
-    color: "black",
-    material: "wool",
-    styleTags: ["structured", "tailored"],
-    vibeTags: ["quiet luxury", "formal", "minimal"],
+    gender: "women",
+    colors: ["black"],
+    materials: ["wool"],
+    fitTags: ["tailored"],
+    occasionTags: ["office", "formal", "dinner"],
+    seasonTags: ["winter", "autumn", "spring"],
+    vibeTags: ["quiet luxury", "elegant", "minimalist"],
+    styleTags: ["classy", "smart casual", "minimalist"],
+    url: "#",
   },
   {
     id: 5,
-    brand: "Aeyde",
-    name: "Leather Slip-On Sandals",
-    price: 280,
+    brand: "Arket",
+    name: "White Cotton Essential Tee",
+    price: 55,
     image:
       "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=80",
-    category: "sandals",
-    color: "beige",
-    material: "leather",
-    styleTags: ["minimal", "slip-on"],
-    vibeTags: ["summer", "beach", "resort"],
+    category: "tshirt",
+    gender: "men",
+    colors: ["white"],
+    materials: ["cotton"],
+    fitTags: ["relaxed"],
+    occasionTags: ["casual", "airport outfit"],
+    seasonTags: ["summer", "spring"],
+    vibeTags: ["casual", "minimalist"],
+    styleTags: ["clean", "minimalist"],
+    url: "#",
   },
   {
     id: 6,
-    brand: "Loulou Studio",
-    name: "Silk Resort Shirt in Sand",
-    price: 310,
+    brand: "Aeyde",
+    name: "Leather Slip-On Sandals",
+    price: 180,
     image:
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
-    category: "shirt",
-    color: "white",
-    material: "cotton",
-    styleTags: ["relaxed", "resort"],
-    vibeTags: ["summer", "beach", "casual"],
+    category: "footwear",
+    gender: "women",
+    colors: ["beige", "brown"],
+    materials: ["leather"],
+    fitTags: ["relaxed"],
+    occasionTags: ["holiday", "beach club", "casual"],
+    seasonTags: ["summer"],
+    vibeTags: ["beach", "resort", "casual"],
+    styleTags: ["minimalist", "resort"],
+    url: "#",
   },
   {
     id: 7,
-    brand: "Arket",
-    name: "Linen Blend Summer Co-ord Set",
+    brand: "Loulou Studio",
+    name: "Silk Resort Shirt in Sand",
     price: 180,
     image:
       "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80",
-    category: "trousers",
-    color: "blue",
-    material: "denim",
-    styleTags: ["co-ord", "relaxed"],
-    vibeTags: ["summer", "casual", "minimal"],
+    category: "shirt",
+    gender: "women",
+    colors: ["beige", "cream"],
+    materials: ["silk"],
+    fitTags: ["relaxed"],
+    occasionTags: ["holiday", "dinner", "beach club"],
+    seasonTags: ["summer", "spring"],
+    vibeTags: ["resort", "marbella", "elegant"],
+    styleTags: ["resort", "classy", "clean"],
+    url: "#",
   },
   {
     id: 8,
+    brand: "Levi's",
+    name: "Blue Relaxed Straight Jeans",
+    price: 95,
+    image:
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1200&q=80",
+    category: "jeans",
+    gender: "unisex",
+    colors: ["blue", "navy"],
+    materials: ["denim", "cotton"],
+    fitTags: ["relaxed", "baggy"],
+    occasionTags: ["casual", "airport outfit"],
+    seasonTags: ["autumn", "winter", "spring"],
+    vibeTags: ["casual", "streetwear"],
+    styleTags: ["streetwear", "clean"],
+    url: "#",
+  },
+  {
+    id: 9,
     brand: "Mango",
     name: "Open Knit Beach Club Dress",
     price: 89.99,
     image:
       "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
     category: "dress",
-    color: "red",
-    material: "cotton",
-    styleTags: ["flowy", "beach club"],
-    vibeTags: ["summer", "beach", "marbella", "resort"],
+    gender: "women",
+    colors: ["red"],
+    materials: ["cotton", "knit"],
+    fitTags: ["relaxed"],
+    occasionTags: ["beach club", "holiday", "party"],
+    seasonTags: ["summer"],
+    vibeTags: ["marbella", "beach", "resort"],
+    styleTags: ["resort", "elegant"],
+    url: "#",
   },
   {
-    id: 9,
+    id: 10,
+    brand: "Arket",
+    name: "White Linen Wide-Leg Trousers",
+    price: 120,
+    image:
+      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
+    category: "trousers",
+    gender: "women",
+    colors: ["white", "cream"],
+    materials: ["linen"],
+    fitTags: ["wide leg", "relaxed"],
+    occasionTags: ["holiday", "office", "casual"],
+    seasonTags: ["summer", "spring"],
+    vibeTags: ["quiet luxury", "minimalist", "resort"],
+    styleTags: ["clean", "minimalist", "smart casual"],
+    url: "#",
+  },
+  {
+    id: 11,
     brand: "Demellier",
     name: "Minimal Leather Shoulder Bag",
     price: 360,
     image:
       "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80",
     category: "bag",
-    color: "white",
-    material: "leather",
-    styleTags: ["structured", "minimal"],
-    vibeTags: ["quiet luxury", "formal", "minimal"],
+    gender: "women",
+    colors: ["white", "beige"],
+    materials: ["leather"],
+    fitTags: ["relaxed"],
+    occasionTags: ["office", "dinner", "formal"],
+    seasonTags: ["autumn", "winter", "spring"],
+    vibeTags: ["quiet luxury", "classy", "minimalist"],
+    styleTags: ["clean", "elegant", "minimalist"],
+    url: "#",
   },
   {
-    id: 10,
+    id: 12,
     brand: "Mejuri",
     name: "Gold Everyday Hoop Earrings",
     price: 110,
     image:
       "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&q=80",
     category: "jewellery",
-    color: "beige",
-    material: "leather",
-    styleTags: ["delicate", "everyday"],
-    vibeTags: ["minimal", "casual"],
+    gender: "women",
+    colors: ["beige"],
+    materials: ["silk"],
+    fitTags: ["relaxed"],
+    occasionTags: ["party", "dinner", "casual"],
+    seasonTags: ["summer", "spring", "autumn"],
+    vibeTags: ["minimalist", "elegant"],
+    styleTags: ["clean", "classy"],
+    url: "#",
+  },
+  {
+    id: 13,
+    brand: "Common Projects",
+    name: "Minimal White Leather Sneakers",
+    price: 430,
+    image:
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80",
+    category: "footwear",
+    gender: "men",
+    colors: ["white"],
+    materials: ["leather"],
+    fitTags: ["slim fit"],
+    occasionTags: ["casual", "airport outfit", "office"],
+    seasonTags: ["spring", "summer", "autumn"],
+    vibeTags: ["quiet luxury", "minimalist"],
+    styleTags: ["clean", "smart casual"],
+    url: "#",
+  },
+  {
+    id: 14,
+    brand: "Uniqlo",
+    name: "Black Cotton Oversized Tee",
+    price: 35,
+    image:
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
+    category: "tshirt",
+    gender: "unisex",
+    colors: ["black"],
+    materials: ["cotton"],
+    fitTags: ["oversized", "relaxed"],
+    occasionTags: ["casual", "gym", "airport outfit"],
+    seasonTags: ["summer", "spring"],
+    vibeTags: ["streetwear", "casual"],
+    styleTags: ["streetwear", "clean"],
+    url: "#",
   },
 ];
 
@@ -405,6 +803,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [gridAnimationKey, setGridAnimationKey] = useState(0);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const activeIntent = useMemo(() => parseQueryIntent(activeQuery), [activeQuery]);
   const filteredResults = useMemo(
     () => getFilteredProducts(activeQuery, products, fallbackTrendingProducts),
     [activeQuery],
@@ -580,6 +979,17 @@ export default function Home() {
             {!isLoading && filteredResults.showFallbackNotice ? (
               <p className="text-sm text-zinc-500">
                 No exact match — showing similar styles.
+              </p>
+            ) : null}
+            {!isLoading ? (
+              <p className="text-xs text-zinc-500">
+                Detected: category=[{activeIntent.categories.join(", ") || "-"}],
+                color=[{activeIntent.colors.join(", ") || "-"}], material=[
+                {activeIntent.materials.join(", ") || "-"}], gender=[
+                {activeIntent.genders.join(", ") || "-"}], maxPrice=[
+                {activeIntent.maxPrice ?? "-"}], sort=[
+                {activeIntent.sortCheapest ? "price_asc" : "-"}], excluded=[
+                {activeIntent.excludedCategories.join(", ") || "-"}]
               </p>
             ) : null}
 
