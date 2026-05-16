@@ -1,7 +1,16 @@
 "use client";
 
-import { FormEvent, Suspense, useEffect, useMemo, useRef, useState } from "react";
-import Link from "next/link";
+import {
+  FormEvent,
+  Suspense,
+  memo,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
+import Image from "next/image";
+import Link, { type LinkProps } from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const suggestions = [
@@ -64,6 +73,50 @@ type ValidationResult = {
   passed: boolean;
   reason: string;
 };
+
+type ProductCardProps = {
+  product: Product;
+  href: LinkProps["href"];
+  imageSizes: string;
+  priority?: boolean;
+};
+
+const ProductCard = memo(function ProductCard({
+  product,
+  href,
+  imageSizes,
+  priority = false,
+}: ProductCardProps) {
+  return (
+    <Link
+      href={href}
+      className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
+    >
+      <article>
+        <div className="relative aspect-[2/3] overflow-hidden rounded-2xl bg-zinc-100">
+          <Image
+            src={product.image}
+            alt={product.name}
+            fill
+            sizes={imageSizes}
+            className="object-cover transition duration-500 group-hover:scale-[1.04]"
+            priority={priority}
+            loading={priority ? "eager" : "lazy"}
+          />
+        </div>
+        <div className="mt-3 space-y-1">
+          <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
+            {product.brand}
+          </p>
+          <p className="truncate text-sm text-zinc-800">{product.name}</p>
+          <p className="text-sm font-semibold text-zinc-900">
+            {formatPrice(product.price)}
+          </p>
+        </div>
+      </article>
+    </Link>
+  );
+});
 
 const colorKeywords: Record<string, string[]> = {
   black: ["black"],
@@ -1086,6 +1139,7 @@ function HomeContent() {
     [hasSearched, schemaQuery],
   );
   const trackingQuery = hasSearched ? currentQuery || activeQuery : "";
+  const productImageSizes = "(max-width: 768px) 50vw, 25vw";
   const tagDrivenPhrases = useMemo(() => {
     const topProducts = filteredResults.items.slice(0, 8);
     const tags = topProducts.flatMap((product) => [
@@ -1440,32 +1494,16 @@ function HomeContent() {
             </section>
 
             <section className="space-y-5">
-              <p className="text-sm font-medium text-zinc-500">Trending now</p>
+              <h2 className="text-sm font-medium text-zinc-500">Trending now</h2>
               <div className="grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-4 md:gap-x-6 md:gap-y-10">
-                {previewProducts.map((product) => (
-                  <Link
+                {previewProducts.map((product, index) => (
+                  <ProductCard
                     key={product.id}
                     href={buildOutboundHref(product.id, trackingQuery)}
-                    className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
-                  >
-                    <article>
-                      <div
-                        className="aspect-[2/3] overflow-hidden rounded-2xl bg-zinc-100 bg-cover bg-center transition duration-500 group-hover:scale-[1.04]"
-                        style={{ backgroundImage: `url(${product.image})` }}
-                        aria-label={product.name}
-                        role="img"
-                      />
-                      <div className="mt-3 space-y-1">
-                        <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
-                          {product.brand}
-                        </p>
-                        <p className="truncate text-sm text-zinc-800">{product.name}</p>
-                        <p className="text-sm font-semibold text-zinc-900">
-                          {formatPrice(product.price)}
-                        </p>
-                      </div>
-                    </article>
-                  </Link>
+                    product={product}
+                    imageSizes={productImageSizes}
+                    priority={index < 2}
+                  />
                 ))}
               </div>
             </section>
@@ -1493,38 +1531,22 @@ function HomeContent() {
                 isLoading ? "opacity-70" : "opacity-100"
               }`}
             >
-              {filteredResults.items.map((product) => (
-                <Link
+              {filteredResults.items.map((product, index) => (
+                <ProductCard
                   key={product.id}
                   href={buildOutboundHref(product.id, trackingQuery)}
-                  className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
-                >
-                  <article>
-                    <div
-                      className="aspect-[2/3] overflow-hidden rounded-2xl bg-zinc-100 bg-cover bg-center transition duration-500 group-hover:scale-[1.04]"
-                      style={{ backgroundImage: `url(${product.image})` }}
-                      aria-label={product.name}
-                      role="img"
-                    />
-                    <div className="mt-3 space-y-1">
-                      <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
-                        {product.brand}
-                      </p>
-                      <p className="truncate text-sm text-zinc-800">{product.name}</p>
-                      <p className="text-sm font-semibold text-zinc-900">
-                        {formatPrice(product.price)}
-                      </p>
-                    </div>
-                  </article>
-                </Link>
+                  product={product}
+                  imageSizes={productImageSizes}
+                  priority={index < 2}
+                />
               ))}
             </div>
             {!isLoading ? (
               <div className="space-y-5 pt-2">
                 <div className="space-y-2">
-                  <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
                     Related searches
-                  </p>
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     {relatedSearchLinks.map((term) => (
                       <Link
@@ -1538,9 +1560,9 @@ function HomeContent() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
                     Trending aesthetics
-                  </p>
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     {trendingAestheticsLinks.map((term) => (
                       <Link
@@ -1554,9 +1576,9 @@ function HomeContent() {
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
                     Similar vibes
-                  </p>
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     {similarVibesLinks.map((term) => (
                       <Link
