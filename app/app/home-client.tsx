@@ -1040,6 +1040,50 @@ function HomeContent() {
     () => getFilteredProducts(activeQuery, products),
     [activeQuery],
   );
+  const visibleProducts = hasSearched ? filteredResults.items : previewProducts;
+  const schemaQuery = hasSearched ? currentQuery || activeQuery : "";
+  const productStructuredData = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      itemListElement: visibleProducts.map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        item: {
+          "@type": "Product",
+          name: product.name,
+          image: product.image,
+          category: product.category,
+          brand: {
+            "@type": "Brand",
+            name: product.brand,
+          },
+          offers: {
+            "@type": "Offer",
+            price: product.price,
+            priceCurrency: "EUR",
+            url: product.productUrl,
+            availability: "https://schema.org/InStock",
+          },
+        },
+      })),
+    }),
+    [visibleProducts],
+  );
+  const pageStructuredData = useMemo(
+    () => ({
+      "@context": "https://schema.org",
+      "@type": hasSearched ? "SearchResultsPage" : "CollectionPage",
+      name: hasSearched
+        ? `SocialMall search results for ${schemaQuery}`
+        : "SocialMall fashion discovery",
+      description: hasSearched
+        ? `Fashion search results for ${schemaQuery}.`
+        : "Discover curated fashion looks from independent brands.",
+      about: schemaQuery || undefined,
+    }),
+    [hasSearched, schemaQuery],
+  );
   const trackingQuery = hasSearched ? currentQuery || activeQuery : "";
 
   const runSearch = (rawQuery: string) => {
@@ -1233,6 +1277,15 @@ function HomeContent() {
 
   return (
     <div className="min-h-screen bg-white text-zinc-900">
+      <script
+        type="application/ld+json"
+        // JSON-LD stays invisible while improving search engine understanding.
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(pageStructuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productStructuredData) }}
+      />
       <header className="mx-auto w-full max-w-6xl px-4 pt-6 sm:px-6 lg:px-8 lg:pt-7">
         <nav className="flex items-center">
           <button
