@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 
 const suggestions = [
   "quiet luxury",
@@ -1199,26 +1200,29 @@ export default function Home() {
               <p className="text-sm font-medium text-zinc-500">Trending now</p>
               <div className="grid grid-cols-2 gap-x-4 gap-y-8 md:grid-cols-4 md:gap-x-6 md:gap-y-10">
                 {previewProducts.map((product) => (
-                  <article
+                  <Link
                     key={product.id}
+                    href={`/out/${product.id}`}
                     className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
                   >
-                    <div
-                      className="aspect-[2/3] overflow-hidden rounded-2xl bg-zinc-100 bg-cover bg-center transition duration-500 group-hover:scale-[1.04]"
-                      style={{ backgroundImage: `url(${product.image})` }}
-                      aria-label={product.name}
-                      role="img"
-                    />
-                    <div className="mt-3 space-y-1">
-                      <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
-                        {product.brand}
-                      </p>
-                      <p className="truncate text-sm text-zinc-800">{product.name}</p>
-                      <p className="text-sm font-semibold text-zinc-900">
-                        {formatPrice(product.price)}
-                      </p>
-                    </div>
-                  </article>
+                    <article>
+                      <div
+                        className="aspect-[2/3] overflow-hidden rounded-2xl bg-zinc-100 bg-cover bg-center transition duration-500 group-hover:scale-[1.04]"
+                        style={{ backgroundImage: `url(${product.image})` }}
+                        aria-label={product.name}
+                        role="img"
+                      />
+                      <div className="mt-3 space-y-1">
+                        <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
+                          {product.brand}
+                        </p>
+                        <p className="truncate text-sm text-zinc-800">{product.name}</p>
+                        <p className="text-sm font-semibold text-zinc-900">
+                          {formatPrice(product.price)}
+                        </p>
+                      </div>
+                    </article>
+                  </Link>
                 ))}
               </div>
             </section>
@@ -1247,26 +1251,29 @@ export default function Home() {
               }`}
             >
               {filteredResults.items.map((product) => (
-                <article
+                <Link
                   key={product.id}
+                  href={`/out/${product.id}`}
                   className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
                 >
-                  <div
-                    className="aspect-[2/3] overflow-hidden rounded-2xl bg-zinc-100 bg-cover bg-center transition duration-500 group-hover:scale-[1.04]"
-                    style={{ backgroundImage: `url(${product.image})` }}
-                    aria-label={product.name}
-                    role="img"
-                  />
-                  <div className="mt-3 space-y-1">
-                    <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
-                      {product.brand}
-                    </p>
-                    <p className="truncate text-sm text-zinc-800">{product.name}</p>
-                    <p className="text-sm font-semibold text-zinc-900">
-                      {formatPrice(product.price)}
-                    </p>
-                  </div>
-                </article>
+                  <article>
+                    <div
+                      className="aspect-[2/3] overflow-hidden rounded-2xl bg-zinc-100 bg-cover bg-center transition duration-500 group-hover:scale-[1.04]"
+                      style={{ backgroundImage: `url(${product.image})` }}
+                      aria-label={product.name}
+                      role="img"
+                    />
+                    <div className="mt-3 space-y-1">
+                      <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
+                        {product.brand}
+                      </p>
+                      <p className="truncate text-sm text-zinc-800">{product.name}</p>
+                      <p className="text-sm font-semibold text-zinc-900">
+                        {formatPrice(product.price)}
+                      </p>
+                    </div>
+                  </article>
+                </Link>
               ))}
             </div>
           </section>
