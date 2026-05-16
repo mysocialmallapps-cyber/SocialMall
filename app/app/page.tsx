@@ -809,7 +809,6 @@ export default function Home() {
   const [refineInput, setRefineInput] = useState("");
   const [activeQuery, setActiveQuery] = useState("");
   const [currentQuery, setCurrentQuery] = useState("");
-  const [querySegments, setQuerySegments] = useState<string[]>([]);
   const [hasSearched, setHasSearched] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [gridAnimationKey, setGridAnimationKey] = useState(0);
@@ -839,17 +838,39 @@ export default function Home() {
     }, 500);
   };
 
+  const buildRefinedQuery = (baseQuery: string, refinement: string) => {
+    const base = baseQuery.trim();
+    const next = refinement.trim();
+    if (!next) return base;
+    if (!base) return next;
+
+    const normalize = (value: string) =>
+      value.toLowerCase().replace(/\s+/g, " ").trim();
+
+    const normalizedBase = normalize(base);
+    const normalizedNext = normalize(next);
+
+    if (normalizedNext.startsWith(normalizedBase)) {
+      return next;
+    }
+
+    if (normalizedBase.includes(normalizedNext) && normalizedNext.length > 2) {
+      return base;
+    }
+
+    const cleanedRefinement = next.replace(/^(and|with|for|to)\s+/i, "");
+    return `${base} ${cleanedRefinement}`.replace(/\s+/g, " ").trim();
+  };
+
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const query = searchInput.trim();
     if (!query) return;
-    setQuerySegments([query]);
     runSearch(query);
   };
 
   const handleSuggestionClick = (suggestion: string) => {
     setSearchInput(suggestion);
-    setQuerySegments([suggestion]);
     runSearch(suggestion);
   };
 
@@ -858,14 +879,10 @@ export default function Home() {
     const refinement = refineInput.trim();
     if (!refinement) return;
 
-    const baseSegments = querySegments.length
-      ? querySegments
-      : currentQuery
-        ? [currentQuery]
-        : [];
-    const nextSegments = [...baseSegments, refinement];
-    const nextQuery = nextSegments.join(" ").trim();
-    setQuerySegments(nextSegments);
+    const baseQuery = currentQuery || activeQuery;
+    const nextQuery = buildRefinedQuery(baseQuery, refinement);
+    if (!nextQuery) return;
+
     setRefineInput("");
     setSearchInput(nextQuery);
     runSearch(nextQuery);
@@ -881,7 +898,6 @@ export default function Home() {
     setRefineInput("");
     setActiveQuery("");
     setCurrentQuery("");
-    setQuerySegments([]);
     setHasSearched(false);
     setIsLoading(false);
     setGridAnimationKey(0);
