@@ -4,6 +4,8 @@ import HomeClient from "./home-client";
 const DEFAULT_TITLE = "SocialMall | Discover Independent Fashion";
 const DEFAULT_DESCRIPTION =
   "Discover curated outfits, styles, and brands from independent fashion labels.";
+const DEFAULT_SOCIAL_IMAGE =
+  "https://socialmall.com/og/socialmall-default-share.jpg";
 
 const pluralizedQueryWords: Record<string, string> = {
   tshirt: "tshirts",
@@ -65,11 +67,13 @@ const buildSearchMetadata = (query: string): Metadata => {
       openGraph: {
         title: DEFAULT_TITLE,
         description: DEFAULT_DESCRIPTION,
+        images: [DEFAULT_SOCIAL_IMAGE],
       },
       twitter: {
-        card: "summary",
+        card: "summary_large_image",
         title: DEFAULT_TITLE,
         description: DEFAULT_DESCRIPTION,
+        images: [DEFAULT_SOCIAL_IMAGE],
       },
     };
   }
@@ -85,11 +89,13 @@ const buildSearchMetadata = (query: string): Metadata => {
     openGraph: {
       title,
       description,
+      images: [DEFAULT_SOCIAL_IMAGE],
     },
     twitter: {
-      card: "summary",
+      card: "summary_large_image",
       title,
       description,
+      images: [DEFAULT_SOCIAL_IMAGE],
     },
   };
 };
