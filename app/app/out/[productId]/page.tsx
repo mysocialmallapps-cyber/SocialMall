@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
-import { products } from "../../page";
+import { products } from "../../home-client";
 import { trackProductClick } from "@/lib/tracking";
 
 export default function OutboundRedirectPage() {
