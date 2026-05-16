@@ -345,6 +345,31 @@ const getFilteredProducts = (
     new Set([...intent.onlyFilters.materials]),
   );
   const exclusionFilters = Array.from(new Set(intent.exclusions));
+  const normalizedQuery = query.toLowerCase();
+  const clothingCategories = new Set([
+    "tshirt",
+    "shirt",
+    "hoodie",
+    "trousers",
+    "jeans",
+    "dress",
+    "blazer",
+  ]);
+  const accessoryCategories = new Set(["bag", "jewellery", "watch", "accessory"]);
+  const explicitAccessoryIntent = strictCategoryFilters.some((category) =>
+    accessoryCategories.has(category),
+  );
+  const clothingIntent =
+    !explicitAccessoryIntent &&
+    !strictCategoryFilters.includes("footwear") &&
+    (strictCategoryFilters.some((category) => clothingCategories.has(category)) ||
+      intent.materials.length > 0 ||
+      intent.fits.length > 0 ||
+      intent.occasions.length > 0 ||
+      intent.seasons.length > 0 ||
+      intent.vibes.length > 0 ||
+      intent.styles.length > 0 ||
+      containsTerm(normalizedQuery, "outfit"));
 
   const applyNonNegotiableFilters = (list: Product[]) =>
     list.filter((product) => {
@@ -355,6 +380,10 @@ const getFilteredProducts = (
       }
 
       if (intent.maxPrice !== null && product.price > intent.maxPrice) {
+        return false;
+      }
+
+      if (clothingIntent && accessoryCategories.has(productCategory)) {
         return false;
       }
 
@@ -390,23 +419,129 @@ const getFilteredProducts = (
     return true;
   });
 
-  const sortByMode = (list: Product[]) => {
-    if (intent.sortMode !== "cheapest") {
-      return list;
+  const getRelevanceScore = (product: Product) => {
+    const productCategory = normalizeProductCategory(product.category);
+    let score = 0;
+
+    if (strictCategoryFilters.length) {
+      if (strictCategoryFilters.includes(productCategory)) {
+        score += 5;
+      } else {
+        score -= 8;
+      }
     }
 
-    return [...list].sort((a, b) => a.price - b.price);
+    if (
+      intent.colors.length &&
+      intent.colors.some((color) => product.colors.includes(color))
+    ) {
+      score += 4;
+    }
+
+    if (
+      intent.materials.length &&
+      intent.materials.some((material) => product.materials.includes(material))
+    ) {
+      score += 4;
+    }
+
+    if (
+      intent.genders.length &&
+      product.gender.some(
+        (gender) => intent.genders.includes(gender) || gender === "unisex",
+      )
+    ) {
+      score += 3;
+    }
+
+    if (
+      intent.occasions.length &&
+      intent.occasions.some((occasion) => product.occasionTags.includes(occasion))
+    ) {
+      score += 3;
+    }
+
+    if (
+      intent.vibes.length &&
+      intent.vibes.some((vibe) => product.vibeTags.includes(vibe))
+    ) {
+      score += 3;
+    }
+
+    if (
+      intent.seasons.length &&
+      intent.seasons.some((season) => product.seasonTags.includes(season))
+    ) {
+      score += 2;
+    }
+
+    if (
+      intent.fits.length &&
+      intent.fits.some((fit) => product.fitTags.includes(fit))
+    ) {
+      score += 2;
+    }
+
+    if (
+      intent.styles.length &&
+      intent.styles.some((style) => product.styleTags.includes(style))
+    ) {
+      score += 3;
+    }
+
+    const lowerName = product.name.toLowerCase();
+    const lowerBrand = product.brand.toLowerCase();
+    intent.words.forEach((word) => {
+      if (lowerName.includes(word)) {
+        score += 1;
+      }
+      if (lowerBrand.includes(word)) {
+        score += 1;
+      }
+    });
+
+    if (exclusionFilters.includes(productCategory)) {
+      score -= 10;
+    }
+
+    if (clothingIntent && accessoryCategories.has(productCategory)) {
+      score -= 8;
+    }
+
+    return score;
+  };
+
+  const rankProducts = (list: Product[]) => {
+    const scored = list.map((product) => ({
+      product,
+      score: getRelevanceScore(product),
+    }));
+
+    scored.sort((a, b) => {
+      if (intent.sortMode === "cheapest" && a.product.price !== b.product.price) {
+        return a.product.price - b.product.price;
+      }
+
+      if (a.score !== b.score) {
+        return b.score - a.score;
+      }
+
+      return a.product.price - b.product.price;
+    });
+
+    return scored.map(({ product }) => product);
   };
 
   if (strictMatches.length) {
     return {
-      items: sortByMode(strictMatches),
+      items: rankProducts(strictMatches),
       showFallbackNotice: false,
     };
   }
 
+  const fallbackCandidates = applyNonNegotiableFilters(items);
   return {
-    items: sortByMode(applyNonNegotiableFilters(items)),
+    items: rankProducts(fallbackCandidates),
     showFallbackNotice: true,
   };
 };
