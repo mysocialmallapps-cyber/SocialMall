@@ -116,6 +116,11 @@ export async function generateMetadata({
   return buildSearchMetadata(query);
 }
 
-export default function Page() {
-  return <HomeClient />;
+type PageProps = {
+  searchParams?: SearchParamsRecord | Promise<SearchParamsRecord>;
+};
+
+export default async function Page({ searchParams }: PageProps) {
+  const initialQuery = await getSearchQueryFromParams(searchParams);
+  return <HomeClient initialQuery={initialQuery} />;
 }

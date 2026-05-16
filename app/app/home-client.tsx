@@ -2,6 +2,7 @@
 
 import {
   FormEvent,
+  MouseEvent,
   Suspense,
   memo,
   useEffect,
@@ -1074,17 +1075,18 @@ export const products: Product[] = [
 
 const fallbackTrendingProducts = products.slice(0, 8);
 
-function HomeContent() {
+function HomeContent({ initialQuery }: { initialQuery: string }) {
+  const seededQuery = initialQuery.trim();
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const urlQuery = searchParams.get("q")?.trim() ?? "";
   const previewProducts = fallbackTrendingProducts.slice(0, 4);
-  const [searchInput, setSearchInput] = useState("");
+  const [searchInput, setSearchInput] = useState(seededQuery);
   const [refineInput, setRefineInput] = useState("");
-  const [activeQuery, setActiveQuery] = useState("");
-  const [currentQuery, setCurrentQuery] = useState("");
-  const [hasSearched, setHasSearched] = useState(false);
+  const [activeQuery, setActiveQuery] = useState(seededQuery);
+  const [currentQuery, setCurrentQuery] = useState(seededQuery);
+  const [hasSearched, setHasSearched] = useState(Boolean(seededQuery));
   const [isLoading, setIsLoading] = useState(false);
   const [gridAnimationKey, setGridAnimationKey] = useState(0);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
@@ -1368,6 +1370,19 @@ function HomeContent() {
     updateSearchUrl("");
   };
 
+  const handleInternalSearchLinkClick = (
+    event: MouseEvent<HTMLAnchorElement>,
+    query: string,
+  ) => {
+    event.preventDefault();
+    const nextQuery = query.trim();
+    if (!nextQuery) return;
+
+    setSearchInput(nextQuery);
+    runSearch(nextQuery);
+    updateSearchUrl(nextQuery);
+  };
+
   useEffect(() => {
     return () => {
       if (timeoutRef.current) {
@@ -1377,6 +1392,10 @@ function HomeContent() {
   }, []);
 
   useEffect(() => {
+    if (urlQuery === currentQuery && hasSearched === Boolean(urlQuery)) {
+      return;
+    }
+
     if (
       skipNextUrlSyncRef.current !== null &&
       skipNextUrlSyncRef.current === urlQuery
@@ -1413,7 +1432,7 @@ function HomeContent() {
     return () => {
       window.clearTimeout(syncTimer);
     };
-  }, [urlQuery]);
+  }, [currentQuery, hasSearched, urlQuery]);
 
   useEffect(() => {
     if (process.env.NODE_ENV === "production") {
@@ -1552,6 +1571,9 @@ function HomeContent() {
                       <Link
                         key={`related-${term}`}
                         href={buildSearchHref(term)}
+                        onClick={(event) =>
+                          handleInternalSearchLinkClick(event, term)
+                        }
                         className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
                       >
                         {term}
@@ -1568,6 +1590,9 @@ function HomeContent() {
                       <Link
                         key={`aesthetic-${term}`}
                         href={buildSearchHref(term)}
+                        onClick={(event) =>
+                          handleInternalSearchLinkClick(event, term)
+                        }
                         className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
                       >
                         {term}
@@ -1584,6 +1609,9 @@ function HomeContent() {
                       <Link
                         key={`vibe-${term}`}
                         href={buildSearchHref(term)}
+                        onClick={(event) =>
+                          handleInternalSearchLinkClick(event, term)
+                        }
                         className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
                       >
                         {term}
@@ -1633,10 +1661,10 @@ function HomeContent() {
   );
 }
 
-export default function Home() {
+export default function Home({ initialQuery = "" }: { initialQuery?: string }) {
   return (
     <Suspense fallback={null}>
-      <HomeContent />
+      <HomeContent initialQuery={initialQuery} />
     </Suspense>
   );
 }
