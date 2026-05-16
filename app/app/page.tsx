@@ -53,6 +53,12 @@ type FilterResult = {
   showFallbackNotice: boolean;
 };
 
+type ValidationResult = {
+  query: string;
+  passed: boolean;
+  reason: string;
+};
+
 const colorKeywords: Record<string, string[]> = {
   black: ["black"],
   white: ["white"],
@@ -321,6 +327,124 @@ const formatPrice = (amount: number) => {
   }).format(amount);
 };
 
+const normalizeProductCategory = (category: string) => {
+  if (category === "sandals") return "footwear";
+  return category;
+};
+
+const isPriceSortedAscending = (list: Product[]) =>
+  list.every((item, index) => index === 0 || list[index - 1].price <= item.price);
+
+const runSearchValidationCases = (items: Product[]): ValidationResult[] => {
+  const cases = [
+    {
+      query: "black tshirt under 100",
+      check: (result: FilterResult) =>
+        result.items.every(
+          (item) =>
+            normalizeProductCategory(item.category) === "tshirt" && item.price <= 100,
+        ),
+      reason: "Expected only tshirts under 100.",
+    },
+    {
+      query: "white linen shirt",
+      check: (result: FilterResult) =>
+        result.items.every(
+          (item) => normalizeProductCategory(item.category) === "shirt",
+        ),
+      reason: "Expected only shirts for shirt-intent query.",
+    },
+    {
+      query: "cheapest summer outfit",
+      check: (result: FilterResult) => isPriceSortedAscending(result.items),
+      reason: "Expected cheapest intent to sort ascending by price.",
+    },
+    {
+      query: "black hoodie",
+      check: (result: FilterResult) =>
+        result.items.every(
+          (item) => normalizeProductCategory(item.category) === "hoodie",
+        ),
+      reason: "Expected only hoodies for hoodie query.",
+    },
+    {
+      query: "only black trousers",
+      check: (result: FilterResult) =>
+        result.items.every(
+          (item) =>
+            normalizeProductCategory(item.category) === "trousers" &&
+            item.colors.includes("black"),
+        ),
+      reason: "Expected strict black trousers filtering.",
+    },
+    {
+      query: "no bags",
+      check: (result: FilterResult) =>
+        result.items.every((item) => normalizeProductCategory(item.category) !== "bag"),
+      reason: "Expected bag exclusions to be strict.",
+    },
+    {
+      query: "red tshirt under 50",
+      check: (result: FilterResult) =>
+        result.items.every(
+          (item) =>
+            normalizeProductCategory(item.category) === "tshirt" && item.price <= 50,
+        ),
+      reason: "Expected tshirt-only results under 50.",
+    },
+    {
+      query: "linen only",
+      check: (result: FilterResult) =>
+        result.items.every((item) => item.materials.includes("linen")),
+      reason: "Expected strict linen-only filtering.",
+    },
+    {
+      query: "oversized black hoodie",
+      check: (result: FilterResult) =>
+        result.items.every(
+          (item) => normalizeProductCategory(item.category) === "hoodie",
+        ),
+      reason: "Expected hoodie category enforcement.",
+    },
+    {
+      query: "quiet luxury summer outfit",
+      check: (result: FilterResult) =>
+        result.items.every((item) => {
+          const category = normalizeProductCategory(item.category);
+          return category !== "jewellery" && category !== "bag";
+        }),
+      reason: "Expected clothing intent to avoid jewellery and bags.",
+    },
+    {
+      query: "Marbella beach club outfit",
+      check: (result: FilterResult) =>
+        result.items.every((item) => {
+          const category = normalizeProductCategory(item.category);
+          return category !== "jewellery" && category !== "bag";
+        }),
+      reason: "Expected clothing outfit intent to avoid accessory junk.",
+    },
+    {
+      query: "black linen trousers under 200",
+      check: (result: FilterResult) =>
+        result.items.every(
+          (item) =>
+            normalizeProductCategory(item.category) === "trousers" && item.price <= 200,
+        ),
+      reason: "Expected trousers under 200 only.",
+    },
+  ];
+
+  return cases.map(({ query, check, reason }) => {
+    const result = getFilteredProducts(query, items);
+    return {
+      query,
+      passed: check(result),
+      reason,
+    };
+  });
+};
+
 const getFilteredProducts = (
   query: string,
   items: Product[],
@@ -329,11 +453,6 @@ const getFilteredProducts = (
   if (!query.trim()) {
     return { items, showFallbackNotice: false };
   }
-
-  const normalizeProductCategory = (category: string) => {
-    if (category === "sandals") return "footwear";
-    return category;
-  };
 
   const strictCategoryFilters = Array.from(
     new Set([...intent.categories, ...intent.onlyFilters.categories]),
@@ -418,6 +537,13 @@ const getFilteredProducts = (
 
     return true;
   });
+
+  const softSignalsPresent =
+    intent.vibes.length > 0 ||
+    intent.styles.length > 0 ||
+    intent.occasions.length > 0 ||
+    intent.seasons.length > 0 ||
+    intent.fits.length > 0;
 
   const getRelevanceScore = (product: Product) => {
     const productCategory = normalizeProductCategory(product.category);
@@ -532,10 +658,37 @@ const getFilteredProducts = (
     return scored.map(({ product }) => product);
   };
 
+  const softSignalMatches = strictMatches.filter((product) => {
+    const hasOccasion =
+      intent.occasions.length > 0 &&
+      intent.occasions.some((occasion) => product.occasionTags.includes(occasion));
+    const hasVibe =
+      intent.vibes.length > 0 &&
+      intent.vibes.some((vibe) => product.vibeTags.includes(vibe));
+    const hasStyle =
+      intent.styles.length > 0 &&
+      intent.styles.some((style) => product.styleTags.includes(style));
+    const hasSeason =
+      intent.seasons.length > 0 &&
+      intent.seasons.some((season) => product.seasonTags.includes(season));
+    const hasFit =
+      intent.fits.length > 0 &&
+      intent.fits.some((fit) => product.fitTags.includes(fit));
+
+    return hasOccasion || hasVibe || hasStyle || hasSeason || hasFit;
+  });
+
+  if (softSignalsPresent && softSignalMatches.length) {
+    return {
+      items: rankProducts(softSignalMatches),
+      showFallbackNotice: false,
+    };
+  }
+
   if (strictMatches.length) {
     return {
       items: rankProducts(strictMatches),
-      showFallbackNotice: false,
+      showFallbackNotice: softSignalsPresent,
     };
   }
 
@@ -909,6 +1062,23 @@ export default function Home() {
         clearTimeout(timeoutRef.current);
       }
     };
+  }, []);
+
+  useEffect(() => {
+    if (process.env.NODE_ENV === "production") {
+      return;
+    }
+
+    const validationResults = runSearchValidationCases(products);
+    const failedCases = validationResults.filter((result) => !result.passed);
+
+    if (failedCases.length) {
+      console.warn("SocialMall search validation failures:", failedCases);
+    } else {
+      console.info(
+        "SocialMall search validation passed for curated fallback test cases.",
+      );
+    }
   }, []);
 
   return (
