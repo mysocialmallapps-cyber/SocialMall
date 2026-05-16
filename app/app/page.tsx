@@ -257,7 +257,7 @@ const detectOnlyFilters = (
     return hardMatches;
   }, []);
 
-const parseQueryIntent = (query: string): QueryIntent => {
+export const parseQueryIntent = (query: string): QueryIntent => {
   const normalizedQuery = query.toLowerCase();
   const allTokens = tokenizeQuery(query);
   const meaningfulWords = Array.from(
@@ -275,6 +275,9 @@ const parseQueryIntent = (query: string): QueryIntent => {
   const vibes = detectIntentValues(normalizedQuery, vibeKeywords);
   const styles = detectIntentValues(normalizedQuery, styleKeywords);
   const excludedCategories = detectExcludedCategories(normalizedQuery);
+  const normalizedCategories = categories.filter(
+    (category) => !excludedCategories.includes(category),
+  );
   const onlyCategoryFilters = detectOnlyFilters(normalizedQuery, categoryKeywords);
   const onlyColorFilters = detectOnlyFilters(normalizedQuery, colorKeywords);
   const onlyMaterialFilters = detectOnlyFilters(normalizedQuery, materialKeywords);
@@ -295,7 +298,7 @@ const parseQueryIntent = (query: string): QueryIntent => {
 
   return {
     words: meaningfulWords,
-    categories,
+    categories: normalizedCategories,
     colors,
     materials,
     vibes,
@@ -335,7 +338,7 @@ const normalizeProductCategory = (category: string) => {
 const isPriceSortedAscending = (list: Product[]) =>
   list.every((item, index) => index === 0 || list[index - 1].price <= item.price);
 
-const runSearchValidationCases = (items: Product[]): ValidationResult[] => {
+export const runSearchValidationCases = (items: Product[]): ValidationResult[] => {
   const cases = [
     {
       query: "black tshirt under 100",
@@ -445,7 +448,7 @@ const runSearchValidationCases = (items: Product[]): ValidationResult[] => {
   });
 };
 
-const getFilteredProducts = (
+export const getFilteredProducts = (
   query: string,
   items: Product[],
 ): FilterResult => {
@@ -699,7 +702,7 @@ const getFilteredProducts = (
   };
 };
 
-const products: Product[] = [
+export const products: Product[] = [
   {
     id: 1,
     brand: "The Row",
@@ -966,7 +969,6 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [gridAnimationKey, setGridAnimationKey] = useState(0);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const activeIntent = useMemo(() => parseQueryIntent(activeQuery), [activeQuery]);
   const filteredResults = useMemo(
     () => getFilteredProducts(activeQuery, products),
     [activeQuery],
@@ -1178,17 +1180,6 @@ export default function Home() {
                 No exact match — showing similar styles.
               </p>
             ) : null}
-            {!isLoading ? (
-              <p className="text-xs text-zinc-500">
-                Detected: category=[{activeIntent.categories.join(", ") || "-"}],
-                color=[{activeIntent.colors.join(", ") || "-"}], material=[
-                {activeIntent.materials.join(", ") || "-"}], maxPrice=[
-                {activeIntent.maxPrice ?? "-"}], exclusions=[
-                {activeIntent.exclusions.join(", ") || "-"}], sort=[
-                {activeIntent.sortMode === "cheapest" ? "cheapest" : "-"}]
-              </p>
-            ) : null}
-
             <div
               key={gridAnimationKey}
               className={`animate-grid-fade-in grid grid-cols-2 gap-x-4 gap-y-10 transition-opacity md:grid-cols-4 md:gap-x-6 md:gap-y-12 ${
