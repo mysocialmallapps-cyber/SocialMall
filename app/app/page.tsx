@@ -1034,6 +1034,7 @@ export default function Home() {
     () => getFilteredProducts(activeQuery, products),
     [activeQuery],
   );
+  const trackingQuery = hasSearched ? currentQuery || activeQuery : "";
 
   const runSearch = (rawQuery: string) => {
     const query = rawQuery.trim();
@@ -1214,7 +1215,7 @@ export default function Home() {
                 {previewProducts.map((product) => (
                   <Link
                     key={product.id}
-                    href={buildOutboundHref(product.id, searchInput)}
+                    href={buildOutboundHref(product.id, trackingQuery)}
                     className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
                   >
                     <article>
@@ -1265,7 +1266,7 @@ export default function Home() {
               {filteredResults.items.map((product) => (
                 <Link
                   key={product.id}
-                  href={buildOutboundHref(product.id, currentQuery || activeQuery)}
+                  href={buildOutboundHref(product.id, trackingQuery)}
                   className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
                 >
                   <article>
