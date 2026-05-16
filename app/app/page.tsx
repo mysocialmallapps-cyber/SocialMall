@@ -15,6 +15,10 @@ type Product = {
   name: string;
   price: number;
   image: string;
+  productUrl: string;
+  affiliateUrl: string | null;
+  affiliateNetwork: "Awin" | "Impact" | "Rakuten" | "Shopify Collabs" | null;
+  commissionRate: number | null;
   category: string;
   gender: ("men" | "women" | "unisex")[];
   colors: string[];
@@ -710,6 +714,10 @@ export const products: Product[] = [
     price: 1190,
     image:
       "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://www.therow.com/products/cashmere-wide-leg-trousers",
+    affiliateUrl: "https://socialmall.com/out/the-row-wide-leg-trousers",
+    affiliateNetwork: "Awin",
+    commissionRate: 0.12,
     category: "trousers",
     gender: ["women"],
     colors: ["black"],
@@ -728,6 +736,10 @@ export const products: Product[] = [
     price: 520,
     image:
       "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://www.jacquemus.com/products/le-chouchou-linen-shirt",
+    affiliateUrl: "https://socialmall.com/out/jacquemus-linen-shirt",
+    affiliateNetwork: "Rakuten",
+    commissionRate: 0.1,
     category: "shirt",
     gender: ["men"],
     colors: ["beige", "cream"],
@@ -746,6 +758,10 @@ export const products: Product[] = [
     price: 135,
     image:
       "https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://www.cos.com/en/oversized-black-hoodie",
+    affiliateUrl: "https://socialmall.com/out/cos-black-hoodie",
+    affiliateNetwork: "Impact",
+    commissionRate: 0.08,
     category: "hoodie",
     gender: ["unisex"],
     colors: ["black"],
@@ -764,6 +780,10 @@ export const products: Product[] = [
     price: 790,
     image:
       "https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://toteme.com/products/structured-wool-blazer",
+    affiliateUrl: "https://socialmall.com/out/toteme-wool-blazer",
+    affiliateNetwork: "Awin",
+    commissionRate: 0.11,
     category: "blazer",
     gender: ["women"],
     colors: ["black"],
@@ -782,6 +802,10 @@ export const products: Product[] = [
     price: 55,
     image:
       "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://www.arket.com/en/cotton-essential-tee",
+    affiliateUrl: "https://socialmall.com/out/arket-essential-tee",
+    affiliateNetwork: "Shopify Collabs",
+    commissionRate: 0.09,
     category: "tshirt",
     gender: ["men"],
     colors: ["white"],
@@ -800,6 +824,10 @@ export const products: Product[] = [
     price: 180,
     image:
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://aeyde.com/products/leather-slip-on-sandals",
+    affiliateUrl: "https://socialmall.com/out/aeyde-sandals",
+    affiliateNetwork: "Impact",
+    commissionRate: 0.1,
     category: "sandals",
     gender: ["women"],
     colors: ["beige", "brown"],
@@ -818,6 +846,10 @@ export const products: Product[] = [
     price: 180,
     image:
       "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://louloustudio.com/products/silk-resort-shirt-sand",
+    affiliateUrl: null,
+    affiliateNetwork: null,
+    commissionRate: null,
     category: "shirt",
     gender: ["women"],
     colors: ["beige", "cream"],
@@ -836,6 +868,10 @@ export const products: Product[] = [
     price: 95,
     image:
       "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://www.levi.com/products/relaxed-straight-jeans",
+    affiliateUrl: "https://socialmall.com/out/levis-relaxed-jeans",
+    affiliateNetwork: "Rakuten",
+    commissionRate: 0.07,
     category: "jeans",
     gender: ["unisex"],
     colors: ["blue", "navy"],
@@ -854,6 +890,10 @@ export const products: Product[] = [
     price: 89.99,
     image:
       "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://shop.mango.com/open-knit-beach-club-dress",
+    affiliateUrl: "https://socialmall.com/out/mango-beach-dress",
+    affiliateNetwork: "Awin",
+    commissionRate: 0.1,
     category: "dress",
     gender: ["women"],
     colors: ["red"],
@@ -872,6 +912,10 @@ export const products: Product[] = [
     price: 120,
     image:
       "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://www.arket.com/en/white-linen-wide-leg-trousers",
+    affiliateUrl: "https://socialmall.com/out/arket-linen-trousers",
+    affiliateNetwork: "Shopify Collabs",
+    commissionRate: 0.09,
     category: "trousers",
     gender: ["women"],
     colors: ["white", "cream"],
@@ -890,6 +934,10 @@ export const products: Product[] = [
     price: 360,
     image:
       "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://demellierlondon.com/products/minimal-leather-shoulder-bag",
+    affiliateUrl: "https://socialmall.com/out/demellier-shoulder-bag",
+    affiliateNetwork: "Impact",
+    commissionRate: 0.1,
     category: "bag",
     gender: ["women"],
     colors: ["white", "beige"],
@@ -908,6 +956,10 @@ export const products: Product[] = [
     price: 110,
     image:
       "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://mejuri.com/products/gold-everyday-hoops",
+    affiliateUrl: null,
+    affiliateNetwork: null,
+    commissionRate: null,
     category: "jewellery",
     gender: ["women"],
     colors: ["beige"],
@@ -926,6 +978,10 @@ export const products: Product[] = [
     price: 430,
     image:
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://www.commonprojects.com/products/white-leather-sneakers",
+    affiliateUrl: "https://socialmall.com/out/common-projects-sneakers",
+    affiliateNetwork: "Rakuten",
+    commissionRate: 0.08,
     category: "footwear",
     gender: ["men"],
     colors: ["white"],
@@ -944,6 +1000,10 @@ export const products: Product[] = [
     price: 35,
     image:
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
+    productUrl: "https://www.uniqlo.com/products/black-cotton-oversized-tee",
+    affiliateUrl: "https://socialmall.com/out/uniqlo-oversized-tee",
+    affiliateNetwork: "Shopify Collabs",
+    commissionRate: 0.06,
     category: "tshirt",
     gender: ["unisex"],
     colors: ["black"],
