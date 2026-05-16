@@ -325,10 +325,90 @@ const getFilteredProducts = (
   query: string,
   items: Product[],
 ): FilterResult => {
+  const intent = parseQueryIntent(query);
   if (!query.trim()) {
     return { items, showFallbackNotice: false };
   }
-  return { items, showFallbackNotice: false };
+
+  const normalizeProductCategory = (category: string) => {
+    if (category === "sandals") return "footwear";
+    return category;
+  };
+
+  const strictCategoryFilters = Array.from(
+    new Set([...intent.categories, ...intent.onlyFilters.categories]),
+  );
+  const strictColorFilters = Array.from(
+    new Set([...intent.onlyFilters.colors]),
+  );
+  const strictMaterialFilters = Array.from(
+    new Set([...intent.onlyFilters.materials]),
+  );
+  const exclusionFilters = Array.from(new Set(intent.exclusions));
+
+  const applyNonNegotiableFilters = (list: Product[]) =>
+    list.filter((product) => {
+      const productCategory = normalizeProductCategory(product.category);
+
+      if (exclusionFilters.includes(productCategory)) {
+        return false;
+      }
+
+      if (intent.maxPrice !== null && product.price > intent.maxPrice) {
+        return false;
+      }
+
+      return true;
+    });
+
+  const strictMatches = applyNonNegotiableFilters(items).filter((product) => {
+    const productCategory = normalizeProductCategory(product.category);
+
+    if (
+      strictCategoryFilters.length &&
+      !strictCategoryFilters.includes(productCategory)
+    ) {
+      return false;
+    }
+
+    if (
+      strictColorFilters.length &&
+      !strictColorFilters.some((color) => product.colors.includes(color))
+    ) {
+      return false;
+    }
+
+    if (
+      strictMaterialFilters.length &&
+      !strictMaterialFilters.some((material) =>
+        product.materials.includes(material),
+      )
+    ) {
+      return false;
+    }
+
+    return true;
+  });
+
+  const sortByMode = (list: Product[]) => {
+    if (intent.sortMode !== "cheapest") {
+      return list;
+    }
+
+    return [...list].sort((a, b) => a.price - b.price);
+  };
+
+  if (strictMatches.length) {
+    return {
+      items: sortByMode(strictMatches),
+      showFallbackNotice: false,
+    };
+  }
+
+  return {
+    items: sortByMode(applyNonNegotiableFilters(items)),
+    showFallbackNotice: true,
+  };
 };
 
 const products: Product[] = [
