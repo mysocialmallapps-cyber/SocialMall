@@ -1,7 +1,8 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useRef, useState } from "react";
+import { FormEvent, Suspense, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 const suggestions = [
   "quiet luxury",
@@ -1020,7 +1021,11 @@ export const products: Product[] = [
 
 const fallbackTrendingProducts = products.slice(0, 8);
 
-export default function Home() {
+function HomeContent() {
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const urlQuery = searchParams.get("q")?.trim() ?? "";
   const previewProducts = fallbackTrendingProducts.slice(0, 4);
   const [searchInput, setSearchInput] = useState("");
   const [refineInput, setRefineInput] = useState("");
@@ -1030,6 +1035,7 @@ export default function Home() {
   const [isLoading, setIsLoading] = useState(false);
   const [gridAnimationKey, setGridAnimationKey] = useState(0);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const skipNextUrlSyncRef = useRef<string | null>(null);
   const filteredResults = useMemo(
     () => getFilteredProducts(activeQuery, products),
     [activeQuery],
@@ -1053,6 +1059,31 @@ export default function Home() {
       setGridAnimationKey((currentKey) => currentKey + 1);
       setIsLoading(false);
     }, 500);
+  };
+
+  const updateSearchUrl = (query: string) => {
+    const trimmedQuery = query.trim();
+    const nextParams = new URLSearchParams(searchParams.toString());
+
+    if (trimmedQuery) {
+      nextParams.set("q", trimmedQuery);
+    } else {
+      nextParams.delete("q");
+    }
+
+    const nextQueryString = nextParams.toString();
+    const nextUrl = nextQueryString ? `${pathname}?${nextQueryString}` : pathname;
+    const currentQueryString = searchParams.toString();
+    const currentUrl = currentQueryString
+      ? `${pathname}?${currentQueryString}`
+      : pathname;
+
+    if (nextUrl !== currentUrl) {
+      skipNextUrlSyncRef.current = trimmedQuery;
+      router.push(nextUrl, { scroll: false });
+    } else {
+      skipNextUrlSyncRef.current = null;
+    }
   };
 
   const buildOutboundHref = (productId: number, query: string) => {
@@ -1096,11 +1127,13 @@ export default function Home() {
     const query = searchInput.trim();
     if (!query) return;
     runSearch(query);
+    updateSearchUrl(query);
   };
 
   const handleSuggestionClick = (suggestion: string) => {
     setSearchInput(suggestion);
     runSearch(suggestion);
+    updateSearchUrl(suggestion);
   };
 
   const handleRefineSubmit = (event: FormEvent<HTMLFormElement>) => {
@@ -1115,6 +1148,7 @@ export default function Home() {
     setRefineInput("");
     setSearchInput(nextQuery);
     runSearch(nextQuery);
+    updateSearchUrl(nextQuery);
   };
 
   const handleLogoClick = () => {
@@ -1130,6 +1164,7 @@ export default function Home() {
     setHasSearched(false);
     setIsLoading(false);
     setGridAnimationKey(0);
+    updateSearchUrl("");
   };
 
   useEffect(() => {
@@ -1139,6 +1174,45 @@ export default function Home() {
       }
     };
   }, []);
+
+  useEffect(() => {
+    if (
+      skipNextUrlSyncRef.current !== null &&
+      skipNextUrlSyncRef.current === urlQuery
+    ) {
+      skipNextUrlSyncRef.current = null;
+      return;
+    }
+
+    const syncTimer = window.setTimeout(() => {
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+
+      if (!urlQuery) {
+        setHasSearched(false);
+        setSearchInput("");
+        setRefineInput("");
+        setCurrentQuery("");
+        setActiveQuery("");
+        setIsLoading(false);
+        setGridAnimationKey(0);
+        return;
+      }
+
+      setHasSearched(true);
+      setSearchInput(urlQuery);
+      setRefineInput("");
+      setCurrentQuery(urlQuery);
+      setActiveQuery(urlQuery);
+      setIsLoading(false);
+      setGridAnimationKey((currentKey) => currentKey + 1);
+    }, 0);
+
+    return () => {
+      window.clearTimeout(syncTimer);
+    };
+  }, [urlQuery]);
 
   useEffect(() => {
     if (process.env.NODE_ENV === "production") {
@@ -1326,5 +1400,13 @@ export default function Home() {
         </div>
       ) : null}
     </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense fallback={null}>
+      <HomeContent />
+    </Suspense>
   );
 }
