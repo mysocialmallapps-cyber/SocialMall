@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { products } from "../../page";
 import { trackProductClick } from "@/lib/tracking";
@@ -9,18 +9,25 @@ export default function OutboundRedirectPage() {
   const params = useParams<{ productId: string }>();
   const router = useRouter();
   const searchParams = useSearchParams();
+  const hasRedirectedRef = useRef(false);
 
   useEffect(() => {
-    const rawProductId = params?.productId;
-    const parsedProductId = Number.parseInt(rawProductId ?? "", 10);
+    if (hasRedirectedRef.current) {
+      return;
+    }
 
-    if (!Number.isInteger(parsedProductId)) {
+    const rawProductId = params?.productId;
+    if (!rawProductId || !/^\d+$/.test(rawProductId)) {
+      hasRedirectedRef.current = true;
       router.replace("/");
       return;
     }
 
+    const parsedProductId = Number.parseInt(rawProductId, 10);
+
     const product = products.find((item) => item.id === parsedProductId);
     if (!product) {
+      hasRedirectedRef.current = true;
       router.replace("/");
       return;
     }
@@ -36,6 +43,7 @@ export default function OutboundRedirectPage() {
       destinationUrl,
     });
 
+    hasRedirectedRef.current = true;
     window.location.replace(destinationUrl);
   }, [params, router, searchParams]);
 
