@@ -1054,6 +1054,18 @@ export default function Home() {
     }, 500);
   };
 
+  const buildOutboundHref = (productId: number, query: string) => {
+    const trimmedQuery = query.trim();
+    if (!trimmedQuery) {
+      return `/out/${productId}`;
+    }
+
+    return {
+      pathname: `/out/${productId}`,
+      query: { q: trimmedQuery },
+    };
+  };
+
   const buildRefinedQuery = (baseQuery: string, refinement: string) => {
     const base = baseQuery.trim();
     const next = refinement.trim();
@@ -1202,7 +1214,7 @@ export default function Home() {
                 {previewProducts.map((product) => (
                   <Link
                     key={product.id}
-                    href={`/out/${product.id}`}
+                    href={buildOutboundHref(product.id, searchInput)}
                     className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
                   >
                     <article>
@@ -1253,7 +1265,7 @@ export default function Home() {
               {filteredResults.items.map((product) => (
                 <Link
                   key={product.id}
-                  href={`/out/${product.id}`}
+                  href={buildOutboundHref(product.id, currentQuery || activeQuery)}
                   className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
                 >
                   <article>

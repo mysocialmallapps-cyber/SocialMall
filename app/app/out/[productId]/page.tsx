@@ -1,12 +1,14 @@
 "use client";
 
 import { useEffect } from "react";
-import { useParams, useRouter } from "next/navigation";
+import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { products } from "../../page";
+import { trackProductClick } from "@/lib/tracking";
 
 export default function OutboundRedirectPage() {
   const params = useParams<{ productId: string }>();
   const router = useRouter();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
     const rawProductId = params?.productId;
@@ -24,16 +26,18 @@ export default function OutboundRedirectPage() {
     }
 
     const destinationUrl = product.affiliateUrl ?? product.productUrl;
-    console.log("SocialMall outbound click", {
-      productId: product.id,
+    trackProductClick({
+      productId: String(product.id),
       productName: product.name,
       brand: product.brand,
-      timestamp: new Date().toISOString(),
+      category: product.category,
+      price: product.price,
+      searchQuery: searchParams.get("q") ?? "",
       destinationUrl,
     });
 
     window.location.replace(destinationUrl);
-  }, [params, router]);
+  }, [params, router, searchParams]);
 
   return null;
 }
