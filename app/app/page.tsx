@@ -29,23 +29,23 @@ type Product = {
 
 type QueryIntent = {
   words: string[];
-  genders: string[];
+  categories: string[];
   colors: string[];
   materials: string[];
-  categories: string[];
+  vibes: string[];
+  styles: string[];
   occasions: string[];
   seasons: string[];
+  genders: string[];
   fits: string[];
-  vibes: string[];
-  hardColorFilters: string[];
-  hardMaterialFilters: string[];
-  excludedCategories: string[];
+  exclusions: string[];
+  onlyFilters: {
+    categories: string[];
+    colors: string[];
+    materials: string[];
+  };
   maxPrice: number | null;
-  sortCheapest: boolean;
-  clothingIntent: boolean;
-  footwearIntent: boolean;
-  bagIntent: boolean;
-  jewelleryIntent: boolean;
+  sortMode: "relevance" | "cheapest";
 };
 
 type FilterResult = {
@@ -140,27 +140,22 @@ const vibeKeywords: Record<string, string[]> = {
   "quiet luxury": ["quiet luxury"],
   "old money": ["old money"],
   streetwear: ["streetwear"],
+  minimalist: ["minimalist", "minimal"],
+  casual: ["casual", "relaxed"],
+  formal: ["formal"],
+  classy: ["classy"],
+  elegant: ["elegant"],
+};
+
+const styleKeywords: Record<string, string[]> = {
   minimalist: ["minimalist", "minimal", "clean"],
   resort: ["resort"],
   marbella: ["marbella"],
   dubai: ["dubai"],
   ibiza: ["ibiza"],
   paris: ["paris"],
-  classy: ["classy"],
-  elegant: ["elegant"],
-  casual: ["casual", "relaxed"],
   "smart casual": ["smart casual"],
 };
-
-const clothingCategories = new Set([
-  "tshirt",
-  "shirt",
-  "hoodie",
-  "trousers",
-  "jeans",
-  "dress",
-  "blazer",
-]);
 const pricingSortWords = new Set([
   "cheap",
   "cheaper",
@@ -272,9 +267,11 @@ const parseQueryIntent = (query: string): QueryIntent => {
   const seasons = detectIntentValues(normalizedQuery, seasonKeywords);
   const fits = detectIntentValues(normalizedQuery, fitKeywords);
   const vibes = detectIntentValues(normalizedQuery, vibeKeywords);
-  const hardColorFilters = detectOnlyFilters(normalizedQuery, colorKeywords);
-  const hardMaterialFilters = detectOnlyFilters(normalizedQuery, materialKeywords);
+  const styles = detectIntentValues(normalizedQuery, styleKeywords);
   const excludedCategories = detectExcludedCategories(normalizedQuery);
+  const onlyCategoryFilters = detectOnlyFilters(normalizedQuery, categoryKeywords);
+  const onlyColorFilters = detectOnlyFilters(normalizedQuery, colorKeywords);
+  const onlyMaterialFilters = detectOnlyFilters(normalizedQuery, materialKeywords);
 
   const priceMatches = [
     ...Array.from(
@@ -290,132 +287,28 @@ const parseQueryIntent = (query: string): QueryIntent => {
     .map((match) => Number.parseInt(match[1], 10))
     .filter((value) => !Number.isNaN(value));
 
-  const hasClothingSignals =
-    categories.some((category) => clothingCategories.has(category)) ||
-    materials.length > 0 ||
-    fits.length > 0 ||
-    containsTerm(normalizedQuery, "outfit") ||
-    containsTerm(normalizedQuery, "look");
-  const footwearIntent = categories.includes("footwear");
-  const bagIntent = categories.includes("bag");
-  const jewelleryIntent = categories.includes("jewellery");
-
   return {
     words: meaningfulWords,
-    genders,
+    categories,
     colors,
     materials,
-    categories,
+    vibes,
+    styles,
     occasions,
     seasons,
+    genders,
     fits,
-    vibes,
-    hardColorFilters,
-    hardMaterialFilters,
-    excludedCategories,
+    exclusions: excludedCategories,
+    onlyFilters: {
+      categories: onlyCategoryFilters,
+      colors: onlyColorFilters,
+      materials: onlyMaterialFilters,
+    },
     maxPrice: priceMatches.length ? Math.min(...priceMatches) : null,
-    sortCheapest: allTokens.some((token) => pricingSortWords.has(token)),
-    clothingIntent:
-      hasClothingSignals && !footwearIntent && !bagIntent && !jewelleryIntent,
-    footwearIntent,
-    bagIntent,
-    jewelleryIntent,
+    sortMode: allTokens.some((token) => pricingSortWords.has(token))
+      ? "cheapest"
+      : "relevance",
   };
-};
-
-const scoreProduct = (product: Product, intent: QueryIntent) => {
-  let score = 0;
-
-  if (intent.categories.length) {
-    if (intent.categories.includes(product.category)) {
-      score += 5;
-    } else {
-      score -= 8;
-    }
-  }
-
-  if (
-    intent.excludedCategories.length &&
-    intent.excludedCategories.includes(product.category)
-  ) {
-    score -= 10;
-  }
-
-  if (
-    intent.clothingIntent &&
-    (product.category === "jewellery" || product.category === "bag")
-  ) {
-    score -= 8;
-  }
-
-  const hasColorMatch =
-    intent.colors.length &&
-    intent.colors.some((color) => product.colors.includes(color));
-  if (hasColorMatch) {
-    score += intent.hardColorFilters.length ? 4 : 3;
-  }
-
-  const hasMaterialMatch =
-    intent.materials.length &&
-    intent.materials.some((material) => product.materials.includes(material));
-  if (hasMaterialMatch) {
-    score += intent.hardMaterialFilters.length ? 4 : 3;
-  }
-
-  if (
-    intent.genders.length &&
-    product.gender.some(
-      (gender) => intent.genders.includes(gender) || gender === "unisex",
-    )
-  ) {
-    score += 3;
-  }
-
-  if (
-    intent.occasions.length &&
-    intent.occasions.some((occasion) => product.occasionTags.includes(occasion))
-  ) {
-    score += 3;
-  }
-
-  if (
-    intent.vibes.length &&
-    intent.vibes.some(
-      (vibe) => product.vibeTags.includes(vibe) || product.styleTags.includes(vibe),
-    )
-  ) {
-    score += 3;
-  }
-
-  if (
-    intent.seasons.length &&
-    intent.seasons.some((season) => product.seasonTags.includes(season))
-  ) {
-    score += 2;
-  }
-
-  if (
-    intent.fits.length &&
-    intent.fits.some((fit) => product.fitTags.includes(fit))
-  ) {
-    score += 2;
-  }
-
-  const searchableText = `${product.name} ${product.brand}`.toLowerCase();
-  const lowerName = product.name.toLowerCase();
-  const lowerBrand = product.brand.toLowerCase();
-  intent.words.forEach((word) => {
-    if (lowerName.includes(word)) {
-      score += 1;
-    }
-    if (lowerBrand.includes(word)) {
-      score += 1;
-    } else if (searchableText.includes(word)) {
-      score += 1;
-    }
-  });
-
-  return score;
 };
 
 const formatPrice = (amount: number) => {
@@ -431,113 +324,11 @@ const formatPrice = (amount: number) => {
 const getFilteredProducts = (
   query: string,
   items: Product[],
-  fallbackItems: Product[],
 ): FilterResult => {
-  const intent = parseQueryIntent(query);
   if (!query.trim()) {
     return { items, showFallbackNotice: false };
   }
-
-  const applyHardFilters = (list: Product[], includePrice = true) => {
-    let filtered = list;
-
-    if (intent.excludedCategories.length) {
-      filtered = filtered.filter(
-        (item) => !intent.excludedCategories.includes(item.category),
-      );
-    }
-
-    if (intent.categories.length) {
-      filtered = filtered.filter((item) => intent.categories.includes(item.category));
-    }
-
-    if (intent.genders.length) {
-      filtered = filtered.filter(
-        (item) =>
-          item.gender.some(
-            (gender) => intent.genders.includes(gender) || gender === "unisex",
-          ),
-      );
-    }
-
-    if (intent.hardColorFilters.length) {
-      filtered = filtered.filter((item) =>
-        intent.hardColorFilters.some((color) => item.colors.includes(color)),
-      );
-    }
-
-    if (intent.hardMaterialFilters.length) {
-      filtered = filtered.filter((item) =>
-        intent.hardMaterialFilters.some((material) =>
-          item.materials.includes(material),
-        ),
-      );
-    }
-
-    if (includePrice && intent.maxPrice !== null) {
-      filtered = filtered.filter((item) => item.price <= intent.maxPrice!);
-    }
-
-    if (intent.clothingIntent && !intent.bagIntent && !intent.jewelleryIntent) {
-      filtered = filtered.filter(
-        (item) => item.category !== "bag" && item.category !== "jewellery",
-      );
-    }
-
-    return filtered;
-  };
-
-  const rankProducts = (list: Product[]) =>
-    list
-      .map((item) => ({
-        item,
-        score: scoreProduct(item, intent),
-      }))
-      .sort((a, b) => {
-        if (intent.sortCheapest && a.item.price !== b.item.price) {
-          return a.item.price - b.item.price;
-        }
-
-        if (a.score !== b.score) {
-          return b.score - a.score;
-        }
-
-        return a.item.price - b.item.price;
-      });
-
-  const constrainedCandidates = applyHardFilters(items, true);
-  const constrainedFallback = applyHardFilters(fallbackItems, true);
-  const relaxedPriceCandidates =
-    intent.maxPrice !== null ? applyHardFilters(items, false) : [];
-
-  if (!constrainedCandidates.length) {
-    if (relaxedPriceCandidates.length) {
-      return {
-        items: rankProducts(relaxedPriceCandidates).map(({ item }) => item),
-        showFallbackNotice: true,
-      };
-    }
-
-    return {
-      items: constrainedFallback.length ? constrainedFallback : fallbackItems,
-      showFallbackNotice: true,
-    };
-  }
-
-  const rankedCandidates = rankProducts(constrainedCandidates);
-  const strongMatches = rankedCandidates.filter(({ score }) => score >= 5);
-
-  if (!strongMatches.length) {
-    return {
-      items: rankedCandidates.map(({ item }) => item),
-      showFallbackNotice: true,
-    };
-  }
-
-  return {
-    items: rankedCandidates.map(({ item }) => item),
-    showFallbackNotice: false,
-  };
+  return { items, showFallbackNotice: false };
 };
 
 const products: Product[] = [
@@ -810,7 +601,7 @@ export default function Home() {
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const activeIntent = useMemo(() => parseQueryIntent(activeQuery), [activeQuery]);
   const filteredResults = useMemo(
-    () => getFilteredProducts(activeQuery, products, fallbackTrendingProducts),
+    () => getFilteredProducts(activeQuery, products),
     [activeQuery],
   );
 
@@ -990,11 +781,10 @@ export default function Home() {
               <p className="text-xs text-zinc-500">
                 Detected: category=[{activeIntent.categories.join(", ") || "-"}],
                 color=[{activeIntent.colors.join(", ") || "-"}], material=[
-                {activeIntent.materials.join(", ") || "-"}], gender=[
-                {activeIntent.genders.join(", ") || "-"}], maxPrice=[
-                {activeIntent.maxPrice ?? "-"}], sort=[
-                {activeIntent.sortCheapest ? "price_asc" : "-"}], excluded=[
-                {activeIntent.excludedCategories.join(", ") || "-"}]
+                {activeIntent.materials.join(", ") || "-"}], maxPrice=[
+                {activeIntent.maxPrice ?? "-"}], exclusions=[
+                {activeIntent.exclusions.join(", ") || "-"}], sort=[
+                {activeIntent.sortMode === "cheapest" ? "cheapest" : "-"}]
               </p>
             ) : null}
 
