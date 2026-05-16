@@ -16,7 +16,7 @@ type Product = {
   price: number;
   image: string;
   category: string;
-  gender: "men" | "women" | "unisex";
+  gender: ("men" | "women" | "unisex")[];
   colors: string[];
   materials: string[];
   fitTags: string[];
@@ -364,7 +364,9 @@ const scoreProduct = (product: Product, intent: QueryIntent) => {
 
   if (
     intent.genders.length &&
-    (intent.genders.includes(product.gender) || product.gender === "unisex")
+    product.gender.some(
+      (gender) => intent.genders.includes(gender) || gender === "unisex",
+    )
   ) {
     score += 3;
   }
@@ -451,7 +453,10 @@ const getFilteredProducts = (
 
     if (intent.genders.length) {
       filtered = filtered.filter(
-        (item) => intent.genders.includes(item.gender) || item.gender === "unisex",
+        (item) =>
+          item.gender.some(
+            (gender) => intent.genders.includes(gender) || gender === "unisex",
+          ),
       );
     }
 
@@ -544,7 +549,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
     category: "trousers",
-    gender: "women",
+    gender: ["women"],
     colors: ["black"],
     materials: ["wool"],
     fitTags: ["wide leg", "tailored"],
@@ -562,7 +567,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
     category: "shirt",
-    gender: "men",
+    gender: ["men"],
     colors: ["beige", "cream"],
     materials: ["linen"],
     fitTags: ["relaxed"],
@@ -580,7 +585,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=1200&q=80",
     category: "hoodie",
-    gender: "unisex",
+    gender: ["unisex"],
     colors: ["black"],
     materials: ["cotton", "knit"],
     fitTags: ["oversized", "relaxed"],
@@ -598,7 +603,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=1200&q=80",
     category: "blazer",
-    gender: "women",
+    gender: ["women"],
     colors: ["black"],
     materials: ["wool"],
     fitTags: ["tailored"],
@@ -616,7 +621,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=80",
     category: "tshirt",
-    gender: "men",
+    gender: ["men"],
     colors: ["white"],
     materials: ["cotton"],
     fitTags: ["relaxed"],
@@ -633,8 +638,8 @@ const products: Product[] = [
     price: 180,
     image:
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
-    category: "footwear",
-    gender: "women",
+    category: "sandals",
+    gender: ["women"],
     colors: ["beige", "brown"],
     materials: ["leather"],
     fitTags: ["relaxed"],
@@ -652,7 +657,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80",
     category: "shirt",
-    gender: "women",
+    gender: ["women"],
     colors: ["beige", "cream"],
     materials: ["silk"],
     fitTags: ["relaxed"],
@@ -670,7 +675,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1200&q=80",
     category: "jeans",
-    gender: "unisex",
+    gender: ["unisex"],
     colors: ["blue", "navy"],
     materials: ["denim", "cotton"],
     fitTags: ["relaxed", "baggy"],
@@ -688,7 +693,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
     category: "dress",
-    gender: "women",
+    gender: ["women"],
     colors: ["red"],
     materials: ["cotton", "knit"],
     fitTags: ["relaxed"],
@@ -706,7 +711,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
     category: "trousers",
-    gender: "women",
+    gender: ["women"],
     colors: ["white", "cream"],
     materials: ["linen"],
     fitTags: ["wide leg", "relaxed"],
@@ -724,7 +729,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80",
     category: "bag",
-    gender: "women",
+    gender: ["women"],
     colors: ["white", "beige"],
     materials: ["leather"],
     fitTags: ["relaxed"],
@@ -742,7 +747,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&q=80",
     category: "jewellery",
-    gender: "women",
+    gender: ["women"],
     colors: ["beige"],
     materials: ["silk"],
     fitTags: ["relaxed"],
@@ -760,7 +765,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80",
     category: "footwear",
-    gender: "men",
+    gender: ["men"],
     colors: ["white"],
     materials: ["leather"],
     fitTags: ["slim fit"],
@@ -778,7 +783,7 @@ const products: Product[] = [
     image:
       "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
     category: "tshirt",
-    gender: "unisex",
+    gender: ["unisex"],
     colors: ["black"],
     materials: ["cotton"],
     fitTags: ["oversized", "relaxed"],
