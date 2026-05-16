@@ -1040,6 +1040,7 @@ function HomeContent() {
     () => getFilteredProducts(activeQuery, products),
     [activeQuery],
   );
+  const activeIntent = useMemo(() => parseQueryIntent(activeQuery), [activeQuery]);
   const visibleProducts = hasSearched ? filteredResults.items : previewProducts;
   const schemaQuery = hasSearched ? currentQuery || activeQuery : "";
   const productStructuredData = useMemo(
@@ -1085,6 +1086,103 @@ function HomeContent() {
     [hasSearched, schemaQuery],
   );
   const trackingQuery = hasSearched ? currentQuery || activeQuery : "";
+  const tagDrivenPhrases = useMemo(() => {
+    const topProducts = filteredResults.items.slice(0, 8);
+    const tags = topProducts.flatMap((product) => [
+      ...product.vibeTags,
+      ...product.styleTags,
+      ...product.fitTags,
+      ...product.occasionTags,
+    ]);
+
+    const mappedPhrases = tags.flatMap((tag) => {
+      const mappedPhrase = (() => {
+        if (tag === "quiet luxury") return "quiet luxury";
+        if (tag === "minimalist" || tag === "clean") return "Scandinavian minimal";
+        if (tag === "marbella" || tag === "resort" || tag === "beach club") {
+          return "Marbella beach club";
+        }
+        if (tag === "elegant" || tag === "dinner" || tag === "party") {
+          return "Ibiza sunset dinner";
+        }
+        if (tag === "streetwear" || tag === "oversized") {
+          return "oversized streetwear";
+        }
+        if (tag === "smart casual") return "smart casual";
+        return null;
+      })();
+
+      return mappedPhrase ? [mappedPhrase] : [];
+    });
+
+    return Array.from(new Set(mappedPhrases));
+  }, [filteredResults.items]);
+  const relatedSearchLinks = useMemo(() => {
+    const dynamicTerms: string[] = [];
+    const primaryCategory = activeIntent.categories[0];
+    const primaryColor = activeIntent.colors[0];
+    const primaryMaterial = activeIntent.materials[0];
+    const primarySeason = activeIntent.seasons[0];
+
+    if (trackingQuery) {
+      dynamicTerms.push(trackingQuery);
+    }
+    if (primaryColor && primaryCategory) {
+      dynamicTerms.push(`${primaryColor} ${primaryCategory}`);
+    }
+    if (primaryMaterial && primaryCategory) {
+      dynamicTerms.push(`${primaryMaterial} ${primaryCategory}`);
+    }
+    if (primarySeason && primaryCategory) {
+      dynamicTerms.push(`${primarySeason} ${primaryCategory}`);
+    }
+    if (primarySeason && !primaryCategory) {
+      dynamicTerms.push(`${primarySeason} outfit`);
+    }
+
+    const fallbackTerms = [
+      "quiet luxury",
+      "Scandinavian minimal",
+      "Marbella beach club",
+      "Ibiza sunset dinner",
+      "oversized streetwear",
+    ];
+
+    return Array.from(new Set([...dynamicTerms, ...tagDrivenPhrases, ...fallbackTerms]))
+      .filter((term) => term.toLowerCase() !== trackingQuery.toLowerCase())
+      .slice(0, 6);
+  }, [activeIntent, tagDrivenPhrases, trackingQuery]);
+  const trendingAestheticsLinks = useMemo(
+    () =>
+      Array.from(
+        new Set([
+          ...tagDrivenPhrases,
+          "quiet luxury",
+          "Scandinavian minimal",
+          "Marbella beach club",
+          "Ibiza sunset dinner",
+          "oversized streetwear",
+        ]),
+      ).slice(0, 5),
+    [tagDrivenPhrases],
+  );
+  const similarVibesLinks = useMemo(
+    () =>
+      Array.from(
+        new Set([
+          ...tagDrivenPhrases,
+          ...(activeIntent.vibes.length ? activeIntent.vibes : []),
+          ...(activeIntent.styles.length ? activeIntent.styles : []),
+          "resort casual",
+          "smart casual evening",
+        ]),
+      )
+        .map((phrase) =>
+          phrase === "minimalist" ? "Scandinavian minimal" : phrase,
+        )
+        .slice(0, 5),
+    [activeIntent.styles, activeIntent.vibes, tagDrivenPhrases],
+  );
 
   const runSearch = (rawQuery: string) => {
     const query = rawQuery.trim();
@@ -1141,6 +1239,11 @@ function HomeContent() {
       query: { q: trimmedQuery },
     };
   };
+
+  const buildSearchHref = (query: string) => ({
+    pathname: "/",
+    query: { q: query.trim() },
+  });
 
   const buildRefinedQuery = (baseQuery: string, refinement: string) => {
     const base = baseQuery.trim();
@@ -1416,6 +1519,58 @@ function HomeContent() {
                 </Link>
               ))}
             </div>
+            {!isLoading ? (
+              <div className="space-y-5 pt-2">
+                <div className="space-y-2">
+                  <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
+                    Related searches
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {relatedSearchLinks.map((term) => (
+                      <Link
+                        key={`related-${term}`}
+                        href={buildSearchHref(term)}
+                        className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
+                      >
+                        {term}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
+                    Trending aesthetics
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {trendingAestheticsLinks.map((term) => (
+                      <Link
+                        key={`aesthetic-${term}`}
+                        href={buildSearchHref(term)}
+                        className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
+                      >
+                        {term}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+                <div className="space-y-2">
+                  <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
+                    Similar vibes
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {similarVibesLinks.map((term) => (
+                      <Link
+                        key={`vibe-${term}`}
+                        href={buildSearchHref(term)}
+                        className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
+                      >
+                        {term}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : null}
           </section>
         )}
       </main>
