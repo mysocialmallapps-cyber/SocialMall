@@ -91,6 +91,8 @@ const ProductCard = memo(function ProductCard({
   return (
     <Link
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
     >
       <article>
