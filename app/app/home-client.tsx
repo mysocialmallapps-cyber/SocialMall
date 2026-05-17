@@ -13,6 +13,7 @@ import {
 import Image from "next/image";
 import Link, { type LinkProps } from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { mockProducts, type Product } from "@/lib/products";
 
 const suggestions = [
   "quiet luxury",
@@ -20,28 +21,6 @@ const suggestions = [
   "black oversized hoodie",
   "summer outfit under €200",
 ];
-
-type Product = {
-  id: number;
-  brand: string;
-  name: string;
-  price: number;
-  image: string;
-  productUrl: string;
-  affiliateUrl: string | null;
-  affiliateNetwork: "Awin" | "Impact" | "Rakuten" | "Shopify Collabs" | null;
-  commissionRate: number | null;
-  category: string;
-  gender: ("men" | "women" | "unisex")[];
-  colors: string[];
-  materials: string[];
-  fitTags: string[];
-  occasionTags: string[];
-  seasonTags: string[];
-  vibeTags: string[];
-  styleTags: string[];
-  url: string;
-};
 
 type QueryIntent = {
   words: string[];
@@ -113,7 +92,7 @@ const ProductCard = memo(function ProductCard({
           </p>
           <p className="truncate text-sm text-zinc-800">{product.name}</p>
           <p className="text-sm font-semibold text-zinc-900">
-            {formatPrice(product.price)}
+            {formatPrice(product.price, product.currency)}
           </p>
         </div>
       </article>
@@ -382,20 +361,17 @@ export const parseQueryIntent = (query: string): QueryIntent => {
   };
 };
 
-const formatPrice = (amount: number) => {
+const formatPrice = (amount: number, currency: Product["currency"]) => {
   const hasDecimals = !Number.isInteger(amount);
   return new Intl.NumberFormat("en-IE", {
     style: "currency",
-    currency: "EUR",
+    currency,
     minimumFractionDigits: hasDecimals ? 2 : 0,
     maximumFractionDigits: hasDecimals ? 2 : 0,
   }).format(amount);
 };
 
-const normalizeProductCategory = (category: string) => {
-  if (category === "sandals") return "footwear";
-  return category;
-};
+const normalizeProductCategory = (category: Product["category"]) => category;
 
 const isPriceSortedAscending = (list: Product[]) =>
   list.every((item, index) => index === 0 || list[index - 1].price <= item.price);
@@ -647,46 +623,50 @@ export const getFilteredProducts = (
 
     if (
       intent.occasions.length &&
-      intent.occasions.some((occasion) => product.occasionTags.includes(occasion))
+      intent.occasions.some((occasion) => product.occasion.includes(occasion))
     ) {
       score += 3;
     }
 
     if (
       intent.vibes.length &&
-      intent.vibes.some((vibe) => product.vibeTags.includes(vibe))
+      intent.vibes.some((vibe) => product.vibe.includes(vibe))
     ) {
       score += 3;
     }
 
     if (
       intent.seasons.length &&
-      intent.seasons.some((season) => product.seasonTags.includes(season))
+      intent.seasons.some((season) => product.season.includes(season))
     ) {
       score += 2;
     }
 
     if (
       intent.fits.length &&
-      intent.fits.some((fit) => product.fitTags.includes(fit))
+      intent.fits.some((fit) => product.fit.includes(fit))
     ) {
       score += 2;
     }
 
     if (
       intent.styles.length &&
-      intent.styles.some((style) => product.styleTags.includes(style))
+      intent.styles.some((style) => product.style.includes(style))
     ) {
       score += 3;
     }
 
     const lowerName = product.name.toLowerCase();
     const lowerBrand = product.brand.toLowerCase();
+    const lowerDescription = product.description.toLowerCase();
     intent.words.forEach((word) => {
       if (lowerName.includes(word)) {
         score += 1;
       }
       if (lowerBrand.includes(word)) {
+        score += 1;
+      }
+      if (lowerDescription.includes(word)) {
         score += 1;
       }
     });
@@ -726,19 +706,19 @@ export const getFilteredProducts = (
   const softSignalMatches = strictMatches.filter((product) => {
     const hasOccasion =
       intent.occasions.length > 0 &&
-      intent.occasions.some((occasion) => product.occasionTags.includes(occasion));
+      intent.occasions.some((occasion) => product.occasion.includes(occasion));
     const hasVibe =
       intent.vibes.length > 0 &&
-      intent.vibes.some((vibe) => product.vibeTags.includes(vibe));
+      intent.vibes.some((vibe) => product.vibe.includes(vibe));
     const hasStyle =
       intent.styles.length > 0 &&
-      intent.styles.some((style) => product.styleTags.includes(style));
+      intent.styles.some((style) => product.style.includes(style));
     const hasSeason =
       intent.seasons.length > 0 &&
-      intent.seasons.some((season) => product.seasonTags.includes(season));
+      intent.seasons.some((season) => product.season.includes(season));
     const hasFit =
       intent.fits.length > 0 &&
-      intent.fits.some((fit) => product.fitTags.includes(fit));
+      intent.fits.some((fit) => product.fit.includes(fit));
 
     return hasOccasion || hasVibe || hasStyle || hasSeason || hasFit;
   });
@@ -764,318 +744,7 @@ export const getFilteredProducts = (
   };
 };
 
-export const products: Product[] = [
-  {
-    id: 1,
-    brand: "The Row",
-    name: "Cashmere Blend Wide-Leg Trousers",
-    price: 1190,
-    image:
-      "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://www.therow.com/products/cashmere-wide-leg-trousers",
-    affiliateUrl: "https://socialmall.com/out/the-row-wide-leg-trousers",
-    affiliateNetwork: "Awin",
-    commissionRate: 0.12,
-    category: "trousers",
-    gender: ["women"],
-    colors: ["black"],
-    materials: ["wool"],
-    fitTags: ["wide leg", "tailored"],
-    occasionTags: ["dinner", "office", "formal"],
-    seasonTags: ["winter", "autumn"],
-    vibeTags: ["quiet luxury", "elegant", "minimalist"],
-    styleTags: ["minimalist", "clean", "classy"],
-    url: "#",
-  },
-  {
-    id: 2,
-    brand: "Jacquemus",
-    name: "Le Chouchou Draped Linen Shirt",
-    price: 520,
-    image:
-      "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://www.jacquemus.com/products/le-chouchou-linen-shirt",
-    affiliateUrl: "https://socialmall.com/out/jacquemus-linen-shirt",
-    affiliateNetwork: "Rakuten",
-    commissionRate: 0.1,
-    category: "shirt",
-    gender: ["men"],
-    colors: ["beige", "cream"],
-    materials: ["linen"],
-    fitTags: ["relaxed"],
-    occasionTags: ["holiday", "beach club", "dinner"],
-    seasonTags: ["summer", "spring"],
-    vibeTags: ["marbella", "resort", "elegant"],
-    styleTags: ["resort", "smart casual", "minimalist"],
-    url: "#",
-  },
-  {
-    id: 3,
-    brand: "COS",
-    name: "Relaxed Oversized Black Hoodie",
-    price: 135,
-    image:
-      "https://images.unsplash.com/photo-1551232864-3f0890e580d9?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://www.cos.com/en/oversized-black-hoodie",
-    affiliateUrl: "https://socialmall.com/out/cos-black-hoodie",
-    affiliateNetwork: "Impact",
-    commissionRate: 0.08,
-    category: "hoodie",
-    gender: ["unisex"],
-    colors: ["black"],
-    materials: ["cotton", "knit"],
-    fitTags: ["oversized", "relaxed"],
-    occasionTags: ["airport outfit", "casual"],
-    seasonTags: ["winter", "autumn"],
-    vibeTags: ["casual", "streetwear", "minimalist"],
-    styleTags: ["streetwear", "clean"],
-    url: "#",
-  },
-  {
-    id: 4,
-    brand: "Toteme",
-    name: "Minimalist Structured Wool Blazer",
-    price: 790,
-    image:
-      "https://images.unsplash.com/photo-1495385794356-15371f348c31?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://toteme.com/products/structured-wool-blazer",
-    affiliateUrl: "https://socialmall.com/out/toteme-wool-blazer",
-    affiliateNetwork: "Awin",
-    commissionRate: 0.11,
-    category: "blazer",
-    gender: ["women"],
-    colors: ["black"],
-    materials: ["wool"],
-    fitTags: ["tailored"],
-    occasionTags: ["office", "formal", "dinner"],
-    seasonTags: ["winter", "autumn", "spring"],
-    vibeTags: ["quiet luxury", "elegant", "minimalist"],
-    styleTags: ["classy", "smart casual", "minimalist"],
-    url: "#",
-  },
-  {
-    id: 5,
-    brand: "Arket",
-    name: "White Cotton Essential Tee",
-    price: 55,
-    image:
-      "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://www.arket.com/en/cotton-essential-tee",
-    affiliateUrl: "https://socialmall.com/out/arket-essential-tee",
-    affiliateNetwork: "Shopify Collabs",
-    commissionRate: 0.09,
-    category: "tshirt",
-    gender: ["men"],
-    colors: ["white"],
-    materials: ["cotton"],
-    fitTags: ["relaxed"],
-    occasionTags: ["casual", "airport outfit"],
-    seasonTags: ["summer", "spring"],
-    vibeTags: ["casual", "minimalist"],
-    styleTags: ["clean", "minimalist"],
-    url: "#",
-  },
-  {
-    id: 6,
-    brand: "Aeyde",
-    name: "Leather Slip-On Sandals",
-    price: 180,
-    image:
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://aeyde.com/products/leather-slip-on-sandals",
-    affiliateUrl: "https://socialmall.com/out/aeyde-sandals",
-    affiliateNetwork: "Impact",
-    commissionRate: 0.1,
-    category: "sandals",
-    gender: ["women"],
-    colors: ["beige", "brown"],
-    materials: ["leather"],
-    fitTags: ["relaxed"],
-    occasionTags: ["holiday", "beach club", "casual"],
-    seasonTags: ["summer"],
-    vibeTags: ["beach", "resort", "casual"],
-    styleTags: ["minimalist", "resort"],
-    url: "#",
-  },
-  {
-    id: 7,
-    brand: "Loulou Studio",
-    name: "Silk Resort Shirt in Sand",
-    price: 180,
-    image:
-      "https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://louloustudio.com/products/silk-resort-shirt-sand",
-    affiliateUrl: null,
-    affiliateNetwork: null,
-    commissionRate: null,
-    category: "shirt",
-    gender: ["women"],
-    colors: ["beige", "cream"],
-    materials: ["silk"],
-    fitTags: ["relaxed"],
-    occasionTags: ["holiday", "dinner", "beach club"],
-    seasonTags: ["summer", "spring"],
-    vibeTags: ["resort", "marbella", "elegant"],
-    styleTags: ["resort", "classy", "clean"],
-    url: "#",
-  },
-  {
-    id: 8,
-    brand: "Levi's",
-    name: "Blue Relaxed Straight Jeans",
-    price: 95,
-    image:
-      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://www.levi.com/products/relaxed-straight-jeans",
-    affiliateUrl: "https://socialmall.com/out/levis-relaxed-jeans",
-    affiliateNetwork: "Rakuten",
-    commissionRate: 0.07,
-    category: "jeans",
-    gender: ["unisex"],
-    colors: ["blue", "navy"],
-    materials: ["denim", "cotton"],
-    fitTags: ["relaxed", "baggy"],
-    occasionTags: ["casual", "airport outfit"],
-    seasonTags: ["autumn", "winter", "spring"],
-    vibeTags: ["casual", "streetwear"],
-    styleTags: ["streetwear", "clean"],
-    url: "#",
-  },
-  {
-    id: 9,
-    brand: "Mango",
-    name: "Open Knit Beach Club Dress",
-    price: 89.99,
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://shop.mango.com/open-knit-beach-club-dress",
-    affiliateUrl: "https://socialmall.com/out/mango-beach-dress",
-    affiliateNetwork: "Awin",
-    commissionRate: 0.1,
-    category: "dress",
-    gender: ["women"],
-    colors: ["red"],
-    materials: ["cotton", "knit"],
-    fitTags: ["relaxed"],
-    occasionTags: ["beach club", "holiday", "party"],
-    seasonTags: ["summer"],
-    vibeTags: ["marbella", "beach", "resort"],
-    styleTags: ["resort", "elegant"],
-    url: "#",
-  },
-  {
-    id: 10,
-    brand: "Arket",
-    name: "White Linen Wide-Leg Trousers",
-    price: 120,
-    image:
-      "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://www.arket.com/en/white-linen-wide-leg-trousers",
-    affiliateUrl: "https://socialmall.com/out/arket-linen-trousers",
-    affiliateNetwork: "Shopify Collabs",
-    commissionRate: 0.09,
-    category: "trousers",
-    gender: ["women"],
-    colors: ["white", "cream"],
-    materials: ["linen"],
-    fitTags: ["wide leg", "relaxed"],
-    occasionTags: ["holiday", "office", "casual"],
-    seasonTags: ["summer", "spring"],
-    vibeTags: ["quiet luxury", "minimalist", "resort"],
-    styleTags: ["clean", "minimalist", "smart casual"],
-    url: "#",
-  },
-  {
-    id: 11,
-    brand: "Demellier",
-    name: "Minimal Leather Shoulder Bag",
-    price: 360,
-    image:
-      "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://demellierlondon.com/products/minimal-leather-shoulder-bag",
-    affiliateUrl: "https://socialmall.com/out/demellier-shoulder-bag",
-    affiliateNetwork: "Impact",
-    commissionRate: 0.1,
-    category: "bag",
-    gender: ["women"],
-    colors: ["white", "beige"],
-    materials: ["leather"],
-    fitTags: ["relaxed"],
-    occasionTags: ["office", "dinner", "formal"],
-    seasonTags: ["autumn", "winter", "spring"],
-    vibeTags: ["quiet luxury", "classy", "minimalist"],
-    styleTags: ["clean", "elegant", "minimalist"],
-    url: "#",
-  },
-  {
-    id: 12,
-    brand: "Mejuri",
-    name: "Gold Everyday Hoop Earrings",
-    price: 110,
-    image:
-      "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://mejuri.com/products/gold-everyday-hoops",
-    affiliateUrl: null,
-    affiliateNetwork: null,
-    commissionRate: null,
-    category: "jewellery",
-    gender: ["women"],
-    colors: ["beige"],
-    materials: ["silk"],
-    fitTags: ["relaxed"],
-    occasionTags: ["party", "dinner", "casual"],
-    seasonTags: ["summer", "spring", "autumn"],
-    vibeTags: ["minimalist", "elegant"],
-    styleTags: ["clean", "classy"],
-    url: "#",
-  },
-  {
-    id: 13,
-    brand: "Common Projects",
-    name: "Minimal White Leather Sneakers",
-    price: 430,
-    image:
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://www.commonprojects.com/products/white-leather-sneakers",
-    affiliateUrl: "https://socialmall.com/out/common-projects-sneakers",
-    affiliateNetwork: "Rakuten",
-    commissionRate: 0.08,
-    category: "footwear",
-    gender: ["men"],
-    colors: ["white"],
-    materials: ["leather"],
-    fitTags: ["slim fit"],
-    occasionTags: ["casual", "airport outfit", "office"],
-    seasonTags: ["spring", "summer", "autumn"],
-    vibeTags: ["quiet luxury", "minimalist"],
-    styleTags: ["clean", "smart casual"],
-    url: "#",
-  },
-  {
-    id: 14,
-    brand: "Uniqlo",
-    name: "Black Cotton Oversized Tee",
-    price: 35,
-    image:
-      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1200&q=80",
-    productUrl: "https://www.uniqlo.com/products/black-cotton-oversized-tee",
-    affiliateUrl: "https://socialmall.com/out/uniqlo-oversized-tee",
-    affiliateNetwork: "Shopify Collabs",
-    commissionRate: 0.06,
-    category: "tshirt",
-    gender: ["unisex"],
-    colors: ["black"],
-    materials: ["cotton"],
-    fitTags: ["oversized", "relaxed"],
-    occasionTags: ["casual", "gym", "airport outfit"],
-    seasonTags: ["summer", "spring"],
-    vibeTags: ["streetwear", "casual"],
-    styleTags: ["streetwear", "clean"],
-    url: "#",
-  },
-];
-
-const fallbackTrendingProducts = products.slice(0, 8);
+const fallbackTrendingProducts = mockProducts.slice(0, 8);
 
 function HomeContent({ initialQuery }: { initialQuery: string }) {
   const seededQuery = initialQuery.trim();
@@ -1094,7 +763,7 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const skipNextUrlSyncRef = useRef<string | null>(null);
   const filteredResults = useMemo(
-    () => getFilteredProducts(activeQuery, products),
+    () => getFilteredProducts(activeQuery, mockProducts),
     [activeQuery],
   );
   const activeIntent = useMemo(() => parseQueryIntent(activeQuery), [activeQuery]);
@@ -1110,7 +779,8 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
         item: {
           "@type": "Product",
           name: product.name,
-          image: product.image,
+          image: product.images,
+          description: product.description,
           category: product.category,
           brand: {
             "@type": "Brand",
@@ -1119,9 +789,11 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
           offers: {
             "@type": "Offer",
             price: product.price,
-            priceCurrency: "EUR",
+            priceCurrency: product.currency,
             url: product.productUrl,
-            availability: "https://schema.org/InStock",
+            availability: product.inStock
+              ? "https://schema.org/InStock"
+              : "https://schema.org/OutOfStock",
           },
         },
       })),
@@ -1147,10 +819,10 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
   const tagDrivenPhrases = useMemo(() => {
     const topProducts = filteredResults.items.slice(0, 8);
     const tags = topProducts.flatMap((product) => [
-      ...product.vibeTags,
-      ...product.styleTags,
-      ...product.fitTags,
-      ...product.occasionTags,
+      ...product.vibe,
+      ...product.style,
+      ...product.fit,
+      ...product.occasion,
     ]);
 
     const mappedPhrases = tags.flatMap((tag) => {
@@ -1441,7 +1113,7 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
       return;
     }
 
-    const validationResults = runSearchValidationCases(products);
+    const validationResults = runSearchValidationCases(mockProducts);
     const failedCases = validationResults.filter((result) => !result.passed);
 
     if (failedCases.length) {

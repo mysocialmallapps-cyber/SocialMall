@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
-import { products } from "../../home-client";
+import { mockProducts } from "@/lib/products";
 import { trackProductClick } from "@/lib/tracking";
 
 export default function OutboundRedirectPage() {
@@ -25,7 +25,7 @@ export default function OutboundRedirectPage() {
 
     const parsedProductId = Number.parseInt(rawProductId, 10);
 
-    const product = products.find((item) => item.id === parsedProductId);
+    const product = mockProducts.find((item) => item.id === parsedProductId);
     if (!product) {
       hasRedirectedRef.current = true;
       router.replace("/");
