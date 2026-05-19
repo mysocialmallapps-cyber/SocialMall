@@ -1,3 +1,8 @@
+export {
+  captureAttributionFromUrl,
+  getAttributionContext,
+  parseAttributionParams,
+} from "./attribution";
 export { AnalyticsProvider } from "./provider";
 export { AnalyticsScripts } from "./scripts";
 export { initializeAnalytics, isAnalyticsEnabled, trackEvent, trackPageView } from "./client";

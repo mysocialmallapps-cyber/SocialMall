@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
+import { captureAttributionFromUrl } from "./attribution";
 import { initializeAnalytics, trackPageView } from "./client";
 
 export const AnalyticsProvider = () => {
@@ -24,6 +25,11 @@ export const AnalyticsProvider = () => {
     if (lastTrackedUrlRef.current === url) {
       return;
     }
+
+    captureAttributionFromUrl({
+      pathname,
+      search: searchSuffix,
+    });
 
     lastTrackedUrlRef.current = url;
     trackPageView({

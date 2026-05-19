@@ -3,6 +3,7 @@ import type {
   AnalyticsEventParams,
   TrackEventOptions,
 } from "./types";
+import { getAttributionContext } from "./attribution";
 
 type PostHogApi = {
   init?: (apiKey: string, options?: { api_host?: string }) => void;
@@ -103,7 +104,11 @@ export const trackEvent = (
 
   initializeAnalytics();
 
-  const payload = sanitizeParams(params);
+  const attributionContext = getAttributionContext();
+  const payload = sanitizeParams({
+    ...attributionContext,
+    ...params,
+  });
   const dedupeWindowMs = options.dedupeWindowMs ?? DEFAULT_DEDUPE_WINDOW_MS;
   const dedupeKey = options.dedupeKey ?? toDedupeKey(eventName, payload);
   if (shouldSkipByDedupe(dedupeKey, dedupeWindowMs)) {
