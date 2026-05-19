@@ -38,6 +38,7 @@ export default function OutboundRedirectPage() {
       productName: product.name,
       brand: product.brand,
       category: product.category,
+      vibe: product.vibeTags,
       price: product.price,
       searchQuery: searchParams.get("q") ?? "",
       destinationUrl,

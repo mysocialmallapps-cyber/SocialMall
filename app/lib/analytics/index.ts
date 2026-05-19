@@ -2,6 +2,11 @@ export { AnalyticsProvider } from "./provider";
 export { AnalyticsScripts } from "./scripts";
 export { initializeAnalytics, isAnalyticsEnabled, trackEvent, trackPageView } from "./client";
 export {
+  getRecentProductEngagements,
+  getTopClickedProducts,
+  trackProductEngagement,
+} from "./product-engagement";
+export {
   getPopularSearches,
   getRecentSearches,
   trackSearchIntent,
@@ -21,3 +26,7 @@ export type {
   TrackEventOptions,
 } from "./types";
 export type { PopularSearchRecord, SearchTrackingRecord } from "./search-intent";
+export type {
+  ProductEngagementRecord,
+  TopClickedProductRecord,
+} from "./product-engagement";

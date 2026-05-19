@@ -1353,6 +1353,7 @@ function HomeContent() {
       productName: product.name,
       brand: product.brand,
       category: product.category,
+      vibe: product.vibeTags,
       price: product.price,
       searchQuery: trackingQuery,
     });

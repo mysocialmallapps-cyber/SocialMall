@@ -1,4 +1,5 @@
 import { trackEvent } from "./client";
+import { trackProductEngagement } from "./product-engagement";
 import { trackSearchIntent } from "./search-intent";
 import type { ChipEventType, SearchEventSource } from "./types";
 
@@ -72,6 +73,7 @@ export const trackProductClickEvent = ({
   productName,
   brand,
   category,
+  vibe,
   price,
   searchQuery,
 }: {
@@ -79,9 +81,24 @@ export const trackProductClickEvent = ({
   productName: string;
   brand: string;
   category: string;
+  vibe?: string[];
   price: number;
   searchQuery: string;
 }) => {
+  const engagementRecord = trackProductEngagement({
+    eventType: "product_click",
+    productId,
+    productName,
+    brand,
+    category,
+    vibe,
+    searchQuery,
+  });
+
+  if (engagementRecord?.duplicate) {
+    return;
+  }
+
   trackEvent(
     "product_click",
     {
@@ -89,32 +106,67 @@ export const trackProductClickEvent = ({
       product_name: productName,
       brand,
       category,
+      aesthetic_vibe: engagementRecord?.vibe.join("|") || vibe?.join("|") || undefined,
       price,
-      search_query: searchQuery.trim() || undefined,
+      originating_search_query:
+        engagementRecord?.searchQuery || searchQuery.trim() || undefined,
+      timestamp: engagementRecord?.timestamp ?? new Date().toISOString(),
     },
     {
-      dedupeKey: `product_click:${productId}:${searchQuery.toLowerCase()}`,
+      dedupeKey: `product_click:${productId}:${
+        engagementRecord?.searchQuery ?? searchQuery.toLowerCase()
+      }`,
     },
   );
 };
 
 export const trackOutboundRedirectEvent = ({
   productId,
+  productName,
+  brand,
+  category,
+  vibe,
   destinationUrl,
   searchQuery,
   hasAffiliateUrl,
 }: {
   productId: string;
+  productName: string;
+  brand: string;
+  category: string;
+  vibe?: string[];
   destinationUrl: string;
   searchQuery: string;
   hasAffiliateUrl: boolean;
 }) => {
+  const engagementRecord = trackProductEngagement({
+    eventType: "outbound_redirect",
+    productId,
+    productName,
+    brand,
+    category,
+    vibe,
+    searchQuery,
+    destinationUrl,
+    hasAffiliateUrl,
+  });
+
+  if (engagementRecord?.duplicate) {
+    return;
+  }
+
   trackEvent(
     "outbound_redirect",
     {
       product_id: productId,
+      product_name: productName,
+      brand,
+      category,
+      aesthetic_vibe: engagementRecord?.vibe.join("|") || vibe?.join("|") || undefined,
       destination_url: destinationUrl,
-      search_query: searchQuery.trim() || undefined,
+      originating_search_query:
+        engagementRecord?.searchQuery || searchQuery.trim() || undefined,
+      timestamp: engagementRecord?.timestamp ?? new Date().toISOString(),
       has_affiliate_url: hasAffiliateUrl,
     },
     {

@@ -5,6 +5,7 @@ type ProductClickTrackingInput = {
   productName: string;
   brand: string;
   category: string;
+  vibe?: string[];
   price: number;
   searchQuery: string;
   destinationUrl: string;
@@ -16,6 +17,7 @@ export const trackProductClick = ({
   productName,
   brand,
   category,
+  vibe,
   price,
   searchQuery,
   destinationUrl,
@@ -34,6 +36,10 @@ export const trackProductClick = ({
 
   trackOutboundRedirectEvent({
     productId,
+    productName,
+    brand,
+    category,
+    vibe,
     destinationUrl,
     searchQuery,
     hasAffiliateUrl,
