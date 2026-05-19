@@ -41,6 +41,7 @@ export default function OutboundRedirectPage() {
       price: product.price,
       searchQuery: searchParams.get("q") ?? "",
       destinationUrl,
+      hasAffiliateUrl: Boolean(product.affiliateUrl),
     });
 
     hasRedirectedRef.current = true;

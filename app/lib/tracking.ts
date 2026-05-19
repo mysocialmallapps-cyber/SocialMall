@@ -1,3 +1,5 @@
+import { trackOutboundRedirectEvent } from "@/lib/analytics";
+
 type ProductClickTrackingInput = {
   productId: string;
   productName: string;
@@ -6,6 +8,7 @@ type ProductClickTrackingInput = {
   price: number;
   searchQuery: string;
   destinationUrl: string;
+  hasAffiliateUrl: boolean;
 };
 
 export const trackProductClick = ({
@@ -16,6 +19,7 @@ export const trackProductClick = ({
   price,
   searchQuery,
   destinationUrl,
+  hasAffiliateUrl,
 }: ProductClickTrackingInput) => {
   const trackingEvent = {
     productId,
@@ -28,6 +32,16 @@ export const trackProductClick = ({
     destinationUrl,
   };
 
-  console.log("SocialMall product click", trackingEvent);
+  trackOutboundRedirectEvent({
+    productId,
+    destinationUrl,
+    searchQuery,
+    hasAffiliateUrl,
+  });
+
+  if (process.env.NODE_ENV !== "production") {
+    console.log("SocialMall product click", trackingEvent);
+  }
+
   return trackingEvent;
 };

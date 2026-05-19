@@ -2,6 +2,7 @@
 
 import {
   FormEvent,
+  MouseEvent,
   Suspense,
   memo,
   useEffect,
@@ -12,6 +13,12 @@ import {
 import Image from "next/image";
 import Link, { type LinkProps } from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import {
+  trackChipClickEvent,
+  trackProductClickEvent,
+  trackSearchEvent,
+  type SearchEventSource,
+} from "@/lib/analytics";
 
 const suggestions = [
   "quiet luxury",
@@ -79,6 +86,7 @@ type ProductCardProps = {
   href: LinkProps["href"];
   imageSizes: string;
   priority?: boolean;
+  onProductClick?: (product: Product) => void;
 };
 
 const ProductCard = memo(function ProductCard({
@@ -86,10 +94,12 @@ const ProductCard = memo(function ProductCard({
   href,
   imageSizes,
   priority = false,
+  onProductClick,
 }: ProductCardProps) {
   return (
     <Link
       href={href}
+      onClick={() => onProductClick?.(product)}
       className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
     >
       <article>
@@ -1323,16 +1333,61 @@ function HomeContent() {
     return `${base} ${cleanedRefinement}`.replace(/\s+/g, " ").trim();
   };
 
+  const trackSearchInteraction = (query: string, source: SearchEventSource) => {
+    const normalizedQuery = query.trim();
+    if (!normalizedQuery) {
+      return;
+    }
+
+    const resultCount = getFilteredProducts(normalizedQuery, products).items.length;
+    trackSearchEvent({
+      query: normalizedQuery,
+      source,
+      resultCount,
+    });
+  };
+
+  const handleProductCardClick = (product: Product) => {
+    trackProductClickEvent({
+      productId: String(product.id),
+      productName: product.name,
+      brand: product.brand,
+      category: product.category,
+      price: product.price,
+      searchQuery: trackingQuery,
+    });
+  };
+
+  const handleInternalChipClick = (
+    event: MouseEvent<HTMLAnchorElement>,
+    term: string,
+    chipType: "related_search" | "trending_aesthetic" | "similar_vibe",
+  ) => {
+    trackChipClickEvent({
+      chipType,
+      chipValue: term,
+      activeQuery: trackingQuery,
+    });
+    trackSearchInteraction(term, "internal_chip");
+  };
+
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const query = searchInput.trim();
     if (!query) return;
+    trackSearchInteraction(query, "hero_submit");
     runSearch(query);
     updateSearchUrl(query);
   };
 
   const handleSuggestionClick = (suggestion: string) => {
     setSearchInput(suggestion);
+    trackChipClickEvent({
+      chipType: "hero_suggestion",
+      chipValue: suggestion,
+      activeQuery: trackingQuery,
+    });
+    trackSearchInteraction(suggestion, "hero_chip");
     runSearch(suggestion);
     updateSearchUrl(suggestion);
   };
@@ -1348,6 +1403,7 @@ function HomeContent() {
 
     setRefineInput("");
     setSearchInput(nextQuery);
+    trackSearchInteraction(nextQuery, "refine_submit");
     runSearch(nextQuery);
     updateSearchUrl(nextQuery);
   };
@@ -1503,6 +1559,7 @@ function HomeContent() {
                     product={product}
                     imageSizes={productImageSizes}
                     priority={index < 2}
+                    onProductClick={handleProductCardClick}
                   />
                 ))}
               </div>
@@ -1538,6 +1595,7 @@ function HomeContent() {
                   product={product}
                   imageSizes={productImageSizes}
                   priority={index < 2}
+                  onProductClick={handleProductCardClick}
                 />
               ))}
             </div>
@@ -1552,6 +1610,9 @@ function HomeContent() {
                       <Link
                         key={`related-${term}`}
                         href={buildSearchHref(term)}
+                        onClick={(event) =>
+                          handleInternalChipClick(event, term, "related_search")
+                        }
                         className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
                       >
                         {term}
@@ -1568,6 +1629,9 @@ function HomeContent() {
                       <Link
                         key={`aesthetic-${term}`}
                         href={buildSearchHref(term)}
+                        onClick={(event) =>
+                          handleInternalChipClick(event, term, "trending_aesthetic")
+                        }
                         className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
                       >
                         {term}
@@ -1584,6 +1648,9 @@ function HomeContent() {
                       <Link
                         key={`vibe-${term}`}
                         href={buildSearchHref(term)}
+                        onClick={(event) =>
+                          handleInternalChipClick(event, term, "similar_vibe")
+                        }
                         className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
                       >
                         {term}
