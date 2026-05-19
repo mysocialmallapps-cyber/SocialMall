@@ -1,4 +1,5 @@
 import { trackEvent } from "./client";
+import { trackSearchIntent } from "./search-intent";
 import type { ChipEventType, SearchEventSource } from "./types";
 
 export const trackSearchEvent = ({
@@ -15,15 +16,32 @@ export const trackSearchEvent = ({
     return;
   }
 
+  const searchIntent = trackSearchIntent({
+    rawQuery: query,
+    source,
+    resultCount,
+  });
+
+  if (searchIntent?.duplicate) {
+    return;
+  }
+
   trackEvent(
     "search",
     {
-      query: normalizedQuery,
+      raw_query: searchIntent?.rawQuery ?? query.trim(),
+      normalized_query:
+        searchIntent?.normalizedQuery ?? normalizedQuery.toLowerCase(),
       source,
+      timestamp: searchIntent?.timestamp ?? new Date().toISOString(),
+      search_frequency: searchIntent?.searchFrequency,
+      zero_results: searchIntent?.zeroResults ?? resultCount === 0,
       result_count: resultCount,
     },
     {
-      dedupeKey: `search:${source}:${normalizedQuery.toLowerCase()}`,
+      dedupeKey: `search:${source}:${
+        searchIntent?.normalizedQuery ?? normalizedQuery.toLowerCase()
+      }`,
     },
   );
 };
