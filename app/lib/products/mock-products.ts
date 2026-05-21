@@ -1,5 +1,11 @@
-import type { Product, ProductCategory, ProductGender } from "./types";
+import type {
+  AffiliateNetwork,
+  Product,
+  ProductCategory,
+  ProductGender,
+} from "./types";
 import { formatBrandName, generateBrandSlug, resolveBrandSlug } from "../brands";
+import { buildMockAffiliateUrl } from "../commerce";
 
 type Recipe = {
   key: string;
@@ -677,6 +683,12 @@ const brandProfiles: BrandProfile[] = [
 ];
 
 const recipeByKey = new Map(recipes.map((recipe) => [recipe.key, recipe]));
+const affiliateNetworks: AffiliateNetwork[] = [
+  "awin",
+  "impact",
+  "rakuten",
+  "shopify-collabs",
+];
 
 const unique = (values: string[]) => Array.from(new Set(values));
 
@@ -740,9 +752,16 @@ const buildCatalog = () => {
         `${resolvedBrandSlug}-${productName}-${recipeIndex + 1}`,
       );
       const productUrl = `https://${profile.domain}/products/${productSlug}`;
+      const affiliateNetwork =
+        affiliateNetworks[brandIndex % affiliateNetworks.length];
       const hasAffiliate = id % 5 !== 0;
       const affiliateUrl = hasAffiliate
-        ? `https://socialmall.com/out/${productSlug}`
+        ? buildMockAffiliateUrl({
+            network: affiliateNetwork,
+            productUrl,
+            productId: id,
+            retailer: formattedRetailer,
+          })
         : null;
       const popularityScore = Math.max(
         62,
@@ -782,6 +801,7 @@ const buildCatalog = () => {
         fit: recipe.fit,
         productUrl,
         affiliateUrl,
+        affiliateNetwork: affiliateUrl ? affiliateNetwork : undefined,
         retailer: formattedRetailer,
         inStock,
         featured: popularityScore > 92 || id % 11 === 0,

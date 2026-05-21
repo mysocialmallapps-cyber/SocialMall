@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
+import { resolveCommerceDestination } from "@/lib/commerce";
 import { mockProducts } from "@/lib/products";
 import { trackProductClick } from "@/lib/tracking";
 
@@ -32,7 +33,24 @@ export default function OutboundRedirectPage() {
       return;
     }
 
-    const destinationUrl = product.affiliateUrl ?? product.productUrl;
+    const resolvedDestination = resolveCommerceDestination({
+      affiliateUrl: product.affiliateUrl,
+      productUrl: product.productUrl,
+    });
+    if (!resolvedDestination.destinationUrl) {
+      if (process.env.NODE_ENV !== "production") {
+        console.warn("SocialMall redirect blocked due to invalid URLs", {
+          productId: product.id,
+          affiliateUrl: product.affiliateUrl,
+          productUrl: product.productUrl,
+        });
+      }
+      hasRedirectedRef.current = true;
+      router.replace("/");
+      return;
+    }
+
+    const destinationUrl = resolvedDestination.destinationUrl;
     trackProductClick({
       productId: String(product.id),
       productName: product.name,
@@ -42,7 +60,7 @@ export default function OutboundRedirectPage() {
       price: product.price,
       searchQuery: searchParams.get("q") ?? "",
       destinationUrl,
-      hasAffiliateUrl: Boolean(product.affiliateUrl),
+      hasAffiliateUrl: resolvedDestination.source === "affiliate",
     });
 
     hasRedirectedRef.current = true;

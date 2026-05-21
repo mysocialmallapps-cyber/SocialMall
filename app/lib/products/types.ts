@@ -13,6 +13,7 @@ export type ProductCategory =
   | "jewellery";
 
 export type ProductCurrency = "EUR" | "USD" | "GBP";
+export type AffiliateNetwork = "awin" | "impact" | "rakuten" | "shopify-collabs";
 
 export interface Product {
   id: number;
@@ -35,6 +36,7 @@ export interface Product {
   fit: string[];
   productUrl: string;
   affiliateUrl: string | null;
+  affiliateNetwork?: AffiliateNetwork;
   retailer: string;
   inStock: boolean;
   featured: boolean;
