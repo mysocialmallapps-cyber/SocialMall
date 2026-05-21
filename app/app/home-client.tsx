@@ -19,6 +19,12 @@ import {
   trackSearchEvent,
   type SearchEventSource,
 } from "@/lib/analytics";
+import {
+  PRODUCT_GRID_IMAGE_SIZES,
+  getProductImageByIndex,
+  getProductImageCandidates,
+  shouldUseUnoptimizedImage,
+} from "@/lib/images";
 import { mockProducts, type Product } from "@/lib/products";
 
 const suggestions = [
@@ -75,6 +81,34 @@ const ProductCard = memo(function ProductCard({
   priority = false,
   onProductClick,
 }: ProductCardProps) {
+  const imageCandidates = useMemo(() => getProductImageCandidates(product), [product]);
+  const [imageState, setImageState] = useState({
+    productId: product.id,
+    index: 0,
+  });
+  const imageIndex =
+    imageState.productId === product.id ? imageState.index : 0;
+
+  const activeImageSrc = useMemo(
+    () => getProductImageByIndex(product, imageIndex),
+    [imageIndex, product],
+  );
+  const useUnoptimizedImage = useMemo(
+    () => shouldUseUnoptimizedImage(activeImageSrc),
+    [activeImageSrc],
+  );
+
+  const handleImageError = () => {
+    setImageState((currentState) => {
+      const currentIndex =
+        currentState.productId === product.id ? currentState.index : 0;
+      return {
+        productId: product.id,
+        index: Math.min(currentIndex + 1, imageCandidates.length - 1),
+      };
+    });
+  };
+
   return (
     <Link
       href={href}
@@ -84,13 +118,15 @@ const ProductCard = memo(function ProductCard({
       <article>
         <div className="relative aspect-[2/3] overflow-hidden rounded-2xl bg-zinc-100">
           <Image
-            src={product.image}
+            src={activeImageSrc}
             alt={product.name}
             fill
             sizes={imageSizes}
             className="object-cover transition duration-500 group-hover:scale-[1.04]"
             priority={priority}
             loading={priority ? "eager" : "lazy"}
+            unoptimized={useUnoptimizedImage}
+            onError={handleImageError}
           />
         </div>
         <div className="mt-3 space-y-1">
@@ -817,7 +853,7 @@ function HomeContent() {
     [hasSearched, schemaQuery],
   );
   const trackingQuery = hasSearched ? currentQuery || activeQuery : "";
-  const productImageSizes = "(max-width: 768px) 50vw, 25vw";
+  const productImageSizes = PRODUCT_GRID_IMAGE_SIZES;
   const tagDrivenPhrases = useMemo(() => {
     const topProducts = filteredResults.items.slice(0, 8);
     const tags = topProducts.flatMap((product) => [
