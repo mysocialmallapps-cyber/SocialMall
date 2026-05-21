@@ -13,7 +13,13 @@ export type ProductCategory =
   | "jewellery";
 
 export type ProductCurrency = "EUR" | "USD" | "GBP";
-export type AffiliateNetwork = "awin" | "impact" | "rakuten" | "shopify-collabs";
+export type AffiliateNetwork =
+  | "awin"
+  | "skimlinks"
+  | "sovrn"
+  | "impact"
+  | "rakuten"
+  | "shopify-collabs";
 export type ProductShippingCountry = "IE" | "US" | "GB" | "FR" | "SE" | "HU";
 export type ProductTagField =
   | "colors"
