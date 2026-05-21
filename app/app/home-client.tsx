@@ -30,7 +30,10 @@ import {
   getBrandAttribution,
   getBrandSearchTerms,
 } from "@/lib/brands";
-import { getCollectionPathByQuery } from "@/lib/collections";
+import {
+  getCollectionPathByQuery,
+  getRelatedCollectionQueries,
+} from "@/lib/collections";
 import {
   extractUniqueProductTags,
   mockProducts,
@@ -1007,12 +1010,19 @@ function HomeContent({ initialQuery = "" }: HomeClientProps) {
       "Ibiza sunset dinner",
       "oversized streetwear",
     ];
+    const relatedCollectionTerms = getRelatedCollectionQueries(
+      {
+        query: trackingQuery,
+      },
+      4,
+    );
 
     return Array.from(
       new Set([
         ...dynamicTerms,
         ...tagDrivenPhrases,
         ...relatedBrandLinks,
+        ...relatedCollectionTerms,
         ...fallbackTerms,
       ]),
     )

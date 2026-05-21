@@ -1,4 +1,5 @@
 import {
+  extractUniqueProductTags,
   productCatalog,
   type Product,
   type ProductCategory,
@@ -7,7 +8,7 @@ import {
 import { generateBrandSlug } from "@/lib/brands";
 import { toTitleCase } from "@/lib/seo/search-metadata";
 
-export type SeoCollectionKind = "aesthetic" | "category" | "trend";
+export type SeoCollectionKind = "aesthetic" | "category" | "trend" | "long-tail";
 
 export type SeoCollectionPage = {
   slug: string;
@@ -18,6 +19,9 @@ export type SeoCollectionPage = {
 };
 
 const normalizeQuery = (query: string) => query.trim().toLowerCase().replace(/\s+/g, " ");
+const sanitizeSeoKeyword = (value: string) =>
+  normalizeQuery(value).replace(/[^a-z0-9\s-]/g, "").trim();
+const seoSlugFromQuery = (query: string) => generateBrandSlug(sanitizeSeoKeyword(query));
 
 const categoryQueryMap: Record<ProductCategory, string> = {
   tshirt: "t-shirt outfits",
@@ -80,8 +84,8 @@ const buildCollectionFromQuery = (
   query: string,
   kind: SeoCollectionKind,
 ): SeoCollectionPage => {
-  const normalizedQuery = normalizeQuery(query);
-  const slug = generateBrandSlug(normalizedQuery);
+  const normalizedQuery = sanitizeSeoKeyword(query);
+  const slug = seoSlugFromQuery(normalizedQuery);
   return {
     slug,
     query: normalizedQuery,
@@ -89,6 +93,71 @@ const buildCollectionFromQuery = (
     description: `Discover ${normalizedQuery} curated from independent fashion brands on SocialMall.`,
     kind,
   };
+};
+
+const buildLongTailKeywordCollections = () => {
+  const colors = extractUniqueProductTags(productCatalog.all, ["colors"]).filter((color) =>
+    new Set(["black", "white", "beige", "brown", "blue", "grey"]).has(color),
+  );
+  const materials = extractUniqueProductTags(productCatalog.all, ["materials"]).filter(
+    (material) => new Set(["linen", "cotton", "wool", "silk", "denim", "leather"]).has(material),
+  );
+  const seasons = extractUniqueProductTags(productCatalog.all, ["season"]).filter((season) =>
+    new Set(["spring", "summer", "autumn", "winter"]).has(season),
+  );
+  const aesthetics = Object.keys(productCatalog.indexes.byAesthetic).filter((aesthetic) =>
+    new Set(["quiet luxury", "old money", "minimalist", "streetwear", "resort"]).has(
+      aesthetic,
+    ),
+  );
+
+  const categoryTerms: Record<ProductCategory, string> = {
+    tshirt: "tshirts",
+    shirt: "shirts",
+    hoodie: "hoodies",
+    trousers: "trousers",
+    jeans: "jeans",
+    dress: "dresses",
+    blazer: "blazers",
+    footwear: "footwear",
+    bag: "bags",
+    jewellery: "jewellery",
+  };
+
+  const seededLongTailQueries = [
+    "black linen shirts men",
+    "quiet luxury summer outfits",
+    "old money aesthetic outfits",
+  ];
+  const generatedLongTailQueries = new Set<string>();
+  const preferredGenderTerms = ["men", "women"];
+  const longTailCategoryPool: ProductCategory[] = ["shirt", "hoodie", "trousers", "blazer"];
+
+  colors.slice(0, 4).forEach((color) => {
+    materials.slice(0, 3).forEach((material) => {
+      longTailCategoryPool.forEach((category) => {
+        preferredGenderTerms.forEach((gender) => {
+          generatedLongTailQueries.add(
+            `${color} ${material} ${categoryTerms[category]} ${gender}`,
+          );
+        });
+      });
+    });
+  });
+
+  aesthetics.forEach((aesthetic) => {
+    seasons.slice(0, 4).forEach((season) => {
+      generatedLongTailQueries.add(`${aesthetic} ${season} outfits`);
+    });
+  });
+
+  const orderedLongTailQueries = Array.from(
+    new Set([...seededLongTailQueries, ...Array.from(generatedLongTailQueries)]),
+  );
+
+  return orderedLongTailQueries
+    .map((query) => buildCollectionFromQuery(query, "long-tail"))
+    .slice(0, 60);
 };
 
 const buildDynamicCategoryCollections = () =>
@@ -121,6 +190,7 @@ export const seoCollectionPages = dedupeCollections([
   ...buildDynamicCategoryCollections(),
   ...buildDynamicAestheticCollections(),
   ...buildDynamicTrendCollections(),
+  ...buildLongTailKeywordCollections(),
 ]);
 
 const collectionBySlug = new Map(
@@ -134,13 +204,59 @@ const collectionPathByQuery = new Map(
   ]),
 );
 
+const scoreQueryRelationship = (baseQuery: string, candidateQuery: string) => {
+  const baseTokens = new Set(baseQuery.split(" "));
+  const candidateTokens = new Set(candidateQuery.split(" "));
+  let overlap = 0;
+  baseTokens.forEach((token) => {
+    if (candidateTokens.has(token)) {
+      overlap += 1;
+    }
+  });
+  return overlap;
+};
+
+const collectionRelationsBySlug = new Map<string, string[]>(
+  seoCollectionPages.map((collection) => {
+    const related = seoCollectionPages
+      .filter((candidate) => candidate.slug !== collection.slug)
+      .map((candidate) => ({
+        query: candidate.query,
+        score: scoreQueryRelationship(collection.query, candidate.query),
+      }))
+      .filter((candidate) => candidate.score > 0)
+      .sort((left, right) => right.score - left.score)
+      .slice(0, 8)
+      .map((candidate) => candidate.query);
+
+    return [collection.slug, related] as const;
+  }),
+);
+
 export const getSeoCollectionBySlug = (slug: string) => collectionBySlug.get(slug) ?? null;
 
 export const getSeoCollectionPaths = () =>
   seoCollectionPages.map((collection) => `/${collection.slug}`);
 
 export const getCollectionPathByQuery = (query: string) =>
-  collectionPathByQuery.get(normalizeQuery(query)) ?? null;
+  collectionPathByQuery.get(sanitizeSeoKeyword(query)) ?? null;
+
+export const getRelatedCollectionQueries = (
+  collectionLookup: { slug?: string; query?: string },
+  limit = 6,
+) => {
+  const slugFromLookup =
+    collectionLookup.slug ??
+    (collectionLookup.query ? getCollectionPathByQuery(collectionLookup.query) : null)?.replace(
+      /^\//,
+      "",
+    );
+  if (!slugFromLookup) {
+    return [];
+  }
+
+  return (collectionRelationsBySlug.get(slugFromLookup) ?? []).slice(0, limit);
+};
 
 export const getCollectionProducts = (query: string) => {
   const normalizedQuery = normalizeQuery(query);
