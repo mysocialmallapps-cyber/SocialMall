@@ -1,7 +1,9 @@
 import type { AffiliateNetwork } from "@/lib/products/types";
 import {
   buildAffiliateClickId,
+  defaultAffiliateProviderFallbacks,
   getAffiliateProviderAdapter,
+  resolveAffiliateProviderWithFallback,
 } from "./providers";
 
 type ResolvedCommerceDestination = {
@@ -40,6 +42,17 @@ const parseUrl = (value?: string | null) => {
   }
 };
 
+export const normalizeOutboundUrl = (value?: string | null) => {
+  const parsed = parseUrl(value);
+  if (!parsed) {
+    return null;
+  }
+
+  parsed.hash = "";
+  parsed.hostname = parsed.hostname.toLowerCase();
+  return parsed.toString();
+};
+
 const sanitizeRetailerKey = (value: string) =>
   value
     .trim()
@@ -57,7 +70,8 @@ const isBlockedInternalRedirect = (parsed: URL) => {
 };
 
 export const isValidOutboundUrl = (value?: string | null) => {
-  const parsed = parseUrl(value);
+  const normalized = normalizeOutboundUrl(value);
+  const parsed = parseUrl(normalized);
   if (!parsed) {
     return false;
   }
@@ -73,7 +87,7 @@ export const appendTrackingParams = (
   value: string,
   params: Record<string, string | number | undefined>,
 ) => {
-  const parsed = parseUrl(value);
+  const parsed = parseUrl(normalizeOutboundUrl(value));
   if (!parsed || !SUPPORTED_PROTOCOLS.has(parsed.protocol)) {
     return null;
   }
@@ -205,16 +219,22 @@ export const resolveAffiliateRedirectDestination = ({
     retailer,
     searchQuery,
   };
-  const providerAdapter = getAffiliateProviderAdapter(affiliateNetwork);
+  const resolvedProvider = resolveAffiliateProviderWithFallback({
+    preferredNetwork: affiliateNetwork,
+    affiliateUrl,
+    fallbackNetworks: [],
+  });
+  const providerAdapter = getAffiliateProviderAdapter(resolvedProvider ?? undefined);
   const clickId = buildAffiliateClickId({
-    network: affiliateNetwork ?? "unknown",
+    network: resolvedProvider ?? "unknown",
     productId,
   });
 
   if (isValidOutboundUrl(affiliateUrl)) {
+    const normalizedAffiliateUrl = normalizeOutboundUrl(affiliateUrl) ?? affiliateUrl ?? "";
     const destination = applyAffiliateTrackingParams({
-      affiliateUrl: affiliateUrl ?? "",
-      network: affiliateNetwork,
+      affiliateUrl: normalizedAffiliateUrl,
+      network: resolvedProvider ?? undefined,
       context: trackingContext,
       clickId,
     });
@@ -223,11 +243,11 @@ export const resolveAffiliateRedirectDestination = ({
       destinationUrl: destination,
       source: "affiliate",
       usedFallback: false,
-      provider: affiliateNetwork ?? "unknown",
-      trackingApplied: destination !== affiliateUrl,
+      provider: resolvedProvider ?? "unknown",
+      trackingApplied: destination !== normalizedAffiliateUrl,
       attribution: {
         clickId,
-        provider: affiliateNetwork ?? "unknown",
+        provider: resolvedProvider ?? "unknown",
         trackingParams: providerAdapter
           ? providerAdapter.buildTrackingParams({
               productId,
@@ -247,7 +267,7 @@ export const resolveAffiliateRedirectDestination = ({
       productId,
     });
     const fallbackDestination = applyProductFallbackTrackingParams({
-      productUrl: productUrl ?? "",
+      productUrl: normalizeOutboundUrl(productUrl) ?? "",
       context: trackingContext,
       clickId: fallbackClickId,
     });
@@ -257,7 +277,8 @@ export const resolveAffiliateRedirectDestination = ({
       source: "product",
       usedFallback: Boolean(affiliateUrl),
       provider: "direct",
-      trackingApplied: fallbackDestination !== productUrl,
+      trackingApplied:
+        fallbackDestination !== (normalizeOutboundUrl(productUrl) ?? productUrl),
       attribution: {
         clickId: fallbackClickId,
         provider: "direct",
@@ -275,11 +296,11 @@ export const resolveAffiliateRedirectDestination = ({
     destinationUrl: null,
     source: "none",
     usedFallback: Boolean(affiliateUrl) || Boolean(productUrl),
-    provider: affiliateNetwork ?? "unknown",
+    provider: resolvedProvider ?? "unknown",
     trackingApplied: false,
     attribution: {
       clickId: null,
-      provider: affiliateNetwork ?? "unknown",
+      provider: resolvedProvider ?? "unknown",
       trackingParams: {},
       commission: providerAdapter ? providerAdapter.commission : null,
     },
@@ -301,33 +322,41 @@ export const buildMockAffiliateUrl = ({
     return null;
   }
 
-  const providerAdapter = getAffiliateProviderAdapter(network);
-  if (!providerAdapter) {
-    return null;
-  }
+  const providerCandidates = Array.from(
+    new Set([network, ...defaultAffiliateProviderFallbacks]),
+  );
 
-  const clickId = buildAffiliateClickId({ network, productId });
-  const trackingParams = providerAdapter.buildTrackingParams({
-    productId,
-    retailer,
-    clickId,
-  });
-
-  const destination = (() => {
-    if (providerAdapter.network === "shopify-collabs") {
-      return appendTrackingParams(productUrl, trackingParams);
+  for (const candidate of providerCandidates) {
+    const providerAdapter = getAffiliateProviderAdapter(candidate);
+    if (!providerAdapter) {
+      continue;
     }
 
-    return appendTrackingParams(providerAdapter.deeplinkBaseUrl, {
-      ...providerAdapter.staticParams,
-      ...trackingParams,
-      [providerAdapter.deeplinkDestinationParam]: productUrl,
+    const clickId = buildAffiliateClickId({ network: candidate, productId });
+    const trackingParams = providerAdapter.buildTrackingParams({
+      productId,
+      retailer,
+      clickId,
     });
-  })();
 
-  if (!destination || !isValidOutboundUrl(destination)) {
-    return null;
+    const destination = (() => {
+      if (providerAdapter.network === "shopify-collabs") {
+        return appendTrackingParams(productUrl, trackingParams);
+      }
+
+      return appendTrackingParams(providerAdapter.deeplinkBaseUrl, {
+        ...providerAdapter.staticParams,
+        ...trackingParams,
+        [providerAdapter.deeplinkDestinationParam]: productUrl,
+      });
+    })();
+
+    if (!destination || !isValidOutboundUrl(destination)) {
+      continue;
+    }
+
+    return destination;
   }
 
-  return destination;
+  return null;
 };

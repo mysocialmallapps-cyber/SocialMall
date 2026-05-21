@@ -20,6 +20,14 @@ export type AffiliateProviderAdapter = {
   }) => Record<string, string | number | undefined>;
 };
 
+export type AffiliateProviderScriptConfig = {
+  network: AffiliateNetwork;
+  src: string;
+  strategy: "beforeInteractive" | "afterInteractive" | "lazyOnload";
+  globalName: string;
+  enabledByEnv: string;
+};
+
 const sanitizeRetailerKey = (value: string) =>
   value
     .trim()
@@ -134,6 +142,68 @@ const providerAdapters: Record<AffiliateNetwork, AffiliateProviderAdapter> = {
   }),
 };
 
+const providerHostMatchers: Record<AffiliateNetwork, string[]> = {
+  awin: ["awin1.com", "awin.com"],
+  skimlinks: ["skimresources.com", "skimlinks.com"],
+  sovrn: ["viglink.com", "sovrn.com"],
+  impact: ["impact.com"],
+  rakuten: ["linksynergy.com", "rakutenadvertising.com"],
+  "shopify-collabs": ["myshopify.com", "shopify.com"],
+};
+
+const providerScriptConfigs: Record<AffiliateNetwork, AffiliateProviderScriptConfig> = {
+  awin: {
+    network: "awin",
+    src: "https://www.dwin1.com/19038.js",
+    strategy: "afterInteractive",
+    globalName: "AWIN",
+    enabledByEnv: "NEXT_PUBLIC_AWIN_SCRIPT_ENABLED",
+  },
+  skimlinks: {
+    network: "skimlinks",
+    src: "https://s.skimresources.com/js/000X-skimlinks.js",
+    strategy: "afterInteractive",
+    globalName: "skimlinks",
+    enabledByEnv: "NEXT_PUBLIC_SKIMLINKS_SCRIPT_ENABLED",
+  },
+  sovrn: {
+    network: "sovrn",
+    src: "https://scripts.viglink.com/api/vglnk.js",
+    strategy: "afterInteractive",
+    globalName: "vglnk",
+    enabledByEnv: "NEXT_PUBLIC_SOVRN_SCRIPT_ENABLED",
+  },
+  impact: {
+    network: "impact",
+    src: "https://tracking.impact.com/aff.js",
+    strategy: "lazyOnload",
+    globalName: "impact",
+    enabledByEnv: "NEXT_PUBLIC_IMPACT_SCRIPT_ENABLED",
+  },
+  rakuten: {
+    network: "rakuten",
+    src: "https://js.rmtag.com/tracking.js",
+    strategy: "lazyOnload",
+    globalName: "Rakuten",
+    enabledByEnv: "NEXT_PUBLIC_RAKUTEN_SCRIPT_ENABLED",
+  },
+  "shopify-collabs": {
+    network: "shopify-collabs",
+    src: "https://cdn.shopify.com/shopifycloud/collabs.js",
+    strategy: "lazyOnload",
+    globalName: "ShopifyCollabs",
+    enabledByEnv: "NEXT_PUBLIC_SHOPIFY_COLLABS_SCRIPT_ENABLED",
+  },
+};
+
+export const defaultAffiliateProviderFallbacks: AffiliateNetwork[] = [
+  "skimlinks",
+  "sovrn",
+  "impact",
+  "rakuten",
+  "awin",
+];
+
 export const getAffiliateProviderAdapter = (network?: AffiliateNetwork) =>
   network ? providerAdapters[network] : null;
 
@@ -143,6 +213,55 @@ export const getAffiliateCommissionDefaults = (network?: AffiliateNetwork) => {
     return null;
   }
   return provider.commission;
+};
+
+export const getAffiliateProviderScriptConfig = (network?: AffiliateNetwork) =>
+  network ? providerScriptConfigs[network] : null;
+
+export const getAffiliateProviderScriptConfigs = (networks: AffiliateNetwork[]) =>
+  Array.from(new Set(networks))
+    .map((network) => getAffiliateProviderScriptConfig(network))
+    .filter((entry): entry is AffiliateProviderScriptConfig => Boolean(entry));
+
+export const detectAffiliateProviderFromUrl = (url?: string | null) => {
+  if (!url) {
+    return null;
+  }
+
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.toLowerCase();
+    const match = (Object.keys(providerHostMatchers) as AffiliateNetwork[]).find((network) =>
+      providerHostMatchers[network].some(
+        (domain) => host === domain || host.endsWith(`.${domain}`),
+      ),
+    );
+
+    return match ?? null;
+  } catch {
+    return null;
+  }
+};
+
+export const resolveAffiliateProviderWithFallback = ({
+  preferredNetwork,
+  affiliateUrl,
+  fallbackNetworks = defaultAffiliateProviderFallbacks,
+}: {
+  preferredNetwork?: AffiliateNetwork;
+  affiliateUrl?: string | null;
+  fallbackNetworks?: AffiliateNetwork[];
+}) => {
+  if (preferredNetwork) {
+    return preferredNetwork;
+  }
+
+  const detected = detectAffiliateProviderFromUrl(affiliateUrl);
+  if (detected) {
+    return detected;
+  }
+
+  return fallbackNetworks[0] ?? null;
 };
 
 export const buildAffiliateClickId = ({
