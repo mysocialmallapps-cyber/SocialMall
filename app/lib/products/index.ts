@@ -12,6 +12,7 @@ export {
 } from "./helpers";
 export { mockProducts } from "./mock-products";
 export type {
+  AffiliateCommissionModel,
   AffiliateNetwork,
   BrandProfileSeed,
   Product,

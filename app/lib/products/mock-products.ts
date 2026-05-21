@@ -1,6 +1,6 @@
 import type { Product } from "./types";
 import { formatBrandName, generateBrandSlug, resolveBrandSlug } from "../brands";
-import { buildMockAffiliateUrl } from "../commerce";
+import { buildMockAffiliateUrl, getAffiliateCommissionDefaults } from "../commerce";
 import {
   productAffiliateNetworks,
   productBrandProfiles,
@@ -78,6 +78,9 @@ const buildCatalog = () => {
             retailer: formattedRetailer,
           })
         : null;
+      const affiliateCommission = affiliateUrl
+        ? getAffiliateCommissionDefaults(affiliateNetwork)
+        : null;
       const popularityScore = Math.max(
         62,
         Math.min(99, 74 + ((brandIndex * 9 + recipeIndex * 5) % 26)),
@@ -121,6 +124,8 @@ const buildCatalog = () => {
         productUrl,
         affiliateUrl,
         affiliateNetwork: affiliateUrl ? affiliateNetwork : undefined,
+        affiliateCommissionRate: affiliateCommission?.rate,
+        affiliateCommissionModel: affiliateCommission?.model,
         retailer: formattedRetailer,
         inStock,
         featured: popularityScore > 92 || id % 11 === 0,

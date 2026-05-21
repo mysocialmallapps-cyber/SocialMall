@@ -129,6 +129,12 @@ export const trackOutboundRedirectEvent = ({
   destinationUrl,
   searchQuery,
   hasAffiliateUrl,
+  affiliateProvider,
+  affiliateClickId,
+  commissionRate,
+  commissionModel,
+  usedFallback,
+  trackingApplied,
 }: {
   productId: string;
   productName: string;
@@ -138,6 +144,12 @@ export const trackOutboundRedirectEvent = ({
   destinationUrl: string;
   searchQuery: string;
   hasAffiliateUrl: boolean;
+  affiliateProvider?: string;
+  affiliateClickId?: string | null;
+  commissionRate?: number;
+  commissionModel?: string;
+  usedFallback?: boolean;
+  trackingApplied?: boolean;
 }) => {
   const engagementRecord = trackProductEngagement({
     eventType: "outbound_redirect",
@@ -168,6 +180,12 @@ export const trackOutboundRedirectEvent = ({
         engagementRecord?.searchQuery || searchQuery.trim() || undefined,
       timestamp: engagementRecord?.timestamp ?? new Date().toISOString(),
       has_affiliate_url: hasAffiliateUrl,
+      affiliate_provider: affiliateProvider,
+      affiliate_click_id: affiliateClickId ?? undefined,
+      commission_rate: commissionRate,
+      commission_model: commissionModel,
+      used_fallback_url: usedFallback,
+      affiliate_tracking_applied: trackingApplied,
     },
     {
       dedupeKey: `outbound_redirect:${productId}:${destinationUrl}`,

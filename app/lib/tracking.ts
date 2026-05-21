@@ -1,4 +1,14 @@
 import { trackOutboundRedirectEvent } from "@/lib/analytics";
+import type { AffiliateCommissionModel, AffiliateNetwork } from "@/lib/products";
+
+type AffiliateClickAttribution = {
+  provider: AffiliateNetwork | "direct" | "unknown";
+  clickId?: string | null;
+  commissionRate?: number;
+  commissionModel?: AffiliateCommissionModel;
+  usedFallback?: boolean;
+  trackingApplied?: boolean;
+};
 
 type ProductClickTrackingInput = {
   productId: string;
@@ -10,6 +20,7 @@ type ProductClickTrackingInput = {
   searchQuery: string;
   destinationUrl: string;
   hasAffiliateUrl: boolean;
+  attribution?: AffiliateClickAttribution;
 };
 
 export const trackProductClick = ({
@@ -22,6 +33,7 @@ export const trackProductClick = ({
   searchQuery,
   destinationUrl,
   hasAffiliateUrl,
+  attribution,
 }: ProductClickTrackingInput) => {
   const trackingEvent = {
     productId,
@@ -32,6 +44,11 @@ export const trackProductClick = ({
     searchQuery,
     timestamp: new Date().toISOString(),
     destinationUrl,
+    affiliateProvider: attribution?.provider,
+    affiliateClickId: attribution?.clickId,
+    commissionRate: attribution?.commissionRate,
+    commissionModel: attribution?.commissionModel,
+    usedFallback: attribution?.usedFallback,
   };
 
   trackOutboundRedirectEvent({
@@ -43,6 +60,12 @@ export const trackProductClick = ({
     destinationUrl,
     searchQuery,
     hasAffiliateUrl,
+    affiliateProvider: attribution?.provider,
+    affiliateClickId: attribution?.clickId,
+    commissionRate: attribution?.commissionRate,
+    commissionModel: attribution?.commissionModel,
+    usedFallback: attribution?.usedFallback,
+    trackingApplied: attribution?.trackingApplied,
   });
 
   if (process.env.NODE_ENV !== "production") {

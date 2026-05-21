@@ -1,4 +1,8 @@
 import type { AffiliateNetwork } from "@/lib/products/types";
+import {
+  buildAffiliateClickId,
+  getAffiliateProviderAdapter,
+} from "./providers";
 
 type ResolvedCommerceDestination = {
   destinationUrl: string | null;
@@ -9,6 +13,15 @@ type ResolvedCommerceDestination = {
 export type ResolvedAffiliateRedirect = ResolvedCommerceDestination & {
   provider: AffiliateNetwork | "direct" | "unknown";
   trackingApplied: boolean;
+  attribution: {
+    clickId: string | null;
+    provider: AffiliateNetwork | "direct" | "unknown";
+    trackingParams: Record<string, string | number | undefined>;
+    commission: {
+      model: "cps" | "cpa";
+      rate: number;
+    } | null;
+  };
 };
 
 const SUPPORTED_PROTOCOLS = new Set(["http:", "https:"]);
@@ -112,58 +125,33 @@ type RedirectTrackingContext = {
   searchQuery?: string;
 };
 
-const affiliateProviderTrackingBuilders: Record<
-  AffiliateNetwork,
-  (context: RedirectTrackingContext) => Record<string, string | number | undefined>
-> = {
-  awin: ({ productId, searchQuery }) => ({
-    clickref: `socialmall-${productId}`,
-    sm_query: searchQuery?.trim() || undefined,
-  }),
-  skimlinks: ({ productId, searchQuery }) => ({
-    sref: `socialmall-${productId}`,
-    xcust: searchQuery?.trim() || undefined,
-  }),
-  sovrn: ({ productId, searchQuery }) => ({
-    subId: `socialmall-${productId}`,
-    keyword: searchQuery?.trim() || undefined,
-  }),
-  impact: ({ productId, searchQuery }) => ({
-    subId1: `socialmall-${productId}`,
-    subId2: searchQuery?.trim() || undefined,
-  }),
-  rakuten: ({ productId, searchQuery }) => ({
-    subid: `socialmall-${productId}`,
-    u1: searchQuery?.trim() || undefined,
-  }),
-  "shopify-collabs": ({ productId, retailer, searchQuery }) => ({
-    utm_source: "socialmall",
-    utm_medium: "affiliate",
-    utm_campaign: "shopify-collabs",
-    utm_content: `${sanitizeRetailerKey(retailer)}-${productId}`,
-    sm_query: searchQuery?.trim() || undefined,
-  }),
-};
-
 const applyAffiliateTrackingParams = ({
   affiliateUrl,
   network,
   context,
+  clickId,
 }: {
   affiliateUrl: string;
   network?: AffiliateNetwork;
   context: RedirectTrackingContext;
+  clickId: string;
 }) => {
-  if (!network) {
+  const providerAdapter = getAffiliateProviderAdapter(network);
+  if (!network || !providerAdapter) {
     return affiliateUrl;
   }
 
-  const trackingBuilder = affiliateProviderTrackingBuilders[network];
-  if (!trackingBuilder) {
-    return affiliateUrl;
-  }
-
-  const tracked = appendTrackingParams(affiliateUrl, trackingBuilder(context));
+  const trackingParams = {
+    ...providerAdapter.buildTrackingParams({
+      productId: context.productId,
+      retailer: context.retailer,
+      searchQuery: context.searchQuery,
+      clickId,
+    }),
+    sm_click_id: clickId,
+    sm_provider: network,
+  };
+  const tracked = appendTrackingParams(affiliateUrl, trackingParams);
   if (!tracked || !isValidOutboundUrl(tracked)) {
     return affiliateUrl;
   }
@@ -174,9 +162,11 @@ const applyAffiliateTrackingParams = ({
 const applyProductFallbackTrackingParams = ({
   productUrl,
   context,
+  clickId,
 }: {
   productUrl: string;
   context: RedirectTrackingContext;
+  clickId: string;
 }) => {
   const tracked = appendTrackingParams(productUrl, {
     utm_source: "socialmall",
@@ -185,6 +175,7 @@ const applyProductFallbackTrackingParams = ({
     sm_product_id: context.productId,
     sm_retailer: sanitizeRetailerKey(context.retailer),
     sm_query: context.searchQuery?.trim() || undefined,
+    sm_click_id: clickId,
   });
 
   if (!tracked || !isValidOutboundUrl(tracked)) {
@@ -214,12 +205,18 @@ export const resolveAffiliateRedirectDestination = ({
     retailer,
     searchQuery,
   };
+  const providerAdapter = getAffiliateProviderAdapter(affiliateNetwork);
+  const clickId = buildAffiliateClickId({
+    network: affiliateNetwork ?? "unknown",
+    productId,
+  });
 
   if (isValidOutboundUrl(affiliateUrl)) {
     const destination = applyAffiliateTrackingParams({
       affiliateUrl: affiliateUrl ?? "",
       network: affiliateNetwork,
       context: trackingContext,
+      clickId,
     });
 
     return {
@@ -228,13 +225,31 @@ export const resolveAffiliateRedirectDestination = ({
       usedFallback: false,
       provider: affiliateNetwork ?? "unknown",
       trackingApplied: destination !== affiliateUrl,
+      attribution: {
+        clickId,
+        provider: affiliateNetwork ?? "unknown",
+        trackingParams: providerAdapter
+          ? providerAdapter.buildTrackingParams({
+              productId,
+              retailer,
+              searchQuery,
+              clickId,
+            })
+          : {},
+        commission: providerAdapter ? providerAdapter.commission : null,
+      },
     };
   }
 
   if (isValidOutboundUrl(productUrl)) {
+    const fallbackClickId = buildAffiliateClickId({
+      network: "direct",
+      productId,
+    });
     const fallbackDestination = applyProductFallbackTrackingParams({
       productUrl: productUrl ?? "",
       context: trackingContext,
+      clickId: fallbackClickId,
     });
 
     return {
@@ -243,6 +258,16 @@ export const resolveAffiliateRedirectDestination = ({
       usedFallback: Boolean(affiliateUrl),
       provider: "direct",
       trackingApplied: fallbackDestination !== productUrl,
+      attribution: {
+        clickId: fallbackClickId,
+        provider: "direct",
+        trackingParams: {
+          utm_source: "socialmall",
+          utm_medium: "affiliate_redirect",
+          sm_click_id: fallbackClickId,
+        },
+        commission: null,
+      },
     };
   }
 
@@ -252,91 +277,14 @@ export const resolveAffiliateRedirectDestination = ({
     usedFallback: Boolean(affiliateUrl) || Boolean(productUrl),
     provider: affiliateNetwork ?? "unknown",
     trackingApplied: false,
+    attribution: {
+      clickId: null,
+      provider: affiliateNetwork ?? "unknown",
+      trackingParams: {},
+      commission: providerAdapter ? providerAdapter.commission : null,
+    },
   };
 };
-
-const buildAwinUrl = ({
-  productUrl,
-  productId,
-}: {
-  productUrl: string;
-  productId: number;
-}) =>
-  appendTrackingParams("https://www.awin1.com/cread.php", {
-    awinmid: 12345,
-    awinaffid: 67890,
-    clickref: `socialmall-${productId}`,
-    ued: productUrl,
-  });
-
-const buildImpactUrl = ({
-  productUrl,
-  productId,
-}: {
-  productUrl: string;
-  productId: number;
-}) =>
-  appendTrackingParams("https://api.impact.com/click", {
-    campaign: "socialmall-fashion",
-    subId1: `socialmall-${productId}`,
-    url: productUrl,
-  });
-
-const buildSkimlinksUrl = ({
-  productUrl,
-  productId,
-}: {
-  productUrl: string;
-  productId: number;
-}) =>
-  appendTrackingParams("https://go.skimresources.com", {
-    id: 12345,
-    xcust: `socialmall-${productId}`,
-    url: productUrl,
-  });
-
-const buildSovrnUrl = ({
-  productUrl,
-  productId,
-}: {
-  productUrl: string;
-  productId: number;
-}) =>
-  appendTrackingParams("https://redirect.viglink.com", {
-    key: "socialmall-mock",
-    subId: `socialmall-${productId}`,
-    u: productUrl,
-  });
-
-const buildRakutenUrl = ({
-  productUrl,
-  productId,
-}: {
-  productUrl: string;
-  productId: number;
-}) =>
-  appendTrackingParams("https://click.linksynergy.com/deeplink", {
-    id: "socialmall-mock",
-    mid: 12345,
-    murl: productUrl,
-    subid: `socialmall-${productId}`,
-  });
-
-const buildShopifyCollabsUrl = ({
-  productUrl,
-  productId,
-  retailer,
-}: {
-  productUrl: string;
-  productId: number;
-  retailer: string;
-}) =>
-  appendTrackingParams(productUrl, {
-    utm_source: "socialmall",
-    utm_medium: "affiliate",
-    utm_campaign: "mock-catalog",
-    utm_content: `${retailer.toLowerCase().replace(/\s+/g, "-")}-${productId}`,
-  });
 
 export const buildMockAffiliateUrl = ({
   network,
@@ -353,20 +301,33 @@ export const buildMockAffiliateUrl = ({
     return null;
   }
 
-  switch (network) {
-    case "awin":
-      return buildAwinUrl({ productUrl, productId });
-    case "impact":
-      return buildImpactUrl({ productUrl, productId });
-    case "skimlinks":
-      return buildSkimlinksUrl({ productUrl, productId });
-    case "sovrn":
-      return buildSovrnUrl({ productUrl, productId });
-    case "rakuten":
-      return buildRakutenUrl({ productUrl, productId });
-    case "shopify-collabs":
-      return buildShopifyCollabsUrl({ productUrl, productId, retailer });
-    default:
-      return null;
+  const providerAdapter = getAffiliateProviderAdapter(network);
+  if (!providerAdapter) {
+    return null;
   }
+
+  const clickId = buildAffiliateClickId({ network, productId });
+  const trackingParams = providerAdapter.buildTrackingParams({
+    productId,
+    retailer,
+    clickId,
+  });
+
+  const destination = (() => {
+    if (providerAdapter.network === "shopify-collabs") {
+      return appendTrackingParams(productUrl, trackingParams);
+    }
+
+    return appendTrackingParams(providerAdapter.deeplinkBaseUrl, {
+      ...providerAdapter.staticParams,
+      ...trackingParams,
+      [providerAdapter.deeplinkDestinationParam]: productUrl,
+    });
+  })();
+
+  if (!destination || !isValidOutboundUrl(destination)) {
+    return null;
+  }
+
+  return destination;
 };
