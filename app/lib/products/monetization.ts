@@ -37,6 +37,7 @@ export const getProductMonetizationMetadata = (
     | "affiliateCommissionModel"
   >,
 ): ProductMonetizationMetadata => {
+  const normalizedRetailer = product.retailer.trim() || "Unknown Retailer";
   const hasAffiliateUrl = Boolean(product.affiliateUrl?.trim());
   const affiliateProvider = hasAffiliateUrl
     ? product.affiliateNetwork ?? "unknown"
@@ -47,7 +48,7 @@ export const getProductMonetizationMetadata = (
   return {
     productId: product.id,
     productName: product.name,
-    retailer: product.retailer,
+    retailer: normalizedRetailer,
     category: product.category,
     hasAffiliateUrl,
     affiliateProvider,

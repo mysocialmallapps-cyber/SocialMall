@@ -6,6 +6,8 @@ import type { AffiliateCommissionModel, AffiliateNetwork } from "@/lib/products"
 
 const resolveSearchSource = (searchQuery: string): CommerceSearchSource =>
   searchQuery.trim() ? "onsite_search" : "homepage_browse";
+const resolveRetailerName = (retailer: string, brand: string) =>
+  retailer.trim() || brand.trim() || "Unknown Retailer";
 
 type AffiliateClickAttribution = {
   provider: AffiliateNetwork | "direct" | "unknown";
@@ -45,12 +47,13 @@ export const trackProductClick = ({
   hasAffiliateUrl,
   attribution,
 }: ProductClickTrackingInput) => {
+  const resolvedRetailer = resolveRetailerName(retailer, brand);
   const resolvedSearchSource = attribution?.searchSource ?? resolveSearchSource(searchQuery);
   const trackingEvent = {
     productId,
     productName,
     brand,
-    retailer,
+    retailer: resolvedRetailer,
     category,
     price,
     searchQuery,
@@ -69,7 +72,7 @@ export const trackProductClick = ({
     productId,
     productName,
     brand,
-    retailer,
+    retailer: resolvedRetailer,
     category,
     vibe,
     price,

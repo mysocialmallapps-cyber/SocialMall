@@ -1,26 +1,29 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { useParams, useRouter, useSearchParams } from "next/navigation";
+import { useParams, useSearchParams } from "next/navigation";
 import { resolveAffiliateRedirectDestination } from "@/lib/commerce";
 import { getProductMonetizationMetadata, mockProducts } from "@/lib/products";
 import { trackProductClick } from "@/lib/tracking";
 
 export default function OutboundRedirectPage() {
   const params = useParams<{ productId: string }>();
-  const router = useRouter();
   const searchParams = useSearchParams();
   const hasRedirectedRef = useRef(false);
 
   useEffect(() => {
+    const redirectToHomepage = () => {
+      hasRedirectedRef.current = true;
+      window.location.replace("/");
+    };
+
     if (hasRedirectedRef.current) {
       return;
     }
 
     const rawProductId = params?.productId;
     if (!rawProductId || !/^\d+$/.test(rawProductId)) {
-      hasRedirectedRef.current = true;
-      router.replace("/");
+      redirectToHomepage();
       return;
     }
 
@@ -28,22 +31,45 @@ export default function OutboundRedirectPage() {
 
     const product = mockProducts.find((item) => item.id === parsedProductId);
     if (!product) {
-      hasRedirectedRef.current = true;
-      router.replace("/");
+      redirectToHomepage();
       return;
     }
 
     const searchQuery = searchParams.get("q") ?? "";
+    const normalizedRetailer =
+      product.retailer.trim() || product.brand.trim() || "Unknown Retailer";
     const monetizationMetadata = getProductMonetizationMetadata(product);
     const resolvedDestination = resolveAffiliateRedirectDestination({
       affiliateUrl: product.affiliateUrl,
       productUrl: product.productUrl,
       affiliateNetwork: product.affiliateNetwork,
       productId: product.id,
-      retailer: product.retailer,
+      retailer: normalizedRetailer,
       searchQuery,
     });
     if (!resolvedDestination.destinationUrl) {
+      trackProductClick({
+        productId: String(product.id),
+        productName: product.name,
+        brand: product.brand,
+        retailer: normalizedRetailer,
+        category: product.category,
+        vibe: product.vibe,
+        price: product.price,
+        searchQuery,
+        destinationUrl: "/",
+        hasAffiliateUrl: false,
+        attribution: {
+          provider: "unknown",
+          source: "none",
+          clickId: resolvedDestination.attribution.clickId,
+          commissionRate: monetizationMetadata.commissionRate,
+          commissionModel: monetizationMetadata.commissionModel,
+          usedFallback: true,
+          trackingApplied: false,
+        },
+      });
+
       if (process.env.NODE_ENV !== "production") {
         console.warn("SocialMall redirect blocked due to invalid URLs", {
           productId: product.id,
@@ -52,8 +78,7 @@ export default function OutboundRedirectPage() {
           affiliateNetwork: product.affiliateNetwork,
         });
       }
-      hasRedirectedRef.current = true;
-      router.replace("/");
+      redirectToHomepage();
       return;
     }
 
@@ -62,7 +87,7 @@ export default function OutboundRedirectPage() {
       productId: String(product.id),
       productName: product.name,
       brand: product.brand,
-      retailer: product.retailer,
+      retailer: normalizedRetailer,
       category: product.category,
       vibe: product.vibe,
       price: product.price,
@@ -87,7 +112,7 @@ export default function OutboundRedirectPage() {
 
     hasRedirectedRef.current = true;
     window.location.replace(destinationUrl);
-  }, [params, router, searchParams]);
+  }, [params, searchParams]);
 
   return null;
 }

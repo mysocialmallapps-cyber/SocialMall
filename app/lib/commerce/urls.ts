@@ -29,6 +29,8 @@ export type ResolvedAffiliateRedirect = ResolvedCommerceDestination & {
 const SUPPORTED_PROTOCOLS = new Set(["http:", "https:"]);
 const BLOCKED_INTERNAL_PATHS = ["/out/"];
 const SOCIALMALL_HOSTS = new Set(["socialmall.com", "www.socialmall.com"]);
+const UNKNOWN_RETAILER_FALLBACK = "unknown-retailer";
+const UNKNOWN_RETAILER_LABEL = "Unknown Retailer";
 
 const parseUrl = (value?: string | null) => {
   if (!value) {
@@ -54,11 +56,16 @@ export const normalizeOutboundUrl = (value?: string | null) => {
 };
 
 const sanitizeRetailerKey = (value: string) =>
-  value
+  (value
     .trim()
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
+    .replace(/^-+|-+$/g, "") || UNKNOWN_RETAILER_FALLBACK);
+
+const normalizeRetailerName = (value?: string | null) => {
+  const trimmed = value?.trim() ?? "";
+  return trimmed || UNKNOWN_RETAILER_LABEL;
+};
 
 const isBlockedInternalRedirect = (parsed: URL) => {
   const hostname = parsed.hostname.toLowerCase();
@@ -211,12 +218,12 @@ export const resolveAffiliateRedirectDestination = ({
   productUrl?: string | null;
   affiliateNetwork?: AffiliateNetwork;
   productId: number;
-  retailer: string;
+  retailer?: string;
   searchQuery?: string;
 }): ResolvedAffiliateRedirect => {
   const trackingContext: RedirectTrackingContext = {
     productId,
-    retailer,
+    retailer: normalizeRetailerName(retailer),
     searchQuery,
   };
   const resolvedProvider = resolveAffiliateProviderWithFallback({
