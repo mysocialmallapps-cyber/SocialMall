@@ -132,9 +132,10 @@ export const buildInternalLinkSections = ({
     "materials",
     "colors",
   ]);
-  const mappedAestheticPhrases = topTags
-    .map((tag) => mapTagToAestheticPhrase(tag))
-    .filter((entry): entry is string => Boolean(entry));
+  const mappedAestheticPhrases = topTags.flatMap((tag) => {
+    const mappedPhrase = mapTagToAestheticPhrase(tag);
+    return mappedPhrase ? [mappedPhrase] : [];
+  });
   const contextualCandidates = [
     primaryColor && primaryMaterial && primaryCategory
       ? `${primaryColor} ${primaryMaterial} ${primaryCategory}${primaryCategory.endsWith("s") ? "" : "s"}`
