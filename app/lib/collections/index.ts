@@ -203,6 +203,9 @@ const collectionPathByQuery = new Map(
     `/${collection.slug}`,
   ]),
 );
+const collectionByNormalizedQuery = new Map(
+  seoCollectionPages.map((collection) => [normalizeQuery(collection.query), collection] as const),
+);
 
 const scoreQueryRelationship = (baseQuery: string, candidateQuery: string) => {
   const baseTokens = new Set(baseQuery.split(" "));
@@ -240,6 +243,9 @@ export const getSeoCollectionPaths = () =>
 
 export const getCollectionPathByQuery = (query: string) =>
   collectionPathByQuery.get(sanitizeSeoKeyword(query)) ?? null;
+
+export const getSeoCollectionByQuery = (query: string) =>
+  collectionByNormalizedQuery.get(sanitizeSeoKeyword(query)) ?? null;
 
 export const getRelatedCollectionQueries = (
   collectionLookup: { slug?: string; query?: string },

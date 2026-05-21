@@ -33,12 +33,15 @@ import {
 import {
   getCollectionPathByQuery,
   getRelatedCollectionQueries,
+  getSeoCollectionByQuery,
+  type SeoCollectionPage,
 } from "@/lib/collections";
 import {
   extractUniqueProductTags,
   mockProducts,
   type Product,
 } from "@/lib/products";
+import { buildCollectionIntroCopy } from "@/lib/seo/collection-intro-copy";
 import { buildInternalLinkSections } from "@/lib/seo/internal-linking";
 
 const suggestions = [
@@ -77,6 +80,7 @@ type FilterResult = {
 
 type HomeClientProps = {
   initialQuery?: string;
+  initialCollection?: SeoCollectionPage;
 };
 
 type ValidationResult = {
@@ -868,7 +872,7 @@ export const getFilteredProducts = (
 
 const fallbackTrendingProducts = mockProducts.slice(0, 8);
 
-function HomeContent({ initialQuery = "" }: HomeClientProps) {
+function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -939,6 +943,19 @@ function HomeContent({ initialQuery = "" }: HomeClientProps) {
   );
   const trackingQuery = hasSearched ? currentQuery || activeQuery : "";
   const productImageSizes = PRODUCT_GRID_IMAGE_SIZES;
+  const activeCollection = getSeoCollectionByQuery(activeQuery) ?? initialCollection ?? null;
+  const collectionIntroCopy = useMemo(
+    () =>
+      hasSearched && activeQuery
+        ? buildCollectionIntroCopy({
+            query: activeQuery,
+            kind: activeCollection?.kind ?? "long-tail",
+            collectionDescription: activeCollection?.description,
+            topProducts: filteredResults.items.slice(0, 8),
+          })
+        : null,
+    [activeCollection, activeQuery, filteredResults.items, hasSearched],
+  );
   const tagDrivenPhrases = useMemo(() => {
     const topProducts = filteredResults.items.slice(0, 8);
     const tags = extractUniqueProductTags(topProducts, [
@@ -1337,6 +1354,22 @@ function HomeContent({ initialQuery = "" }: HomeClientProps) {
               <p className="text-sm text-zinc-500">
                 No exact match — showing similar styles.
               </p>
+            ) : null}
+            {!isLoading && collectionIntroCopy ? (
+              <section className="space-y-2 rounded-2xl border border-zinc-200 bg-zinc-50/70 p-4">
+                <p className="text-[0.68rem] font-medium uppercase tracking-[0.08em] text-zinc-500">
+                  {collectionIntroCopy.eyebrow}
+                </p>
+                <h2 className="text-base font-medium text-zinc-900">
+                  {collectionIntroCopy.headline}
+                </h2>
+                <p className="text-sm leading-6 text-zinc-600">{collectionIntroCopy.lead}</p>
+                {collectionIntroCopy.supporting ? (
+                  <p className="text-sm leading-6 text-zinc-600">
+                    {collectionIntroCopy.supporting}
+                  </p>
+                ) : null}
+              </section>
             ) : null}
             <div
               key={gridAnimationKey}

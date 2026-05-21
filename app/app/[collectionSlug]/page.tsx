@@ -44,5 +44,5 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
     notFound();
   }
 
-  return <HomeClient initialQuery={collection.query} />;
+  return <HomeClient initialQuery={collection.query} initialCollection={collection} />;
 }
