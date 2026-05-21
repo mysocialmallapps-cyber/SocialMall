@@ -1,4 +1,5 @@
 import type { Product, ProductCategory, ProductGender } from "./types";
+import { formatBrandName, generateBrandSlug, resolveBrandSlug } from "../brands";
 
 type Recipe = {
   key: string;
@@ -686,13 +687,6 @@ const toTitleCase = (value: string) =>
     .map((word) => `${word[0].toUpperCase()}${word.slice(1)}`)
     .join(" ");
 
-const slugify = (value: string) =>
-  value
-    .toLowerCase()
-    .replace(/&/g, "and")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-
 const buildImageSet = (baseImage: string) =>
   [1200, 1080, 900].map((width) =>
     baseImage.includes("w=")
@@ -720,6 +714,12 @@ const buildCatalog = () => {
         return;
       }
 
+      const formattedBrandName = formatBrandName(profile.brand);
+      const formattedRetailer = formatBrandName(profile.retailer);
+      const resolvedBrandSlug = resolveBrandSlug(
+        formattedBrandName,
+        profile.brandSlug,
+      );
       const imageIndex = (brandIndex * 7 + recipeIndex * 3) % imagePool.length;
       const image = imagePool[imageIndex];
       const primaryColor =
@@ -736,7 +736,9 @@ const buildCatalog = () => {
 
       const namePrefix = toTitleCase(primaryColor);
       const productName = `${namePrefix} ${recipe.name}`;
-      const productSlug = slugify(`${profile.brandSlug}-${productName}-${recipeIndex + 1}`);
+      const productSlug = generateBrandSlug(
+        `${resolvedBrandSlug}-${productName}-${recipeIndex + 1}`,
+      );
       const productUrl = `https://${profile.domain}/products/${productSlug}`;
       const hasAffiliate = id % 5 !== 0;
       const affiliateUrl = hasAffiliate
@@ -757,11 +759,11 @@ const buildCatalog = () => {
         (4.2 + ((brandIndex * 3 + recipeIndex) % 7) * 0.1).toFixed(1),
       );
       const reviewCount = 45 + ((brandIndex * 83 + recipeIndex * 57) % 1900);
-      const description = `${recipe.description} Curated by ${profile.brand} for ${recipe.occasion[0]} and ${recipe.occasion[1] ?? recipe.occasion[0]} looks.`;
+      const description = `${recipe.description} Curated by ${formattedBrandName} for ${recipe.occasion[0]} and ${recipe.occasion[1] ?? recipe.occasion[0]} looks.`;
 
       products.push({
         id,
-        brand: profile.brand,
+        brand: formattedBrandName,
         name: productName,
         description,
         price,
@@ -780,13 +782,13 @@ const buildCatalog = () => {
         fit: recipe.fit,
         productUrl,
         affiliateUrl,
-        retailer: profile.retailer,
+        retailer: formattedRetailer,
         inStock,
         featured: popularityScore > 92 || id % 11 === 0,
         popularityScore,
         compareAtPrice,
         shippingCountry: profile.shippingCountry,
-        brandSlug: profile.brandSlug,
+        brandSlug: resolvedBrandSlug,
         productSlug,
         rating,
         reviewCount,

@@ -25,6 +25,11 @@ import {
   getProductImageCandidates,
   shouldUseUnoptimizedImage,
 } from "@/lib/images";
+import {
+  formatBrandName,
+  getBrandAttribution,
+  getBrandSearchTerms,
+} from "@/lib/brands";
 import { mockProducts, type Product } from "@/lib/products";
 
 const suggestions = [
@@ -45,6 +50,7 @@ type QueryIntent = {
   seasons: string[];
   genders: string[];
   fits: string[];
+  brands: string[];
   exclusions: string[];
   onlyFilters: {
     categories: string[];
@@ -82,6 +88,15 @@ const ProductCard = memo(function ProductCard({
   onProductClick,
 }: ProductCardProps) {
   const imageCandidates = useMemo(() => getProductImageCandidates(product), [product]);
+  const brandAttribution = useMemo(
+    () =>
+      getBrandAttribution({
+        brandName: product.brand,
+        retailerName: product.retailer,
+        existingSlug: product.brandSlug,
+      }),
+    [product.brand, product.brandSlug, product.retailer],
+  );
   const [imageState, setImageState] = useState({
     productId: product.id,
     index: 0,
@@ -131,7 +146,13 @@ const ProductCard = memo(function ProductCard({
         </div>
         <div className="mt-3 space-y-1">
           <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
-            {product.brand}
+            {brandAttribution.displayName}
+            {brandAttribution.sourceLabel ? (
+              <span className="normal-case tracking-normal text-zinc-400">
+                {" "}
+                via {brandAttribution.sourceLabel}
+              </span>
+            ) : null}
           </p>
           <p className="truncate text-sm text-zinc-800">{product.name}</p>
           <p className="text-sm font-semibold text-zinc-900">
@@ -246,6 +267,27 @@ const styleKeywords: Record<string, string[]> = {
   paris: ["paris"],
   "smart casual": ["smart casual"],
 };
+
+const brandKeywords: Record<string, string[]> = mockProducts.reduce(
+  (dictionary, product) => {
+    const brandAttribution = getBrandAttribution({
+      brandName: product.brand,
+      retailerName: product.retailer,
+      existingSlug: product.brandSlug,
+    });
+    const terms = getBrandSearchTerms({
+      brandName: product.brand,
+      retailerName: product.retailer,
+      brandSlug: brandAttribution.brandSlug,
+    });
+
+    dictionary[brandAttribution.normalizedBrandId] = Array.from(
+      new Set([...(dictionary[brandAttribution.normalizedBrandId] ?? []), ...terms]),
+    );
+    return dictionary;
+  },
+  {} as Record<string, string[]>,
+);
 const pricingSortWords = new Set([
   "cheap",
   "cheaper",
@@ -358,6 +400,7 @@ export const parseQueryIntent = (query: string): QueryIntent => {
   const fits = detectIntentValues(normalizedQuery, fitKeywords);
   const vibes = detectIntentValues(normalizedQuery, vibeKeywords);
   const styles = detectIntentValues(normalizedQuery, styleKeywords);
+  const brands = detectIntentValues(normalizedQuery, brandKeywords);
   const excludedCategories = detectExcludedCategories(normalizedQuery);
   const normalizedCategories = categories.filter(
     (category) => !excludedCategories.includes(category),
@@ -391,6 +434,7 @@ export const parseQueryIntent = (query: string): QueryIntent => {
     seasons,
     genders,
     fits,
+    brands,
     exclusions: excludedCategories,
     onlyFilters: {
       categories: onlyCategoryFilters,
@@ -623,6 +667,7 @@ export const getFilteredProducts = (
   });
 
   const softSignalsPresent =
+    intent.brands.length > 0 ||
     intent.vibes.length > 0 ||
     intent.styles.length > 0 ||
     intent.occasions.length > 0 ||
@@ -631,6 +676,16 @@ export const getFilteredProducts = (
 
   const getRelevanceScore = (product: Product) => {
     const productCategory = normalizeProductCategory(product.category);
+    const brandAttribution = getBrandAttribution({
+      brandName: product.brand,
+      retailerName: product.retailer,
+      existingSlug: product.brandSlug,
+    });
+    const brandTerms = getBrandSearchTerms({
+      brandName: product.brand,
+      retailerName: product.retailer,
+      brandSlug: brandAttribution.brandSlug,
+    });
     let score = 0;
 
     if (strictCategoryFilters.length) {
@@ -699,13 +754,28 @@ export const getFilteredProducts = (
       score += 3;
     }
 
+    if (intent.brands.length) {
+      if (intent.brands.includes(brandAttribution.normalizedBrandId)) {
+        score += 7;
+      } else {
+        score -= 5;
+      }
+    }
+
     const lowerName = product.name.toLowerCase();
     const lowerBrand = product.brand.toLowerCase();
+    const lowerRetailer = product.retailer.toLowerCase();
     intent.words.forEach((word) => {
       if (lowerName.includes(word)) {
         score += 1;
       }
       if (lowerBrand.includes(word)) {
+        score += 1;
+      }
+      if (lowerRetailer.includes(word)) {
+        score += 1;
+      }
+      if (brandTerms.some((term) => term.includes(word))) {
         score += 1;
       }
     });
@@ -885,6 +955,17 @@ function HomeContent() {
 
     return Array.from(new Set(mappedPhrases));
   }, [filteredResults.items]);
+  const relatedBrandLinks = useMemo(
+    () =>
+      Array.from(
+        new Set(
+          filteredResults.items
+            .slice(0, 10)
+            .map((product) => formatBrandName(product.brand)),
+        ),
+      ).slice(0, 3),
+    [filteredResults.items],
+  );
   const relatedSearchLinks = useMemo(() => {
     const dynamicTerms: string[] = [];
     const primaryCategory = activeIntent.categories[0];
@@ -916,10 +997,17 @@ function HomeContent() {
       "oversized streetwear",
     ];
 
-    return Array.from(new Set([...dynamicTerms, ...tagDrivenPhrases, ...fallbackTerms]))
+    return Array.from(
+      new Set([
+        ...dynamicTerms,
+        ...tagDrivenPhrases,
+        ...relatedBrandLinks,
+        ...fallbackTerms,
+      ]),
+    )
       .filter((term) => term.toLowerCase() !== trackingQuery.toLowerCase())
       .slice(0, 6);
-  }, [activeIntent, tagDrivenPhrases, trackingQuery]);
+  }, [activeIntent, relatedBrandLinks, tagDrivenPhrases, trackingQuery]);
   const trendingAestheticsLinks = useMemo(
     () =>
       Array.from(
