@@ -30,7 +30,11 @@ import {
   getBrandAttribution,
   getBrandSearchTerms,
 } from "@/lib/brands";
-import { mockProducts, type Product } from "@/lib/products";
+import {
+  extractUniqueProductTags,
+  mockProducts,
+  type Product,
+} from "@/lib/products";
 
 const suggestions = [
   "quiet luxury",
@@ -926,11 +930,11 @@ function HomeContent() {
   const productImageSizes = PRODUCT_GRID_IMAGE_SIZES;
   const tagDrivenPhrases = useMemo(() => {
     const topProducts = filteredResults.items.slice(0, 8);
-    const tags = topProducts.flatMap((product) => [
-      ...product.vibe,
-      ...product.style,
-      ...product.fit,
-      ...product.occasion,
+    const tags = extractUniqueProductTags(topProducts, [
+      "vibe",
+      "style",
+      "fit",
+      "occasion",
     ]);
 
     const mappedPhrases = tags.flatMap((tag) => {
