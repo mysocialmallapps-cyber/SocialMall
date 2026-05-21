@@ -20,6 +20,7 @@ export type AffiliateNetwork =
   | "impact"
   | "rakuten"
   | "shopify-collabs";
+export type AffiliateCommissionModel = "cps" | "cpa";
 export type ProductShippingCountry = "IE" | "US" | "GB" | "FR" | "SE" | "HU";
 export type ProductTagField =
   | "colors"
@@ -59,6 +60,8 @@ export interface Product {
   productUrl: string;
   affiliateUrl: string | null;
   affiliateNetwork?: AffiliateNetwork;
+  affiliateCommissionRate?: number;
+  affiliateCommissionModel?: AffiliateCommissionModel;
   retailer: string;
   inStock: boolean;
   featured: boolean;

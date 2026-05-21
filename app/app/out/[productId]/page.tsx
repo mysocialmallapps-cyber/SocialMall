@@ -67,6 +67,14 @@ export default function OutboundRedirectPage() {
       searchQuery,
       destinationUrl,
       hasAffiliateUrl: resolvedDestination.source === "affiliate",
+      attribution: {
+        provider: resolvedDestination.attribution.provider,
+        clickId: resolvedDestination.attribution.clickId,
+        commissionRate: resolvedDestination.attribution.commission?.rate,
+        commissionModel: resolvedDestination.attribution.commission?.model,
+        usedFallback: resolvedDestination.usedFallback,
+        trackingApplied: resolvedDestination.trackingApplied,
+      },
     });
 
     hasRedirectedRef.current = true;
