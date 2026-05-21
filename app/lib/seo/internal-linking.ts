@@ -157,7 +157,6 @@ export const buildInternalLinkSections = ({
         primaryColor && primaryCategory ? `${primaryColor} ${primaryCategory}` : "",
         primaryMaterial && primaryCategory ? `${primaryMaterial} ${primaryCategory}` : "",
         primarySeason && primaryCategory ? `${primarySeason} ${primaryCategory}` : "",
-        ...mappedAestheticPhrases,
         ...topProducts.slice(0, 4).map((product) => `${product.brand} ${product.category}`),
         "quiet luxury outfits",
         "minimalist wardrobe staples",
