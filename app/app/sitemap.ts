@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { getSeoCollectionPaths } from "@/lib/collections";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://socialmall.com";
 
@@ -10,9 +11,9 @@ const SEARCHABLE_QUERY_ROUTES = [
   "oversized streetwear",
   "Scandinavian minimal",
 ];
+const SEO_COLLECTION_ROUTES = getSeoCollectionPaths();
 
-// Future-ready extension points for dedicated SEO landing pages and product pages.
-const FUTURE_SEO_LANDING_ROUTES: string[] = [];
+// Future-ready extension points for dedicated product pages.
 const FUTURE_PRODUCT_ROUTES: string[] = [];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -34,8 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }),
   );
 
-  const futureLandingEntries: MetadataRoute.Sitemap =
-    FUTURE_SEO_LANDING_ROUTES.map((route) => ({
+  const collectionEntries: MetadataRoute.Sitemap = SEO_COLLECTION_ROUTES.map((route) => ({
       url: `${SITE_URL}${route}`,
       lastModified: now,
       changeFrequency: "weekly",
@@ -54,7 +54,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticEntries,
     ...searchableEntries,
-    ...futureLandingEntries,
+    ...collectionEntries,
     ...futureProductEntries,
   ];
 }

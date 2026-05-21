@@ -30,6 +30,7 @@ import {
   getBrandAttribution,
   getBrandSearchTerms,
 } from "@/lib/brands";
+import { getCollectionPathByQuery } from "@/lib/collections";
 import {
   extractUniqueProductTags,
   mockProducts,
@@ -68,6 +69,10 @@ type QueryIntent = {
 type FilterResult = {
   items: Product[];
   showFallbackNotice: boolean;
+};
+
+type HomeClientProps = {
+  initialQuery?: string;
 };
 
 type ValidationResult = {
@@ -859,21 +864,23 @@ export const getFilteredProducts = (
 
 const fallbackTrendingProducts = mockProducts.slice(0, 8);
 
-function HomeContent() {
+function HomeContent({ initialQuery = "" }: HomeClientProps) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const urlQuery = searchParams.get("q")?.trim() ?? "";
+  const normalizedInitialQuery = initialQuery.trim();
   const previewProducts = fallbackTrendingProducts.slice(0, 4);
-  const [searchInput, setSearchInput] = useState("");
+  const [searchInput, setSearchInput] = useState(normalizedInitialQuery);
   const [refineInput, setRefineInput] = useState("");
-  const [activeQuery, setActiveQuery] = useState("");
-  const [currentQuery, setCurrentQuery] = useState("");
-  const [hasSearched, setHasSearched] = useState(false);
+  const [activeQuery, setActiveQuery] = useState(normalizedInitialQuery);
+  const [currentQuery, setCurrentQuery] = useState(normalizedInitialQuery);
+  const [hasSearched, setHasSearched] = useState(Boolean(normalizedInitialQuery));
   const [isLoading, setIsLoading] = useState(false);
   const [gridAnimationKey, setGridAnimationKey] = useState(0);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const skipNextUrlSyncRef = useRef<string | null>(null);
+  const hydratedInitialQueryRef = useRef(false);
   const filteredResults = useMemo(
     () => getFilteredProducts(activeQuery, mockProducts),
     [activeQuery],
@@ -1100,10 +1107,18 @@ function HomeContent() {
     };
   };
 
-  const buildSearchHref = (query: string) => ({
-    pathname: "/",
-    query: { q: query.trim() },
-  });
+  const buildSearchHref = (query: string) => {
+    const trimmedQuery = query.trim();
+    const collectionPath = getCollectionPathByQuery(trimmedQuery);
+    if (collectionPath) {
+      return collectionPath;
+    }
+
+    return {
+      pathname: "/",
+      query: { q: trimmedQuery },
+    };
+  };
 
   const buildRefinedQuery = (baseQuery: string, refinement: string) => {
     const base = baseQuery.trim();
@@ -1243,6 +1258,18 @@ function HomeContent() {
         clearTimeout(timeoutRef.current);
       }
 
+      if (!urlQuery && !hydratedInitialQueryRef.current && normalizedInitialQuery) {
+        hydratedInitialQueryRef.current = true;
+        setHasSearched(true);
+        setSearchInput(normalizedInitialQuery);
+        setRefineInput("");
+        setCurrentQuery(normalizedInitialQuery);
+        setActiveQuery(normalizedInitialQuery);
+        setIsLoading(false);
+        setGridAnimationKey((currentKey) => currentKey + 1);
+        return;
+      }
+
       if (!urlQuery) {
         setHasSearched(false);
         setSearchInput("");
@@ -1254,6 +1281,7 @@ function HomeContent() {
         return;
       }
 
+      hydratedInitialQueryRef.current = true;
       setHasSearched(true);
       setSearchInput(urlQuery);
       setRefineInput("");
@@ -1266,7 +1294,7 @@ function HomeContent() {
     return () => {
       window.clearTimeout(syncTimer);
     };
-  }, [urlQuery]);
+  }, [normalizedInitialQuery, urlQuery]);
 
   useEffect(() => {
     if (process.env.NODE_ENV === "production") {
@@ -1497,10 +1525,10 @@ function HomeContent() {
   );
 }
 
-export default function Home() {
+export default function Home({ initialQuery }: HomeClientProps) {
   return (
     <Suspense fallback={null}>
-      <HomeContent />
+      <HomeContent initialQuery={initialQuery} />
     </Suspense>
   );
 }
