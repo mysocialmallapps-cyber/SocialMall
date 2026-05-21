@@ -258,7 +258,7 @@ export const resolveAffiliateRedirectDestination = ({
         trackingParams: providerAdapter
           ? providerAdapter.buildTrackingParams({
               productId,
-              retailer,
+              retailer: trackingContext.retailer,
               searchQuery,
               clickId,
             })
