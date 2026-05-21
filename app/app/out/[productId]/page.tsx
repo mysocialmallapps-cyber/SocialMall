@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
-import { resolveCommerceDestination } from "@/lib/commerce";
+import { resolveAffiliateRedirectDestination } from "@/lib/commerce";
 import { mockProducts } from "@/lib/products";
 import { trackProductClick } from "@/lib/tracking";
 
@@ -33,9 +33,14 @@ export default function OutboundRedirectPage() {
       return;
     }
 
-    const resolvedDestination = resolveCommerceDestination({
+    const searchQuery = searchParams.get("q") ?? "";
+    const resolvedDestination = resolveAffiliateRedirectDestination({
       affiliateUrl: product.affiliateUrl,
       productUrl: product.productUrl,
+      affiliateNetwork: product.affiliateNetwork,
+      productId: product.id,
+      retailer: product.retailer,
+      searchQuery,
     });
     if (!resolvedDestination.destinationUrl) {
       if (process.env.NODE_ENV !== "production") {
@@ -43,6 +48,7 @@ export default function OutboundRedirectPage() {
           productId: product.id,
           affiliateUrl: product.affiliateUrl,
           productUrl: product.productUrl,
+          affiliateNetwork: product.affiliateNetwork,
         });
       }
       hasRedirectedRef.current = true;
@@ -58,7 +64,7 @@ export default function OutboundRedirectPage() {
       category: product.category,
       vibe: product.vibe,
       price: product.price,
-      searchQuery: searchParams.get("q") ?? "",
+      searchQuery,
       destinationUrl,
       hasAffiliateUrl: resolvedDestination.source === "affiliate",
     });
