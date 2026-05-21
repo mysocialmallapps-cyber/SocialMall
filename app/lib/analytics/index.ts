@@ -7,6 +7,12 @@ export { AnalyticsProvider } from "./provider";
 export { AnalyticsScripts } from "./scripts";
 export { initializeAnalytics, isAnalyticsEnabled, trackEvent, trackPageView } from "./client";
 export {
+  getMonetizationSummary,
+  getRecentMonetizationEvents,
+  resolveCommerceSearchSource,
+  trackMonetizationEvent,
+} from "./monetization";
+export {
   getRecentProductEngagements,
   getTopClickedProducts,
   trackProductEngagement,
@@ -35,3 +41,8 @@ export type {
   ProductEngagementRecord,
   TopClickedProductRecord,
 } from "./product-engagement";
+export type {
+  CommerceSearchSource,
+  MonetizationEventRecord,
+  MonetizationSummary,
+} from "./monetization";

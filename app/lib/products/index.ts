@@ -11,6 +11,8 @@ export {
   sortProducts,
 } from "./helpers";
 export { mockProducts } from "./mock-products";
+export { getProductMonetizationMetadata } from "./monetization";
+export type { ProductMonetizationMetadata } from "./monetization";
 export type {
   AffiliateCommissionModel,
   AffiliateNetwork,

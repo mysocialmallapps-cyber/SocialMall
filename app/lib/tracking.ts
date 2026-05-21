@@ -1,11 +1,19 @@
-import { trackOutboundRedirectEvent } from "@/lib/analytics";
+import {
+  trackOutboundRedirectEvent,
+  type CommerceSearchSource,
+} from "@/lib/analytics";
 import type { AffiliateCommissionModel, AffiliateNetwork } from "@/lib/products";
+
+const resolveSearchSource = (searchQuery: string): CommerceSearchSource =>
+  searchQuery.trim() ? "onsite_search" : "homepage_browse";
 
 type AffiliateClickAttribution = {
   provider: AffiliateNetwork | "direct" | "unknown";
   clickId?: string | null;
   commissionRate?: number;
   commissionModel?: AffiliateCommissionModel;
+  source?: "affiliate" | "product" | "none";
+  searchSource?: CommerceSearchSource;
   usedFallback?: boolean;
   trackingApplied?: boolean;
 };
@@ -14,6 +22,7 @@ type ProductClickTrackingInput = {
   productId: string;
   productName: string;
   brand: string;
+  retailer: string;
   category: string;
   vibe?: string[];
   price: number;
@@ -27,6 +36,7 @@ export const trackProductClick = ({
   productId,
   productName,
   brand,
+  retailer,
   category,
   vibe,
   price,
@@ -35,16 +45,20 @@ export const trackProductClick = ({
   hasAffiliateUrl,
   attribution,
 }: ProductClickTrackingInput) => {
+  const resolvedSearchSource = attribution?.searchSource ?? resolveSearchSource(searchQuery);
   const trackingEvent = {
     productId,
     productName,
     brand,
+    retailer,
     category,
     price,
     searchQuery,
+    searchSource: resolvedSearchSource,
     timestamp: new Date().toISOString(),
     destinationUrl,
     affiliateProvider: attribution?.provider,
+    affiliateSource: attribution?.source,
     affiliateClickId: attribution?.clickId,
     commissionRate: attribution?.commissionRate,
     commissionModel: attribution?.commissionModel,
@@ -55,12 +69,16 @@ export const trackProductClick = ({
     productId,
     productName,
     brand,
+    retailer,
     category,
     vibe,
+    price,
     destinationUrl,
     searchQuery,
+    searchSource: resolvedSearchSource,
     hasAffiliateUrl,
     affiliateProvider: attribution?.provider,
+    affiliateSource: attribution?.source,
     affiliateClickId: attribution?.clickId,
     commissionRate: attribution?.commissionRate,
     commissionModel: attribution?.commissionModel,

@@ -1,7 +1,36 @@
 import { trackEvent } from "./client";
+import {
+  estimateCommissionValue,
+  resolveCommerceSearchSource,
+  trackMonetizationEvent,
+} from "./monetization";
 import { trackProductEngagement } from "./product-engagement";
 import { trackSearchIntent } from "./search-intent";
+import type { CommerceSearchSource } from "./monetization";
+import type { AffiliateCommissionModel, AffiliateNetwork } from "@/lib/products";
 import type { ChipEventType, SearchEventSource } from "./types";
+
+const AFFILIATE_PROVIDERS = new Set<AffiliateNetwork | "direct" | "unknown">([
+  "awin",
+  "skimlinks",
+  "sovrn",
+  "impact",
+  "rakuten",
+  "shopify-collabs",
+  "direct",
+  "unknown",
+]);
+const COMMISSION_MODELS = new Set<AffiliateCommissionModel>(["cpa", "cps"]);
+
+const resolveAffiliateProvider = (provider?: string) =>
+  provider && AFFILIATE_PROVIDERS.has(provider as AffiliateNetwork | "direct" | "unknown")
+    ? (provider as AffiliateNetwork | "direct" | "unknown")
+    : "unknown";
+
+const resolveCommissionModel = (model?: string) =>
+  model && COMMISSION_MODELS.has(model as AffiliateCommissionModel)
+    ? (model as AffiliateCommissionModel)
+    : undefined;
 
 export const trackSearchEvent = ({
   query,
@@ -124,12 +153,16 @@ export const trackOutboundRedirectEvent = ({
   productId,
   productName,
   brand,
+  retailer,
   category,
   vibe,
+  price,
   destinationUrl,
   searchQuery,
+  searchSource,
   hasAffiliateUrl,
   affiliateProvider,
+  affiliateSource,
   affiliateClickId,
   commissionRate,
   commissionModel,
@@ -139,12 +172,16 @@ export const trackOutboundRedirectEvent = ({
   productId: string;
   productName: string;
   brand: string;
+  retailer: string;
   category: string;
   vibe?: string[];
+  price: number;
   destinationUrl: string;
   searchQuery: string;
+  searchSource?: CommerceSearchSource;
   hasAffiliateUrl: boolean;
   affiliateProvider?: string;
+  affiliateSource?: "affiliate" | "product" | "none";
   affiliateClickId?: string | null;
   commissionRate?: number;
   commissionModel?: string;
@@ -167,28 +204,61 @@ export const trackOutboundRedirectEvent = ({
     return;
   }
 
+  const resolvedSearchSource = resolveCommerceSearchSource({
+    searchQuery,
+    searchSource,
+  });
+  const monetizationRecord = trackMonetizationEvent({
+    eventType: "outbound_redirect",
+    productId,
+    productName,
+    retailer,
+    category,
+    price,
+    destinationUrl,
+    affiliateProvider: resolveAffiliateProvider(affiliateProvider),
+    affiliateSource: affiliateSource ?? "none",
+    affiliateClickId,
+    hasAffiliateUrl,
+    commissionRate,
+    commissionModel: resolveCommissionModel(commissionModel),
+    searchQuery,
+    searchSource: resolvedSearchSource,
+    trackingApplied,
+  });
+  const estimatedCommission =
+    monetizationRecord?.estimatedCommissionValue ??
+    estimateCommissionValue({ price, commissionRate });
+
   trackEvent(
     "outbound_redirect",
     {
       product_id: productId,
       product_name: productName,
       brand,
+      retailer,
       category,
       aesthetic_vibe: engagementRecord?.vibe.join("|") || vibe?.join("|") || undefined,
+      price,
       destination_url: destinationUrl,
       originating_search_query:
         engagementRecord?.searchQuery || searchQuery.trim() || undefined,
+      search_source: resolvedSearchSource,
       timestamp: engagementRecord?.timestamp ?? new Date().toISOString(),
       has_affiliate_url: hasAffiliateUrl,
       affiliate_provider: affiliateProvider,
+      affiliate_source: affiliateSource,
       affiliate_click_id: affiliateClickId ?? undefined,
       commission_rate: commissionRate,
       commission_model: commissionModel,
+      estimated_commission_value: estimatedCommission,
       used_fallback_url: usedFallback,
       affiliate_tracking_applied: trackingApplied,
     },
     {
-      dedupeKey: `outbound_redirect:${productId}:${destinationUrl}`,
+      dedupeKey: `outbound_redirect:${productId}:${
+        affiliateClickId ?? destinationUrl
+      }`,
       dedupeWindowMs: 5000,
     },
   );

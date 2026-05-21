@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useParams, useRouter, useSearchParams } from "next/navigation";
 import { resolveAffiliateRedirectDestination } from "@/lib/commerce";
-import { mockProducts } from "@/lib/products";
+import { getProductMonetizationMetadata, mockProducts } from "@/lib/products";
 import { trackProductClick } from "@/lib/tracking";
 
 export default function OutboundRedirectPage() {
@@ -34,6 +34,7 @@ export default function OutboundRedirectPage() {
     }
 
     const searchQuery = searchParams.get("q") ?? "";
+    const monetizationMetadata = getProductMonetizationMetadata(product);
     const resolvedDestination = resolveAffiliateRedirectDestination({
       affiliateUrl: product.affiliateUrl,
       productUrl: product.productUrl,
@@ -61,6 +62,7 @@ export default function OutboundRedirectPage() {
       productId: String(product.id),
       productName: product.name,
       brand: product.brand,
+      retailer: product.retailer,
       category: product.category,
       vibe: product.vibe,
       price: product.price,
@@ -68,10 +70,16 @@ export default function OutboundRedirectPage() {
       destinationUrl,
       hasAffiliateUrl: resolvedDestination.source === "affiliate",
       attribution: {
-        provider: resolvedDestination.attribution.provider,
+        provider:
+          resolvedDestination.attribution.provider ?? monetizationMetadata.affiliateProvider,
+        source: resolvedDestination.source,
         clickId: resolvedDestination.attribution.clickId,
-        commissionRate: resolvedDestination.attribution.commission?.rate,
-        commissionModel: resolvedDestination.attribution.commission?.model,
+        commissionRate:
+          resolvedDestination.attribution.commission?.rate ??
+          monetizationMetadata.commissionRate,
+        commissionModel:
+          resolvedDestination.attribution.commission?.model ??
+          monetizationMetadata.commissionModel,
         usedFallback: resolvedDestination.usedFallback,
         trackingApplied: resolvedDestination.trackingApplied,
       },
