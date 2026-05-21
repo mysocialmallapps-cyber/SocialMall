@@ -26,12 +26,16 @@ export async function generateMetadata({
     return buildSearchMetadata("", {
       title: "Collections | SocialMall",
       description: "Discover curated SocialMall collections and trend-led fashion edits.",
+      pageType: "collection",
+      canonicalPath: "/",
     });
   }
 
   return buildSearchMetadata(collection.query, {
     title: collection.title,
     description: collection.description,
+    pageType: "collection",
+    collectionKind: collection.kind,
     canonicalPath: `/${collection.slug}`,
   });
 }

@@ -21,7 +21,10 @@ export async function generateMetadata({
   searchParams,
 }: MetadataProps): Promise<Metadata> {
   const query = await getSearchQueryFromParams(searchParams);
-  return buildSearchMetadata(query);
+  return buildSearchMetadata(query, {
+    pageType: query ? "search" : "home",
+    canonicalPath: query ? `/?q=${encodeURIComponent(query)}` : "/",
+  });
 }
 
 export default function Page() {

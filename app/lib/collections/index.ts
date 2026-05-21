@@ -6,15 +6,14 @@ import {
   type ProductCollectionKey,
 } from "@/lib/products";
 import { generateBrandSlug } from "@/lib/brands";
-import { toTitleCase } from "@/lib/seo/search-metadata";
 
 export type SeoCollectionKind = "aesthetic" | "category" | "trend" | "long-tail";
 
 export type SeoCollectionPage = {
   slug: string;
   query: string;
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   kind: SeoCollectionKind;
 };
 
@@ -89,8 +88,6 @@ const buildCollectionFromQuery = (
   return {
     slug,
     query: normalizedQuery,
-    title: `${toTitleCase(normalizedQuery)} | SocialMall`,
-    description: `Discover ${normalizedQuery} curated from independent fashion brands on SocialMall.`,
     kind,
   };
 };
@@ -179,8 +176,14 @@ const buildDynamicTrendCollections = () =>
 
 const dedupeCollections = (collections: SeoCollectionPage[]) => {
   const collectionMap = new Map<string, SeoCollectionPage>();
+  const normalizedQueries = new Set<string>();
   collections.forEach((collection) => {
+    const normalizedQuery = normalizeQuery(collection.query);
+    if (normalizedQueries.has(normalizedQuery)) {
+      return;
+    }
     collectionMap.set(collection.slug, collection);
+    normalizedQueries.add(normalizedQuery);
   });
   return Array.from(collectionMap.values());
 };
