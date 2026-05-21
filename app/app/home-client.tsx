@@ -13,7 +13,37 @@ import {
 import Image from "next/image";
 import Link, { type LinkProps } from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { mockProducts, type Product } from "@/lib/products";
+import {
+  trackChipClickEvent,
+  trackProductClickEvent,
+  trackSearchEvent,
+  type ChipEventType,
+  type SearchEventSource,
+} from "@/lib/analytics";
+import {
+  PRODUCT_GRID_IMAGE_SIZES,
+  getProductImageByIndex,
+  getProductImageCandidates,
+  shouldUseUnoptimizedImage,
+} from "@/lib/images";
+import {
+  getBrandAttribution,
+  getBrandSearchTerms,
+} from "@/lib/brands";
+import {
+  getCollectionPathByQuery,
+  getRelatedCollectionQueries,
+  getSeoCollectionByQuery,
+  type SeoCollectionPage,
+} from "@/lib/collections";
+import { getRelatedTrendQueries, getTrendPathByQuery } from "@/lib/trends";
+import {
+  extractUniqueProductTags,
+  mockProducts,
+  type Product,
+} from "@/lib/products";
+import { buildCollectionIntroCopy } from "@/lib/seo/collection-intro-copy";
+import { buildInternalLinkSections } from "@/lib/seo/internal-linking";
 
 const suggestions = [
   "quiet luxury",
@@ -33,6 +63,7 @@ type QueryIntent = {
   seasons: string[];
   genders: string[];
   fits: string[];
+  brands: string[];
   exclusions: string[];
   onlyFilters: {
     categories: string[];
@@ -48,6 +79,11 @@ type FilterResult = {
   showFallbackNotice: boolean;
 };
 
+type HomeClientProps = {
+  initialQuery?: string;
+  initialCollection?: SeoCollectionPage;
+};
+
 type ValidationResult = {
   query: string;
   passed: boolean;
@@ -59,6 +95,7 @@ type ProductCardProps = {
   href: LinkProps["href"];
   imageSizes: string;
   priority?: boolean;
+  onProductClick?: (product: Product) => void;
 };
 
 const ProductCard = memo(function ProductCard({
@@ -66,29 +103,74 @@ const ProductCard = memo(function ProductCard({
   href,
   imageSizes,
   priority = false,
+  onProductClick,
 }: ProductCardProps) {
+  const imageCandidates = useMemo(() => getProductImageCandidates(product), [product]);
+  const brandAttribution = useMemo(
+    () =>
+      getBrandAttribution({
+        brandName: product.brand,
+        retailerName: product.retailer,
+        existingSlug: product.brandSlug,
+      }),
+    [product.brand, product.brandSlug, product.retailer],
+  );
+  const [imageState, setImageState] = useState({
+    productId: product.id,
+    index: 0,
+  });
+  const imageIndex =
+    imageState.productId === product.id ? imageState.index : 0;
+
+  const activeImageSrc = useMemo(
+    () => getProductImageByIndex(product, imageIndex),
+    [imageIndex, product],
+  );
+  const useUnoptimizedImage = useMemo(
+    () => shouldUseUnoptimizedImage(activeImageSrc),
+    [activeImageSrc],
+  );
+
+  const handleImageError = () => {
+    setImageState((currentState) => {
+      const currentIndex =
+        currentState.productId === product.id ? currentState.index : 0;
+      return {
+        productId: product.id,
+        index: Math.min(currentIndex + 1, imageCandidates.length - 1),
+      };
+    });
+  };
+
   return (
     <Link
       href={href}
-      target="_blank"
-      rel="noopener noreferrer"
+      onClick={() => onProductClick?.(product)}
       className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
     >
       <article>
         <div className="relative aspect-[2/3] overflow-hidden rounded-2xl bg-zinc-100">
           <Image
-            src={product.image}
+            src={activeImageSrc}
             alt={product.name}
             fill
             sizes={imageSizes}
             className="object-cover transition duration-500 group-hover:scale-[1.04]"
             priority={priority}
             loading={priority ? "eager" : "lazy"}
+            unoptimized={useUnoptimizedImage}
+            onError={handleImageError}
           />
         </div>
         <div className="mt-3 space-y-1">
           <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
-            {product.brand}
+            {brandAttribution.displayName}
+            {brandAttribution.sourceLabel ? (
+              <span className="normal-case tracking-normal text-zinc-400">
+                {" "}
+                via {brandAttribution.sourceLabel}
+              </span>
+            ) : null}
           </p>
           <p className="truncate text-sm text-zinc-800">{product.name}</p>
           <p className="text-sm font-semibold text-zinc-900">
@@ -203,6 +285,27 @@ const styleKeywords: Record<string, string[]> = {
   paris: ["paris"],
   "smart casual": ["smart casual"],
 };
+
+const brandKeywords: Record<string, string[]> = mockProducts.reduce(
+  (dictionary, product) => {
+    const brandAttribution = getBrandAttribution({
+      brandName: product.brand,
+      retailerName: product.retailer,
+      existingSlug: product.brandSlug,
+    });
+    const terms = getBrandSearchTerms({
+      brandName: product.brand,
+      retailerName: product.retailer,
+      brandSlug: brandAttribution.brandSlug,
+    });
+
+    dictionary[brandAttribution.normalizedBrandId] = Array.from(
+      new Set([...(dictionary[brandAttribution.normalizedBrandId] ?? []), ...terms]),
+    );
+    return dictionary;
+  },
+  {} as Record<string, string[]>,
+);
 const pricingSortWords = new Set([
   "cheap",
   "cheaper",
@@ -315,6 +418,7 @@ export const parseQueryIntent = (query: string): QueryIntent => {
   const fits = detectIntentValues(normalizedQuery, fitKeywords);
   const vibes = detectIntentValues(normalizedQuery, vibeKeywords);
   const styles = detectIntentValues(normalizedQuery, styleKeywords);
+  const brands = detectIntentValues(normalizedQuery, brandKeywords);
   const excludedCategories = detectExcludedCategories(normalizedQuery);
   const normalizedCategories = categories.filter(
     (category) => !excludedCategories.includes(category),
@@ -348,6 +452,7 @@ export const parseQueryIntent = (query: string): QueryIntent => {
     seasons,
     genders,
     fits,
+    brands,
     exclusions: excludedCategories,
     onlyFilters: {
       categories: onlyCategoryFilters,
@@ -580,6 +685,7 @@ export const getFilteredProducts = (
   });
 
   const softSignalsPresent =
+    intent.brands.length > 0 ||
     intent.vibes.length > 0 ||
     intent.styles.length > 0 ||
     intent.occasions.length > 0 ||
@@ -588,6 +694,16 @@ export const getFilteredProducts = (
 
   const getRelevanceScore = (product: Product) => {
     const productCategory = normalizeProductCategory(product.category);
+    const brandAttribution = getBrandAttribution({
+      brandName: product.brand,
+      retailerName: product.retailer,
+      existingSlug: product.brandSlug,
+    });
+    const brandTerms = getBrandSearchTerms({
+      brandName: product.brand,
+      retailerName: product.retailer,
+      brandSlug: brandAttribution.brandSlug,
+    });
     let score = 0;
 
     if (strictCategoryFilters.length) {
@@ -656,9 +772,17 @@ export const getFilteredProducts = (
       score += 3;
     }
 
+    if (intent.brands.length) {
+      if (intent.brands.includes(brandAttribution.normalizedBrandId)) {
+        score += 7;
+      } else {
+        score -= 5;
+      }
+    }
+
     const lowerName = product.name.toLowerCase();
     const lowerBrand = product.brand.toLowerCase();
-    const lowerDescription = product.description.toLowerCase();
+    const lowerRetailer = product.retailer.toLowerCase();
     intent.words.forEach((word) => {
       if (lowerName.includes(word)) {
         score += 1;
@@ -666,7 +790,10 @@ export const getFilteredProducts = (
       if (lowerBrand.includes(word)) {
         score += 1;
       }
-      if (lowerDescription.includes(word)) {
+      if (lowerRetailer.includes(word)) {
+        score += 1;
+      }
+      if (brandTerms.some((term) => term.includes(word))) {
         score += 1;
       }
     });
@@ -746,22 +873,23 @@ export const getFilteredProducts = (
 
 const fallbackTrendingProducts = mockProducts.slice(0, 8);
 
-function HomeContent({ initialQuery }: { initialQuery: string }) {
-  const seededQuery = initialQuery.trim();
+function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const urlQuery = searchParams.get("q")?.trim() ?? "";
+  const normalizedInitialQuery = initialQuery.trim();
   const previewProducts = fallbackTrendingProducts.slice(0, 4);
-  const [searchInput, setSearchInput] = useState(seededQuery);
+  const [searchInput, setSearchInput] = useState(normalizedInitialQuery);
   const [refineInput, setRefineInput] = useState("");
-  const [activeQuery, setActiveQuery] = useState(seededQuery);
-  const [currentQuery, setCurrentQuery] = useState(seededQuery);
-  const [hasSearched, setHasSearched] = useState(Boolean(seededQuery));
+  const [activeQuery, setActiveQuery] = useState(normalizedInitialQuery);
+  const [currentQuery, setCurrentQuery] = useState(normalizedInitialQuery);
+  const [hasSearched, setHasSearched] = useState(Boolean(normalizedInitialQuery));
   const [isLoading, setIsLoading] = useState(false);
   const [gridAnimationKey, setGridAnimationKey] = useState(0);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const skipNextUrlSyncRef = useRef<string | null>(null);
+  const hydratedInitialQueryRef = useRef(false);
   const filteredResults = useMemo(
     () => getFilteredProducts(activeQuery, mockProducts),
     [activeQuery],
@@ -815,14 +943,27 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
     [hasSearched, schemaQuery],
   );
   const trackingQuery = hasSearched ? currentQuery || activeQuery : "";
-  const productImageSizes = "(max-width: 768px) 50vw, 25vw";
+  const productImageSizes = PRODUCT_GRID_IMAGE_SIZES;
+  const activeCollection = getSeoCollectionByQuery(activeQuery) ?? initialCollection ?? null;
+  const collectionIntroCopy = useMemo(
+    () =>
+      hasSearched && activeQuery
+        ? buildCollectionIntroCopy({
+            query: activeQuery,
+            kind: activeCollection?.kind ?? "long-tail",
+            collectionDescription: activeCollection?.description,
+            topProducts: filteredResults.items.slice(0, 8),
+          })
+        : null,
+    [activeCollection, activeQuery, filteredResults.items, hasSearched],
+  );
   const tagDrivenPhrases = useMemo(() => {
     const topProducts = filteredResults.items.slice(0, 8);
-    const tags = topProducts.flatMap((product) => [
-      ...product.vibe,
-      ...product.style,
-      ...product.fit,
-      ...product.occasion,
+    const tags = extractUniqueProductTags(topProducts, [
+      "vibe",
+      "style",
+      "fit",
+      "occasion",
     ]);
 
     const mappedPhrases = tags.flatMap((tag) => {
@@ -847,72 +988,39 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
 
     return Array.from(new Set(mappedPhrases));
   }, [filteredResults.items]);
-  const relatedSearchLinks = useMemo(() => {
-    const dynamicTerms: string[] = [];
-    const primaryCategory = activeIntent.categories[0];
-    const primaryColor = activeIntent.colors[0];
-    const primaryMaterial = activeIntent.materials[0];
-    const primarySeason = activeIntent.seasons[0];
+  const internalLinkSections = useMemo(() => {
+    const resolveSeoPath = (query: string) =>
+      getTrendPathByQuery(query) ?? getCollectionPathByQuery(query);
+    const relatedCollectionQueries = getRelatedCollectionQueries(
+      {
+        query: trackingQuery,
+      },
+      10,
+    );
+    const relatedTrendQueries = getRelatedTrendQueries(
+      {
+        query: trackingQuery,
+      },
+      8,
+    );
 
-    if (trackingQuery) {
-      dynamicTerms.push(trackingQuery);
-    }
-    if (primaryColor && primaryCategory) {
-      dynamicTerms.push(`${primaryColor} ${primaryCategory}`);
-    }
-    if (primaryMaterial && primaryCategory) {
-      dynamicTerms.push(`${primaryMaterial} ${primaryCategory}`);
-    }
-    if (primarySeason && primaryCategory) {
-      dynamicTerms.push(`${primarySeason} ${primaryCategory}`);
-    }
-    if (primarySeason && !primaryCategory) {
-      dynamicTerms.push(`${primarySeason} outfit`);
-    }
-
-    const fallbackTerms = [
-      "quiet luxury",
-      "Scandinavian minimal",
-      "Marbella beach club",
-      "Ibiza sunset dinner",
-      "oversized streetwear",
-    ];
-
-    return Array.from(new Set([...dynamicTerms, ...tagDrivenPhrases, ...fallbackTerms]))
-      .filter((term) => term.toLowerCase() !== trackingQuery.toLowerCase())
-      .slice(0, 6);
-  }, [activeIntent, tagDrivenPhrases, trackingQuery]);
-  const trendingAestheticsLinks = useMemo(
-    () =>
-      Array.from(
-        new Set([
-          ...tagDrivenPhrases,
-          "quiet luxury",
-          "Scandinavian minimal",
-          "Marbella beach club",
-          "Ibiza sunset dinner",
-          "oversized streetwear",
-        ]),
-      ).slice(0, 5),
-    [tagDrivenPhrases],
-  );
-  const similarVibesLinks = useMemo(
-    () =>
-      Array.from(
-        new Set([
-          ...tagDrivenPhrases,
-          ...(activeIntent.vibes.length ? activeIntent.vibes : []),
-          ...(activeIntent.styles.length ? activeIntent.styles : []),
-          "resort casual",
-          "smart casual evening",
-        ]),
-      )
-        .map((phrase) =>
-          phrase === "minimalist" ? "Scandinavian minimal" : phrase,
-        )
-        .slice(0, 5),
-    [activeIntent.styles, activeIntent.vibes, tagDrivenPhrases],
-  );
+    return buildInternalLinkSections({
+      currentQuery: trackingQuery,
+      intent: {
+        categories: activeIntent.categories,
+        colors: activeIntent.colors,
+        materials: activeIntent.materials,
+        seasons: activeIntent.seasons,
+        vibes: activeIntent.vibes,
+        styles: activeIntent.styles,
+        genders: activeIntent.genders,
+      },
+      topProducts: filteredResults.items.slice(0, 10),
+      relatedCollectionQueries: [...relatedCollectionQueries, ...tagDrivenPhrases],
+      relatedTrendQueries,
+      resolveSeoPath,
+    });
+  }, [activeIntent, filteredResults.items, tagDrivenPhrases, trackingQuery]);
 
   const runSearch = (rawQuery: string) => {
     const query = rawQuery.trim();
@@ -970,11 +1078,6 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
     };
   };
 
-  const buildSearchHref = (query: string) => ({
-    pathname: "/",
-    query: { q: query.trim() },
-  });
-
   const buildRefinedQuery = (baseQuery: string, refinement: string) => {
     const base = baseQuery.trim();
     const next = refinement.trim();
@@ -999,16 +1102,62 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
     return `${base} ${cleanedRefinement}`.replace(/\s+/g, " ").trim();
   };
 
+  const trackSearchInteraction = (query: string, source: SearchEventSource) => {
+    const normalizedQuery = query.trim();
+    if (!normalizedQuery) {
+      return;
+    }
+
+    const resultCount = getFilteredProducts(normalizedQuery, mockProducts).items.length;
+    trackSearchEvent({
+      query: normalizedQuery,
+      source,
+      resultCount,
+    });
+  };
+
+  const handleProductCardClick = (product: Product) => {
+    trackProductClickEvent({
+      productId: String(product.id),
+      productName: product.name,
+      brand: product.brand,
+      category: product.category,
+      vibe: product.vibe,
+      price: product.price,
+      searchQuery: trackingQuery,
+    });
+  };
+
+  const handleInternalChipClick = (
+    event: MouseEvent<HTMLAnchorElement>,
+    term: string,
+    chipType: ChipEventType,
+  ) => {
+    trackChipClickEvent({
+      chipType,
+      chipValue: term,
+      activeQuery: trackingQuery,
+    });
+    trackSearchInteraction(term, "internal_chip");
+  };
+
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const query = searchInput.trim();
     if (!query) return;
+    trackSearchInteraction(query, "hero_submit");
     runSearch(query);
     updateSearchUrl(query);
   };
 
   const handleSuggestionClick = (suggestion: string) => {
     setSearchInput(suggestion);
+    trackChipClickEvent({
+      chipType: "hero_suggestion",
+      chipValue: suggestion,
+      activeQuery: trackingQuery,
+    });
+    trackSearchInteraction(suggestion, "hero_chip");
     runSearch(suggestion);
     updateSearchUrl(suggestion);
   };
@@ -1024,6 +1173,7 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
 
     setRefineInput("");
     setSearchInput(nextQuery);
+    trackSearchInteraction(nextQuery, "refine_submit");
     runSearch(nextQuery);
     updateSearchUrl(nextQuery);
   };
@@ -1044,19 +1194,6 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
     updateSearchUrl("");
   };
 
-  const handleInternalSearchLinkClick = (
-    event: MouseEvent<HTMLAnchorElement>,
-    query: string,
-  ) => {
-    event.preventDefault();
-    const nextQuery = query.trim();
-    if (!nextQuery) return;
-
-    setSearchInput(nextQuery);
-    runSearch(nextQuery);
-    updateSearchUrl(nextQuery);
-  };
-
   useEffect(() => {
     return () => {
       if (timeoutRef.current) {
@@ -1066,10 +1203,6 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
   }, []);
 
   useEffect(() => {
-    if (urlQuery === currentQuery && hasSearched === Boolean(urlQuery)) {
-      return;
-    }
-
     if (
       skipNextUrlSyncRef.current !== null &&
       skipNextUrlSyncRef.current === urlQuery
@@ -1083,6 +1216,18 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
         clearTimeout(timeoutRef.current);
       }
 
+      if (!urlQuery && !hydratedInitialQueryRef.current && normalizedInitialQuery) {
+        hydratedInitialQueryRef.current = true;
+        setHasSearched(true);
+        setSearchInput(normalizedInitialQuery);
+        setRefineInput("");
+        setCurrentQuery(normalizedInitialQuery);
+        setActiveQuery(normalizedInitialQuery);
+        setIsLoading(false);
+        setGridAnimationKey((currentKey) => currentKey + 1);
+        return;
+      }
+
       if (!urlQuery) {
         setHasSearched(false);
         setSearchInput("");
@@ -1094,6 +1239,7 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
         return;
       }
 
+      hydratedInitialQueryRef.current = true;
       setHasSearched(true);
       setSearchInput(urlQuery);
       setRefineInput("");
@@ -1106,7 +1252,7 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
     return () => {
       window.clearTimeout(syncTimer);
     };
-  }, [currentQuery, hasSearched, urlQuery]);
+  }, [normalizedInitialQuery, urlQuery]);
 
   useEffect(() => {
     if (process.env.NODE_ENV === "production") {
@@ -1196,6 +1342,7 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
                     product={product}
                     imageSizes={productImageSizes}
                     priority={index < 2}
+                    onProductClick={handleProductCardClick}
                   />
                 ))}
               </div>
@@ -1218,6 +1365,22 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
                 No exact match — showing similar styles.
               </p>
             ) : null}
+            {!isLoading && collectionIntroCopy ? (
+              <section className="space-y-2 rounded-2xl border border-zinc-200 bg-zinc-50/70 p-4">
+                <p className="text-[0.68rem] font-medium uppercase tracking-[0.08em] text-zinc-500">
+                  {collectionIntroCopy.eyebrow}
+                </p>
+                <h2 className="text-base font-medium text-zinc-900">
+                  {collectionIntroCopy.headline}
+                </h2>
+                <p className="text-sm leading-6 text-zinc-600">{collectionIntroCopy.lead}</p>
+                {collectionIntroCopy.supporting ? (
+                  <p className="text-sm leading-6 text-zinc-600">
+                    {collectionIntroCopy.supporting}
+                  </p>
+                ) : null}
+              </section>
+            ) : null}
             <div
               key={gridAnimationKey}
               className={`animate-grid-fade-in grid grid-cols-2 gap-x-4 gap-y-10 transition-opacity md:grid-cols-4 md:gap-x-6 md:gap-y-12 ${
@@ -1231,68 +1394,33 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
                   product={product}
                   imageSizes={productImageSizes}
                   priority={index < 2}
+                  onProductClick={handleProductCardClick}
                 />
               ))}
             </div>
             {!isLoading ? (
               <div className="space-y-5 pt-2">
-                <div className="space-y-2">
-                  <h3 className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
-                    Related searches
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {relatedSearchLinks.map((term) => (
-                      <Link
-                        key={`related-${term}`}
-                        href={buildSearchHref(term)}
-                        onClick={(event) =>
-                          handleInternalSearchLinkClick(event, term)
-                        }
-                        className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
-                      >
-                        {term}
-                      </Link>
-                    ))}
+                {internalLinkSections.map((section) => (
+                  <div key={section.key} className="space-y-2">
+                    <h3 className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
+                      {section.title}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {section.links.map((link) => (
+                        <Link
+                          key={`${section.key}-${link.query}`}
+                          href={link.href}
+                          onClick={(event) =>
+                            handleInternalChipClick(event, link.query, link.chipType)
+                          }
+                          className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
+                        >
+                          {link.query}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
-                    Trending aesthetics
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {trendingAestheticsLinks.map((term) => (
-                      <Link
-                        key={`aesthetic-${term}`}
-                        href={buildSearchHref(term)}
-                        onClick={(event) =>
-                          handleInternalSearchLinkClick(event, term)
-                        }
-                        className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
-                      >
-                        {term}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
-                    Similar vibes
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {similarVibesLinks.map((term) => (
-                      <Link
-                        key={`vibe-${term}`}
-                        href={buildSearchHref(term)}
-                        onClick={(event) =>
-                          handleInternalSearchLinkClick(event, term)
-                        }
-                        className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
-                      >
-                        {term}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+                ))}
               </div>
             ) : null}
           </section>
@@ -1335,7 +1463,7 @@ function HomeContent({ initialQuery }: { initialQuery: string }) {
   );
 }
 
-export default function Home({ initialQuery = "" }: { initialQuery?: string }) {
+export default function Home({ initialQuery }: HomeClientProps) {
   return (
     <Suspense fallback={null}>
       <HomeContent initialQuery={initialQuery} />
