@@ -24,4 +24,6 @@ export type ChipEventType =
   | "hero_suggestion"
   | "related_search"
   | "trending_aesthetic"
-  | "similar_vibe";
+  | "similar_vibe"
+  | "related_collection"
+  | "contextual_link";

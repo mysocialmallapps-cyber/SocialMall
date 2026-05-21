@@ -17,6 +17,7 @@ import {
   trackChipClickEvent,
   trackProductClickEvent,
   trackSearchEvent,
+  type ChipEventType,
   type SearchEventSource,
 } from "@/lib/analytics";
 import {
@@ -26,7 +27,6 @@ import {
   shouldUseUnoptimizedImage,
 } from "@/lib/images";
 import {
-  formatBrandName,
   getBrandAttribution,
   getBrandSearchTerms,
 } from "@/lib/brands";
@@ -39,6 +39,7 @@ import {
   mockProducts,
   type Product,
 } from "@/lib/products";
+import { buildInternalLinkSections } from "@/lib/seo/internal-linking";
 
 const suggestions = [
   "quiet luxury",
@@ -969,97 +970,30 @@ function HomeContent({ initialQuery = "" }: HomeClientProps) {
 
     return Array.from(new Set(mappedPhrases));
   }, [filteredResults.items]);
-  const relatedBrandLinks = useMemo(
-    () =>
-      Array.from(
-        new Set(
-          filteredResults.items
-            .slice(0, 10)
-            .map((product) => formatBrandName(product.brand)),
-        ),
-      ).slice(0, 3),
-    [filteredResults.items],
-  );
-  const relatedSearchLinks = useMemo(() => {
-    const dynamicTerms: string[] = [];
-    const primaryCategory = activeIntent.categories[0];
-    const primaryColor = activeIntent.colors[0];
-    const primaryMaterial = activeIntent.materials[0];
-    const primarySeason = activeIntent.seasons[0];
-
-    if (trackingQuery) {
-      dynamicTerms.push(trackingQuery);
-    }
-    if (primaryColor && primaryCategory) {
-      dynamicTerms.push(`${primaryColor} ${primaryCategory}`);
-    }
-    if (primaryMaterial && primaryCategory) {
-      dynamicTerms.push(`${primaryMaterial} ${primaryCategory}`);
-    }
-    if (primarySeason && primaryCategory) {
-      dynamicTerms.push(`${primarySeason} ${primaryCategory}`);
-    }
-    if (primarySeason && !primaryCategory) {
-      dynamicTerms.push(`${primarySeason} outfit`);
-    }
-
-    const fallbackTerms = [
-      "quiet luxury",
-      "Scandinavian minimal",
-      "Marbella beach club",
-      "Ibiza sunset dinner",
-      "oversized streetwear",
-    ];
-    const relatedCollectionTerms = getRelatedCollectionQueries(
+  const internalLinkSections = useMemo(() => {
+    const relatedCollectionQueries = getRelatedCollectionQueries(
       {
         query: trackingQuery,
       },
-      4,
+      10,
     );
 
-    return Array.from(
-      new Set([
-        ...dynamicTerms,
-        ...tagDrivenPhrases,
-        ...relatedBrandLinks,
-        ...relatedCollectionTerms,
-        ...fallbackTerms,
-      ]),
-    )
-      .filter((term) => term.toLowerCase() !== trackingQuery.toLowerCase())
-      .slice(0, 6);
-  }, [activeIntent, relatedBrandLinks, tagDrivenPhrases, trackingQuery]);
-  const trendingAestheticsLinks = useMemo(
-    () =>
-      Array.from(
-        new Set([
-          ...tagDrivenPhrases,
-          "quiet luxury",
-          "Scandinavian minimal",
-          "Marbella beach club",
-          "Ibiza sunset dinner",
-          "oversized streetwear",
-        ]),
-      ).slice(0, 5),
-    [tagDrivenPhrases],
-  );
-  const similarVibesLinks = useMemo(
-    () =>
-      Array.from(
-        new Set([
-          ...tagDrivenPhrases,
-          ...(activeIntent.vibes.length ? activeIntent.vibes : []),
-          ...(activeIntent.styles.length ? activeIntent.styles : []),
-          "resort casual",
-          "smart casual evening",
-        ]),
-      )
-        .map((phrase) =>
-          phrase === "minimalist" ? "Scandinavian minimal" : phrase,
-        )
-        .slice(0, 5),
-    [activeIntent.styles, activeIntent.vibes, tagDrivenPhrases],
-  );
+    return buildInternalLinkSections({
+      currentQuery: trackingQuery,
+      intent: {
+        categories: activeIntent.categories,
+        colors: activeIntent.colors,
+        materials: activeIntent.materials,
+        seasons: activeIntent.seasons,
+        vibes: activeIntent.vibes,
+        styles: activeIntent.styles,
+        genders: activeIntent.genders,
+      },
+      topProducts: filteredResults.items.slice(0, 10),
+      relatedCollectionQueries: [...relatedCollectionQueries, ...tagDrivenPhrases],
+      resolveCollectionPath: getCollectionPathByQuery,
+    });
+  }, [activeIntent, filteredResults.items, tagDrivenPhrases, trackingQuery]);
 
   const runSearch = (rawQuery: string) => {
     const query = rawQuery.trim();
@@ -1117,19 +1051,6 @@ function HomeContent({ initialQuery = "" }: HomeClientProps) {
     };
   };
 
-  const buildSearchHref = (query: string) => {
-    const trimmedQuery = query.trim();
-    const collectionPath = getCollectionPathByQuery(trimmedQuery);
-    if (collectionPath) {
-      return collectionPath;
-    }
-
-    return {
-      pathname: "/",
-      query: { q: trimmedQuery },
-    };
-  };
-
   const buildRefinedQuery = (baseQuery: string, refinement: string) => {
     const base = baseQuery.trim();
     const next = refinement.trim();
@@ -1183,7 +1104,7 @@ function HomeContent({ initialQuery = "" }: HomeClientProps) {
   const handleInternalChipClick = (
     event: MouseEvent<HTMLAnchorElement>,
     term: string,
-    chipType: "related_search" | "trending_aesthetic" | "similar_vibe",
+    chipType: ChipEventType,
   ) => {
     trackChipClickEvent({
       chipType,
@@ -1436,63 +1357,27 @@ function HomeContent({ initialQuery = "" }: HomeClientProps) {
             </div>
             {!isLoading ? (
               <div className="space-y-5 pt-2">
-                <div className="space-y-2">
-                  <h3 className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
-                    Related searches
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {relatedSearchLinks.map((term) => (
-                      <Link
-                        key={`related-${term}`}
-                        href={buildSearchHref(term)}
-                        onClick={(event) =>
-                          handleInternalChipClick(event, term, "related_search")
-                        }
-                        className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
-                      >
-                        {term}
-                      </Link>
-                    ))}
+                {internalLinkSections.map((section) => (
+                  <div key={section.key} className="space-y-2">
+                    <h3 className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
+                      {section.title}
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {section.links.map((link) => (
+                        <Link
+                          key={`${section.key}-${link.query}`}
+                          href={link.href}
+                          onClick={(event) =>
+                            handleInternalChipClick(event, link.query, link.chipType)
+                          }
+                          className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
+                        >
+                          {link.query}
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
-                    Trending aesthetics
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {trendingAestheticsLinks.map((term) => (
-                      <Link
-                        key={`aesthetic-${term}`}
-                        href={buildSearchHref(term)}
-                        onClick={(event) =>
-                          handleInternalChipClick(event, term, "trending_aesthetic")
-                        }
-                        className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
-                      >
-                        {term}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <h3 className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
-                    Similar vibes
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    {similarVibesLinks.map((term) => (
-                      <Link
-                        key={`vibe-${term}`}
-                        href={buildSearchHref(term)}
-                        onClick={(event) =>
-                          handleInternalChipClick(event, term, "similar_vibe")
-                        }
-                        className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
-                      >
-                        {term}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+                ))}
               </div>
             ) : null}
           </section>
