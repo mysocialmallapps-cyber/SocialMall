@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getSeoCollectionPaths } from "@/lib/collections";
+import { getTrendPaths } from "@/lib/trends";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://socialmall.com";
 
@@ -12,6 +13,7 @@ const SEARCHABLE_QUERY_ROUTES = [
   "Scandinavian minimal",
 ];
 const SEO_COLLECTION_ROUTES = getSeoCollectionPaths();
+const SEO_TREND_ROUTES = getTrendPaths();
 
 // Future-ready extension points for dedicated product pages.
 const FUTURE_PRODUCT_ROUTES: string[] = [];
@@ -36,11 +38,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
   );
 
   const collectionEntries: MetadataRoute.Sitemap = SEO_COLLECTION_ROUTES.map((route) => ({
-      url: `${SITE_URL}${route}`,
-      lastModified: now,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    }));
+    url: `${SITE_URL}${route}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+  const trendEntries: MetadataRoute.Sitemap = SEO_TREND_ROUTES.map((route) => ({
+    url: `${SITE_URL}${route}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.85,
+  }));
 
   const futureProductEntries: MetadataRoute.Sitemap = FUTURE_PRODUCT_ROUTES.map(
     (route) => ({
@@ -55,6 +63,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticEntries,
     ...searchableEntries,
     ...collectionEntries,
+    ...trendEntries,
     ...futureProductEntries,
   ];
 }

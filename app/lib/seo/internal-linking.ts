@@ -37,12 +37,12 @@ const normalize = (value: string) => value.trim().toLowerCase().replace(/\s+/g, 
 
 const toSearchHref = (
   query: string,
-  resolveCollectionPath: (query: string) => string | null,
+  resolveSeoPath: (query: string) => string | null,
 ) => {
   const normalizedQuery = normalize(query);
-  const collectionPath = resolveCollectionPath(normalizedQuery);
-  if (collectionPath) {
-    return collectionPath;
+  const seoPath = resolveSeoPath(normalizedQuery);
+  if (seoPath) {
+    return seoPath;
   }
   return `/?q=${encodeURIComponent(normalizedQuery)}`;
 };
@@ -68,14 +68,14 @@ const pickUniqueLinks = ({
   limit,
   chipType,
   usedQueries,
-  resolveCollectionPath,
+  resolveSeoPath,
   onlyCollectionLinks = false,
 }: {
   candidates: string[];
   limit: number;
   chipType: ChipEventType;
   usedQueries: Set<string>;
-  resolveCollectionPath: (query: string) => string | null;
+  resolveSeoPath: (query: string) => string | null;
   onlyCollectionLinks?: boolean;
 }): InternalLinkItem[] => {
   const links: InternalLinkItem[] = [];
@@ -86,15 +86,15 @@ const pickUniqueLinks = ({
       continue;
     }
 
-    const collectionPath = resolveCollectionPath(query);
-    if (onlyCollectionLinks && !collectionPath) {
+    const seoPath = resolveSeoPath(query);
+    if (onlyCollectionLinks && !seoPath) {
       continue;
     }
 
     usedQueries.add(query);
     links.push({
       query,
-      href: collectionPath ?? toSearchHref(query, resolveCollectionPath),
+      href: seoPath ?? toSearchHref(query, resolveSeoPath),
       chipType,
     });
 
@@ -111,13 +111,15 @@ export const buildInternalLinkSections = ({
   intent,
   topProducts,
   relatedCollectionQueries,
-  resolveCollectionPath,
+  relatedTrendQueries,
+  resolveSeoPath,
 }: {
   currentQuery: string;
   intent: LinkingIntent;
   topProducts: Product[];
   relatedCollectionQueries: string[];
-  resolveCollectionPath: (query: string) => string | null;
+  relatedTrendQueries: string[];
+  resolveSeoPath: (query: string) => string | null;
 }) => {
   const primaryCategory = intent.categories[0];
   const primaryColor = intent.colors[0];
@@ -182,7 +184,15 @@ export const buildInternalLinkSections = ({
       title: "Related collections",
       chipType: "related_collection",
       candidates: relatedCollectionQueries,
-      limit: 6,
+      limit: 5,
+      onlyCollectionLinks: true,
+    },
+    {
+      key: "related-trends",
+      title: "Related trends",
+      chipType: "related_trend",
+      candidates: relatedTrendQueries,
+      limit: 4,
       onlyCollectionLinks: true,
     },
     {
@@ -206,7 +216,7 @@ export const buildInternalLinkSections = ({
         chipType: section.chipType,
         limit: section.limit,
         usedQueries,
-        resolveCollectionPath,
+        resolveSeoPath,
         onlyCollectionLinks: section.onlyCollectionLinks,
       }),
     }))

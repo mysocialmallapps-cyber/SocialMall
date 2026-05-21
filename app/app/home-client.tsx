@@ -36,6 +36,7 @@ import {
   getSeoCollectionByQuery,
   type SeoCollectionPage,
 } from "@/lib/collections";
+import { getRelatedTrendQueries, getTrendPathByQuery } from "@/lib/trends";
 import {
   extractUniqueProductTags,
   mockProducts,
@@ -988,11 +989,19 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
     return Array.from(new Set(mappedPhrases));
   }, [filteredResults.items]);
   const internalLinkSections = useMemo(() => {
+    const resolveSeoPath = (query: string) =>
+      getTrendPathByQuery(query) ?? getCollectionPathByQuery(query);
     const relatedCollectionQueries = getRelatedCollectionQueries(
       {
         query: trackingQuery,
       },
       10,
+    );
+    const relatedTrendQueries = getRelatedTrendQueries(
+      {
+        query: trackingQuery,
+      },
+      8,
     );
 
     return buildInternalLinkSections({
@@ -1008,7 +1017,8 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
       },
       topProducts: filteredResults.items.slice(0, 10),
       relatedCollectionQueries: [...relatedCollectionQueries, ...tagDrivenPhrases],
-      resolveCollectionPath: getCollectionPathByQuery,
+      relatedTrendQueries,
+      resolveSeoPath,
     });
   }, [activeIntent, filteredResults.items, tagDrivenPhrases, trackingQuery]);
 
