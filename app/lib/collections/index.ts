@@ -19,6 +19,8 @@ export type SeoCollectionPage = {
   searchQuery: string;
   title?: string;
   description?: string;
+  introCopy?: string[];
+  whatToExplore?: string;
   kind: SeoCollectionKind;
   relatedSlugs: string[];
   pageType: SeoPageType;
@@ -38,6 +40,8 @@ const defineSeoCollectionPage = ({
   searchQuery,
   title,
   description,
+  introCopy,
+  whatToExplore,
   kind,
   relatedSlugs = [],
   pageType,
@@ -47,6 +51,8 @@ const defineSeoCollectionPage = ({
   searchQuery?: string;
   title?: string;
   description?: string;
+  introCopy?: string[];
+  whatToExplore?: string;
   kind: SeoCollectionKind;
   relatedSlugs?: string[];
   pageType?: SeoPageType;
@@ -58,6 +64,8 @@ const defineSeoCollectionPage = ({
     searchQuery: normalizedSearchQuery,
     title,
     description,
+    introCopy,
+    whatToExplore,
     kind,
     relatedSlugs: Array.from(new Set(relatedSlugs.map(seoSlugFromQuery))).filter(Boolean),
     pageType: pageType ?? pageTypeFromKind(kind),
@@ -93,6 +101,12 @@ const curatedCollections: SeoCollectionPage[] = [
     title: "Quiet Luxury Outfits | SocialMall",
     description:
       "Explore quiet luxury outfits curated from independent brands and premium minimal labels.",
+    introCopy: [
+      "Discover quiet luxury outfits from independent fashion brands, curated around minimal silhouettes, neutral tones, and elevated everyday pieces.",
+      "This edit focuses on refined staples that feel polished, wearable, and quietly distinctive.",
+    ],
+    whatToExplore:
+      "What to explore: soft tailoring, tonal layers, premium basics, and understated accessories.",
     kind: "aesthetic",
     relatedSlugs: ["quiet-luxury-summer-outfits", "scandinavian-minimal-outfits"],
     pageType: "trend",
@@ -103,6 +117,12 @@ const curatedCollections: SeoCollectionPage[] = [
     title: "Old Money Style Men | SocialMall",
     description:
       "Discover old money style for men with tailored essentials, refined layers, and elevated textures.",
+    introCopy: [
+      "Discover old money style for men with tailored essentials, refined layers, and classic textures that feel timeless.",
+      "The collection leans into polished wardrobe foundations rather than trend-heavy statements.",
+    ],
+    whatToExplore:
+      "What to explore: blazers, tailored trousers, crisp shirts, and smart casual layers.",
     kind: "trend",
     relatedSlugs: ["old-money-aesthetic-outfits", "quiet-luxury-outfits"],
     pageType: "trend",
@@ -113,6 +133,12 @@ const curatedCollections: SeoCollectionPage[] = [
     title: "Marbella Beach Club Outfits | SocialMall",
     description:
       "Shop Marbella beach club outfit inspiration with resort shirts, dresses, and statement accessories.",
+    introCopy: [
+      "Shop Marbella beach club outfits with breezy resort layers, sun-ready textures, and accessories that still feel elevated.",
+      "The page brings together polished holiday pieces for poolside lunches, beach clubs, and warm evening plans.",
+    ],
+    whatToExplore:
+      "What to explore: resort shirts, summer dresses, relaxed tailoring, and refined bags.",
     kind: "trend",
     relatedSlugs: ["quiet-luxury-summer-outfits", "black-linen-shirts"],
     pageType: "trend",
@@ -123,6 +149,12 @@ const curatedCollections: SeoCollectionPage[] = [
     title: "Scandinavian Minimal Outfits | SocialMall",
     description:
       "Find Scandinavian minimal outfits with clean silhouettes, tonal palettes, and premium everyday staples.",
+    introCopy: [
+      "Explore Scandinavian minimal outfits with clean silhouettes, calm colours, and effortless wardrobe staples.",
+      "This edit focuses on quiet pieces that layer well and keep everyday dressing polished.",
+    ],
+    whatToExplore:
+      "What to explore: tonal basics, structured layers, minimal footwear, and clean accessories.",
     kind: "aesthetic",
     relatedSlugs: ["quiet-luxury-outfits", "black-linen-shirts"],
     pageType: "trend",
@@ -136,6 +168,8 @@ const configuredLongTailCollections: SeoCollectionPage[] =
       searchQuery: definition.searchQuery,
       title: definition.title,
       description: definition.description,
+      introCopy: definition.introCopy,
+      whatToExplore: definition.whatToExplore,
       kind: definition.pageType === "trend" ? "trend" : "long-tail",
       relatedSlugs: definition.relatedSlugs,
       pageType: definition.pageType,

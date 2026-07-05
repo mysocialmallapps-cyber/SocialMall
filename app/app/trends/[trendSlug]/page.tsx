@@ -61,6 +61,8 @@ export default async function TrendPage({ params }: TrendPageProps) {
         searchQuery: trend.query,
         title: `${trend.name} | SocialMall`,
         description: trend.description,
+        introCopy: trend.introCopy,
+        whatToExplore: trend.whatToExplore,
         kind: "trend",
         relatedSlugs: [],
         pageType: "trend",

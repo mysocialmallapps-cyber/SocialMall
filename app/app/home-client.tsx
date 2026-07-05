@@ -951,7 +951,10 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
         ? buildCollectionIntroCopy({
             query: activeQuery,
             kind: activeCollection?.kind ?? "long-tail",
+            collectionTitle: activeCollection?.title,
             collectionDescription: activeCollection?.description,
+            configuredIntroCopy: activeCollection?.introCopy,
+            whatToExplore: activeCollection?.whatToExplore,
             topProducts: filteredResults.items.slice(0, 8),
           })
         : null,
@@ -1370,13 +1373,17 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
                 <p className="text-[0.68rem] font-medium uppercase tracking-[0.08em] text-zinc-500">
                   {collectionIntroCopy.eyebrow}
                 </p>
-                <h2 className="text-base font-medium text-zinc-900">
+                <h1 className="text-base font-medium text-zinc-900">
                   {collectionIntroCopy.headline}
-                </h2>
-                <p className="text-sm leading-6 text-zinc-600">{collectionIntroCopy.lead}</p>
-                {collectionIntroCopy.supporting ? (
+                </h1>
+                {collectionIntroCopy.sentences.map((sentence) => (
+                  <p key={sentence} className="text-sm leading-6 text-zinc-600">
+                    {sentence}
+                  </p>
+                ))}
+                {collectionIntroCopy.whatToExplore ? (
                   <p className="text-sm leading-6 text-zinc-600">
-                    {collectionIntroCopy.supporting}
+                    {collectionIntroCopy.whatToExplore}
                   </p>
                 ) : null}
               </section>

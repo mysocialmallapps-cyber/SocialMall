@@ -6,6 +6,8 @@ export type TrendPage = {
   name: string;
   query: string;
   description: string;
+  introCopy?: string[];
+  whatToExplore?: string;
   keywords: string[];
 };
 
@@ -19,6 +21,12 @@ const baseTrendSeeds: Omit<TrendPage, "slug">[] = [
     query: "quiet luxury outfits",
     description:
       "Discover quiet luxury outfits from independent fashion brands with elevated tailoring and refined textures.",
+    introCopy: [
+      "Discover quiet luxury outfits from independent fashion brands, curated around minimal silhouettes, neutral tones, and elevated everyday pieces.",
+      "The mood is understated and polished, with wardrobe staples that feel premium without relying on obvious logos.",
+    ],
+    whatToExplore:
+      "What to explore: soft tailoring, tonal basics, structured layers, and refined accessories.",
     keywords: ["quiet luxury", "minimalist", "classy", "tailored"],
   },
   {
@@ -26,6 +34,12 @@ const baseTrendSeeds: Omit<TrendPage, "slug">[] = [
     query: "old money aesthetic outfits",
     description:
       "Explore old money-inspired outfits with timeless tailoring, premium materials, and polished layering.",
+    introCopy: [
+      "Explore old money-inspired outfits with timeless tailoring, refined materials, and polished pieces that feel classic rather than costume-like.",
+      "This edit is built around calm colours, smart layers, and elevated wardrobe foundations.",
+    ],
+    whatToExplore:
+      "What to explore: blazers, premium shirts, tailored trousers, and elegant footwear.",
     keywords: ["old money", "classy", "elegant", "formal", "tailored"],
   },
   {
@@ -33,6 +47,12 @@ const baseTrendSeeds: Omit<TrendPage, "slug">[] = [
     query: "clean girl outfits",
     description:
       "Shop clean girl fashion with minimalist silhouettes, neutral palettes, and effortless everyday styling.",
+    introCopy: [
+      "Shop clean girl fashion with minimalist silhouettes, neutral palettes, and effortless pieces designed for everyday wear.",
+      "The edit keeps styling simple and fresh, with polished basics that feel easy to repeat.",
+    ],
+    whatToExplore:
+      "What to explore: tonal layers, simple dresses, soft knits, and clean accessories.",
     keywords: ["clean", "minimalist", "casual", "smart casual"],
   },
   {
@@ -40,6 +60,12 @@ const baseTrendSeeds: Omit<TrendPage, "slug">[] = [
     query: "scandinavian minimal outfits",
     description:
       "Explore minimalist Scandinavian-inspired fashion with clean lines and premium essentials.",
+    introCopy: [
+      "Explore Scandinavian minimal fashion with clean lines, calm colours, and effortless wardrobe staples.",
+      "This page highlights refined basics, soft tailoring, and understated pieces that work across seasons.",
+    ],
+    whatToExplore:
+      "What to explore: structured basics, tonal layers, minimal footwear, and modern outerwear.",
     keywords: ["scandinavian minimal", "minimalist", "clean", "quiet luxury"],
   },
   {
@@ -47,6 +73,12 @@ const baseTrendSeeds: Omit<TrendPage, "slug">[] = [
     query: "coastal granddaughter outfits",
     description:
       "Discover coastal granddaughter style with relaxed resort layers, soft textures, and breezy summer pieces.",
+    introCopy: [
+      "Discover coastal granddaughter style with relaxed resort layers, soft textures, and breezy pieces made for slow summer dressing.",
+      "The mood is easy and nostalgic while still feeling modern, polished, and wearable.",
+    ],
+    whatToExplore:
+      "What to explore: linen layers, relaxed shirts, soft knits, and beach-to-city accessories.",
     keywords: ["coastal granddaughter", "resort", "holiday", "beach club", "summer"],
   },
   {
@@ -54,6 +86,12 @@ const baseTrendSeeds: Omit<TrendPage, "slug">[] = [
     query: "marbella beach club outfits",
     description:
       "Discover Marbella beach club outfits with resort textures, elevated swim-ready layers, and warm-weather accessories.",
+    introCopy: [
+      "Discover Marbella beach club outfits with resort textures, elevated swim-ready layers, and warm-weather accessories.",
+      "The edit moves easily from poolside afternoons to sunset drinks, keeping holiday style polished but relaxed.",
+    ],
+    whatToExplore:
+      "What to explore: resort shirts, summer dresses, refined sandals, and statement bags.",
     keywords: ["marbella", "beach club", "resort", "holiday", "summer"],
   },
   {
@@ -61,6 +99,12 @@ const baseTrendSeeds: Omit<TrendPage, "slug">[] = [
     query: "ibiza sunset dinner outfits",
     description:
       "Shop Ibiza sunset dinner outfits with statement vacation silhouettes and elevated evening textures.",
+    introCopy: [
+      "Shop Ibiza sunset dinner outfits with statement vacation silhouettes, refined evening textures, and warm-night styling.",
+      "This page balances expressive resort pieces with wearable details for dinners, parties, and late summer plans.",
+    ],
+    whatToExplore:
+      "What to explore: evening dresses, relaxed shirts, metallic accents, and elevated footwear.",
     keywords: ["ibiza", "sunset", "dinner", "resort", "party", "holiday"],
   },
   {
@@ -68,6 +112,12 @@ const baseTrendSeeds: Omit<TrendPage, "slug">[] = [
     query: "ibiza sunset fashion",
     description:
       "Shop Ibiza sunset fashion with statement resort looks, elevated evening textures, and vacation-ready edits.",
+    introCopy: [
+      "Shop Ibiza sunset fashion with statement resort looks, elevated evening textures, and vacation-ready pieces.",
+      "The edit is designed for warm evenings, beach clubs, and relaxed dinners where styling can feel more expressive.",
+    ],
+    whatToExplore:
+      "What to explore: resort dresses, relaxed tailoring, bold accessories, and summer footwear.",
     keywords: ["ibiza", "sunset", "resort", "party", "dinner", "holiday"],
   },
 ];
@@ -85,6 +135,11 @@ const generatedAestheticTrends: Omit<TrendPage, "slug">[] = Object.entries(
       .join(" "),
     query: `${aesthetic} outfits`,
     description: `Explore ${aesthetic} outfits curated from independent fashion brands and trend-led labels.`,
+    introCopy: [
+      `Explore ${aesthetic} outfits curated from independent fashion brands and trend-led labels.`,
+      "The edit uses product tags and styling context to surface pieces that feel relevant, wearable, and visually cohesive.",
+    ],
+    whatToExplore: "What to explore: matching staples, seasonal layers, and complementary accessories.",
     keywords: [aesthetic, "outfits"],
   }));
 

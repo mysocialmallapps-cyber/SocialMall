@@ -13,6 +13,12 @@ const ensureSentence = (value: string) => {
   return /[.!?]$/.test(trimmed) ? trimmed : `${trimmed}.`;
 };
 
+const splitSentences = (value: string) =>
+  value
+    .split(/(?<=[.!?])\s+/)
+    .map((sentence) => ensureSentence(sentence))
+    .filter(Boolean);
+
 const getMostFrequent = (values: string[]) => {
   if (!values.length) {
     return null;
@@ -84,12 +90,18 @@ const pickContextSentence = ({
 export const buildCollectionIntroCopy = ({
   query,
   kind,
+  collectionTitle,
   collectionDescription,
+  configuredIntroCopy,
+  whatToExplore,
   topProducts,
 }: {
   query: string;
   kind: SeoCollectionKind;
+  collectionTitle?: string;
   collectionDescription?: string;
+  configuredIntroCopy?: string[];
+  whatToExplore?: string;
   topProducts: Product[];
 }) => {
   const normalizedQuery = normalize(query);
@@ -97,16 +109,25 @@ export const buildCollectionIntroCopy = ({
     return null;
   }
 
-  const headline = toTitleCase(normalizedQuery);
-  const lead = ensureSentence(collectionDescription || pickLeadTemplate(normalizedQuery, kind));
+  const headline = collectionTitle
+    ? collectionTitle.replace(/\s+\|\s+SocialMall$/i, "").trim()
+    : toTitleCase(normalizedQuery);
+  const fallbackLead = collectionDescription || pickLeadTemplate(normalizedQuery, kind);
+  const configuredSentences = configuredIntroCopy?.flatMap(splitSentences) ?? [];
+  const leadSentences = configuredSentences.length
+    ? configuredSentences
+    : splitSentences(fallbackLead);
   const supporting = pickContextSentence({
     topProducts,
   });
+  const sentences = Array.from(
+    new Set([...leadSentences, supporting].map(ensureSentence).filter(Boolean)),
+  ).slice(0, 4);
 
   return {
     eyebrow: "Collection overview",
     headline,
-    lead,
-    supporting,
+    sentences: sentences.length ? sentences : [ensureSentence(fallbackLead)],
+    whatToExplore: whatToExplore ? ensureSentence(whatToExplore) : "",
   };
 };
