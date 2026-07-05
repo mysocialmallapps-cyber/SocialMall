@@ -58,9 +58,12 @@ export default async function TrendPage({ params }: TrendPageProps) {
       initialCollection={{
         slug: trend.slug,
         query: trend.query,
+        searchQuery: trend.query,
         title: `${trend.name} | SocialMall`,
         description: trend.description,
         kind: "trend",
+        relatedSlugs: [],
+        pageType: "trend",
       }}
     />
   );

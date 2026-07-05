@@ -6,21 +6,63 @@ import {
   type ProductCollectionKey,
 } from "@/lib/products";
 import { generateBrandSlug } from "@/lib/brands";
+import {
+  longTailSeoPageDefinitions,
+  type SeoPageType,
+} from "@/lib/seo/seo-page-config";
 
 export type SeoCollectionKind = "aesthetic" | "category" | "trend" | "long-tail";
 
 export type SeoCollectionPage = {
   slug: string;
   query: string;
+  searchQuery: string;
   title?: string;
   description?: string;
   kind: SeoCollectionKind;
+  relatedSlugs: string[];
+  pageType: SeoPageType;
 };
 
 const normalizeQuery = (query: string) => query.trim().toLowerCase().replace(/\s+/g, " ");
 const sanitizeSeoKeyword = (value: string) =>
   normalizeQuery(value).replace(/[^a-z0-9\s-]/g, "").trim();
 const seoSlugFromQuery = (query: string) => generateBrandSlug(sanitizeSeoKeyword(query));
+const collectionPathFromSlug = (slug: string) => `/collections/${slug}`;
+const pageTypeFromKind = (kind: SeoCollectionKind): SeoPageType =>
+  kind === "trend" || kind === "aesthetic" ? "trend" : "collection";
+
+const defineSeoCollectionPage = ({
+  slug,
+  query,
+  searchQuery,
+  title,
+  description,
+  kind,
+  relatedSlugs = [],
+  pageType,
+}: {
+  slug: string;
+  query?: string;
+  searchQuery?: string;
+  title?: string;
+  description?: string;
+  kind: SeoCollectionKind;
+  relatedSlugs?: string[];
+  pageType?: SeoPageType;
+}): SeoCollectionPage => {
+  const normalizedSearchQuery = sanitizeSeoKeyword(searchQuery ?? query ?? slug);
+  return {
+    slug: seoSlugFromQuery(slug),
+    query: normalizedSearchQuery,
+    searchQuery: normalizedSearchQuery,
+    title,
+    description,
+    kind,
+    relatedSlugs: Array.from(new Set(relatedSlugs.map(seoSlugFromQuery))).filter(Boolean),
+    pageType: pageType ?? pageTypeFromKind(kind),
+  };
+};
 
 const categoryQueryMap: Record<ProductCategory, string> = {
   tshirt: "t-shirt outfits",
@@ -45,39 +87,60 @@ const collectionQueryMap: Record<ProductCollectionKey, string> = {
 };
 
 const curatedCollections: SeoCollectionPage[] = [
-  {
+  defineSeoCollectionPage({
     slug: "quiet-luxury-outfits",
-    query: "quiet luxury outfits",
+    searchQuery: "quiet luxury outfits",
     title: "Quiet Luxury Outfits | SocialMall",
     description:
       "Explore quiet luxury outfits curated from independent brands and premium minimal labels.",
     kind: "aesthetic",
-  },
-  {
+    relatedSlugs: ["quiet-luxury-summer-outfits", "scandinavian-minimal-outfits"],
+    pageType: "trend",
+  }),
+  defineSeoCollectionPage({
     slug: "old-money-style-men",
-    query: "old money style men",
+    searchQuery: "old money style men",
     title: "Old Money Style Men | SocialMall",
     description:
       "Discover old money style for men with tailored essentials, refined layers, and elevated textures.",
     kind: "trend",
-  },
-  {
+    relatedSlugs: ["old-money-aesthetic-outfits", "quiet-luxury-outfits"],
+    pageType: "trend",
+  }),
+  defineSeoCollectionPage({
     slug: "marbella-beach-club-outfits",
-    query: "marbella beach club outfits",
+    searchQuery: "marbella beach club outfits",
     title: "Marbella Beach Club Outfits | SocialMall",
     description:
       "Shop Marbella beach club outfit inspiration with resort shirts, dresses, and statement accessories.",
     kind: "trend",
-  },
-  {
+    relatedSlugs: ["quiet-luxury-summer-outfits", "black-linen-shirts"],
+    pageType: "trend",
+  }),
+  defineSeoCollectionPage({
     slug: "scandinavian-minimal-outfits",
-    query: "Scandinavian minimal outfits",
+    searchQuery: "scandinavian minimal outfits",
     title: "Scandinavian Minimal Outfits | SocialMall",
     description:
       "Find Scandinavian minimal outfits with clean silhouettes, tonal palettes, and premium everyday staples.",
     kind: "aesthetic",
-  },
+    relatedSlugs: ["quiet-luxury-outfits", "black-linen-shirts"],
+    pageType: "trend",
+  }),
 ];
+
+const configuredLongTailCollections: SeoCollectionPage[] =
+  longTailSeoPageDefinitions.map((definition) =>
+    defineSeoCollectionPage({
+      slug: definition.slug,
+      searchQuery: definition.searchQuery,
+      title: definition.title,
+      description: definition.description,
+      kind: definition.pageType === "trend" ? "trend" : "long-tail",
+      relatedSlugs: definition.relatedSlugs,
+      pageType: definition.pageType,
+    }),
+  );
 
 const buildCollectionFromQuery = (
   query: string,
@@ -88,7 +151,10 @@ const buildCollectionFromQuery = (
   return {
     slug,
     query: normalizedQuery,
+    searchQuery: normalizedQuery,
     kind,
+    relatedSlugs: [],
+    pageType: pageTypeFromKind(kind),
   };
 };
 
@@ -177,18 +243,21 @@ const buildDynamicTrendCollections = () =>
 const dedupeCollections = (collections: SeoCollectionPage[]) => {
   const collectionMap = new Map<string, SeoCollectionPage>();
   const normalizedQueries = new Set<string>();
+  const slugs = new Set<string>();
   collections.forEach((collection) => {
     const normalizedQuery = normalizeQuery(collection.query);
-    if (normalizedQueries.has(normalizedQuery)) {
+    if (normalizedQueries.has(normalizedQuery) || slugs.has(collection.slug)) {
       return;
     }
     collectionMap.set(collection.slug, collection);
     normalizedQueries.add(normalizedQuery);
+    slugs.add(collection.slug);
   });
   return Array.from(collectionMap.values());
 };
 
 export const seoCollectionPages = dedupeCollections([
+  ...configuredLongTailCollections,
   ...curatedCollections,
   ...buildDynamicCategoryCollections(),
   ...buildDynamicAestheticCollections(),
@@ -203,7 +272,7 @@ const collectionBySlug = new Map(
 const collectionPathByQuery = new Map(
   seoCollectionPages.map((collection) => [
     normalizeQuery(collection.query),
-    `/${collection.slug}`,
+    collectionPathFromSlug(collection.slug),
   ]),
 );
 const collectionByNormalizedQuery = new Map(
@@ -224,6 +293,9 @@ const scoreQueryRelationship = (baseQuery: string, candidateQuery: string) => {
 
 const collectionRelationsBySlug = new Map<string, string[]>(
   seoCollectionPages.map((collection) => {
+    const configuredRelatedQueries = collection.relatedSlugs
+      .map((slug) => collectionBySlug.get(slug)?.query)
+      .filter((query): query is string => Boolean(query));
     const related = seoCollectionPages
       .filter((candidate) => candidate.slug !== collection.slug)
       .map((candidate) => ({
@@ -235,13 +307,19 @@ const collectionRelationsBySlug = new Map<string, string[]>(
       .slice(0, 8)
       .map((candidate) => candidate.query);
 
-    return [collection.slug, related] as const;
+    return [
+      collection.slug,
+      Array.from(new Set([...configuredRelatedQueries, ...related])).slice(0, 8),
+    ] as const;
   }),
 );
 
 export const getSeoCollectionBySlug = (slug: string) => collectionBySlug.get(slug) ?? null;
 
 export const getSeoCollectionPaths = () =>
+  seoCollectionPages.map((collection) => collectionPathFromSlug(collection.slug));
+
+export const getRootSeoCollectionPaths = () =>
   seoCollectionPages.map((collection) => `/${collection.slug}`);
 
 export const getCollectionPathByQuery = (query: string) =>
@@ -256,10 +334,10 @@ export const getRelatedCollectionQueries = (
 ) => {
   const slugFromLookup =
     collectionLookup.slug ??
-    (collectionLookup.query ? getCollectionPathByQuery(collectionLookup.query) : null)?.replace(
-      /^\//,
-      "",
-    );
+    (collectionLookup.query ? getCollectionPathByQuery(collectionLookup.query) : null)
+      ?.split("/")
+      .filter(Boolean)
+      .at(-1);
   if (!slugFromLookup) {
     return [];
   }

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import HomeClient from "../home-client";
+import HomeClient from "../../home-client";
 import { getSeoCollectionBySlug, seoCollectionPages } from "@/lib/collections";
 import { buildSearchMetadata } from "@/lib/seo/search-metadata";
 
@@ -25,9 +25,9 @@ export async function generateMetadata({
   if (!collection) {
     return buildSearchMetadata("", {
       title: "Collections | SocialMall",
-      description: "Discover curated SocialMall collections and trend-led fashion edits.",
+      description: "Discover curated SocialMall collections and long-tail fashion edits.",
       pageType: "collection",
-      canonicalPath: "/",
+      canonicalPath: "/collections",
     });
   }
 
