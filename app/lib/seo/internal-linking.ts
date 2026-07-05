@@ -33,7 +33,23 @@ export type InternalLinkSection = {
   links: InternalLinkItem[];
 };
 
+export type SeoRelatedLinkItem = InternalLinkItem & {
+  label: string;
+  pageType: "trend" | "collection";
+};
+
 const normalize = (value: string) => value.trim().toLowerCase().replace(/\s+/g, " ");
+
+const normalizePath = (value: string) => {
+  const normalized = value.trim().replace(/\/+$/, "");
+  return normalized || "/";
+};
+
+const toTitleCase = (value: string) =>
+  normalize(value)
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
 
 const toSearchHref = (
   query: string,
@@ -221,4 +237,80 @@ export const buildInternalLinkSections = ({
       }),
     }))
     .filter((section) => section.links.length > 0);
+};
+
+export const buildSeoRelatedLinks = ({
+  currentPath,
+  currentQuery,
+  relatedTrendQueries,
+  relatedCollectionQueries,
+  resolveTrendPath,
+  resolveCollectionPath,
+  limit = 8,
+}: {
+  currentPath: string;
+  currentQuery: string;
+  relatedTrendQueries: string[];
+  relatedCollectionQueries: string[];
+  resolveTrendPath: (query: string) => string | null;
+  resolveCollectionPath: (query: string) => string | null;
+  limit?: number;
+}) => {
+  const links: SeoRelatedLinkItem[] = [];
+  const usedQueries = new Set<string>([normalize(currentQuery)]);
+  const usedPaths = new Set<string>([normalizePath(currentPath)]);
+  const trendCandidates = relatedTrendQueries.map((query) => ({
+    query,
+    pageType: "trend" as const,
+    chipType: "related_trend" as const,
+    href: resolveTrendPath(query),
+  }));
+  const collectionCandidates = relatedCollectionQueries.map((query) => ({
+    query,
+    pageType: "collection" as const,
+    chipType: "related_collection" as const,
+    href: resolveCollectionPath(query),
+  }));
+  const candidates: Array<
+    (typeof trendCandidates)[number] | (typeof collectionCandidates)[number]
+  > = [];
+
+  for (let index = 0; index < Math.max(trendCandidates.length, collectionCandidates.length); index += 1) {
+    const trendCandidate = trendCandidates[index];
+    const collectionCandidate = collectionCandidates[index];
+    if (trendCandidate) {
+      candidates.push(trendCandidate);
+    }
+    if (collectionCandidate) {
+      candidates.push(collectionCandidate);
+    }
+  }
+
+  for (const candidate of candidates) {
+    const query = normalize(candidate.query);
+    if (!query || usedQueries.has(query) || !candidate.href) {
+      continue;
+    }
+
+    const href = normalizePath(candidate.href);
+    if (usedPaths.has(href)) {
+      continue;
+    }
+
+    usedQueries.add(query);
+    usedPaths.add(href);
+    links.push({
+      query,
+      label: toTitleCase(query),
+      href,
+      chipType: candidate.chipType,
+      pageType: candidate.pageType,
+    });
+
+    if (links.length >= limit) {
+      break;
+    }
+  }
+
+  return links;
 };

@@ -43,7 +43,10 @@ import {
   type Product,
 } from "@/lib/products";
 import { buildCollectionIntroCopy } from "@/lib/seo/collection-intro-copy";
-import { buildInternalLinkSections } from "@/lib/seo/internal-linking";
+import {
+  buildInternalLinkSections,
+  buildSeoRelatedLinks,
+} from "@/lib/seo/internal-linking";
 
 const suggestions = [
   "quiet luxury",
@@ -991,21 +994,54 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
 
     return Array.from(new Set(mappedPhrases));
   }, [filteredResults.items]);
+  const relatedCollectionQueries = useMemo(
+    () =>
+      getRelatedCollectionQueries(
+        {
+          slug: activeCollection?.slug,
+          query: trackingQuery,
+        },
+        10,
+      ),
+    [activeCollection?.slug, trackingQuery],
+  );
+  const relatedTrendQueries = useMemo(
+    () =>
+      getRelatedTrendQueries(
+        {
+          slug: activeCollection?.pageType === "trend" ? activeCollection.slug : undefined,
+          query: trackingQuery,
+        },
+        8,
+      ),
+    [activeCollection?.pageType, activeCollection?.slug, trackingQuery],
+  );
+  const seoRelatedLinks = useMemo(
+    () =>
+      hasSearched && activeCollection
+        ? buildSeoRelatedLinks({
+            currentPath: pathname,
+            currentQuery: trackingQuery,
+            relatedCollectionQueries: [...relatedCollectionQueries, ...tagDrivenPhrases],
+            relatedTrendQueries,
+            resolveCollectionPath: getCollectionPathByQuery,
+            resolveTrendPath: getTrendPathByQuery,
+            limit: 8,
+          })
+        : [],
+    [
+      activeCollection,
+      hasSearched,
+      pathname,
+      relatedCollectionQueries,
+      relatedTrendQueries,
+      tagDrivenPhrases,
+      trackingQuery,
+    ],
+  );
   const internalLinkSections = useMemo(() => {
     const resolveSeoPath = (query: string) =>
       getTrendPathByQuery(query) ?? getCollectionPathByQuery(query);
-    const relatedCollectionQueries = getRelatedCollectionQueries(
-      {
-        query: trackingQuery,
-      },
-      10,
-    );
-    const relatedTrendQueries = getRelatedTrendQueries(
-      {
-        query: trackingQuery,
-      },
-      8,
-    );
 
     return buildInternalLinkSections({
       currentQuery: trackingQuery,
@@ -1023,7 +1059,25 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
       relatedTrendQueries,
       resolveSeoPath,
     });
-  }, [activeIntent, filteredResults.items, tagDrivenPhrases, trackingQuery]);
+  }, [
+    activeIntent,
+    filteredResults.items,
+    relatedCollectionQueries,
+    relatedTrendQueries,
+    tagDrivenPhrases,
+    trackingQuery,
+  ]);
+  const supportingInternalLinkSections = useMemo(
+    () =>
+      seoRelatedLinks.length
+        ? internalLinkSections.filter(
+            (section) =>
+              section.key !== "related-collections" &&
+              section.key !== "related-trends",
+          )
+        : internalLinkSections,
+    [internalLinkSections, seoRelatedLinks.length],
+  );
 
   const runSearch = (rawQuery: string) => {
     const query = rawQuery.trim();
@@ -1407,7 +1461,28 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
             </div>
             {!isLoading ? (
               <div className="space-y-5 pt-2">
-                {internalLinkSections.map((section) => (
+                {seoRelatedLinks.length ? (
+                  <div className="space-y-2">
+                    <h3 className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
+                      Related pages
+                    </h3>
+                    <div className="flex flex-wrap gap-2">
+                      {seoRelatedLinks.map((link) => (
+                        <Link
+                          key={`${link.pageType}-${link.href}`}
+                          href={link.href}
+                          onClick={(event) =>
+                            handleInternalChipClick(event, link.query, link.chipType)
+                          }
+                          className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-100"
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : null}
+                {supportingInternalLinkSections.map((section) => (
                   <div key={section.key} className="space-y-2">
                     <h3 className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
                       {section.title}
