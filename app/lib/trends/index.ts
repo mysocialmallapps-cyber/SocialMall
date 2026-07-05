@@ -50,6 +50,20 @@ const baseTrendSeeds: Omit<TrendPage, "slug">[] = [
     keywords: ["coastal granddaughter", "resort", "holiday", "beach club", "summer"],
   },
   {
+    name: "Marbella Beach Club",
+    query: "marbella beach club outfits",
+    description:
+      "Discover Marbella beach club outfits with resort textures, elevated swim-ready layers, and warm-weather accessories.",
+    keywords: ["marbella", "beach club", "resort", "holiday", "summer"],
+  },
+  {
+    name: "Ibiza Sunset Dinner",
+    query: "ibiza sunset dinner outfits",
+    description:
+      "Shop Ibiza sunset dinner outfits with statement vacation silhouettes and elevated evening textures.",
+    keywords: ["ibiza", "sunset", "dinner", "resort", "party", "holiday"],
+  },
+  {
     name: "Ibiza Sunset Fashion",
     query: "ibiza sunset fashion",
     description:
