@@ -43,6 +43,7 @@ export default function OutboundRedirectPage() {
       affiliateUrl: product.affiliateUrl,
       productUrl: product.productUrl,
       affiliateNetwork: product.affiliateNetwork,
+      productUrlVerificationStatus: product.productUrlVerificationStatus,
       productId: product.id,
       retailer: normalizedRetailer,
       searchQuery,

@@ -9,7 +9,7 @@ const DUPLICATE_WINDOW_MS = 1200;
 
 type MonetizationEventType = "outbound_redirect";
 type MonetizationProvider = AffiliateNetwork | "direct" | "unknown";
-type MonetizationAffiliateSource = "affiliate" | "product" | "none";
+type MonetizationAffiliateSource = "affiliate" | "product" | "brand" | "none";
 
 export type CommerceSearchSource = "onsite_search" | "homepage_browse" | "unknown";
 

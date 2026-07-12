@@ -39,7 +39,7 @@ const pickLeadTemplate = (query: string, kind: SeoCollectionKind) => {
     case "category":
       return `Explore ${query} curated with premium staples and directional silhouettes.`;
     case "trend":
-      return `Shop ${query} with trend-led edits from independent labels.`;
+      return `Explore ${query} with trend-led edits from independent labels.`;
     case "long-tail":
       return `Browse ${query} with focused product edits built for specific style intent.`;
     default:

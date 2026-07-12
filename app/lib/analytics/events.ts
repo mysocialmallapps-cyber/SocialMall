@@ -181,7 +181,7 @@ export const trackOutboundRedirectEvent = ({
   searchSource?: CommerceSearchSource;
   hasAffiliateUrl: boolean;
   affiliateProvider?: string;
-  affiliateSource?: "affiliate" | "product" | "none";
+  affiliateSource?: "affiliate" | "product" | "brand" | "none";
   affiliateClickId?: string | null;
   commissionRate?: number;
   commissionModel?: string;

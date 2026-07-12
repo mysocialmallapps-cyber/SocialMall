@@ -73,9 +73,9 @@ export const longTailSeoPageDefinitions: LongTailSeoPageDefinition[] = [
     slug: "marbella-beach-club-outfits",
     title: "Marbella Beach Club Outfits | SocialMall",
     description:
-      "Shop Marbella beach club outfits with resort shirts, breezy dresses, and statement accessories.",
+      "Explore Marbella beach club outfits with resort shirts, breezy dresses, and statement accessories.",
     introCopy: [
-      "Shop Marbella beach club outfits with resort textures, breezy silhouettes, and sun-ready pieces that move easily from poolside to dinner.",
+      "Explore Marbella beach club outfits with resort textures, breezy silhouettes, and sun-ready pieces that move easily from poolside to dinner.",
       "The selection keeps the mood elevated and wearable, pairing relaxed summer staples with polished accessories.",
     ],
     whatToExplore:
@@ -92,9 +92,9 @@ export const longTailSeoPageDefinitions: LongTailSeoPageDefinition[] = [
     slug: "ibiza-sunset-dinner-outfits",
     title: "Ibiza Sunset Dinner Outfits | SocialMall",
     description:
-      "Shop Ibiza sunset dinner outfits with statement resort looks, refined evening pieces, and vacation-ready accessories.",
+      "Explore Ibiza sunset dinner outfits with statement resort looks, refined evening pieces, and vacation-ready accessories.",
     introCopy: [
-      "Shop Ibiza sunset dinner outfits with expressive resort pieces, refined evening textures, and silhouettes made for warm nights.",
+      "Explore Ibiza sunset dinner outfits with expressive resort pieces, refined evening textures, and silhouettes made for warm nights.",
       "This edit balances statement styling with wearable details, so vacation dressing still feels curated and premium.",
     ],
     whatToExplore:

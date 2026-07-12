@@ -79,6 +79,7 @@ type QueryIntent = {
 
 type FilterResult = {
   items: Product[];
+  similarItems: Product[];
   showFallbackNotice: boolean;
 };
 
@@ -133,6 +134,19 @@ const ProductCard = memo(function ProductCard({
     () => shouldUseUnoptimizedImage(activeImageSrc),
     [activeImageSrc],
   );
+  const isVerifiedProduct = product.catalogSource === "verified-retailer";
+  const isIllustrativeImage =
+    product.imageVerificationStatus !== "verified-product-image";
+  const isBrandSiteLink =
+    product.productUrlVerificationStatus === "brand-site";
+  const priceLabel =
+    product.priceStatus === "estimated"
+      ? `Guide ${formatPrice(product.price, product.currency)}`
+      : formatPrice(product.price, product.currency);
+  const cardBadge = isVerifiedProduct ? "Verified product" : "Style inspiration";
+  const linkLabel = isVerifiedProduct
+    ? "Shop exact product"
+    : `Visit ${brandAttribution.displayName}`;
 
   const handleImageError = () => {
     setImageState((currentState) => {
@@ -164,8 +178,11 @@ const ProductCard = memo(function ProductCard({
             unoptimized={useUnoptimizedImage}
             onError={handleImageError}
           />
+          <div className="absolute left-2 top-2 rounded-full bg-white/90 px-2.5 py-1 text-[0.65rem] font-medium uppercase tracking-[0.08em] text-zinc-700 shadow-sm backdrop-blur">
+            {cardBadge}
+          </div>
         </div>
-        <div className="mt-3 space-y-1">
+        <div className="mt-3 space-y-1.5">
           <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
             {brandAttribution.displayName}
             {brandAttribution.sourceLabel ? (
@@ -177,7 +194,15 @@ const ProductCard = memo(function ProductCard({
           </p>
           <p className="truncate text-sm text-zinc-800">{product.name}</p>
           <p className="text-sm font-semibold text-zinc-900">
-            {formatPrice(product.price, product.currency)}
+            {priceLabel}
+          </p>
+          <p className="text-xs leading-5 text-zinc-500">
+            {isIllustrativeImage ? "Illustrative image" : "Brand product image"}
+            {" · "}
+            {isBrandSiteLink ? "Exact product link pending" : "Exact product page"}
+          </p>
+          <p className="text-xs font-medium text-zinc-800">
+            {linkLabel}
           </p>
         </div>
       </article>
@@ -499,9 +524,12 @@ export const runSearchValidationCases = (items: Product[]): ValidationResult[] =
       query: "white linen shirt",
       check: (result: FilterResult) =>
         result.items.every(
-          (item) => normalizeProductCategory(item.category) === "shirt",
+          (item) =>
+            normalizeProductCategory(item.category) === "shirt" &&
+            item.colors.includes("white") &&
+            item.materials.includes("linen"),
         ),
-      reason: "Expected only shirts for shirt-intent query.",
+      reason: "Expected only white linen shirts for exact product intent.",
     },
     {
       query: "cheapest summer outfit",
@@ -512,9 +540,11 @@ export const runSearchValidationCases = (items: Product[]): ValidationResult[] =
       query: "black hoodie",
       check: (result: FilterResult) =>
         result.items.every(
-          (item) => normalizeProductCategory(item.category) === "hoodie",
+          (item) =>
+            normalizeProductCategory(item.category) === "hoodie" &&
+            item.colors.includes("black"),
         ),
-      reason: "Expected only hoodies for hoodie query.",
+      reason: "Expected only black hoodies for color and category intent.",
     },
     {
       query: "only black trousers",
@@ -551,9 +581,11 @@ export const runSearchValidationCases = (items: Product[]): ValidationResult[] =
       query: "oversized black hoodie",
       check: (result: FilterResult) =>
         result.items.every(
-          (item) => normalizeProductCategory(item.category) === "hoodie",
+          (item) =>
+            normalizeProductCategory(item.category) === "hoodie" &&
+            item.colors.includes("black"),
         ),
-      reason: "Expected hoodie category enforcement.",
+      reason: "Expected hoodie category and black color enforcement.",
     },
     {
       query: "quiet luxury summer outfit",
@@ -578,9 +610,12 @@ export const runSearchValidationCases = (items: Product[]): ValidationResult[] =
       check: (result: FilterResult) =>
         result.items.every(
           (item) =>
-            normalizeProductCategory(item.category) === "trousers" && item.price <= 200,
+            normalizeProductCategory(item.category) === "trousers" &&
+            item.colors.includes("black") &&
+            item.materials.includes("linen") &&
+            item.price <= 200,
         ),
-      reason: "Expected trousers under 200 only.",
+      reason: "Expected exact black linen trousers under 200 only.",
     },
   ];
 
@@ -600,17 +635,17 @@ export const getFilteredProducts = (
 ): FilterResult => {
   const intent = parseQueryIntent(query);
   if (!query.trim()) {
-    return { items, showFallbackNotice: false };
+    return { items, similarItems: [], showFallbackNotice: false };
   }
 
   const strictCategoryFilters = Array.from(
     new Set([...intent.categories, ...intent.onlyFilters.categories]),
   );
   const strictColorFilters = Array.from(
-    new Set([...intent.onlyFilters.colors]),
+    new Set([...intent.colors, ...intent.onlyFilters.colors]),
   );
   const strictMaterialFilters = Array.from(
-    new Set([...intent.onlyFilters.materials]),
+    new Set([...intent.materials, ...intent.onlyFilters.materials]),
   );
   const exclusionFilters = Array.from(new Set(intent.exclusions));
   const normalizedQuery = query.toLowerCase();
@@ -856,6 +891,7 @@ export const getFilteredProducts = (
   if (softSignalsPresent && softSignalMatches.length) {
     return {
       items: rankProducts(softSignalMatches),
+      similarItems: [],
       showFallbackNotice: false,
     };
   }
@@ -863,13 +899,15 @@ export const getFilteredProducts = (
   if (strictMatches.length) {
     return {
       items: rankProducts(strictMatches),
+      similarItems: [],
       showFallbackNotice: softSignalsPresent,
     };
   }
 
   const fallbackCandidates = applyNonNegotiableFilters(items);
   return {
-    items: rankProducts(fallbackCandidates),
+    items: [],
+    similarItems: rankProducts(fallbackCandidates),
     showFallbackNotice: true,
   };
 };
@@ -898,38 +936,54 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
     [activeQuery],
   );
   const activeIntent = useMemo(() => parseQueryIntent(activeQuery), [activeQuery]);
-  const visibleProducts = hasSearched ? filteredResults.items : previewProducts;
+  const searchDisplayProducts = filteredResults.items.length
+    ? filteredResults.items
+    : filteredResults.similarItems;
+  const visibleProducts = hasSearched ? searchDisplayProducts : previewProducts;
   const schemaQuery = hasSearched ? currentQuery || activeQuery : "";
-  const productStructuredData = useMemo(
-    () => ({
-      "@context": "https://schema.org",
-      "@type": "ItemList",
-      itemListElement: visibleProducts.map((product, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        item: {
-          "@type": "Product",
-          name: product.name,
-          image: product.images,
-          description: product.description,
-          category: product.category,
-          brand: {
-            "@type": "Brand",
-            name: product.brand,
-          },
-          offers: {
-            "@type": "Offer",
-            price: product.price,
-            priceCurrency: product.currency,
-            url: product.productUrl,
-            availability: product.inStock
-              ? "https://schema.org/InStock"
-              : "https://schema.org/OutOfStock",
-          },
-        },
-      })),
-    }),
+  const verifiedStructuredProducts = useMemo(
+    () =>
+      visibleProducts.filter(
+        (product) =>
+          product.catalogSource === "verified-retailer" &&
+          product.imageVerificationStatus === "verified-product-image" &&
+          product.productUrlVerificationStatus === "verified-product-page",
+      ),
     [visibleProducts],
+  );
+  const productStructuredData = useMemo(
+    () =>
+      verifiedStructuredProducts.length
+        ? {
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            itemListElement: verifiedStructuredProducts.map((product, index) => ({
+              "@type": "ListItem",
+              position: index + 1,
+              item: {
+                "@type": "Product",
+                name: product.name,
+                image: product.images,
+                description: product.description,
+                category: product.category,
+                brand: {
+                  "@type": "Brand",
+                  name: product.brand,
+                },
+                offers: {
+                  "@type": "Offer",
+                  price: product.price,
+                  priceCurrency: product.currency,
+                  url: product.productUrl,
+                  availability: product.inStock
+                    ? "https://schema.org/InStock"
+                    : "https://schema.org/OutOfStock",
+                },
+              },
+            })),
+          }
+        : null,
+    [verifiedStructuredProducts],
   );
   const pageStructuredData = useMemo(
     () => ({
@@ -958,13 +1012,13 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
             collectionDescription: activeCollection?.description,
             configuredIntroCopy: activeCollection?.introCopy,
             whatToExplore: activeCollection?.whatToExplore,
-            topProducts: filteredResults.items.slice(0, 8),
+            topProducts: visibleProducts.slice(0, 8),
           })
         : null,
-    [activeCollection, activeQuery, filteredResults.items, hasSearched],
+    [activeCollection, activeQuery, hasSearched, visibleProducts],
   );
   const tagDrivenPhrases = useMemo(() => {
-    const topProducts = filteredResults.items.slice(0, 8);
+    const topProducts = visibleProducts.slice(0, 8);
     const tags = extractUniqueProductTags(topProducts, [
       "vibe",
       "style",
@@ -993,7 +1047,7 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
     });
 
     return Array.from(new Set(mappedPhrases));
-  }, [filteredResults.items]);
+  }, [visibleProducts]);
   const relatedCollectionQueries = useMemo(
     () =>
       getRelatedCollectionQueries(
@@ -1054,18 +1108,18 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
         styles: activeIntent.styles,
         genders: activeIntent.genders,
       },
-      topProducts: filteredResults.items.slice(0, 10),
+      topProducts: visibleProducts.slice(0, 10),
       relatedCollectionQueries: [...relatedCollectionQueries, ...tagDrivenPhrases],
       relatedTrendQueries,
       resolveSeoPath,
     });
   }, [
     activeIntent,
-    filteredResults.items,
     relatedCollectionQueries,
     relatedTrendQueries,
     tagDrivenPhrases,
     trackingQuery,
+    visibleProducts,
   ]);
   const supportingInternalLinkSections = useMemo(
     () =>
@@ -1338,10 +1392,12 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
         // JSON-LD stays invisible while improving search engine understanding.
         dangerouslySetInnerHTML={{ __html: JSON.stringify(pageStructuredData) }}
       />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productStructuredData) }}
-      />
+      {productStructuredData ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(productStructuredData) }}
+        />
+      ) : null}
       <header className="mx-auto w-full max-w-6xl px-4 pt-6 sm:px-6 lg:px-8 lg:pt-7">
         <nav className="flex items-center">
           <button
@@ -1422,7 +1478,7 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
             </p>
             {!isLoading && filteredResults.showFallbackNotice ? (
               <p className="text-sm text-zinc-500">
-                No exact match — showing similar styles.
+                No exact match — showing similar styles below.
               </p>
             ) : null}
             {!isLoading && collectionIntroCopy ? (
@@ -1445,13 +1501,21 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
                 ) : null}
               </section>
             ) : null}
+            {!isLoading && filteredResults.showFallbackNotice && visibleProducts.length ? (
+              <h2 className="text-sm font-medium text-zinc-700">Similar styles</h2>
+            ) : null}
+            {!isLoading && !visibleProducts.length ? (
+              <p className="rounded-2xl border border-zinc-200 bg-zinc-50 p-4 text-sm leading-6 text-zinc-600">
+                No matching styles yet. Try a broader color, fabric, or category.
+              </p>
+            ) : null}
             <div
               key={gridAnimationKey}
               className={`animate-grid-fade-in grid grid-cols-2 gap-x-4 gap-y-10 transition-opacity md:grid-cols-4 md:gap-x-6 md:gap-y-12 ${
                 isLoading ? "opacity-70" : "opacity-100"
               }`}
             >
-              {filteredResults.items.map((product, index) => (
+              {visibleProducts.map((product, index) => (
                 <ProductCard
                   key={product.id}
                   href={buildOutboundHref(product.id, trackingQuery)}
@@ -1513,8 +1577,9 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
       </main>
 
       <footer className="mx-auto w-full max-w-6xl px-4 pb-8 text-xs leading-5 text-zinc-500 sm:px-6 lg:px-8">
-        SocialMall may earn commission from some outbound links. Product ranking is
-        based on search relevance, product attributes, and availability signals.
+        SocialMall currently mixes verified products with style inspiration. Cards
+        marked as inspiration use illustrative images, guide prices, and brand-site
+        links until exact retailer product pages are verified.
       </footer>
 
       {hasSearched ? (

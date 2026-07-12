@@ -1,4 +1,7 @@
-import type { AffiliateNetwork } from "@/lib/products/types";
+import type {
+  AffiliateNetwork,
+  ProductUrlVerificationStatus,
+} from "@/lib/products/types";
 import {
   buildAffiliateClickId,
   defaultAffiliateProviderFallbacks,
@@ -9,7 +12,7 @@ import {
 
 type ResolvedCommerceDestination = {
   destinationUrl: string | null;
-  source: "affiliate" | "product" | "none";
+  source: "affiliate" | "product" | "brand" | "none";
   usedFallback: boolean;
 };
 
@@ -189,15 +192,18 @@ const applyProductFallbackTrackingParams = ({
   productUrl,
   context,
   clickId,
+  medium = "affiliate_redirect",
 }: {
   productUrl: string;
   context: RedirectTrackingContext;
   clickId: string;
+  medium?: "affiliate_redirect" | "brand_discovery";
 }) => {
   const tracked = appendTrackingParams(productUrl, {
     utm_source: "socialmall",
-    utm_medium: "affiliate_redirect",
-    utm_campaign: "outbound_fallback",
+    utm_medium: medium,
+    utm_campaign:
+      medium === "brand_discovery" ? "brand_discovery" : "outbound_fallback",
     sm_product_id: context.productId,
     sm_retailer: sanitizeRetailerKey(context.retailer),
     sm_query: context.searchQuery?.trim() || undefined,
@@ -215,6 +221,7 @@ export const resolveAffiliateRedirectDestination = ({
   affiliateUrl,
   productUrl,
   affiliateNetwork,
+  productUrlVerificationStatus,
   productId,
   retailer,
   searchQuery,
@@ -222,6 +229,7 @@ export const resolveAffiliateRedirectDestination = ({
   affiliateUrl?: string | null;
   productUrl?: string | null;
   affiliateNetwork?: AffiliateNetwork;
+  productUrlVerificationStatus?: ProductUrlVerificationStatus;
   productId: number;
   retailer?: string;
   searchQuery?: string;
@@ -274,29 +282,32 @@ export const resolveAffiliateRedirectDestination = ({
   }
 
   if (isValidOutboundUrl(productUrl)) {
+    const source =
+      productUrlVerificationStatus === "brand-site" ? "brand" : "product";
     const fallbackClickId = buildAffiliateClickId({
-      network: "direct",
+      network: source === "brand" ? "unknown" : "direct",
       productId,
     });
     const fallbackDestination = applyProductFallbackTrackingParams({
       productUrl: normalizeOutboundUrl(productUrl) ?? "",
       context: trackingContext,
       clickId: fallbackClickId,
+      medium: source === "brand" ? "brand_discovery" : "affiliate_redirect",
     });
 
     return {
       destinationUrl: fallbackDestination,
-      source: "product",
+      source,
       usedFallback: Boolean(affiliateUrl),
-      provider: "direct",
+      provider: source === "brand" ? "unknown" : "direct",
       trackingApplied:
         fallbackDestination !== (normalizeOutboundUrl(productUrl) ?? productUrl),
       attribution: {
         clickId: fallbackClickId,
-        provider: "direct",
+        provider: source === "brand" ? "unknown" : "direct",
         trackingParams: {
           utm_source: "socialmall",
-          utm_medium: "affiliate_redirect",
+          utm_medium: source === "brand" ? "brand_discovery" : "affiliate_redirect",
           sm_click_id: fallbackClickId,
         },
         commission: null,

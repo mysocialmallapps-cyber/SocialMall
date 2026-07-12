@@ -132,9 +132,9 @@ const curatedCollections: SeoCollectionPage[] = [
     searchQuery: "marbella beach club outfits",
     title: "Marbella Beach Club Outfits | SocialMall",
     description:
-      "Shop Marbella beach club outfit inspiration with resort shirts, dresses, and statement accessories.",
+      "Explore Marbella beach club outfit inspiration with resort shirts, dresses, and statement accessories.",
     introCopy: [
-      "Shop Marbella beach club outfits with breezy resort layers, sun-ready textures, and accessories that still feel elevated.",
+      "Explore Marbella beach club outfits with breezy resort layers, sun-ready textures, and accessories that still feel elevated.",
       "The page brings together polished holiday pieces for poolside lunches, beach clubs, and warm evening plans.",
     ],
     whatToExplore:

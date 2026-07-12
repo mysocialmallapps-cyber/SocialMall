@@ -164,24 +164,32 @@ export default function PilotAnalyticsClient() {
             />
             <Stat label="Brands" value={data.productCatalog.brandCount} />
             <Stat
-              label="Monetization-ready"
-              value={data.productCatalog.monetizationReadyProductCount}
+              label="Verified products"
+              value={data.productCatalog.verifiedProductCount}
             />
           </dl>
           <dl>
             <Stat
-              label="Active affiliate"
+              label="Style inspiration"
+              value={data.productCatalog.styleInspirationCount}
+            />
+            <Stat
+              label="Verified images"
+              value={data.productCatalog.verifiedImageCount}
+            />
+            <Stat
+              label="Exact product links"
+              value={data.productCatalog.verifiedProductUrlCount}
+            />
+          </dl>
+          <dl>
+            <Stat
+              label="Brand-site links"
+              value={data.productCatalog.brandDiscoveryCount}
+            />
+            <Stat
+              label="Affiliate-ready"
               value={data.productCatalog.affiliateProductCount}
-            />
-            <Stat
-              label="Direct fallback"
-              value={data.productCatalog.directProductCount}
-            />
-          </dl>
-          <dl>
-            <Stat
-              label="In stock"
-              value={data.productCatalog.inStockProductCount}
             />
             <Stat label="CMS-ready" value={formatBoolean(data.productCatalog.cmsReady)} />
             <Stat

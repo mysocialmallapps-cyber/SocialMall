@@ -46,9 +46,9 @@ const baseTrendSeeds: Omit<TrendPage, "slug">[] = [
     name: "Clean Girl",
     query: "clean girl outfits",
     description:
-      "Shop clean girl fashion with minimalist silhouettes, neutral palettes, and effortless everyday styling.",
+      "Explore clean girl fashion with minimalist silhouettes, neutral palettes, and effortless everyday styling.",
     introCopy: [
-      "Shop clean girl fashion with minimalist silhouettes, neutral palettes, and effortless pieces designed for everyday wear.",
+      "Explore clean girl fashion with minimalist silhouettes, neutral palettes, and effortless pieces designed for everyday wear.",
       "The edit keeps styling simple and fresh, with polished basics that feel easy to repeat.",
     ],
     whatToExplore:
@@ -98,9 +98,9 @@ const baseTrendSeeds: Omit<TrendPage, "slug">[] = [
     name: "Ibiza Sunset Dinner",
     query: "ibiza sunset dinner outfits",
     description:
-      "Shop Ibiza sunset dinner outfits with statement vacation silhouettes and elevated evening textures.",
+      "Explore Ibiza sunset dinner outfits with statement vacation silhouettes and elevated evening textures.",
     introCopy: [
-      "Shop Ibiza sunset dinner outfits with statement vacation silhouettes, refined evening textures, and warm-night styling.",
+      "Explore Ibiza sunset dinner outfits with statement vacation silhouettes, refined evening textures, and warm-night styling.",
       "This page balances expressive resort pieces with wearable details for dinners, parties, and late summer plans.",
     ],
     whatToExplore:
@@ -111,9 +111,9 @@ const baseTrendSeeds: Omit<TrendPage, "slug">[] = [
     name: "Ibiza Sunset Fashion",
     query: "ibiza sunset fashion",
     description:
-      "Shop Ibiza sunset fashion with statement resort looks, elevated evening textures, and vacation-ready edits.",
+      "Explore Ibiza sunset fashion with statement resort looks, elevated evening textures, and vacation-ready edits.",
     introCopy: [
-      "Shop Ibiza sunset fashion with statement resort looks, elevated evening textures, and vacation-ready pieces.",
+      "Explore Ibiza sunset fashion with statement resort looks, elevated evening textures, and vacation-ready pieces.",
       "The edit is designed for warm evenings, beach clubs, and relaxed dinners where styling can feel more expressive.",
     ],
     whatToExplore:

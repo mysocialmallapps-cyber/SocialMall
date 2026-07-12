@@ -1,18 +1,12 @@
 import type { Product } from "./types";
 import { formatBrandName, generateBrandSlug, resolveBrandSlug } from "../brands";
 import {
-  buildAffiliateUrl,
-  getAffiliateCommissionDefaults,
-  getConfiguredAffiliateNetworks,
-} from "../commerce";
-import {
   productBrandProfiles,
   productImagePool,
   productRecipes,
 } from "./data";
 
 const recipeByKey = new Map(productRecipes.map((recipe) => [recipe.key, recipe]));
-const configuredAffiliateNetworks = getConfiguredAffiliateNetworks();
 
 const unique = (values: string[]) => Array.from(new Set(values));
 
@@ -29,6 +23,8 @@ const buildImageSet = (baseImage: string) =>
       ? baseImage.replace(/w=\d+/g, `w=${width}`)
       : `${baseImage}&w=${width}`,
   );
+
+const buildBrandUrl = (domain: string) => `https://${domain}`;
 
 const toPrice = (base: number, multiplier: number, offset: number) => {
   const raw = base * multiplier + offset;
@@ -70,29 +66,12 @@ const buildCatalog = () => {
       const productSlug = generateBrandSlug(
         `${resolvedBrandSlug}-${productName}-${recipeIndex + 1}`,
       );
-      const productUrl = `https://${profile.domain}/products/${productSlug}`;
-      const affiliateNetwork = configuredAffiliateNetworks.length
-        ? configuredAffiliateNetworks[
-            brandIndex % configuredAffiliateNetworks.length
-          ]
-        : undefined;
-      const hasAffiliate = Boolean(affiliateNetwork) && id % 5 !== 0;
-      const affiliateUrl = hasAffiliate
-        ? buildAffiliateUrl({
-            network: affiliateNetwork!,
-            productUrl,
-            productId: id,
-            retailer: formattedRetailer,
-          })
-        : null;
-      const affiliateCommission = affiliateUrl
-        ? getAffiliateCommissionDefaults(affiliateNetwork)
-        : null;
+      const productUrl = buildBrandUrl(profile.domain);
       const popularityScore = Math.max(
         62,
         Math.min(99, 74 + ((brandIndex * 9 + recipeIndex * 5) % 26)),
       );
-      const inStock = id % 9 !== 0;
+      const inStock = false;
       const compareAtPrice =
         recipe.category === "jewellery" || recipe.category === "bag" || id % 3 !== 0
           ? undefined
@@ -103,11 +82,7 @@ const buildCatalog = () => {
             );
 
       const price = toPrice(recipe.basePrice, profile.priceMultiplier, recipeIndex * 4);
-      const rating = Number(
-        (4.2 + ((brandIndex * 3 + recipeIndex) % 7) * 0.1).toFixed(1),
-      );
-      const reviewCount = 45 + ((brandIndex * 83 + recipeIndex * 57) % 1900);
-      const description = `${recipe.description} Curated by ${formattedBrandName} for ${recipe.occasion[0]} and ${recipe.occasion[1] ?? recipe.occasion[0]} looks.`;
+      const description = `${recipe.description} A SocialMall style reference for ${recipe.occasion[0]} and ${recipe.occasion[1] ?? recipe.occasion[0]} looks. Exact product page and product image pending retailer verification.`;
 
       products.push({
         id,
@@ -118,6 +93,7 @@ const buildCatalog = () => {
         currency: "EUR",
         image,
         images: buildImageSet(image),
+        imageVerificationStatus: "illustrative",
         category: recipe.category,
         subcategory: recipe.subcategory,
         colors,
@@ -129,10 +105,17 @@ const buildCatalog = () => {
         gender: recipe.gender,
         fit: recipe.fit,
         productUrl,
-        affiliateUrl,
-        affiliateNetwork: affiliateUrl ? affiliateNetwork : undefined,
-        affiliateCommissionRate: affiliateCommission?.rate,
-        affiliateCommissionModel: affiliateCommission?.model,
+        productUrlVerificationStatus: "brand-site",
+        brandUrl: productUrl,
+        catalogSource: "style-inspiration",
+        priceStatus: "estimated",
+        sourceLabel: "SocialMall inspiration catalogue",
+        sourceNote:
+          "Illustrative styling reference. Exact retailer product link and brand-owned image are not verified yet.",
+        affiliateUrl: null,
+        affiliateNetwork: undefined,
+        affiliateCommissionRate: undefined,
+        affiliateCommissionModel: undefined,
         retailer: formattedRetailer,
         inStock,
         featured: popularityScore > 92 || id % 11 === 0,
@@ -141,8 +124,6 @@ const buildCatalog = () => {
         shippingCountry: profile.shippingCountry,
         brandSlug: resolvedBrandSlug,
         productSlug,
-        rating,
-        reviewCount,
       });
 
       id += 1;
@@ -160,19 +141,37 @@ export const getProductById = (productId: number) =>
 export const getProductCatalogStatus = () => {
   const brandCount = new Set(curatedProducts.map((product) => product.brandSlug)).size;
   const categoryCount = new Set(curatedProducts.map((product) => product.category)).size;
+  const verifiedProductCount = curatedProducts.filter(
+    (product) => product.catalogSource === "verified-retailer",
+  ).length;
+  const styleInspirationCount = curatedProducts.filter(
+    (product) => product.catalogSource === "style-inspiration",
+  ).length;
+  const verifiedImageCount = curatedProducts.filter(
+    (product) => product.imageVerificationStatus === "verified-product-image",
+  ).length;
+  const verifiedProductUrlCount = curatedProducts.filter(
+    (product) => product.productUrlVerificationStatus === "verified-product-page",
+  ).length;
+  const brandDiscoveryCount = curatedProducts.filter(
+    (product) => product.productUrlVerificationStatus === "brand-site",
+  ).length;
   const affiliateProductCount = curatedProducts.filter(
     (product) => Boolean(product.affiliateUrl),
   ).length;
   const inStockProductCount = curatedProducts.filter((product) => product.inStock).length;
 
   return {
-    source: "static-curated-catalog",
+    source: "static-style-inspiration-catalog",
     productCount: curatedProducts.length,
     brandCount,
     categoryCount,
-    monetizationReadyProductCount: curatedProducts.filter(
-      (product) => Boolean(product.productUrl),
-    ).length,
+    verifiedProductCount,
+    styleInspirationCount,
+    verifiedImageCount,
+    verifiedProductUrlCount,
+    brandDiscoveryCount,
+    monetizationReadyProductCount: affiliateProductCount,
     affiliateProductCount,
     directProductCount: curatedProducts.length - affiliateProductCount,
     inStockProductCount,

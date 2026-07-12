@@ -13,6 +13,10 @@ export type ProductCategory =
   | "jewellery";
 
 export type ProductCurrency = "EUR" | "USD" | "GBP";
+export type ProductCatalogSource = "verified-retailer" | "style-inspiration";
+export type ProductImageVerificationStatus = "verified-product-image" | "illustrative";
+export type ProductUrlVerificationStatus = "verified-product-page" | "brand-site";
+export type ProductPriceStatus = "verified" | "estimated";
 export type AffiliateNetwork =
   | "awin"
   | "skimlinks"
@@ -47,6 +51,7 @@ export interface Product {
   currency: ProductCurrency;
   image: string;
   images: string[];
+  imageVerificationStatus: ProductImageVerificationStatus;
   category: ProductCategory;
   subcategory: string;
   colors: string[];
@@ -58,6 +63,13 @@ export interface Product {
   gender: ProductGender[];
   fit: string[];
   productUrl: string;
+  productUrlVerificationStatus: ProductUrlVerificationStatus;
+  brandUrl: string;
+  catalogSource: ProductCatalogSource;
+  priceStatus: ProductPriceStatus;
+  sourceLabel: string;
+  sourceNote: string;
+  verifiedAt?: string;
   affiliateUrl: string | null;
   affiliateNetwork?: AffiliateNetwork;
   affiliateCommissionRate?: number;

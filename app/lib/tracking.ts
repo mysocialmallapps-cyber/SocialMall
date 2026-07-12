@@ -14,7 +14,7 @@ type AffiliateClickAttribution = {
   clickId?: string | null;
   commissionRate?: number;
   commissionModel?: AffiliateCommissionModel;
-  source?: "affiliate" | "product" | "none";
+  source?: "affiliate" | "product" | "brand" | "none";
   searchSource?: CommerceSearchSource;
   usedFallback?: boolean;
   trackingApplied?: boolean;

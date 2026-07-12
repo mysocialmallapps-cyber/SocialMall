@@ -99,7 +99,7 @@ const buildDescriptionFromTemplate = ({
     aesthetic: [
       `Discover ${query} from independent fashion brands and premium labels.`,
       `Explore ${query} with curated looks from modern independent fashion labels.`,
-      `Shop ${query} edits featuring elevated staples and contemporary silhouettes.`,
+      `Explore ${query} edits featuring elevated staples and contemporary silhouettes.`,
     ],
     category: [
       `Browse ${query} with curated cuts, fabrics, and styling-led product picks.`,
@@ -108,7 +108,7 @@ const buildDescriptionFromTemplate = ({
     ],
     trend: [
       `Explore ${query} with trend-led edits from independent fashion brands.`,
-      `Shop ${query} looks curated for modern styling and elevated wardrobe building.`,
+      `Explore ${query} looks curated for modern styling and elevated wardrobe building.`,
       `Discover ${query} featuring seasonal picks from independent labels.`,
     ],
     "long-tail": [
@@ -121,7 +121,7 @@ const buildDescriptionFromTemplate = ({
   const defaultSearchVariants = [
     `Discover ${query} from independent fashion brands.`,
     `Explore ${query} curated from independent labels and emerging fashion brands.`,
-    `Shop ${query} with premium edits and modern outfit inspiration.`,
+    `Explore ${query} with premium edits and modern outfit inspiration.`,
   ];
 
   const variants =
