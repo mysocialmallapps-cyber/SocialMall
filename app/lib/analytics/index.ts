@@ -5,7 +5,13 @@ export {
 } from "./attribution";
 export { AnalyticsProvider } from "./provider";
 export { AnalyticsScripts } from "./scripts";
-export { initializeAnalytics, isAnalyticsEnabled, trackEvent, trackPageView } from "./client";
+export {
+  getAnalyticsRuntimeStatus,
+  initializeAnalytics,
+  isAnalyticsEnabled,
+  trackEvent,
+  trackPageView,
+} from "./client";
 export {
   getMonetizationSummary,
   getRecentMonetizationEvents,

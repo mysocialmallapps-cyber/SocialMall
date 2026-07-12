@@ -3,11 +3,58 @@ import type {
   AffiliateNetwork,
 } from "@/lib/products/types";
 
+const publicEnv = {
+  NEXT_PUBLIC_AWIN_MERCHANT_ID:
+    process.env.NEXT_PUBLIC_AWIN_MERCHANT_ID?.trim() ?? "",
+  NEXT_PUBLIC_AWIN_AFFILIATE_ID:
+    process.env.NEXT_PUBLIC_AWIN_AFFILIATE_ID?.trim() ?? "",
+  NEXT_PUBLIC_AWIN_SCRIPT_ENABLED:
+    process.env.NEXT_PUBLIC_AWIN_SCRIPT_ENABLED?.trim() ?? "",
+  NEXT_PUBLIC_AWIN_SCRIPT_SRC:
+    process.env.NEXT_PUBLIC_AWIN_SCRIPT_SRC?.trim() ?? "",
+  NEXT_PUBLIC_SKIMLINKS_PUBLISHER_ID:
+    process.env.NEXT_PUBLIC_SKIMLINKS_PUBLISHER_ID?.trim() ?? "",
+  NEXT_PUBLIC_SKIMLINKS_SCRIPT_ENABLED:
+    process.env.NEXT_PUBLIC_SKIMLINKS_SCRIPT_ENABLED?.trim() ?? "",
+  NEXT_PUBLIC_SKIMLINKS_SCRIPT_SRC:
+    process.env.NEXT_PUBLIC_SKIMLINKS_SCRIPT_SRC?.trim() ?? "",
+  NEXT_PUBLIC_SOVRN_KEY:
+    process.env.NEXT_PUBLIC_SOVRN_KEY?.trim() ?? "",
+  NEXT_PUBLIC_SOVRN_SCRIPT_ENABLED:
+    process.env.NEXT_PUBLIC_SOVRN_SCRIPT_ENABLED?.trim() ?? "",
+  NEXT_PUBLIC_SOVRN_SCRIPT_SRC:
+    process.env.NEXT_PUBLIC_SOVRN_SCRIPT_SRC?.trim() ?? "",
+  NEXT_PUBLIC_IMPACT_CAMPAIGN:
+    process.env.NEXT_PUBLIC_IMPACT_CAMPAIGN?.trim() ?? "",
+  NEXT_PUBLIC_IMPACT_SCRIPT_ENABLED:
+    process.env.NEXT_PUBLIC_IMPACT_SCRIPT_ENABLED?.trim() ?? "",
+  NEXT_PUBLIC_IMPACT_SCRIPT_SRC:
+    process.env.NEXT_PUBLIC_IMPACT_SCRIPT_SRC?.trim() ?? "",
+  NEXT_PUBLIC_RAKUTEN_AFFILIATE_ID:
+    process.env.NEXT_PUBLIC_RAKUTEN_AFFILIATE_ID?.trim() ?? "",
+  NEXT_PUBLIC_RAKUTEN_MERCHANT_ID:
+    process.env.NEXT_PUBLIC_RAKUTEN_MERCHANT_ID?.trim() ?? "",
+  NEXT_PUBLIC_RAKUTEN_SCRIPT_ENABLED:
+    process.env.NEXT_PUBLIC_RAKUTEN_SCRIPT_ENABLED?.trim() ?? "",
+  NEXT_PUBLIC_RAKUTEN_SCRIPT_SRC:
+    process.env.NEXT_PUBLIC_RAKUTEN_SCRIPT_SRC?.trim() ?? "",
+  NEXT_PUBLIC_SHOPIFY_COLLABS_ENABLED:
+    process.env.NEXT_PUBLIC_SHOPIFY_COLLABS_ENABLED?.trim() ?? "",
+  NEXT_PUBLIC_SHOPIFY_COLLABS_SCRIPT_ENABLED:
+    process.env.NEXT_PUBLIC_SHOPIFY_COLLABS_SCRIPT_ENABLED?.trim() ?? "",
+  NEXT_PUBLIC_SHOPIFY_COLLABS_SCRIPT_SRC:
+    process.env.NEXT_PUBLIC_SHOPIFY_COLLABS_SCRIPT_SRC?.trim() ?? "",
+};
+
+type PublicEnvKey = keyof typeof publicEnv;
+
 export type AffiliateProviderAdapter = {
   network: AffiliateNetwork;
   deeplinkBaseUrl: string;
   deeplinkDestinationParam: string;
-  staticParams: Record<string, string | number>;
+  staticParams: Record<string, string | number | undefined>;
+  requiredEnv: PublicEnvKey[];
+  enabledByFlag?: PublicEnvKey;
   commission: {
     model: AffiliateCommissionModel;
     rate: number;
@@ -25,7 +72,15 @@ export type AffiliateProviderScriptConfig = {
   src: string;
   strategy: "beforeInteractive" | "afterInteractive" | "lazyOnload";
   globalName: string;
-  enabledByEnv: string;
+  enabledByEnv: PublicEnvKey;
+};
+
+export type AffiliateProviderStatus = {
+  network: AffiliateNetwork;
+  configured: boolean;
+  missingEnv: string[];
+  scriptEnabled: boolean;
+  scriptSrcConfigured: boolean;
 };
 
 const sanitizeRetailerKey = (value: string) =>
@@ -34,6 +89,9 @@ const sanitizeRetailerKey = (value: string) =>
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "");
+
+const isEnabledFlag = (value: string) =>
+  ["1", "true", "yes", "on"].includes(value.trim().toLowerCase());
 
 const createAdapter = (
   adapter: AffiliateProviderAdapter,
@@ -45,9 +103,13 @@ const providerAdapters: Record<AffiliateNetwork, AffiliateProviderAdapter> = {
     deeplinkBaseUrl: "https://www.awin1.com/cread.php",
     deeplinkDestinationParam: "ued",
     staticParams: {
-      awinmid: 12345,
-      awinaffid: 67890,
+      awinmid: publicEnv.NEXT_PUBLIC_AWIN_MERCHANT_ID,
+      awinaffid: publicEnv.NEXT_PUBLIC_AWIN_AFFILIATE_ID,
     },
+    requiredEnv: [
+      "NEXT_PUBLIC_AWIN_MERCHANT_ID",
+      "NEXT_PUBLIC_AWIN_AFFILIATE_ID",
+    ],
     commission: {
       model: "cps",
       rate: 0.12,
@@ -62,8 +124,9 @@ const providerAdapters: Record<AffiliateNetwork, AffiliateProviderAdapter> = {
     deeplinkBaseUrl: "https://go.skimresources.com",
     deeplinkDestinationParam: "url",
     staticParams: {
-      id: 12345,
+      id: publicEnv.NEXT_PUBLIC_SKIMLINKS_PUBLISHER_ID,
     },
+    requiredEnv: ["NEXT_PUBLIC_SKIMLINKS_PUBLISHER_ID"],
     commission: {
       model: "cps",
       rate: 0.09,
@@ -78,8 +141,9 @@ const providerAdapters: Record<AffiliateNetwork, AffiliateProviderAdapter> = {
     deeplinkBaseUrl: "https://redirect.viglink.com",
     deeplinkDestinationParam: "u",
     staticParams: {
-      key: "socialmall-mock",
+      key: publicEnv.NEXT_PUBLIC_SOVRN_KEY,
     },
+    requiredEnv: ["NEXT_PUBLIC_SOVRN_KEY"],
     commission: {
       model: "cps",
       rate: 0.08,
@@ -94,8 +158,9 @@ const providerAdapters: Record<AffiliateNetwork, AffiliateProviderAdapter> = {
     deeplinkBaseUrl: "https://api.impact.com/click",
     deeplinkDestinationParam: "url",
     staticParams: {
-      campaign: "socialmall-fashion",
+      campaign: publicEnv.NEXT_PUBLIC_IMPACT_CAMPAIGN,
     },
+    requiredEnv: ["NEXT_PUBLIC_IMPACT_CAMPAIGN"],
     commission: {
       model: "cps",
       rate: 0.1,
@@ -110,9 +175,13 @@ const providerAdapters: Record<AffiliateNetwork, AffiliateProviderAdapter> = {
     deeplinkBaseUrl: "https://click.linksynergy.com/deeplink",
     deeplinkDestinationParam: "murl",
     staticParams: {
-      id: "socialmall-mock",
-      mid: 12345,
+      id: publicEnv.NEXT_PUBLIC_RAKUTEN_AFFILIATE_ID,
+      mid: publicEnv.NEXT_PUBLIC_RAKUTEN_MERCHANT_ID,
     },
+    requiredEnv: [
+      "NEXT_PUBLIC_RAKUTEN_AFFILIATE_ID",
+      "NEXT_PUBLIC_RAKUTEN_MERCHANT_ID",
+    ],
     commission: {
       model: "cps",
       rate: 0.07,
@@ -127,6 +196,8 @@ const providerAdapters: Record<AffiliateNetwork, AffiliateProviderAdapter> = {
     deeplinkBaseUrl: "",
     deeplinkDestinationParam: "url",
     staticParams: {},
+    requiredEnv: [],
+    enabledByFlag: "NEXT_PUBLIC_SHOPIFY_COLLABS_ENABLED",
     commission: {
       model: "cps",
       rate: 0.1,
@@ -154,42 +225,42 @@ const providerHostMatchers: Record<AffiliateNetwork, string[]> = {
 const providerScriptConfigs: Record<AffiliateNetwork, AffiliateProviderScriptConfig> = {
   awin: {
     network: "awin",
-    src: "https://www.dwin1.com/19038.js",
+    src: publicEnv.NEXT_PUBLIC_AWIN_SCRIPT_SRC,
     strategy: "afterInteractive",
     globalName: "AWIN",
     enabledByEnv: "NEXT_PUBLIC_AWIN_SCRIPT_ENABLED",
   },
   skimlinks: {
     network: "skimlinks",
-    src: "https://s.skimresources.com/js/000X-skimlinks.js",
+    src: publicEnv.NEXT_PUBLIC_SKIMLINKS_SCRIPT_SRC,
     strategy: "afterInteractive",
     globalName: "skimlinks",
     enabledByEnv: "NEXT_PUBLIC_SKIMLINKS_SCRIPT_ENABLED",
   },
   sovrn: {
     network: "sovrn",
-    src: "https://scripts.viglink.com/api/vglnk.js",
+    src: publicEnv.NEXT_PUBLIC_SOVRN_SCRIPT_SRC,
     strategy: "afterInteractive",
     globalName: "vglnk",
     enabledByEnv: "NEXT_PUBLIC_SOVRN_SCRIPT_ENABLED",
   },
   impact: {
     network: "impact",
-    src: "https://tracking.impact.com/aff.js",
+    src: publicEnv.NEXT_PUBLIC_IMPACT_SCRIPT_SRC,
     strategy: "lazyOnload",
     globalName: "impact",
     enabledByEnv: "NEXT_PUBLIC_IMPACT_SCRIPT_ENABLED",
   },
   rakuten: {
     network: "rakuten",
-    src: "https://js.rmtag.com/tracking.js",
+    src: publicEnv.NEXT_PUBLIC_RAKUTEN_SCRIPT_SRC,
     strategy: "lazyOnload",
     globalName: "Rakuten",
     enabledByEnv: "NEXT_PUBLIC_RAKUTEN_SCRIPT_ENABLED",
   },
   "shopify-collabs": {
     network: "shopify-collabs",
-    src: "https://cdn.shopify.com/shopifycloud/collabs.js",
+    src: publicEnv.NEXT_PUBLIC_SHOPIFY_COLLABS_SCRIPT_SRC,
     strategy: "lazyOnload",
     globalName: "ShopifyCollabs",
     enabledByEnv: "NEXT_PUBLIC_SHOPIFY_COLLABS_SCRIPT_ENABLED",
@@ -207,6 +278,25 @@ export const defaultAffiliateProviderFallbacks: AffiliateNetwork[] = [
 export const getAffiliateProviderAdapter = (network?: AffiliateNetwork) =>
   network ? providerAdapters[network] : null;
 
+export const isAffiliateProviderConfigured = (network?: AffiliateNetwork) => {
+  const provider = getAffiliateProviderAdapter(network);
+  if (!provider) {
+    return false;
+  }
+
+  const requiredEnvPresent = provider.requiredEnv.every((key) => Boolean(publicEnv[key]));
+  const flagEnabled = provider.enabledByFlag
+    ? isEnabledFlag(publicEnv[provider.enabledByFlag])
+    : true;
+
+  return requiredEnvPresent && flagEnabled;
+};
+
+export const getConfiguredAffiliateNetworks = () =>
+  (Object.keys(providerAdapters) as AffiliateNetwork[]).filter((network) =>
+    isAffiliateProviderConfigured(network),
+  );
+
 export const getAffiliateCommissionDefaults = (network?: AffiliateNetwork) => {
   const provider = getAffiliateProviderAdapter(network);
   if (!provider) {
@@ -218,10 +308,38 @@ export const getAffiliateCommissionDefaults = (network?: AffiliateNetwork) => {
 export const getAffiliateProviderScriptConfig = (network?: AffiliateNetwork) =>
   network ? providerScriptConfigs[network] : null;
 
+const isAffiliateScriptEnabled = (config: AffiliateProviderScriptConfig) =>
+  Boolean(config.src) && isEnabledFlag(publicEnv[config.enabledByEnv]);
+
 export const getAffiliateProviderScriptConfigs = (networks: AffiliateNetwork[]) =>
   Array.from(new Set(networks))
     .map((network) => getAffiliateProviderScriptConfig(network))
     .filter((entry): entry is AffiliateProviderScriptConfig => Boolean(entry));
+
+export const getEnabledAffiliateProviderScriptConfigs = (
+  networks: AffiliateNetwork[] = Object.keys(providerAdapters) as AffiliateNetwork[],
+) =>
+  getAffiliateProviderScriptConfigs(networks).filter((config) =>
+    isAffiliateScriptEnabled(config),
+  );
+
+export const getAffiliateProviderStatuses = (): AffiliateProviderStatus[] =>
+  (Object.keys(providerAdapters) as AffiliateNetwork[]).map((network) => {
+    const adapter = providerAdapters[network];
+    const scriptConfig = providerScriptConfigs[network];
+    const missingEnv: string[] = adapter.requiredEnv.filter((key) => !publicEnv[key]);
+    if (adapter.enabledByFlag && !isEnabledFlag(publicEnv[adapter.enabledByFlag])) {
+      missingEnv.push(`${adapter.enabledByFlag}=true`);
+    }
+
+    return {
+      network,
+      configured: isAffiliateProviderConfigured(network),
+      missingEnv,
+      scriptEnabled: isAffiliateScriptEnabled(scriptConfig),
+      scriptSrcConfigured: Boolean(scriptConfig.src),
+    };
+  });
 
 export const detectAffiliateProviderFromUrl = (url?: string | null) => {
   if (!url) {
@@ -261,7 +379,7 @@ export const resolveAffiliateProviderWithFallback = ({
     return detected;
   }
 
-  return fallbackNetworks[0] ?? null;
+  return fallbackNetworks.find((network) => isAffiliateProviderConfigured(network)) ?? null;
 };
 
 export const buildAffiliateClickId = ({

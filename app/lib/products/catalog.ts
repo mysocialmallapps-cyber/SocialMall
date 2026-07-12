@@ -1,8 +1,8 @@
 import { buildProductIndexes, extractUniqueProductTags } from "./helpers";
-import { mockProducts } from "./mock-products";
+import { curatedProducts } from "./curated-products";
 
 export const productCatalog = {
-  all: mockProducts,
-  indexes: buildProductIndexes(mockProducts),
-  tags: extractUniqueProductTags(mockProducts),
+  all: curatedProducts,
+  indexes: buildProductIndexes(curatedProducts),
+  tags: extractUniqueProductTags(curatedProducts),
 };

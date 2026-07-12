@@ -26,6 +26,7 @@ const POSTHOG_HOST =
 
 const recentEventMap = new Map<string, number>();
 let analyticsInitialized = false;
+let postHogLoadPromise: Promise<PostHogApi | null> | null = null;
 
 const isBrowser = () => typeof window !== "undefined";
 
@@ -60,7 +61,72 @@ const sanitizeParams = (params: AnalyticsEventParams) =>
     Object.entries(params).filter(([, value]) => value !== undefined),
   ) as AnalyticsEventParams;
 
+const loadPostHog = () => {
+  if (!isBrowser() || !hasPostHog) {
+    return Promise.resolve(null);
+  }
+
+  if (window.posthog && typeof window.posthog.capture === "function") {
+    return Promise.resolve(window.posthog);
+  }
+
+  if (postHogLoadPromise) {
+    return postHogLoadPromise;
+  }
+
+  postHogLoadPromise = import("posthog-js")
+    .then((module) => {
+      const posthog = module.default as PostHogApi;
+      posthog.init?.(POSTHOG_KEY, {
+        api_host: POSTHOG_HOST,
+      });
+      window.posthog = posthog;
+      return posthog;
+    })
+    .catch(() => null);
+
+  return postHogLoadPromise;
+};
+
 export const isAnalyticsEnabled = () => hasGa || hasPostHog;
+
+export const getAnalyticsRuntimeStatus = () => ({
+  ga4Enabled: hasGa,
+  postHogEnabled: hasPostHog,
+  anyProviderEnabled: isAnalyticsEnabled(),
+});
+
+const emitDataLayerEvent = (
+  eventName: AnalyticsEventName,
+  payload: AnalyticsEventParams,
+) => {
+  if (!isBrowser()) {
+    return;
+  }
+
+  try {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: eventName,
+      ...payload,
+    });
+  } catch {
+    // Keep analytics observation non-blocking.
+  }
+
+  try {
+    window.dispatchEvent(
+      new CustomEvent("socialmall:analytics", {
+        detail: {
+          eventName,
+          payload,
+        },
+      }),
+    );
+  } catch {
+    // CustomEvent is best-effort for local QA listeners.
+  }
+};
 
 export const initializeAnalytics = () => {
   if (!isBrowser() || analyticsInitialized || !isAnalyticsEnabled()) {
@@ -79,14 +145,8 @@ export const initializeAnalytics = () => {
   }
 
   try {
-    if (
-      hasPostHog &&
-      window.posthog &&
-      typeof window.posthog.init === "function"
-    ) {
-      window.posthog.init(POSTHOG_KEY, {
-        api_host: POSTHOG_HOST,
-      });
+    if (hasPostHog) {
+      void loadPostHog();
     }
   } catch {
     // Fail silently; PostHog is optional for MVP.
@@ -98,7 +158,7 @@ export const trackEvent = (
   params: AnalyticsEventParams = {},
   options: TrackEventOptions = {},
 ) => {
-  if (!isBrowser() || !isAnalyticsEnabled()) {
+  if (!isBrowser()) {
     return;
   }
 
@@ -115,6 +175,12 @@ export const trackEvent = (
     return;
   }
 
+  emitDataLayerEvent(eventName, payload);
+
+  if (!isAnalyticsEnabled()) {
+    return;
+  }
+
   try {
     if (hasGa && typeof window.gtag === "function") {
       window.gtag("event", eventName, payload);
@@ -124,12 +190,12 @@ export const trackEvent = (
   }
 
   try {
-    if (
-      hasPostHog &&
-      window.posthog &&
-      typeof window.posthog.capture === "function"
-    ) {
+    if (hasPostHog && typeof window.posthog?.capture === "function") {
       window.posthog.capture(eventName, payload);
+    } else if (hasPostHog) {
+      void loadPostHog().then((posthog) => {
+        posthog?.capture?.(eventName, payload);
+      });
     }
   } catch {
     // Never interrupt product flows due to analytics failures.

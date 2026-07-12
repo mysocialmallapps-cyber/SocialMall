@@ -10,7 +10,11 @@ export {
   groupProductsByGender,
   sortProducts,
 } from "./helpers";
-export { mockProducts } from "./mock-products";
+export {
+  curatedProducts,
+  getProductById,
+  getProductCatalogStatus,
+} from "./curated-products";
 export { getProductMonetizationMetadata } from "./monetization";
 export type { ProductMonetizationMetadata } from "./monetization";
 export type {

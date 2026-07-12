@@ -1,6 +1,6 @@
 export {
   appendTrackingParams,
-  buildMockAffiliateUrl,
+  buildAffiliateUrl,
   isValidOutboundUrl,
   normalizeOutboundUrl,
   resolveAffiliateRedirectDestination,
@@ -13,11 +13,16 @@ export {
   detectAffiliateProviderFromUrl,
   getAffiliateCommissionDefaults,
   getAffiliateProviderAdapter,
+  getAffiliateProviderStatuses,
   getAffiliateProviderScriptConfig,
   getAffiliateProviderScriptConfigs,
+  getConfiguredAffiliateNetworks,
+  getEnabledAffiliateProviderScriptConfigs,
+  isAffiliateProviderConfigured,
   resolveAffiliateProviderWithFallback,
 } from "./providers";
 export type {
   AffiliateProviderAdapter,
+  AffiliateProviderStatus,
   AffiliateProviderScriptConfig,
 } from "./providers";

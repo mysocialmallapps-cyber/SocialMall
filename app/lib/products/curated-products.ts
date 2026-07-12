@@ -1,14 +1,18 @@
 import type { Product } from "./types";
 import { formatBrandName, generateBrandSlug, resolveBrandSlug } from "../brands";
-import { buildMockAffiliateUrl, getAffiliateCommissionDefaults } from "../commerce";
 import {
-  productAffiliateNetworks,
+  buildAffiliateUrl,
+  getAffiliateCommissionDefaults,
+  getConfiguredAffiliateNetworks,
+} from "../commerce";
+import {
   productBrandProfiles,
   productImagePool,
   productRecipes,
 } from "./data";
 
 const recipeByKey = new Map(productRecipes.map((recipe) => [recipe.key, recipe]));
+const configuredAffiliateNetworks = getConfiguredAffiliateNetworks();
 
 const unique = (values: string[]) => Array.from(new Set(values));
 
@@ -67,12 +71,15 @@ const buildCatalog = () => {
         `${resolvedBrandSlug}-${productName}-${recipeIndex + 1}`,
       );
       const productUrl = `https://${profile.domain}/products/${productSlug}`;
-      const affiliateNetwork =
-        productAffiliateNetworks[brandIndex % productAffiliateNetworks.length];
-      const hasAffiliate = id % 5 !== 0;
+      const affiliateNetwork = configuredAffiliateNetworks.length
+        ? configuredAffiliateNetworks[
+            brandIndex % configuredAffiliateNetworks.length
+          ]
+        : undefined;
+      const hasAffiliate = Boolean(affiliateNetwork) && id % 5 !== 0;
       const affiliateUrl = hasAffiliate
-        ? buildMockAffiliateUrl({
-            network: affiliateNetwork,
+        ? buildAffiliateUrl({
+            network: affiliateNetwork!,
             productUrl,
             productId: id,
             retailer: formattedRetailer,
@@ -145,4 +152,30 @@ const buildCatalog = () => {
   return products;
 };
 
-export const mockProducts: Product[] = buildCatalog();
+export const curatedProducts: Product[] = buildCatalog();
+
+export const getProductById = (productId: number) =>
+  curatedProducts.find((product) => product.id === productId) ?? null;
+
+export const getProductCatalogStatus = () => {
+  const brandCount = new Set(curatedProducts.map((product) => product.brandSlug)).size;
+  const categoryCount = new Set(curatedProducts.map((product) => product.category)).size;
+  const affiliateProductCount = curatedProducts.filter(
+    (product) => Boolean(product.affiliateUrl),
+  ).length;
+  const inStockProductCount = curatedProducts.filter((product) => product.inStock).length;
+
+  return {
+    source: "static-curated-catalog",
+    productCount: curatedProducts.length,
+    brandCount,
+    categoryCount,
+    monetizationReadyProductCount: curatedProducts.filter(
+      (product) => Boolean(product.productUrl),
+    ).length,
+    affiliateProductCount,
+    directProductCount: curatedProducts.length - affiliateProductCount,
+    inStockProductCount,
+    cmsReady: true,
+  };
+};

@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import { useParams, useSearchParams } from "next/navigation";
 import { resolveAffiliateRedirectDestination } from "@/lib/commerce";
-import { getProductMonetizationMetadata, mockProducts } from "@/lib/products";
+import { getProductById, getProductMonetizationMetadata } from "@/lib/products";
 import { trackProductClick } from "@/lib/tracking";
 
 export default function OutboundRedirectPage() {
@@ -29,7 +29,7 @@ export default function OutboundRedirectPage() {
 
     const parsedProductId = Number.parseInt(rawProductId, 10);
 
-    const product = mockProducts.find((item) => item.id === parsedProductId);
+    const product = getProductById(parsedProductId);
     if (!product) {
       redirectToHomepage();
       return;

@@ -38,8 +38,8 @@ import {
 } from "@/lib/collections";
 import { getRelatedTrendQueries, getTrendPathByQuery } from "@/lib/trends";
 import {
+  curatedProducts,
   extractUniqueProductTags,
-  mockProducts,
   type Product,
 } from "@/lib/products";
 import { buildCollectionIntroCopy } from "@/lib/seo/collection-intro-copy";
@@ -289,7 +289,7 @@ const styleKeywords: Record<string, string[]> = {
   "smart casual": ["smart casual"],
 };
 
-const brandKeywords: Record<string, string[]> = mockProducts.reduce(
+const brandKeywords: Record<string, string[]> = curatedProducts.reduce(
   (dictionary, product) => {
     const brandAttribution = getBrandAttribution({
       brandName: product.brand,
@@ -874,7 +874,7 @@ export const getFilteredProducts = (
   };
 };
 
-const fallbackTrendingProducts = mockProducts.slice(0, 8);
+const fallbackTrendingProducts = curatedProducts.slice(0, 8);
 
 function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) {
   const router = useRouter();
@@ -894,7 +894,7 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
   const skipNextUrlSyncRef = useRef<string | null>(null);
   const hydratedInitialQueryRef = useRef(false);
   const filteredResults = useMemo(
-    () => getFilteredProducts(activeQuery, mockProducts),
+    () => getFilteredProducts(activeQuery, curatedProducts),
     [activeQuery],
   );
   const activeIntent = useMemo(() => parseQueryIntent(activeQuery), [activeQuery]);
@@ -1165,7 +1165,10 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
       return;
     }
 
-    const resultCount = getFilteredProducts(normalizedQuery, mockProducts).items.length;
+    const resultCount = getFilteredProducts(
+      normalizedQuery,
+      curatedProducts,
+    ).items.length;
     trackSearchEvent({
       query: normalizedQuery,
       source,
@@ -1316,7 +1319,7 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
       return;
     }
 
-    const validationResults = runSearchValidationCases(mockProducts);
+    const validationResults = runSearchValidationCases(curatedProducts);
     const failedCases = validationResults.filter((result) => !result.passed);
 
     if (failedCases.length) {
@@ -1508,6 +1511,11 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
           </section>
         )}
       </main>
+
+      <footer className="mx-auto w-full max-w-6xl px-4 pb-8 text-xs leading-5 text-zinc-500 sm:px-6 lg:px-8">
+        SocialMall may earn commission from some outbound links. Product ranking is
+        based on search relevance, product attributes, and availability signals.
+      </footer>
 
       {hasSearched ? (
         <div className="fixed inset-x-0 bottom-0 border-t border-zinc-200/80 bg-white/95 px-4 pb-5 pt-4 backdrop-blur-md sm:px-6">

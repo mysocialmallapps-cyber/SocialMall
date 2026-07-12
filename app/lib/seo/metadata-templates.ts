@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://socialmall.com";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://social-mall.vercel.app";
 const SITE_NAME = "SocialMall";
 const DEFAULT_TITLE = "SocialMall | Discover Independent Fashion";
 const DEFAULT_DESCRIPTION =

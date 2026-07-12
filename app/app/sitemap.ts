@@ -2,7 +2,8 @@ import type { MetadataRoute } from "next";
 import { getSeoCollectionPaths } from "@/lib/collections";
 import { getTrendPaths } from "@/lib/trends";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://socialmall.com";
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://social-mall.vercel.app";
 
 const STATIC_ROUTES = ["/"];
 const SEARCHABLE_QUERY_ROUTES = [

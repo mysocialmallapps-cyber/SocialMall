@@ -3,6 +3,7 @@ import {
   buildAffiliateClickId,
   defaultAffiliateProviderFallbacks,
   getAffiliateProviderAdapter,
+  isAffiliateProviderConfigured,
   resolveAffiliateProviderWithFallback,
 } from "./providers";
 
@@ -28,7 +29,11 @@ export type ResolvedAffiliateRedirect = ResolvedCommerceDestination & {
 
 const SUPPORTED_PROTOCOLS = new Set(["http:", "https:"]);
 const BLOCKED_INTERNAL_PATHS = ["/out/"];
-const SOCIALMALL_HOSTS = new Set(["socialmall.com", "www.socialmall.com"]);
+const SOCIALMALL_HOSTS = new Set([
+  "socialmall.com",
+  "www.socialmall.com",
+  "social-mall.vercel.app",
+]);
 const UNKNOWN_RETAILER_FALLBACK = "unknown-retailer";
 const UNKNOWN_RETAILER_LABEL = "Unknown Retailer";
 
@@ -314,7 +319,7 @@ export const resolveAffiliateRedirectDestination = ({
   };
 };
 
-export const buildMockAffiliateUrl = ({
+export const buildAffiliateUrl = ({
   network,
   productUrl,
   productId,
@@ -335,7 +340,7 @@ export const buildMockAffiliateUrl = ({
 
   for (const candidate of providerCandidates) {
     const providerAdapter = getAffiliateProviderAdapter(candidate);
-    if (!providerAdapter) {
+    if (!providerAdapter || !isAffiliateProviderConfigured(candidate)) {
       continue;
     }
 
