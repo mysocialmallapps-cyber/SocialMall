@@ -5,6 +5,10 @@ import {
   productImagePool,
   productRecipes,
 } from "./data";
+import {
+  verifiedProductFeedSync,
+  verifiedProducts,
+} from "./data/verified-products.generated";
 import { getProductTrustSummary, getVerificationQueue } from "./trust";
 
 const recipeByKey = new Map(productRecipes.map((recipe) => [recipe.key, recipe]));
@@ -134,7 +138,7 @@ const buildCatalog = () => {
   return products;
 };
 
-export const curatedProducts: Product[] = buildCatalog();
+export const curatedProducts: Product[] = [...verifiedProducts, ...buildCatalog()];
 
 export const getProductById = (productId: number) =>
   curatedProducts.find((product) => product.id === productId) ?? null;
@@ -165,7 +169,10 @@ export const getProductCatalogStatus = () => {
   const verificationQueueCount = getVerificationQueue(curatedProducts).length;
 
   return {
-    source: "static-style-inspiration-catalog",
+    source: verifiedProducts.length
+      ? "verified-retailer-feed-plus-style-inspiration-catalog"
+      : "static-style-inspiration-catalog",
+    verifiedFeed: verifiedProductFeedSync,
     productCount: curatedProducts.length,
     brandCount,
     categoryCount,

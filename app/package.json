@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "import:feed": "node scripts/import-product-feed.mjs",
+    "sync:feed": "npm run import:feed && npm run lint && npm run build",
     "start": "next start",
     "lint": "eslint"
   },
