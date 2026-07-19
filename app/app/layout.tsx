@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Suspense } from "react";
 import { AnalyticsProvider } from "@/lib/analytics/provider";
 import { AnalyticsScripts } from "@/lib/analytics/scripts";
 import { AffiliateScripts } from "@/lib/commerce/scripts";
@@ -55,9 +54,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <AnalyticsScripts />
         <AffiliateScripts />
-        <Suspense fallback={null}>
-          <AnalyticsProvider />
-        </Suspense>
+        <AnalyticsProvider />
         {children}
       </body>
     </html>

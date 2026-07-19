@@ -3,7 +3,6 @@
 import {
   FormEvent,
   MouseEvent,
-  Suspense,
   memo,
   useEffect,
   useMemo,
@@ -12,7 +11,6 @@ import {
 } from "react";
 import Image from "next/image";
 import Link, { type LinkProps } from "next/link";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
   trackChipClickEvent,
   trackProductClickEvent,
@@ -86,6 +84,7 @@ type FilterResult = {
 type HomeClientProps = {
   initialQuery?: string;
   initialCollection?: SeoCollectionPage;
+  initialPathname?: string;
 };
 
 type ValidationResult = {
@@ -914,11 +913,19 @@ export const getFilteredProducts = (
 
 const fallbackTrendingProducts = curatedProducts.slice(0, 8);
 
-function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) {
-  const router = useRouter();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
-  const urlQuery = searchParams.get("q")?.trim() ?? "";
+const getBrowserQuery = () => {
+  if (typeof window === "undefined") {
+    return "";
+  }
+
+  return new URL(window.location.href).searchParams.get("q")?.trim() ?? "";
+};
+
+function HomeContent({
+  initialQuery = "",
+  initialCollection,
+  initialPathname = "/",
+}: HomeClientProps) {
   const normalizedInitialQuery = initialQuery.trim();
   const previewProducts = fallbackTrendingProducts.slice(0, 4);
   const [searchInput, setSearchInput] = useState(normalizedInitialQuery);
@@ -928,9 +935,8 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
   const [hasSearched, setHasSearched] = useState(Boolean(normalizedInitialQuery));
   const [isLoading, setIsLoading] = useState(false);
   const [gridAnimationKey, setGridAnimationKey] = useState(0);
+  const [pathname, setPathname] = useState(initialPathname);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const skipNextUrlSyncRef = useRef<string | null>(null);
-  const hydratedInitialQueryRef = useRef(false);
   const filteredResults = useMemo(
     () => getFilteredProducts(activeQuery, curatedProducts),
     [activeQuery],
@@ -1154,27 +1160,39 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
 
   const updateSearchUrl = (query: string) => {
     const trimmedQuery = query.trim();
-    const nextParams = new URLSearchParams(searchParams.toString());
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const nextUrl = new URL(window.location.href);
 
     if (trimmedQuery) {
-      nextParams.set("q", trimmedQuery);
+      nextUrl.searchParams.set("q", trimmedQuery);
     } else {
-      nextParams.delete("q");
+      nextUrl.searchParams.delete("q");
     }
 
-    const nextQueryString = nextParams.toString();
-    const nextUrl = nextQueryString ? `${pathname}?${nextQueryString}` : pathname;
-    const currentQueryString = searchParams.toString();
-    const currentUrl = currentQueryString
-      ? `${pathname}?${currentQueryString}`
-      : pathname;
-
-    if (nextUrl !== currentUrl) {
-      skipNextUrlSyncRef.current = trimmedQuery;
-      router.push(nextUrl, { scroll: false });
-    } else {
-      skipNextUrlSyncRef.current = null;
+    if (nextUrl.pathname !== pathname) {
+      setPathname(nextUrl.pathname);
     }
+
+    const nextPath = `${nextUrl.pathname}${nextUrl.search}`;
+    const currentPath = `${window.location.pathname}${window.location.search}`;
+    if (nextPath !== currentPath) {
+      window.history.pushState({}, "", nextPath);
+    }
+  };
+
+  const navigateToHome = () => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const currentPath = `${window.location.pathname}${window.location.search}`;
+    if (currentPath !== "/") {
+      window.history.pushState({}, "", "/");
+    }
+    setPathname("/");
   };
 
   const buildOutboundHref = (productId: number, query: string) => {
@@ -1305,7 +1323,7 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
     setHasSearched(false);
     setIsLoading(false);
     setGridAnimationKey(0);
-    updateSearchUrl("");
+    navigateToHome();
   };
 
   useEffect(() => {
@@ -1317,32 +1335,19 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
   }, []);
 
   useEffect(() => {
-    if (
-      skipNextUrlSyncRef.current !== null &&
-      skipNextUrlSyncRef.current === urlQuery
-    ) {
-      skipNextUrlSyncRef.current = null;
-      return;
-    }
-
-    const syncTimer = window.setTimeout(() => {
+    const syncFromLocation = () => {
       if (timeoutRef.current) {
         clearTimeout(timeoutRef.current);
+        timeoutRef.current = null;
       }
 
-      if (!urlQuery && !hydratedInitialQueryRef.current && normalizedInitialQuery) {
-        hydratedInitialQueryRef.current = true;
-        setHasSearched(true);
-        setSearchInput(normalizedInitialQuery);
-        setRefineInput("");
-        setCurrentQuery(normalizedInitialQuery);
-        setActiveQuery(normalizedInitialQuery);
-        setIsLoading(false);
-        setGridAnimationKey((currentKey) => currentKey + 1);
-        return;
-      }
+      const nextPathname = window.location.pathname || "/";
+      const urlQuery = getBrowserQuery();
+      const nextQuery =
+        urlQuery || (nextPathname !== "/" ? normalizedInitialQuery : "");
+      setPathname(nextPathname);
 
-      if (!urlQuery) {
+      if (!nextQuery) {
         setHasSearched(false);
         setSearchInput("");
         setRefineInput("");
@@ -1353,20 +1358,23 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
         return;
       }
 
-      hydratedInitialQueryRef.current = true;
       setHasSearched(true);
-      setSearchInput(urlQuery);
+      setSearchInput(nextQuery);
       setRefineInput("");
-      setCurrentQuery(urlQuery);
-      setActiveQuery(urlQuery);
+      setCurrentQuery(nextQuery);
+      setActiveQuery(nextQuery);
       setIsLoading(false);
       setGridAnimationKey((currentKey) => currentKey + 1);
-    }, 0);
+    };
+
+    const syncTimer = window.setTimeout(syncFromLocation, 0);
+    window.addEventListener("popstate", syncFromLocation);
 
     return () => {
       window.clearTimeout(syncTimer);
+      window.removeEventListener("popstate", syncFromLocation);
     };
-  }, [normalizedInitialQuery, urlQuery]);
+  }, [normalizedInitialQuery]);
 
   useEffect(() => {
     if (process.env.NODE_ENV === "production") {
@@ -1618,10 +1626,6 @@ function HomeContent({ initialQuery = "", initialCollection }: HomeClientProps) 
   );
 }
 
-export default function Home({ initialQuery }: HomeClientProps) {
-  return (
-    <Suspense fallback={null}>
-      <HomeContent initialQuery={initialQuery} />
-    </Suspense>
-  );
+export default function Home(props: HomeClientProps) {
+  return <HomeContent {...props} />;
 }

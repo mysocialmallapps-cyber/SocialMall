@@ -33,5 +33,5 @@ type PageProps = {
 
 export default async function Page({ searchParams }: PageProps) {
   const initialQuery = await getSearchQueryFromParams(searchParams);
-  return <HomeClient initialQuery={initialQuery} />;
+  return <HomeClient initialQuery={initialQuery} initialPathname="/" />;
 }

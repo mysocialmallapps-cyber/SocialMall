@@ -48,5 +48,11 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
     notFound();
   }
 
-  return <HomeClient initialQuery={collection.searchQuery} initialCollection={collection} />;
+  return (
+    <HomeClient
+      initialQuery={collection.searchQuery}
+      initialCollection={collection}
+      initialPathname={`/collections/${collection.slug}`}
+    />
+  );
 }

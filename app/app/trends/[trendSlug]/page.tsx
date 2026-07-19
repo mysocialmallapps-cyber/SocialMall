@@ -67,6 +67,7 @@ export default async function TrendPage({ params }: TrendPageProps) {
         relatedSlugs: [],
         pageType: "trend",
       }}
+      initialPathname={`/trends/${trend.slug}`}
     />
   );
 }
