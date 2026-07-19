@@ -31,6 +31,10 @@ type ProductClickTrackingInput = {
   searchQuery: string;
   destinationUrl: string;
   hasAffiliateUrl: boolean;
+  trustLevel?: string;
+  imageVerificationStatus?: string;
+  productUrlVerificationStatus?: string;
+  catalogSource?: string;
   attribution?: AffiliateClickAttribution;
 };
 
@@ -45,6 +49,10 @@ export const trackProductClick = ({
   searchQuery,
   destinationUrl,
   hasAffiliateUrl,
+  trustLevel,
+  imageVerificationStatus,
+  productUrlVerificationStatus,
+  catalogSource,
   attribution,
 }: ProductClickTrackingInput) => {
   const resolvedRetailer = resolveRetailerName(retailer, brand);
@@ -66,6 +74,10 @@ export const trackProductClick = ({
     commissionRate: attribution?.commissionRate,
     commissionModel: attribution?.commissionModel,
     usedFallback: attribution?.usedFallback,
+    trustLevel,
+    imageVerificationStatus,
+    productUrlVerificationStatus,
+    catalogSource,
   };
 
   trackOutboundRedirectEvent({
@@ -87,6 +99,10 @@ export const trackProductClick = ({
     commissionModel: attribution?.commissionModel,
     usedFallback: attribution?.usedFallback,
     trackingApplied: attribution?.trackingApplied,
+    trustLevel,
+    imageVerificationStatus,
+    productUrlVerificationStatus,
+    catalogSource,
   });
 
   if (process.env.NODE_ENV !== "production") {

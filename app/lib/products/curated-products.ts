@@ -5,6 +5,7 @@ import {
   productImagePool,
   productRecipes,
 } from "./data";
+import { getProductTrustSummary, getVerificationQueue } from "./trust";
 
 const recipeByKey = new Map(productRecipes.map((recipe) => [recipe.key, recipe]));
 
@@ -160,6 +161,8 @@ export const getProductCatalogStatus = () => {
     (product) => Boolean(product.affiliateUrl),
   ).length;
   const inStockProductCount = curatedProducts.filter((product) => product.inStock).length;
+  const trustSummary = getProductTrustSummary(curatedProducts);
+  const verificationQueueCount = getVerificationQueue(curatedProducts).length;
 
   return {
     source: "static-style-inspiration-catalog",
@@ -175,6 +178,9 @@ export const getProductCatalogStatus = () => {
     affiliateProductCount,
     directProductCount: curatedProducts.length - affiliateProductCount,
     inStockProductCount,
+    verificationQueueCount,
+    trustScore: trustSummary.trustScore,
+    needsVerificationCount: trustSummary.needsVerificationCount,
     cmsReady: true,
   };
 };

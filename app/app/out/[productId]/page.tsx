@@ -3,7 +3,11 @@
 import { useEffect, useRef } from "react";
 import { useParams, useSearchParams } from "next/navigation";
 import { resolveAffiliateRedirectDestination } from "@/lib/commerce";
-import { getProductById, getProductMonetizationMetadata } from "@/lib/products";
+import {
+  getProductById,
+  getProductMonetizationMetadata,
+  getProductTrustLevel,
+} from "@/lib/products";
 import { trackProductClick } from "@/lib/tracking";
 
 export default function OutboundRedirectPage() {
@@ -60,6 +64,10 @@ export default function OutboundRedirectPage() {
         searchQuery,
         destinationUrl: "/",
         hasAffiliateUrl: false,
+        trustLevel: getProductTrustLevel(product),
+        imageVerificationStatus: product.imageVerificationStatus,
+        productUrlVerificationStatus: product.productUrlVerificationStatus,
+        catalogSource: product.catalogSource,
         attribution: {
           provider: "unknown",
           source: "none",
@@ -95,6 +103,10 @@ export default function OutboundRedirectPage() {
       searchQuery,
       destinationUrl,
       hasAffiliateUrl: resolvedDestination.source === "affiliate",
+      trustLevel: getProductTrustLevel(product),
+      imageVerificationStatus: product.imageVerificationStatus,
+      productUrlVerificationStatus: product.productUrlVerificationStatus,
+      catalogSource: product.catalogSource,
       attribution: {
         provider:
           resolvedDestination.attribution.provider ?? monetizationMetadata.affiliateProvider,

@@ -16,7 +16,16 @@ export {
   getProductCatalogStatus,
 } from "./curated-products";
 export { getProductMonetizationMetadata } from "./monetization";
+export {
+  getProductActionLabel,
+  getProductTrustLabel,
+  getProductTrustLevel,
+  getProductTrustSummary,
+  getVerificationQueue,
+  isVerifiedProduct,
+} from "./trust";
 export type { ProductMonetizationMetadata } from "./monetization";
+export type { ProductTrustLevel, ProductTrustSummary } from "./trust";
 export type {
   AffiliateCommissionModel,
   AffiliateNetwork,

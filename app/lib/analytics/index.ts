@@ -32,7 +32,9 @@ export {
   trackChipClickEvent,
   trackOutboundRedirectEvent,
   trackProductClickEvent,
+  trackShareEvent,
   trackSearchEvent,
+  trackTrustFilterEvent,
 } from "./events";
 export type {
   AnalyticsEventName,

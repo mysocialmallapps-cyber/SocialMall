@@ -3,7 +3,9 @@ export type AnalyticsEventName =
   | "search"
   | "product_click"
   | "outbound_redirect"
-  | "chip_click";
+  | "chip_click"
+  | "share_click"
+  | "trust_filter_change";
 
 export type AnalyticsEventValue = string | number | boolean | null | undefined;
 
@@ -18,7 +20,8 @@ export type SearchEventSource =
   | "hero_submit"
   | "hero_chip"
   | "refine_submit"
-  | "internal_chip";
+  | "internal_chip"
+  | "trust_empty_state";
 
 export type ChipEventType =
   | "hero_suggestion"

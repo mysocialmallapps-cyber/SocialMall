@@ -167,6 +167,10 @@ export default function PilotAnalyticsClient() {
               label="Verified products"
               value={data.productCatalog.verifiedProductCount}
             />
+            <Stat
+              label="Trust score"
+              value={formatPercent(data.productCatalog.trustScore)}
+            />
           </dl>
           <dl>
             <Stat
@@ -181,11 +185,19 @@ export default function PilotAnalyticsClient() {
               label="Exact product links"
               value={data.productCatalog.verifiedProductUrlCount}
             />
+            <Stat
+              label="Needs verification"
+              value={data.productCatalog.needsVerificationCount}
+            />
           </dl>
           <dl>
             <Stat
               label="Brand-site links"
               value={data.productCatalog.brandDiscoveryCount}
+            />
+            <Stat
+              label="Verification queue"
+              value={data.productCatalog.verificationQueueCount}
             />
             <Stat
               label="Affiliate-ready"

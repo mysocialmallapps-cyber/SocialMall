@@ -14,7 +14,9 @@ import Link, { type LinkProps } from "next/link";
 import {
   trackChipClickEvent,
   trackProductClickEvent,
+  trackShareEvent,
   trackSearchEvent,
+  trackTrustFilterEvent,
   type ChipEventType,
   type SearchEventSource,
 } from "@/lib/analytics";
@@ -38,6 +40,12 @@ import { getRelatedTrendQueries, getTrendPathByQuery } from "@/lib/trends";
 import {
   curatedProducts,
   extractUniqueProductTags,
+  getProductActionLabel,
+  getProductTrustLabel,
+  getProductTrustLevel,
+  getProductTrustSummary,
+  getVerificationQueue,
+  isVerifiedProduct,
   type Product,
 } from "@/lib/products";
 import { buildCollectionIntroCopy } from "@/lib/seo/collection-intro-copy";
@@ -101,6 +109,20 @@ type ProductCardProps = {
   onProductClick?: (product: Product) => void;
 };
 
+type TrustFilterMode = "all" | "verified" | "needs-verification";
+
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://social-mall.vercel.app";
+
+const trustFilterOptions: Array<{
+  mode: TrustFilterMode;
+  label: string;
+}> = [
+  { mode: "all", label: "All styles" },
+  { mode: "verified", label: "Verified only" },
+  { mode: "needs-verification", label: "Verification queue" },
+];
+
 const ProductCard = memo(function ProductCard({
   product,
   href,
@@ -133,7 +155,7 @@ const ProductCard = memo(function ProductCard({
     () => shouldUseUnoptimizedImage(activeImageSrc),
     [activeImageSrc],
   );
-  const isVerifiedProduct = product.catalogSource === "verified-retailer";
+  const verifiedProduct = isVerifiedProduct(product);
   const isIllustrativeImage =
     product.imageVerificationStatus !== "verified-product-image";
   const isBrandSiteLink =
@@ -142,10 +164,11 @@ const ProductCard = memo(function ProductCard({
     product.priceStatus === "estimated"
       ? `Guide ${formatPrice(product.price, product.currency)}`
       : formatPrice(product.price, product.currency);
-  const cardBadge = isVerifiedProduct ? "Verified product" : "Style inspiration";
-  const linkLabel = isVerifiedProduct
-    ? "Shop exact product"
-    : `Visit ${brandAttribution.displayName}`;
+  const cardBadge = getProductTrustLabel(product);
+  const linkLabel = getProductActionLabel(product);
+  const badgeClassName = verifiedProduct
+    ? "bg-emerald-50/95 text-emerald-700"
+    : "bg-amber-50/95 text-amber-800";
 
   const handleImageError = () => {
     setImageState((currentState) => {
@@ -177,7 +200,9 @@ const ProductCard = memo(function ProductCard({
             unoptimized={useUnoptimizedImage}
             onError={handleImageError}
           />
-          <div className="absolute left-2 top-2 rounded-full bg-white/90 px-2.5 py-1 text-[0.65rem] font-medium uppercase tracking-[0.08em] text-zinc-700 shadow-sm backdrop-blur">
+          <div
+            className={`absolute left-2 top-2 rounded-full px-2.5 py-1 text-[0.65rem] font-medium uppercase tracking-[0.08em] shadow-sm backdrop-blur ${badgeClassName}`}
+          >
             {cardBadge}
           </div>
         </div>
@@ -196,9 +221,9 @@ const ProductCard = memo(function ProductCard({
             {priceLabel}
           </p>
           <p className="text-xs leading-5 text-zinc-500">
-            {isIllustrativeImage ? "Illustrative image" : "Brand product image"}
+            {isIllustrativeImage ? "Style reference photo" : "Brand product image"}
             {" · "}
-            {isBrandSiteLink ? "Exact product link pending" : "Exact product page"}
+            {isBrandSiteLink ? "Brand homepage link" : "Exact product page"}
           </p>
           <p className="text-xs font-medium text-zinc-800">
             {linkLabel}
@@ -936,6 +961,8 @@ function HomeContent({
   const [isLoading, setIsLoading] = useState(false);
   const [gridAnimationKey, setGridAnimationKey] = useState(0);
   const [pathname, setPathname] = useState(initialPathname);
+  const [trustFilterMode, setTrustFilterMode] = useState<TrustFilterMode>("all");
+  const [shareFeedback, setShareFeedback] = useState("");
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const filteredResults = useMemo(
     () => getFilteredProducts(activeQuery, curatedProducts),
@@ -946,16 +973,33 @@ function HomeContent({
     ? filteredResults.items
     : filteredResults.similarItems;
   const visibleProducts = hasSearched ? searchDisplayProducts : previewProducts;
+  const visibleProductTrustSummary = useMemo(
+    () => getProductTrustSummary(visibleProducts),
+    [visibleProducts],
+  );
+  const displayProducts = useMemo(() => {
+    if (trustFilterMode === "verified") {
+      return visibleProducts.filter(isVerifiedProduct);
+    }
+
+    if (trustFilterMode === "needs-verification") {
+      return visibleProducts.filter((product) => !isVerifiedProduct(product));
+    }
+
+    return visibleProducts;
+  }, [trustFilterMode, visibleProducts]);
+  const verificationQueue = useMemo(
+    () => getVerificationQueue(hasSearched ? searchDisplayProducts : curatedProducts, 6),
+    [hasSearched, searchDisplayProducts],
+  );
   const schemaQuery = hasSearched ? currentQuery || activeQuery : "";
   const verifiedStructuredProducts = useMemo(
     () =>
-      visibleProducts.filter(
+      displayProducts.filter(
         (product) =>
-          product.catalogSource === "verified-retailer" &&
-          product.imageVerificationStatus === "verified-product-image" &&
-          product.productUrlVerificationStatus === "verified-product-page",
+          isVerifiedProduct(product),
       ),
-    [visibleProducts],
+    [displayProducts],
   );
   const productStructuredData = useMemo(
     () =>
@@ -1006,8 +1050,70 @@ function HomeContent({
     [hasSearched, schemaQuery],
   );
   const trackingQuery = hasSearched ? currentQuery || activeQuery : "";
-  const productImageSizes = PRODUCT_GRID_IMAGE_SIZES;
   const activeCollection = getSeoCollectionByQuery(activeQuery) ?? initialCollection ?? null;
+  const sharePath = useMemo(() => {
+    if (!hasSearched) {
+      return "/";
+    }
+
+    if (pathname !== "/") {
+      return pathname;
+    }
+
+    return trackingQuery ? `/?q=${encodeURIComponent(trackingQuery)}` : "/";
+  }, [hasSearched, pathname, trackingQuery]);
+  const shareUrl = `${SITE_URL}${sharePath}`;
+  const shareTitle = hasSearched
+    ? `SocialMall edit: ${trackingQuery || activeCollection?.title || "fashion picks"}`
+    : "SocialMall fashion discovery";
+  const socialShareLinks = useMemo(
+    () => [
+      {
+        label: "Pinterest",
+        href: `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(
+          shareUrl,
+        )}&description=${encodeURIComponent(shareTitle)}`,
+      },
+      {
+        label: "X",
+        href: `https://twitter.com/intent/tweet?url=${encodeURIComponent(
+          shareUrl,
+        )}&text=${encodeURIComponent(shareTitle)}`,
+      },
+    ],
+    [shareTitle, shareUrl],
+  );
+  const trustFaqStructuredData = useMemo(
+    () =>
+      hasSearched && trackingQuery
+        ? {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: `Are these exact ${trackingQuery} products?`,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "SocialMall separates verified exact products from verification-needed style references. Cards marked as verification needed use style reference photos and brand links until an exact retailer product page is verified.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "How should I use this edit?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text:
+                    "Use verified cards for exact shopping links and use verification-needed cards as brand and styling inspiration while exact product links are added.",
+                },
+              },
+            ],
+          }
+        : null,
+    [hasSearched, trackingQuery],
+  );
+  const productImageSizes = PRODUCT_GRID_IMAGE_SIZES;
   const collectionIntroCopy = useMemo(
     () =>
       hasSearched && activeQuery
@@ -1145,6 +1251,8 @@ function HomeContent({
 
     setHasSearched(true);
     setCurrentQuery(query);
+    setTrustFilterMode("all");
+    setShareFeedback("");
 
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
@@ -1257,6 +1365,46 @@ function HomeContent({
       vibe: product.vibe,
       price: product.price,
       searchQuery: trackingQuery,
+      trustLevel: getProductTrustLevel(product),
+      imageVerificationStatus: product.imageVerificationStatus,
+      productUrlVerificationStatus: product.productUrlVerificationStatus,
+      catalogSource: product.catalogSource,
+    });
+  };
+
+  const handleTrustFilterChange = (mode: TrustFilterMode) => {
+    setTrustFilterMode(mode);
+    trackTrustFilterEvent({
+      filterMode: mode,
+      activeQuery: trackingQuery,
+      resultCount: visibleProducts.length,
+      verifiedCount: visibleProductTrustSummary.verifiedProductCount,
+      needsVerificationCount: visibleProductTrustSummary.needsVerificationCount,
+    });
+  };
+
+  const handleCopyShareLink = async () => {
+    trackShareEvent({
+      shareTarget: "copy_link",
+      activeQuery: trackingQuery,
+      pagePath: sharePath,
+    });
+
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      setShareFeedback("Link copied");
+    } catch {
+      setShareFeedback("Copy unavailable");
+    }
+
+    window.setTimeout(() => setShareFeedback(""), 1800);
+  };
+
+  const handleSocialShareClick = (shareTarget: string) => {
+    trackShareEvent({
+      shareTarget,
+      activeQuery: trackingQuery,
+      pagePath: sharePath,
     });
   };
 
@@ -1323,6 +1471,8 @@ function HomeContent({
     setHasSearched(false);
     setIsLoading(false);
     setGridAnimationKey(0);
+    setTrustFilterMode("all");
+    setShareFeedback("");
     navigateToHome();
   };
 
@@ -1346,6 +1496,8 @@ function HomeContent({
       const nextQuery =
         urlQuery || (nextPathname !== "/" ? normalizedInitialQuery : "");
       setPathname(nextPathname);
+      setTrustFilterMode("all");
+      setShareFeedback("");
 
       if (!nextQuery) {
         setHasSearched(false);
@@ -1404,6 +1556,12 @@ function HomeContent({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(productStructuredData) }}
+        />
+      ) : null}
+      {trustFaqStructuredData ? (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(trustFaqStructuredData) }}
         />
       ) : null}
       <header className="mx-auto w-full max-w-6xl px-4 pt-6 sm:px-6 lg:px-8 lg:pt-7">
@@ -1509,6 +1667,68 @@ function HomeContent({
                 ) : null}
               </section>
             ) : null}
+            {!isLoading ? (
+              <section
+                className="flex flex-col gap-4 border-y border-zinc-200 py-4 md:flex-row md:items-center md:justify-between"
+                aria-label="Product trust and sharing controls"
+              >
+                <div className="space-y-1">
+                  <p className="text-[0.68rem] font-medium uppercase tracking-[0.08em] text-zinc-500">
+                    Product trust
+                  </p>
+                  <p className="text-sm leading-6 text-zinc-600">
+                    {visibleProductTrustSummary.verifiedProductCount} verified exact
+                    products · {visibleProductTrustSummary.needsVerificationCount} need
+                    product-page and image verification
+                  </p>
+                </div>
+                <div className="flex flex-wrap items-center gap-2">
+                  {trustFilterOptions.map((option) => {
+                    const optionCount =
+                      option.mode === "verified"
+                        ? visibleProductTrustSummary.verifiedProductCount
+                        : option.mode === "needs-verification"
+                          ? visibleProductTrustSummary.needsVerificationCount
+                          : visibleProductTrustSummary.totalCount;
+                    const isActive = trustFilterMode === option.mode;
+
+                    return (
+                      <button
+                        key={option.mode}
+                        type="button"
+                        onClick={() => handleTrustFilterChange(option.mode)}
+                        className={`rounded-full border px-3 py-1.5 text-xs font-medium transition ${
+                          isActive
+                            ? "border-zinc-900 bg-zinc-900 text-white"
+                            : "border-zinc-200 bg-white text-zinc-700 hover:border-zinc-300"
+                        }`}
+                      >
+                        {option.label} ({optionCount})
+                      </button>
+                    );
+                  })}
+                  <button
+                    type="button"
+                    onClick={handleCopyShareLink}
+                    className="rounded-full border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-700 transition hover:border-zinc-300"
+                  >
+                    {shareFeedback || "Copy link"}
+                  </button>
+                  {socialShareLinks.map((link) => (
+                    <a
+                      key={link.label}
+                      href={link.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={() => handleSocialShareClick(link.label.toLowerCase())}
+                      className="rounded-full border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-700 transition hover:border-zinc-300"
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
+              </section>
+            ) : null}
             {!isLoading && filteredResults.showFallbackNotice && visibleProducts.length ? (
               <h2 className="text-sm font-medium text-zinc-700">Similar styles</h2>
             ) : null}
@@ -1517,13 +1737,38 @@ function HomeContent({
                 No matching styles yet. Try a broader color, fabric, or category.
               </p>
             ) : null}
+            {!isLoading && visibleProducts.length > 0 && !displayProducts.length ? (
+              <div className="space-y-3 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-900">
+                <p>
+                  No verified exact-product cards are available for this result yet.
+                  Switch back to all styles or use the verification queue to prioritise
+                  the cards with the highest traffic potential.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <button
+                    type="button"
+                    onClick={() => handleTrustFilterChange("all")}
+                    className="rounded-full border border-amber-300 bg-white px-3 py-1.5 text-xs font-medium text-amber-900"
+                  >
+                    Show all styles
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handleTrustFilterChange("needs-verification")}
+                    className="rounded-full border border-amber-300 bg-white px-3 py-1.5 text-xs font-medium text-amber-900"
+                  >
+                    Show verification queue
+                  </button>
+                </div>
+              </div>
+            ) : null}
             <div
               key={gridAnimationKey}
               className={`animate-grid-fade-in grid grid-cols-2 gap-x-4 gap-y-10 transition-opacity md:grid-cols-4 md:gap-x-6 md:gap-y-12 ${
                 isLoading ? "opacity-70" : "opacity-100"
               }`}
             >
-              {visibleProducts.map((product, index) => (
+              {displayProducts.map((product, index) => (
                 <ProductCard
                   key={product.id}
                   href={buildOutboundHref(product.id, trackingQuery)}
@@ -1534,6 +1779,48 @@ function HomeContent({
                 />
               ))}
             </div>
+            {!isLoading && hasSearched ? (
+              <section className="grid gap-4 border-y border-zinc-200 py-5 md:grid-cols-3">
+                <div>
+                  <h2 className="text-sm font-medium text-zinc-900">
+                    {collectionIntroCopy?.headline ?? activeQuery} shopping notes
+                  </h2>
+                  <p className="mt-2 text-sm leading-6 text-zinc-600">
+                    Start with verified exact-product cards when available. Use
+                    verification-needed cards as styling direction until the exact
+                    retailer page is confirmed.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="text-sm font-medium text-zinc-900">
+                    Product data to verify
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-zinc-600">
+                    Highest priority: brand-owned product image, exact product URL,
+                    live price, stock status, and affiliate eligibility.
+                  </p>
+                  {verificationQueue.length ? (
+                    <p className="mt-2 text-xs leading-5 text-zinc-500">
+                      Next:{" "}
+                      {verificationQueue
+                        .slice(0, 3)
+                        .map((product) => `${product.brand} ${product.category}`)
+                        .join(", ")}
+                    </p>
+                  ) : null}
+                </div>
+                <div>
+                  <h3 className="text-sm font-medium text-zinc-900">
+                    Shareable angle
+                  </h3>
+                  <p className="mt-2 text-sm leading-6 text-zinc-600">
+                    Position this edit around {activeQuery || "the search intent"} and
+                    keep related pages linked so search and social visitors can move
+                    deeper into the collection.
+                  </p>
+                </div>
+              </section>
+            ) : null}
             {!isLoading ? (
               <div className="space-y-5 pt-2">
                 {seoRelatedLinks.length ? (
@@ -1585,9 +1872,9 @@ function HomeContent({
       </main>
 
       <footer className="mx-auto w-full max-w-6xl px-4 pb-8 text-xs leading-5 text-zinc-500 sm:px-6 lg:px-8">
-        SocialMall currently mixes verified products with style inspiration. Cards
-        marked as inspiration use illustrative images, guide prices, and brand-site
-        links until exact retailer product pages are verified.
+        SocialMall separates verified exact products from verification-needed style
+        references. Verification-needed cards use style reference photos, guide prices,
+        and brand-site links until exact retailer product pages are confirmed.
       </footer>
 
       {hasSearched ? (

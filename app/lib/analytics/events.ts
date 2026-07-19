@@ -105,6 +105,10 @@ export const trackProductClickEvent = ({
   vibe,
   price,
   searchQuery,
+  trustLevel,
+  imageVerificationStatus,
+  productUrlVerificationStatus,
+  catalogSource,
 }: {
   productId: string;
   productName: string;
@@ -113,6 +117,10 @@ export const trackProductClickEvent = ({
   vibe?: string[];
   price: number;
   searchQuery: string;
+  trustLevel?: string;
+  imageVerificationStatus?: string;
+  productUrlVerificationStatus?: string;
+  catalogSource?: string;
 }) => {
   const engagementRecord = trackProductEngagement({
     eventType: "product_click",
@@ -139,6 +147,10 @@ export const trackProductClickEvent = ({
       price,
       originating_search_query:
         engagementRecord?.searchQuery || searchQuery.trim() || undefined,
+      trust_level: trustLevel,
+      image_verification_status: imageVerificationStatus,
+      product_url_verification_status: productUrlVerificationStatus,
+      catalog_source: catalogSource,
       timestamp: engagementRecord?.timestamp ?? new Date().toISOString(),
     },
     {
@@ -147,6 +159,44 @@ export const trackProductClickEvent = ({
       }`,
     },
   );
+};
+
+export const trackTrustFilterEvent = ({
+  filterMode,
+  activeQuery,
+  resultCount,
+  verifiedCount,
+  needsVerificationCount,
+}: {
+  filterMode: string;
+  activeQuery?: string;
+  resultCount: number;
+  verifiedCount: number;
+  needsVerificationCount: number;
+}) => {
+  trackEvent("trust_filter_change", {
+    filter_mode: filterMode,
+    active_query: activeQuery?.trim() || undefined,
+    result_count: resultCount,
+    verified_count: verifiedCount,
+    needs_verification_count: needsVerificationCount,
+  });
+};
+
+export const trackShareEvent = ({
+  shareTarget,
+  activeQuery,
+  pagePath,
+}: {
+  shareTarget: string;
+  activeQuery?: string;
+  pagePath?: string;
+}) => {
+  trackEvent("share_click", {
+    share_target: shareTarget,
+    active_query: activeQuery?.trim() || undefined,
+    page_path: pagePath,
+  });
 };
 
 export const trackOutboundRedirectEvent = ({
@@ -168,6 +218,10 @@ export const trackOutboundRedirectEvent = ({
   commissionModel,
   usedFallback,
   trackingApplied,
+  trustLevel,
+  imageVerificationStatus,
+  productUrlVerificationStatus,
+  catalogSource,
 }: {
   productId: string;
   productName: string;
@@ -187,6 +241,10 @@ export const trackOutboundRedirectEvent = ({
   commissionModel?: string;
   usedFallback?: boolean;
   trackingApplied?: boolean;
+  trustLevel?: string;
+  imageVerificationStatus?: string;
+  productUrlVerificationStatus?: string;
+  catalogSource?: string;
 }) => {
   const engagementRecord = trackProductEngagement({
     eventType: "outbound_redirect",
@@ -254,6 +312,10 @@ export const trackOutboundRedirectEvent = ({
       estimated_commission_value: estimatedCommission,
       used_fallback_url: usedFallback,
       affiliate_tracking_applied: trackingApplied,
+      trust_level: trustLevel,
+      image_verification_status: imageVerificationStatus,
+      product_url_verification_status: productUrlVerificationStatus,
+      catalog_source: catalogSource,
     },
     {
       dedupeKey: `outbound_redirect:${productId}:${
