@@ -25,6 +25,8 @@ const aliases = {
     "productid",
     "aw_product_id",
     "awproductid",
+    "merchant_product_id",
+    "merchantproductid",
     "catalog_item_id",
     "catalogitemid",
     "sku",
@@ -72,6 +74,8 @@ const aliases = {
     "productprice",
     "display_price",
     "displayprice",
+    "search_price",
+    "searchprice",
   ],
   compareAtPrice: [
     "compare_at_price",
@@ -85,6 +89,8 @@ const aliases = {
     "retail_price",
     "retailprice",
     "rrp",
+    "rrp_price",
+    "rrpprice",
     "msrp",
   ],
   currency: [
@@ -102,8 +108,14 @@ const aliases = {
     "largeimage",
     "large_image_url",
     "largeimageurl",
+    "aw_image_url",
+    "awimageurl",
+    "aw_thumb_url",
+    "awthumburl",
     "merchant_image_url",
     "merchantimageurl",
+    "image_link",
+    "imagelink",
     "product_image",
     "productimage",
     "picture",
@@ -122,6 +134,8 @@ const aliases = {
     "deeplink",
     "aw_deep_link",
     "awdeeplink",
+    "merchant_deep_link",
+    "merchantdeeplink",
     "tracking_url",
     "trackingurl",
     "click_url",
@@ -138,6 +152,8 @@ const aliases = {
     "deeplink",
     "aw_deep_link",
     "awdeeplink",
+    "merchant_deep_link",
+    "merchantdeeplink",
   ],
   category: [
     "category",
@@ -154,6 +170,8 @@ const aliases = {
     "subcategory",
     "sub_category",
     "subcategory_name",
+    "merchant_category",
+    "merchantcategory",
     "department",
     "type",
   ],
@@ -411,15 +429,6 @@ const inferCategory = (row) => {
     .join(" ")
     .toLowerCase();
 
-  if (/shoe|sneaker|trainer|boot|loafer|heel|sandal|footwear/.test(source)) {
-    return "footwear";
-  }
-  if (/bag|tote|backpack|clutch|purse|crossbody|satchel/.test(source)) {
-    return "bag";
-  }
-  if (/jewel|necklace|bracelet|earring|ring|watch/.test(source)) {
-    return "jewellery";
-  }
   if (/dress|gown/.test(source)) {
     return "dress";
   }
@@ -437,6 +446,19 @@ const inferCategory = (row) => {
   }
   if (/shirt|blouse|polo/.test(source)) {
     return "shirt";
+  }
+  if (
+    /\b(shoe|shoes|sneaker|sneakers|trainer|trainers|boot|boots|loafer|loafers|heel|heels|sandal|sandals|footwear)\b/.test(
+      source,
+    )
+  ) {
+    return "footwear";
+  }
+  if (/bag|tote|backpack|clutch|purse|crossbody|satchel/.test(source)) {
+    return "bag";
+  }
+  if (/jewel|necklace|bracelet|earring|ring|watch/.test(source)) {
+    return "jewellery";
   }
   return "tshirt";
 };
