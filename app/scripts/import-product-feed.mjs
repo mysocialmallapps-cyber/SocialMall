@@ -435,17 +435,17 @@ const inferCategory = (row) => {
   if (/blazer|jacket|suit|coat/.test(source)) {
     return "blazer";
   }
-  if (/jean|denim/.test(source)) {
-    return "jeans";
-  }
-  if (/trouser|pant|chino|short/.test(source)) {
-    return "trousers";
-  }
   if (/hoodie|sweatshirt|sweater|jumper|knit/.test(source)) {
     return "hoodie";
   }
   if (/shirt|blouse|polo/.test(source)) {
     return "shirt";
+  }
+  if (/jean|denim/.test(source)) {
+    return "jeans";
+  }
+  if (/trouser|pant|chino|short/.test(source)) {
+    return "trousers";
   }
   if (
     /\b(shoe|shoes|sneaker|sneakers|trainer|trainers|boot|boots|loafer|loafers|heel|heels|sandal|sandals|footwear)\b/.test(
