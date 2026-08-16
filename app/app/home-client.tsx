@@ -62,6 +62,7 @@ const suggestions = [
 ];
 
 type QueryIntent = {
+  normalizedQuery: string;
   words: string[];
   categories: string[];
   colors: string[];
@@ -87,6 +88,7 @@ type FilterResult = {
   items: Product[];
   similarItems: Product[];
   showFallbackNotice: boolean;
+  matchQuality: "exact" | "partial" | "similar";
 };
 
 type HomeClientProps = {
@@ -122,6 +124,25 @@ const trustFilterOptions: Array<{
   { mode: "verified", label: "Verified only" },
   { mode: "needs-verification", label: "Verification queue" },
 ];
+
+const formatTagLabel = (value: string) =>
+  value
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((word) => `${word[0]?.toUpperCase() ?? ""}${word.slice(1)}`)
+    .join(" ");
+
+const getProductVariantSummary = (product: Product) => {
+  const sizeMatch = product.name.match(/\bSize:\s*([^|,]+)/i);
+  const size = sizeMatch?.[1]?.trim();
+  const colors = product.colors.filter((color) => color !== "neutral").slice(0, 2);
+  const parts = [
+    ...colors.map(formatTagLabel),
+    size ? `Size ${size}` : null,
+  ].filter(Boolean);
+
+  return parts.join(" / ");
+};
 
 const ProductCard = memo(function ProductCard({
   product,
@@ -164,11 +185,21 @@ const ProductCard = memo(function ProductCard({
     product.priceStatus === "estimated"
       ? `Guide ${formatPrice(product.price, product.currency)}`
       : formatPrice(product.price, product.currency);
+  const compareAtPriceLabel =
+    product.compareAtPrice && product.compareAtPrice > product.price
+      ? formatPrice(product.compareAtPrice, product.currency)
+      : null;
   const cardBadge = getProductTrustLabel(product);
   const linkLabel = getProductActionLabel(product);
   const badgeClassName = verifiedProduct
     ? "bg-emerald-50/95 text-emerald-700"
     : "bg-amber-50/95 text-amber-800";
+  const variantSummary = getProductVariantSummary(product);
+  const stockLabel = product.inStock
+    ? "In stock"
+    : verifiedProduct
+      ? "Check retailer stock"
+      : "Verification needed";
 
   const handleImageError = () => {
     setImageState((currentState) => {
@@ -185,16 +216,16 @@ const ProductCard = memo(function ProductCard({
     <Link
       href={href}
       onClick={() => onProductClick?.(product)}
-      className="group rounded-2xl transition duration-300 hover:scale-[1.02] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
+      className="group block rounded-lg transition duration-300 hover:scale-[1.01] hover:shadow-[0_22px_40px_-28px_rgba(0,0,0,0.45)]"
     >
       <article>
-        <div className="relative aspect-[2/3] overflow-hidden rounded-2xl bg-zinc-100">
+        <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-zinc-100 bg-white">
           <Image
             src={activeImageSrc}
             alt={product.name}
             fill
             sizes={imageSizes}
-            className="object-cover transition duration-500 group-hover:scale-[1.04]"
+            className="object-contain p-3 transition duration-500 group-hover:scale-[1.03]"
             priority={priority}
             loading={priority ? "eager" : "lazy"}
             unoptimized={useUnoptimizedImage}
@@ -206,7 +237,7 @@ const ProductCard = memo(function ProductCard({
             {cardBadge}
           </div>
         </div>
-        <div className="mt-3 space-y-1.5">
+        <div className="mt-3 space-y-2">
           <p className="text-xs font-medium uppercase tracking-[0.08em] text-zinc-500">
             {brandAttribution.displayName}
             {brandAttribution.sourceLabel ? (
@@ -216,16 +247,23 @@ const ProductCard = memo(function ProductCard({
               </span>
             ) : null}
           </p>
-          <p className="truncate text-sm text-zinc-800">{product.name}</p>
-          <p className="text-sm font-semibold text-zinc-900">
-            {priceLabel}
+          <p className="min-h-10 text-sm leading-5 text-zinc-800">{product.name}</p>
+          <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
+            <p className="text-sm font-semibold text-zinc-900">{priceLabel}</p>
+            {compareAtPriceLabel ? (
+              <p className="text-xs text-zinc-400 line-through">{compareAtPriceLabel}</p>
+            ) : null}
+          </div>
+          <p className="text-xs leading-5 text-zinc-500">
+            {product.retailer}
+            {variantSummary ? ` · ${variantSummary}` : ""}
           </p>
           <p className="text-xs leading-5 text-zinc-500">
-            {isIllustrativeImage ? "Style reference photo" : "Brand product image"}
-            {" · "}
+            {stockLabel} ·{" "}
+            {isIllustrativeImage ? "Style reference photo" : "Brand product image"} ·{" "}
             {isBrandSiteLink ? "Brand homepage link" : "Exact product page"}
           </p>
-          <p className="text-xs font-medium text-zinc-800">
+          <p className="inline-flex rounded-full border border-zinc-200 px-3 py-1.5 text-xs font-medium text-zinc-800 transition group-hover:border-zinc-900 group-hover:bg-zinc-900 group-hover:text-white">
             {linkLabel}
           </p>
         </div>
@@ -336,6 +374,29 @@ const styleKeywords: Record<string, string[]> = {
   ibiza: ["ibiza"],
   paris: ["paris"],
   "smart casual": ["smart casual"],
+};
+
+const shoppingQueryCorrections: Array<[RegExp, string]> = [
+  [/\bhodd(?:y|ie)s?\b/gi, "hoodie"],
+  [/\bhoodys\b/gi, "hoodies"],
+  [/\bhoody\b/gi, "hoodie"],
+  [/\bsweat\s*shirts?\b/gi, "sweatshirt"],
+  [/\bt\s*shirts?\b/gi, "tshirt"],
+  [/\btee\s*shirts?\b/gi, "tshirt"],
+  [/\btrainners?\b/gi, "trainers"],
+  [/\btrouseres\b/gi, "trousers"],
+  [/\bjeanes\b/gi, "jeans"],
+  [/\baddidas\b/gi, "Adidas"],
+  [/\bnkie\b/gi, "Nike"],
+];
+
+export const normalizeShoppingQuery = (query: string) => {
+  const corrected = shoppingQueryCorrections.reduce(
+    (current, [pattern, replacement]) => current.replace(pattern, replacement),
+    query,
+  );
+
+  return corrected.trim().replace(/\s+/g, " ");
 };
 
 const brandKeywords: Record<string, string[]> = curatedProducts.reduce(
@@ -454,8 +515,8 @@ const detectOnlyFilters = (
   }, []);
 
 export const parseQueryIntent = (query: string): QueryIntent => {
-  const normalizedQuery = query.toLowerCase();
-  const allTokens = tokenizeQuery(query);
+  const normalizedQuery = normalizeShoppingQuery(query).toLowerCase();
+  const allTokens = tokenizeQuery(normalizedQuery);
   const meaningfulWords = Array.from(
     new Set(
       allTokens.filter((word) => word.length > 2 && !fillerWords.has(word)),
@@ -494,6 +555,7 @@ export const parseQueryIntent = (query: string): QueryIntent => {
     .filter((value) => !Number.isNaN(value));
 
   return {
+    normalizedQuery,
     words: meaningfulWords,
     categories: normalizedCategories,
     colors,
@@ -532,6 +594,13 @@ const normalizeProductCategory = (category: Product["category"]) => category;
 
 const isPriceSortedAscending = (list: Product[]) =>
   list.every((item, index) => index === 0 || list[index - 1].price <= item.price);
+
+const getProductBrandId = (product: Product) =>
+  getBrandAttribution({
+    brandName: product.brand,
+    retailerName: product.retailer,
+    existingSlug: product.brandSlug,
+  }).normalizedBrandId;
 
 export const runSearchValidationCases = (items: Product[]): ValidationResult[] => {
   const cases = [
@@ -612,6 +681,24 @@ export const runSearchValidationCases = (items: Product[]): ValidationResult[] =
       reason: "Expected hoodie category and black color enforcement.",
     },
     {
+      query: "black Adidas hoddy under 20",
+      check: (result: FilterResult) => {
+        const products = result.items.length ? result.items : result.similarItems;
+        return products.every((item) => {
+          const matchesRequiredDetails =
+            item.price <= 20 &&
+            item.colors.includes("black") &&
+            getProductBrandId(item) === "brand:adidas-originals";
+
+          return result.matchQuality === "exact"
+            ? matchesRequiredDetails &&
+                normalizeProductCategory(item.category) === "hoodie"
+            : matchesRequiredDetails;
+        });
+      },
+      reason: "Expected typo correction, Adidas brand filtering, and under-20 enforcement.",
+    },
+    {
       query: "quiet luxury summer outfit",
       check: (result: FilterResult) =>
         result.items.every((item) => {
@@ -659,7 +746,12 @@ export const getFilteredProducts = (
 ): FilterResult => {
   const intent = parseQueryIntent(query);
   if (!query.trim()) {
-    return { items, similarItems: [], showFallbackNotice: false };
+    return {
+      items,
+      similarItems: [],
+      showFallbackNotice: false,
+      matchQuality: "exact",
+    };
   }
 
   const strictCategoryFilters = Array.from(
@@ -671,8 +763,10 @@ export const getFilteredProducts = (
   const strictMaterialFilters = Array.from(
     new Set([...intent.materials, ...intent.onlyFilters.materials]),
   );
+  const strictBrandFilters = Array.from(new Set(intent.brands));
+  const strictGenderFilters = Array.from(new Set(intent.genders));
   const exclusionFilters = Array.from(new Set(intent.exclusions));
-  const normalizedQuery = query.toLowerCase();
+  const normalizedQuery = intent.normalizedQuery;
   const clothingCategories = new Set([
     "tshirt",
     "shirt",
@@ -719,6 +813,7 @@ export const getFilteredProducts = (
 
   const strictMatches = applyNonNegotiableFilters(items).filter((product) => {
     const productCategory = normalizeProductCategory(product.category);
+    const productBrandId = getProductBrandId(product);
 
     if (
       strictCategoryFilters.length &&
@@ -743,11 +838,26 @@ export const getFilteredProducts = (
       return false;
     }
 
+    if (
+      strictBrandFilters.length &&
+      !strictBrandFilters.includes(productBrandId)
+    ) {
+      return false;
+    }
+
+    if (
+      strictGenderFilters.length &&
+      !product.gender.some(
+        (gender) => strictGenderFilters.includes(gender) || gender === "unisex",
+      )
+    ) {
+      return false;
+    }
+
     return true;
   });
 
   const softSignalsPresent =
-    intent.brands.length > 0 ||
     intent.vibes.length > 0 ||
     intent.styles.length > 0 ||
     intent.occasions.length > 0 ||
@@ -917,6 +1027,7 @@ export const getFilteredProducts = (
       items: rankProducts(softSignalMatches),
       similarItems: [],
       showFallbackNotice: false,
+      matchQuality: "exact",
     };
   }
 
@@ -925,14 +1036,41 @@ export const getFilteredProducts = (
       items: rankProducts(strictMatches),
       similarItems: [],
       showFallbackNotice: softSignalsPresent,
+      matchQuality: softSignalsPresent ? "partial" : "exact",
     };
   }
 
-  const fallbackCandidates = applyNonNegotiableFilters(items);
+  const fallbackCandidates = applyNonNegotiableFilters(items).filter((product) => {
+    if (
+      strictBrandFilters.length &&
+      !strictBrandFilters.includes(getProductBrandId(product))
+    ) {
+      return false;
+    }
+
+    if (
+      strictColorFilters.length &&
+      !strictColorFilters.some((color) => product.colors.includes(color))
+    ) {
+      return false;
+    }
+
+    if (
+      strictGenderFilters.length &&
+      !product.gender.some(
+        (gender) => strictGenderFilters.includes(gender) || gender === "unisex",
+      )
+    ) {
+      return false;
+    }
+
+    return true;
+  });
   return {
     items: [],
     similarItems: rankProducts(fallbackCandidates),
     showFallbackNotice: true,
+    matchQuality: "similar",
   };
 };
 
@@ -951,7 +1089,7 @@ function HomeContent({
   initialCollection,
   initialPathname = "/",
 }: HomeClientProps) {
-  const normalizedInitialQuery = initialQuery.trim();
+  const normalizedInitialQuery = normalizeShoppingQuery(initialQuery);
   const previewProducts = fallbackTrendingProducts.slice(0, 4);
   const [searchInput, setSearchInput] = useState(normalizedInitialQuery);
   const [refineInput, setRefineInput] = useState("");
@@ -1246,10 +1384,11 @@ function HomeContent({
   );
 
   const runSearch = (rawQuery: string) => {
-    const query = rawQuery.trim();
+    const query = normalizeShoppingQuery(rawQuery);
     if (!query) return;
 
     setHasSearched(true);
+    setSearchInput(query);
     setCurrentQuery(query);
     setTrustFilterMode("all");
     setShareFeedback("");
@@ -1423,7 +1562,7 @@ function HomeContent({
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const query = searchInput.trim();
+    const query = normalizeShoppingQuery(searchInput);
     if (!query) return;
     trackSearchInteraction(query, "hero_submit");
     runSearch(query);
@@ -1492,7 +1631,7 @@ function HomeContent({
       }
 
       const nextPathname = window.location.pathname || "/";
-      const urlQuery = getBrowserQuery();
+      const urlQuery = normalizeShoppingQuery(getBrowserQuery());
       const nextQuery =
         urlQuery || (nextPathname !== "/" ? normalizedInitialQuery : "");
       setPathname(nextPathname);
@@ -1644,7 +1783,9 @@ function HomeContent({
             </p>
             {!isLoading && filteredResults.showFallbackNotice ? (
               <p className="text-sm text-zinc-500">
-                No exact match — showing similar styles below.
+                {filteredResults.matchQuality === "partial"
+                  ? "No full match for every style detail — showing the closest products below."
+                  : "No exact match for every required detail — showing similar products below."}
               </p>
             ) : null}
             {!isLoading && collectionIntroCopy ? (
@@ -1677,8 +1818,8 @@ function HomeContent({
                     Product trust
                   </p>
                   <p className="text-sm leading-6 text-zinc-600">
-                    {visibleProductTrustSummary.verifiedProductCount} verified exact
-                    products · {visibleProductTrustSummary.needsVerificationCount} need
+                    {visibleProductTrustSummary.verifiedProductCount} verified
+                    product-page cards · {visibleProductTrustSummary.needsVerificationCount} need
                     product-page and image verification
                   </p>
                 </div>
@@ -1740,7 +1881,7 @@ function HomeContent({
             {!isLoading && visibleProducts.length > 0 && !displayProducts.length ? (
               <div className="space-y-3 rounded-2xl border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-amber-900">
                 <p>
-                  No verified exact-product cards are available for this result yet.
+                  No verified product-page cards are available for this result yet.
                   Switch back to all styles or use the verification queue to prioritise
                   the cards with the highest traffic potential.
                 </p>
@@ -1786,7 +1927,7 @@ function HomeContent({
                     {collectionIntroCopy?.headline ?? activeQuery} shopping notes
                   </h2>
                   <p className="mt-2 text-sm leading-6 text-zinc-600">
-                    Start with verified exact-product cards when available. Use
+                    Start with verified product-page cards when available. Use
                     verification-needed cards as styling direction until the exact
                     retailer page is confirmed.
                   </p>
@@ -1873,8 +2014,9 @@ function HomeContent({
 
       <footer className="mx-auto w-full max-w-6xl px-4 pb-8 text-xs leading-5 text-zinc-500 sm:px-6 lg:px-8">
         SocialMall separates verified exact products from verification-needed style
-        references. Verification-needed cards use style reference photos, guide prices,
-        and brand-site links until exact retailer product pages are confirmed.
+        references. Verified cards use retailer feed images and product-page links;
+        verification-needed cards use style reference photos, guide prices, and brand-site
+        links until exact retailer product pages are confirmed.
       </footer>
 
       {hasSearched ? (

@@ -275,6 +275,32 @@ const parsePositiveInt = (value, fallback) => {
   return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
 };
 
+const splitFeedSources = (value) =>
+  normalizeText(value)
+    .split(/\r?\n|\|/g)
+    .map(normalizeText)
+    .filter(Boolean);
+
+const uniqueFeedSources = (sources) => Array.from(new Set(sources));
+
+const collectFeedSources = () => {
+  const numberedUrlSources = Array.from({ length: 9 }, (_, index) =>
+    normalizeText(process.env[`PRODUCT_FEED_URL_${index + 2}`]),
+  );
+  const numberedFileSources = Array.from({ length: 9 }, (_, index) =>
+    normalizeText(process.env[`PRODUCT_FEED_FILE_${index + 2}`]),
+  );
+
+  return uniqueFeedSources([
+    normalizeText(process.env.PRODUCT_FEED_URL),
+    ...splitFeedSources(process.env.PRODUCT_FEED_URLS),
+    ...numberedUrlSources,
+    normalizeText(process.env.PRODUCT_FEED_FILE),
+    ...splitFeedSources(process.env.PRODUCT_FEED_FILES),
+    ...numberedFileSources,
+  ].filter(Boolean));
+};
+
 const feedLimit = Math.min(
   500,
   Math.max(1, parsePositiveInt(process.env.PRODUCT_FEED_LIMIT, defaultFeedLimit)),
@@ -564,7 +590,7 @@ const buildProductId = ({ row, productUrl, index, usedIds }) => {
 
 const networkLabel = (network) => (network === "impact" ? "Impact" : "Awin");
 
-const normalizeProduct = ({ row, index, usedIds, importedAt }) => {
+const normalizeProduct = ({ row, index, usedIds, importedAt, sourceCount }) => {
   const normalizedRow = { ...row, __normalized: normalizeRow(row) };
   const rawPrice = getField(normalizedRow, "price");
   const price = parsePrice(rawPrice);
@@ -652,8 +678,11 @@ const normalizeProduct = ({ row, index, usedIds, importedAt }) => {
     brandUrl: getDomainOrigin(productUrl) || productUrl,
     catalogSource: "verified-retailer",
     priceStatus: "verified",
-    sourceLabel: `${networkLabel(feedNetwork)} product feed`,
-    sourceNote: `Imported from a ${networkLabel(feedNetwork)} retailer product feed on ${importedAt}. Product URL and image are feed-supplied.`,
+    sourceLabel:
+      sourceCount > 1
+        ? `${networkLabel(feedNetwork)} multi-retailer feed`
+        : `${networkLabel(feedNetwork)} product feed`,
+    sourceNote: `Imported from ${sourceCount > 1 ? `${sourceCount} ` : "a "}${networkLabel(feedNetwork)} retailer product feed${sourceCount > 1 ? "s" : ""} on ${importedAt}. Product URL and image are feed-supplied.`,
     verifiedAt: importedAt,
     affiliateUrl,
     affiliateNetwork: feedNetwork,
@@ -874,49 +903,72 @@ const writeGeneratedProducts = async ({ products, sync }) => {
 };
 
 const importFeed = async () => {
-  const source = normalizeText(process.env.PRODUCT_FEED_URL) ||
-    normalizeText(process.env.PRODUCT_FEED_FILE);
+  const sources = collectFeedSources();
 
-  if (!source) {
+  if (!sources.length) {
     await writeGeneratedProducts({
       products: [],
       sync: {
         sourceConfigured: false,
         network: feedNetwork,
+        sourceCount: 0,
         importedCount: 0,
         skippedCount: 0,
         generatedAt: null,
-        message: "Set PRODUCT_FEED_URL or PRODUCT_FEED_FILE to import verified products.",
+        message:
+          "Set PRODUCT_FEED_URL, PRODUCT_FEED_URLS, PRODUCT_FEED_FILE, or PRODUCT_FEED_FILES to import verified products.",
       },
     });
-    console.log("No PRODUCT_FEED_URL or PRODUCT_FEED_FILE configured. Wrote empty verified feed.");
+    console.log(
+      "No product feed source configured. Wrote empty verified feed.",
+    );
     return;
   }
 
   const importedAt = new Date().toISOString();
-  const { buffer, sourceHint, contentType } = await readFeedSource(source);
-  const input = maybeUnzip(buffer, sourceHint, contentType).toString("utf8");
-  const rawRows = parseRows({ input, sourceHint, contentType });
   const usedIds = new Set();
   const skipped = [];
   const products = [];
+  const sourceSummaries = [];
+  let totalRawRows = 0;
+  let globalIndex = 0;
 
-  for (const [index, row] of rawRows.entries()) {
+  for (const [sourceIndex, source] of sources.entries()) {
     if (products.length >= feedLimit) {
       break;
     }
 
-    const product = normalizeProduct({
-      row,
-      index,
-      usedIds,
-      importedAt,
+    const { buffer, sourceHint, contentType } = await readFeedSource(source);
+    const input = maybeUnzip(buffer, sourceHint, contentType).toString("utf8");
+    const rawRows = parseRows({ input, sourceHint, contentType });
+    totalRawRows += rawRows.length;
+    sourceSummaries.push({
+      sourceType: isHttpUrl(source) ? "url" : "file",
+      rawRowCount: rawRows.length,
     });
 
-    if (product) {
-      products.push(product);
-    } else if (skipped.length < 10) {
-      skipped.push(index + 1);
+    for (const [rowIndex, row] of rawRows.entries()) {
+      if (products.length >= feedLimit) {
+        break;
+      }
+
+      const product = normalizeProduct({
+        row,
+        index: globalIndex,
+        usedIds,
+        importedAt,
+        sourceCount: sources.length,
+      });
+      globalIndex += 1;
+
+      if (product) {
+        products.push(product);
+      } else if (skipped.length < 10) {
+        skipped.push({
+          sourceIndex: sourceIndex + 1,
+          row: rowIndex + 1,
+        });
+      }
     }
   }
 
@@ -930,18 +982,27 @@ const importFeed = async () => {
     products,
     sync: {
       sourceConfigured: true,
-      sourceType: isHttpUrl(source) ? "url" : "file",
+      sourceType: sourceSummaries.every((source) => source.sourceType === "url")
+        ? "url"
+        : sourceSummaries.every((source) => source.sourceType === "file")
+          ? "file"
+          : "mixed",
       network: feedNetwork,
+      sourceCount: sources.length,
+      parsedSourceCount: sourceSummaries.length,
       importedCount: products.length,
-      skippedCount: rawRows.length - products.length,
+      skippedCount: Math.max(0, totalRawRows - products.length),
       feedLimit,
       minimumImport,
       generatedAt: importedAt,
       skippedSampleRows: skipped,
+      sourceSummaries,
     },
   });
 
-  console.log(`Imported ${products.length} verified ${networkLabel(feedNetwork)} products.`);
+  console.log(
+    `Imported ${products.length} verified ${networkLabel(feedNetwork)} products from ${sourceSummaries.length} source(s).`,
+  );
 };
 
 importFeed().catch((error) => {
