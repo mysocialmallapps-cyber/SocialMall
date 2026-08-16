@@ -35,6 +35,24 @@ type DashboardData = {
   recentMonetizationEvents: MonetizationEventRecord[];
 };
 
+type FeedSyncStatus = {
+  sourceConfigured?: boolean;
+  sourceType?: string;
+  network?: string;
+  sourceCount?: number;
+  parsedSourceCount?: number;
+  importedCount?: number;
+  skippedCount?: number;
+  feedLimit?: number;
+  minimumImport?: number;
+  generatedAt?: string | null;
+  message?: string;
+  sourceSummaries?: ReadonlyArray<{
+    sourceType?: string;
+    rawRowCount?: number;
+  }>;
+};
+
 const storageKeys = [
   "socialmall.search.analytics.v1",
   "socialmall.product.engagement.v1",
@@ -125,6 +143,7 @@ export default function PilotAnalyticsClient() {
   }
 
   const monetizationSummary = data.monetizationSummary;
+  const feedSync = data.productCatalog.verifiedFeed as FeedSyncStatus;
 
   return (
     <main className="min-h-screen bg-white px-4 py-6 text-zinc-900 sm:px-6 lg:px-8">
@@ -252,6 +271,63 @@ export default function PilotAnalyticsClient() {
               ))}
             </div>
           </div>
+        </section>
+
+        <section className="space-y-4 border-y border-zinc-200 py-5">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h2 className="text-sm font-semibold uppercase tracking-[0.08em] text-zinc-500">
+                Verified feed sync
+              </h2>
+              <p className="mt-1 text-sm text-zinc-600">
+                {feedSync.sourceConfigured
+                  ? `${feedSync.network ?? "feed"} ${feedSync.sourceType ?? "source"} import`
+                  : feedSync.message ?? "No product feed source configured."}
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <Badge active={Boolean(feedSync.sourceConfigured)} label="Feed configured" />
+              <Badge
+                active={(feedSync.importedCount ?? 0) >= (feedSync.minimumImport ?? 1)}
+                label="Minimum met"
+              />
+            </div>
+          </div>
+          <dl className="grid gap-5 md:grid-cols-4">
+            <Stat label="Sources configured" value={feedSync.sourceCount ?? 0} />
+            <Stat label="Sources parsed" value={feedSync.parsedSourceCount ?? 0} />
+            <Stat label="Imported" value={feedSync.importedCount ?? 0} />
+            <Stat label="Skipped rows" value={feedSync.skippedCount ?? 0} />
+            <Stat label="Import limit" value={feedSync.feedLimit ?? 0} />
+            <Stat label="Minimum required" value={feedSync.minimumImport ?? 0} />
+            <Stat label="Network" value={feedSync.network ?? "None"} />
+            <Stat label="Last sync" value={formatDate(feedSync.generatedAt ?? undefined)} />
+          </dl>
+          {feedSync.sourceSummaries?.length ? (
+            <div className="overflow-x-auto">
+              <table className="w-full min-w-[420px] border-collapse text-left text-sm">
+                <thead className="border-b border-zinc-200 text-xs uppercase tracking-[0.08em] text-zinc-500">
+                  <tr>
+                    <th className="py-2 pr-4 font-medium">Source</th>
+                    <th className="py-2 pr-4 font-medium">Type</th>
+                    <th className="py-2 font-medium">Raw rows</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {feedSync.sourceSummaries.map((source, index) => (
+                    <tr
+                      key={`${source.sourceType ?? "source"}-${index}`}
+                      className="border-b border-zinc-100"
+                    >
+                      <td className="py-3 pr-4 font-medium">Feed {index + 1}</td>
+                      <td className="py-3 pr-4">{source.sourceType ?? "unknown"}</td>
+                      <td className="py-3">{source.rawRowCount ?? 0}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          ) : null}
         </section>
 
         <section className="grid gap-7 lg:grid-cols-2">

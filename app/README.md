@@ -25,6 +25,8 @@ The importer accepts CSV, TSV, JSON, simple XML, and gzip-compressed feeds. It i
 For daily sync, add these GitHub repository settings:
 
 - Secret: `PRODUCT_FEED_URL`
+- Optional secrets for more approved feeds: `PRODUCT_FEED_URL_2`, `PRODUCT_FEED_URL_3`, up to `PRODUCT_FEED_URL_10`
+- Optional combined secret: `PRODUCT_FEED_URLS` with one feed URL per line, or separated with `|`
 - Variable: `PRODUCT_FEED_NETWORK` as `awin` or `impact`
 - Optional variable: `PRODUCT_FEED_LIMIT`, normally `500`
 - Optional variable: `PRODUCT_FEED_MINIMUM`, normally `100`
@@ -32,6 +34,12 @@ For daily sync, add these GitHub repository settings:
 - Optional variable: `PRODUCT_FEED_RETAILER`, only if the feed does not include retailer names
 
 Do not put private feed URLs or API credentials in `NEXT_PUBLIC_*` variables.
+
+After a new Awin advertiser approves SocialMall, create or update the feed in Awin
+Create-a-Feed, add the direct download URL to one of the feed secrets above, then
+run the GitHub Action named `Sync verified product feed`. The pilot analytics page
+shows source count, parsed rows, imported rows, skipped rows, and last sync time so
+you can confirm the new feed is live.
 
 ## Getting Started
 

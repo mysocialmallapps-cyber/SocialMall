@@ -53,6 +53,7 @@ import {
   buildInternalLinkSections,
   buildSeoRelatedLinks,
 } from "@/lib/seo/internal-linking";
+import { normalizeShoppingQuery } from "@/lib/search/normalize-shopping-query";
 
 const suggestions = [
   "quiet luxury",
@@ -376,29 +377,6 @@ const styleKeywords: Record<string, string[]> = {
   "smart casual": ["smart casual"],
 };
 
-const shoppingQueryCorrections: Array<[RegExp, string]> = [
-  [/\bhodd(?:y|ie)s?\b/gi, "hoodie"],
-  [/\bhoodys\b/gi, "hoodies"],
-  [/\bhoody\b/gi, "hoodie"],
-  [/\bsweat\s*shirts?\b/gi, "sweatshirt"],
-  [/\bt\s*shirts?\b/gi, "tshirt"],
-  [/\btee\s*shirts?\b/gi, "tshirt"],
-  [/\btrainners?\b/gi, "trainers"],
-  [/\btrouseres\b/gi, "trousers"],
-  [/\bjeanes\b/gi, "jeans"],
-  [/\baddidas\b/gi, "Adidas"],
-  [/\bnkie\b/gi, "Nike"],
-];
-
-export const normalizeShoppingQuery = (query: string) => {
-  const corrected = shoppingQueryCorrections.reduce(
-    (current, [pattern, replacement]) => current.replace(pattern, replacement),
-    query,
-  );
-
-  return corrected.trim().replace(/\s+/g, " ");
-};
-
 const brandKeywords: Record<string, string[]> = curatedProducts.reduce(
   (dictionary, product) => {
     const brandAttribution = getBrandAttribution({
@@ -418,6 +396,19 @@ const brandKeywords: Record<string, string[]> = curatedProducts.reduce(
     return dictionary;
   },
   {} as Record<string, string[]>,
+);
+const brandDisplayLabels: Record<string, string> = curatedProducts.reduce(
+  (dictionary, product) => {
+    const brandAttribution = getBrandAttribution({
+      brandName: product.brand,
+      retailerName: product.retailer,
+      existingSlug: product.brandSlug,
+    });
+
+    dictionary[brandAttribution.normalizedBrandId] = brandAttribution.displayName;
+    return dictionary;
+  },
+  {} as Record<string, string>,
 );
 const pricingSortWords = new Set([
   "cheap",
@@ -588,6 +579,197 @@ const formatPrice = (amount: number, currency: Product["currency"]) => {
     minimumFractionDigits: hasDecimals ? 2 : 0,
     maximumFractionDigits: hasDecimals ? 2 : 0,
   }).format(amount);
+};
+
+type IntentChip = {
+  key: string;
+  label: string;
+};
+
+type BroaderSearchSuggestion = {
+  key: string;
+  label: string;
+  query: string;
+};
+
+const categoryDisplayLabels: Record<string, string> = {
+  tshirt: "T-shirt",
+  shirt: "Shirt",
+  hoodie: "Hoodie",
+  trousers: "Trousers",
+  jeans: "Jeans",
+  dress: "Dress",
+  blazer: "Outerwear",
+  footwear: "Footwear",
+  bag: "Bag",
+  jewellery: "Jewellery",
+};
+
+const formatIntentValue = (value: string) =>
+  categoryDisplayLabels[value] ?? formatTagLabel(value.replace(/-/g, " "));
+
+const formatBrandIntentLabel = (brandId: string) =>
+  brandDisplayLabels[brandId] ??
+  formatTagLabel(brandId.replace(/^brand:/, "").replace(/-/g, " "));
+
+const buildIntentChips = (intent: QueryIntent): IntentChip[] => {
+  const chips: IntentChip[] = [
+    ...intent.brands.map((brand) => ({
+      key: `brand-${brand}`,
+      label: formatBrandIntentLabel(brand),
+    })),
+    ...intent.colors.map((color) => ({
+      key: `color-${color}`,
+      label: formatIntentValue(color),
+    })),
+    ...intent.categories.map((category) => ({
+      key: `category-${category}`,
+      label: formatIntentValue(category),
+    })),
+    ...intent.materials.map((material) => ({
+      key: `material-${material}`,
+      label: formatIntentValue(material),
+    })),
+    ...intent.genders.map((gender) => ({
+      key: `gender-${gender}`,
+      label: formatIntentValue(gender),
+    })),
+    ...intent.fits.map((fit) => ({
+      key: `fit-${fit}`,
+      label: formatIntentValue(fit),
+    })),
+  ];
+
+  if (intent.maxPrice !== null) {
+    chips.push({
+      key: `price-${intent.maxPrice}`,
+      label: `Under ${formatPrice(intent.maxPrice, "GBP")}`,
+    });
+  }
+
+  return chips;
+};
+
+const buildIntentQuery = ({
+  brands,
+  colors,
+  categories,
+  materials,
+  maxPrice,
+}: {
+  brands: string[];
+  colors: string[];
+  categories: string[];
+  materials: string[];
+  maxPrice: number | null;
+}) => {
+  const queryParts = [
+    ...colors,
+    ...brands.map((brand) => formatBrandIntentLabel(brand).toLowerCase()),
+    ...materials,
+    ...categories.map((category) => formatIntentValue(category).toLowerCase()),
+  ];
+
+  if (maxPrice !== null) {
+    queryParts.push(`under ${maxPrice}`);
+  }
+
+  return queryParts.join(" ").replace(/\s+/g, " ").trim();
+};
+
+const buildBroaderSearchSuggestions = (
+  query: string,
+  intent: QueryIntent,
+): BroaderSearchSuggestion[] => {
+  const suggestionsToTry: BroaderSearchSuggestion[] = [];
+  const normalizedCurrent = normalizeShoppingQuery(query).toLowerCase();
+  const addSuggestion = (label: string, nextQuery: string) => {
+    const normalizedNextQuery = normalizeShoppingQuery(nextQuery);
+    if (
+      !normalizedNextQuery ||
+      normalizedNextQuery.toLowerCase() === normalizedCurrent ||
+      suggestionsToTry.some(
+        (suggestion) =>
+          suggestion.query.toLowerCase() === normalizedNextQuery.toLowerCase(),
+      )
+    ) {
+      return;
+    }
+
+    suggestionsToTry.push({
+      key: `${label}-${normalizedNextQuery}`,
+      label,
+      query: normalizedNextQuery,
+    });
+  };
+
+  if (intent.brands.length) {
+    addSuggestion(
+      "Remove brand",
+      buildIntentQuery({
+        brands: [],
+        colors: intent.colors,
+        categories: intent.categories,
+        materials: intent.materials,
+        maxPrice: intent.maxPrice,
+      }),
+    );
+  }
+
+  if (intent.maxPrice !== null) {
+    const raisedBudget = Math.ceil((intent.maxPrice * 1.5) / 10) * 10;
+    addSuggestion(
+      "Raise budget",
+      buildIntentQuery({
+        brands: intent.brands,
+        colors: intent.colors,
+        categories: intent.categories,
+        materials: intent.materials,
+        maxPrice: raisedBudget,
+      }),
+    );
+  }
+
+  if (intent.colors.length) {
+    addSuggestion(
+      "Any colour",
+      buildIntentQuery({
+        brands: intent.brands,
+        colors: [],
+        categories: intent.categories,
+        materials: intent.materials,
+        maxPrice: intent.maxPrice,
+      }),
+    );
+  }
+
+  if (intent.materials.length) {
+    addSuggestion(
+      "Any fabric",
+      buildIntentQuery({
+        brands: intent.brands,
+        colors: intent.colors,
+        categories: intent.categories,
+        materials: [],
+        maxPrice: intent.maxPrice,
+      }),
+    );
+  }
+
+  if (intent.categories.length && (intent.brands.length || intent.colors.length)) {
+    addSuggestion(
+      "Broader category",
+      buildIntentQuery({
+        brands: intent.brands,
+        colors: intent.colors,
+        categories: [],
+        materials: intent.materials,
+        maxPrice: intent.maxPrice,
+      }),
+    );
+  }
+
+  return suggestionsToTry.slice(0, 3);
 };
 
 const normalizeProductCategory = (category: Product["category"]) => category;
@@ -1107,6 +1289,14 @@ function HomeContent({
     [activeQuery],
   );
   const activeIntent = useMemo(() => parseQueryIntent(activeQuery), [activeQuery]);
+  const activeIntentChips = useMemo(
+    () => buildIntentChips(activeIntent),
+    [activeIntent],
+  );
+  const broadeningSearchSuggestions = useMemo(
+    () => buildBroaderSearchSuggestions(activeQuery, activeIntent),
+    [activeIntent, activeQuery],
+  );
   const searchDisplayProducts = filteredResults.items.length
     ? filteredResults.items
     : filteredResults.similarItems;
@@ -1581,6 +1771,18 @@ function HomeContent({
     updateSearchUrl(suggestion);
   };
 
+  const handleBroadeningSearchClick = (suggestion: BroaderSearchSuggestion) => {
+    setSearchInput(suggestion.query);
+    trackChipClickEvent({
+      chipType: "related_search",
+      chipValue: suggestion.label,
+      activeQuery: trackingQuery,
+    });
+    trackSearchInteraction(suggestion.query, "internal_chip");
+    runSearch(suggestion.query);
+    updateSearchUrl(suggestion.query);
+  };
+
   const handleRefineSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const refinement = refineInput.trim();
@@ -1781,12 +1983,41 @@ function HomeContent({
                 </>
               )}
             </p>
+            {!isLoading && activeIntentChips.length ? (
+              <div className="flex flex-wrap gap-2" aria-label="Matched search filters">
+                {activeIntentChips.map((chip) => (
+                  <span
+                    key={chip.key}
+                    className="rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1.5 text-xs font-medium text-zinc-700"
+                  >
+                    {chip.label}
+                  </span>
+                ))}
+              </div>
+            ) : null}
             {!isLoading && filteredResults.showFallbackNotice ? (
               <p className="text-sm text-zinc-500">
                 {filteredResults.matchQuality === "partial"
-                  ? "No full match for every style detail — showing the closest products below."
-                  : "No exact match for every required detail — showing similar products below."}
+                  ? "Closest verified matches: the required filters are matched, but some softer style details are still broad."
+                  : "No exact verified match for every required detail yet. Keeping the strongest required filters and showing the closest styles."}
               </p>
+            ) : null}
+            {!isLoading &&
+            (filteredResults.showFallbackNotice || !visibleProducts.length) &&
+            broadeningSearchSuggestions.length ? (
+              <div className="flex flex-wrap items-center gap-2 text-xs text-zinc-500">
+                <span>Try broadening:</span>
+                {broadeningSearchSuggestions.map((suggestion) => (
+                  <button
+                    key={suggestion.key}
+                    type="button"
+                    onClick={() => handleBroadeningSearchClick(suggestion)}
+                    className="rounded-full border border-zinc-200 bg-white px-3 py-1.5 font-medium text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-50"
+                  >
+                    {suggestion.label}
+                  </button>
+                ))}
+              </div>
             ) : null}
             {!isLoading && collectionIntroCopy ? (
               <section className="space-y-2 rounded-2xl border border-zinc-200 bg-zinc-50/70 p-4">
