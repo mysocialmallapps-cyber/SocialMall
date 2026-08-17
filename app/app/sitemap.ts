@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { getSeoCollectionPaths } from "@/lib/collections";
+import { getSearchSeoPaths } from "@/lib/seo/search-page-config";
 import { getTrendPaths } from "@/lib/trends";
 
 const SITE_URL =
@@ -14,6 +15,7 @@ const SEARCHABLE_QUERY_ROUTES = [
   "Scandinavian minimal",
 ];
 const SEO_COLLECTION_ROUTES = getSeoCollectionPaths();
+const SEO_SEARCH_ROUTES = getSearchSeoPaths();
 const SEO_TREND_ROUTES = getTrendPaths();
 
 // Future-ready extension points for dedicated product pages.
@@ -44,6 +46,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly",
     priority: 0.8,
   }));
+  const searchEntries: MetadataRoute.Sitemap = SEO_SEARCH_ROUTES.map((route) => ({
+    url: `${SITE_URL}${route}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: 0.82,
+  }));
   const trendEntries: MetadataRoute.Sitemap = SEO_TREND_ROUTES.map((route) => ({
     url: `${SITE_URL}${route}`,
     lastModified: now,
@@ -64,6 +72,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...staticEntries,
     ...searchableEntries,
     ...collectionEntries,
+    ...searchEntries,
     ...trendEntries,
     ...futureProductEntries,
   ];

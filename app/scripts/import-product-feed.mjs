@@ -461,6 +461,9 @@ const inferCategory = (row) => {
   if (/blazer|jacket|suit|coat/.test(source)) {
     return "blazer";
   }
+  if (/\b(t[\s-]?shirt|tee)\b/.test(source)) {
+    return "tshirt";
+  }
   if (/hoodie|sweatshirt|sweater|jumper|knit/.test(source)) {
     return "hoodie";
   }

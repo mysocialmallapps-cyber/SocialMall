@@ -37,6 +37,7 @@ import {
   type SeoCollectionPage,
 } from "@/lib/collections";
 import { getRelatedTrendQueries, getTrendPathByQuery } from "@/lib/trends";
+import { getSearchSeoPathByQuery } from "@/lib/seo/search-page-config";
 import {
   curatedProducts,
   extractUniqueProductTags,
@@ -85,11 +86,30 @@ type QueryIntent = {
   sortMode: "relevance" | "cheapest";
 };
 
+type MatchConfidence = "exact" | "close" | "similar";
+
+type ProductMatchSummary = {
+  confidence: MatchConfidence;
+  label: string;
+  reasons: string[];
+  missing: string[];
+  score: number;
+};
+
+type ResultMatchSummary = {
+  label: string;
+  detail: string;
+  missing: string[];
+  matchedFilters: string[];
+};
+
 type FilterResult = {
   items: Product[];
   similarItems: Product[];
   showFallbackNotice: boolean;
   matchQuality: "exact" | "partial" | "similar";
+  productMatches: Record<number, ProductMatchSummary>;
+  resultSummary: ResultMatchSummary;
 };
 
 type HomeClientProps = {
@@ -108,6 +128,7 @@ type ProductCardProps = {
   product: Product;
   href: LinkProps["href"];
   imageSizes: string;
+  matchSummary?: ProductMatchSummary;
   priority?: boolean;
   onProductClick?: (product: Product) => void;
 };
@@ -149,6 +170,7 @@ const ProductCard = memo(function ProductCard({
   product,
   href,
   imageSizes,
+  matchSummary,
   priority = false,
   onProductClick,
 }: ProductCardProps) {
@@ -201,6 +223,13 @@ const ProductCard = memo(function ProductCard({
     : verifiedProduct
       ? "Check retailer stock"
       : "Verification needed";
+  const matchBadgeClassName = matchSummary
+    ? {
+        exact: "border-emerald-200 bg-emerald-50 text-emerald-700",
+        close: "border-sky-200 bg-sky-50 text-sky-700",
+        similar: "border-zinc-200 bg-zinc-50 text-zinc-600",
+      }[matchSummary.confidence]
+    : "";
 
   const handleImageError = () => {
     setImageState((currentState) => {
@@ -249,6 +278,30 @@ const ProductCard = memo(function ProductCard({
             ) : null}
           </p>
           <p className="min-h-10 text-sm leading-5 text-zinc-800">{product.name}</p>
+          {matchSummary ? (
+            <div className="space-y-1">
+              <div className="flex flex-wrap gap-1.5">
+                <span
+                  className={`rounded-full border px-2.5 py-1 text-[0.68rem] font-medium ${matchBadgeClassName}`}
+                >
+                  {matchSummary.label}
+                </span>
+                {matchSummary.reasons.slice(0, 2).map((reason, reasonIndex) => (
+                  <span
+                    key={`${product.id}-reason-${reasonIndex}`}
+                    className="rounded-full border border-zinc-200 bg-white px-2.5 py-1 text-[0.68rem] text-zinc-600"
+                  >
+                    {reason}
+                  </span>
+                ))}
+              </div>
+              {matchSummary.missing.length ? (
+                <p className="text-xs leading-5 text-zinc-500">
+                  Missing: {matchSummary.missing.slice(0, 2).join(", ")}
+                </p>
+              ) : null}
+            </div>
+          ) : null}
           <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
             <p className="text-sm font-semibold text-zinc-900">{priceLabel}</p>
             {compareAtPriceLabel ? (
@@ -377,6 +430,19 @@ const styleKeywords: Record<string, string[]> = {
   "smart casual": ["smart casual"],
 };
 
+const brandSearchStopWords = new Set([
+  "and",
+  "for",
+  "from",
+  "less",
+  "new",
+  "only",
+  "than",
+  "the",
+  "under",
+  "with",
+]);
+
 const brandKeywords: Record<string, string[]> = curatedProducts.reduce(
   (dictionary, product) => {
     const brandAttribution = getBrandAttribution({
@@ -388,7 +454,7 @@ const brandKeywords: Record<string, string[]> = curatedProducts.reduce(
       brandName: product.brand,
       retailerName: product.retailer,
       brandSlug: brandAttribution.brandSlug,
-    });
+    }).filter((term) => !brandSearchStopWords.has(term));
 
     dictionary[brandAttribution.normalizedBrandId] = Array.from(
       new Set([...(dictionary[brandAttribution.normalizedBrandId] ?? []), ...terms]),
@@ -784,6 +850,269 @@ const getProductBrandId = (product: Product) =>
     existingSlug: product.brandSlug,
   }).normalizedBrandId;
 
+const categoryEvidenceKeywords: Record<string, string[]> = {
+  tshirt: ["tshirt", "t-shirt", "tee", "t shirt"],
+  shirt: ["shirt", "shirts", "button up", "button-up", "blouse", "polo"],
+  hoodie: ["hoodie", "hoodies", "hoody", "hooded", "sweatshirt", "sweater", "jumper"],
+  trousers: ["trousers", "trouser", "pants", "chinos", "chino"],
+  jeans: ["jeans", "jean", "denim"],
+  dress: ["dress", "dresses", "gown"],
+  blazer: ["blazer", "blazers", "jacket", "jackets", "coat", "suit"],
+  footwear: [
+    "shoes",
+    "shoe",
+    "trainers",
+    "sneakers",
+    "sandals",
+    "loafers",
+    "boots",
+    "heels",
+  ],
+  bag: ["bag", "bags", "handbag", "handbags", "tote", "totes", "backpack"],
+  jewellery: ["jewellery", "jewelry", "earrings", "necklace", "ring", "watch"],
+};
+
+const categoryConflictKeywords: Record<string, string[]> = {
+  shirt: ["tshirt", "t-shirt", "t shirt", "tee"],
+  hoodie: ["tshirt", "t-shirt", "t shirt", "tee"],
+  trousers: ["shorts", "short"],
+};
+
+const getProductSearchText = (product: Product) =>
+  [
+    product.name,
+    product.brand,
+    product.retailer,
+    product.subcategory,
+    product.description,
+  ]
+    .join(" ")
+    .toLowerCase();
+
+const productMatchesCategory = (product: Product, category: string) => {
+  const productCategory = normalizeProductCategory(product.category);
+
+  if (productCategory !== category) {
+    return false;
+  }
+
+  if (product.catalogSource !== "verified-retailer") {
+    return true;
+  }
+
+  const productSearchText = getProductSearchText(product);
+  const hasConflict = (categoryConflictKeywords[category] ?? []).some((term) =>
+    containsTerm(productSearchText, term),
+  );
+
+  if (hasConflict) {
+    return false;
+  }
+
+  const evidenceTerms =
+    categoryEvidenceKeywords[category] ?? categoryKeywords[category] ?? [category];
+
+  return evidenceTerms.some((term) => containsTerm(productSearchText, term));
+};
+
+const getStrictIntentFilters = (intent: QueryIntent) => ({
+  categories: Array.from(
+    new Set([...intent.categories, ...intent.onlyFilters.categories]),
+  ),
+  colors: Array.from(new Set([...intent.colors, ...intent.onlyFilters.colors])),
+  materials: Array.from(
+    new Set([...intent.materials, ...intent.onlyFilters.materials]),
+  ),
+  brands: Array.from(new Set(intent.brands)),
+  genders: Array.from(new Set(intent.genders)),
+});
+
+const formatFilterGroup = (
+  values: string[],
+  formatter: (value: string) => string = formatIntentValue,
+) => values.map(formatter).join(" or ");
+
+const getRequiredIntentLabels = (intent: QueryIntent) => {
+  const filters = getStrictIntentFilters(intent);
+  const labels = [
+    filters.brands.length
+      ? formatFilterGroup(filters.brands, formatBrandIntentLabel)
+      : null,
+    filters.colors.length ? formatFilterGroup(filters.colors) : null,
+    filters.categories.length ? formatFilterGroup(filters.categories) : null,
+    filters.materials.length ? formatFilterGroup(filters.materials) : null,
+    filters.genders.length ? formatFilterGroup(filters.genders) : null,
+    intent.maxPrice !== null ? `Under ${formatPrice(intent.maxPrice, "GBP")}` : null,
+  ].filter((label): label is string => Boolean(label));
+
+  return Array.from(new Set(labels));
+};
+
+const getProductMatchSummary = (
+  product: Product,
+  intent: QueryIntent,
+  score: number,
+): ProductMatchSummary => {
+  const filters = getStrictIntentFilters(intent);
+  const productBrandId = getProductBrandId(product);
+  const requiredChecks = [
+    filters.brands.length
+      ? {
+          label: formatFilterGroup(filters.brands, formatBrandIntentLabel),
+          matched: filters.brands.includes(productBrandId),
+        }
+      : null,
+    filters.colors.length
+      ? {
+          label: formatFilterGroup(filters.colors),
+          matched: filters.colors.some((color) => product.colors.includes(color)),
+        }
+      : null,
+    filters.categories.length
+      ? {
+          label: formatFilterGroup(filters.categories),
+          matched: filters.categories.some((category) =>
+            productMatchesCategory(product, category),
+          ),
+        }
+      : null,
+    filters.materials.length
+      ? {
+          label: formatFilterGroup(filters.materials),
+          matched: filters.materials.some((material) =>
+            product.materials.includes(material),
+          ),
+        }
+      : null,
+    filters.genders.length
+      ? {
+          label: formatFilterGroup(filters.genders),
+          matched: product.gender.some(
+            (gender) => filters.genders.includes(gender) || gender === "unisex",
+          ),
+        }
+      : null,
+    intent.maxPrice !== null
+      ? {
+          label: `Under ${formatPrice(intent.maxPrice, product.currency)}`,
+          matched: product.price <= intent.maxPrice,
+        }
+      : null,
+  ].filter(
+    (check): check is { label: string; matched: boolean } => Boolean(check),
+  );
+  const softChecks = [
+    intent.fits.length
+      ? {
+          label: formatFilterGroup(intent.fits),
+          matched: intent.fits.some((fit) => product.fit.includes(fit)),
+        }
+      : null,
+    intent.occasions.length
+      ? {
+          label: formatFilterGroup(intent.occasions),
+          matched: intent.occasions.some((occasion) =>
+            product.occasion.includes(occasion),
+          ),
+        }
+      : null,
+    intent.seasons.length
+      ? {
+          label: formatFilterGroup(intent.seasons),
+          matched: intent.seasons.some((season) => product.season.includes(season)),
+        }
+      : null,
+    intent.vibes.length
+      ? {
+          label: formatFilterGroup(intent.vibes),
+          matched: intent.vibes.some((vibe) => product.vibe.includes(vibe)),
+        }
+      : null,
+    intent.styles.length
+      ? {
+          label: formatFilterGroup(intent.styles),
+          matched: intent.styles.some((style) => product.style.includes(style)),
+        }
+      : null,
+  ].filter(
+    (check): check is { label: string; matched: boolean } => Boolean(check),
+  );
+  const missingRequired = requiredChecks
+    .filter((check) => !check.matched)
+    .map((check) => check.label);
+  const missingSoft = softChecks
+    .filter((check) => !check.matched)
+    .map((check) => check.label);
+  const confidence: MatchConfidence = missingRequired.length
+    ? "similar"
+    : missingSoft.length
+      ? "close"
+      : "exact";
+  const matchedReasons = [
+    ...requiredChecks.filter((check) => check.matched).map((check) => check.label),
+    ...softChecks.filter((check) => check.matched).map((check) => check.label),
+  ];
+  const trustReason = isVerifiedProduct(product)
+    ? "Verified product page"
+    : "Style reference";
+
+  return {
+    confidence,
+    label:
+      confidence === "exact"
+        ? "Exact match"
+        : confidence === "close"
+          ? "Close match"
+          : "Similar style",
+    reasons: Array.from(new Set([trustReason, ...matchedReasons])).slice(0, 4),
+    missing: Array.from(new Set([...missingRequired, ...missingSoft])).slice(0, 4),
+    score,
+  };
+};
+
+const buildResultMatchSummary = ({
+  intent,
+  products,
+  productMatches,
+  matchQuality,
+}: {
+  intent: QueryIntent;
+  products: Product[];
+  productMatches: Record<number, ProductMatchSummary>;
+  matchQuality: FilterResult["matchQuality"];
+}): ResultMatchSummary => {
+  const requiredLabels = getRequiredIntentLabels(intent);
+  const missing = Array.from(
+    new Set(
+      products
+        .slice(0, 8)
+        .flatMap((product) => productMatches[product.id]?.missing ?? []),
+    ),
+  );
+  const count = products.length;
+  const label =
+    matchQuality === "exact"
+      ? `${count} exact ${count === 1 ? "match" : "matches"}`
+      : matchQuality === "partial"
+        ? `${count} close ${count === 1 ? "match" : "matches"}`
+        : `${count} similar ${count === 1 ? "style" : "styles"}`;
+  const detail =
+    matchQuality === "exact"
+      ? "Every required filter is present on the listed products."
+      : matchQuality === "partial"
+        ? "Required filters are present, but some style or occasion signals are broad."
+        : "No product matched every required detail, so these keep the strongest available filters.";
+
+  return {
+    label,
+    detail: requiredLabels.length
+      ? `${detail} Required: ${requiredLabels.join(", ")}.`
+      : detail,
+    missing,
+    matchedFilters: requiredLabels,
+  };
+};
+
 export const runSearchValidationCases = (items: Product[]): ValidationResult[] => {
   const cases = [
     {
@@ -816,7 +1145,7 @@ export const runSearchValidationCases = (items: Product[]): ValidationResult[] =
       check: (result: FilterResult) =>
         result.items.every(
           (item) =>
-            normalizeProductCategory(item.category) === "hoodie" &&
+            productMatchesCategory(item, "hoodie") &&
             item.colors.includes("black"),
         ),
       reason: "Expected only black hoodies for color and category intent.",
@@ -857,7 +1186,7 @@ export const runSearchValidationCases = (items: Product[]): ValidationResult[] =
       check: (result: FilterResult) =>
         result.items.every(
           (item) =>
-            normalizeProductCategory(item.category) === "hoodie" &&
+            productMatchesCategory(item, "hoodie") &&
             item.colors.includes("black"),
         ),
       reason: "Expected hoodie category and black color enforcement.",
@@ -874,7 +1203,7 @@ export const runSearchValidationCases = (items: Product[]): ValidationResult[] =
 
           return result.matchQuality === "exact"
             ? matchesRequiredDetails &&
-                normalizeProductCategory(item.category) === "hoodie"
+                productMatchesCategory(item, "hoodie")
             : matchesRequiredDetails;
         });
       },
@@ -933,20 +1262,22 @@ export const getFilteredProducts = (
       similarItems: [],
       showFallbackNotice: false,
       matchQuality: "exact",
+      productMatches: {},
+      resultSummary: {
+        label: "Ready to search",
+        detail: "Describe a product, style, brand, colour, or price to start.",
+        missing: [],
+        matchedFilters: [],
+      },
     };
   }
 
-  const strictCategoryFilters = Array.from(
-    new Set([...intent.categories, ...intent.onlyFilters.categories]),
-  );
-  const strictColorFilters = Array.from(
-    new Set([...intent.colors, ...intent.onlyFilters.colors]),
-  );
-  const strictMaterialFilters = Array.from(
-    new Set([...intent.materials, ...intent.onlyFilters.materials]),
-  );
-  const strictBrandFilters = Array.from(new Set(intent.brands));
-  const strictGenderFilters = Array.from(new Set(intent.genders));
+  const strictIntentFilters = getStrictIntentFilters(intent);
+  const strictCategoryFilters = strictIntentFilters.categories;
+  const strictColorFilters = strictIntentFilters.colors;
+  const strictMaterialFilters = strictIntentFilters.materials;
+  const strictBrandFilters = strictIntentFilters.brands;
+  const strictGenderFilters = strictIntentFilters.genders;
   const exclusionFilters = Array.from(new Set(intent.exclusions));
   const normalizedQuery = intent.normalizedQuery;
   const clothingCategories = new Set([
@@ -994,12 +1325,13 @@ export const getFilteredProducts = (
     });
 
   const strictMatches = applyNonNegotiableFilters(items).filter((product) => {
-    const productCategory = normalizeProductCategory(product.category);
     const productBrandId = getProductBrandId(product);
 
     if (
       strictCategoryFilters.length &&
-      !strictCategoryFilters.includes(productCategory)
+      !strictCategoryFilters.some((category) =>
+        productMatchesCategory(product, category),
+      )
     ) {
       return false;
     }
@@ -1061,11 +1393,21 @@ export const getFilteredProducts = (
     let score = 0;
 
     if (strictCategoryFilters.length) {
-      if (strictCategoryFilters.includes(productCategory)) {
-        score += 5;
+      if (
+        strictCategoryFilters.some((category) =>
+          productMatchesCategory(product, category),
+        )
+      ) {
+        score += 7;
+      } else if (strictCategoryFilters.includes(productCategory)) {
+        score -= 4;
       } else {
         score -= 8;
       }
+    }
+
+    if (isVerifiedProduct(product)) {
+      score += 1.5;
     }
 
     if (
@@ -1184,6 +1526,44 @@ export const getFilteredProducts = (
     return scored.map(({ product }) => product);
   };
 
+  const buildFilterResult = ({
+    items: resultItems,
+    similarItems,
+    showFallbackNotice,
+    matchQuality,
+  }: {
+    items: Product[];
+    similarItems: Product[];
+    showFallbackNotice: boolean;
+    matchQuality: FilterResult["matchQuality"];
+  }): FilterResult => {
+    const productsForSummary = resultItems.length ? resultItems : similarItems;
+    const productMatches = productsForSummary.reduce<
+      Record<number, ProductMatchSummary>
+    >((matches, product) => {
+      matches[product.id] = getProductMatchSummary(
+        product,
+        intent,
+        getRelevanceScore(product),
+      );
+      return matches;
+    }, {});
+
+    return {
+      items: resultItems,
+      similarItems,
+      showFallbackNotice,
+      matchQuality,
+      productMatches,
+      resultSummary: buildResultMatchSummary({
+        intent,
+        products: productsForSummary,
+        productMatches,
+        matchQuality,
+      }),
+    };
+  };
+
   const softSignalMatches = strictMatches.filter((product) => {
     const hasOccasion =
       intent.occasions.length > 0 &&
@@ -1205,21 +1585,21 @@ export const getFilteredProducts = (
   });
 
   if (softSignalsPresent && softSignalMatches.length) {
-    return {
+    return buildFilterResult({
       items: rankProducts(softSignalMatches),
       similarItems: [],
       showFallbackNotice: false,
       matchQuality: "exact",
-    };
+    });
   }
 
   if (strictMatches.length) {
-    return {
+    return buildFilterResult({
       items: rankProducts(strictMatches),
       similarItems: [],
       showFallbackNotice: softSignalsPresent,
       matchQuality: softSignalsPresent ? "partial" : "exact",
-    };
+    });
   }
 
   const fallbackCandidates = applyNonNegotiableFilters(items).filter((product) => {
@@ -1248,12 +1628,12 @@ export const getFilteredProducts = (
 
     return true;
   });
-  return {
+  return buildFilterResult({
     items: [],
     similarItems: rankProducts(fallbackCandidates),
     showFallbackNotice: true,
     matchQuality: "similar",
-  };
+  });
 };
 
 const fallbackTrendingProducts = curatedProducts.slice(0, 8);
@@ -1316,6 +1696,12 @@ function HomeContent({
 
     return visibleProducts;
   }, [trustFilterMode, visibleProducts]);
+  const resultHeading =
+    filteredResults.matchQuality === "exact"
+      ? "Exact matches"
+      : filteredResults.matchQuality === "partial"
+        ? "Close matches"
+        : "Similar styles";
   const verificationQueue = useMemo(
     () => getVerificationQueue(hasSearched ? searchDisplayProducts : curatedProducts, 6),
     [hasSearched, searchDisplayProducts],
@@ -1535,7 +1921,9 @@ function HomeContent({
   );
   const internalLinkSections = useMemo(() => {
     const resolveSeoPath = (query: string) =>
-      getTrendPathByQuery(query) ?? getCollectionPathByQuery(query);
+      getSearchSeoPathByQuery(query) ??
+      getTrendPathByQuery(query) ??
+      getCollectionPathByQuery(query);
 
     return buildInternalLinkSections({
       currentQuery: trackingQuery,
@@ -1995,12 +2383,25 @@ function HomeContent({
                 ))}
               </div>
             ) : null}
-            {!isLoading && filteredResults.showFallbackNotice ? (
-              <p className="text-sm text-zinc-500">
-                {filteredResults.matchQuality === "partial"
-                  ? "Closest verified matches: the required filters are matched, but some softer style details are still broad."
-                  : "No exact verified match for every required detail yet. Keeping the strongest required filters and showing the closest styles."}
-              </p>
+            {!isLoading ? (
+              <div className="space-y-1 border-y border-zinc-200 py-3">
+                <p className="text-[0.68rem] font-medium uppercase tracking-[0.08em] text-zinc-500">
+                  Match confidence
+                </p>
+                <p className="text-sm font-medium text-zinc-900">
+                  {filteredResults.resultSummary.label}
+                </p>
+                <p className="text-sm leading-6 text-zinc-600">
+                  {filteredResults.resultSummary.detail}
+                </p>
+                {filteredResults.matchQuality !== "exact" &&
+                filteredResults.resultSummary.missing.length ? (
+                  <p className="text-xs leading-5 text-zinc-500">
+                    Still broad:{" "}
+                    {filteredResults.resultSummary.missing.slice(0, 4).join(", ")}
+                  </p>
+                ) : null}
+              </div>
             ) : null}
             {!isLoading &&
             (filteredResults.showFallbackNotice || !visibleProducts.length) &&
@@ -2101,8 +2502,8 @@ function HomeContent({
                 </div>
               </section>
             ) : null}
-            {!isLoading && filteredResults.showFallbackNotice && visibleProducts.length ? (
-              <h2 className="text-sm font-medium text-zinc-700">Similar styles</h2>
+            {!isLoading && visibleProducts.length ? (
+              <h2 className="text-sm font-medium text-zinc-700">{resultHeading}</h2>
             ) : null}
             {!isLoading && !visibleProducts.length ? (
               <p className="rounded-2xl border border-zinc-200 bg-zinc-50 p-4 text-sm leading-6 text-zinc-600">
@@ -2146,6 +2547,7 @@ function HomeContent({
                   href={buildOutboundHref(product.id, trackingQuery)}
                   product={product}
                   imageSizes={productImageSizes}
+                  matchSummary={filteredResults.productMatches[product.id]}
                   priority={index < 2}
                   onProductClick={handleProductCardClick}
                 />
