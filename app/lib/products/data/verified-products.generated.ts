@@ -8,15 +8,15 @@ export const verifiedProductFeedSync = {
   "sourceCount": 1,
   "parsedSourceCount": 1,
   "importedCount": 500,
-  "skippedCount": 725,
+  "skippedCount": 793,
   "feedLimit": 500,
   "minimumImport": 100,
-  "generatedAt": "2026-09-30T09:36:32.816Z",
+  "generatedAt": "2026-10-01T10:02:40.248Z",
   "skippedSampleRows": [],
   "sourceSummaries": [
     {
       "sourceType": "url",
-      "rawRowCount": 1225
+      "rawRowCount": 1293
     }
   ]
 } as const;
@@ -66,8 +66,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45294984585&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -124,8 +124,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45294984588&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -182,8 +182,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45294984589&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -241,8 +241,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45294984593&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -300,8 +300,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45294984594&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -358,8 +358,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45294984599&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -416,8 +416,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45294984603&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -474,8 +474,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45289539772&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -532,8 +532,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45287729211&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -590,8 +590,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45287729212&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -648,8 +648,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45287729213&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -706,8 +706,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45287729214&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -764,8 +764,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45287729215&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -822,8 +822,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45287729227&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -880,8 +880,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45287729229&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -938,8 +938,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45287729233&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -996,8 +996,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45287729235&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1054,8 +1054,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45287729240&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1112,8 +1112,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45351775537&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1170,8 +1170,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363909972&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1228,8 +1228,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363909975&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1287,8 +1287,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363909980&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1346,8 +1346,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363909981&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1405,8 +1405,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363909985&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1463,8 +1463,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363909994&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1521,8 +1521,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363909995&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1580,8 +1580,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363909999&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1638,8 +1638,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363910002&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1697,8 +1697,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363910006&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1755,8 +1755,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363910010&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1813,8 +1813,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363910013&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1871,8 +1871,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363910015&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1930,8 +1930,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363910018&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -1989,8 +1989,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363910020&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2049,8 +2049,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363910025&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2109,8 +2109,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363910026&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2169,8 +2169,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363910027&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2228,8 +2228,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363910028&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2287,8 +2287,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363910030&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2346,8 +2346,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45363910031&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2406,8 +2406,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45365883987&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2464,8 +2464,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45365883995&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2522,8 +2522,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45365883996&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2581,8 +2581,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45365884005&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2640,8 +2640,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45365884010&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2699,8 +2699,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45365884030&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2758,8 +2758,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45365884031&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2817,8 +2817,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45365884032&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2876,8 +2876,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657446&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2934,8 +2934,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657451&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -2992,8 +2992,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657458&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3050,8 +3050,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657459&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3108,8 +3108,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657460&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3166,8 +3166,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657462&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3224,8 +3224,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657463&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3282,8 +3282,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657466&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3341,8 +3341,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657468&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3400,8 +3400,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657475&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3459,8 +3459,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657478&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3517,8 +3517,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657479&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3575,8 +3575,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657485&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3634,8 +3634,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657486&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3693,8 +3693,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657487&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3752,8 +3752,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657488&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3811,8 +3811,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657490&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3870,8 +3870,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657492&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3929,8 +3929,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657493&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -3987,8 +3987,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657495&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4045,8 +4045,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657496&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4104,8 +4104,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657499&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4163,8 +4163,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657500&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4221,8 +4221,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657508&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4279,8 +4279,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657510&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4337,8 +4337,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657513&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4396,8 +4396,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657515&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4455,8 +4455,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657517&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4514,8 +4514,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45366657518&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4572,8 +4572,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45369174772&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4630,8 +4630,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45369174791&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4688,8 +4688,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45369174793&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4747,8 +4747,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45369174794&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4806,8 +4806,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45369174795&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4865,8 +4865,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45369174796&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4923,8 +4923,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45369174805&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4936,6 +4936,64 @@ export const verifiedProducts: Product[] = [
     "compareAtPrice": 38,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-select-summer-basketball-shorts-shadow-red-size-s-371665637"
+  },
+  {
+    "id": 421998494,
+    "brand": "adidas Originals",
+    "name": "adidas Originals SST Superstar Bonded Track Pants - Blue | Size: M",
+    "description": "Minimalist track pants with signature adidas DNA.The perfect balance of comfort and style, these adidas track pants are a welcome addition to your top dresser drawer. Their ribbed cuffs and classic cut offer a fit that's not too tight yet not too loose in a s...",
+    "price": 34.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FIM9881_1.jpg%3Fv%3D1784882645&feedId=114294&k=5850d7d3205ccf9583ba1ca2dba562c0b8dfe57e",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FIM9881_1.jpg%3Fv%3D1784882645&feedId=114294&k=5850d7d3205ccf9583ba1ca2dba562c0b8dfe57e"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "dress",
+    "subcategory": "General Clothing",
+    "colors": [
+      "blue"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=45369174808&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=45369174808&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 75,
+    "compareAtPrice": 70,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-sst-superstar-bonded-track-pants-blue-size-m-421998494"
   },
   {
     "id": 438776113,
@@ -4981,8 +5039,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45369174809&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -4990,7 +5048,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 75,
+    "popularityScore": 74,
     "compareAtPrice": 70,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-sst-superstar-bonded-track-pants-blue-size-xs-438776113"
@@ -5039,8 +5097,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45369174813&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5048,7 +5106,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 74,
+    "popularityScore": 73,
     "compareAtPrice": 65,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-rod-laver-trainers-ftwr-white-size-5-657935906"
@@ -5097,8 +5155,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45458173471&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5106,7 +5164,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 73,
+    "popularityScore": 72,
     "compareAtPrice": 30,
     "brandSlug": "nike",
     "productSlug": "nike-nike-training-legend-dri-fit-t-shirt-blue-size-s-797988636"
@@ -5155,8 +5213,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45458173473&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5164,7 +5222,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 72,
+    "popularityScore": 71,
     "compareAtPrice": 30,
     "brandSlug": "nike",
     "productSlug": "nike-nike-training-legend-dri-fit-t-shirt-blue-size-xl-31543874"
@@ -5213,8 +5271,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45670062762&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5222,7 +5280,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 71,
+    "popularityScore": 70,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-heritage-now-funnel-velour-top-brown-size-xs-290843774"
   },
@@ -5270,8 +5328,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144100&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5279,7 +5337,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 70,
+    "popularityScore": 99,
     "compareAtPrice": 85,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-itasca-22-windbreaker-jacket-navy-size-s-620530095"
@@ -5328,8 +5386,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144101&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5337,7 +5395,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 99,
+    "popularityScore": 98,
     "compareAtPrice": 70,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-tiro-23-pro-football-training-pants-black-size-l-603752476"
@@ -5386,8 +5444,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144102&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5395,7 +5453,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 98,
+    "popularityScore": 97,
     "compareAtPrice": 90,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-essentials-down-puffer-jacket-green-size-m-654085333"
@@ -5444,8 +5502,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144103&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5453,7 +5511,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 97,
+    "popularityScore": 96,
     "compareAtPrice": 90,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-essentials-down-puffer-jacket-green-size-2xl-637307714"
@@ -5502,8 +5560,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144105&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5511,7 +5569,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 96,
+    "popularityScore": 95,
     "compareAtPrice": 50,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-reflect-in-the-dark-polar-fleece-1-4-zip-top-shadow-green-size-xs-536642000"
@@ -5560,8 +5618,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144107&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5569,7 +5627,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 95,
+    "popularityScore": 94,
     "compareAtPrice": 45,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-stadium-fleece-badge-of-sport-hoodie-wonder-steel-size-2xl-570197238"
@@ -5618,8 +5676,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144109&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5627,7 +5685,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 94,
+    "popularityScore": 93,
     "compareAtPrice": 120,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-terrex-soulstride-flow-trail-running-shoes-core-black-crystal-white-impact-orange-size-8-5-737973428"
@@ -5676,8 +5734,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144111&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5685,7 +5743,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 93,
+    "popularityScore": 92,
     "compareAtPrice": 110,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-terrex-ax4-gore-tex-hiking-shoes-grey-size-5-5-536494905"
@@ -5735,8 +5793,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144115&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5744,7 +5802,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 92,
+    "popularityScore": 91,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-rivalry-low-86-shoes-white-size-4-603605381"
@@ -5794,8 +5852,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144116&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5803,7 +5861,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 91,
+    "popularityScore": 90,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adi2000-x-women-s-shoes-white-size-4-553272524"
@@ -5853,8 +5911,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144117&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5862,7 +5920,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 90,
+    "popularityScore": 89,
     "compareAtPrice": 85,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-zx-9020-shoes-white-size-4-5-570050143"
@@ -5912,8 +5970,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144118&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5921,7 +5979,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 89,
+    "popularityScore": 88,
     "compareAtPrice": 120,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-equipment-csg-91-women-s-shoes-white-size-5-5-653938238"
@@ -5971,8 +6029,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144119&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -5980,7 +6038,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 88,
+    "popularityScore": 87,
     "compareAtPrice": 120,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-equipment-csg-91-women-s-shoes-white-size-6-5-670715857"
@@ -6030,8 +6088,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144120&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6039,7 +6097,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 87,
+    "popularityScore": 86,
     "compareAtPrice": 100,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-superstar-millencon-shoes-white-size-6-5-703220349"
@@ -6089,8 +6147,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144121&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6098,7 +6156,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 86,
+    "popularityScore": 85,
     "compareAtPrice": 85,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-astir-shoes-white-size-7-686442730"
@@ -6148,8 +6206,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144122&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6157,7 +6215,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 85,
+    "popularityScore": 84,
     "compareAtPrice": 90,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-supernova-2-0-shoes-silver-size-5-669665111"
@@ -6207,8 +6265,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45841144123&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6216,7 +6274,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 84,
+    "popularityScore": 83,
     "compareAtPrice": 65,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-advantage-shoes-white-size-5-652887492"
@@ -6266,8 +6324,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100095&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6275,7 +6333,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 83,
+    "popularityScore": 82,
     "compareAtPrice": 65,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-advantage-shoes-white-pink-size-8-62784083"
@@ -6324,8 +6382,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100096&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6333,7 +6391,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 82,
+    "popularityScore": 81,
     "compareAtPrice": 28,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-essentials-made-with-hemp-tank-top-green-size-2xl-79561702"
@@ -6382,8 +6440,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100097&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6391,7 +6449,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 81,
+    "popularityScore": 80,
     "compareAtPrice": 40,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-tiro-23-league-tracksuit-bottoms-navy-size-xl-96339321"
@@ -6440,8 +6498,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100098&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6449,7 +6507,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 80,
+    "popularityScore": 79,
     "compareAtPrice": 40,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-tiro-23-competition-match-jersey-blue-size-2xl-247337892"
@@ -6498,8 +6556,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100099&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6507,7 +6565,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 79,
+    "popularityScore": 78,
     "compareAtPrice": 50,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-fc-bayern-munich-icon-shorts-green-size-l-264115511"
@@ -6556,8 +6614,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100100&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6565,7 +6623,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 78,
+    "popularityScore": 77,
     "compareAtPrice": 50,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-fc-bayern-munich-icon-shorts-green-size-2xl-757240418"
@@ -6614,8 +6672,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100101&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6623,7 +6681,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 77,
+    "popularityScore": 76,
     "compareAtPrice": 55,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-tiro-23-competition-training-jacket-black-size-3xl-774018037"
@@ -6672,8 +6730,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100102&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6681,7 +6739,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 76,
+    "popularityScore": 75,
     "compareAtPrice": 38,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-hack-tee-black-size-2xl-723685180"
@@ -6730,8 +6788,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100103&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6739,7 +6797,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 75,
+    "popularityScore": 74,
     "compareAtPrice": 65,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-classics-sst-track-jacket-green-size-xs-740462799"
@@ -6788,8 +6846,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100104&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6797,7 +6855,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 74,
+    "popularityScore": 73,
     "compareAtPrice": 65,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-classics-sst-track-jacket-black-size-xs-690129942"
@@ -6846,8 +6904,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100106&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -6855,7 +6913,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 73,
+    "popularityScore": 72,
     "compareAtPrice": 45,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-trefoil-essentials-pants-black-size-xs-656574704"
@@ -6904,67 +6962,9 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100108&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 72,
-    "compareAtPrice": 33,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-classics-3-stripes-long-sleeve-tee-blue-size-xs-91461370"
-  },
-  {
-    "id": 58053227,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Men's Adicolor Classics 3-Stripes Long Sleeve Tee - Blue | Size: 2XL",
-    "description": "When a classic gets reinvented, you know it's got staying power and signature style. Slip on this adidas long sleeve t-shirt and head out with high-contrast attitude. The iconic 3-Stripes and an embroidered Trefoil hint at retro vibes with a modern twist. The...",
-    "price": 27.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FIA4878_1.jpg%3Fv%3D1788201273&feedId=114294&k=ee7000419f17d671d49f586fc1e0b92df39a70f3",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FIA4878_1.jpg%3Fv%3D1788201273&feedId=114294&k=ee7000419f17d671d49f586fc1e0b92df39a70f3"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=45842100110&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100110&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -6974,7 +6974,7 @@ export const verifiedProducts: Product[] = [
     "popularityScore": 71,
     "compareAtPrice": 33,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-classics-3-stripes-long-sleeve-tee-blue-size-2xl-58053227"
+    "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-classics-3-stripes-long-sleeve-tee-blue-size-xs-91461370"
   },
   {
     "id": 41275608,
@@ -7020,8 +7020,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100111&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7078,8 +7078,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100113&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7136,8 +7136,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100114&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7194,8 +7194,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100116&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7253,8 +7253,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100117&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7311,8 +7311,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100118&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7370,8 +7370,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45842100119&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7429,8 +7429,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604258&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7487,8 +7487,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604262&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7545,8 +7545,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604263&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7603,8 +7603,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604264&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7661,8 +7661,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604265&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7719,8 +7719,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604268&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7777,8 +7777,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604271&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7835,8 +7835,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604272&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7893,8 +7893,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604273&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -7951,8 +7951,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604274&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8009,8 +8009,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604276&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8067,8 +8067,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604277&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8125,8 +8125,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604278&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8183,8 +8183,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604279&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8241,8 +8241,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604280&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8299,8 +8299,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604281&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8357,8 +8357,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604282&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8415,8 +8415,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45852604284&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8473,8 +8473,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452630&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8532,8 +8532,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452631&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8590,8 +8590,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452632&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8648,8 +8648,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452633&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8706,8 +8706,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452634&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8765,8 +8765,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452635&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8824,8 +8824,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452636&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8883,8 +8883,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452637&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -8942,8 +8942,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452638&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9000,8 +9000,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452639&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9058,8 +9058,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452640&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9116,8 +9116,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452641&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9174,8 +9174,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452642&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9232,8 +9232,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452643&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9290,8 +9290,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452644&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9348,8 +9348,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452645&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9406,8 +9406,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452647&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9464,8 +9464,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452648&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9522,8 +9522,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452649&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9580,8 +9580,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452650&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9638,8 +9638,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452651&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9696,8 +9696,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452652&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9754,8 +9754,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452654&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9812,8 +9812,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452656&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9825,64 +9825,6 @@ export const verifiedProducts: Product[] = [
     "compareAtPrice": 40,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-arsenal-originals-tee-blue-size-s-597340152"
-  },
-  {
-    "id": 580562533,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Ajax Amsterdam Originals T-Shirt - Burgundy | Size: XL",
-    "description": "Clame ta passion pour l'Ajax Amsterdam avec ce t-shirt de football adidas inspiré des archives. Conçu en jersey confortable et léger, il est orné d'un logo Trèfle brodé et de 3 bandes oversize en hommage à l'héritage sportif. Au stade ou en ville, ce t-shirt...",
-    "price": 29.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FT-shirt_Ajax_Amsterdam_Originals_Bordeaux_IS6516_01_laydown.jpg%3Fv%3D1788347504&feedId=114294&k=1ea552a95e5b59f50f7b9465d1f42c9a016f3b16",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FT-shirt_Ajax_Amsterdam_Originals_Bordeaux_IS6516_01_laydown.jpg%3Fv%3D1788347504&feedId=114294&k=1ea552a95e5b59f50f7b9465d1f42c9a016f3b16"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "red"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=45859452659&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452659&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 81,
-    "compareAtPrice": 40,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-ajax-amsterdam-originals-t-shirt-burgundy-size-xl-580562533"
   },
   {
     "id": 597193057,
@@ -9928,8 +9870,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452660&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9937,7 +9879,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 80,
+    "popularityScore": 81,
     "compareAtPrice": 40,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-ajax-amsterdam-originals-t-shirt-burgundy-size-2xl-597193057"
@@ -9986,8 +9928,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452661&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -9995,7 +9937,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 79,
+    "popularityScore": 80,
     "compareAtPrice": 40,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-ajax-amsterdam-originals-t-shirt-burgundy-size-3xl-580415438"
@@ -10044,8 +9986,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452662&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10053,7 +9995,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 78,
+    "popularityScore": 79,
     "compareAtPrice": 40,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-city-escape-cargo-shorts-black-size-2xl-563637819"
@@ -10103,8 +10045,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452663&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10112,7 +10054,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 77,
+    "popularityScore": 78,
     "compareAtPrice": 65,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-city-escape-cargo-pants-brown-size-l-546860200"
@@ -10161,8 +10103,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45859452664&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10170,7 +10112,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 76,
+    "popularityScore": 77,
     "compareAtPrice": 23,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-tiro-24-shorts-blue-size-2xl-664303533"
@@ -10219,8 +10161,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611867&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10228,7 +10170,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 75,
+    "popularityScore": 76,
     "compareAtPrice": 90,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-as-roma-bring-back-1993-track-jacket-navy-size-2xl-184292066"
@@ -10277,8 +10219,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611868&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10286,7 +10228,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 74,
+    "popularityScore": 75,
     "compareAtPrice": 70,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-manchester-united-seasonal-track-top-navy-size-xs-234624923"
@@ -10335,8 +10277,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611871&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10344,7 +10286,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 73,
+    "popularityScore": 74,
     "compareAtPrice": 60,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-manchester-united-seasonal-track-pants-navy-size-m-5717357"
@@ -10394,8 +10336,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611872&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10403,7 +10345,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 72,
+    "popularityScore": 73,
     "compareAtPrice": 65,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-tennis-pro-pleated-aeroready-skirt-white-size-xl-250351796"
@@ -10453,8 +10395,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611874&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10462,69 +10404,10 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 71,
+    "popularityScore": 72,
     "compareAtPrice": 23,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-train-essentials-3-stripes-training-t-shirt-blue-size-m-216796558"
-  },
-  {
-    "id": 233574177,
-    "brand": "Adidas",
-    "name": "adidas Train Essentials 3-Stripes Training T-Shirt - Blue | Size: 2XL",
-    "description": "Unlock your better self. Work out any way you want when you're wearing this adidas t-shirt made for movement. You'll feel comfortable, thanks to AEROREADY, which manages moisture when things ramp up. The design gives you full range of motion, so go ahead and...",
-    "price": 17.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FIT5407_4.jpg%3Fv%3D1788360435&feedId=114294&k=5f7609226c3178f4e5529ad3d654e32fb0aae4e4",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FIT5407_4.jpg%3Fv%3D1788360435&feedId=114294&k=5f7609226c3178f4e5529ad3d654e32fb0aae4e4"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men",
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=45863611875&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611875&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 70,
-    "compareAtPrice": 23,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-train-essentials-3-stripes-training-t-shirt-blue-size-2xl-233574177"
   },
   {
     "id": 183241320,
@@ -10571,8 +10454,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611876&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10580,7 +10463,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 99,
+    "popularityScore": 71,
     "compareAtPrice": 30,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-island-club-mini-skirt-blue-size-s-183241320"
@@ -10629,8 +10512,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611877&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10638,7 +10521,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 98,
+    "popularityScore": 70,
     "compareAtPrice": 80,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-jamaica-24-away-jersey-green-size-xs-200018939"
@@ -10687,8 +10570,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611879&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10696,7 +10579,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 97,
+    "popularityScore": 99,
     "compareAtPrice": 38,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-essentials-solid-swim-shorts-blue-size-2xl-166463701"
@@ -10745,8 +10628,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611880&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10754,7 +10637,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 96,
+    "popularityScore": 98,
     "compareAtPrice": 40,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-pinstripe-sprinter-shorts-blue-size-s-569191565"
@@ -10803,8 +10686,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611881&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10812,7 +10695,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 95,
+    "popularityScore": 97,
     "compareAtPrice": 60,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-track-pants-brown-size-2xl-552413946"
@@ -10861,8 +10744,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611882&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10870,7 +10753,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 94,
+    "popularityScore": 96,
     "compareAtPrice": 65,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-classics-track-top-green-size-xs-535636327"
@@ -10919,8 +10802,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611884&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10928,7 +10811,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 93,
+    "popularityScore": 95,
     "compareAtPrice": 70,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-fc-bayern-woven-track-top-purple-size-l-502081089"
@@ -10977,8 +10860,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611885&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -10986,7 +10869,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 92,
+    "popularityScore": 94,
     "compareAtPrice": 50,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-argentina-travel-shorts-blue-size-xl-485303470"
@@ -11035,8 +10918,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611886&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11044,7 +10927,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 91,
+    "popularityScore": 93,
     "compareAtPrice": 50,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-argentina-travel-shorts-blue-size-2xl-468525851"
@@ -11093,8 +10976,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611887&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11102,7 +10985,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 90,
+    "popularityScore": 92,
     "compareAtPrice": 35,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-3-stripes-shorts-grey-size-s-451748232"
@@ -11152,8 +11035,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611888&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11161,7 +11044,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 89,
+    "popularityScore": 91,
     "compareAtPrice": 30,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-trefoil-bra-black-size-xl-434970613"
@@ -11210,8 +11093,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611890&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11219,7 +11102,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 88,
+    "popularityScore": 90,
     "compareAtPrice": 45,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-graphics-camo-stripe-shorts-beige-size-xs-215810820"
@@ -11268,8 +11151,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611891&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11277,7 +11160,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 87,
+    "popularityScore": 89,
     "compareAtPrice": 45,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-graphics-camo-stripe-shorts-beige-size-2xl-232588439"
@@ -11326,8 +11209,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611893&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11335,7 +11218,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 86,
+    "popularityScore": 88,
     "compareAtPrice": 45,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-seasonal-essentials-camouflage-sweatshirt-green-size-s-266143677"
@@ -11384,8 +11267,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611895&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11393,7 +11276,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 85,
+    "popularityScore": 87,
     "compareAtPrice": 65,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-city-escape-polar-fleece-1-2-zip-top-grey-size-s-165477963"
@@ -11442,8 +11325,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611896&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11451,7 +11334,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 84,
+    "popularityScore": 86,
     "compareAtPrice": 65,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-city-escape-polar-fleece-1-2-zip-top-grey-size-xl-182255582"
@@ -11500,8 +11383,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45864521626&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11509,7 +11392,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 83,
+    "popularityScore": 85,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-river-plate-1994-track-top-red-size-m-434490128"
@@ -11558,8 +11441,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45864521627&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11567,7 +11450,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 82,
+    "popularityScore": 84,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-river-plate-1994-track-top-red-size-2xl-451267747"
@@ -11616,8 +11499,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45864521628&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11625,7 +11508,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 81,
+    "popularityScore": 83,
     "compareAtPrice": 85,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-river-plate-1994-track-pants-black-size-s-669376794"
@@ -11674,8 +11557,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45864521630&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11683,7 +11566,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 80,
+    "popularityScore": 82,
     "compareAtPrice": 30,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-racket-sport-rebels-graphic-t-shirt-grey-size-2xl-635968651"
@@ -11733,8 +11616,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45872702752&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11742,7 +11625,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 79,
+    "popularityScore": 81,
     "compareAtPrice": 50,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-primelift-loose-fit-back-ventilation-hoodie-white-size-l-637052924"
@@ -11791,8 +11674,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45872702754&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11800,7 +11683,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 78,
+    "popularityScore": 80,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-corduroy-coach-jacket-brown-size-2xl-603497686"
@@ -11850,8 +11733,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45872702757&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11859,7 +11742,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 77,
+    "popularityScore": 79,
     "compareAtPrice": 40,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-team-ethiopia-training-t-shirt-red-size-xl-586720067"
@@ -11909,8 +11792,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45872702759&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11918,7 +11801,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 76,
+    "popularityScore": 78,
     "compareAtPrice": 50,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-future-icons-3-stripes-sweatshirt-multi-colour-size-m-21606733"
@@ -11967,8 +11850,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45872702764&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -11976,7 +11859,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 75,
+    "popularityScore": 77,
     "compareAtPrice": 50,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-game-and-go-training-hoodie-green-size-2xl-384337893"
@@ -12025,8 +11908,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45872702765&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12034,7 +11917,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 74,
+    "popularityScore": 76,
     "compareAtPrice": 55,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-game-and-go-training-full-zip-hoodie-red-size-2xl-367560274"
@@ -12083,8 +11966,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45872702766&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12092,7 +11975,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 73,
+    "popularityScore": 75,
     "compareAtPrice": 110,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-terrex-multi-hybrid-insulated-hooded-jacket-navy-size-xl-350782655"
@@ -12141,8 +12024,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45872702767&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12150,7 +12033,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 72,
+    "popularityScore": 74,
     "compareAtPrice": 23,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-aeroready-essentials-chelsea-3-stripes-shorts-green-size-2xl-334005036"
@@ -12199,8 +12082,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45872702770&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12208,7 +12091,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 71,
+    "popularityScore": 73,
     "compareAtPrice": 23,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-tiro-24-training-shorts-blue-size-m-216414608"
@@ -12257,8 +12140,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45877006392&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12266,7 +12149,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 70,
+    "popularityScore": 72,
     "compareAtPrice": 50,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-yoga-cover-up-beige-size-s-62250880"
@@ -12315,8 +12198,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45877006393&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12324,7 +12207,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 99,
+    "popularityScore": 71,
     "compareAtPrice": 50,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-yoga-cover-up-purple-size-s-79028499"
@@ -12374,8 +12257,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45877006394&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12383,7 +12266,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 98,
+    "popularityScore": 70,
     "compareAtPrice": 28,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-aeroknit-training-tank-top-purple-size-l-162916594"
@@ -12432,8 +12315,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45877006395&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12441,7 +12324,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 97,
+    "popularityScore": 99,
     "compareAtPrice": 50,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-train-essentials-camo-training-pants-green-size-l-179694213"
@@ -12491,8 +12374,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45877006396&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12500,7 +12383,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 96,
+    "popularityScore": 98,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-knit-cardigan-green-size-s-129361356"
@@ -12550,8 +12433,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45877006397&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12559,7 +12442,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 95,
+    "popularityScore": 97,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-knit-cardigan-green-size-m-146138975"
@@ -12608,8 +12491,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45877006398&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12617,7 +12500,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 94,
+    "popularityScore": 96,
     "compareAtPrice": 65,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-polar-fleece-shirt-beige-size-2xl-230027070"
@@ -12666,8 +12549,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45877006399&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12675,7 +12558,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 93,
+    "popularityScore": 95,
     "compareAtPrice": 55,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-70s-track-joggers-green-size-xs-246804689"
@@ -12724,8 +12607,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45877006400&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12733,7 +12616,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 92,
+    "popularityScore": 94,
     "compareAtPrice": 55,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-70s-track-joggers-green-size-m-505849590"
@@ -12782,8 +12665,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45877006401&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12791,7 +12674,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 91,
+    "popularityScore": 93,
     "compareAtPrice": 80,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-david-beckham-originals-jersey-beige-size-xs-522627209"
@@ -12840,8 +12723,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45877006402&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12849,7 +12732,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 90,
+    "popularityScore": 92,
     "compareAtPrice": 80,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-david-beckham-originals-jersey-beige-size-m-472294352"
@@ -12899,8 +12782,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45877006403&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12908,7 +12791,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 89,
+    "popularityScore": 91,
     "compareAtPrice": 89.95,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-eqt-support-rf-women-s-trainers-red-size-5-489071971"
@@ -12957,8 +12840,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45885069997&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -12966,7 +12849,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 88,
+    "popularityScore": 90,
     "compareAtPrice": 63,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-3-stripes-hoodie-black-size-xs-249561441"
@@ -13016,8 +12899,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597148&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13025,7 +12908,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 87,
+    "popularityScore": 89,
     "compareAtPrice": 84.95,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-falcon-women-s-shoes-white-size-7-5-149002097"
@@ -13075,8 +12958,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597149&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13084,7 +12967,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 86,
+    "popularityScore": 88,
     "compareAtPrice": 84.95,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-falcon-women-s-shoes-black-size-6-132224478"
@@ -13133,8 +13016,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597150&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13142,7 +13025,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 85,
+    "popularityScore": 87,
     "compareAtPrice": 64.95,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-w-n-d-jacket-black-size-xl-713968336"
@@ -13192,8 +13075,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597151&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13201,7 +13084,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 84,
+    "popularityScore": 86,
     "compareAtPrice": 85,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-rivalry-low-shoes-white-size-4-5-730745955"
@@ -13251,8 +13134,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597152&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13260,7 +13143,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 83,
+    "popularityScore": 85,
     "compareAtPrice": 100,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-nite-jogger-women-s-shoes-pink-size-6-747523574"
@@ -13310,8 +13193,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597153&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13319,7 +13202,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 82,
+    "popularityScore": 84,
     "compareAtPrice": 140,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-solarboost-3-women-s-running-shoes-black-size-5-5-764301193"
@@ -13369,8 +13252,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611898&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13378,7 +13261,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 81,
+    "popularityScore": 83,
     "compareAtPrice": 110,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-adizero-adios-6-women-s-running-shoes-green-size-5-81589868"
@@ -13427,8 +13310,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611902&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13436,7 +13319,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 80,
+    "popularityScore": 82,
     "compareAtPrice": 120,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-hyperturf-shoes-grey-size-6-5-281506852"
@@ -13485,8 +13368,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611904&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13494,7 +13377,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 79,
+    "popularityScore": 81,
     "compareAtPrice": 90,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-essentials-down-puffer-jacket-black-size-s-247951614"
@@ -13543,8 +13426,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611906&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13552,7 +13435,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 78,
+    "popularityScore": 80,
     "compareAtPrice": 55,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-firebird-track-pants-black-size-xs-214396376"
@@ -13601,8 +13484,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611909&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13610,7 +13493,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 77,
+    "popularityScore": 79,
     "compareAtPrice": 80,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-nora-skate-shoes-black-size-7-5-197618757"
@@ -13660,8 +13543,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45863611910&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13669,7 +13552,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 76,
+    "popularityScore": 78,
     "compareAtPrice": 120,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-adizero-adios-7-shoes-green-size-5-173958387"
@@ -13718,8 +13601,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597156&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13727,7 +13610,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 75,
+    "popularityScore": 77,
     "compareAtPrice": 60,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-advantage-shoes-white-size-7-14634050"
@@ -13777,8 +13660,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597157&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13786,7 +13669,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 74,
+    "popularityScore": 76,
     "compareAtPrice": 165,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-ultraboost-22-women-s-running-shoes-black-size-4-31411669"
@@ -13836,8 +13719,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597158&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13845,7 +13728,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 73,
+    "popularityScore": 75,
     "compareAtPrice": 110,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-zx-2k-boost-2-0-shoes-white-size-6-5-48189288"
@@ -13895,8 +13778,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597159&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13904,7 +13787,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 72,
+    "popularityScore": 74,
     "compareAtPrice": 85,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-astir-women-s-shoes-brown-size-5-5-64966907"
@@ -13954,8 +13837,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597160&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -13963,7 +13846,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 71,
+    "popularityScore": 73,
     "compareAtPrice": 85,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-astir-shoes-green-size-5-5-468974699"
@@ -14013,8 +13896,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597161&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14022,7 +13905,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 70,
+    "popularityScore": 72,
     "compareAtPrice": 130,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-zx-5k-boost-shoes-grey-size-4-452197080"
@@ -14071,8 +13954,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597162&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14080,7 +13963,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 99,
+    "popularityScore": 71,
     "compareAtPrice": 120,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-superstar-supermodified-shoes-black-size-7-502529937"
@@ -14130,8 +14013,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597163&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14139,7 +14022,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 98,
+    "popularityScore": 70,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-astir-sn-women-s-shoes-white-size-5-485752318"
@@ -14188,8 +14071,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597164&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14197,7 +14080,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 97,
+    "popularityScore": 99,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-superstar-shoes-white-size-6-536085175"
@@ -14247,8 +14130,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597165&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14256,7 +14139,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 96,
+    "popularityScore": 98,
     "compareAtPrice": 85,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-continental-80-stripes-vegan-icons-shoes-white-size-5-5-519307556"
@@ -14306,8 +14189,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597166&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14315,7 +14198,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 95,
+    "popularityScore": 97,
     "compareAtPrice": 85,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-continental-80-stripes-vegan-icons-shoes-white-size-6-5-569640413"
@@ -14365,8 +14248,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597167&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14374,7 +14257,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 94,
+    "popularityScore": 96,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-retropy-adisuper-shoes-black-size-6-552862794"
@@ -14424,8 +14307,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597171&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14433,7 +14316,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 93,
+    "popularityScore": 95,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-valerance-women-s-shoes-black-size-7-384939509"
@@ -14483,8 +14366,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597172&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14492,7 +14375,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 92,
+    "popularityScore": 94,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-niteball-women-s-shoes-white-size-7-334606652"
@@ -14542,8 +14425,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597173&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14551,7 +14434,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 91,
+    "popularityScore": 93,
     "compareAtPrice": 110,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-zx-2k-boost-2-0-women-s-shoes-green-size-6-351384271"
@@ -14600,8 +14483,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597174&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14609,68 +14492,10 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 90,
+    "popularityScore": 92,
     "compareAtPrice": 120,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-orketro-shoes-white-size-8-301051414"
-  },
-  {
-    "id": 267496176,
-    "brand": "adidas Originals",
-    "name": "adidas Originals ZX 700 HD Shoes - Navy | Size: 5.5",
-    "description": "The path to the future is built on lessons from the past. With that in mind, these adidas ZX 700 HD Shoes revisit their roots as high-mileage running shoes from the '80s. The comfort and casual style are as strong as ever. Now that they're updated using recyc...",
-    "price": 59.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FZX_700_HD_Shoes_Blue_H01850_01_standard_1.jpg%3Fv%3D1788522539&feedId=114294&k=7830129de287b06861aeacd57bd95531516ba3a0",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FZX_700_HD_Shoes_Blue_H01850_01_standard_1.jpg%3Fv%3D1788522539&feedId=114294&k=7830129de287b06861aeacd57bd95531516ba3a0"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
-    "subcategory": "General Clothing",
-    "colors": [
-      "navy"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=45887597176&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597176&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 89,
-    "compareAtPrice": 75,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-zx-700-hd-shoes-navy-size-5-5-267496176"
   },
   {
     "id": 284273795,
@@ -14716,8 +14541,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597177&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14725,7 +14550,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 88,
+    "popularityScore": 91,
     "compareAtPrice": 75,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-court-tourino-shoes-white-size-5-284273795"
@@ -14774,8 +14599,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597178&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14783,7 +14608,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 87,
+    "popularityScore": 90,
     "compareAtPrice": 75,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-court-tourino-shoes-white-size-5-5-502382842"
@@ -14832,8 +14657,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597179&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14841,7 +14666,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 86,
+    "popularityScore": 89,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-national-tennis-og-shoes-white-size-7-5-519160461"
@@ -14890,8 +14715,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597180&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14899,7 +14724,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 85,
+    "popularityScore": 88,
     "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-national-tennis-og-shoes-white-size-8-5-150973573"
@@ -14949,8 +14774,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597181&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -14958,7 +14783,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 84,
+    "popularityScore": 87,
     "compareAtPrice": 75,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-court-tourino-shoes-white-size-6-134195954"
@@ -15008,8 +14833,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597182&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15017,7 +14842,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 83,
+    "popularityScore": 86,
     "compareAtPrice": 75,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-court-tourino-shoes-white-size-7-5-117418335"
@@ -15067,8 +14892,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45887597183&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15076,7 +14901,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 82,
+    "popularityScore": 85,
     "compareAtPrice": 75,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-court-tourino-shoes-white-size-9-100640716"
@@ -15125,8 +14950,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638918&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15134,7 +14959,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 81,
+    "popularityScore": 84,
     "compareAtPrice": 38.7,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-must-haves-backpack-black-size-one-size-747748222"
@@ -15183,8 +15008,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638921&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15192,7 +15017,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 80,
+    "popularityScore": 83,
     "compareAtPrice": 50,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-house-of-tiro-woven-track-top-grey-size-2xl-780252714"
@@ -15241,8 +15066,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638922&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15250,7 +15075,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 79,
+    "popularityScore": 82,
     "compareAtPrice": 50,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-house-of-tiro-woven-track-top-grey-size-3xl-763475095"
@@ -15299,8 +15124,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638923&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15308,7 +15133,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 78,
+    "popularityScore": 81,
     "compareAtPrice": 35,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-teamgeist-jersey-green-size-s-746697476"
@@ -15357,8 +15182,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638924&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15366,7 +15191,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 77,
+    "popularityScore": 80,
     "compareAtPrice": 35,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-teamgeist-jersey-green-size-m-729919857"
@@ -15415,8 +15240,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638925&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15424,7 +15249,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 76,
+    "popularityScore": 79,
     "compareAtPrice": 35,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-teamgeist-jersey-green-size-2xl-713142238"
@@ -15474,8 +15299,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638926&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15483,7 +15308,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 75,
+    "popularityScore": 78,
     "compareAtPrice": 40,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-linear-logo-bodysuit-orange-size-m-696364619"
@@ -15533,8 +15358,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638927&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15542,7 +15367,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 74,
+    "popularityScore": 77,
     "compareAtPrice": 40,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-linear-logo-bodysuit-orange-size-2xl-679587000"
@@ -15591,8 +15416,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638928&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15600,7 +15425,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 73,
+    "popularityScore": 76,
     "compareAtPrice": 55,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-house-of-tiro-nations-pack-track-top-navy-size-xl-662809381"
@@ -15649,8 +15474,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638929&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15658,7 +15483,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 72,
+    "popularityScore": 75,
     "compareAtPrice": 55,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-house-of-tiro-nations-pack-track-top-navy-size-2xl-646031762"
@@ -15708,8 +15533,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638931&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15717,7 +15542,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 71,
+    "popularityScore": 74,
     "compareAtPrice": 33,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-3-stripes-long-sleeve-crop-long-sleeve-top-pink-size-s-712995143"
@@ -15767,8 +15592,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638932&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15776,7 +15601,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 70,
+    "popularityScore": 73,
     "compareAtPrice": 33,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-3-stripes-long-sleeve-crop-long-sleeve-top-pink-size-m-729772762"
@@ -15826,8 +15651,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638933&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15835,7 +15660,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 99,
+    "popularityScore": 72,
     "compareAtPrice": 33,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-3-stripes-long-sleeve-crop-long-sleeve-top-pink-size-l-746550381"
@@ -15884,8 +15709,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638935&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15893,7 +15718,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 98,
+    "popularityScore": 71,
     "compareAtPrice": 85,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-kareem-abdul-jabbar-lo-shoes-white-size-5-645884667"
@@ -15942,8 +15767,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638936&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -15951,7 +15776,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 97,
+    "popularityScore": 70,
     "compareAtPrice": 85,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-kareem-abdul-jabbar-lo-shoes-white-size-5-5-662662286"
@@ -16000,8 +15825,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638937&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16009,7 +15834,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 96,
+    "popularityScore": 99,
     "compareAtPrice": 50,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-summer-knit-shorts-grey-size-2xl-679439905"
@@ -16058,8 +15883,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638938&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16067,7 +15892,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 95,
+    "popularityScore": 98,
     "compareAtPrice": 65,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-2000s-woven-track-tracksuit-bottoms-grey-size-xs-561996572"
@@ -16116,8 +15941,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638939&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16125,7 +15950,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 94,
+    "popularityScore": 97,
     "compareAtPrice": 65,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-2000s-woven-track-tracksuit-bottoms-grey-size-m-578774191"
@@ -16174,8 +15999,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638940&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16183,7 +16008,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 93,
+    "popularityScore": 96,
     "compareAtPrice": 55,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-adicolor-classics-beckenbauer-track-pants-grey-size-xs-595404715"
@@ -16233,8 +16058,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638943&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16242,7 +16067,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 92,
+    "popularityScore": 95,
     "compareAtPrice": 94.6,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-moveboost-running-shoes-white-size-4-5-612182334"
@@ -16292,8 +16117,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638944&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16301,7 +16126,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 91,
+    "popularityScore": 94,
     "compareAtPrice": 94.6,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-moveboost-running-shoes-white-size-5-662515191"
@@ -16351,8 +16176,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638945&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16360,7 +16185,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 90,
+    "popularityScore": 93,
     "compareAtPrice": 94.6,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-moveboost-running-shoes-white-size-5-5-645737572"
@@ -16409,8 +16234,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638948&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16418,7 +16243,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 89,
+    "popularityScore": 92,
     "compareAtPrice": 30,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-climacool-training-shorts-orange-size-m-461183763"
@@ -16467,8 +16292,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638949&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16476,7 +16301,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 88,
+    "popularityScore": 91,
     "compareAtPrice": 30,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-men-s-climacool-training-shorts-orange-size-l-444406144"
@@ -16526,8 +16351,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45894638950&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16535,7 +16360,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 87,
+    "popularityScore": 90,
     "compareAtPrice": 130,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-tartan-collegiate-jacket-navy-size-s-494591906"
@@ -16584,8 +16409,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45930936287&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16593,7 +16418,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 86,
+    "popularityScore": 89,
     "compareAtPrice": 110,
     "brandSlug": "nike",
     "productSlug": "nike-nike-tech-men-s-fleece-windrunner-full-zip-jacket-white-blue-size-s-692555831"
@@ -16642,8 +16467,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45930936288&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16651,7 +16476,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 85,
+    "popularityScore": 88,
     "compareAtPrice": 110,
     "brandSlug": "nike",
     "productSlug": "nike-nike-tech-men-s-fleece-windrunner-full-zip-jacket-white-blue-size-m-508002022"
@@ -16700,8 +16525,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=45930936289&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16709,7 +16534,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 84,
+    "popularityScore": 87,
     "compareAtPrice": 110,
     "brandSlug": "nike",
     "productSlug": "nike-nike-tech-men-s-fleece-windrunner-full-zip-jacket-white-blue-size-l-524779641"
@@ -16758,8 +16583,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46120375487&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16767,7 +16592,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 83,
+    "popularityScore": 86,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-camo-shorts-beige-size-xs-338477154"
   },
@@ -16815,8 +16640,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46120375488&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16824,7 +16649,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 82,
+    "popularityScore": 85,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-camo-shorts-beige-size-l-388810011"
   },
@@ -16872,8 +16697,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46120375489&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16881,7 +16706,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 81,
+    "popularityScore": 84,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-trefoil-essentials-hoodie-brown-size-xs-372032392"
   },
@@ -16929,8 +16754,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46120375490&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16938,7 +16763,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 80,
+    "popularityScore": 83,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-trefoil-essentials-hoodie-brown-size-2xl-438092122"
   },
@@ -16987,8 +16812,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46120375491&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -16996,7 +16821,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 79,
+    "popularityScore": 82,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-women-s-terrex-multi-large-logo-hoodie-white-size-xl-454869741"
   },
@@ -17044,8 +16869,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46120375492&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17053,7 +16878,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 78,
+    "popularityScore": 81,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-game-and-go-training-hoodie-navy-size-s-404536884"
   },
@@ -17102,8 +16927,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46120375493&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17111,7 +16936,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 77,
+    "popularityScore": 80,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-fc-bayern-track-top-red-size-l-421314503"
   },
@@ -17159,8 +16984,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46120375494&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17168,7 +16993,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 76,
+    "popularityScore": 79,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-modern-essentials-graphic-hoodie-green-size-2xl-370981646"
   },
@@ -17216,8 +17041,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46120375495&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17225,7 +17050,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 75,
+    "popularityScore": 78,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-city-escape-premium-zip-off-cargo-pants-green-size-l-387759265"
   },
@@ -17273,8 +17098,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46120375496&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17282,7 +17107,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 74,
+    "popularityScore": 77,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-house-of-tiro-nations-pack-track-jacket-navy-size-2xl-337426408"
   },
@@ -17330,8 +17155,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46120375497&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17339,7 +17164,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 73,
+    "popularityScore": 76,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-archive-track-top-white-size-s-354204027"
   },
@@ -17388,8 +17213,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268048&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17397,7 +17222,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 72,
+    "popularityScore": 75,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-3-stripes-french-terry-shorts-green-size-xs-634851962"
   },
@@ -17446,8 +17271,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268049&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17455,7 +17280,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 71,
+    "popularityScore": 74,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-3-stripes-french-terry-shorts-green-size-m-651629581"
   },
@@ -17504,8 +17329,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268050&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17513,7 +17338,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 70,
+    "popularityScore": 73,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-3-stripes-french-terry-shorts-green-size-l-601443819"
   },
@@ -17562,8 +17387,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268051&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17571,7 +17396,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 99,
+    "popularityScore": 72,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-3-stripes-french-terry-shorts-beige-size-m-584666200"
   },
@@ -17620,8 +17445,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268052&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17629,7 +17454,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 98,
+    "popularityScore": 71,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-3-stripes-french-terry-shorts-beige-size-l-634999057"
   },
@@ -17678,8 +17503,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268053&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17687,7 +17512,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 97,
+    "popularityScore": 70,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-sst-superstar-track-pants-purple-size-m-618221438"
   },
@@ -17735,8 +17560,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268054&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17744,7 +17569,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 96,
+    "popularityScore": 99,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-all-szn-fleece-hoodie-blue-size-2xl-668554295"
   },
@@ -17793,8 +17618,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268055&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17802,7 +17627,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 95,
+    "popularityScore": 98,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-essentials-slim-tee-brown-size-s-651776676"
   },
@@ -17851,8 +17676,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268056&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17860,7 +17685,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 94,
+    "popularityScore": 97,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-essentials-slim-tee-brown-size-l-702109533"
   },
@@ -17908,8 +17733,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268057&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17917,7 +17742,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 93,
+    "popularityScore": 96,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-essentials-french-terry-shorts-green-size-s-685331914"
   },
@@ -17965,8 +17790,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268058&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -17974,7 +17799,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 92,
+    "popularityScore": 95,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-tonal-puffer-vest-jacket-navy-size-s-467222867"
   },
@@ -18022,8 +17847,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268059&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18031,7 +17856,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 91,
+    "popularityScore": 94,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-all-szn-french-terry-hoodie-purple-size-m-450445248"
   },
@@ -18080,8 +17905,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268060&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18089,7 +17914,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 90,
+    "popularityScore": 93,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-3-stripes-short-hoodie-purple-size-l-46437456"
   },
@@ -18137,8 +17962,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268061&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18146,7 +17971,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 89,
+    "popularityScore": 92,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-firebird-loose-track-pants-purple-size-xs-63215075"
   },
@@ -18194,8 +18019,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268062&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18203,7 +18028,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 88,
+    "popularityScore": 91,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-firebird-loose-track-pants-purple-size-m-79992694"
   },
@@ -18252,8 +18077,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268063&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18261,7 +18086,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 87,
+    "popularityScore": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-3-stripes-baby-tee-green-size-xl-96770313"
   },
@@ -18309,8 +18134,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268064&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18318,7 +18143,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 86,
+    "popularityScore": 89,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-colourblocked-3-stripes-tee-white-size-xs-113547932"
   },
@@ -18366,8 +18191,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268065&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18375,7 +18200,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 85,
+    "popularityScore": 88,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-colourblocked-3-stripes-tee-white-size-2xl-130325551"
   },
@@ -18424,8 +18249,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268066&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18433,7 +18258,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 84,
+    "popularityScore": 87,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-essentials-french-terry-joggers-purple-size-s-147103170"
   },
@@ -18481,8 +18306,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268067&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18490,7 +18315,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 83,
+    "popularityScore": 86,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-japan-x-y-3-gym-sack-black-size-ns-163880789"
   },
@@ -18538,8 +18363,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268068&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18547,7 +18372,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 82,
+    "popularityScore": 85,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-all-szn-fleece-graphic-hoodie-blue-size-2xl-180658408"
   },
@@ -18596,8 +18421,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268069&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18605,7 +18430,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 81,
+    "popularityScore": 84,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-flared-leggings-navy-size-m-197436027"
   },
@@ -18654,8 +18479,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268070&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18663,7 +18488,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 80,
+    "popularityScore": 83,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-firebird-shorts-navy-size-m-147250265"
   },
@@ -18712,8 +18537,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268071&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18721,7 +18546,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 79,
+    "popularityScore": 82,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-3-stripes-pinstripe-t-shirt-pink-size-s-130472646"
   },
@@ -18770,8 +18595,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268072&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18779,7 +18604,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 78,
+    "popularityScore": 81,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-3-stripes-pinstripe-t-shirt-pink-size-m-113695027"
   },
@@ -18827,8 +18652,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268073&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18836,7 +18661,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 77,
+    "popularityScore": 80,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-trefoil-essentials-full-zip-hoodie-grey-size-xs-96917408"
   },
@@ -18884,8 +18709,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268074&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18893,7 +18718,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 76,
+    "popularityScore": 79,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-trefoil-essentials-full-zip-hoodie-grey-size-s-214360741"
   },
@@ -18941,8 +18766,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268075&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -18950,7 +18775,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 75,
+    "popularityScore": 78,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-trefoil-essentials-full-zip-hoodie-grey-size-2xl-197583122"
   },
@@ -18998,8 +18823,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268076&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19007,7 +18832,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 74,
+    "popularityScore": 77,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-atlanta-cut-line-nylon-shorts-beige-size-s-180805503"
   },
@@ -19055,8 +18880,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268077&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19064,7 +18889,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 73,
+    "popularityScore": 76,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-atlanta-cut-line-nylon-shorts-beige-size-l-164027884"
   },
@@ -19113,8 +18938,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268078&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19122,7 +18947,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 72,
+    "popularityScore": 75,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-essentials-fleece-loose-joggers-purple-size-xs-281471217"
   },
@@ -19171,8 +18996,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268079&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19180,7 +19005,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 71,
+    "popularityScore": 74,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-essentials-fleece-loose-joggers-brown-size-xs-264693598"
   },
@@ -19229,8 +19054,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268080&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19238,7 +19063,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 70,
+    "popularityScore": 73,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-essentials-fleece-loose-joggers-brown-size-m-384255502"
   },
@@ -19286,8 +19111,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268081&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19295,7 +19120,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 99,
+    "popularityScore": 72,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-classics-sst-superstar-track-jacket-green-size-m-401033121"
   },
@@ -19343,8 +19168,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268082&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19352,7 +19177,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 98,
+    "popularityScore": 71,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-classics-sst-superstar-track-pants-navy-size-xs-350700264"
   },
@@ -19400,8 +19225,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268083&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19409,7 +19234,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 97,
+    "popularityScore": 70,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-classics-firebird-track-top-purple-size-m-367477883"
   },
@@ -19457,8 +19282,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268084&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19466,7 +19291,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 96,
+    "popularityScore": 99,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-classics-3-stripes-crew-brown-size-xs-451365978"
   },
@@ -19514,8 +19339,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268085&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19523,7 +19348,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 95,
+    "popularityScore": 98,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-classics-3-stripes-crew-brown-size-l-468143597"
   },
@@ -19571,8 +19396,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268086&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19580,7 +19405,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 94,
+    "popularityScore": 97,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-mock-eyelet-vest-black-size-xs-417810740"
   },
@@ -19628,8 +19453,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268087&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19637,7 +19462,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 93,
+    "popularityScore": 96,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-mock-eyelet-vest-black-size-s-434588359"
   },
@@ -19685,8 +19510,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268088&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19694,7 +19519,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 92,
+    "popularityScore": 95,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-trefoil-essentials-tee-white-size-s-250034550"
   },
@@ -19742,8 +19567,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268089&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19751,7 +19576,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 91,
+    "popularityScore": 94,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-trefoil-essentials-tee-white-size-m-266812169"
   },
@@ -19800,8 +19625,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268090&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19809,7 +19634,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 90,
+    "popularityScore": 93,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-classics-3-stripes-t-shirt-yellow-size-xs-485068311"
   },
@@ -19857,8 +19682,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268091&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19866,7 +19691,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 89,
+    "popularityScore": 92,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-woven-firebird-track-top-green-size-xs-468290692"
   },
@@ -19914,8 +19739,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268092&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19923,7 +19748,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 88,
+    "popularityScore": 91,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-woven-firebird-track-top-green-size-l-518623549"
   },
@@ -19971,8 +19796,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268093&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -19980,7 +19805,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 87,
+    "popularityScore": 90,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-trefoil-windbreaker-blue-size-m-501845930"
   },
@@ -20028,8 +19853,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268094&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20037,7 +19862,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 86,
+    "popularityScore": 89,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-trefoil-windbreaker-blue-size-2xl-417957835"
   },
@@ -20085,8 +19910,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268095&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20094,7 +19919,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 85,
+    "popularityScore": 88,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-mock-eyelet-shorts-green-size-xs-401180216"
   },
@@ -20142,8 +19967,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268096&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20151,7 +19976,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 84,
+    "popularityScore": 87,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-mock-eyelet-shorts-green-size-2xl-451513073"
   },
@@ -20199,8 +20024,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268097&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20208,7 +20033,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 83,
+    "popularityScore": 86,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-training-supply-sport-tee-spezial-3-white-size-xs-434735454"
   },
@@ -20256,8 +20081,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268098&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20265,7 +20090,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 82,
+    "popularityScore": 85,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-training-supply-sport-tee-spezial-3-white-size-2xl-350847359"
   },
@@ -20313,8 +20138,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268099&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20322,7 +20147,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 81,
+    "popularityScore": 84,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-rolling-links-polo-shirt-green-size-l-334069740"
   },
@@ -20370,8 +20195,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268100&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20379,7 +20204,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 80,
+    "popularityScore": 83,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-rolling-links-polo-shirt-green-size-2xl-343417681"
   },
@@ -20427,8 +20252,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268101&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20436,7 +20261,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 79,
+    "popularityScore": 82,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-woven-firebird-track-pants-green-size-xs-326640062"
   },
@@ -20484,8 +20309,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268102&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20493,7 +20318,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 78,
+    "popularityScore": 81,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-woven-firebird-track-pants-green-size-m-309862443"
   },
@@ -20541,8 +20366,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268103&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20550,7 +20375,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 77,
+    "popularityScore": 80,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-classics-3-stripes-long-sleeve-tee-green-size-2xl-293084824"
   },
@@ -20599,8 +20424,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268104&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20608,7 +20433,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 76,
+    "popularityScore": 79,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-3-stripes-pinstripe-t-shirt-purple-size-m-410528157"
   },
@@ -20656,8 +20481,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268105&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20665,7 +20490,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 75,
+    "popularityScore": 78,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-sst-superstar-jacket-track-top-black-size-xs-393750538"
   },
@@ -20713,8 +20538,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268106&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20722,7 +20547,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 74,
+    "popularityScore": 77,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-sst-superstar-jacket-track-top-black-size-s-376972919"
   },
@@ -20770,8 +20595,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268107&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20779,7 +20604,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 73,
+    "popularityScore": 76,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-skateboarding-gatsele-track-pants-black-size-xs-360195300"
   },
@@ -20827,8 +20652,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268108&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20836,7 +20661,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 72,
+    "popularityScore": 75,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-skateboarding-gatsele-track-pants-black-size-m-209196729"
   },
@@ -20884,8 +20709,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268109&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20893,7 +20718,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 71,
+    "popularityScore": 74,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-skateboarding-gatsele-track-pants-black-size-2xl-192419110"
   },
@@ -20941,8 +20766,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268110&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -20950,7 +20775,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 70,
+    "popularityScore": 73,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-train-essentials-training-t-shirt-yellow-size-3xl-242604872"
   },
@@ -20998,8 +20823,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268111&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -21007,7 +20832,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 99,
+    "popularityScore": 72,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-train-essentials-training-t-shirt-yellow-size-4xl-259382491"
   },
@@ -21055,8 +20880,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268112&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -21064,7 +20889,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 98,
+    "popularityScore": 71,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-gym-climacool-training-t-shirt-green-size-2xl-276160110"
   },
@@ -21112,8 +20937,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268113&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -21121,7 +20946,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 97,
+    "popularityScore": 70,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-tiro-25-essentials-woven-hoodie-grey-size-m-292937729"
   },
@@ -21169,8 +20994,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268115&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -21178,7 +21003,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 96,
+    "popularityScore": 99,
     "brandSlug": "adidas",
     "productSlug": "adidas-adidas-men-s-z-n-e-tracksuit-bottoms-grey-size-l-326492967"
   },
@@ -21227,8 +21052,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268116&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -21236,7 +21061,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 95,
+    "popularityScore": 98,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-3-stripes-flared-track-pants-brown-size-s-343270586"
   },
@@ -21285,8 +21110,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268117&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -21294,7 +21119,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 94,
+    "popularityScore": 97,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-beckenbauer-track-pants-green-size-m-360048205"
   },
@@ -21343,8 +21168,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268118&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -21352,7 +21177,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 93,
+    "popularityScore": 96,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-80s-short-shorts-multi-colour-size-xl-108383920"
   },
@@ -21400,8 +21225,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268119&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -21409,7 +21234,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 92,
+    "popularityScore": 95,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-adicolor-denim-firebird-track-top-blue-size-3xl-125161539"
   },
@@ -21457,8 +21282,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268120&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -21466,7 +21291,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 91,
+    "popularityScore": 94,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-premium-cali-tee-black-size-l-555694723"
   },
@@ -21515,8 +21340,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268121&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -21524,7 +21349,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 90,
+    "popularityScore": 93,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-women-s-3-stripes-baby-tee-pink-size-xl-538917104"
   },
@@ -21572,8 +21397,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268122&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -21581,7 +21406,7 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 89,
+    "popularityScore": 92,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-80s-loose-striped-tee-white-size-xs-589249961"
   },
@@ -21629,8 +21454,8 @@ export const verifiedProducts: Product[] = [
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
     "affiliateUrl": "https://www.awin1.com/pclick.php?p=46148268123&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
@@ -21638,2869 +21463,545 @@ export const verifiedProducts: Product[] = [
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 88,
+    "popularityScore": 91,
     "brandSlug": "adidas-originals",
     "productSlug": "adidas-originals-adidas-originals-80s-loose-striped-tee-white-size-s-572472342"
   },
   {
-    "id": 208255867,
+    "id": 325535609,
     "brand": "Adidas",
-    "name": "adidas FC Schalke 04 3rd Kit Shorts - Green | Size: S",
-    "description": "adidasSchalke 043rd Kit ShortsDrawcord on WaistClub Crest on Right LegGreenAA2449",
-    "price": 7.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_FC_Schalke_04_3rd_Kit_Shorts_-_Green_-_ViaductClothing_-_-_-225248.jpg%3Fv%3D1717026398&feedId=114294&k=fe55f0f27e75fbe059668696d508289d719d65f2",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_FC_Schalke_04_3rd_Kit_Shorts_-_Green_-_ViaductClothing_-_-_-225248.jpg%3Fv%3D1717026398&feedId=114294&k=fe55f0f27e75fbe059668696d508289d719d65f2"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "green"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325570&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325570&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 87,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-fc-schalke-04-3rd-kit-shorts-green-size-s-208255867"
-  },
-  {
-    "id": 241811105,
-    "brand": "adidas Originals",
-    "name": "adidas Originas Grover Piqué Shirt - Green | Size: S",
-    "description": "Casual and comfortable, this t-shirt features colourful stripes. It's made of cotton piqué that gives it the thickness and durability of a classic polo. This tee has short sleeves, a ribbed crewneck and a regular fit.. Regular fit is wider at the body, with a...",
-    "price": 14.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originas_Grover_Pique_Shirt_-_Green_-_ViaductClothing_-_-_-281278.jpg%3Fv%3D1717084438&feedId=114294&k=efc5a38ff6d43ffb022ce2b939f8f721bff1cb8a",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originas_Grover_Pique_Shirt_-_Green_-_ViaductClothing_-_-_-281278.jpg%3Fv%3D1717084438&feedId=114294&k=efc5a38ff6d43ffb022ce2b939f8f721bff1cb8a"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "multicolor"
-    ],
-    "materials": [
-      "cotton"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325572&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325572&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 86,
-    "compareAtPrice": 45,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originas-grover-pique-shirt-green-size-s-241811105"
-  },
-  {
-    "id": 258588724,
-    "brand": "Puma",
-    "name": "Puma Graphic Logo Block T Shirt - Navy | Size: M",
-    "description": "With cool colour contrasting, bold PUMA branding and a sleek, semi-slim fit, this T-shirt is perfect for everyday wear.Relaxed fit. Ribbed crew neck. PUMA Wordmark and branding at chest. Short Sleeve. 100% Cotton. 577126 06",
-    "price": 9.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPuma_Graphic_Logo_Block_T_Shirt_-_Navy_-_ViaductClothing_-_-_-295776.jpg%3Fv%3D1717102909&feedId=114294&k=4cf1d70bed057c2e1ef61493ece6e7b61e0afd2e",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPuma_Graphic_Logo_Block_T_Shirt_-_Navy_-_ViaductClothing_-_-_-295776.jpg%3Fv%3D1717102909&feedId=114294&k=4cf1d70bed057c2e1ef61493ece6e7b61e0afd2e"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "navy"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325575&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325575&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 85,
-    "compareAtPrice": 28,
-    "brandSlug": "puma",
-    "productSlug": "puma-puma-graphic-logo-block-t-shirt-navy-size-m-258588724"
-  },
-  {
-    "id": 292143962,
-    "brand": "Puma",
-    "name": "Puma Energy Triblend Graphic Running T Shirt - White | Size: S",
-    "description": "Lightweight, ultra-breathable, and with a dropped hem for improved exercise coverage, this dryCELL-designated T-shirt wicks sweat away from your body to keep you dry and comfortable while you’re working your hardest.Puma. Men's Energy Tribland Graphic T-Shirt...",
-    "price": 9.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPuma_Energy_Triblend_Graphic_Running_T_Shirt_-_White_-_ViaductClothing_-_-_-295728.jpg%3Fv%3D1717102849&feedId=114294&k=e5e2465b0434cdc6e31331e4d6dd976e0642b713",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPuma_Energy_Triblend_Graphic_Running_T_Shirt_-_White_-_ViaductClothing_-_-_-295728.jpg%3Fv%3D1717102849&feedId=114294&k=e5e2465b0434cdc6e31331e4d6dd976e0642b713"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "white"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325577&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325577&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 84,
-    "compareAtPrice": 25,
-    "brandSlug": "puma",
-    "productSlug": "puma-puma-energy-triblend-graphic-running-t-shirt-white-size-s-292143962"
-  },
-  {
-    "id": 606219551,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Daily Chino Shorts - Beige | Size: XS",
-    "description": "Originally used in military uniforms, chino cloth became a favorite among civilians for its simple style and durability. These men's shorts are fully adapted for the streets with stretch-twill construction and an athletic-style waistband. Raw-edge hems create...",
-    "price": 11.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Daily_Chino_Shorts_-_Beige_-_ViaductClothing_-_-_-242033.jpg%3Fv%3D1717047061&feedId=114294&k=862c40b12c021d16d434710732254961edd0f67b",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Daily_Chino_Shorts_-_Beige_-_ViaductClothing_-_-_-242033.jpg%3Fv%3D1717047061&feedId=114294&k=862c40b12c021d16d434710732254961edd0f67b"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "beige"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325581&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325581&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 83,
-    "compareAtPrice": 55,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-daily-chino-shorts-beige-size-xs-606219551"
-  },
-  {
-    "id": 539109075,
-    "brand": "adidas Originals",
-    "name": "adidas Originals FLAMESTRK Shorts - Orange | Size: XS",
-    "description": "Driven by the culture and emotion of the game. Shifting the sportswear status quo. These shorts showcase a Flamestrike design from the '90s and 2000s. The shorts are made of lightweight interlock fabric and flash deconstructed 3-Stripes on the sides.Regular f...",
-    "price": 17.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_FLAMESTRK_Shorts_-_Orange_-_ViaductClothing_-_-_-244176.jpg%3Fv%3D1717049883&feedId=114294&k=665f6bcb167bb2e787cd765e5db807becdbfa375",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_FLAMESTRK_Shorts_-_Orange_-_ViaductClothing_-_-_-244176.jpg%3Fv%3D1717049883&feedId=114294&k=665f6bcb167bb2e787cd765e5db807becdbfa375"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "orange"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325585&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325585&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 82,
-    "compareAtPrice": 50,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-flamestrk-shorts-orange-size-xs-539109075"
-  },
-  {
-    "id": 572664313,
-    "brand": "Adidas",
-    "name": "adidas x Palace Juventus Goalkeeper Shorts - Multi | Size: S",
-    "description": "These goalkeeper shorts are part of the fourth collaboration between adidas Football and London skate brand Palace. The moisture-wicking fabric feels soft on the skin. The iconic club logo completes the look.Regular fit, not too tight or too looseDobby fabric...",
-    "price": 49.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_x_Palace_Juventus_Goalkeeper_Shorts_-_Multi_-_ViaductClothing_-_-_-290553.jpg%3Fv%3D1717096209&feedId=114294&k=f90d91e0e31c3d0dd80952f05c7cd4cdeb27dc9a",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_x_Palace_Juventus_Goalkeeper_Shorts_-_Multi_-_ViaductClothing_-_-_-290553.jpg%3Fv%3D1717096209&feedId=114294&k=f90d91e0e31c3d0dd80952f05c7cd4cdeb27dc9a"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "orange"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325587&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325587&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 81,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-x-palace-juventus-goalkeeper-shorts-multi-size-s-572664313"
-  },
-  {
-    "id": 740440503,
-    "brand": "Adidas",
-    "name": "adidas Basketball Graphic T Shirt - Purple | Size: S",
-    "description": "Harlem is one of the ancestral homes of basketball. This t-shirt celebrates its roots with a big and bold graphic on the chest. The tee is made of soft cotton and polyester and built to wick sweat so you stay dry when your pick-up run or gym session start to...",
-    "price": 12.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Black_History_Month_Graphic_T_Shirt_-_Purple_-_ViaductClothing_-_-_-221457.png%3Fv%3D1717022173&feedId=114294&k=5cedab43879655ed13932b64dd360591d9d1baf1",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Black_History_Month_Graphic_T_Shirt_-_Purple_-_ViaductClothing_-_-_-221457.png%3Fv%3D1717022173&feedId=114294&k=5cedab43879655ed13932b64dd360591d9d1baf1"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "purple"
-    ],
-    "materials": [
-      "cotton",
-      "polyester"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325589&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325589&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 80,
-    "compareAtPrice": 35,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-basketball-graphic-t-shirt-purple-size-s-740440503"
-  },
-  {
-    "id": 656699503,
-    "brand": "Kappa",
-    "name": "Kappa Auth Esmio Overhead Hoodie - Black/Gold | Size: XS",
-    "description": "Blending Kappa’s key codes with the comfort of classic sportswear, this Esmio hoody presents the label’s ‘70s-fuelled Omini logo with graphic influence reigning supreme. Lined with soft loopback jersey for a breathable finish, the bright white hoody promises...",
-    "price": 14.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGold_-_ViaductClothing_-_-_-292909.jpg%3Fv%3D1717099229&feedId=114294&k=b279f73f5f35bfded92e792bf3713ee0c78a523c",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGold_-_ViaductClothing_-_-_-292909.jpg%3Fv%3D1717099229&feedId=114294&k=b279f73f5f35bfded92e792bf3713ee0c78a523c"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325592&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325592&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 79,
-    "compareAtPrice": 45,
-    "brandSlug": "kappa",
-    "productSlug": "kappa-kappa-auth-esmio-overhead-hoodie-black-gold-size-xs-656699503"
-  },
-  {
-    "id": 623144265,
-    "brand": "Kappa",
-    "name": "Kappa Auth Esmio Overhead Hoodie - Black/Gold | Size: S",
-    "description": "Blending Kappa’s key codes with the comfort of classic sportswear, this Esmio hoody presents the label’s ‘70s-fuelled Omini logo with graphic influence reigning supreme. Lined with soft loopback jersey for a breathable finish, the bright white hoody promises...",
-    "price": 14.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGold_-_ViaductClothing_-_-_-292909.jpg%3Fv%3D1717099229&feedId=114294&k=b279f73f5f35bfded92e792bf3713ee0c78a523c",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGold_-_ViaductClothing_-_-_-292909.jpg%3Fv%3D1717099229&feedId=114294&k=b279f73f5f35bfded92e792bf3713ee0c78a523c"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325594&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325594&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 78,
-    "compareAtPrice": 45,
-    "brandSlug": "kappa",
-    "productSlug": "kappa-kappa-auth-esmio-overhead-hoodie-black-gold-size-s-623144265"
-  },
-  {
-    "id": 589589027,
-    "brand": "Luke 1977",
-    "name": "Luke 1977 New Mead Short Sleeved Polo Shirt - Navy | Size: M",
-    "description": "The Luke New Mead Short Sleeved Polo is made from 100% Cotton Pique, contrast cuffs and buttons and embroidered Luke Lion logo on chest.Luke 1977AW20 RangeShort Sleeved Polo ShirtContrast cuffs & buttons100% Cotton PiqueEmbroidered Lion Luke LogoZM451457",
-    "price": 29.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_New_Mead_Short_Sleeved_Polo_Shirt_-_Navy_-_ViaductClothing_-_-_-293186.jpg%3Fv%3D1717099596&feedId=114294&k=73449525735540526c1ca7f3caf352875a0bd6ff",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_New_Mead_Short_Sleeved_Polo_Shirt_-_Navy_-_ViaductClothing_-_-_-293186.jpg%3Fv%3D1717099596&feedId=114294&k=73449525735540526c1ca7f3caf352875a0bd6ff"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "shirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "navy"
-    ],
-    "materials": [
-      "cotton"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325596&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325596&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 77,
-    "compareAtPrice": 40,
-    "brandSlug": "luke-1977",
-    "productSlug": "luke-1977-luke-1977-new-mead-short-sleeved-polo-shirt-navy-size-m-589589027"
-  },
-  {
-    "id": 24475693,
-    "brand": "Luke 1977",
-    "name": "Luke 1977 Traff Core Crew Neck T Shirt - Rioja | Size: L",
-    "description": "Great T Shirt that can be worn in with casual attire. The Traff Core T Shirt is made from 100% Cotton, Crew Neck and a Golden Lion emblem on the chest.Luke 1977. AW20 Range. Crew Neck T Shirt. 100% Cotton. Rioja Red. Embroidered Lion Luke Logo. ZM280165",
-    "price": 17.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Traff_Core_Crew_Neck_T_Shirt_-_Rioja_-_ViaductClothing_-_-_-293233.jpg%3Fv%3D1717099664&feedId=114294&k=0acdf525a0f0155b9a7ea76e29259eb683bc9104",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Traff_Core_Crew_Neck_T_Shirt_-_Rioja_-_ViaductClothing_-_-_-293233.jpg%3Fv%3D1717099664&feedId=114294&k=0acdf525a0f0155b9a7ea76e29259eb683bc9104"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "red"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325598&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325598&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 76,
-    "compareAtPrice": 25,
-    "brandSlug": "luke-1977",
-    "productSlug": "luke-1977-luke-1977-traff-core-crew-neck-t-shirt-rioja-size-l-24475693"
-  },
-  {
-    "id": 280211269,
-    "brand": "Luke 1977",
-    "name": "Luke 1977 Tungsten Knitted Polo Shirt - Jet Black | Size: XL",
-    "description": "Classic retro knitted polo shirt from Luke 1977. Features include ribbed collar and cuffs, 100% Cotton, short sleeve & embroidered Luke Lion logo.Luke 1977Tungsten Short Sleeved PoloKnittedJet BlackLuke Lion Logo on chestRibbed Collar and cuffsZM520601",
-    "price": 29.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Tungsten_Knitted_Polo_Shirt_-_Jet_Black_-_ViaductClothing_-_-_-293240.jpg%3Fv%3D1717099673&feedId=114294&k=5343bbe4aa99bb5cac04df83703ba85e0292ace8",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Tungsten_Knitted_Polo_Shirt_-_Jet_Black_-_ViaductClothing_-_-_-293240.jpg%3Fv%3D1717099673&feedId=114294&k=5343bbe4aa99bb5cac04df83703ba85e0292ace8"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325600&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325600&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 75,
-    "compareAtPrice": 55,
-    "brandSlug": "luke-1977",
-    "productSlug": "luke-1977-luke-1977-tungsten-knitted-polo-shirt-jet-black-size-xl-280211269"
-  },
-  {
-    "id": 246656031,
-    "brand": "Luke 1977",
-    "name": "Luke 1977 Carter Johnson Cable Knitted Jumper - Very Dark Navy | Size: 3XL",
-    "description": "Perfect attire for the coming winter months, the Carter Johnson Cable Knitted Jumper is made from 100% Cotton. Wear with a shirt underneath for the percect casaul wear.Luke 1977. Carter Johnson Cable Knitted Jumper. AW20 Range. Regular fit, true to size. 100%...",
-    "price": 39.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Carter_Johnson_Cable_Knitted_Jumper_-_Very_Dark_Navy_-_ViaductClothing_-_-_-293108.jpg%3Fv%3D1717099478&feedId=114294&k=ea9294338ced5a91a05678aed969a15d3e4845d3",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Carter_Johnson_Cable_Knitted_Jumper_-_Very_Dark_Navy_-_ViaductClothing_-_-_-293108.jpg%3Fv%3D1717099478&feedId=114294&k=ea9294338ced5a91a05678aed969a15d3e4845d3"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "navy"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325602&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325602&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 74,
-    "compareAtPrice": 70,
-    "brandSlug": "luke-1977",
-    "productSlug": "luke-1977-luke-1977-carter-johnson-cable-knitted-jumper-very-dark-navy-size-3xl-246656031"
-  },
-  {
-    "id": 213100793,
-    "brand": "Luke 1977",
-    "name": "Luke 1977 Carter Johnson Knitted Cable Jumper - Mid Marl Grey | Size: XL",
-    "description": "Perfect attire for the coming winter months, the Carter Johnson Cable Knitted Jumper is made from 100% Cotton. Wear with a shirt underneath for the percect casaul wear.Luke 1977Carter Johnson Cable Knitted JumperAW20 RangeRegular fit, true to size100% CottonE...",
-    "price": 39.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Carter_Johnson_Knitted_Cable_Jumper_-_Mid_Marl_Grey_-_ViaductClothing_-_-_-293113.jpg%3Fv%3D1717099488&feedId=114294&k=c0d636618dd42e4b0d8253e61e93f488be28a9de",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Carter_Johnson_Knitted_Cable_Jumper_-_Mid_Marl_Grey_-_ViaductClothing_-_-_-293113.jpg%3Fv%3D1717099488&feedId=114294&k=c0d636618dd42e4b0d8253e61e93f488be28a9de"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "grey"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325604&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325604&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 73,
-    "compareAtPrice": 70,
-    "brandSlug": "luke-1977",
-    "productSlug": "luke-1977-luke-1977-carter-johnson-knitted-cable-jumper-mid-marl-grey-size-xl-213100793"
-  },
-  {
-    "id": 196323174,
-    "brand": "Luke 1977",
-    "name": "Luke 1977 Carter Johnson Knitted Cable Jumper - Mid Marl Grey | Size: 2XL",
-    "description": "Perfect attire for the coming winter months, the Carter Johnson Cable Knitted Jumper is made from 100% Cotton. Wear with a shirt underneath for the percect casaul wear.Luke 1977Carter Johnson Cable Knitted JumperAW20 RangeRegular fit, true to size100% CottonE...",
-    "price": 39.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Carter_Johnson_Knitted_Cable_Jumper_-_Mid_Marl_Grey_-_ViaductClothing_-_-_-293113.jpg%3Fv%3D1717099488&feedId=114294&k=c0d636618dd42e4b0d8253e61e93f488be28a9de",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Carter_Johnson_Knitted_Cable_Jumper_-_Mid_Marl_Grey_-_ViaductClothing_-_-_-293113.jpg%3Fv%3D1717099488&feedId=114294&k=c0d636618dd42e4b0d8253e61e93f488be28a9de"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "grey"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325605&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325605&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 72,
-    "compareAtPrice": 70,
-    "brandSlug": "luke-1977",
-    "productSlug": "luke-1977-luke-1977-carter-johnson-knitted-cable-jumper-mid-marl-grey-size-2xl-196323174"
-  },
-  {
-    "id": 179545555,
-    "brand": "Luke 1977",
-    "name": "Luke 1977 Carter Johnson Knitted Cable Jumper - Mid Marl Grey | Size: 3XL",
-    "description": "Perfect attire for the coming winter months, the Carter Johnson Cable Knitted Jumper is made from 100% Cotton. Wear with a shirt underneath for the percect casaul wear.Luke 1977Carter Johnson Cable Knitted JumperAW20 RangeRegular fit, true to size100% CottonE...",
-    "price": 39.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Carter_Johnson_Knitted_Cable_Jumper_-_Mid_Marl_Grey_-_ViaductClothing_-_-_-293113.jpg%3Fv%3D1717099488&feedId=114294&k=c0d636618dd42e4b0d8253e61e93f488be28a9de",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Carter_Johnson_Knitted_Cable_Jumper_-_Mid_Marl_Grey_-_ViaductClothing_-_-_-293113.jpg%3Fv%3D1717099488&feedId=114294&k=c0d636618dd42e4b0d8253e61e93f488be28a9de"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "grey"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325606&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325606&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 71,
-    "compareAtPrice": 70,
-    "brandSlug": "luke-1977",
-    "productSlug": "luke-1977-luke-1977-carter-johnson-knitted-cable-jumper-mid-marl-grey-size-3xl-179545555"
-  },
-  {
-    "id": 119464925,
-    "brand": "Luke 1977",
-    "name": "Luke 1977 Plated Crew Neck Ribbed Knitted Jumper - Solid Black | Size: M",
-    "description": "Perfect attire for the coming winter months, the Plated Crew Neck Ribbed Knitted Jumper is made from 100% Cotton. Wear with a shirt underneath for the percect casaul wear.Luke 1977Carter Johnson Cable Knitted JumperAW20 RangeRegular fit, true to sizeEmbroider...",
-    "price": 39.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Plated_Crew_Neck_Ribbed_Knitted_Jumper_-_Solid_Black_-_ViaductClothing_-_-_-293207.jpg%3Fv%3D1717099626&feedId=114294&k=090b31ed28979e2b4b9d1a4543fe6ca71474f277",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Plated_Crew_Neck_Ribbed_Knitted_Jumper_-_Solid_Black_-_ViaductClothing_-_-_-293207.jpg%3Fv%3D1717099626&feedId=114294&k=090b31ed28979e2b4b9d1a4543fe6ca71474f277"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325608&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325608&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 70,
-    "compareAtPrice": 65,
-    "brandSlug": "luke-1977",
-    "productSlug": "luke-1977-luke-1977-plated-crew-neck-ribbed-knitted-jumper-solid-black-size-m-119464925"
-  },
-  {
-    "id": 102687306,
-    "brand": "Luke 1977",
-    "name": "Luke 1977 Plated Crew Neck Ribbed Knitted Jumper - Solid Black | Size: 3XL",
-    "description": "Perfect attire for the coming winter months, the Plated Crew Neck Ribbed Knitted Jumper is made from 100% Cotton. Wear with a shirt underneath for the percect casaul wear.Luke 1977Carter Johnson Cable Knitted JumperAW20 RangeRegular fit, true to sizeEmbroider...",
-    "price": 39.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Plated_Crew_Neck_Ribbed_Knitted_Jumper_-_Solid_Black_-_ViaductClothing_-_-_-293207.jpg%3Fv%3D1717099626&feedId=114294&k=090b31ed28979e2b4b9d1a4543fe6ca71474f277",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FLuke_1977_Plated_Crew_Neck_Ribbed_Knitted_Jumper_-_Solid_Black_-_ViaductClothing_-_-_-293207.jpg%3Fv%3D1717099626&feedId=114294&k=090b31ed28979e2b4b9d1a4543fe6ca71474f277"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325609&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325609&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 99,
-    "compareAtPrice": 65,
-    "brandSlug": "luke-1977",
-    "productSlug": "luke-1977-luke-1977-plated-crew-neck-ribbed-knitted-jumper-solid-black-size-3xl-102687306"
-  },
-  {
-    "id": 196176079,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Oversize Trefoil Sweatshirt - Yellow | Size: XS",
-    "description": "The Trefoil has been making its mark since its 1972 debut. This sweatshirt pays homage to the iconic style. It's made of cosy cotton French terry with a relaxed, oversize fit. The Adicolor collection Inspired by adidas heritage, Adicolor is authentic but mode...",
-    "price": 24.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Oversize_Trefoil_Sweatshirt_-_Yellow_-_ViaductClothing_-_-_-250703.jpg%3Fv%3D1717057636&feedId=114294&k=e3e5d96bc7a804ccb1478e6c6051bab24e5cf90c",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Oversize_Trefoil_Sweatshirt_-_Yellow_-_ViaductClothing_-_-_-250703.jpg%3Fv%3D1717057636&feedId=114294&k=e3e5d96bc7a804ccb1478e6c6051bab24e5cf90c"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "yellow"
-    ],
-    "materials": [
-      "cotton"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325611&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325611&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 98,
-    "compareAtPrice": 63,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-oversize-trefoil-sweatshirt-yellow-size-xs-196176079"
-  },
-  {
-    "id": 212953698,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Trefoil Essentials Pants - Purple | Size: XS",
-    "description": "Launched in 1983, Adicolor represents creativity and self-expression. These pants keep the spirit of Adicolor alive with a simple, slim-fitting look. They're made of cotton French terry for a soft, comfortable feel.adidas OriginalsMen's Trefoil Essentials Tra...",
-    "price": 24.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Trefoil_Essentials_Pants_-_Purple_-_ViaductClothing_-_-_-265405.jpg%3Fv%3D1717070292&feedId=114294&k=784eebcef5062d84c6834c18328f2b98ed0e0d5e",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Trefoil_Essentials_Pants_-_Purple_-_ViaductClothing_-_-_-265405.jpg%3Fv%3D1717070292&feedId=114294&k=784eebcef5062d84c6834c18328f2b98ed0e0d5e"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "purple"
-    ],
-    "materials": [
-      "cotton"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325612&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325612&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 97,
-    "compareAtPrice": 45,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-trefoil-essentials-pants-purple-size-xs-212953698"
-  },
-  {
-    "id": 229731317,
-    "brand": "adidas Originals",
-    "name": "adidas Originals R.Y.V. Hoodie - Grey | Size: XS",
-    "description": "Accented with minimalist adidas branding, this grey R.Y.V. hoody is a pullover piece that’s ready to be layered during the colder months of the year. Fitted with a drawstring adjustable hood, the all-cotton jersey is completed with a cosy kangaroo pocket.adid...",
-    "price": 24.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_R.Y.V._Hoodie_-_Grey_-_ViaductClothing_-_-_-253195.jpg%3Fv%3D1717059975&feedId=114294&k=be29419317a7dd7ddd0eec80ee0eedd18bdd4a59",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_R.Y.V._Hoodie_-_Grey_-_ViaductClothing_-_-_-253195.jpg%3Fv%3D1717059975&feedId=114294&k=be29419317a7dd7ddd0eec80ee0eedd18bdd4a59"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "grey"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325613&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325613&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 96,
-    "compareAtPrice": 70,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-r-y-v-hoodie-grey-size-xs-229731317"
-  },
-  {
-    "id": 129065603,
-    "brand": "Reebok",
-    "name": "Reebok Classics Club C Revenge Plus - Black & Red",
-    "description": "Crisp tennis style gets a soft touch and color-pop trim. These men's shoes remake a classic '80s court design with a full-grain leather upper for an extra-soft, supple feel. Color-pop trim highlights the iconic side stripes to complete the retro vibe.Full-gra...",
-    "price": 34.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Club_C_Revenge_Plus_-_Black_Red_-_ViaductClothing_-_-_-297155.jpg%3Fv%3D1717104635&feedId=114294&k=208462fe8fbb36d16c17bedec54bb84a32d40ae9",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Club_C_Revenge_Plus_-_Black_Red_-_ViaductClothing_-_-_-297155.jpg%3Fv%3D1717104635&feedId=114294&k=208462fe8fbb36d16c17bedec54bb84a32d40ae9"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "leather"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325615&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325615&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 95,
-    "compareAtPrice": 90,
-    "brandSlug": "reebok",
-    "productSlug": "reebok-reebok-classics-club-c-revenge-plus-black-and-red-129065603"
-  },
-  {
-    "id": 162620841,
-    "brand": "adidas Originals",
-    "name": "adidas Originals R.Y.V. T Shirt - Grey | Size: XS",
-    "description": "Give your streetwear wardrobe a sporting edge with this grey heather tee from adidas. It’s cut from soft cotton jersey, fitted with a ribbed crewneck and finished with the two-tone, doubled-up R.Y.V. branding on the chest.100% CottonRibbed CrewneckWoven Brand...",
-    "price": 9.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_R.Y.V._T_Shirt_-_Grey_-_ViaductClothing_-_-_-253642.jpg%3Fv%3D1717060380&feedId=114294&k=badc7ec5ddbccc416b6648bdb4e4133eb9984292",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_R.Y.V._T_Shirt_-_Grey_-_ViaductClothing_-_-_-253642.jpg%3Fv%3D1717060380&feedId=114294&k=badc7ec5ddbccc416b6648bdb4e4133eb9984292"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "grey"
-    ],
-    "materials": [
-      "cotton"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325617&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325617&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 94,
-    "compareAtPrice": 25,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-r-y-v-t-shirt-grey-size-xs-162620841"
-  },
-  {
-    "id": 35429735,
-    "brand": "Reebok",
-    "name": "Reebok x Kicks Lab DMX Run 10 - Sand Beige",
-    "description": "Out of the archive and onto the streets. The DMX Run 10 is back, this time with a suede and textile upper and trail-inspired laces. Signature DMX cushioning cushions your feet with each stride.Suede and textile upper offers durable supportEVA midsole for ligh...",
-    "price": 44.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_x_Kicks_Lab_DMX_Run_10_-_Sand_Beige_-_ViaductClothing_-_-_-299722.jpg%3Fv%3D1717107999&feedId=114294&k=aef1a7d1c961fe31862b3024a0b0be0085f32af7",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_x_Kicks_Lab_DMX_Run_10_-_Sand_Beige_-_ViaductClothing_-_-_-299722.jpg%3Fv%3D1717107999&feedId=114294&k=aef1a7d1c961fe31862b3024a0b0be0085f32af7"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
-    "subcategory": "General Clothing",
-    "colors": [
-      "beige"
-    ],
-    "materials": [
-      "suede"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325619&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325619&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 93,
-    "compareAtPrice": 160,
-    "brandSlug": "reebok",
-    "productSlug": "reebok-reebok-x-kicks-lab-dmx-run-10-sand-beige-35429735"
-  },
-  {
-    "id": 392854424,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Firebird Track Top - Black | Size: XS",
-    "description": "Presented under adidas' Adicolor umbrella, the Firebird track top brings authentic brand heritage to your off-duty rotation. Tying in perfectly with the resurgence of retro apparel, it sees the brand’s unmistakable 3-stripes frame the sleeves, while a Trefoil...",
-    "price": 34.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Firebird_Track_Top_-_Black_-_ViaductClothing_-_-_-244091.jpg%3Fv%3D1717049779&feedId=114294&k=7acc3d648980cb6d6e5d5089e6e27d2a32428cfb",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Firebird_Track_Top_-_Black_-_ViaductClothing_-_-_-244091.jpg%3Fv%3D1717049779&feedId=114294&k=7acc3d648980cb6d6e5d5089e6e27d2a32428cfb"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "jewellery",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=45670062759&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=45670062759&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 92,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-firebird-track-top-black-size-xs-392854424"
-  },
-  {
-    "id": 34738187,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Manoles Alias T-Shirt - Black | Size: XS",
-    "description": "This t-shirt is a collaboration between adidas and artist Josh Manoles. It features artwork inspired by a mix of skate graphics and Greek sculptures. The tee is made of heavyweight cotton that's soft to the touch for all-day comfort.Regular fit is wider at th...",
-    "price": 9.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Manoles_Alias_T-Shirt_-_Black_-_ViaductClothing_-_-_-248091.jpg%3Fv%3D1717054794&feedId=114294&k=60d160f6384a033b9623abd426efe63ce4105b63",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Manoles_Alias_T-Shirt_-_Black_-_ViaductClothing_-_-_-248091.jpg%3Fv%3D1717054794&feedId=114294&k=60d160f6384a033b9623abd426efe63ce4105b63"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "cotton"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325651&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325651&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 91,
-    "compareAtPrice": 30,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-manoles-alias-t-shirt-black-size-xs-34738187"
-  },
-  {
-    "id": 135403901,
-    "brand": "Reebok",
-    "name": "Reebok Classics Meet You There Jersey - Turquoise | Size: S",
-    "description": "Inspired by hockey uniforms, this men's jersey has a relaxed fit for easy layering. Blocks of color and Reebok graphics on the front and back give it a bold look.100% polyesterRelaxed fitShallow V-neckLong sleevesReebok graphic on center chest and backProduct...",
-    "price": 19.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Meet_You_There_Jersey_-_Turquoise_-_ViaductClothing_-_-_-297567.jpg%3Fv%3D1739353917&feedId=114294&k=1f948e94aa4362ee362f1977a1194dae7c29c7dc",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Meet_You_There_Jersey_-_Turquoise_-_ViaductClothing_-_-_-297567.jpg%3Fv%3D1739353917&feedId=114294&k=1f948e94aa4362ee362f1977a1194dae7c29c7dc"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "jewellery",
-    "subcategory": "General Clothing",
-    "colors": [
-      "green"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325657&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325657&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 90,
-    "compareAtPrice": 35,
-    "brandSlug": "reebok",
-    "productSlug": "reebok-reebok-classics-meet-you-there-jersey-turquoise-size-s-135403901"
-  },
-  {
-    "id": 195484531,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Adiplore Woven Baggies Shorts - Energy Pink | Size: S",
-    "description": "Push the needle forward while still looking backward. Heritage adidas DNA is strong in these shorts with a retro outdoor influence. Minimalism means versatility, and this laid-back style is all about both.Regular fitDrawcord waist100% recycled polyester twill...",
-    "price": 19.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Adiplore_Woven_Baggies_Shorts_-_Energy_Pink_-_ViaductClothing_-_-_-236155.jpg%3Fv%3D1717038048&feedId=114294&k=5c1367247c3d3782f3d105cb86008a3a9b818985",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Adiplore_Woven_Baggies_Shorts_-_Energy_Pink_-_ViaductClothing_-_-_-236155.jpg%3Fv%3D1717038048&feedId=114294&k=5c1367247c3d3782f3d105cb86008a3a9b818985"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "pink"
-    ],
-    "materials": [
-      "polyester"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325659&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325659&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 89,
-    "compareAtPrice": 40,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-adiplore-woven-baggies-shorts-energy-pink-size-s-195484531"
-  },
-  {
-    "id": 347828038,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Pride Freestyle Woven Shorts - Yellow | Size: S",
-    "description": "Pride comes in many forms. You'll feel comfortable in these adidas shorts no matter what form you choose. Wear them with joy.Regular fitDrawcord on elastic waist100% nylon plain weaveColour blocked Pride shortsSide zip pocketsPlain weaveProduct colour: Yellow...",
-    "price": 19.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Pride_Freestyle_Woven_Shorts_-_Yellow_-_ViaductClothing_-_-_-252402.jpg%3Fv%3D1717059263&feedId=114294&k=fc864c831488c1df19fca3b92303670061fa0627",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Pride_Freestyle_Woven_Shorts_-_Yellow_-_ViaductClothing_-_-_-252402.jpg%3Fv%3D1717059263&feedId=114294&k=fc864c831488c1df19fca3b92303670061fa0627"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "yellow"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325663&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325663&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 88,
-    "compareAtPrice": 38,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-pride-freestyle-woven-shorts-yellow-size-s-347828038"
-  },
-  {
-    "id": 381383276,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Jeans Trainers - Grey Two / Hi-Res Blue | Size: 7",
-    "description": "This '80s leisurewear look was originally designed to go with denim jeans. With a relaxed low-profile design, these shoes offer the plush feel of supple textured suede. A soft gum rubber outsole completes the distinctive retro style.Lace closureSuede upperrub...",
-    "price": 69.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FHi-Res_Blue_-_ViaductClothing_-_-_-246736.jpg%3Fv%3D1717053023&feedId=114294&k=fe9919e139b8355161320291cd315fce86d59067",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FHi-Res_Blue_-_ViaductClothing_-_-_-246736.jpg%3Fv%3D1717053023&feedId=114294&k=fe9919e139b8355161320291cd315fce86d59067"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "jeans",
-    "subcategory": "General Clothing",
-    "colors": [
-      "grey"
-    ],
-    "materials": [
-      "denim"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325665&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325665&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 87,
-    "compareAtPrice": 85,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-jeans-trainers-grey-two-hi-res-blue-size-7-381383276"
-  },
-  {
-    "id": 491794309,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Hamburg Shoes - Navy / White",
-    "description": "adidas’ Hamburg has that classic indoor sports aesthetic that’s long been favoured on the terraces, and this pair is no exception. It’s crafted from premium navy blue suede and features the brand’s famous serrated three stripes — alongside gold foil model des...",
-    "price": 69.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FWhite_-_ViaductClothing_-_-_-246162.jpg%3Fv%3D1717052253&feedId=114294&k=5b3ac24c40b709aaae1a367d70e3fa4e51823aa0",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FWhite_-_ViaductClothing_-_-_-246162.jpg%3Fv%3D1717052253&feedId=114294&k=5b3ac24c40b709aaae1a367d70e3fa4e51823aa0"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
-    "subcategory": "General Clothing",
-    "colors": [
-      "navy"
-    ],
-    "materials": [
-      "suede",
-      "gold"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44633494685&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44633494685&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 86,
-    "compareAtPrice": 80,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-hamburg-shoes-navy-white-491794309"
-  },
-  {
-    "id": 508719023,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Hamburg Shoes - Black / White / Gum",
-    "description": "adidas’ Hamburg has been an icon of both sport and music subculture since its early ‘80s debut. This pair is as classic as they come, pairing black suede with serrated three striped and a golden model designation on the upper, then it’s completed in retro sty...",
-    "price": 69.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGum_-_ViaductClothing_-_-_-246134.jpg%3Fv%3D1717052218&feedId=114294&k=982652eee1b92fca49f5866dd1ca274443d40f3c",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGum_-_ViaductClothing_-_-_-246134.jpg%3Fv%3D1717052218&feedId=114294&k=982652eee1b92fca49f5866dd1ca274443d40f3c"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "suede"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44633494690&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44633494690&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 85,
-    "compareAtPrice": 80,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-hamburg-shoes-black-white-gum-508719023"
-  },
-  {
-    "id": 491941404,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Hamburg Shoes - Black / White / Gum",
-    "description": "adidas’ Hamburg has been an icon of both sport and music subculture since its early ‘80s debut. This pair is as classic as they come, pairing black suede with serrated three striped and a golden model designation on the upper, then it’s completed in retro sty...",
-    "price": 69.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGum_-_ViaductClothing_-_-_-246134.jpg%3Fv%3D1717052218&feedId=114294&k=982652eee1b92fca49f5866dd1ca274443d40f3c",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGum_-_ViaductClothing_-_-_-246134.jpg%3Fv%3D1717052218&feedId=114294&k=982652eee1b92fca49f5866dd1ca274443d40f3c"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "suede"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44633494691&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44633494691&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 84,
-    "compareAtPrice": 80,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-hamburg-shoes-black-white-gum-491941404"
-  },
-  {
-    "id": 542274261,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Hamburg Shoes - Black / White / Gum",
-    "description": "adidas’ Hamburg has been an icon of both sport and music subculture since its early ‘80s debut. This pair is as classic as they come, pairing black suede with serrated three striped and a golden model designation on the upper, then it’s completed in retro sty...",
-    "price": 69.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGum_-_ViaductClothing_-_-_-246134.jpg%3Fv%3D1717052218&feedId=114294&k=982652eee1b92fca49f5866dd1ca274443d40f3c",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGum_-_ViaductClothing_-_-_-246134.jpg%3Fv%3D1717052218&feedId=114294&k=982652eee1b92fca49f5866dd1ca274443d40f3c"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "suede"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44633494692&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44633494692&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 83,
-    "compareAtPrice": 80,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-hamburg-shoes-black-white-gum-542274261"
-  },
-  {
-    "id": 525496642,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Hamburg Shoes - Black / White / Gum",
-    "description": "adidas’ Hamburg has been an icon of both sport and music subculture since its early ‘80s debut. This pair is as classic as they come, pairing black suede with serrated three striped and a golden model designation on the upper, then it’s completed in retro sty...",
-    "price": 69.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGum_-_ViaductClothing_-_-_-246134.jpg%3Fv%3D1717052218&feedId=114294&k=982652eee1b92fca49f5866dd1ca274443d40f3c",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGum_-_ViaductClothing_-_-_-246134.jpg%3Fv%3D1717052218&feedId=114294&k=982652eee1b92fca49f5866dd1ca274443d40f3c"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "suede"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44633494693&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44633494693&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 82,
-    "compareAtPrice": 80,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-hamburg-shoes-black-white-gum-525496642"
-  },
-  {
-    "id": 441608547,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Hamburg Shoes - Black / White / Gum",
-    "description": "adidas’ Hamburg has been an icon of both sport and music subculture since its early ‘80s debut. This pair is as classic as they come, pairing black suede with serrated three striped and a golden model designation on the upper, then it’s completed in retro sty...",
-    "price": 69.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGum_-_ViaductClothing_-_-_-246134.jpg%3Fv%3D1717052218&feedId=114294&k=982652eee1b92fca49f5866dd1ca274443d40f3c",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGum_-_ViaductClothing_-_-_-246134.jpg%3Fv%3D1717052218&feedId=114294&k=982652eee1b92fca49f5866dd1ca274443d40f3c"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "suede"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44633494694&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44633494694&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 81,
-    "compareAtPrice": 80,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-hamburg-shoes-black-white-gum-441608547"
-  },
-  {
-    "id": 458386166,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Hamburg Shoes - Black / White / Gum",
-    "description": "adidas’ Hamburg has been an icon of both sport and music subculture since its early ‘80s debut. This pair is as classic as they come, pairing black suede with serrated three striped and a golden model designation on the upper, then it’s completed in retro sty...",
-    "price": 69.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGum_-_ViaductClothing_-_-_-246134.jpg%3Fv%3D1717052218&feedId=114294&k=982652eee1b92fca49f5866dd1ca274443d40f3c",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGum_-_ViaductClothing_-_-_-246134.jpg%3Fv%3D1717052218&feedId=114294&k=982652eee1b92fca49f5866dd1ca274443d40f3c"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "suede"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44633494697&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44633494697&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 80,
-    "compareAtPrice": 80,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-hamburg-shoes-black-white-gum-458386166"
-  },
-  {
-    "id": 648839442,
-    "brand": "Nike",
-    "name": "Nike Air Full Zip Fleece Varsity Tracksuit - Navy | Size: S",
-    "description": "Straight from the court and into your casual selection, this heather grey hoody is a warming mid-layer from Nike. Ready to move between seasons with ease, the ‘AIR’ branded jersey is fastened with a full-length zipper; while its cuffs are completed with strip...",
-    "price": 89.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Air_Full_Zip_Fleece_Varsity_Tracksuit_-_Navy_-_ViaductClothing_-_-_-295062.jpg%3Fv%3D1717102031&feedId=114294&k=7f60beaebe3c658cd6cf92d3913093dc195c336b",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Air_Full_Zip_Fleece_Varsity_Tracksuit_-_Navy_-_ViaductClothing_-_-_-295062.jpg%3Fv%3D1717102031&feedId=114294&k=7f60beaebe3c658cd6cf92d3913093dc195c336b"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "blazer",
-    "subcategory": "General Clothing",
-    "colors": [
-      "navy"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325689&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325689&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 79,
-    "compareAtPrice": 125,
-    "brandSlug": "nike",
-    "productSlug": "nike-nike-air-full-zip-fleece-varsity-tracksuit-navy-size-s-648839442"
-  },
-  {
-    "id": 715802823,
-    "brand": "Nike",
-    "name": "Nike Air Full Zip Fleece Varsity Tracksuit - Grey | Size: L",
-    "description": "Straight from the court and into your casual selection, this heather grey hoody is a warming mid-layer from Nike. Ready to move between seasons with ease, the ‘AIR’ branded jersey is fastened with a full-length zipper; while its cuffs are completed with strip...",
-    "price": 89.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Air_Full_Zip_Fleece_Varsity_Tracksuit_-_Grey_-_ViaductClothing_-_-_-295053.jpg%3Fv%3D1717102021&feedId=114294&k=33c58b240d350b9d5956f8539d133bdb53651721",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Air_Full_Zip_Fleece_Varsity_Tracksuit_-_Grey_-_ViaductClothing_-_-_-295053.jpg%3Fv%3D1717102021&feedId=114294&k=33c58b240d350b9d5956f8539d133bdb53651721"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "blazer",
-    "subcategory": "General Clothing",
-    "colors": [
-      "grey"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325691&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325691&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 78,
-    "compareAtPrice": 125,
-    "brandSlug": "nike",
-    "productSlug": "nike-nike-air-full-zip-fleece-varsity-tracksuit-grey-size-l-715802823"
-  },
-  {
-    "id": 749358061,
-    "brand": "Nike",
-    "name": "Nike Air Full Zip Fleece Varsity Tracksuit - Black | Size: XL",
-    "description": "Straight from the court and into your casual selection, this heather grey hoody is a warming mid-layer from Nike. Ready to move between seasons with ease, the ‘AIR’ branded jersey is fastened with a full-length zipper; while its cuffs are completed with strip...",
-    "price": 89.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Air_Full_Zip_Fleece_Varsity_Tracksuit_-_Black_-_ViaductClothing_-_-_-295047.jpg%3Fv%3D1717102012&feedId=114294&k=955d64dee9acfa6cbf4b4cef7ab95867e0ce5e76",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Air_Full_Zip_Fleece_Varsity_Tracksuit_-_Black_-_ViaductClothing_-_-_-295047.jpg%3Fv%3D1717102012&feedId=114294&k=955d64dee9acfa6cbf4b4cef7ab95867e0ce5e76"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "blazer",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325693&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325693&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 77,
-    "compareAtPrice": 125,
-    "brandSlug": "nike",
-    "productSlug": "nike-nike-air-full-zip-fleece-varsity-tracksuit-black-size-xl-749358061"
-  },
-  {
-    "id": 271762342,
-    "brand": "adidas Originals",
-    "name": "adidas Originals 3 Stripe Swim Short - Chalk Coral | Size: S",
-    "description": "Throwing it back to the ‘70s, adidas welcome this pair of swim shorts back from the archive. Sure to have you poolside dreaming, they’re styled in a vibrant coral with contrasting three stripes at the side seams to finish off the look.100% PolyesterMesh Linin...",
-    "price": 17.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_3_Stripe_Swim_Short_-_Chalk_Coral_-_ViaductClothing_-_-_-228296.jpg%3Fv%3D1717029913&feedId=114294&k=1e0279362021222befdac2ea145e83903af1166d",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_3_Stripe_Swim_Short_-_Chalk_Coral_-_ViaductClothing_-_-_-228296.jpg%3Fv%3D1717029913&feedId=114294&k=1e0279362021222befdac2ea145e83903af1166d"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "orange"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44668304091&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44668304091&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 76,
-    "compareAtPrice": 30,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-3-stripe-swim-short-chalk-coral-size-s-271762342"
-  },
-  {
-    "id": 581581871,
-    "brand": "adidas Originals",
-    "name": "adidas Originals 3 Stripe Swim Short - Black | Size: XS",
-    "description": "You can’t get more classic than adidas’ triple-striped swim shorts. This pair is crafted from jet-black Primegreen — a lightweight recycled nylon material — and, in the German brand’s signature sporty style, accented with outseam tape and a contrasting Trefoi...",
-    "price": 17.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_3_Stripe_Swim_Short_-_Black_-_ViaductClothing_-_-_-228268.jpg%3Fv%3D1717029885&feedId=114294&k=e4f4fbbcf4dccba0c6baf39b2773ea25b1e54c9a",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_3_Stripe_Swim_Short_-_Black_-_ViaductClothing_-_-_-228268.jpg%3Fv%3D1717029885&feedId=114294&k=e4f4fbbcf4dccba0c6baf39b2773ea25b1e54c9a"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325699&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325699&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 75,
-    "compareAtPrice": 30,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-3-stripe-swim-short-black-size-xs-581581871"
-  },
-  {
-    "id": 276466151,
-    "brand": "Adidas",
-    "name": "adidas Sportswear Graphic Jogger Pants - Black | Size: S",
-    "description": "Ditch the jeans, the dresses and the flashy skirts. The loose-fitting comfort of these adidas sweatpants leaves plenty of room for your daily moves. Slip them on after a long run or just start out the day in comfort. Their sleek, minimalist style slots nicely...",
-    "price": 23.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Sportswear_Graphic_Jogger_Pants_-_Black_-_ViaductClothing_-_-_-284272.jpg%3Fv%3D1717088131&feedId=114294&k=5ec3a3efcdb47c8fe5ca372a8deb993dbbfc4cbd",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Sportswear_Graphic_Jogger_Pants_-_Black_-_ViaductClothing_-_-_-284272.jpg%3Fv%3D1717088131&feedId=114294&k=5ec3a3efcdb47c8fe5ca372a8deb993dbbfc4cbd"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "dress",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325703&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325703&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 74,
-    "compareAtPrice": 50,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-sportswear-graphic-jogger-pants-black-size-s-276466151"
-  },
-  {
-    "id": 175800437,
-    "brand": "adidas Originals",
-    "name": "adidas Originals ADV Adventure T Shirt - White | Size: XS",
-    "description": "Every day is an adventure. Some days, you climb a real mountain. Other days, it's more of a metaphorical one. Whether you're hitting the trail or just hitting the sofa, this comfy adidas tee has you covered.Regular fitRibbed crewneck100% cotton single jerseyS...",
-    "price": 9.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_ADV_Adventure_T_Shirt_-_White_-_ViaductClothing_-_-_-236842.jpg%3Fv%3D1717038772&feedId=114294&k=634183df671f42fd126c3d17f661e1ac01d44538",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_ADV_Adventure_T_Shirt_-_White_-_ViaductClothing_-_-_-236842.jpg%3Fv%3D1717038772&feedId=114294&k=634183df671f42fd126c3d17f661e1ac01d44538"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "white"
-    ],
-    "materials": [
-      "cotton"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325709&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325709&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 73,
-    "compareAtPrice": 23,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-adv-adventure-t-shirt-white-size-xs-175800437"
-  },
-  {
-    "id": 640395152,
-    "brand": "adidas Originals",
-    "name": "adidas Originals ADV Adventure T Shirt - White | Size: S",
-    "description": "Every day is an adventure. Some days, you climb a real mountain. Other days, it's more of a metaphorical one. Whether you're hitting the trail or just hitting the sofa, this comfy adidas tee has you covered.Regular fitRibbed crewneck100% cotton single jerseyS...",
-    "price": 9.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_ADV_Adventure_T_Shirt_-_White_-_ViaductClothing_-_-_-236842.jpg%3Fv%3D1717038772&feedId=114294&k=634183df671f42fd126c3d17f661e1ac01d44538",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_ADV_Adventure_T_Shirt_-_White_-_ViaductClothing_-_-_-236842.jpg%3Fv%3D1717038772&feedId=114294&k=634183df671f42fd126c3d17f661e1ac01d44538"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "white"
-    ],
-    "materials": [
-      "cotton"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325711&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325711&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 72,
-    "compareAtPrice": 23,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-adv-adventure-t-shirt-white-size-s-640395152"
-  },
-  {
-    "id": 673950390,
-    "brand": "New Balance",
-    "name": "New Balance 850 Mono Pack Trainers - Off White | Size: 4",
-    "description": "An original bringback model from 1996, these unisex fashion sneakers call back to the golden era of sneaker style for a trendy look that makes a statement. The molded tongue with logo and reflective details adds extra style while the ABZORB midsole and ROLLBA...",
-    "price": 59.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNew_Balance_850_Mono_Pack_Trainers_-_Off_White_-_ViaductClothing_-_-_-293291_1.jpg%3Fv%3D1743158534&feedId=114294&k=0a1dba885a1fdbffcc058c876e38583b5fc3e61e",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNew_Balance_850_Mono_Pack_Trainers_-_Off_White_-_ViaductClothing_-_-_-293291_1.jpg%3Fv%3D1743158534&feedId=114294&k=0a1dba885a1fdbffcc058c876e38583b5fc3e61e"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
-    "subcategory": "General Clothing",
-    "colors": [
-      "white"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men",
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325713&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325713&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 71,
-    "compareAtPrice": 100,
-    "brandSlug": "new-balance",
-    "productSlug": "new-balance-new-balance-850-mono-pack-trainers-off-white-size-4-673950390"
-  },
-  {
-    "id": 707505628,
-    "brand": "New Balance",
-    "name": "New Balance 850 Mono Pack Trainers - Off White | Size: 6",
-    "description": "An original bringback model from 1996, these unisex fashion sneakers call back to the golden era of sneaker style for a trendy look that makes a statement. The molded tongue with logo and reflective details adds extra style while the ABZORB midsole and ROLLBA...",
-    "price": 59.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNew_Balance_850_Mono_Pack_Trainers_-_Off_White_-_ViaductClothing_-_-_-293291_1.jpg%3Fv%3D1743158534&feedId=114294&k=0a1dba885a1fdbffcc058c876e38583b5fc3e61e",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNew_Balance_850_Mono_Pack_Trainers_-_Off_White_-_ViaductClothing_-_-_-293291_1.jpg%3Fv%3D1743158534&feedId=114294&k=0a1dba885a1fdbffcc058c876e38583b5fc3e61e"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
-    "subcategory": "General Clothing",
-    "colors": [
-      "white"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men",
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325715&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325715&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 70,
-    "compareAtPrice": 100,
-    "brandSlug": "new-balance",
-    "productSlug": "new-balance-new-balance-850-mono-pack-trainers-off-white-size-6-707505628"
-  },
-  {
-    "id": 774616104,
-    "brand": "Adidas",
-    "name": "adidas Must Haves Graphic Hoodie - Navy | Size: XS",
-    "description": "In sport and in life adidas stands for individuality. Across all stadiums and on all stages. Around the globe, our movements can be grand or small, but they're still moves. Celebrate our global influence in the adidas Must Haves Graphic Hoodie. We stand unite...",
-    "price": 24.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Must_Haves_Graphic_Hoodie_-_Navy_-_ViaductClothing_-_-_-227478.jpg%3Fv%3D1717029044&feedId=114294&k=08d603bfc9269943334bbf4090f26fa7a1a097a3",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Must_Haves_Graphic_Hoodie_-_Navy_-_ViaductClothing_-_-_-227478.jpg%3Fv%3D1717029044&feedId=114294&k=08d603bfc9269943334bbf4090f26fa7a1a097a3"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "navy"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325719&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325719&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 99,
-    "compareAtPrice": 50,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-must-haves-graphic-hoodie-navy-size-xs-774616104"
-  },
-  {
-    "id": 360860539,
-    "brand": "adidas Originals",
-    "name": "adidas Originals RYV Hoodie - Green | Size: XS",
-    "description": "You've got talents and you're ready to use them. No matter where they lead you, this adidas hoodie has your back. So go on, get out there and create, organise and plan. Give your abilities a voice.Loose fitDrawcord-adjustable hood100% cotton French terryKanga...",
+    "name": "adidas Heritage Crew Neck Tennis Tee - Green | Size: S",
+    "description": "Bring retro tennis style to the court every time you pull on this adidas tee. Its clean, crisp design and contrast collar and cuffs borrow from on-court looks of yesteryear. Thanks to moisture-managing AEROREADY, however, its performance levels are thoroughly...",
     "price": 27.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_RYV_Hoodie_-_Green_-_ViaductClothing_-_-_-255218.jpg%3Fv%3D1717061937&feedId=114294&k=9689a15291cf656e9f9e0b73a54516df6260dfd1",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Heritage_Tennis_Tee_Green_JC6741_HM30.jpg%3Fv%3D1790755967&feedId=114294&k=77f62738357402cec09e0977342cfab0a5637f65",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_RYV_Hoodie_-_Green_-_ViaductClothing_-_-_-255218.jpg%3Fv%3D1717061937&feedId=114294&k=9689a15291cf656e9f9e0b73a54516df6260dfd1"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Heritage_Tennis_Tee_Green_JC6741_HM30.jpg%3Fv%3D1790755967&feedId=114294&k=77f62738357402cec09e0977342cfab0a5637f65"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778671&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778671&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 90,
+    "brandSlug": "adidas",
+    "productSlug": "adidas-adidas-heritage-crew-neck-tennis-tee-green-size-s-325535609"
+  },
+  {
+    "id": 275202752,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Skateboarding Pintuck Pants (Unisex) - Beige | Size: S",
+    "description": "Made with durable materials and a loose cut for easier movement, these adidas Skateboarding Pintuck pants combine vintage style with a modern skate design. They have a pocket on each side, a drawcord-adjustable waist, an embroidered Trefoil and decorative fro...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPants_Pintuck_Skateboarding_Unisex_Beige_JC7594_21_model_3.jpg%3Fv%3D1790756081&feedId=114294&k=007a8dc2f031d88c7f8d6f3e7ebfc0f1296d6752",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPants_Pintuck_Skateboarding_Unisex_Beige_JC7594_21_model_3.jpg%3Fv%3D1790756081&feedId=114294&k=007a8dc2f031d88c7f8d6f3e7ebfc0f1296d6752"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "beige"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men",
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778672&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778672&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 89,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-skateboarding-pintuck-pants-unisex-beige-size-s-275202752"
+  },
+  {
+    "id": 291980371,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Knitted Polo Dress - Navy | Size: M",
+    "description": "Revive the '80s in this polo dress from adidas. The fully fashioned knit construction hugs your body with a slim fit. Ribbed cuffs add to the retro style. Pair this dress with your favorite kicks for a casual yet chic look.Product type: Long dresses. Slim fit...",
+    "price": 44.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FKnitted_Polo_Dress_Blue_JC7690_01_laydown_1.jpg%3Fv%3D1790756192&feedId=114294&k=40a6861114abe8c2214d0f2c0e96baa0a6ab9dbf",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FKnitted_Polo_Dress_Blue_JC7690_01_laydown_1.jpg%3Fv%3D1790756192&feedId=114294&k=40a6861114abe8c2214d0f2c0e96baa0a6ab9dbf"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "dress",
+    "subcategory": "General Clothing",
+    "colors": [
+      "navy"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "winter"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778673&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778673&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 88,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-knitted-polo-dress-navy-size-m-291980371"
+  },
+  {
+    "id": 375868466,
+    "brand": "Adidas",
+    "name": "adidas Men's House of Tiro Nations Pack Shorts - White | Size: S",
+    "description": "These adidas shorts offer a colourful take on modern football style. Knit fabric and a drawcord-adjustable waist make them casual and comfortable. Vibrant blocks of colour give them a stylish edge. This product is made with 100% recycled materials. By reusing...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC8056_21_model_1.jpg%3Fv%3D1790756296&feedId=114294&k=cd0f04dde8551e6593b7059df9c101e71422d3b1",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC8056_21_model_1.jpg%3Fv%3D1790756296&feedId=114294&k=cd0f04dde8551e6593b7059df9c101e71422d3b1"
     ],
     "imageVerificationStatus": "verified-product-image",
     "category": "hoodie",
     "subcategory": "General Clothing",
     "colors": [
-      "green"
+      "white"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "winter"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778674&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778674&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 87,
+    "brandSlug": "adidas",
+    "productSlug": "adidas-adidas-men-s-house-of-tiro-nations-pack-shorts-white-size-s-375868466"
+  },
+  {
+    "id": 392646085,
+    "brand": "Adidas",
+    "name": "adidas Men's House of Tiro Nations Pack Shorts - White | Size: M",
+    "description": "These adidas shorts offer a colourful take on modern football style. Knit fabric and a drawcord-adjustable waist make them casual and comfortable. Vibrant blocks of colour give them a stylish edge. This product is made with 100% recycled materials. By reusing...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC8056_21_model_1.jpg%3Fv%3D1790756296&feedId=114294&k=cd0f04dde8551e6593b7059df9c101e71422d3b1",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC8056_21_model_1.jpg%3Fv%3D1790756296&feedId=114294&k=cd0f04dde8551e6593b7059df9c101e71422d3b1"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "white"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "winter"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778675&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778675&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 86,
+    "brandSlug": "adidas",
+    "productSlug": "adidas-adidas-men-s-house-of-tiro-nations-pack-shorts-white-size-m-392646085"
+  },
+  {
+    "id": 342313228,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Adicolor Classic Firebird Loose Track Top - Grey | Size: 2XS",
+    "description": "The adidas Firebird track top has been setting trends for more than 50 years. This new version carries on the legacy with a loose cut that gives it an easy-going feel. Iconic 3-Stripes run down the sleeves and a small Trefoil sits on the chest, while shiny tr...",
+    "price": 44.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChamarra_Deportiva_Adicolor_Classic_Firebird_Holgada_Gris_JC8254_01_laydown_1.jpg%3Fv%3D1790756425&feedId=114294&k=f54732b60616b6b597f32c97ce1704e957fc97a2",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChamarra_Deportiva_Adicolor_Classic_Firebird_Holgada_Gris_JC8254_01_laydown_1.jpg%3Fv%3D1790756425&feedId=114294&k=f54732b60616b6b597f32c97ce1704e957fc97a2"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "grey"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778676&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778676&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 85,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-classic-firebird-loose-track-top-grey-size-2xs-342313228"
+  },
+  {
+    "id": 359090847,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Adicolor Classic Firebird Loose Track Top - Grey | Size: XS",
+    "description": "The adidas Firebird track top has been setting trends for more than 50 years. This new version carries on the legacy with a loose cut that gives it an easy-going feel. Iconic 3-Stripes run down the sleeves and a small Trefoil sits on the chest, while shiny tr...",
+    "price": 44.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChamarra_Deportiva_Adicolor_Classic_Firebird_Holgada_Gris_JC8254_01_laydown_1.jpg%3Fv%3D1790756425&feedId=114294&k=f54732b60616b6b597f32c97ce1704e957fc97a2",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChamarra_Deportiva_Adicolor_Classic_Firebird_Holgada_Gris_JC8254_01_laydown_1.jpg%3Fv%3D1790756425&feedId=114294&k=f54732b60616b6b597f32c97ce1704e957fc97a2"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "grey"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778677&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778677&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 84,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-classic-firebird-loose-track-top-grey-size-xs-359090847"
+  },
+  {
+    "id": 442978942,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Adicolor Classic Firebird Loose Track Top - Grey | Size: L",
+    "description": "The adidas Firebird track top has been setting trends for more than 50 years. This new version carries on the legacy with a loose cut that gives it an easy-going feel. Iconic 3-Stripes run down the sleeves and a small Trefoil sits on the chest, while shiny tr...",
+    "price": 44.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChamarra_Deportiva_Adicolor_Classic_Firebird_Holgada_Gris_JC8254_01_laydown_1.jpg%3Fv%3D1790756425&feedId=114294&k=f54732b60616b6b597f32c97ce1704e957fc97a2",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChamarra_Deportiva_Adicolor_Classic_Firebird_Holgada_Gris_JC8254_01_laydown_1.jpg%3Fv%3D1790756425&feedId=114294&k=f54732b60616b6b597f32c97ce1704e957fc97a2"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "grey"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778678&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778678&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 83,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-classic-firebird-loose-track-top-grey-size-l-442978942"
+  },
+  {
+    "id": 459756561,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Adicolor Classics Firebird Track Top - Pink | Size: XS",
+    "description": "Fresh and vibrant, this Adicolor Firebird track top celebrates the strength and authenticity of legendary adidas DNA. Made from modern tricot for a clean look, it features iconic 3-Stripes on the sleeves and an embroidered Trefoil logo on the chest. Zip it up...",
+    "price": 44.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC8269_01_laydown_1.jpg%3Fv%3D1790756587&feedId=114294&k=55502c38a57e9905cab72091bfa7529c5a17f45c",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC8269_01_laydown_1.jpg%3Fv%3D1790756587&feedId=114294&k=55502c38a57e9905cab72091bfa7529c5a17f45c"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "pink"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778679&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778679&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 82,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-classics-firebird-track-top-pink-size-xs-459756561"
+  },
+  {
+    "id": 63764353,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Snake Crew Neck Trefoil Sweatshirt - White | Size: S",
+    "description": "Pull on effortless style with this adidas crewneck sweatshirt. Made from soft cotton French terry fabric, it's all about casual comfort. Ribbed cuffs and a loose, oversized shape create a laid-back vibe. The tonal snakeskin print on the Trefoil logo on the fr...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FSnake_Crew_Sweatshirt_White_JC8329_01_laydown_1.jpg%3Fv%3D1790756693&feedId=114294&k=64f27ddda4e537d03ab656af056b052a417bf76f",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FSnake_Crew_Sweatshirt_White_JC8329_01_laydown_1.jpg%3Fv%3D1790756693&feedId=114294&k=64f27ddda4e537d03ab656af056b052a417bf76f"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "white"
     ],
     "materials": [
       "cotton"
@@ -24518,47 +22019,47 @@ export const verifiedProducts: Product[] = [
       "all season"
     ],
     "gender": [
-      "unisex"
+      "women",
+      "men"
     ],
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325721&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778680&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325721&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778680&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 98,
-    "compareAtPrice": 63,
+    "popularityScore": 81,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-ryv-hoodie-green-size-xs-360860539"
+    "productSlug": "adidas-originals-adidas-originals-women-s-snake-crew-neck-trefoil-sweatshirt-white-size-s-63764353"
   },
   {
-    "id": 394415777,
-    "brand": "Kappa",
-    "name": "Kappa Risano Smock Jacket - Black/Green | Size: XL",
-    "description": "The Risano Jacket is from out Kaps collection, with it's simply design you need to have this in your wardrobe.Kappa logo tape to both sleevesMesh linedCut and sew contrast panel detail10% elastane 90% polyesterProduct Colour: Black / GreenProduct Code: 304RVB...",
-    "price": 29.99,
+    "id": 46986734,
+    "brand": "adidas Originals",
+    "name": "adidas Originals 3-Stripes Track Top - Navy | Size: XS",
+    "description": "This adidas track top brings back an iconic look so you can make it yours all over again. It's made from cotton-blend piqué fabric and cut for a loose fit to keep you comfortable. With ribbed cuffs and the familiar 3-Stripes down the sleeves, this piece calls...",
+    "price": 44.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGreen_-_ViaductClothing_-_-_-293100.jpg%3Fv%3D1717099468&feedId=114294&k=4c31d710d5f0e9f2a2426f66431c617fa8861aec",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FTrack_Top_Blue_JC8361_01_laydown_hover.jpg%3Fv%3D1790756898&feedId=114294&k=7d44d1a25b59858402c8077c5d17c862da9dfa5f",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGreen_-_ViaductClothing_-_-_-293100.jpg%3Fv%3D1717099468&feedId=114294&k=4c31d710d5f0e9f2a2426f66431c617fa8861aec"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FTrack_Top_Blue_JC8361_01_laydown_hover.jpg%3Fv%3D1790756898&feedId=114294&k=7d44d1a25b59858402c8077c5d17c862da9dfa5f"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "blazer",
+    "category": "jewellery",
     "subcategory": "General Clothing",
     "colors": [
-      "black"
+      "navy"
     ],
     "materials": [
       "mixed material"
@@ -24581,39 +22082,323 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325723&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778681&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325723&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778681&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 97,
-    "compareAtPrice": 75,
-    "brandSlug": "kappa",
-    "productSlug": "kappa-kappa-risano-smock-jacket-black-green-size-xl-394415777"
+    "popularityScore": 80,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-3-stripes-track-top-navy-size-xs-46986734"
   },
   {
-    "id": 427971015,
-    "brand": "Kappa",
-    "name": "Kappa If Half Zip Fleece Sweatshirt - White / Navy | Size: 2XL",
-    "description": "The Iconik collection was created to celebrate the incredible decade that the 80s were for Kappa, by reinterpreting its most emblematic codes. The If sweatshirt is a strong piece of the Iconik collection. Its materials and its details assure you an ultra fash...",
-    "price": 24.99,
+    "id": 30209115,
+    "brand": "adidas Originals",
+    "name": "adidas Originals 3-Stripes Track Top - Navy | Size: L",
+    "description": "This adidas track top brings back an iconic look so you can make it yours all over again. It's made from cotton-blend piqué fabric and cut for a loose fit to keep you comfortable. With ribbed cuffs and the familiar 3-Stripes down the sleeves, this piece calls...",
+    "price": 44.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNavy_-_ViaductClothing_-_-_-293019.jpg%3Fv%3D1717099364&feedId=114294&k=7ad037764a7f7fd10b843f9d6b9e71b6e9d72365",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FTrack_Top_Blue_JC8361_01_laydown_hover.jpg%3Fv%3D1790756898&feedId=114294&k=7d44d1a25b59858402c8077c5d17c862da9dfa5f",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNavy_-_ViaductClothing_-_-_-293019.jpg%3Fv%3D1717099364&feedId=114294&k=7ad037764a7f7fd10b843f9d6b9e71b6e9d72365"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FTrack_Top_Blue_JC8361_01_laydown_hover.jpg%3Fv%3D1790756898&feedId=114294&k=7d44d1a25b59858402c8077c5d17c862da9dfa5f"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
+    "category": "jewellery",
+    "subcategory": "General Clothing",
+    "colors": [
+      "navy"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778682&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778682&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 79,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-3-stripes-track-top-navy-size-l-30209115"
+  },
+  {
+    "id": 13431496,
+    "brand": "adidas Originals",
+    "name": "adidas Originals 3-Stripes Track Top - Green | Size: XS",
+    "description": "This adidas track top brings back an iconic look so you can make it yours all over again. It's made from cotton-blend piqué fabric and cut for a loose fit to keep you comfortable. With ribbed cuffs and the familiar 3-Stripes down the sleeves, this piece calls...",
+    "price": 44.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FTrack_Top_Green_JC8362_01_laydown.jpg%3Fv%3D1790757014&feedId=114294&k=05a49fc5c0fdd47d5ef56ce96b945f18bfa2d1ab",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FTrack_Top_Green_JC8362_01_laydown.jpg%3Fv%3D1790757014&feedId=114294&k=05a49fc5c0fdd47d5ef56ce96b945f18bfa2d1ab"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "jewellery",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778683&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778683&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 78,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-3-stripes-track-top-green-size-xs-13431496"
+  },
+  {
+    "id": 130874829,
+    "brand": "adidas Originals",
+    "name": "adidas Originals 3-Stripes Track Top - Green | Size: S",
+    "description": "This adidas track top brings back an iconic look so you can make it yours all over again. It's made from cotton-blend piqué fabric and cut for a loose fit to keep you comfortable. With ribbed cuffs and the familiar 3-Stripes down the sleeves, this piece calls...",
+    "price": 44.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FTrack_Top_Green_JC8362_01_laydown.jpg%3Fv%3D1790757014&feedId=114294&k=05a49fc5c0fdd47d5ef56ce96b945f18bfa2d1ab",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FTrack_Top_Green_JC8362_01_laydown.jpg%3Fv%3D1790757014&feedId=114294&k=05a49fc5c0fdd47d5ef56ce96b945f18bfa2d1ab"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "jewellery",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778684&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778684&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 77,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-3-stripes-track-top-green-size-s-130874829"
+  },
+  {
+    "id": 114097210,
+    "brand": "adidas Originals",
+    "name": "adidas Originals \"Voulez-vous courir avec moi\" Graphic Tee - Black | Size: XS",
+    "description": "The words \"Voulez-vous courir avec moi\" above an image of a retro adidas trainer pop on the front of this graphic tee from adidas. Made from soft cotton in a regular fit, this shirt keeps you comfortable all day. Pair it with joggers or shorts for a fun, easy...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGraphic_Tee_Black_JC8366_01_laydown_1.jpg%3Fv%3D1790757119&feedId=114294&k=3b82fb32d3f1a7a8bf4d0f239911d5af7b4c9a54",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGraphic_Tee_Black_JC8366_01_laydown_1.jpg%3Fv%3D1790757119&feedId=114294&k=3b82fb32d3f1a7a8bf4d0f239911d5af7b4c9a54"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778685&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778685&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 76,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-voulez-vous-courir-avec-moi-graphic-tee-black-size-xs-114097210"
+  },
+  {
+    "id": 97319591,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Graphic Tee - White | Size: XS",
+    "description": "This tee brings together the best of adidas heritage and modern style. Made from soft cotton jersey fabric, it's perfect for everyday wear. The front graphic shows off a stylised linear adidas logo that gives off retro vibes.Product type: T-shirts. Product co...",
+    "price": 17.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC8379_01_laydown_1.jpg%3Fv%3D1790757826&feedId=114294&k=3bd560c8628b15c94b058d8abe9e489c51fbecab",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC8379_01_laydown_1.jpg%3Fv%3D1790757826&feedId=114294&k=3bd560c8628b15c94b058d8abe9e489c51fbecab"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "white"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778686&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778686&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 75,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-graphic-tee-white-size-xs-97319591"
+  },
+  {
+    "id": 80541972,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Contrast Retro Ringer Tee - White | Size: S",
+    "description": "This adidas tee lets you represent the brand with a retro vibe. The contrast-colour collar and cuffs and a classic Trefoil logo on the chest pay homage to our athletic heritage. Made from soft single jersey fabric, this t-shirt is perfect for casual comfort.P...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FContrast_Tee_White_JC8384_01_laydown.jpg%3Fv%3D1790757948&feedId=114294&k=2bb2d153c5ffee6dc9eff6307a5f0ac0d2c5d048",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FContrast_Tee_White_JC8384_01_laydown.jpg%3Fv%3D1790757948&feedId=114294&k=2bb2d153c5ffee6dc9eff6307a5f0ac0d2c5d048"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
     "subcategory": "General Clothing",
     "colors": [
       "white"
@@ -24639,1080 +22424,35 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325725&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778687&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325725&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778687&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 96,
-    "compareAtPrice": 70,
-    "brandSlug": "kappa",
-    "productSlug": "kappa-kappa-if-half-zip-fleece-sweatshirt-white-navy-size-2xl-427971015"
-  },
-  {
-    "id": 226639587,
-    "brand": "Reebok",
-    "name": "Reebok Classics Foundation Crossbody Bag - Beige | Size: One Size",
-    "description": "Keep your essentials close with this comfortable crossbody bag. Two front pockets and an inner zip pocket let you separate and organize your things. The strap adjusts so you can wear it tight or loose.100% cotton twill6 LZip main compartmentsTwo front pocketI...",
-    "price": 11.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Foundation_Crossbody_Bag_-_Beige_-_ViaductClothing_-_-_-297367.jpg%3Fv%3D1717104902&feedId=114294&k=85bfad9712a940451a59b6b00d86fed8824e04cd",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Foundation_Crossbody_Bag_-_Beige_-_ViaductClothing_-_-_-297367.jpg%3Fv%3D1717104902&feedId=114294&k=85bfad9712a940451a59b6b00d86fed8824e04cd"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "bag",
-    "subcategory": "General Clothing",
-    "colors": [
-      "beige"
-    ],
-    "materials": [
-      "cotton"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325729&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325729&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 95,
-    "compareAtPrice": 25,
-    "brandSlug": "reebok",
-    "productSlug": "reebok-reebok-classics-foundation-crossbody-bag-beige-size-one-size-226639587"
-  },
-  {
-    "id": 394562872,
-    "brand": "Adidas",
-    "name": "adidas Terrex Insulation Puffer Jacket - Orange | Size: S",
-    "description": "The route is on, the weather changes. With this foldable and durable jacket, you are safe from raid and rapid changes in weather. It can be used as an outer layer, as it is ultra stretchable.Long sleevesZip front pocketsHeat and cooling zones for comfortFitte...",
-    "price": 59.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Terrex_Insulation_Puffer_Jacket_-_Orange_-_ViaductClothing_-_-_-286133.jpg%3Fv%3D1739893484&feedId=114294&k=dd6c7d5516a64fc7cc41f395d9348686cc71cc10",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Terrex_Insulation_Puffer_Jacket_-_Orange_-_ViaductClothing_-_-_-286133.jpg%3Fv%3D1739893484&feedId=114294&k=dd6c7d5516a64fc7cc41f395d9348686cc71cc10"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "blazer",
-    "subcategory": "General Clothing",
-    "colors": [
-      "orange"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325733&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325733&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 94,
-    "compareAtPrice": 130,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-terrex-insulation-puffer-jacket-orange-size-s-394562872"
-  },
-  {
-    "id": 461673348,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Tolima-02 Track Pants - Black / Gold | Size: XS",
-    "description": "You'll keep winning your street style game in these adidas track pants. The metallic details make sure of it. A late '90s fashion influence gives you the confidence you need to return that smile at the coffee shop. Adjust the cuffs and elastic waist to stay c...",
-    "price": 19.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGold_-_ViaductClothing_-_-_-264513.jpg%3Fv%3D1717069566&feedId=114294&k=e88efe7a7170edfe6f4f7742264c1116bcc79a02",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGold_-_ViaductClothing_-_-_-264513.jpg%3Fv%3D1717069566&feedId=114294&k=e88efe7a7170edfe6f4f7742264c1116bcc79a02"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "gold"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325737&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325737&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 93,
-    "compareAtPrice": 65,
+    "popularityScore": 74,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-tolima-02-track-pants-black-gold-size-xs-461673348"
+    "productSlug": "adidas-originals-adidas-originals-contrast-retro-ringer-tee-white-size-s-80541972"
   },
   {
-    "id": 428956753,
+    "id": 729543401,
     "brand": "adidas Originals",
-    "name": "adidas Originals Lock Up Ripstop Shorts - Yellow | Size: S",
-    "description": "Turns out the '70s are alive and well. Some might even say thriving. The adidas Shorts bring archival inspiration into the present, putting fresh energy onto the streets.Regular fitElastic waist with drawcord100% polyester ripstopCasual ripstop shortsFront po...",
-    "price": 29.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Lock_Up_Ripstop_Shorts_-_Yellow_-_ViaductClothing_-_-_-247390.jpg%3Fv%3D1717053806&feedId=114294&k=ffab28e643d698e5acf4e9af173465e4294b06cb",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Lock_Up_Ripstop_Shorts_-_Yellow_-_ViaductClothing_-_-_-247390.jpg%3Fv%3D1717053806&feedId=114294&k=ffab28e643d698e5acf4e9af173465e4294b06cb"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "yellow"
-    ],
-    "materials": [
-      "polyester"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325741&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325741&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 92,
-    "compareAtPrice": 45,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-lock-up-ripstop-shorts-yellow-size-s-428956753"
-  },
-  {
-    "id": 395401515,
-    "brand": "Adidas",
-    "name": "adidas Terrex Explore Knit Joggers - Green | Size: XS",
-    "description": "A way to keep your love for the greater outdoors is by adding new gear for the extra summit-flex. This adidas Terrex pant is the stretchy alternative to what is out there, featuring brushed-knit for freedom of movement, drawcord-adjustable waist, and elastic...",
+    "name": "adidas Originals Women's Retro Sprinter Shorts - Navy | Size: 2XL",
+    "description": "Inspired by retro track and field style and '80s disco vibes, these loose-fit satin shorts from adidas move with a sense of elegance and ease. Contrast-colour 3-Stripes and piping add to the heritage sport look. A linear adidas logo signs off on the classic s...",
     "price": 24.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fc9c6886d-e356-4672-be7b-e19ac956610c_1.jpg%3Fv%3D1739894908&feedId=114294&k=5fd21d06c03b6c75f64fb47b54574039f451cb87",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC8895_1.jpg%3Fv%3D1790758041&feedId=114294&k=48a99c1b106d4909b70203172ef283c7445ba440",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fc9c6886d-e356-4672-be7b-e19ac956610c_1.jpg%3Fv%3D1739894908&feedId=114294&k=5fd21d06c03b6c75f64fb47b54574039f451cb87"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "green"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325743&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325743&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 91,
-    "compareAtPrice": 70,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-terrex-explore-knit-joggers-green-size-xs-395401515"
-  },
-  {
-    "id": 462511991,
-    "brand": "Under Armour",
-    "name": "Under Armour UA Rival Terry Crew Sweatshirt - Blue | Size: XL",
-    "description": "If you want to stay comfy, warmed-up, and ready before the game—or after—this is what you wear. We call it \"Rival Terry.\" You can just call it your new favorite.French Terry has a smooth outer layer & a warm, soft inner layerMaterial wicks sweat & dries reall...",
-    "price": 24.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_UA_Rival_Terry_Crew_Sweatshirt_-_Blue_-_ViaductClothing_-_-_-300498.jpg%3Fv%3D1717108979&feedId=114294&k=bffef58f70dfc8a2001c428e07c96184db773e4d",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_UA_Rival_Terry_Crew_Sweatshirt_-_Blue_-_ViaductClothing_-_-_-300498.jpg%3Fv%3D1717108979&feedId=114294&k=bffef58f70dfc8a2001c428e07c96184db773e4d"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325747&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325747&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 90,
-    "compareAtPrice": 42,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-ua-rival-terry-crew-sweatshirt-blue-size-xl-462511991"
-  },
-  {
-    "id": 294735801,
-    "brand": "Under Armour",
-    "name": "Under Armour UA Rival Terry AMP Joggers Pants - Black/Pink | Size: XS",
-    "description": "If you want to stay comfy, warmed-up, and ready before the game—or after—this is what you wear. We call it \"Rival Terry.\" You can just call it your new favorite.French Terry has a smooth outer layer & a warm, soft inner layerMaterial wicks sweat & dries reall...",
-    "price": 29.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPink_-_ViaductClothing_-_-_-300474.jpg%3Fv%3D1717108947&feedId=114294&k=542e2aff4231f1ae64ef49bbcb74d60a32dae212",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPink_-_ViaductClothing_-_-_-300474.jpg%3Fv%3D1717108947&feedId=114294&k=542e2aff4231f1ae64ef49bbcb74d60a32dae212"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325749&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325749&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 89,
-    "compareAtPrice": 60,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-ua-rival-terry-amp-joggers-pants-black-pink-size-xs-294735801"
-  },
-  {
-    "id": 81600576,
-    "brand": "Under Armour",
-    "name": "Under Armour UA Rival Terry AMP Joggers Pants - Black/Pink | Size: S",
-    "description": "If you want to stay comfy, warmed-up, and ready before the game—or after—this is what you wear. We call it \"Rival Terry.\" You can just call it your new favorite.French Terry has a smooth outer layer & a warm, soft inner layerMaterial wicks sweat & dries reall...",
-    "price": 29.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPink_-_ViaductClothing_-_-_-300474.jpg%3Fv%3D1717108947&feedId=114294&k=542e2aff4231f1ae64ef49bbcb74d60a32dae212",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPink_-_ViaductClothing_-_-_-300474.jpg%3Fv%3D1717108947&feedId=114294&k=542e2aff4231f1ae64ef49bbcb74d60a32dae212"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44404632583&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44404632583&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 88,
-    "compareAtPrice": 60,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-ua-rival-terry-amp-joggers-pants-black-pink-size-s-81600576"
-  },
-  {
-    "id": 496214324,
-    "brand": "Under Armour",
-    "name": "Under Armour Rival Fleece Signature Joggers - Blue | Size: S",
-    "description": "This gear keeps you warmed up and ready for pretty much everything you do—it's light, comfy, and super-soft on the inside.Ultra-soft, mid-weight cotton-blend fleece with brushed interior for extra warmthEncased elastic waistband with external drawcordOpen han...",
-    "price": 29.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Rival_Fleece_Signature_Joggers_-_Blue_-_ViaductClothing_-_-_-300122.jpg%3Fv%3D1717108517&feedId=114294&k=b8c4e557c5a7c10c0ec36796ffea1f985ebee970",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Rival_Fleece_Signature_Joggers_-_Blue_-_ViaductClothing_-_-_-300122.jpg%3Fv%3D1717108517&feedId=114294&k=b8c4e557c5a7c10c0ec36796ffea1f985ebee970"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325751&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325751&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 87,
-    "compareAtPrice": 45,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-rival-fleece-signature-joggers-blue-size-s-496214324"
-  },
-  {
-    "id": 529769562,
-    "brand": "Under Armour",
-    "name": "Under Armour Rival Fleece Signature Joggers - Pink | Size: L",
-    "description": "This gear keeps you warmed up and ready for pretty much everything you do—it's light, comfy, and super-soft on the inside.Ultra-soft, mid-weight cotton-blend fleece with brushed interior for extra warmthEncased elastic waistband with external drawcordOpen han...",
-    "price": 29.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Rival_Fleece_Signature_Joggers_-_Pink_-_ViaductClothing_-_-_-300144.jpg%3Fv%3D1717108541&feedId=114294&k=0a0d4534e42b36a4998cf57492de0fddfe2bc520",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Rival_Fleece_Signature_Joggers_-_Pink_-_ViaductClothing_-_-_-300144.jpg%3Fv%3D1717108541&feedId=114294&k=0a0d4534e42b36a4998cf57492de0fddfe2bc520"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "pink"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325753&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325753&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 86,
-    "compareAtPrice": 45,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-rival-fleece-signature-joggers-pink-size-l-529769562"
-  },
-  {
-    "id": 429103848,
-    "brand": "Under Armour",
-    "name": "Under Armour Men's UA DNA Hoodie - Blue | Size: S",
-    "description": "Every detail—from the ribbed panels for mobility to the stay-put bungee drawcords—was thought-out, considered, tested, and proven. What you get is simply the best hoodie you've ever put on.Grid-textured, 2-layer fleece with brushed interior is extremely warm...",
-    "price": 59.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Men_s_UA_DNA_Hoodie_-_Blue_-_ViaductClothing_-_-_-299966.jpg%3Fv%3D1717108319&feedId=114294&k=934e501f3996326874cb578efaceece1e103f3db",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Men_s_UA_DNA_Hoodie_-_Blue_-_ViaductClothing_-_-_-299966.jpg%3Fv%3D1717108319&feedId=114294&k=934e501f3996326874cb578efaceece1e103f3db"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325755&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325755&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 85,
-    "compareAtPrice": 120,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-men-s-ua-dna-hoodie-blue-size-s-429103848"
-  },
-  {
-    "id": 462659086,
-    "brand": "Under Armour",
-    "name": "Under Armour Men's UA DNA Hoodie - Blue | Size: 2XL",
-    "description": "Every detail—from the ribbed panels for mobility to the stay-put bungee drawcords—was thought-out, considered, tested, and proven. What you get is simply the best hoodie you've ever put on.Grid-textured, 2-layer fleece with brushed interior is extremely warm...",
-    "price": 59.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Men_s_UA_DNA_Hoodie_-_Blue_-_ViaductClothing_-_-_-299966.jpg%3Fv%3D1717108319&feedId=114294&k=934e501f3996326874cb578efaceece1e103f3db",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Men_s_UA_DNA_Hoodie_-_Blue_-_ViaductClothing_-_-_-299966.jpg%3Fv%3D1717108319&feedId=114294&k=934e501f3996326874cb578efaceece1e103f3db"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325757&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325757&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 84,
-    "compareAtPrice": 120,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-men-s-ua-dna-hoodie-blue-size-2xl-462659086"
-  },
-  {
-    "id": 774763199,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Taped Shorts - Blue | Size: XS",
-    "description": "Mix up your every day with a pop of colour. Whether you're running the online meeting or running errands, these shorts have a comfortable, easy fit. Bright patterns on distinctive taping run down the sides. Zip pockets keep keys and spare change close.Regular...",
-    "price": 14.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Taped_Shorts_-_Blue_-_ViaductClothing_-_-_-263695.jpg%3Fv%3D1717068916&feedId=114294&k=abb6ba48e691338dfdff613799a07e230e696332",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Taped_Shorts_-_Blue_-_ViaductClothing_-_-_-263695.jpg%3Fv%3D1717068916&feedId=114294&k=abb6ba48e691338dfdff613799a07e230e696332"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325761&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325761&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 83,
-    "compareAtPrice": 43,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-taped-shorts-blue-size-xs-774763199"
-  },
-  {
-    "id": 707652723,
-    "brand": "Adidas",
-    "name": "adidas Must Haves Shorts - Black | Size: S",
-    "description": "Backyard BBQs. Living room binge sessions. Walks around the neighbourhood. There's no place the adidas Must Haves Shorts don't belong. Because they're comfortable enough to settle in, but stylish enough to stand out. Anywhere, anytime.Regular fitDrawcord on e...",
-    "price": 19.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Must_Haves_Shorts_-_Black_-_ViaductClothing_-_-_-227534.jpg%3Fv%3D1717029105&feedId=114294&k=191577ebc1529e158262da2eb20ff1c402713e41",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Must_Haves_Shorts_-_Black_-_ViaductClothing_-_-_-227534.jpg%3Fv%3D1717029105&feedId=114294&k=191577ebc1529e158262da2eb20ff1c402713e41"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325765&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325765&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 82,
-    "compareAtPrice": 38,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-must-haves-shorts-black-size-s-707652723"
-  },
-  {
-    "id": 294588706,
-    "brand": "Adidas",
-    "name": "adidas Unite Floral Shorts - Hazy Beige | Size: 2XL",
-    "description": "We're one human family. That's the message of these adidas AEROREADY training shorts designed with UNITEFIT. Stretchy fabric and a drop crotch gives you freedom of movement in dance or studio classes. A jacquard floral print adds fresh style.Regular fitDrawco...",
-    "price": 19.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Unite_Floral_Shorts_-_Hazy_Beige_-_ViaductClothing_-_-_-288280.jpg%3Fv%3D1717093281&feedId=114294&k=b284756d6eb47f7d6c6360959b6db93098594f6a",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Unite_Floral_Shorts_-_Hazy_Beige_-_ViaductClothing_-_-_-288280.jpg%3Fv%3D1717093281&feedId=114294&k=b284756d6eb47f7d6c6360959b6db93098594f6a"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "beige"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325771&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325771&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 81,
-    "compareAtPrice": 35,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-unite-floral-shorts-hazy-beige-size-2xl-294588706"
-  },
-  {
-    "id": 275419398,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Regen Blocked Shell Camo Windbreaker - Brown | Size: S",
-    "description": "adidas switches up the usual colour-blocked look on this windbreaker, printing it with an all-over, woodland-inspired camo instead. It’s crafted using recycled polyester, too — adhering to the label’s eco-conscious approach to craft — and is branded, as usual...",
-    "price": 59.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Regen_Blocked_Shell_Camo_Windbreaker_-_Brown_-_ViaductClothing_-_-_-253974.jpg%3Fv%3D1717060724&feedId=114294&k=f2affadd114f201ce4785e3eea1f0912aa0bf6d4",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Regen_Blocked_Shell_Camo_Windbreaker_-_Brown_-_ViaductClothing_-_-_-253974.jpg%3Fv%3D1717060724&feedId=114294&k=f2affadd114f201ce4785e3eea1f0912aa0bf6d4"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "jewellery",
-    "subcategory": "General Clothing",
-    "colors": [
-      "brown"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=45950051668&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=45950051668&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 80,
-    "compareAtPrice": 75,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-regen-blocked-shell-camo-windbreaker-brown-size-s-275419398"
-  },
-  {
-    "id": 292197017,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Regen Blocked Shell Camo Windbreaker - Brown | Size: M",
-    "description": "adidas switches up the usual colour-blocked look on this windbreaker, printing it with an all-over, woodland-inspired camo instead. It’s crafted using recycled polyester, too — adhering to the label’s eco-conscious approach to craft — and is branded, as usual...",
-    "price": 59.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Regen_Blocked_Shell_Camo_Windbreaker_-_Brown_-_ViaductClothing_-_-_-253974.jpg%3Fv%3D1717060724&feedId=114294&k=f2affadd114f201ce4785e3eea1f0912aa0bf6d4",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Regen_Blocked_Shell_Camo_Windbreaker_-_Brown_-_ViaductClothing_-_-_-253974.jpg%3Fv%3D1717060724&feedId=114294&k=f2affadd114f201ce4785e3eea1f0912aa0bf6d4"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "jewellery",
-    "subcategory": "General Clothing",
-    "colors": [
-      "brown"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=45950051669&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=45950051669&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 79,
-    "compareAtPrice": 75,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-regen-blocked-shell-camo-windbreaker-brown-size-m-292197017"
-  },
-  {
-    "id": 261033468,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Stripe Polo Shirt - Green | Size: XS",
-    "description": "Country club aesthetics have never been bolder, as far as adidas is concerned. This polo is cut to a boxy fit from teal and navy striped cotton jersey — for a look far removed from the traditional whites of tennis greats — and branded with logo embroidery at...",
-    "price": 24.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Stripe_Polo_Shirt_-_Green_-_ViaductClothing_-_-_-261808.jpg%3Fv%3D1717067421&feedId=114294&k=46bc77c8ee840b518d474e7b17c35e5537ab9bb6",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Stripe_Polo_Shirt_-_Green_-_ViaductClothing_-_-_-261808.jpg%3Fv%3D1717067421&feedId=114294&k=46bc77c8ee840b518d474e7b17c35e5537ab9bb6"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "shirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "green"
-    ],
-    "materials": [
-      "cotton"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325773&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325773&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 78,
-    "compareAtPrice": 45,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-stripe-polo-shirt-green-size-xs-261033468"
-  },
-  {
-    "id": 428809658,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Pre-Game Shorts - Navy | Size: S",
-    "description": "Easy like Sunday morning. These adidas Pre-Game shorts bring that laid-back mentality into your everyday. So no matter where you are, or what you're doing, you'll do it with comfort.Relaxed fitDrawcord on elastic waist70% cotton, 30% polyester French terryFre...",
-    "price": 24.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Pre-Game_Shorts_-_Navy_-_ViaductClothing_-_-_-252035.jpg%3Fv%3D1717058912&feedId=114294&k=5d9ef746ff702d4ed8bd9c0d61a86edccf25f64e",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Pre-Game_Shorts_-_Navy_-_ViaductClothing_-_-_-252035.jpg%3Fv%3D1717058912&feedId=114294&k=5d9ef746ff702d4ed8bd9c0d61a86edccf25f64e"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC8895_1.jpg%3Fv%3D1790758041&feedId=114294&k=48a99c1b106d4909b70203172ef283c7445ba440"
     ],
     "imageVerificationStatus": "verified-product-image",
     "category": "trousers",
@@ -25721,7 +22461,65 @@ export const verifiedProducts: Product[] = [
       "navy"
     ],
     "materials": [
-      "polyester"
+      "satin"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778688&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778688&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 73,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-retro-sprinter-shorts-navy-size-2xl-729543401"
+  },
+  {
+    "id": 712765782,
+    "brand": "Adidas",
+    "name": "adidas Heritage Tennis Shorts - Navy | Size: S",
+    "description": "Putting a modern spin on classic tennis apparel, these adidas shorts keep you comfortable in soft French terry. Their curved hem and contrast piping evoke a retro feel. Pockets on the front give you somewhere to store spare tennis balls. Whether you're playin...",
+    "price": 29.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Heritage_Tennis_Shorts_Blue_JC9293_HM1.jpg%3Fv%3D1790758180&feedId=114294&k=46a3946ce4d77d89c56159f3c201e2220138e1f5",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Heritage_Tennis_Shorts_Blue_JC9293_HM1.jpg%3Fv%3D1790758180&feedId=114294&k=46a3946ce4d77d89c56159f3c201e2220138e1f5"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "navy"
+    ],
+    "materials": [
+      "mixed material"
     ],
     "vibe": [
       "contemporary"
@@ -25741,42 +22539,270 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325779&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778689&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325779&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778689&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 77,
-    "compareAtPrice": 40,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-pre-game-shorts-navy-size-s-428809658"
+    "popularityScore": 72,
+    "brandSlug": "adidas",
+    "productSlug": "adidas-adidas-heritage-tennis-shorts-navy-size-s-712765782"
   },
   {
-    "id": 292764325,
+    "id": 510383608,
     "brand": "Adidas",
-    "name": "adidas Essentials Favorites Tee - Blue | Size: M",
-    "description": "Spread the word. This cotton t-shirt feels soft against your skin as you make time to relax. Allover adidas graphics complete the iconic look.Regular fitCrewneck100% cotton single jerseySoft feelColor: Tech Indigo / WhiteProduct code: FM6019",
-    "price": 14.99,
+    "name": "adidas Men's House of Tiro Nations Pack Track Pants - Black | Size: 2XL",
+    "description": "These adidas pants bring pitch-inspired style with bold colourblocking that shows your love of football. Zip side pockets keep essentials secure, while ankle zips make them easy to pull on and off even over shoes. Choosing recycled materials allows existing m...",
+    "price": 34.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Essentials_Favorites_Tee_-_Blue_-_ViaductClothing_-_-_-224444.jpg%3Fv%3D1717025451&feedId=114294&k=0351b4d2c464b1e20a7966f6e1e8a6c936325023",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC9446_21_model_1.jpg%3Fv%3D1790758364&feedId=114294&k=7684206d0ccad3a145c04ac1d46aa2bdfb00dd2a",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Essentials_Favorites_Tee_-_Blue_-_ViaductClothing_-_-_-224444.jpg%3Fv%3D1717025451&feedId=114294&k=0351b4d2c464b1e20a7966f6e1e8a6c936325023"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC9446_21_model_1.jpg%3Fv%3D1790758364&feedId=114294&k=7684206d0ccad3a145c04ac1d46aa2bdfb00dd2a"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778690&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778690&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 71,
+    "brandSlug": "adidas",
+    "productSlug": "adidas-adidas-men-s-house-of-tiro-nations-pack-track-pants-black-size-2xl-510383608"
+  },
+  {
+    "id": 527161227,
+    "brand": "Adidas",
+    "name": "adidas Men's Tiro Track Pants - Black | Size: 3XL",
+    "description": "Tiro pants made in part with a blend of recycled and renewable materials.Product type: Track pants. Regular fit. Drawcord on elastic waist. 70% recycled polyester, 30% cotton. Side zip pockets. Leg zips. Contains a minimum of 70% recycled and renewable conten...",
+    "price": 34.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC9452_1.jpg%3Fv%3D1790758499&feedId=114294&k=6219aa68ec46c6054c81a7ec52b1f2052954a592",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC9452_1.jpg%3Fv%3D1790758499&feedId=114294&k=6219aa68ec46c6054c81a7ec52b1f2052954a592"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778691&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778691&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 70,
+    "brandSlug": "adidas",
+    "productSlug": "adidas-adidas-men-s-tiro-track-pants-black-size-3xl-527161227"
+  },
+  {
+    "id": 543938846,
+    "brand": "Adidas",
+    "name": "adidas Women's Hyperglam Rib Crop T-Shirt - Red | Size: S",
+    "description": "Wear this adidas tee to the gym or out with friends - its athletic roots with playful details make it perfect for rewriting the rules. The cropped tee hugs the body for a flattering fit. 3-Stripes and ribbed panels add extra style. CLIMACOOL wicks and dispers...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FHyperglam_Rib_Tee_Burgundy_JC9711_DM1.jpg%3Fv%3D1790758790&feedId=114294&k=1b2d86a87b84b5730ee95d810b449da7e4904a47",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FHyperglam_Rib_Tee_Burgundy_JC9711_DM1.jpg%3Fv%3D1790758790&feedId=114294&k=1b2d86a87b84b5730ee95d810b449da7e4904a47"
     ],
     "imageVerificationStatus": "verified-product-image",
     "category": "tshirt",
     "subcategory": "General Clothing",
     "colors": [
-      "blue"
+      "red"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778692&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778692&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 99,
+    "brandSlug": "adidas",
+    "productSlug": "adidas-adidas-women-s-hyperglam-rib-crop-t-shirt-red-size-s-543938846"
+  },
+  {
+    "id": 560716465,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Adicolor Classics Sprinter Shorts - Yellow | Size: 3XL",
+    "description": "The world knows who you represent when you rock the 3-Stripes. Refresh your casual wardrobe with these classic adidas sprinter shorts. They're a contemporary take on an archival classic. The feel is lightweight and comfortable, and three pockets provide the p...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC9928_1.jpg%3Fv%3D1790759062&feedId=114294&k=2cae58dd1b7794a931eb73dcbe74b8ec83fdf202",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC9928_1.jpg%3Fv%3D1790759062&feedId=114294&k=2cae58dd1b7794a931eb73dcbe74b8ec83fdf202"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "yellow"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778693&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778693&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 98,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-adicolor-classics-sprinter-shorts-yellow-size-3xl-560716465"
+  },
+  {
+    "id": 577494084,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Crew Neck Neuclassics Tee - Brown | Size: XS",
+    "description": "Slip into comfort and style with this adidas t-shirt. Crafted from soft cotton jersey, its casual, loose fit moves with you for all-day ease. Subtle branding and 3-Stripes on one sleeve connect you to decades of athletic heritage. Pair with joggers or jeans f...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC9932_1.jpg%3Fv%3D1790759170&feedId=114294&k=26dfff6ac7895a61e527932b26722803a5b167d0",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC9932_1.jpg%3Fv%3D1790759170&feedId=114294&k=26dfff6ac7895a61e527932b26722803a5b167d0"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
     ],
     "materials": [
       "cotton"
@@ -25799,538 +22825,15 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325781&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778694&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325781&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 76,
-    "compareAtPrice": 28,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-essentials-favorites-tee-blue-size-m-292764325"
-  },
-  {
-    "id": 259209087,
-    "brand": "Adidas",
-    "name": "adidas HEAT.RDY 7-Inch Shorts - Blue | Size: XS",
-    "description": "When the nights are hot and the days are even hotter, these adidas shorts bring some relief. The stretchy fabric air-cools and absorbs moisture, so you stay comfortable as you train. Stash your essentials in the zip pockets, and head out for an outdoor workou...",
-    "price": 26.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_HEAT.RDY_7-Inch_Shorts_-_Blue_-_ViaductClothing_-_-_-225784.jpg%3Fv%3D1717027038&feedId=114294&k=66a5ed53dab015d579760dbfd8c4aa14677ed55b",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_HEAT.RDY_7-Inch_Shorts_-_Blue_-_ViaductClothing_-_-_-225784.jpg%3Fv%3D1717027038&feedId=114294&k=66a5ed53dab015d579760dbfd8c4aa14677ed55b"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325783&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325783&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 75,
-    "compareAtPrice": 60,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-heat-rdy-7-inch-shorts-blue-size-xs-259209087"
-  },
-  {
-    "id": 225653849,
-    "brand": "Adidas",
-    "name": "adidas HEAT.RDY 7-Inch Shorts - Blue | Size: S",
-    "description": "When the nights are hot and the days are even hotter, these adidas shorts bring some relief. The stretchy fabric air-cools and absorbs moisture, so you stay comfortable as you train. Stash your essentials in the zip pockets, and head out for an outdoor workou...",
-    "price": 26.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_HEAT.RDY_7-Inch_Shorts_-_Blue_-_ViaductClothing_-_-_-225784.jpg%3Fv%3D1717027038&feedId=114294&k=66a5ed53dab015d579760dbfd8c4aa14677ed55b",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_HEAT.RDY_7-Inch_Shorts_-_Blue_-_ViaductClothing_-_-_-225784.jpg%3Fv%3D1717027038&feedId=114294&k=66a5ed53dab015d579760dbfd8c4aa14677ed55b"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325785&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325785&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 74,
-    "compareAtPrice": 60,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-heat-rdy-7-inch-shorts-blue-size-s-225653849"
-  },
-  {
-    "id": 107557128,
-    "brand": "Adidas",
-    "name": "adidas Unisex Unite Floral Shorts - Pink | Size: XS",
-    "description": "We're one human family. That's the message of these adidas AEROREADY training shorts designed with UNITEFIT. Stretchy fabric and a drop crotch gives you freedom of movement in dance or studio classes. A jacquard floral print adds fresh style.Regular fitDrawco...",
-    "price": 16.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Unisex_Unite_Floral_Shorts_-_Pink_-_ViaductClothing_-_-_-288204.jpg%3Fv%3D1717093183&feedId=114294&k=364c61567bc5d5df2de110a770f2ff2b6c3bed8b",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Unisex_Unite_Floral_Shorts_-_Pink_-_ViaductClothing_-_-_-288204.jpg%3Fv%3D1717093183&feedId=114294&k=364c61567bc5d5df2de110a770f2ff2b6c3bed8b"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "pink"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men",
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325791&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325791&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 73,
-    "compareAtPrice": 35,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-unisex-unite-floral-shorts-pink-size-xs-107557128"
-  },
-  {
-    "id": 174667604,
-    "brand": "adidas Originals",
-    "name": "adidas Originals 3D Trefoil 3-Stripes Track Pants - Red | Size: XS",
-    "description": "Getting dressed? Don't sweat it. Save yourself the effort with these adidas track pants. Originally built for comfort on the sidelines, they've stepped quite a ways off of them since the '70s. Stages. Crowds. Streets. It would almost be weird if you didn't se...",
-    "price": 24.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_3D_Trefoil_3-Stripes_Track_Pants_-_Red_-_ViaductClothing_-_-_-229236.png%3Fv%3D1717030906&feedId=114294&k=4d322721387a0d257eeb3b935f35c639a6562b41",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_3D_Trefoil_3-Stripes_Track_Pants_-_Red_-_ViaductClothing_-_-_-229236.png%3Fv%3D1717030906&feedId=114294&k=4d322721387a0d257eeb3b935f35c639a6562b41"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "dress",
-    "subcategory": "General Clothing",
-    "colors": [
-      "red"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325795&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325795&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 72,
-    "compareAtPrice": 50,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-3d-trefoil-3-stripes-track-pants-red-size-xs-174667604"
-  },
-  {
-    "id": 7598782,
-    "brand": "Adidas",
-    "name": "adidas Tango Predator Jersey - Black | Size: S",
-    "description": "Celebrating 25 years since the adidas Predator first took over the pitch. This limited-edition football jersey is made with soft brushed fleece. Mesh panels and reflective details finish the look.Regular fit is wider at the body, with a straight silhouetteRib...",
-    "price": 39.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Tango_Predator_Jersey_-_Black_-_ViaductClothing_-_-_-285134.jpg%3Fv%3D1717089205&feedId=114294&k=87838d142e3a3912fc66a988cf57d96dfa5fe297",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Tango_Predator_Jersey_-_Black_-_ViaductClothing_-_-_-285134.jpg%3Fv%3D1717089205&feedId=114294&k=87838d142e3a3912fc66a988cf57d96dfa5fe297"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325803&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325803&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 71,
-    "compareAtPrice": 65,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-tango-predator-jersey-black-size-s-7598782"
-  },
-  {
-    "id": 41154020,
-    "brand": "Adidas",
-    "name": "adidas Tango Predator Jersey - Black | Size: M",
-    "description": "Celebrating 25 years since the adidas Predator first took over the pitch. This limited-edition football jersey is made with soft brushed fleece. Mesh panels and reflective details finish the look.Regular fit is wider at the body, with a straight silhouetteRib...",
-    "price": 39.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Tango_Predator_Jersey_-_Black_-_ViaductClothing_-_-_-285134.jpg%3Fv%3D1717089205&feedId=114294&k=87838d142e3a3912fc66a988cf57d96dfa5fe297",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Tango_Predator_Jersey_-_Black_-_ViaductClothing_-_-_-285134.jpg%3Fv%3D1717089205&feedId=114294&k=87838d142e3a3912fc66a988cf57d96dfa5fe297"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325805&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325805&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 70,
-    "compareAtPrice": 65,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-tango-predator-jersey-black-size-m-41154020"
-  },
-  {
-    "id": 91486877,
-    "brand": "Adidas",
-    "name": "adidas Saturday Shorts - Sharp Blue | Size: XS 5\"",
-    "description": "Some days everything falls into place and the run feels effortless. Some days it feels like a victory just to get your shoes on. adidas Saturday shorts keep you dry and ready for anything. Woven fabric feels light and just right. Inner briefs give you breatha...",
-    "price": 19.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Saturday_Shorts_-_Sharp_Blue_-_ViaductClothing_-_-_-283079.jpg%3Fv%3D1717086568&feedId=114294&k=b4a762ad09fa865bc587a6ba1109c5926c7746c0",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Saturday_Shorts_-_Sharp_Blue_-_ViaductClothing_-_-_-283079.jpg%3Fv%3D1717086568&feedId=114294&k=b4a762ad09fa865bc587a6ba1109c5926c7746c0"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325806&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325806&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 99,
-    "compareAtPrice": 35,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-saturday-shorts-sharp-blue-size-xs-5-91486877"
-  },
-  {
-    "id": 74709258,
-    "brand": "Adidas",
-    "name": "adidas Saturday Shorts - Sharp Blue | Size: XS 7\"",
-    "description": "Some days everything falls into place and the run feels effortless. Some days it feels like a victory just to get your shoes on. adidas Saturday shorts keep you dry and ready for anything. Woven fabric feels light and just right. Inner briefs give you breatha...",
-    "price": 19.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Saturday_Shorts_-_Sharp_Blue_-_ViaductClothing_-_-_-283079.jpg%3Fv%3D1717086568&feedId=114294&k=b4a762ad09fa865bc587a6ba1109c5926c7746c0",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Saturday_Shorts_-_Sharp_Blue_-_ViaductClothing_-_-_-283079.jpg%3Fv%3D1717086568&feedId=114294&k=b4a762ad09fa865bc587a6ba1109c5926c7746c0"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325807&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325807&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 98,
-    "compareAtPrice": 35,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-saturday-shorts-sharp-blue-size-xs-7-74709258"
-  },
-  {
-    "id": 706785973,
-    "brand": "Adidas",
-    "name": "adidas Saturday Shorts - Sharp Blue | Size: S 7\"",
-    "description": "Some days everything falls into place and the run feels effortless. Some days it feels like a victory just to get your shoes on. adidas Saturday shorts keep you dry and ready for anything. Woven fabric feels light and just right. Inner briefs give you breatha...",
-    "price": 19.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Saturday_Shorts_-_Sharp_Blue_-_ViaductClothing_-_-_-283079.jpg%3Fv%3D1717086568&feedId=114294&k=b4a762ad09fa865bc587a6ba1109c5926c7746c0",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Saturday_Shorts_-_Sharp_Blue_-_ViaductClothing_-_-_-283079.jpg%3Fv%3D1717086568&feedId=114294&k=b4a762ad09fa865bc587a6ba1109c5926c7746c0"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325811&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325811&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778694&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -26338,26 +22841,139 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 97,
-    "compareAtPrice": 35,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-saturday-shorts-sharp-blue-size-s-7-706785973"
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-crew-neck-neuclassics-tee-brown-size-xs-577494084"
   },
   {
-    "id": 622897878,
-    "brand": "Adidas",
-    "name": "adidas Ergo Primeblue Shorts - Orange | Size: XS",
-    "description": "Chase down every point. Ergonomic, and built for maximum freedom of movement, these adidas tennis shorts are stretchy so you can easily track down tough shots. Stash a couple extra balls in the pockets so you can keep hitting winners without interruption.Regu...",
+    "id": 594271703,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Crew Neck Neuclassics Tee - Brown | Size: L",
+    "description": "Slip into comfort and style with this adidas t-shirt. Crafted from soft cotton jersey, its casual, loose fit moves with you for all-day ease. Subtle branding and 3-Stripes on one sleeve connect you to decades of athletic heritage. Pair with joggers or jeans f...",
     "price": 19.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Ergo_Primeblue_Shorts_-_Orange_-_ViaductClothing_-_-_-224074.jpg%3Fv%3D1717025052&feedId=114294&k=db2665d646191d1ae15c6c06364f010e35d14185",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC9932_1.jpg%3Fv%3D1790759170&feedId=114294&k=26dfff6ac7895a61e527932b26722803a5b167d0",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Ergo_Primeblue_Shorts_-_Orange_-_ViaductClothing_-_-_-224074.jpg%3Fv%3D1717025052&feedId=114294&k=db2665d646191d1ae15c6c06364f010e35d14185"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC9932_1.jpg%3Fv%3D1790759170&feedId=114294&k=26dfff6ac7895a61e527932b26722803a5b167d0"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
+    "category": "tshirt",
     "subcategory": "General Clothing",
     "colors": [
-      "orange"
+      "brown"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778695&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778695&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 96,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-crew-neck-neuclassics-tee-brown-size-l-594271703"
+  },
+  {
+    "id": 611049322,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Crew Neck Neuclassics Tee - Brown | Size: XL",
+    "description": "Slip into comfort and style with this adidas t-shirt. Crafted from soft cotton jersey, its casual, loose fit moves with you for all-day ease. Subtle branding and 3-Stripes on one sleeve connect you to decades of athletic heritage. Pair with joggers or jeans f...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC9932_1.jpg%3Fv%3D1790759170&feedId=114294&k=26dfff6ac7895a61e527932b26722803a5b167d0",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJC9932_1.jpg%3Fv%3D1790759170&feedId=114294&k=26dfff6ac7895a61e527932b26722803a5b167d0"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778696&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778696&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 95,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-crew-neck-neuclassics-tee-brown-size-xl-611049322"
+  },
+  {
+    "id": 627826941,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Adibreak Crop Tee - Black | Size: M",
+    "description": "Reshape your look with 90s-inspired style in this adidas Adibreak tee. The above-the-waist length pairs easily with high-waisted joggers or your favourite jeans. Soft jersey fabric and a very loose fit keep you comfortable whether you are dancing or relaxing....",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPlayera_corta_Adibreak_Negro_JD0100_21_model.jpg%3Fv%3D1790759272&feedId=114294&k=6a0ccfc73ff804ac17de7cbe63c52d2fa7ee7b33",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPlayera_corta_Adibreak_Negro_JD0100_21_model.jpg%3Fv%3D1790759272&feedId=114294&k=6a0ccfc73ff804ac17de7cbe63c52d2fa7ee7b33"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
     ],
     "materials": [
       "mixed material"
@@ -26375,47 +22991,47 @@ export const verifiedProducts: Product[] = [
       "all season"
     ],
     "gender": [
+      "women",
       "men"
     ],
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325814&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778697&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325814&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778697&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 96,
-    "compareAtPrice": 43,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-ergo-primeblue-shorts-orange-size-xs-622897878"
+    "popularityScore": 94,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-adibreak-crop-tee-black-size-m-627826941"
   },
   {
-    "id": 41660313,
-    "brand": "Adidas",
-    "name": "adidas Run It Graphic Shorts - Blue | Size: S 7\"",
-    "description": "Ever-improving. Urban construction inspired the camo print on these adidas running shorts. The moisture absorbing fabric helps you stay dry and confident while you explore new routes. The elastic waist and inner briefs work together to reduce distractions.Reg...",
-    "price": 19.99,
+    "id": 376162656,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Adicolor Teamgeist Cropped Track Top - Grey | Size: S",
+    "description": "Channel the '00s in this cropped adidas track top. The crinkle fabric and cut lines take inspiration from vintage football shirts. With a slim fit and a mix of matte and shiny finishes, this top is all about sporty style. Pair it with high-waisted jeans or jo...",
+    "price": 39.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Run_It_Graphic_Shorts_-_Blue_-_ViaductClothing_-_-_-282879.jpg%3Fv%3D1717086309&feedId=114294&k=d2ca051ecfaad564a47277b848888424275380d7",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0266_2.jpg%3Fv%3D1790759383&feedId=114294&k=05081f1055285afe29feaa3e689fa6a134bf66fd",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Run_It_Graphic_Shorts_-_Blue_-_ViaductClothing_-_-_-282879.jpg%3Fv%3D1717086309&feedId=114294&k=d2ca051ecfaad564a47277b848888424275380d7"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0266_2.jpg%3Fv%3D1790759383&feedId=114294&k=05081f1055285afe29feaa3e689fa6a134bf66fd"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
+    "category": "shirt",
     "subcategory": "General Clothing",
     "colors": [
-      "blue"
+      "grey"
     ],
     "materials": [
       "mixed material"
@@ -26438,131 +23054,15 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325820&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778698&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325820&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 95,
-    "compareAtPrice": 25,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-run-it-graphic-shorts-blue-size-s-7-41660313"
-  },
-  {
-    "id": 58437932,
-    "brand": "Adidas",
-    "name": "adidas Tiro Primeblue Track Jacket - Purple | Size: XS",
-    "description": "Rooted in football culture, adidas Tiro takes sporty style way beyond the touchline. This track jacket shows off colourblocked details for an uncompromising look. It has a slim fit and moisture-absorbing AEROREADY to keep you fresh and confident. And the best...",
-    "price": 24.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Tiro_Primeblue_Track_Jacket_-_Purple_-_ViaductClothing_-_-_-287039.jpg%3Fv%3D1717091675&feedId=114294&k=ccf8e5ba996832dd0ab3eedcf2410109c1b0f239",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Tiro_Primeblue_Track_Jacket_-_Purple_-_ViaductClothing_-_-_-287039.jpg%3Fv%3D1717091675&feedId=114294&k=ccf8e5ba996832dd0ab3eedcf2410109c1b0f239"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "blazer",
-    "subcategory": "General Clothing",
-    "colors": [
-      "purple"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325827&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325827&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 94,
-    "compareAtPrice": 50,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-tiro-primeblue-track-jacket-purple-size-xs-58437932"
-  },
-  {
-    "id": 159103646,
-    "brand": "Adidas",
-    "name": "adidas Tiro Primeblue Track Jacket - Purple | Size: S",
-    "description": "Rooted in football culture, adidas Tiro takes sporty style way beyond the touchline. This track jacket shows off colourblocked details for an uncompromising look. It has a slim fit and moisture-absorbing AEROREADY to keep you fresh and confident. And the best...",
-    "price": 24.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Tiro_Primeblue_Track_Jacket_-_Purple_-_ViaductClothing_-_-_-287039.jpg%3Fv%3D1717091675&feedId=114294&k=ccf8e5ba996832dd0ab3eedcf2410109c1b0f239",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Tiro_Primeblue_Track_Jacket_-_Purple_-_ViaductClothing_-_-_-287039.jpg%3Fv%3D1717091675&feedId=114294&k=ccf8e5ba996832dd0ab3eedcf2410109c1b0f239"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "blazer",
-    "subcategory": "General Clothing",
-    "colors": [
-      "purple"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "winter"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325829&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325829&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778698&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -26570,29 +23070,28 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 93,
-    "compareAtPrice": 50,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-tiro-primeblue-track-jacket-purple-size-s-159103646"
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-adicolor-teamgeist-cropped-track-top-grey-size-s-376162656"
   },
   {
-    "id": 252592419,
-    "brand": "Adidas",
-    "name": "adidas Terra Love O-Shape Shorts - Brown | Size: XS",
-    "description": "​The shorts were designed with comfort in mind—the soft, lightweight fabric makes them ideal for lounging at home and long walks in nature with a friend alike. Crafted from 100% recycled polyester ripstop in Earth-inspired tones, their relaxed silhouette is g...",
-    "price": 19.99,
+    "id": 392940275,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Adicolor Teamgeist Cropped Track Top - Blue | Size: M",
+    "description": "Channel the '00s in this cropped adidas track top. The crinkle fabric and cut lines take inspiration from vintage football shirts. With a slim fit and a mix of matte and shiny finishes, this top is all about sporty style. Pair it with high-waisted jeans or jo...",
+    "price": 39.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Terra_Love_O-Shape_Shorts_-_Brown_-_ViaductClothing_-_-_-285405_1.jpg%3Fv%3D1740586126&feedId=114294&k=a5f20bfdb98315d995b2d9649d881cb84905a9db",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0267_2.jpg%3Fv%3D1790759498&feedId=114294&k=1dac149c7d3ef95b1f0c6e05c012a68f15f650a1",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Terra_Love_O-Shape_Shorts_-_Brown_-_ViaductClothing_-_-_-285405_1.jpg%3Fv%3D1740586126&feedId=114294&k=a5f20bfdb98315d995b2d9649d881cb84905a9db"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0267_2.jpg%3Fv%3D1790759498&feedId=114294&k=1dac149c7d3ef95b1f0c6e05c012a68f15f650a1"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
+    "category": "shirt",
     "subcategory": "General Clothing",
     "colors": [
-      "brown"
+      "blue"
     ],
     "materials": [
-      "polyester"
+      "mixed material"
     ],
     "vibe": [
       "contemporary"
@@ -26612,15 +23111,15 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325831&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778699&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325831&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778699&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -26628,29 +23127,28 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 92,
-    "compareAtPrice": 33,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-terra-love-o-shape-shorts-brown-size-xs-252592419"
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-adicolor-teamgeist-cropped-track-top-blue-size-m-392940275"
   },
   {
-    "id": 269370038,
-    "brand": "Adidas",
-    "name": "adidas Terra Love O-Shape Shorts - Brown | Size: S",
-    "description": "​The shorts were designed with comfort in mind—the soft, lightweight fabric makes them ideal for lounging at home and long walks in nature with a friend alike. Crafted from 100% recycled polyester ripstop in Earth-inspired tones, their relaxed silhouette is g...",
-    "price": 19.99,
+    "id": 338941614,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Adicolor Teamgeist Cropped Track Top - Blue | Size: L",
+    "description": "Channel the '00s in this cropped adidas track top. The crinkle fabric and cut lines take inspiration from vintage football shirts. With a slim fit and a mix of matte and shiny finishes, this top is all about sporty style. Pair it with high-waisted jeans or jo...",
+    "price": 39.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Terra_Love_O-Shape_Shorts_-_Brown_-_ViaductClothing_-_-_-285405_1.jpg%3Fv%3D1740586126&feedId=114294&k=a5f20bfdb98315d995b2d9649d881cb84905a9db",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0267_2.jpg%3Fv%3D1790759498&feedId=114294&k=1dac149c7d3ef95b1f0c6e05c012a68f15f650a1",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Terra_Love_O-Shape_Shorts_-_Brown_-_ViaductClothing_-_-_-285405_1.jpg%3Fv%3D1740586126&feedId=114294&k=a5f20bfdb98315d995b2d9649d881cb84905a9db"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0267_2.jpg%3Fv%3D1790759498&feedId=114294&k=1dac149c7d3ef95b1f0c6e05c012a68f15f650a1"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
+    "category": "shirt",
     "subcategory": "General Clothing",
     "colors": [
-      "brown"
+      "blue"
     ],
     "materials": [
-      "polyester"
+      "mixed material"
     ],
     "vibe": [
       "contemporary"
@@ -26670,15 +23168,15 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325832&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778700&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325832&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778700&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -26686,29 +23184,28 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 91,
-    "compareAtPrice": 33,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-terra-love-o-shape-shorts-brown-size-s-269370038"
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-adicolor-teamgeist-cropped-track-top-blue-size-l-338941614"
   },
   {
-    "id": 24735599,
+    "id": 355719233,
     "brand": "adidas Originals",
-    "name": "adidas Originals Unisex Torsion Comp Shoes - White/Multi",
-    "description": "Your kind of classic. Inspired by adidas tennis innovations of the '90s, these leather shoes blend heritage technology with sporty style. The familiar stabilising heel overlay and iconic Torsion bar are back. Extra cushioning brings new comfort to match the l...",
-    "price": 49.99,
+    "name": "adidas Originals Women's Adicolor 3-Stripes Mini Skirt - Navy | Size: S",
+    "description": "This Adicolor skirt updates a classic with a modern look, adding a playful twist to adidas sporting heritage. The short length and iconic 3-Stripes create a standout finish. Wear it casually with a graphic tee or dress it up with a tailored blazer; however yo...",
+    "price": 24.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FMulti_-_ViaductClothing_-_-_-271483.jpg%3Fv%3D1717075173&feedId=114294&k=592c2b6b81443c5ddccbc8325e57c90a1fb0adf0",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0283_01_laydown_hover_1.jpg%3Fv%3D1790760272&feedId=114294&k=9c84c5aeac8b78cf08384d87a2d6db8dd90bc63e",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FMulti_-_ViaductClothing_-_-_-271483.jpg%3Fv%3D1717075173&feedId=114294&k=592c2b6b81443c5ddccbc8325e57c90a1fb0adf0"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0283_01_laydown_hover_1.jpg%3Fv%3D1790760272&feedId=114294&k=9c84c5aeac8b78cf08384d87a2d6db8dd90bc63e"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
+    "category": "dress",
     "subcategory": "General Clothing",
     "colors": [
-      "white"
+      "navy"
     ],
     "materials": [
-      "leather"
+      "mixed material"
     ],
     "vibe": [
       "contemporary"
@@ -26724,21 +23221,20 @@ export const verifiedProducts: Product[] = [
     ],
     "gender": [
       "women",
-      "men",
-      "unisex"
+      "men"
     ],
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325835&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778701&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325835&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778701&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -26746,29 +23242,28 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 90,
-    "compareAtPrice": 90,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-unisex-torsion-comp-shoes-white-multi-24735599"
+    "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-3-stripes-mini-skirt-navy-size-s-355719233"
   },
   {
-    "id": 58290837,
-    "brand": "Reebok",
-    "name": "Reebok x Mountain Research Unisex DMX Trail Shadow Shoes - Grey",
-    "description": "Reebok and Japanese fashion label Mountain Research debut their first collaboration, which is a stripped-down utilitarian-style take on the DMX Trail Shadow. This shoe is a product of Mountain Research's special backcountry design study and provides a traditi...",
-    "price": 49.99,
+    "id": 305386376,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Varsity Cardigan - White | Size: M",
+    "description": "Back in the day, prep athletes wore their letters on cardigan sweaters. This cardigan from adidas Originals rekindles that classic look with bold lettering on the chest inspired by letterman sweaters. The sweater is made from versatile cotton French terry and...",
+    "price": 44.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_x_Mountain_Research_Unisex_DMX_Trail_Shadow_Shoes_-_Grey_-_ViaductClothing_-_-_-299755.jpg%3Fv%3D1717108039&feedId=114294&k=eebdac9483a0e61b93ba339eb8eb85c8b1e9dbcd",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Cardigan_White_JD0684_01_laydown.jpg%3Fv%3D1790760360&feedId=114294&k=f58f69db8108e4c8b686ef5a741be7f181c67d6b",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_x_Mountain_Research_Unisex_DMX_Trail_Shadow_Shoes_-_Grey_-_ViaductClothing_-_-_-299755.jpg%3Fv%3D1717108039&feedId=114294&k=eebdac9483a0e61b93ba339eb8eb85c8b1e9dbcd"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Cardigan_White_JD0684_01_laydown.jpg%3Fv%3D1790760360&feedId=114294&k=f58f69db8108e4c8b686ef5a741be7f181c67d6b"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
+    "category": "dress",
     "subcategory": "General Clothing",
     "colors": [
-      "grey"
+      "white"
     ],
     "materials": [
-      "mixed material"
+      "cotton"
     ],
     "vibe": [
       "contemporary"
@@ -26783,20 +23278,20 @@ export const verifiedProducts: Product[] = [
       "winter"
     ],
     "gender": [
-      "unisex"
+      "men"
     ],
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325837&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778702&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325837&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778702&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -26804,29 +23299,28 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 89,
-    "compareAtPrice": 150,
-    "brandSlug": "reebok",
-    "productSlug": "reebok-reebok-x-mountain-research-unisex-dmx-trail-shadow-shoes-grey-58290837"
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-varsity-cardigan-white-size-m-305386376"
   },
   {
-    "id": 91846075,
+    "id": 322163995,
     "brand": "adidas Originals",
-    "name": "adidas Originals Unisex Supercourt Shoes - Cloud White / Core Black",
-    "description": "There's something special about the clean white leather shoe. Even when it's, well, not so clean. Whether you call it cream, eggshell, ivory, snow or something else, this pair of adidas Supercourt Shoes pays homage to the many shades of the tennis court. And...",
+    "name": "adidas Originals Women's Essentials Wide Rib Pants - Brown | Size: S",
+    "description": "These adidas pants are perfect for days when you want to feel cosy while looking catwalk-ready. Made from extra-soft and stretchy fabric, their wide rib design and loose shape create a textured, easygoing look that's right on trend. Whether you're running err...",
     "price": 34.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FCore_Black_-_ViaductClothing_-_-_-270730.jpg%3Fv%3D1717074666&feedId=114294&k=0aa46d41339f1b866dbcada0b86db38471b66f40",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0768_2.jpg%3Fv%3D1790760460&feedId=114294&k=d7958433164d56a598a95223b407afff18c9c9a5",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FCore_Black_-_ViaductClothing_-_-_-270730.jpg%3Fv%3D1717074666&feedId=114294&k=0aa46d41339f1b866dbcada0b86db38471b66f40"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0768_2.jpg%3Fv%3D1790760460&feedId=114294&k=d7958433164d56a598a95223b407afff18c9c9a5"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
+    "category": "blazer",
     "subcategory": "General Clothing",
     "colors": [
-      "white"
+      "brown"
     ],
     "materials": [
-      "leather"
+      "mixed material"
     ],
     "vibe": [
       "contemporary"
@@ -26841,21 +23335,21 @@ export const verifiedProducts: Product[] = [
       "all season"
     ],
     "gender": [
-      "men",
-      "unisex"
+      "women",
+      "men"
     ],
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325839&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778703&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325839&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778703&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -26863,29 +23357,28 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 88,
-    "compareAtPrice": 85,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-unisex-supercourt-shoes-cloud-white-core-black-91846075"
+    "productSlug": "adidas-originals-adidas-originals-women-s-essentials-wide-rib-pants-brown-size-s-322163995"
   },
   {
-    "id": 243977479,
-    "brand": "Nike",
-    "name": "Nike Tribute Full Zip Polyester Tracksuit - Royal Blue | Size: S",
-    "description": "Revelling in the current retro revival trend, Nike deliver this off-white tracksuit that are trimmed with sporting striped taping down each outseam. Secured with an elasticated waistband, the relaxed pair have a trio of handy pockets and come complete with co...",
-    "price": 89.99,
+    "id": 406052090,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Essentials High-Waisted Cargo Shorts - Brown | Size: M",
+    "description": "With a loose shape and high waist, these adidas cargo shorts are all about casual style. The plain-weave construction stays comfortable all day, while the drawcord waist lets you adjust the fit. Snap-button cargo pockets provide plenty of room for your everyd...",
+    "price": 33,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Tribute_Full_Zip_Polyester_Tracksuit_-_Royal_Blue_-_ViaductClothing_-_-_-295657.jpg%3Fv%3D1717102760&feedId=114294&k=b66e304e1d8159cf49de94b3810954c1ed584996",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0790_2.jpg%3Fv%3D1790760571&feedId=114294&k=1197c7c6195411232b6cb5b3da5cbbf1ab86791b",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Tribute_Full_Zip_Polyester_Tracksuit_-_Royal_Blue_-_ViaductClothing_-_-_-295657.jpg%3Fv%3D1717102760&feedId=114294&k=b66e304e1d8159cf49de94b3810954c1ed584996"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0790_2.jpg%3Fv%3D1790760571&feedId=114294&k=1197c7c6195411232b6cb5b3da5cbbf1ab86791b"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "blazer",
+    "category": "trousers",
     "subcategory": "General Clothing",
     "colors": [
-      "blue"
+      "brown"
     ],
     "materials": [
-      "polyester"
+      "mixed material"
     ],
     "vibe": [
       "contemporary"
@@ -26897,23 +23390,24 @@ export const verifiedProducts: Product[] = [
       "everyday"
     ],
     "season": [
-      "winter"
+      "all season"
     ],
     "gender": [
-      "unisex"
+      "women",
+      "men"
     ],
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325848&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778704&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325848&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778704&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -26921,26 +23415,25 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 87,
-    "compareAtPrice": 110,
-    "brandSlug": "nike",
-    "productSlug": "nike-nike-tribute-full-zip-polyester-tracksuit-royal-blue-size-s-243977479"
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-essentials-high-waisted-cargo-shorts-brown-size-m-406052090"
   },
   {
-    "id": 175669162,
+    "id": 422829709,
     "brand": "adidas Originals",
-    "name": "adidas Originals ADV Adventure Archive AOP Shorts - Purple | Size: XS",
-    "description": "Covered with a psychedelic pattern that’s borrowed from the adidas archive, these purple shorts are made using lightweight nylon. They’re inspired by the styles worn by rock climbers in the ‘80s, and completed with embroidered chameleon branding at one thigh....",
-    "price": 29.99,
+    "name": "adidas Originals Women's Essentials High-Waisted Cargo Shorts - Brown | Size: L",
+    "description": "With a loose shape and high waist, these adidas cargo shorts are all about casual style. The plain-weave construction stays comfortable all day, while the drawcord waist lets you adjust the fit. Snap-button cargo pockets provide plenty of room for your everyd...",
+    "price": 33,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_ADV_Adventure_Archive_AOP_Shorts_-_Purple_-_ViaductClothing_-_-_-236267.jpg%3Fv%3D1717038159&feedId=114294&k=5f6f76d9c724a41fec33f721ce5db501d85bc024",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0790_2.jpg%3Fv%3D1790760571&feedId=114294&k=1197c7c6195411232b6cb5b3da5cbbf1ab86791b",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_ADV_Adventure_Archive_AOP_Shorts_-_Purple_-_ViaductClothing_-_-_-236267.jpg%3Fv%3D1717038159&feedId=114294&k=5f6f76d9c724a41fec33f721ce5db501d85bc024"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0790_2.jpg%3Fv%3D1790760571&feedId=114294&k=1197c7c6195411232b6cb5b3da5cbbf1ab86791b"
     ],
     "imageVerificationStatus": "verified-product-image",
     "category": "trousers",
     "subcategory": "General Clothing",
     "colors": [
-      "purple"
+      "brown"
     ],
     "materials": [
       "mixed material"
@@ -26958,20 +23451,21 @@ export const verifiedProducts: Product[] = [
       "all season"
     ],
     "gender": [
-      "unisex"
+      "women",
+      "men"
     ],
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325861&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778705&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325861&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778705&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -26979,26 +23473,25 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 86,
-    "compareAtPrice": 45,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-adv-adventure-archive-aop-shorts-purple-size-xs-175669162"
+    "productSlug": "adidas-originals-adidas-originals-women-s-essentials-high-waisted-cargo-shorts-brown-size-l-422829709"
   },
   {
-    "id": 75003448,
+    "id": 372496852,
     "brand": "adidas Originals",
-    "name": "adidas Originals Danketsu Netherlands Retro Jersey - Orange | Size: XS",
-    "description": "Passion for the game isn't limited to the stadium. We cheer for our teams from our homes, from tables, alongside friends and surrounded by strangers. Around the world, it unites us. This adidas Jersey celebrates exactly that. The unmistakable pattern from the...",
-    "price": 39.99,
+    "name": "adidas Originals Women's Firebird Shorts - Yellow | Size: XS",
+    "description": "Express your active spirit in these lightweight adidas shorts. Inspired by the iconic Firebird track suit, they're built with zip pockets and a loose silhouette for freedom of movement. The soft tricot material keeps you comfortable whether you're cosying up...",
+    "price": 24.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Danketsu_Netherlands_Retro_Jersey_-_Orange_-_ViaductClothing_-_-_-242066.jpg%3Fv%3D1717047117&feedId=114294&k=86bfb0254379c7e0a8688011320a37a739c49810",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FFirebird_Shorts_Yellow_JD0820_21_model.jpg%3Fv%3D1790760749&feedId=114294&k=ff335c30939ba2a9be8f370b815d4b53ac7ef1d1",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Danketsu_Netherlands_Retro_Jersey_-_Orange_-_ViaductClothing_-_-_-242066.jpg%3Fv%3D1717047117&feedId=114294&k=86bfb0254379c7e0a8688011320a37a739c49810"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FFirebird_Shorts_Yellow_JD0820_21_model.jpg%3Fv%3D1790760749&feedId=114294&k=ff335c30939ba2a9be8f370b815d4b53ac7ef1d1"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
+    "category": "blazer",
     "subcategory": "General Clothing",
     "colors": [
-      "orange"
+      "yellow"
     ],
     "materials": [
       "mixed material"
@@ -27016,20 +23509,21 @@ export const verifiedProducts: Product[] = [
       "all season"
     ],
     "gender": [
-      "unisex"
+      "women",
+      "men"
     ],
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325867&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778706&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325867&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778706&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -27037,26 +23531,199 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 85,
-    "compareAtPrice": 60,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-danketsu-netherlands-retro-jersey-orange-size-xs-75003448"
+    "productSlug": "adidas-originals-adidas-originals-women-s-firebird-shorts-yellow-size-xs-372496852"
   },
   {
-    "id": 41448210,
+    "id": 389274471,
     "brand": "adidas Originals",
-    "name": "adidas Originals Danketsu Netherlands Retro Jersey - Orange | Size: S",
-    "description": "Passion for the game isn't limited to the stadium. We cheer for our teams from our homes, from tables, alongside friends and surrounded by strangers. Around the world, it unites us. This adidas Jersey celebrates exactly that. The unmistakable pattern from the...",
-    "price": 39.99,
+    "name": "adidas Originals Women's Firebird Shorts - Yellow | Size: L",
+    "description": "Express your active spirit in these lightweight adidas shorts. Inspired by the iconic Firebird track suit, they're built with zip pockets and a loose silhouette for freedom of movement. The soft tricot material keeps you comfortable whether you're cosying up...",
+    "price": 24.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Danketsu_Netherlands_Retro_Jersey_-_Orange_-_ViaductClothing_-_-_-242066.jpg%3Fv%3D1717047117&feedId=114294&k=86bfb0254379c7e0a8688011320a37a739c49810",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FFirebird_Shorts_Yellow_JD0820_21_model.jpg%3Fv%3D1790760749&feedId=114294&k=ff335c30939ba2a9be8f370b815d4b53ac7ef1d1",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Danketsu_Netherlands_Retro_Jersey_-_Orange_-_ViaductClothing_-_-_-242066.jpg%3Fv%3D1717047117&feedId=114294&k=86bfb0254379c7e0a8688011320a37a739c49810"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FFirebird_Shorts_Yellow_JD0820_21_model.jpg%3Fv%3D1790760749&feedId=114294&k=ff335c30939ba2a9be8f370b815d4b53ac7ef1d1"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
+    "category": "blazer",
     "subcategory": "General Clothing",
     "colors": [
-      "orange"
+      "yellow"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778707&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778707&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 84,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-firebird-shorts-yellow-size-l-389274471"
+  },
+  {
+    "id": 204720662,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Adicolor 3-Stripes Raglan Slim Tee - Pink | Size: S",
+    "description": "This adidas tee updates an everyday essential with a slim fit that hugs the body and a little bit of stretch for extra comfort. The contrast-color raglan sleeves and Trefoil give it retro appeal while 3-Stripes on the shoulders root it in sport heritage.Produ...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0832_1.jpg%3Fv%3D1790760989&feedId=114294&k=73844d84ae83a0a9605eb61cd369dc52739b9ada",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0832_1.jpg%3Fv%3D1790760989&feedId=114294&k=73844d84ae83a0a9605eb61cd369dc52739b9ada"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "pink"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778708&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778708&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 83,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-3-stripes-raglan-slim-tee-pink-size-s-204720662"
+  },
+  {
+    "id": 221498281,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Adicolor 3-Stripes Raglan Slim Tee - Pink | Size: XL",
+    "description": "This adidas tee updates an everyday essential with a slim fit that hugs the body and a little bit of stretch for extra comfort. The contrast-color raglan sleeves and Trefoil give it retro appeal while 3-Stripes on the shoulders root it in sport heritage.Produ...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0832_1.jpg%3Fv%3D1790760989&feedId=114294&k=73844d84ae83a0a9605eb61cd369dc52739b9ada",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD0832_1.jpg%3Fv%3D1790760989&feedId=114294&k=73844d84ae83a0a9605eb61cd369dc52739b9ada"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "pink"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778709&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778709&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 82,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-3-stripes-raglan-slim-tee-pink-size-xl-221498281"
+  },
+  {
+    "id": 439754423,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Adicolor 3-Stripes Raglan Short Sleeve Dress - Blue | Size: XS",
+    "description": "The ease of a Saturday morning, the style of a Saturday night. This adidas dress delivers the best of both worlds. Raglan sleeves, 3-Stripes and a Trefoil logo add sporty touches, and the slim fit keeps the look sleek. Pair it with sneakers for a casual vibe...",
+    "price": 27.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdicolor_3-Stripes_Raglan_Short_Sleeve_Dress_Blue_JD0839_21_model.jpg%3Fv%3D1790761463&feedId=114294&k=c4be3851ee7e33cb82d358c3febb553d204ce5bd",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdicolor_3-Stripes_Raglan_Short_Sleeve_Dress_Blue_JD0839_21_model.jpg%3Fv%3D1790761463&feedId=114294&k=c4be3851ee7e33cb82d358c3febb553d204ce5bd"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "dress",
+    "subcategory": "General Clothing",
+    "colors": [
+      "blue"
     ],
     "materials": [
       "mixed material"
@@ -27079,42 +23746,445 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325869&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778710&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325869&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778710&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 84,
-    "compareAtPrice": 60,
+    "popularityScore": 81,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-danketsu-netherlands-retro-jersey-orange-size-s-41448210"
+    "productSlug": "adidas-originals-adidas-originals-adicolor-3-stripes-raglan-short-sleeve-dress-blue-size-xs-439754423"
   },
   {
-    "id": 141966829,
+    "id": 422976804,
     "brand": "adidas Originals",
-    "name": "adidas Originals R.Y.V. Oversize Tee - Multi | Size: XS",
-    "description": "Brighten up the world. The adidas Reveal Your Voice collection embraces self-expression. This adidas tee shows off a colourful design reminiscent of marbled paint so you can bring some brightness wherever you go.Ribbed crewneck100% cotton single jerseyShort s...",
-    "price": 19.99,
+    "name": "adidas Originals Adicolor 3-Stripes Raglan Short Sleeve Dress - Blue | Size: S",
+    "description": "The ease of a Saturday morning, the style of a Saturday night. This adidas dress delivers the best of both worlds. Raglan sleeves, 3-Stripes and a Trefoil logo add sporty touches, and the slim fit keeps the look sleek. Pair it with sneakers for a casual vibe...",
+    "price": 27.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_R.Y.V._Oversize_Tee_-_Multi_-_ViaductClothing_-_-_-253454.jpg%3Fv%3D1740680864&feedId=114294&k=d09d948310efeb38216700b5750a44d64a0e1d12",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdicolor_3-Stripes_Raglan_Short_Sleeve_Dress_Blue_JD0839_21_model.jpg%3Fv%3D1790761463&feedId=114294&k=c4be3851ee7e33cb82d358c3febb553d204ce5bd",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_R.Y.V._Oversize_Tee_-_Multi_-_ViaductClothing_-_-_-253454.jpg%3Fv%3D1740680864&feedId=114294&k=d09d948310efeb38216700b5750a44d64a0e1d12"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdicolor_3-Stripes_Raglan_Short_Sleeve_Dress_Blue_JD0839_21_model.jpg%3Fv%3D1790761463&feedId=114294&k=c4be3851ee7e33cb82d358c3febb553d204ce5bd"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
+    "category": "dress",
     "subcategory": "General Clothing",
     "colors": [
-      "multicolor"
+      "blue"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778711&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778711&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 80,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-adicolor-3-stripes-raglan-short-sleeve-dress-blue-size-s-422976804"
+  },
+  {
+    "id": 473309661,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Adicolor 3-Stripes Raglan Short Sleeve Dress - Blue | Size: XL",
+    "description": "The ease of a Saturday morning, the style of a Saturday night. This adidas dress delivers the best of both worlds. Raglan sleeves, 3-Stripes and a Trefoil logo add sporty touches, and the slim fit keeps the look sleek. Pair it with sneakers for a casual vibe...",
+    "price": 27.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdicolor_3-Stripes_Raglan_Short_Sleeve_Dress_Blue_JD0839_21_model.jpg%3Fv%3D1790761463&feedId=114294&k=c4be3851ee7e33cb82d358c3febb553d204ce5bd",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdicolor_3-Stripes_Raglan_Short_Sleeve_Dress_Blue_JD0839_21_model.jpg%3Fv%3D1790761463&feedId=114294&k=c4be3851ee7e33cb82d358c3febb553d204ce5bd"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "dress",
+    "subcategory": "General Clothing",
+    "colors": [
+      "blue"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778712&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778712&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 79,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-adicolor-3-stripes-raglan-short-sleeve-dress-blue-size-xl-473309661"
+  },
+  {
+    "id": 456532042,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Adibreak Track Pants - Green | Size: 2XS",
+    "description": "Classic old-school style shows up fresh and modern in these adidas pants. They're made of soft tricot that gives you a loose fit and comfortable feel. Snap-button side panels deliver a signature look while a drawcord waist lets you customise the fit with ever...",
+    "price": 49.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdibreak_Pants_Green_JD0852_21_model.jpg%3Fv%3D1790763971&feedId=114294&k=5f4930e60ea930cbb2c72720d24f636f25bd2504",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdibreak_Pants_Green_JD0852_21_model.jpg%3Fv%3D1790763971&feedId=114294&k=5f4930e60ea930cbb2c72720d24f636f25bd2504"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778713&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778713&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 78,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-adibreak-track-pants-green-size-2xs-456532042"
+  },
+  {
+    "id": 372643947,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Adibreak Track Pants - Green | Size: L",
+    "description": "Classic old-school style shows up fresh and modern in these adidas pants. They're made of soft tricot that gives you a loose fit and comfortable feel. Snap-button side panels deliver a signature look while a drawcord waist lets you customise the fit with ever...",
+    "price": 49.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdibreak_Pants_Green_JD0852_21_model.jpg%3Fv%3D1790763971&feedId=114294&k=5f4930e60ea930cbb2c72720d24f636f25bd2504",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdibreak_Pants_Green_JD0852_21_model.jpg%3Fv%3D1790763971&feedId=114294&k=5f4930e60ea930cbb2c72720d24f636f25bd2504"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778714&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778714&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 77,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-adibreak-track-pants-green-size-l-372643947"
+  },
+  {
+    "id": 355866328,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Adicolor Satin Track Top - Black | Size: L",
+    "description": "For decades, adidas track tops have brought sport to the centre of culture. This track top continues the legacy with a silky satin build and signature 3-Stripes. Pair it with jeans for a casual look or dress it up with a skirt for a night out.Product type: Tr...",
+    "price": 49.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdicolor_Satin_Track_Top_Black_JD0865_21_model_1.jpg%3Fv%3D1790766130&feedId=114294&k=8adc057b0051a646bcfb91c8b708cda6e986a41c",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdicolor_Satin_Track_Top_Black_JD0865_21_model_1.jpg%3Fv%3D1790766130&feedId=114294&k=8adc057b0051a646bcfb91c8b708cda6e986a41c"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "dress",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "satin"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778715&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778715&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 76,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-satin-track-top-black-size-l-355866328"
+  },
+  {
+    "id": 406199185,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Adicolor Satin Track Top - Navy | Size: S",
+    "description": "For decades, adidas track tops have brought sport to the centre of culture. This track top continues the legacy with a silky satin build and signature 3-Stripes. Pair it with jeans for a casual look or dress it up with a skirt for a night out.Product type: Tr...",
+    "price": 49.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdicolor_Satin_Track_Top_Blue_JD0866_21_model_1.jpg%3Fv%3D1790766335&feedId=114294&k=64ed9b2d3c465236c14aee7997b120536ac05926",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FAdicolor_Satin_Track_Top_Blue_JD0866_21_model_1.jpg%3Fv%3D1790766335&feedId=114294&k=64ed9b2d3c465236c14aee7997b120536ac05926"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "dress",
+    "subcategory": "General Clothing",
+    "colors": [
+      "navy"
+    ],
+    "materials": [
+      "satin"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778716&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778716&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 75,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-adicolor-satin-track-top-navy-size-s-406199185"
+  },
+  {
+    "id": 389421566,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Premium Crochet Track Pants - White | Size: L",
+    "description": "With a nod to the sporty roots of adidas, these track pants are made from premium crochet fabric that's soft and breathable. Ribbed cuffs give them a slightly tapered fit, and the 3-Stripes down the sides echo archival style. Pair these with the matching croc...",
+    "price": 59.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FOriginals_Premium_Crochet_Track_Joggers_White_JD1080_21_model_1.jpg%3Fv%3D1790766440&feedId=114294&k=bfa1624512431c061f839366dda5ba805364eabf",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FOriginals_Premium_Crochet_Track_Joggers_White_JD1080_21_model_1.jpg%3Fv%3D1790766440&feedId=114294&k=bfa1624512431c061f839366dda5ba805364eabf"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "blazer",
+    "subcategory": "General Clothing",
+    "colors": [
+      "white"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778717&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778717&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 74,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-premium-crochet-track-pants-white-size-l-389421566"
+  },
+  {
+    "id": 305533471,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Retro Rugby Polo Shirt - Blue | Size: XS",
+    "description": "Pulled from the adidas archives, this rugby polo brings a strong dose of originality and authenticity to everyday style. Made from soft cotton jersey, it is easy to wear, with ribbed cuffs that sit comfortably at the wrists and keep the sleeves in place. A po...",
+    "price": 29.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPlayera_Polo_de_Rugby_Azul_JD1090_01_laydown.jpg%3Fv%3D1790766585&feedId=114294&k=ea7435e21cf42f3510dd55dbf856d7bc2765c7b4",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPlayera_Polo_de_Rugby_Azul_JD1090_01_laydown.jpg%3Fv%3D1790766585&feedId=114294&k=ea7435e21cf42f3510dd55dbf856d7bc2765c7b4"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "shirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "blue"
     ],
     "materials": [
       "cotton"
@@ -27137,36 +24207,553 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325873&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778718&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325873&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778718&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 83,
-    "compareAtPrice": 38,
+    "popularityScore": 73,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-r-y-v-oversize-tee-multi-size-xs-141966829"
+    "productSlug": "adidas-originals-adidas-originals-retro-rugby-polo-shirt-blue-size-xs-305533471"
   },
   {
-    "id": 41301115,
+    "id": 288755852,
+    "brand": "Adidas",
+    "name": "adidas Essentials 3-Stripes Insulated Bomber Jacket - Black | Size: S",
+    "description": "Whether you are running errands or meeting friends, this adidas bomber jacket goes everywhere with you. Insulated for extra warmth, it has a water-repellent coating to help protect you from light rain. Ribbed cuffs help hold in warmth, while the front pockets...",
+    "price": 49.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FVeste_bomber_isolante_3_bandes_Essentials_Noir_JD1294_01_laydown_1.jpg%3Fv%3D1790768431&feedId=114294&k=9a8c3522982c7e151bb9b16a2544afc39c4791ce",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FVeste_bomber_isolante_3_bandes_Essentials_Noir_JD1294_01_laydown_1.jpg%3Fv%3D1790768431&feedId=114294&k=9a8c3522982c7e151bb9b16a2544afc39c4791ce"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "blazer",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "winter"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778719&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778719&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 72,
+    "brandSlug": "adidas",
+    "productSlug": "adidas-adidas-essentials-3-stripes-insulated-bomber-jacket-black-size-s-288755852"
+  },
+  {
+    "id": 684748060,
     "brand": "adidas Originals",
-    "name": "adidas Originals Adicolor Premium Hoodie - White | Size: XS",
-    "description": "Hitting the gym and chilling at home have never been comfier, thanks to adidas' Adicolor staples. This oatmeal crew sweat is cut from organic, terry-backed cotton jersey and branded simply with a matching tiny Trefoil appliqué.100% organic cottonLoop back jer...",
+    "name": "adidas Originals Women's Essentials Wide Rib Tee - Pink | Size: S",
+    "description": "This adidas tee is an everyday essential that pairs equally well with joggers for a casual look or a blazer for a dressed-up night out. The cotton blend is extra soft and stretchy, wrapping you in comfort, while the allover ribbed texture gives it a unique se...",
+    "price": 21.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD1489_01_laydown_1.jpg%3Fv%3D1790768633&feedId=114294&k=aa375784fb1fc109f4c1b3449ff527a475ac6284",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD1489_01_laydown_1.jpg%3Fv%3D1790768633&feedId=114294&k=aa375784fb1fc109f4c1b3449ff527a475ac6284"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "dress",
+    "subcategory": "General Clothing",
+    "colors": [
+      "pink"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778720&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778720&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 71,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-essentials-wide-rib-tee-pink-size-s-684748060"
+  },
+  {
+    "id": 701525679,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Essentials Wide Rib Tee - Green | Size: L",
+    "description": "This adidas tee is an everyday essential that pairs equally well with joggers for a casual look or a blazer for a dressed-up night out. The cotton blend is extra soft and stretchy, wrapping you in comfort, while the allover ribbed texture gives it a unique se...",
+    "price": 21.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FEssentials_Wide_Rib_Tee_Green_JD1490_01_laydown.jpg%3Fv%3D1790768754&feedId=114294&k=6ea7a2fff820ee12804204b7d81925bacae6bf15",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FEssentials_Wide_Rib_Tee_Green_JD1490_01_laydown.jpg%3Fv%3D1790768754&feedId=114294&k=6ea7a2fff820ee12804204b7d81925bacae6bf15"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "dress",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778721&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778721&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 70,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-essentials-wide-rib-tee-green-size-l-701525679"
+  },
+  {
+    "id": 718303298,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Essentials Wide Rib Tee - Brown | Size: XS",
+    "description": "This adidas tee is an everyday essential that pairs equally well with joggers for a casual look or a blazer for a dressed-up night out. The cotton blend is extra soft and stretchy, wrapping you in comfort, while the allover ribbed texture gives it a unique se...",
+    "price": 21.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD1491_01_laydown_1.jpg%3Fv%3D1790768857&feedId=114294&k=7f676d595b2adfb228922b8b24bd021b29f97af9",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD1491_01_laydown_1.jpg%3Fv%3D1790768857&feedId=114294&k=7f676d595b2adfb228922b8b24bd021b29f97af9"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "dress",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778722&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778722&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 99,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-essentials-wide-rib-tee-brown-size-xs-718303298"
+  },
+  {
+    "id": 735080917,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Essentials Wide Rib Tee - Brown | Size: L",
+    "description": "This adidas tee is an everyday essential that pairs equally well with joggers for a casual look or a blazer for a dressed-up night out. The cotton blend is extra soft and stretchy, wrapping you in comfort, while the allover ribbed texture gives it a unique se...",
+    "price": 21.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD1491_01_laydown_1.jpg%3Fv%3D1790768857&feedId=114294&k=7f676d595b2adfb228922b8b24bd021b29f97af9",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD1491_01_laydown_1.jpg%3Fv%3D1790768857&feedId=114294&k=7f676d595b2adfb228922b8b24bd021b29f97af9"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "dress",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778723&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778723&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 98,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-essentials-wide-rib-tee-brown-size-l-735080917"
+  },
+  {
+    "id": 617637584,
+    "brand": "Adidas",
+    "name": "adidas Men's Z.N.E. Crew Sweatshirt - Green | Size: 2XL",
+    "description": "Energize your day in this adidas sweatshirt. Inspired by the positivity felt when gathering as a team, matte rubber-print graphics reference the lines that bring us together on the field of play. Three-layer doubleknit fabric shields you from chilly gusts whi...",
+    "price": 44.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNew_adidas_Z.N.E_2_._Sweatshirt_Green_JD1673_01_laydown.jpg%3Fv%3D1790768939&feedId=114294&k=0eddcde27ef6330a04d5460575de7de73c52eade",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNew_adidas_Z.N.E_2_._Sweatshirt_Green_JD1673_01_laydown.jpg%3Fv%3D1790768939&feedId=114294&k=0eddcde27ef6330a04d5460575de7de73c52eade"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "winter"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778724&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778724&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 97,
+    "brandSlug": "adidas",
+    "productSlug": "adidas-adidas-men-s-z-n-e-crew-sweatshirt-green-size-2xl-617637584"
+  },
+  {
+    "id": 634415203,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's Graphic Sports Sweatshirt - Black | Size: XS",
+    "description": "This adidas crewneck sweatshirt lets you bring the energy of the '80s wherever you go. Made from cosy French terry fabric, it keeps you comfortable while a vibrant graphic on the chest adds a pop of retro style. The loose shape gives it a laid-back vibe that...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD1810_1.jpg%3Fv%3D1790769044&feedId=114294&k=063bd07cfb433b8d140b486b9b280aed9ab47b74",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD1810_1.jpg%3Fv%3D1790769044&feedId=114294&k=063bd07cfb433b8d140b486b9b280aed9ab47b74"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778725&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778725&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 96,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-graphic-sports-sweatshirt-black-size-xs-634415203"
+  },
+  {
+    "id": 651192822,
+    "brand": "Adidas",
+    "name": "adidas Men's Essential 3-Stripes French Terry Pants - Green | Size: L",
+    "description": "Whether you're lounging at home or heading out, these adidas pants have you covered. The soft French terry build keeps you comfortable, and the 3-Stripes down the sides add a sporty finish. With a modern, tapered fit, these pants are an everyday essential. By...",
+    "price": 27.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FEssential_3-Stripes_French_Terry_Pants_Green_JD1879_21_model_1.jpg%3Fv%3D1790769138&feedId=114294&k=4155b309a942aa04266ea8d74802eb1516f4df33",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FEssential_3-Stripes_French_Terry_Pants_Green_JD1879_21_model_1.jpg%3Fv%3D1790769138&feedId=114294&k=4155b309a942aa04266ea8d74802eb1516f4df33"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778726&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778726&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 95,
+    "brandSlug": "adidas",
+    "productSlug": "adidas-adidas-men-s-essential-3-stripes-french-terry-pants-green-size-l-651192822"
+  },
+  {
+    "id": 667970441,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Trefoil Essentials Hoodie - Green | Size: XS",
+    "description": "When you want to drift into leisure, slip into the familiar comfort of this adidas hoodie. Soft fleece amps up the cosiness, and classic details like ribbed cuffs and an embroidered Trefoil logo ground the look in casual sport style. With a regular fit that's...",
     "price": 34.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Adicolor_Premium_Hoodie_-_White_-_ViaductClothing_-_-_-234453.jpg%3Fv%3D1717036681&feedId=114294&k=bf32bf20c0e2e82149464e103361453573c69cf2",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD2400_1.jpg%3Fv%3D1790769264&feedId=114294&k=51cc2c61f2e10a90c489a087346eebacd8e6e9f9",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Adicolor_Premium_Hoodie_-_White_-_ViaductClothing_-_-_-234453.jpg%3Fv%3D1717036681&feedId=114294&k=bf32bf20c0e2e82149464e103361453573c69cf2"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD2400_1.jpg%3Fv%3D1790769264&feedId=114294&k=51cc2c61f2e10a90c489a087346eebacd8e6e9f9"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46167778727&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46167778727&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 94,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-trefoil-essentials-hoodie-green-size-xs-667970441"
+  },
+  {
+    "id": 494356488,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Trefoil Essentials Hoodie - White | Size: XS",
+    "description": "When you want to drift into leisure, slip into the familiar comfort of this adidas hoodie. Soft fleece amps up the cosiness, and classic details like ribbed cuffs and an embroidered Trefoil logo ground the look in casual sport style. With a regular fit that's...",
+    "price": 34.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD2402_1.jpg%3Fv%3D1790773452&feedId=114294&k=1db703c1fe9f3aedd18243f183e196e0db4bc4b6",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD2402_1.jpg%3Fv%3D1790773452&feedId=114294&k=1db703c1fe9f3aedd18243f183e196e0db4bc4b6"
     ],
     "imageVerificationStatus": "verified-product-image",
     "category": "hoodie",
@@ -27175,7 +24762,7 @@ export const verifiedProducts: Product[] = [
       "white"
     ],
     "materials": [
-      "cotton"
+      "mixed material"
     ],
     "vibe": [
       "contemporary"
@@ -27195,45 +24782,44 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325875&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417891&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325875&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417891&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 82,
-    "compareAtPrice": 70,
+    "popularityScore": 93,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-adicolor-premium-hoodie-white-size-xs-41301115"
+    "productSlug": "adidas-originals-adidas-originals-trefoil-essentials-hoodie-white-size-xs-494356488"
   },
   {
-    "id": 74856353,
+    "id": 544689345,
     "brand": "adidas Originals",
-    "name": "adidas Originals Collegiate Crest Polo Shirt - Burgundy | Size: S",
-    "description": "The adidas pride of this polo shirt comes through strong with a collegiate-inspired crest. Also showing up in full force?. Comfort. Thanks to soft terry and ribbed details.Half zip with ribbed polo collar74% recycled polyester, 26% viscose terry loopLong slee...",
-    "price": 34.99,
+    "name": "adidas Originals Trefoil Essentials Joggers - Red | Size: XS",
+    "description": "Built for everyday wear, these adidas pants slip on as easily as your favourite trainers. The slim profile skims your shape while soft fleece helps keep you cosy. Signature details like ribbed cuffs and a Trefoil logo stitched on one leg elevate the casual vi...",
+    "price": 29.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Collegiate_Crest_Polo_Shirt_-_Burgundy_-_ViaductClothing_-_-_-241435.jpg%3Fv%3D1717045591&feedId=114294&k=0afaab8c5135b18ead3ee1dd92b9b6c3ea58c7c8",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FTrefoil_Essentials_Joggers_Burgundy_JD2420_21_model_1.jpg%3Fv%3D1790773643&feedId=114294&k=2bed59b2fe5f5b13e0ee2e47592fef4f4c81409a",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Collegiate_Crest_Polo_Shirt_-_Burgundy_-_ViaductClothing_-_-_-241435.jpg%3Fv%3D1717045591&feedId=114294&k=0afaab8c5135b18ead3ee1dd92b9b6c3ea58c7c8"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FTrefoil_Essentials_Joggers_Burgundy_JD2420_21_model_1.jpg%3Fv%3D1790773643&feedId=114294&k=2bed59b2fe5f5b13e0ee2e47592fef4f4c81409a"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "shirt",
+    "category": "trousers",
     "subcategory": "General Clothing",
     "colors": [
       "red"
     ],
     "materials": [
-      "viscose"
+      "mixed material"
     ],
     "vibe": [
       "contemporary"
@@ -27253,332 +24839,41 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325877&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417892&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325877&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417892&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 81,
-    "compareAtPrice": 50,
+    "popularityScore": 92,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-collegiate-crest-polo-shirt-burgundy-size-s-74856353"
+    "productSlug": "adidas-originals-adidas-originals-trefoil-essentials-joggers-red-size-xs-544689345"
   },
   {
-    "id": 506881568,
-    "brand": "Adidas",
-    "name": "adidas Short Length Colorblock 3 Stripes Swim Shorts - Black / Grey Six | Size: XS",
-    "description": "Relax under a beach umbrella or play catch with the dog in the surf. These adidas swim shorts are made of woven fabric that's lightweight and quick-drying. Blocks of colour and classic 3-Stripes give them a sporty look. This product is made with Primegreen, a...",
-    "price": 14.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGrey_Six_-_ViaductClothing_-_-_-283151.jpg%3Fv%3D1717086702&feedId=114294&k=0ecbf56c4d079f110dc096ddeaacd148c127c299",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FGrey_Six_-_ViaductClothing_-_-_-283151.jpg%3Fv%3D1717086702&feedId=114294&k=0ecbf56c4d079f110dc096ddeaacd148c127c299"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325881&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325881&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 80,
-    "compareAtPrice": 33,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-short-length-colorblock-3-stripes-swim-shorts-black-grey-six-size-xs-506881568"
-  },
-  {
-    "id": 607547282,
-    "brand": "Adidas",
-    "name": "adidas Classic 3-Stripes Swim Shorts - Power Pink / Team Victory Red | Size: XS",
-    "description": "Surfing, paddleboarding or just floating on a raft. Whatever you do in the water, these adidas swim shorts keep you comfortable. They have a very short length and inner briefs for full coverage. Lightweight, quick-drying fabric lets you transition easily from...",
-    "price": 14.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FTeam_Victory_Red_-_ViaductClothing_-_-_-222179-Photoroom.jpg%3Fv%3D1741170857&feedId=114294&k=6ea9e7334eb7b5a01eedbab26086a3b2d2900dcb",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FTeam_Victory_Red_-_ViaductClothing_-_-_-222179-Photoroom.jpg%3Fv%3D1741170857&feedId=114294&k=6ea9e7334eb7b5a01eedbab26086a3b2d2900dcb"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "pink"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325887&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325887&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 79,
-    "compareAtPrice": 28,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-classic-3-stripes-swim-shorts-power-pink-team-victory-red-size-xs-607547282"
-  },
-  {
-    "id": 176507805,
-    "brand": "Adidas",
-    "name": "adidas Knee-Length Graphic Board Shorts - Hazy Blue / Crew Navy | Size: 28\"",
-    "description": "Bring your skateboard, towels and playlist. These adidas skate shorts are made for a day at the beach. The lightweight fast-drying material keeps you comfortable in and out of the water. The print was inspired by the waves of the ocean, which always change co...",
-    "price": 19.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FCrew_Navy_-_ViaductClothing_-_-_-226634.jpg%3Fv%3D1717028076&feedId=114294&k=81c45f8013730ccc28f285a20cc8004f6a6c41c5",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FCrew_Navy_-_ViaductClothing_-_-_-226634.jpg%3Fv%3D1717028076&feedId=114294&k=81c45f8013730ccc28f285a20cc8004f6a6c41c5"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325891&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325891&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 78,
-    "compareAtPrice": 50,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-knee-length-graphic-board-shorts-hazy-blue-crew-navy-size-28-176507805"
-  },
-  {
-    "id": 50619110,
+    "id": 527911726,
     "brand": "adidas Originals",
-    "name": "adidas Originals Nutasca T-Shirt - White | Size: M",
-    "description": "Adidas t-shirt is a slight mix-up from your rotation of solid tees. All-cotton construction makes it soft to the touch.. Printed branding. 100% cotton. Ribbed neck trim. Straight hem. Product Code: GL7813",
-    "price": 19.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Nutasca_T-Shirt_-_White_-_ViaductClothing_-_-_-249720.jpg%3Fv%3D1717056634&feedId=114294&k=677b4df9a26f3225f2ae177707c14979adade615",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Nutasca_T-Shirt_-_White_-_ViaductClothing_-_-_-249720.jpg%3Fv%3D1717056634&feedId=114294&k=677b4df9a26f3225f2ae177707c14979adade615"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "white"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=45668763554&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=45668763554&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 77,
-    "compareAtPrice": 30,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-nutasca-t-shirt-white-size-m-50619110"
-  },
-  {
-    "id": 142952567,
-    "brand": "adidas Originals",
-    "name": "adidas Originals ADV Adventure Mountain Logo Tee - White | Size: XS",
-    "description": "Get out exploring with adidas and this white tee. The pure cotton construction ensures comfort, whether you’re in the city or on the trails, and is finished with a mountain range graphic that inspires adventure.100% CottonRibbed CrewneckPrinted BrandingProduc...",
-    "price": 16.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_ADV_Adventure_Mountain_Logo_Tee_-_White_-_ViaductClothing_-_-_-236707.jpg%3Fv%3D1717038625&feedId=114294&k=ece84927d3beb5e8242ebc48eaf99806bcede1b0",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_ADV_Adventure_Mountain_Logo_Tee_-_White_-_ViaductClothing_-_-_-236707.jpg%3Fv%3D1717038625&feedId=114294&k=ece84927d3beb5e8242ebc48eaf99806bcede1b0"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "white"
-    ],
-    "materials": [
-      "cotton"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325893&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325893&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 76,
-    "compareAtPrice": 28,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-adv-adventure-mountain-logo-tee-white-size-xs-142952567"
-  },
-  {
-    "id": 75842091,
-    "brand": "Adidas",
-    "name": "adidas x Daniel Patrick Hoops Thermal Tee - Grey | Size: XS",
-    "description": "A short sleeve tee designed in collaboration with Daniel Patrick.Off the hardwood and into the outdoors. Slip on this adidas basketball t-shirt made in collaboration with Daniel Patrick, and you'll see why waffle fabric is a common element on outdoor apparel....",
+    "name": "adidas Originals Essentials Trefoil Waffle Shorts - Green | Size: XS",
+    "description": "Comfort meets style in these adidas shorts. The doubleknit fabric provides lightweight breathability for kicking back at home or strolling around town. With a regular fit that's relaxed but not loose, these shorts move with you for all-day ease. Pair them wit...",
     "price": 24.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_x_Daniel_Patrick_Hoops_Thermal_Tee_-_Grey_-_ViaductClothing_-_-_-290367.jpg%3Fv%3D1741256905&feedId=114294&k=d56f061cbc360318ca8cb8e72cefa37b8399cabb",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FEssentials_Trefoil_Waffle_Shorts_Green_JD2450_21_model.jpg%3Fv%3D1790777713&feedId=114294&k=397b4ef71f9d68de59f622c0f2aaba299bceb490",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_x_Daniel_Patrick_Hoops_Thermal_Tee_-_Grey_-_ViaductClothing_-_-_-290367.jpg%3Fv%3D1741256905&feedId=114294&k=d56f061cbc360318ca8cb8e72cefa37b8399cabb"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FEssentials_Trefoil_Waffle_Shorts_Green_JD2450_21_model.jpg%3Fv%3D1790777713&feedId=114294&k=397b4ef71f9d68de59f622c0f2aaba299bceb490"
     ],
     "imageVerificationStatus": "verified-product-image",
     "category": "tshirt",
     "subcategory": "General Clothing",
     "colors": [
-      "grey"
+      "green"
     ],
     "materials": [
       "mixed material"
@@ -27593,123 +24888,7 @@ export const verifiedProducts: Product[] = [
       "everyday"
     ],
     "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325897&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325897&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 75,
-    "compareAtPrice": 63,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-x-daniel-patrick-hoops-thermal-tee-grey-size-xs-75842091"
-  },
-  {
-    "id": 42286853,
-    "brand": "Adidas",
-    "name": "adidas x Daniel Patrick Hoops Thermal Tee - Grey | Size: M",
-    "description": "A short sleeve tee designed in collaboration with Daniel Patrick.Off the hardwood and into the outdoors. Slip on this adidas basketball t-shirt made in collaboration with Daniel Patrick, and you'll see why waffle fabric is a common element on outdoor apparel....",
-    "price": 24.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_x_Daniel_Patrick_Hoops_Thermal_Tee_-_Grey_-_ViaductClothing_-_-_-290367.jpg%3Fv%3D1741256905&feedId=114294&k=d56f061cbc360318ca8cb8e72cefa37b8399cabb",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_x_Daniel_Patrick_Hoops_Thermal_Tee_-_Grey_-_ViaductClothing_-_-_-290367.jpg%3Fv%3D1741256905&feedId=114294&k=d56f061cbc360318ca8cb8e72cefa37b8399cabb"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "grey"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325899&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325899&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 74,
-    "compareAtPrice": 63,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-x-daniel-patrick-hoops-thermal-tee-grey-size-m-42286853"
-  },
-  {
-    "id": 317302713,
-    "brand": "adidas Originals",
-    "name": "adidas Originals SPRT Logo Tee - White | Size: XS",
-    "description": "You know that saying about wearing your heart on your sleeve? This adidas t-shirt is like that, if your heart was a Trefoil. What can we say? Some veins just run with sport.Regular fitRibbed crewneck100% cotton single jerseyMedium-weight fabricProduct Code: H...",
-    "price": 17.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_SPRT_Logo_Tee_-_White_-_ViaductClothing_-_-_-259726.jpg%3Fv%3D1717065770&feedId=114294&k=15d0e3621c82ffdf019f9ed19073dce09f54d8c1",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_SPRT_Logo_Tee_-_White_-_ViaductClothing_-_-_-259726.jpg%3Fv%3D1717065770&feedId=114294&k=15d0e3621c82ffdf019f9ed19073dce09f54d8c1"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "white"
-    ],
-    "materials": [
-      "cotton"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
+      "winter"
     ],
     "gender": [
       "unisex"
@@ -27717,42 +24896,41 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325903&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417893&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325903&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417893&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 73,
-    "compareAtPrice": 28,
+    "popularityScore": 91,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-sprt-logo-tee-white-size-xs-317302713"
+    "productSlug": "adidas-originals-adidas-originals-essentials-trefoil-waffle-shorts-green-size-xs-527911726"
   },
   {
-    "id": 350857951,
-    "brand": "Adidas",
-    "name": "adidas Trae Young Basketball Shorts - Glow Blue / Victory Blue | Size: XS",
-    "description": "Dare to be great. Fuel your hoops dreams in these adidas basketball shorts. Designed in collaboration with Trae Young in celebration of his creative drive and always-ready-to-score energy, they're made of soft cotton-blend French terry so you can make your mo...",
-    "price": 14.99,
+    "id": 578244583,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Trefoil Essentials Woven Cargo Pants - Black | Size: XS",
+    "description": "Wherever the day takes you, these adidas cargo pants are ready for the journey. Multiple pockets keep essentials close, and the smooth plain-weave build provides all-day comfort. A small Trefoil on one pocket signs off the look, connecting you to decades of a...",
+    "price": 34.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FVictory_Blue_-_ViaductClothing_-_-_-287415.jpg%3Fv%3D1717092172&feedId=114294&k=9915af94353cbee390b64800a265210e7a8e53d4",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD2453_21_model_1.jpg%3Fv%3D1790777831&feedId=114294&k=b79eebf53bc8307fed6c1bfed4ef70d534027c39",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FVictory_Blue_-_ViaductClothing_-_-_-287415.jpg%3Fv%3D1717092172&feedId=114294&k=9915af94353cbee390b64800a265210e7a8e53d4"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD2453_21_model_1.jpg%3Fv%3D1790777831&feedId=114294&k=b79eebf53bc8307fed6c1bfed4ef70d534027c39"
     ],
     "imageVerificationStatus": "verified-product-image",
     "category": "trousers",
     "subcategory": "General Clothing",
     "colors": [
-      "blue"
+      "black"
     ],
     "materials": [
       "mixed material"
@@ -27775,159 +24953,41 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325905&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417894&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325905&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417894&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 72,
-    "compareAtPrice": 38,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-trae-young-basketball-shorts-glow-blue-victory-blue-size-xs-350857951"
+    "popularityScore": 90,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-trefoil-essentials-woven-cargo-pants-black-size-xs-578244583"
   },
   {
-    "id": 367635570,
-    "brand": "Adidas",
-    "name": "adidas Trae Young Basketball Shorts - Glow Blue / Victory Blue | Size: S",
-    "description": "Dare to be great. Fuel your hoops dreams in these adidas basketball shorts. Designed in collaboration with Trae Young in celebration of his creative drive and always-ready-to-score energy, they're made of soft cotton-blend French terry so you can make your mo...",
-    "price": 14.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FVictory_Blue_-_ViaductClothing_-_-_-287415.jpg%3Fv%3D1717092172&feedId=114294&k=9915af94353cbee390b64800a265210e7a8e53d4",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FVictory_Blue_-_ViaductClothing_-_-_-287415.jpg%3Fv%3D1717092172&feedId=114294&k=9915af94353cbee390b64800a265210e7a8e53d4"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "blue"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325906&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325906&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 71,
-    "compareAtPrice": 38,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-trae-young-basketball-shorts-glow-blue-victory-blue-size-s-367635570"
-  },
-  {
-    "id": 334227427,
-    "brand": "Under Armour",
-    "name": "Under Armour Women's HeatGear Armour Bike Shorts - Pink | Size: XS",
-    "description": "HeatGear® Armour is our original performance baselayer—the one you put on first and take off last. So we made it extra comfortable by wicking sweat and stretching so you can move no matter what.Super-light HeatGear® fabric delivers superior coverage without w...",
-    "price": 22.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_HeatGear_Armour_Bike_Shorts_-_Pink_-_ViaductClothing_-_-_-300743.jpg%3Fv%3D1717109302&feedId=114294&k=5369ff758ee1062261b0584d3e2d64f8c11b2dc3",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_HeatGear_Armour_Bike_Shorts_-_Pink_-_ViaductClothing_-_-_-300743.jpg%3Fv%3D1717109302&feedId=114294&k=5369ff758ee1062261b0584d3e2d64f8c11b2dc3"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "pink"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "women",
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325912&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325912&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 70,
-    "compareAtPrice": 30,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-women-s-heatgear-armour-bike-shorts-pink-size-xs-334227427"
-  },
-  {
-    "id": 434893141,
-    "brand": "Under Armour",
-    "name": "Under Armour Women's Mid Crossback Printed Sports Bra - Pink | Size: XS",
-    "description": "Bras shouldn't be complicated. They should be comfortable and they should be supportive. So we went straight to the source and asked real women how to make their favorite UA bra even better. And it worked.Delivers strategic support, tailored for medium-suppor...",
+    "id": 561466964,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Star Wheel T-Shirt (Unisex) - Black | Size: S",
+    "description": "The Star Wheel T-shirt refreshes adidas history with minimalist graphics for a modern touch. A classic fit and familiar materials give this skateboarding staple a creative twist. This item was designed using UNITEFIT, an all-gender fit system created for a sp...",
     "price": 19.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_Mid_Crossback_Printed_Sports_Bra_-_Pink_-_ViaductClothing_-_-_-300869.jpg%3Fv%3D1717109467&feedId=114294&k=9b43a5ce26e9cf2a0d71d643ec0df0e99cf77a65",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FStar_Wheel_T-shirt_Uniseks_Zwart_JD2837_42_detail.jpg%3Fv%3D1790778091&feedId=114294&k=fe1ccf8291e73afbccbf401a02f52a42c6d00021",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_Mid_Crossback_Printed_Sports_Bra_-_Pink_-_ViaductClothing_-_-_-300869.jpg%3Fv%3D1717109467&feedId=114294&k=9b43a5ce26e9cf2a0d71d643ec0df0e99cf77a65"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FStar_Wheel_T-shirt_Uniseks_Zwart_JD2837_42_detail.jpg%3Fv%3D1790778091&feedId=114294&k=fe1ccf8291e73afbccbf401a02f52a42c6d00021"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "jewellery",
+    "category": "tshirt",
     "subcategory": "General Clothing",
     "colors": [
-      "pink"
+      "black"
     ],
     "materials": [
       "mixed material"
@@ -27945,340 +25005,43 @@ export const verifiedProducts: Product[] = [
       "all season"
     ],
     "gender": [
-      "women",
-      "men"
+      "unisex"
     ],
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325914&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417895&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325914&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417895&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 99,
-    "compareAtPrice": 34,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-women-s-mid-crossback-printed-sports-bra-pink-size-xs-434893141"
+    "popularityScore": 89,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-star-wheel-t-shirt-unisex-black-size-s-561466964"
   },
   {
-    "id": 401337903,
-    "brand": "Under Armour",
-    "name": "Under Armour Women's HeatGear Armour No-Slip Waistband Printed Leggings Tights | Size: XS",
-    "description": "HeatGear® Armour is our original performance baselayer—the one you put on first and take off last. So we made it extra comfortable by wicking sweat and stretching so you can move no matter what.Our Most Legendary: Super-light HeatGear® fabric delivers superio...",
+    "id": 611799821,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Premium Essentials Tee - Beige | Size: S",
+    "description": "The name says it all. This Premium Essentials tee from adidas is crafted from soft, single jersey fabric with a loose, relaxed fit. Perfect for laid-back days or nights out, it pairs just as well with joggers as it does with jeans. A small Trefoil on the ches...",
     "price": 24.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_HeatGear_Armour_No-Slip_Waistband_Printed_Leggings_Tights_-_ViaductClothing_-_-_-300777.jpg%3Fv%3D1717109346&feedId=114294&k=b90be653ea725e45be1b44cac8750ccbc2a95348",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPremium_Essentials_Tee_Beige_JD3277_01_laydown.jpg%3Fv%3D1790778252&feedId=114294&k=68177d1e226d052a943a6105c0e7788c1eee686c",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_HeatGear_Armour_No-Slip_Waistband_Printed_Leggings_Tights_-_ViaductClothing_-_-_-300777.jpg%3Fv%3D1717109346&feedId=114294&k=b90be653ea725e45be1b44cac8750ccbc2a95348"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPremium_Essentials_Tee_Beige_JD3277_01_laydown.jpg%3Fv%3D1790778252&feedId=114294&k=68177d1e226d052a943a6105c0e7788c1eee686c"
     ],
     "imageVerificationStatus": "verified-product-image",
     "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "pink"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "women",
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325916&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325916&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 98,
-    "compareAtPrice": 42,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-women-s-heatgear-armour-no-slip-waistband-printed-leggings-tights-size-xs-401337903"
-  },
-  {
-    "id": 502003617,
-    "brand": "Under Armour",
-    "name": "Under Armour Women's UA RUSH No-Slip Waistband Full-Length Leggings Tights | Size: XS",
-    "description": "UA RUSH™ is the gear you wear when it matters most—your toughest workouts, your biggest games, your most intense training. It fits great, keeps you dry, and makes you feel like you can crush every PR.UA RUSH™ is infrared technology that reflects your body's e...",
-    "price": 34.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_UA_RUSH_No-Slip_Waistband_Full-Length_Leggings_Tights_-_ViaductClothing_-_-_-301150.jpg%3Fv%3D1717109836&feedId=114294&k=1a13684864d629d0e263ad3bfcfc95555c212e19",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_UA_RUSH_No-Slip_Waistband_Full-Length_Leggings_Tights_-_ViaductClothing_-_-_-301150.jpg%3Fv%3D1717109836&feedId=114294&k=1a13684864d629d0e263ad3bfcfc95555c212e19"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "tshirt",
-    "subcategory": "General Clothing",
-    "colors": [
-      "purple"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "women",
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325918&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325918&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 97,
-    "compareAtPrice": 60,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-women-s-ua-rush-no-slip-waistband-full-length-leggings-tights-size-xs-502003617"
-  },
-  {
-    "id": 468595474,
-    "brand": "Under Armour",
-    "name": "Under Armour Women's Fly Fast 3.0 Printed Ankle Tights - Black | Size: XS",
-    "description": "Tights need to be tight—but not too tight. UA Armour Fly Fast's fit gives you just that and more. Soft, quick-drying fabric sculpts and supports for a locked-in feel that's super flattering and made to sweat in.Material wicks sweat & dries really fast4-way st...",
-    "price": 34.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_Fly_Fast_3.0_Printed_Ankle_Tights_-_Black_-_ViaductClothing_-_-_-300694.jpg%3Fv%3D1717109235&feedId=114294&k=a50aaae9a9e9f17b658eb9a5e503d915938b514f",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_Fly_Fast_3.0_Printed_Ankle_Tights_-_Black_-_ViaductClothing_-_-_-300694.jpg%3Fv%3D1717109235&feedId=114294&k=a50aaae9a9e9f17b658eb9a5e503d915938b514f"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "jewellery",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "women",
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325920&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325920&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 96,
-    "compareAtPrice": 55,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-women-s-fly-fast-3-0-printed-ankle-tights-black-size-xs-468595474"
-  },
-  {
-    "id": 435040236,
-    "brand": "Under Armour",
-    "name": "Under Armour Women's Fly Fast 3.0 Printed Ankle Tights Leggings - Black | Size: S",
-    "description": "Tights need to be tight—but not too tight. UA Armour Fly Fast's fit gives you just that and more. Soft, quick-drying fabric sculpts and supports for a locked-in feel that's super flattering and made to sweat in.Material wicks sweat & dries really fast4-way st...",
-    "price": 34.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_Fly_Fast_3.0_Printed_Ankle_Tights_Leggings_-_Black_-_ViaductClothing_-_-_-300720.jpg%3Fv%3D1717109270&feedId=114294&k=d093a0bdd8d79141e99ba18ab33ce3a5b2ebd627",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_Fly_Fast_3.0_Printed_Ankle_Tights_Leggings_-_Black_-_ViaductClothing_-_-_-300720.jpg%3Fv%3D1717109270&feedId=114294&k=d093a0bdd8d79141e99ba18ab33ce3a5b2ebd627"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "jewellery",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "women",
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325922&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325922&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 95,
-    "compareAtPrice": 55,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-women-s-fly-fast-3-0-printed-ankle-tights-leggings-black-size-s-435040236"
-  },
-  {
-    "id": 451817855,
-    "brand": "Under Armour",
-    "name": "Under Armour Women's HeatGear Mesh Shorts - Black | Size: S",
-    "description": "HeatGear® Armour is our original performance baselayer—the one you put on first and take off last. So we made it extra comfortable by wicking sweat and stretching so you can move no matter what.Super-light HeatGear® fabric delivers superior coverage without w...",
-    "price": 14.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_HeatGear_Mesh_Shorts_-_Black_-_ViaductClothing_-_-_-300799.jpg%3Fv%3D1717109375&feedId=114294&k=f7e12825a456a0639bbbb204325856d8887cbaa6",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Women_s_HeatGear_Mesh_Shorts_-_Black_-_ViaductClothing_-_-_-300799.jpg%3Fv%3D1717109375&feedId=114294&k=f7e12825a456a0639bbbb204325856d8887cbaa6"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "women",
-      "men"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325923&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325923&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 94,
-    "compareAtPrice": 27,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-women-s-heatgear-mesh-shorts-black-size-s-451817855"
-  },
-  {
-    "id": 401484998,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Rivalry Low Human Made Shoes - Sand / Cloud White",
-    "description": "The Rivalry dropped in the '80s and landed firmly on the court. Honouring their origin, this version gets a refresh with Japanese fashion label Human Made's distinctive perspective. Their mark is left on the signature 3-Stripes and heel tab, showcasing a merg...",
-    "price": 59.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FCloud_White_-_ViaductClothing_-_-_-254770.jpg%3Fv%3D1717061494&feedId=114294&k=99ed3feb6a54c9827fa7620544638b155e477038",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FCloud_White_-_ViaductClothing_-_-_-254770.jpg%3Fv%3D1717061494&feedId=114294&k=99ed3feb6a54c9827fa7620544638b155e477038"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "footwear",
     "subcategory": "General Clothing",
     "colors": [
       "beige"
@@ -28299,47 +25062,46 @@ export const verifiedProducts: Product[] = [
       "all season"
     ],
     "gender": [
-      "men"
+      "unisex"
     ],
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325924&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417896&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325924&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417896&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 93,
-    "compareAtPrice": 130,
+    "popularityScore": 88,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-rivalry-low-human-made-shoes-sand-cloud-white-401484998"
+    "productSlug": "adidas-originals-adidas-originals-premium-essentials-tee-beige-size-s-611799821"
   },
   {
-    "id": 367929760,
-    "brand": "Nike",
-    "name": "Nike Good Vibes Popover \"Have A Nike Day\" Hoodie - Brown | Size: M",
-    "description": "Add some feel-good vibes to your daily line-up with this pecan-brown hoody from Nike. Crafted from cotton and cut to a relaxed fit, it’s fitted with a comfy drawstring hood and a spacious pouch pocket that makes it a perfect piece for your off-duty days. It’s...",
+    "id": 595022202,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Premium Essentials Crew Sweatshirt - Beige | Size: M",
+    "description": "This adidas crewneck sweatshirt is all about the cosy life. Made from soft cotton French terry fabric, it's the perfect layer for a casual coffee run or a quiet night in. Ribbed cuffs help seal out the chill. A small Trefoil on the front adds a subtle sporty...",
     "price": 39.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Good_Vibes_Popover_Have_A_Nike_Day_Hoodie_-_Brown_-_ViaductClothing_-_-_-295141.jpg%3Fv%3D1717102134&feedId=114294&k=07a608e673932cba710ff6a1abd45be27c0ff069",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPremium_Essentials_Crew_Sweatshirt_Beige_JD3304_01_laydown_2.jpg%3Fv%3D1790778415&feedId=114294&k=1ca68e558c9b1aaa71ec116f5f835471814230f5",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Good_Vibes_Popover_Have_A_Nike_Day_Hoodie_-_Brown_-_ViaductClothing_-_-_-295141.jpg%3Fv%3D1717102134&feedId=114294&k=07a608e673932cba710ff6a1abd45be27c0ff069"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPremium_Essentials_Crew_Sweatshirt_Beige_JD3304_01_laydown_2.jpg%3Fv%3D1790778415&feedId=114294&k=1ca68e558c9b1aaa71ec116f5f835471814230f5"
     ],
     "imageVerificationStatus": "verified-product-image",
     "category": "hoodie",
     "subcategory": "General Clothing",
     "colors": [
-      "brown"
+      "beige"
     ],
     "materials": [
       "cotton"
@@ -28362,305 +25124,15 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325926&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417897&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325926&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 92,
-    "compareAtPrice": 75,
-    "brandSlug": "nike",
-    "productSlug": "nike-nike-good-vibes-popover-have-a-nike-day-hoodie-brown-size-m-367929760"
-  },
-  {
-    "id": 619594045,
-    "brand": "Under Armour",
-    "name": "Under Armour Essential Fleece Heritage Cargo Pants - Black | Size: S",
-    "description": "Warm-ups aren't just about being comfy before the big game—though this fleece is easily some of the most comfortable you've ever felt—it's about being in the right headspace, getting focused, and keeping your body ready.Loose Fit. Side Pockets. Cuffed Ankles....",
-    "price": 44.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Essential_Fleece_Heritage_Cargo_Pants_-_Black_-_ViaductClothing_-_-_-299806.png%3Fv%3D1717108109&feedId=114294&k=e68c6fefb427a2a913ae8da7d05be1e28952a038",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Essential_Fleece_Heritage_Cargo_Pants_-_Black_-_ViaductClothing_-_-_-299806.png%3Fv%3D1717108109&feedId=114294&k=e68c6fefb427a2a913ae8da7d05be1e28952a038"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325929&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325929&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 91,
-    "compareAtPrice": 70,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-essential-fleece-heritage-cargo-pants-black-size-s-619594045"
-  },
-  {
-    "id": 417609229,
-    "brand": "Under Armour",
-    "name": "Under Armour Essential Fleece Heritage Cargo Pants - Black | Size: M",
-    "description": "Warm-ups aren't just about being comfy before the big game—though this fleece is easily some of the most comfortable you've ever felt—it's about being in the right headspace, getting focused, and keeping your body ready.Loose Fit. Side Pockets. Cuffed Ankles....",
-    "price": 44.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Essential_Fleece_Heritage_Cargo_Pants_-_Black_-_ViaductClothing_-_-_-299806.png%3Fv%3D1717108109&feedId=114294&k=e68c6fefb427a2a913ae8da7d05be1e28952a038",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Essential_Fleece_Heritage_Cargo_Pants_-_Black_-_ViaductClothing_-_-_-299806.png%3Fv%3D1717108109&feedId=114294&k=e68c6fefb427a2a913ae8da7d05be1e28952a038"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325936&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325936&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 90,
-    "compareAtPrice": 70,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-essential-fleece-heritage-cargo-pants-black-size-m-417609229"
-  },
-  {
-    "id": 182722563,
-    "brand": "Under Armour",
-    "name": "Under Armour Essential Fleece Heritage Cargo Pants - Black | Size: L",
-    "description": "Warm-ups aren't just about being comfy before the big game—though this fleece is easily some of the most comfortable you've ever felt—it's about being in the right headspace, getting focused, and keeping your body ready.Loose Fit. Side Pockets. Cuffed Ankles....",
-    "price": 44.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Essential_Fleece_Heritage_Cargo_Pants_-_Black_-_ViaductClothing_-_-_-299806.png%3Fv%3D1717108109&feedId=114294&k=e68c6fefb427a2a913ae8da7d05be1e28952a038",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Essential_Fleece_Heritage_Cargo_Pants_-_Black_-_ViaductClothing_-_-_-299806.png%3Fv%3D1717108109&feedId=114294&k=e68c6fefb427a2a913ae8da7d05be1e28952a038"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325938&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325938&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 89,
-    "compareAtPrice": 70,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-essential-fleece-heritage-cargo-pants-black-size-l-182722563"
-  },
-  {
-    "id": 417756324,
-    "brand": "Under Armour",
-    "name": "Under Armour Essential Fleece Heritage Cargo Pants - Black | Size: XL",
-    "description": "Warm-ups aren't just about being comfy before the big game—though this fleece is easily some of the most comfortable you've ever felt—it's about being in the right headspace, getting focused, and keeping your body ready.Loose Fit. Side Pockets. Cuffed Ankles....",
-    "price": 44.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Essential_Fleece_Heritage_Cargo_Pants_-_Black_-_ViaductClothing_-_-_-299806.png%3Fv%3D1717108109&feedId=114294&k=e68c6fefb427a2a913ae8da7d05be1e28952a038",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Essential_Fleece_Heritage_Cargo_Pants_-_Black_-_ViaductClothing_-_-_-299806.png%3Fv%3D1717108109&feedId=114294&k=e68c6fefb427a2a913ae8da7d05be1e28952a038"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "black"
-    ],
-    "materials": [
-      "mixed material"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325940&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325940&a=2996775&m=125096",
-    "affiliateNetwork": "awin",
-    "affiliateCommissionRate": 0.12,
-    "affiliateCommissionModel": "cps",
-    "retailer": "Viaduct Clothing",
-    "inStock": true,
-    "featured": false,
-    "popularityScore": 88,
-    "compareAtPrice": 70,
-    "brandSlug": "under-armour",
-    "productSlug": "under-armour-under-armour-essential-fleece-heritage-cargo-pants-black-size-xl-417756324"
-  },
-  {
-    "id": 468089181,
-    "brand": "Adidas",
-    "name": "adidas Solid Swim Shorts - Solar Gold Yellow | Size: XS",
-    "description": "Stay comfortable while snorkelling in a coral reef or walking on the beach in these adidas swim shorts. The woven material is lightweight and quick-drying as you move between the ocean and your warm towel. Mesh inner briefs provide coverage and support.Drawco...",
-    "price": 11.99,
-    "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Solid_Swim_Shorts_-_Solar_Gold_Yellow_-_ViaductClothing_-_-_-283656.jpg%3Fv%3D1717087333&feedId=114294&k=e8f13e0d2231cc5f2e56b5241d0e69ba010949b0",
-    "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Solid_Swim_Shorts_-_Solar_Gold_Yellow_-_ViaductClothing_-_-_-283656.jpg%3Fv%3D1717087333&feedId=114294&k=e8f13e0d2231cc5f2e56b5241d0e69ba010949b0"
-    ],
-    "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
-    "subcategory": "General Clothing",
-    "colors": [
-      "yellow"
-    ],
-    "materials": [
-      "gold"
-    ],
-    "vibe": [
-      "contemporary"
-    ],
-    "style": [
-      "everyday"
-    ],
-    "occasion": [
-      "everyday"
-    ],
-    "season": [
-      "all season"
-    ],
-    "gender": [
-      "unisex"
-    ],
-    "fit": [
-      "regular"
-    ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325943&a=2996775&m=125096",
-    "productUrlVerificationStatus": "verified-product-page",
-    "brandUrl": "https://www.awin1.com",
-    "catalogSource": "verified-retailer",
-    "priceStatus": "verified",
-    "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325943&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417897&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -28668,26 +25140,25 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 87,
-    "compareAtPrice": 22,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-solid-swim-shorts-solar-gold-yellow-size-xs-468089181"
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-premium-essentials-crew-sweatshirt-beige-size-m-595022202"
   },
   {
-    "id": 350645848,
-    "brand": "Adidas",
-    "name": "adidas Solid Swim Shorts - Power Pink | Size: XS",
-    "description": "Stay comfortable while snorkelling in a coral reef or walking on the beach in these adidas swim shorts. The woven material is lightweight and quick-drying as you move between the ocean and your warm towel. Mesh inner briefs provide coverage and support.Drawco...",
-    "price": 11.99,
+    "id": 376913155,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Premium Essentials Shorts - Brown | Size: S",
+    "description": "When the weather heats up, stay cool and comfortable in these adidas shorts. Made from soft French terry fabric, these shorts feel extra cosy. The iconic Trefoil on the leg shows off your adidas pride. Slip them on for a laid-back look that's ready for anythi...",
+    "price": 29.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Solid_Swim_Shorts_-_Power_Pink_-_ViaductClothing_-_-_-283632.jpg%3Fv%3D1717087303&feedId=114294&k=5af9095be762d61de4fd12ce226b0845e0c88caa",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPremium_Essentials_Shorts_Green_JD3326_21_model.jpg%3Fv%3D1790778596&feedId=114294&k=4ac3e4d28833322f70aa2965b7d92d56afae9072",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Solid_Swim_Shorts_-_Power_Pink_-_ViaductClothing_-_-_-283632.jpg%3Fv%3D1717087303&feedId=114294&k=5af9095be762d61de4fd12ce226b0845e0c88caa"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPremium_Essentials_Shorts_Green_JD3326_21_model.jpg%3Fv%3D1790778596&feedId=114294&k=4ac3e4d28833322f70aa2965b7d92d56afae9072"
     ],
     "imageVerificationStatus": "verified-product-image",
     "category": "trousers",
     "subcategory": "General Clothing",
     "colors": [
-      "pink"
+      "brown"
     ],
     "materials": [
       "mixed material"
@@ -28710,15 +25181,15 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325944&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417898&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325944&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417898&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -28726,26 +25197,658 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 86,
-    "compareAtPrice": 22,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-solid-swim-shorts-power-pink-size-xs-350645848"
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-premium-essentials-shorts-brown-size-s-376913155"
   },
   {
-    "id": 384201086,
-    "brand": "Adidas",
-    "name": "adidas Summer Legend Basketball Shorts - Purple Tint | Size: XS",
-    "description": "Be ready for the basketball court all summer long. Lightweight and breathable, these adidas basketball shorts will keep you cool and dry on hot days. A loose fit and side pockets let you hit the street in hoops-inspired style.Loose fitElastic waist with drawc...",
-    "price": 14.99,
+    "id": 360135536,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Premium Cardigan - White | Size: L",
+    "description": "All the best parts of adidas Originals come together on this adidas Premium Cardigan. The soft wool material lets you sink into luxurious comfort, emphasized further with ribbing on the cuffs and hem. A minimalist design, the sweater is meant for versatility...",
+    "price": 64.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Summer_Legend_Basketball_Shorts_-_Purple_Tint_-_ViaductClothing_-_-_-284816.jpg%3Fv%3D1717088804&feedId=114294&k=05bea402a76a3bbfb62ea4e7a91829f09e9119dc",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPremium_Cardigan_White_JD3402_01_laydown.jpg%3Fv%3D1790778946&feedId=114294&k=18c09fc11d3130bf9f7bcf70c097ac80914a3df6",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Summer_Legend_Basketball_Shorts_-_Purple_Tint_-_ViaductClothing_-_-_-284816.jpg%3Fv%3D1717088804&feedId=114294&k=05bea402a76a3bbfb62ea4e7a91829f09e9119dc"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPremium_Cardigan_White_JD3402_01_laydown.jpg%3Fv%3D1790778946&feedId=114294&k=18c09fc11d3130bf9f7bcf70c097ac80914a3df6"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "white"
+    ],
+    "materials": [
+      "wool"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "winter"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417899&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417899&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 85,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-premium-cardigan-white-size-l-360135536"
+  },
+  {
+    "id": 372043333,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Premium Shorts - Green | Size: S",
+    "description": "These adidas Premium Shorts will quickly become a wardrobe staple. Not just because they're incredibly comfortable, which the material ensures, but because their simplicity means that they're versatile. Style it however, with whatever, for wherever — they're...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD3404_2.jpg%3Fv%3D1790780326&feedId=114294&k=423d41d0717ed70db488d07364653630d62467ba",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD3404_2.jpg%3Fv%3D1790780326&feedId=114294&k=423d41d0717ed70db488d07364653630d62467ba"
     ],
     "imageVerificationStatus": "verified-product-image",
     "category": "trousers",
     "subcategory": "General Clothing",
     "colors": [
-      "purple"
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417900&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417900&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 84,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-premium-shorts-green-size-s-372043333"
+  },
+  {
+    "id": 355265714,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Premium Shorts - Green | Size: XL",
+    "description": "These adidas Premium Shorts will quickly become a wardrobe staple. Not just because they're incredibly comfortable, which the material ensures, but because their simplicity means that they're versatile. Style it however, with whatever, for wherever — they're...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD3404_2.jpg%3Fv%3D1790780326&feedId=114294&k=423d41d0717ed70db488d07364653630d62467ba",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD3404_2.jpg%3Fv%3D1790780326&feedId=114294&k=423d41d0717ed70db488d07364653630d62467ba"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417901&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417901&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 83,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-premium-shorts-green-size-xl-355265714"
+  },
+  {
+    "id": 338488095,
+    "brand": "adidas Originals",
+    "name": "adidas Originals 8-Inch Graphic Swim Shorts - Blue | Size: 2XL",
+    "description": "These adidas swim shorts feature an allover camo print that's made to get you noticed at the beach or pool. With a drawcord waist and inner brief, they're designed to keep you comfortable whether you're diving into the deep end or kicking back poolside. This...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2F8-Inch_Graphic_Swim_Shorts_Blue_JD4262_01_laydown.jpg%3Fv%3D1790780588&feedId=114294&k=1b70253163a56fef7bb4cc6865f17f3ec24ecbba",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2F8-Inch_Graphic_Swim_Shorts_Blue_JD4262_01_laydown.jpg%3Fv%3D1790780588&feedId=114294&k=1b70253163a56fef7bb4cc6865f17f3ec24ecbba"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "multicolor"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417902&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417902&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 82,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-8-inch-graphic-swim-shorts-blue-size-2xl-338488095"
+  },
+  {
+    "id": 321710476,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's 3-Stripes T-Shirt - Brown | Size: S",
+    "description": "Made to move, this soft essential tee is all about expressing your passion for sport. Inspired by adidas' archives but designed for today, it celebrates our heritage of originality. Ribbing creates a classic shape while signature 3-Stripes down the sleeves no...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD4570_1.jpg%3Fv%3D1790780800&feedId=114294&k=9128791cd986b5ef5b3b2ae500cb417040f74f12",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD4570_1.jpg%3Fv%3D1790780800&feedId=114294&k=9128791cd986b5ef5b3b2ae500cb417040f74f12"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417903&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417903&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 81,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-3-stripes-t-shirt-brown-size-s-321710476"
+  },
+  {
+    "id": 304932857,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's 3-Stripes T-Shirt - Brown | Size: M",
+    "description": "Made to move, this soft essential tee is all about expressing your passion for sport. Inspired by adidas' archives but designed for today, it celebrates our heritage of originality. Ribbing creates a classic shape while signature 3-Stripes down the sleeves no...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD4570_1.jpg%3Fv%3D1790780800&feedId=114294&k=9128791cd986b5ef5b3b2ae500cb417040f74f12",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD4570_1.jpg%3Fv%3D1790780800&feedId=114294&k=9128791cd986b5ef5b3b2ae500cb417040f74f12"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417904&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417904&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 80,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-3-stripes-t-shirt-brown-size-m-304932857"
+  },
+  {
+    "id": 288155238,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's 3-Stripes Tee - Green | Size: 2XS",
+    "description": "Made to move, this soft essential tee is all about expressing your passion for sport. Inspired by adidas' archives but designed for today, it celebrates our heritage of originality. Ribbing creates a classic shape while signature 3-Stripes down the sleeves no...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD4571_01_laydown_1.jpg%3Fv%3D1790781058&feedId=114294&k=18b3baefabb32b59b0acd09205a7aa4347868564",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD4571_01_laydown_1.jpg%3Fv%3D1790781058&feedId=114294&k=18b3baefabb32b59b0acd09205a7aa4347868564"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417905&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417905&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 79,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-3-stripes-tee-green-size-2xs-288155238"
+  },
+  {
+    "id": 271377619,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Women's 3-Stripes Tee - Green | Size: S",
+    "description": "Made to move, this soft essential tee is all about expressing your passion for sport. Inspired by adidas' archives but designed for today, it celebrates our heritage of originality. Ribbing creates a classic shape while signature 3-Stripes down the sleeves no...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD4571_01_laydown_1.jpg%3Fv%3D1790781058&feedId=114294&k=18b3baefabb32b59b0acd09205a7aa4347868564",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FJD4571_01_laydown_1.jpg%3Fv%3D1790781058&feedId=114294&k=18b3baefabb32b59b0acd09205a7aa4347868564"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417906&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417906&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 78,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-women-s-3-stripes-tee-green-size-s-271377619"
+  },
+  {
+    "id": 254600000,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Flared Leggings - Brown | Size: S",
+    "description": "These adidas flared leggings put a modern sporty spin on retro flared pants. The flared lower legs capture the expressive look that defined an era, while stretchy fabric and 3-Stripes running down each leg bring easy everyday comfort. Finish the look with a c...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FMallas_Acampanadas_Cafe_JD4601_21_model.jpg%3Fv%3D1790781936&feedId=114294&k=2523ae2d1d0366af0e2d13304ecfc932594a6eaa",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FMallas_Acampanadas_Cafe_JD4601_21_model.jpg%3Fv%3D1790781936&feedId=114294&k=2523ae2d1d0366af0e2d13304ecfc932594a6eaa"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417907&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417907&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 77,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-flared-leggings-brown-size-s-254600000"
+  },
+  {
+    "id": 506264285,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Flared Leggings - Brown | Size: M",
+    "description": "These adidas flared leggings put a modern sporty spin on retro flared pants. The flared lower legs capture the expressive look that defined an era, while stretchy fabric and 3-Stripes running down each leg bring easy everyday comfort. Finish the look with a c...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FMallas_Acampanadas_Cafe_JD4601_21_model.jpg%3Fv%3D1790781936&feedId=114294&k=2523ae2d1d0366af0e2d13304ecfc932594a6eaa",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FMallas_Acampanadas_Cafe_JD4601_21_model.jpg%3Fv%3D1790781936&feedId=114294&k=2523ae2d1d0366af0e2d13304ecfc932594a6eaa"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=46175417908&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=46175417908&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 76,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-flared-leggings-brown-size-m-506264285"
+  },
+  {
+    "id": 257236319,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Womens Forum Low City Shoes - White/Purple",
+    "description": "From neighborhood streets to public parks, big cities know basketball. Lace up in these adidas Forum Low City Shoes and celebrate the energy of pick-up games and sideline cheering. Born in '84, the original Forum was king of the hardwood. This version brings...",
+    "price": 54.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPurple_-_ViaductClothing_-_-_-275294.jpg%3Fv%3D1717078048&feedId=114294&k=936430fd4d6c273e1127aee7af08de824d72b9f5",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FPurple_-_ViaductClothing_-_-_-275294.jpg%3Fv%3D1717078048&feedId=114294&k=936430fd4d6c273e1127aee7af08de824d72b9f5"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "footwear",
+    "subcategory": "General Clothing",
+    "colors": [
+      "white"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324858&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324858&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 75,
+    "compareAtPrice": 85,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-womens-forum-low-city-shoes-white-purple-257236319"
+  },
+  {
+    "id": 670006146,
+    "brand": "Reebok",
+    "name": "Reebok Classic Twin Vector Retro 90s Track Top - Navy | Size: S",
+    "description": "The old-school Twin Vector design makes its return. The classics twin vector track jacket offers a retro look paired with an oversized fit for true ‘80s vibes. The white and navy track jacket by Reebok offers elastic cuffs and hem, perfect for chilly summer n...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classic_Twin_Vector_Retro_90s_Track_Top_-_Navy_-_ViaductClothing_-_-_-296444.jpg%3Fv%3D1717103750&feedId=114294&k=798ee2e479ccd813dd63b115caebce32e9093d27",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classic_Twin_Vector_Retro_90s_Track_Top_-_Navy_-_ViaductClothing_-_-_-296444.jpg%3Fv%3D1717103750&feedId=114294&k=798ee2e479ccd813dd63b115caebce32e9093d27"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "blazer",
+    "subcategory": "General Clothing",
+    "colors": [
+      "navy"
     ],
     "materials": [
       "mixed material"
@@ -28768,15 +25871,1120 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325946&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324862&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325946&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324862&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 74,
+    "compareAtPrice": 70,
+    "brandSlug": "reebok",
+    "productSlug": "reebok-reebok-classic-twin-vector-retro-90s-track-top-navy-size-s-670006146"
+  },
+  {
+    "id": 569340432,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Unisex NMD_R1 V2 Shoes - Black",
+    "description": "Time isn't slowing down. If anything, it seems to be moving at hyper-speed. And since the adidas NMD_R1 shoes are built on a foundation of speed, it only makes sense that these would be the perfect thing to lace into while you hold the pace of the day. The ov...",
+    "price": 54.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Unisex_NMD_R1_V2_Shoes_-_Black_-_ViaductClothing_-_-_-269332.jpg%3Fv%3D1717073622&feedId=114294&k=ecb274cfc50f3207a0a54a54a212b08f7bfbaaf0",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Unisex_NMD_R1_V2_Shoes_-_Black_-_ViaductClothing_-_-_-269332.jpg%3Fv%3D1717073622&feedId=114294&k=ecb274cfc50f3207a0a54a54a212b08f7bfbaaf0"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "footwear",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324864&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324864&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 73,
+    "compareAtPrice": 110,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-unisex-nmd-r1-v2-shoes-black-569340432"
+  },
+  {
+    "id": 586118051,
+    "brand": "Reebok",
+    "name": "Reebok Classics Crew Neck Sweatshirt - Midnight Pine | Size: XS",
+    "description": "Reebok is an expert when it comes to downtime essentials, and this crew confirms that notion. It’s cut from organic cotton terry and naturally dyed to achieve its washed-out shade of green, then finished with a Vector logo near the hem.100% Organic Cotton. Fr...",
+    "price": 16.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Crew_Neck_Sweatshirt_-_Midnight_Pine_-_ViaductClothing_-_-_-297284.jpg%3Fv%3D1717104793&feedId=114294&k=95c1cfd9a5664e275c72c4ec78bd0b14b112bf19",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Crew_Neck_Sweatshirt_-_Midnight_Pine_-_ViaductClothing_-_-_-297284.jpg%3Fv%3D1717104793&feedId=114294&k=95c1cfd9a5664e275c72c4ec78bd0b14b112bf19"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324865&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324865&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 72,
+    "compareAtPrice": 45,
+    "brandSlug": "reebok",
+    "productSlug": "reebok-reebok-classics-crew-neck-sweatshirt-midnight-pine-size-xs-586118051"
+  },
+  {
+    "id": 602895670,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Retro Team Keeper Jersey Unisex - Magic Lime | Size: 3XS",
+    "description": "adidas Skateboarding looked to team riders Nora Vasconcellos, Sam Narvaez and Maité Steenhoudt to reimagine classic 3-Stripes apparel for modern skateboarding. The Team Keeper Jersey pulls from the adidas football archives to create an inclusive piece for ska...",
+    "price": 34.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Retro_Team_Keeper_Jersey_Unisex_-_Magic_Lime_-_ViaductClothing_-_-_-254312.jpg%3Fv%3D1717061059&feedId=114294&k=f29c275235d2476e406336671dd8b53a65d3755f",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Retro_Team_Keeper_Jersey_Unisex_-_Magic_Lime_-_ViaductClothing_-_-_-254312.jpg%3Fv%3D1717061059&feedId=114294&k=f29c275235d2476e406336671dd8b53a65d3755f"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324866&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324866&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 71,
+    "compareAtPrice": 63,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-retro-team-keeper-jersey-unisex-magic-lime-size-3xs-602895670"
+  },
+  {
+    "id": 619673289,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Retro Team Keeper Jersey Unisex - Magic Lime | Size: S",
+    "description": "adidas Skateboarding looked to team riders Nora Vasconcellos, Sam Narvaez and Maité Steenhoudt to reimagine classic 3-Stripes apparel for modern skateboarding. The Team Keeper Jersey pulls from the adidas football archives to create an inclusive piece for ska...",
+    "price": 34.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Retro_Team_Keeper_Jersey_Unisex_-_Magic_Lime_-_ViaductClothing_-_-_-254312.jpg%3Fv%3D1717061059&feedId=114294&k=f29c275235d2476e406336671dd8b53a65d3755f",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Retro_Team_Keeper_Jersey_Unisex_-_Magic_Lime_-_ViaductClothing_-_-_-254312.jpg%3Fv%3D1717061059&feedId=114294&k=f29c275235d2476e406336671dd8b53a65d3755f"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "green"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324867&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324867&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 70,
+    "compareAtPrice": 63,
+    "brandSlug": "adidas-originals",
+    "productSlug": "adidas-originals-adidas-originals-retro-team-keeper-jersey-unisex-magic-lime-size-s-619673289"
+  },
+  {
+    "id": 770671860,
+    "brand": "Reebok",
+    "name": "Reebok Classics Unisex Victory G Gore-Tex Shoes - Grey",
+    "description": "The next best thing to finding a deadstock box at the thrift store. These Reebok Victory G shoes do not sacrifice a single thing. Pay homage to the original with authentic design elements pulled right from the archives. Like that heel cradle in thick suede. O...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Unisex_Victory_G_Gore-Tex_Shoes_-_Grey_-_ViaductClothing_-_-_-298222.jpg%3Fv%3D1717106056&feedId=114294&k=efaa411f7eef49a4cbd4e512d684cbcd35a63fd1",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Unisex_Victory_G_Gore-Tex_Shoes_-_Grey_-_ViaductClothing_-_-_-298222.jpg%3Fv%3D1717106056&feedId=114294&k=efaa411f7eef49a4cbd4e512d684cbcd35a63fd1"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "footwear",
+    "subcategory": "General Clothing",
+    "colors": [
+      "grey"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men",
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324868&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324868&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 99,
+    "compareAtPrice": 130,
+    "brandSlug": "reebok",
+    "productSlug": "reebok-reebok-classics-unisex-victory-g-gore-tex-shoes-grey-770671860"
+  },
+  {
+    "id": 787449479,
+    "brand": "Reebok",
+    "name": "Reebok Classics Unisex Victory G Gore-Tex Shoes - Grey",
+    "description": "The next best thing to finding a deadstock box at the thrift store. These Reebok Victory G shoes do not sacrifice a single thing. Pay homage to the original with authentic design elements pulled right from the archives. Like that heel cradle in thick suede. O...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Unisex_Victory_G_Gore-Tex_Shoes_-_Grey_-_ViaductClothing_-_-_-298222.jpg%3Fv%3D1717106056&feedId=114294&k=efaa411f7eef49a4cbd4e512d684cbcd35a63fd1",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Unisex_Victory_G_Gore-Tex_Shoes_-_Grey_-_ViaductClothing_-_-_-298222.jpg%3Fv%3D1717106056&feedId=114294&k=efaa411f7eef49a4cbd4e512d684cbcd35a63fd1"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "footwear",
+    "subcategory": "General Clothing",
+    "colors": [
+      "grey"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men",
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324869&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324869&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 98,
+    "compareAtPrice": 130,
+    "brandSlug": "reebok",
+    "productSlug": "reebok-reebok-classics-unisex-victory-g-gore-tex-shoes-grey-787449479"
+  },
+  {
+    "id": 720486098,
+    "brand": "Reebok",
+    "name": "Reebok Classics Unisex Victory G Gore-tex Shoes - Blue",
+    "description": "Calling all vintage connoisseurs. These shoes are made just for you. Featuring Gore Inc.'s OG '80s logo, these trainers drip with throwback details. Legit colourways continue the GORE-TEX and Reebok aesthetic. A rugged lining means you'll never let the weathe...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Unisex_Victory_G_Gore-tex_Shoes_-_Blue_-_ViaductClothing_-_-_-298178_1.jpg%3Fv%3D1743185792&feedId=114294&k=67d98ea88ea619dbeb32afb99725049fbe5f35ae",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FReebok_Classics_Unisex_Victory_G_Gore-tex_Shoes_-_Blue_-_ViaductClothing_-_-_-298178_1.jpg%3Fv%3D1743185792&feedId=114294&k=67d98ea88ea619dbeb32afb99725049fbe5f35ae"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "footwear",
+    "subcategory": "General Clothing",
+    "colors": [
+      "blue"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "winter"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324871&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324871&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 97,
+    "compareAtPrice": 130,
+    "brandSlug": "reebok",
+    "productSlug": "reebok-reebok-classics-unisex-victory-g-gore-tex-shoes-blue-720486098"
+  },
+  {
+    "id": 703708479,
+    "brand": "Champion",
+    "name": "Champion Stretch Cotton Twill Cuffed Trousers - Navy | Size: S",
+    "description": "Mens Champion Stretch Cotton Twill Cuffed Trousers in navy.. Elasticated waistband.. Pockets to hips.. Welt pockets to reverse.. Elasticated cuffs.. C logo embroidered onto thigh.. Custom fit.. Fabric: 97% Cotton, 3% Elastane. Pocket Bag: 80% Polyester, 20% C...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Stretch_Cotton_Twill_Cuffed_Trousers_-_Navy_-_ViaductClothing_-_-_-292687.jpg%3Fv%3D1717098950&feedId=114294&k=aa104ef701ab41484ad3bfe4f75b4108e6b86f25",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Stretch_Cotton_Twill_Cuffed_Trousers_-_Navy_-_ViaductClothing_-_-_-292687.jpg%3Fv%3D1717098950&feedId=114294&k=aa104ef701ab41484ad3bfe4f75b4108e6b86f25"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "navy"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324872&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324872&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 96,
+    "compareAtPrice": 56,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-stretch-cotton-twill-cuffed-trousers-navy-size-s-703708479"
+  },
+  {
+    "id": 686930860,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Crewneck Tee - Navy | Size: S",
+    "description": "Elevate your off-duty days in this tee from Champion Reverse Weave. Crafted from soft cotton for all-day comfort, it’s complete with the brand’s signature C logo patch at the chest and sleeve.. 100% Cotton. Ribbed Crewneck. Embroidered Brading. Product Code:...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Crewneck_Tee_-_Navy_-_ViaductClothing_-_-_-292440.jpg%3Fv%3D1717098635&feedId=114294&k=8acf6e303a9e48b8f780e2fddd2a0a146c16a5c4",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Crewneck_Tee_-_Navy_-_ViaductClothing_-_-_-292440.jpg%3Fv%3D1717098635&feedId=114294&k=8acf6e303a9e48b8f780e2fddd2a0a146c16a5c4"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "navy"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324873&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324873&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 95,
+    "compareAtPrice": 34,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-crewneck-tee-navy-size-s-686930860"
+  },
+  {
+    "id": 670153241,
+    "brand": "Champion",
+    "name": "Champion Colour Block T Shirt - Black Grey | Size: S",
+    "description": "Men's t-shirt from the Color Block collection from Champion. In a gray color with black panels, this t-shirt is made of soft, lightweight cotton for comfort. It features a ribbed crew neck and short sleeves for a classic look. There is a Champion inscription...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Colour_Block_T_Shirt_-_Black_Grey_-_ViaductClothing_-_-_-291559.jpg%3Fv%3D1717097483&feedId=114294&k=f78bf6a08051d4fb4271795dbed86ce6e8115429",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Colour_Block_T_Shirt_-_Black_Grey_-_ViaductClothing_-_-_-291559.jpg%3Fv%3D1717097483&feedId=114294&k=f78bf6a08051d4fb4271795dbed86ce6e8115429"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324874&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324874&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 94,
+    "compareAtPrice": 23,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-colour-block-t-shirt-black-grey-size-s-670153241"
+  },
+  {
+    "id": 653375622,
+    "brand": "Champion",
+    "name": "Champion Bermuda Sweat Shorts - Blue | Size: XS",
+    "description": "Pull on these men’s heavy cotton shorts for some serious laidback vibes. Cut in a nice regular fit, they feature a drawcord waist and embroidered logos.. Small script logo in tatami embroidery on thigh. C logo embroidery on back. Elasticated drawcord waistban...",
+    "price": 27.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Bermuda_Sweat_Shorts_-_Blue_-_ViaductClothing_-_-_-291539.jpg%3Fv%3D1717097456&feedId=114294&k=17af9af04adff0a871bee577a32843741d192fe0",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Bermuda_Sweat_Shorts_-_Blue_-_ViaductClothing_-_-_-291539.jpg%3Fv%3D1717097456&feedId=114294&k=17af9af04adff0a871bee577a32843741d192fe0"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "blue"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324875&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324875&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 93,
+    "compareAtPrice": 34,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-bermuda-sweat-shorts-blue-size-xs-653375622"
+  },
+  {
+    "id": 636598003,
+    "brand": "Champion",
+    "name": "Champion Bermuda Sweat Shorts - Blue | Size: S",
+    "description": "Pull on these men’s heavy cotton shorts for some serious laidback vibes. Cut in a nice regular fit, they feature a drawcord waist and embroidered logos.. Small script logo in tatami embroidery on thigh. C logo embroidery on back. Elasticated drawcord waistban...",
+    "price": 27.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Bermuda_Sweat_Shorts_-_Blue_-_ViaductClothing_-_-_-291539.jpg%3Fv%3D1717097456&feedId=114294&k=17af9af04adff0a871bee577a32843741d192fe0",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Bermuda_Sweat_Shorts_-_Blue_-_ViaductClothing_-_-_-291539.jpg%3Fv%3D1717097456&feedId=114294&k=17af9af04adff0a871bee577a32843741d192fe0"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "blue"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324876&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324876&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 92,
+    "compareAtPrice": 34,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-bermuda-sweat-shorts-blue-size-s-636598003"
+  },
+  {
+    "id": 71484669,
+    "brand": "Champion",
+    "name": "Champion Tie Dye Women's Shorts - Rainbow | Size: 2XL",
+    "description": "Celebrate joy. Celebrate color. Celbrate life. Your style brings out a significant part of who you are, thus your everyday choices reflect your mood. Wear these Champion shorts and let everyone know how happy and euphoric you are feeling. Or visa versa, if yo...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Tie_Dye_Women_s_Shorts_-_Rainbow_-_ViaductClothing_-_-_-292792_b61bbbfc-492f-47a3-a8ab-a202e7bebaa9.jpg%3Fv%3D1744276292&feedId=114294&k=7f2c0d8299c7344925c506d702ebc3ddba37e91f",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Tie_Dye_Women_s_Shorts_-_Rainbow_-_ViaductClothing_-_-_-292792_b61bbbfc-492f-47a3-a8ab-a202e7bebaa9.jpg%3Fv%3D1744276292&feedId=114294&k=7f2c0d8299c7344925c506d702ebc3ddba37e91f"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "multicolor"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324878&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324878&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 91,
+    "compareAtPrice": 28,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-tie-dye-women-s-shorts-rainbow-size-2xl-71484669"
+  },
+  {
+    "id": 54707050,
+    "brand": "Champion",
+    "name": "Champion Bermuda Cargo Shorts - Navy | Size: S",
+    "description": "Style meets functionality with our classic men’s cargo shorts. With 2 side, back and cargo pockets, there is plenty of space to carry all your daily essentials.. C logo embroidered on thigh. Belt loops. Rubber button, zip fastening. 2 front, 2 cargo + 2 back...",
+    "price": 29.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Bermuda_Cargo_Shorts_-_Navy_-_ViaductClothing_-_-_-291488.jpg%3Fv%3D1717097392&feedId=114294&k=7e094ae8ada93e411cee7b972352327f2b23ded7",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Bermuda_Cargo_Shorts_-_Navy_-_ViaductClothing_-_-_-291488.jpg%3Fv%3D1717097392&feedId=114294&k=7e094ae8ada93e411cee7b972352327f2b23ded7"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "navy"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324879&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324879&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 90,
+    "compareAtPrice": 42,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-bermuda-cargo-shorts-navy-size-s-54707050"
+  },
+  {
+    "id": 154452034,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Tee - Stormy Blue | Size: S",
+    "description": "Elevate your off-duty days in this tee from Champion Reverse Weave. Crafted from soft cotton for all-day comfort, it’s complete with the brand’s signature C logo patch at the chest and sleeve.100% Cotton. Ribbed Crewneck. Embroidered Brading. Product Code: 21...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Tee_-_Stormy_Blue_-_ViaductClothing_-_-_-292384.jpg%3Fv%3D1717098559&feedId=114294&k=dfbe749668e6f7527be218dae7467d8925e54029",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Tee_-_Stormy_Blue_-_ViaductClothing_-_-_-292384.jpg%3Fv%3D1717098559&feedId=114294&k=dfbe749668e6f7527be218dae7467d8925e54029"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "blue"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324880&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324880&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 89,
+    "compareAtPrice": 34,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-tee-stormy-blue-size-s-154452034"
+  },
+  {
+    "id": 171229653,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Tee - Stormy Blue | Size: M",
+    "description": "Elevate your off-duty days in this tee from Champion Reverse Weave. Crafted from soft cotton for all-day comfort, it’s complete with the brand’s signature C logo patch at the chest and sleeve.100% Cotton. Ribbed Crewneck. Embroidered Brading. Product Code: 21...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Tee_-_Stormy_Blue_-_ViaductClothing_-_-_-292384.jpg%3Fv%3D1717098559&feedId=114294&k=dfbe749668e6f7527be218dae7467d8925e54029",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Tee_-_Stormy_Blue_-_ViaductClothing_-_-_-292384.jpg%3Fv%3D1717098559&feedId=114294&k=dfbe749668e6f7527be218dae7467d8925e54029"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "blue"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324881&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324881&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 88,
+    "compareAtPrice": 34,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-tee-stormy-blue-size-m-171229653"
+  },
+  {
+    "id": 120896796,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Tee - Beaver Brown | Size: S",
+    "description": "Elevate your off-duty days in this tee from Champion Reverse Weave. Crafted from soft cotton for all-day comfort, it’s complete with the brand’s signature C logo patch at the chest and sleeve.100% Cotton. Ribbed Crewneck. Embroidered Brading. Product Code: 21...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Tee_-_Beaver_Brown_-_ViaductClothing_-_-_-292330.jpg%3Fv%3D1717098487&feedId=114294&k=8d948b9f406b9174c64dff55715e8c47051d09f2",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Tee_-_Beaver_Brown_-_ViaductClothing_-_-_-292330.jpg%3Fv%3D1717098487&feedId=114294&k=8d948b9f406b9174c64dff55715e8c47051d09f2"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324882&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324882&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 87,
+    "compareAtPrice": 34,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-tee-beaver-brown-size-s-120896796"
+  },
+  {
+    "id": 137674415,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Tee - Beaver Brown | Size: M",
+    "description": "Elevate your off-duty days in this tee from Champion Reverse Weave. Crafted from soft cotton for all-day comfort, it’s complete with the brand’s signature C logo patch at the chest and sleeve.100% Cotton. Ribbed Crewneck. Embroidered Brading. Product Code: 21...",
+    "price": 24.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Tee_-_Beaver_Brown_-_ViaductClothing_-_-_-292330.jpg%3Fv%3D1717098487&feedId=114294&k=8d948b9f406b9174c64dff55715e8c47051d09f2",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Tee_-_Beaver_Brown_-_ViaductClothing_-_-_-292330.jpg%3Fv%3D1717098487&feedId=114294&k=8d948b9f406b9174c64dff55715e8c47051d09f2"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324883&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324883&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 86,
+    "compareAtPrice": 34,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-tee-beaver-brown-size-m-137674415"
+  },
+  {
+    "id": 104119177,
+    "brand": "Champion",
+    "name": "Champion Contemporary Garment Dyed Crew Sweat - Grey | Size: M",
+    "description": "Every off-duty closet needs a comfy crew sweat- and this grey one from Champion ticks all boxes. Crafted from a soft poly cotton blend, it features dropped shoulders for a relaxed look and feel and is complete with the labels signature ‘C’ logo at the sleeve,...",
+    "price": 49.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Contemporary_Garment_Dyed_Crew_Sweat_-_Grey_-_ViaductClothing_-_-_-291607.jpg%3Fv%3D1717097538&feedId=114294&k=a83823c6b8be7b82059712a25e4d9fae2b749025",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Contemporary_Garment_Dyed_Crew_Sweat_-_Grey_-_ViaductClothing_-_-_-291607.jpg%3Fv%3D1717097538&feedId=114294&k=a83823c6b8be7b82059712a25e4d9fae2b749025"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "grey"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324885&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324885&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -28784,20 +26992,890 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 85,
-    "compareAtPrice": 30,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-summer-legend-basketball-shorts-purple-tint-size-xs-384201086"
+    "compareAtPrice": 95,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-contemporary-garment-dyed-crew-sweat-grey-size-m-104119177"
   },
   {
-    "id": 300312991,
-    "brand": "Adidas",
-    "name": "adidas Equipment EQT Tiro Football Jersey - White | Size: XS",
-    "description": "It's been three decades since adidas Equipment style made its indelible mark on football culture. This Tiro jersey celebrates 30 years of bold and brash with a supersized, two-tone adidas Badge of Sport on its back. Smooth fabric and moisture-absorbing AERORE...",
+    "id": 70563939,
+    "brand": "Champion",
+    "name": "Champion Heavy Cotton Poly Terry Hoodie - Blue | Size: S",
+    "description": "If you are playing sports or hanging out with friends, stay warm and comfy with this men’s hoodie. It is completed with small embroidered logos on the chest and sleeve for a real minimal look.. Small script logo in tatami embroidery on chest. C logo embroider...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Heavy_Cotton_Poly_Terry_Hoodie_-_Blue_-_ViaductClothing_-_-_-291839.jpg%3Fv%3D1717097829&feedId=114294&k=d2d8723ea8aabf0d10dcc553f96fdccdb7109469",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Heavy_Cotton_Poly_Terry_Hoodie_-_Blue_-_ViaductClothing_-_-_-291839.jpg%3Fv%3D1717097829&feedId=114294&k=d2d8723ea8aabf0d10dcc553f96fdccdb7109469"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "blue"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324887&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324887&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 84,
+    "compareAtPrice": 65,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-heavy-cotton-poly-terry-hoodie-blue-size-s-70563939"
+  },
+  {
+    "id": 288672986,
+    "brand": "Champion",
+    "name": "Champion Embroidered Bookstore Hoodie - Black | Size: S",
+    "description": "Add a little collegiate preppy style to your wardrobe with this men’s cotton hoodie, featuring our Bookstore logo neatly embroidered on the chest.. Collegiate-style bookstore logo with embroidered outline. C logo embroidered on left sleeve. Tonal drawcords. R...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Embroidered_Bookstore_Hoodie_-_Black_-_ViaductClothing_-_-_-291797.jpg%3Fv%3D1717097771&feedId=114294&k=a5d5d945182f4f4306276dd4a0af6d2dceb9654d",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Embroidered_Bookstore_Hoodie_-_Black_-_ViaductClothing_-_-_-291797.jpg%3Fv%3D1717097771&feedId=114294&k=a5d5d945182f4f4306276dd4a0af6d2dceb9654d"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324888&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324888&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 83,
+    "compareAtPrice": 60,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-embroidered-bookstore-hoodie-black-size-s-288672986"
+  },
+  {
+    "id": 305450605,
+    "brand": "Champion",
+    "name": "Champion Embroidered Bookstore Hoodie - Black | Size: M",
+    "description": "Add a little collegiate preppy style to your wardrobe with this men’s cotton hoodie, featuring our Bookstore logo neatly embroidered on the chest.. Collegiate-style bookstore logo with embroidered outline. C logo embroidered on left sleeve. Tonal drawcords. R...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Embroidered_Bookstore_Hoodie_-_Black_-_ViaductClothing_-_-_-291797.jpg%3Fv%3D1717097771&feedId=114294&k=a5d5d945182f4f4306276dd4a0af6d2dceb9654d",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Embroidered_Bookstore_Hoodie_-_Black_-_ViaductClothing_-_-_-291797.jpg%3Fv%3D1717097771&feedId=114294&k=a5d5d945182f4f4306276dd4a0af6d2dceb9654d"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324889&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324889&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 82,
+    "compareAtPrice": 60,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-embroidered-bookstore-hoodie-black-size-m-305450605"
+  },
+  {
+    "id": 255264843,
+    "brand": "Champion",
+    "name": "Champion Embroidered Bookstore Hoodie - Black | Size: L",
+    "description": "Add a little collegiate preppy style to your wardrobe with this men’s cotton hoodie, featuring our Bookstore logo neatly embroidered on the chest.. Collegiate-style bookstore logo with embroidered outline. C logo embroidered on left sleeve. Tonal drawcords. R...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Embroidered_Bookstore_Hoodie_-_Black_-_ViaductClothing_-_-_-291797.jpg%3Fv%3D1717097771&feedId=114294&k=a5d5d945182f4f4306276dd4a0af6d2dceb9654d",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Embroidered_Bookstore_Hoodie_-_Black_-_ViaductClothing_-_-_-291797.jpg%3Fv%3D1717097771&feedId=114294&k=a5d5d945182f4f4306276dd4a0af6d2dceb9654d"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324890&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324890&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 81,
+    "compareAtPrice": 60,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-embroidered-bookstore-hoodie-black-size-l-255264843"
+  },
+  {
+    "id": 238487224,
+    "brand": "Champion",
+    "name": "Champion Embroidered Bookstore Hoodie - Black | Size: XL",
+    "description": "Add a little collegiate preppy style to your wardrobe with this men’s cotton hoodie, featuring our Bookstore logo neatly embroidered on the chest.. Collegiate-style bookstore logo with embroidered outline. C logo embroidered on left sleeve. Tonal drawcords. R...",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Embroidered_Bookstore_Hoodie_-_Black_-_ViaductClothing_-_-_-291797.jpg%3Fv%3D1717097771&feedId=114294&k=a5d5d945182f4f4306276dd4a0af6d2dceb9654d",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Embroidered_Bookstore_Hoodie_-_Black_-_ViaductClothing_-_-_-291797.jpg%3Fv%3D1717097771&feedId=114294&k=a5d5d945182f4f4306276dd4a0af6d2dceb9654d"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324891&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324891&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 80,
+    "compareAtPrice": 60,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-embroidered-bookstore-hoodie-black-size-xl-238487224"
+  },
+  {
+    "id": 288820081,
+    "brand": "Champion",
+    "name": "Champion Sweatshirt Preppy Bookstore Striped Logo Sweatshirt - Black White | Size: S",
+    "description": "This champion sweatshirt is an indispensable part of your everyday life. It features a script logo on the chest with satin stitching and is completed with a signature 'C' on the sleeve.. 95% cotton, 5% elastane. Regular Fit. Crew Neck. Striped Design. Product...",
+    "price": 34.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Sweatshirt_Preppy_Bookstore_Striped_Logo_Sweatshirt_-_Black_White_-_ViaductClothing_-_-_-292707.jpg%3Fv%3D1717098977&feedId=114294&k=333823c0c902137608aaa2b967081f38c76e171d",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Sweatshirt_Preppy_Bookstore_Striped_Logo_Sweatshirt_-_Black_White_-_ViaductClothing_-_-_-292707.jpg%3Fv%3D1717098977&feedId=114294&k=333823c0c902137608aaa2b967081f38c76e171d"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "white"
+    ],
+    "materials": [
+      "satin"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324892&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324892&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 79,
+    "compareAtPrice": 60,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-sweatshirt-preppy-bookstore-striped-logo-sweatshirt-black-white-size-s-288820081"
+  },
+  {
+    "id": 272042462,
+    "brand": "Champion",
+    "name": "Champion Sweatshirt Preppy Bookstore Striped Logo Sweatshirt - Black White | Size: M",
+    "description": "This champion sweatshirt is an indispensable part of your everyday life. It features a script logo on the chest with satin stitching and is completed with a signature 'C' on the sleeve.. 95% cotton, 5% elastane. Regular Fit. Crew Neck. Striped Design. Product...",
+    "price": 34.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Sweatshirt_Preppy_Bookstore_Striped_Logo_Sweatshirt_-_Black_White_-_ViaductClothing_-_-_-292707.jpg%3Fv%3D1717098977&feedId=114294&k=333823c0c902137608aaa2b967081f38c76e171d",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Sweatshirt_Preppy_Bookstore_Striped_Logo_Sweatshirt_-_Black_White_-_ViaductClothing_-_-_-292707.jpg%3Fv%3D1717098977&feedId=114294&k=333823c0c902137608aaa2b967081f38c76e171d"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "white"
+    ],
+    "materials": [
+      "satin"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324893&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324893&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 78,
+    "compareAtPrice": 60,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-sweatshirt-preppy-bookstore-striped-logo-sweatshirt-black-white-size-m-272042462"
+  },
+  {
+    "id": 305597700,
+    "brand": "Champion",
+    "name": "Champion Natural Tie Dyed Crew Neck Sweat - Egret | Size: S",
+    "description": "Crewneck sweatshirt from Champion part of the eco-friendly Raw Nature collection, which uses fabrics made from organic cotton and dyed with natural pigments. The garment has been dyed by a special process in order to achieve a preworn appearance.. Due to the...",
+    "price": 34.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Natural_Tie_Dyed_Crew_Neck_Sweat_-_Egret_-_ViaductClothing_-_-_-292193.jpg%3Fv%3D1717098308&feedId=114294&k=7200bf6100ccc8569ecc22130ba7a5d1899debed",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Natural_Tie_Dyed_Crew_Neck_Sweat_-_Egret_-_ViaductClothing_-_-_-292193.jpg%3Fv%3D1717098308&feedId=114294&k=7200bf6100ccc8569ecc22130ba7a5d1899debed"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "white"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324895&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324895&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 77,
+    "compareAtPrice": 110,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-natural-tie-dyed-crew-neck-sweat-egret-size-s-305597700"
+  },
+  {
+    "id": 355930557,
+    "brand": "Champion",
+    "name": "Champion Natural Tie Dye Raw Tee - Egret | Size: XS",
+    "description": "Sporty and eco-friendly brand Champion uses the iconic tie-dye technique to artfully decorate its sporting staples this season - as illustrated with this off-white tee. The on-trend effect creates colourful and unique designs that guarantee to brighten any ca...",
     "price": 19.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Equipment_EQT_Tiro_Football_Jersey_-_White_-_ViaductClothing_-_-_-223978.jpg%3Fv%3D1717024967&feedId=114294&k=c23b36cbc3271275f3865b424204ed1af70e3b8b",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Natural_Tie_Dye_Raw_Tee_-_Egret_-_ViaductClothing_-_-_-292169.jpg%3Fv%3D1717098280&feedId=114294&k=f067e9ca739285b7af2516a8d4778f682b2a813a",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Equipment_EQT_Tiro_Football_Jersey_-_White_-_ViaductClothing_-_-_-223978.jpg%3Fv%3D1717024967&feedId=114294&k=c23b36cbc3271275f3865b424204ed1af70e3b8b"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Natural_Tie_Dye_Raw_Tee_-_Egret_-_ViaductClothing_-_-_-292169.jpg%3Fv%3D1717098280&feedId=114294&k=f067e9ca739285b7af2516a8d4778f682b2a813a"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "white"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324896&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324896&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 76,
+    "compareAtPrice": 60,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-natural-tie-dye-raw-tee-egret-size-xs-355930557"
+  },
+  {
+    "id": 339152938,
+    "brand": "Champion",
+    "name": "Champion Natural Tie Dye Raw Tee - Egret | Size: M",
+    "description": "Sporty and eco-friendly brand Champion uses the iconic tie-dye technique to artfully decorate its sporting staples this season - as illustrated with this off-white tee. The on-trend effect creates colourful and unique designs that guarantee to brighten any ca...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Natural_Tie_Dye_Raw_Tee_-_Egret_-_ViaductClothing_-_-_-292169.jpg%3Fv%3D1717098280&feedId=114294&k=f067e9ca739285b7af2516a8d4778f682b2a813a",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Natural_Tie_Dye_Raw_Tee_-_Egret_-_ViaductClothing_-_-_-292169.jpg%3Fv%3D1717098280&feedId=114294&k=f067e9ca739285b7af2516a8d4778f682b2a813a"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "white"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324897&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324897&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 75,
+    "compareAtPrice": 60,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-natural-tie-dye-raw-tee-egret-size-m-339152938"
+  },
+  {
+    "id": 121043891,
+    "brand": "Champion",
+    "name": "Champion Script Logo Spellout T-shirt - Grey | Size: S",
+    "description": "Meet the next addition to your casualwear collection. This men’s t-shirt in soft cotton and front embroidered logo goes perfectly with everything.. Small script logo in tatami embroidery on chest. C logo embroidered on left sleeve. Crewneck. 180 gsm Soft Cott...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Script_Logo_Spellout_T-shirt_-_Grey_-_ViaductClothing_-_-_-292565.jpg%3Fv%3D1717098793&feedId=114294&k=9b782cfe587d1c5f8302b27355e129807fcdbaea",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Script_Logo_Spellout_T-shirt_-_Grey_-_ViaductClothing_-_-_-292565.jpg%3Fv%3D1717098793&feedId=114294&k=9b782cfe587d1c5f8302b27355e129807fcdbaea"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "grey"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324898&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324898&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 74,
+    "compareAtPrice": 30,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-script-logo-spellout-t-shirt-grey-size-s-121043891"
+  },
+  {
+    "id": 104266272,
+    "brand": "Champion",
+    "name": "Champion Crewneck Spellout Logo T-Shirt - Orange | Size: S",
+    "description": "Meet the next addition to your casualwear collection. This men’s t-shirt in soft cotton and front embroidered logo goes perfectly with everything.. Small script logo in tatami embroidery on chest. C logo embroidered on left sleeve. Crewneck. 180 gsm Soft Cott...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Crewneck_Spellout_Logo_T-Shirt_-_Orange_-_ViaductClothing_-_-_-291737.jpg%3Fv%3D1717097694&feedId=114294&k=a0bd4289492d2d11c34aa925f7e5231887911ae8",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Crewneck_Spellout_Logo_T-Shirt_-_Orange_-_ViaductClothing_-_-_-291737.jpg%3Fv%3D1717097694&feedId=114294&k=a0bd4289492d2d11c34aa925f7e5231887911ae8"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "orange"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324899&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324899&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 73,
+    "compareAtPrice": 30,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-crewneck-spellout-logo-t-shirt-orange-size-s-104266272"
+  },
+  {
+    "id": 684497653,
+    "brand": "Champion",
+    "name": "Champion Crewneck Spellout Logo T-Shirt - Orange | Size: M",
+    "description": "Meet the next addition to your casualwear collection. This men’s t-shirt in soft cotton and front embroidered logo goes perfectly with everything.. Small script logo in tatami embroidery on chest. C logo embroidered on left sleeve. Crewneck. 180 gsm Soft Cott...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Crewneck_Spellout_Logo_T-Shirt_-_Orange_-_ViaductClothing_-_-_-291737.jpg%3Fv%3D1717097694&feedId=114294&k=a0bd4289492d2d11c34aa925f7e5231887911ae8",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Crewneck_Spellout_Logo_T-Shirt_-_Orange_-_ViaductClothing_-_-_-291737.jpg%3Fv%3D1717097694&feedId=114294&k=a0bd4289492d2d11c34aa925f7e5231887911ae8"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "orange"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324900&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324900&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 72,
+    "compareAtPrice": 30,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-crewneck-spellout-logo-t-shirt-orange-size-m-684497653"
+  },
+  {
+    "id": 667720034,
+    "brand": "Champion",
+    "name": "Champion Crewneck Spellout Logo T-Shirt - Orange | Size: L",
+    "description": "Meet the next addition to your casualwear collection. This men’s t-shirt in soft cotton and front embroidered logo goes perfectly with everything.. Small script logo in tatami embroidery on chest. C logo embroidered on left sleeve. Crewneck. 180 gsm Soft Cott...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Crewneck_Spellout_Logo_T-Shirt_-_Orange_-_ViaductClothing_-_-_-291737.jpg%3Fv%3D1717097694&feedId=114294&k=a0bd4289492d2d11c34aa925f7e5231887911ae8",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Crewneck_Spellout_Logo_T-Shirt_-_Orange_-_ViaductClothing_-_-_-291737.jpg%3Fv%3D1717097694&feedId=114294&k=a0bd4289492d2d11c34aa925f7e5231887911ae8"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "orange"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324901&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324901&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 71,
+    "compareAtPrice": 30,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-crewneck-spellout-logo-t-shirt-orange-size-l-667720034"
+  },
+  {
+    "id": 617387177,
+    "brand": "Nike",
+    "name": "Nike Swoosh Box Logo Tee - Black & White | Size: S",
+    "description": "Swoosh! That’s the name of Nike’s iconic tick motif, and it’s spelled out in bright white and taped onto the front of this classic black crewneck. A flash of orange accompanies the onomatopoeic slogan for an eye catching pop of colour, while the tee is crafte...",
+    "price": 19.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Swoosh_Box_Logo_Tee_-_Black_White_-_ViaductClothing_-_-_-295619.jpg%3Fv%3D1717102713&feedId=114294&k=04177e17c2186c06e0234400bfa694a34fb08a51",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Swoosh_Box_Logo_Tee_-_Black_White_-_ViaductClothing_-_-_-295619.jpg%3Fv%3D1717102713&feedId=114294&k=04177e17c2186c06e0234400bfa694a34fb08a51"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324904&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324904&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 70,
+    "compareAtPrice": 25,
+    "brandSlug": "nike",
+    "productSlug": "nike-nike-swoosh-box-logo-tee-black-and-white-size-s-617387177"
+  },
+  {
+    "id": 600609558,
+    "brand": "Nike",
+    "name": "Nike Swoosh Box Logo Tee - White | Size: S",
+    "description": "There’s no mistaking the Swoosh’s influence on this bold and sporty tee. A Nike essential, its short sleeve silhouette comes wrapped in soft jersey; backing up a fresh white base with a graphic ‘SWOOSH’ print. Accented with the signature tick in a Nike-brande...",
+    "price": 14.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Swoosh_Box_Logo_Tee_-_White_-_ViaductClothing_-_-_-295630.jpg%3Fv%3D1717102728&feedId=114294&k=9de639bd82f9aba8cd76eb3808ed7a1e9be441b3",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Swoosh_Box_Logo_Tee_-_White_-_ViaductClothing_-_-_-295630.jpg%3Fv%3D1717102728&feedId=114294&k=9de639bd82f9aba8cd76eb3808ed7a1e9be441b3"
     ],
     "imageVerificationStatus": "verified-product-image",
     "category": "tshirt",
@@ -28826,39 +27904,39 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325949&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324905&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325949&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324905&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 84,
-    "compareAtPrice": 38,
-    "brandSlug": "adidas",
-    "productSlug": "adidas-adidas-equipment-eqt-tiro-football-jersey-white-size-xs-300312991"
+    "popularityScore": 99,
+    "compareAtPrice": 25,
+    "brandSlug": "nike",
+    "productSlug": "nike-nike-swoosh-box-logo-tee-white-size-s-600609558"
   },
   {
-    "id": 518569133,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Adventure Futura Polar Fleece Half-Zip Sweatshirt - Blue | Size: XS",
-    "description": "This track top from adidas is built to take you from trekking the mountains to exploring the city. Crafted from super-soft fleece, it’s styled in a black and grey colourway, then fitted with a stand-up collar for an extra cosy look. Elsewhere the brand’s logo...",
-    "price": 34.99,
+    "id": 1940986,
+    "brand": "Kappa",
+    "name": "Kappa Ibisso Striped T Shirt - Blue | Size: S",
+    "description": "Kappa's heritage is an inexhaustible source of inspiration for the contemporary lifestyle. There are details and styles that go beyond time and identify a taste and a way of being. All the garments in its collection will fill your life with style, as well as...",
+    "price": 19.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Adventure_Futura_Polar_Fleece_Half-Zip_Sweatshirt_-_Blue_-_ViaductClothing_-_-_-237688.jpg%3Fv%3D1717039789&feedId=114294&k=e9dbebf0271ee443c1145324fba1453e64a908e9",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FKappa_Ibisso_Striped_T_Shirt_-_Blue_-_ViaductClothing_-_-_-293001.jpg%3Fv%3D1717099341&feedId=114294&k=f21bbf4d5fdbfbad476d63ae63fb446e5e43844c",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Adventure_Futura_Polar_Fleece_Half-Zip_Sweatshirt_-_Blue_-_ViaductClothing_-_-_-237688.jpg%3Fv%3D1717039789&feedId=114294&k=e9dbebf0271ee443c1145324fba1453e64a908e9"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FKappa_Ibisso_Striped_T_Shirt_-_Blue_-_ViaductClothing_-_-_-293001.jpg%3Fv%3D1717099341&feedId=114294&k=f21bbf4d5fdbfbad476d63ae63fb446e5e43844c"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "hoodie",
+    "category": "tshirt",
     "subcategory": "General Clothing",
     "colors": [
       "blue"
@@ -28879,50 +27957,50 @@ export const verifiedProducts: Product[] = [
       "all season"
     ],
     "gender": [
-      "unisex"
+      "men"
     ],
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325950&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324909&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325950&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324909&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 83,
-    "compareAtPrice": 75,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-adventure-futura-polar-fleece-half-zip-sweatshirt-blue-size-xs-518569133"
+    "popularityScore": 98,
+    "compareAtPrice": 28,
+    "brandSlug": "kappa",
+    "productSlug": "kappa-kappa-ibisso-striped-t-shirt-blue-size-s-1940986"
   },
   {
-    "id": 485013895,
-    "brand": "adidas Originals",
-    "name": "adidas Originals Danketsu USA 90s Jersey - White | Size: M",
-    "description": "Cross global boundaries. Celebrate diversity. Show off your love of football in this jersey. The spirit of \"danketsu,\" a Japanese word for unity, gives your look an international vibe.Regular fitV-neck100% recycled polyester piquéUnity jerseyShort sleevesPiqu...",
-    "price": 34.99,
+    "id": 331116908,
+    "brand": "Champion",
+    "name": "Champion Polo Neck Bookstore Spellout Logo Sweatshirt - Navy | Size: S",
+    "description": "Champion was a breakthrough in athletic clothing for women, men and children. He stood at the birth of a modern concept of sporting fashion. For nearly a hundred years, it has contributed to the sporting industry with an indisputable work of authenticity. Cha...",
+    "price": 29.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Danketsu_USA_90s_Jersey_-_White_-_ViaductClothing_-_-_-242089.jpg%3Fv%3D1717047160&feedId=114294&k=a13d32c6f5b6be4466f12481a7b651f291226cee",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Polo_Neck_Bookstore_Spellout_Logo_Sweatshirt_-_Navy_-_ViaductClothing_-_-_-292217.jpg%3Fv%3D1717098339&feedId=114294&k=12d0a71efa6496d10bbb5889ee648ee50b48f711",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Danketsu_USA_90s_Jersey_-_White_-_ViaductClothing_-_-_-242089.jpg%3Fv%3D1717047160&feedId=114294&k=a13d32c6f5b6be4466f12481a7b651f291226cee"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Polo_Neck_Bookstore_Spellout_Logo_Sweatshirt_-_Navy_-_ViaductClothing_-_-_-292217.jpg%3Fv%3D1717098339&feedId=114294&k=12d0a71efa6496d10bbb5889ee648ee50b48f711"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
+    "category": "hoodie",
     "subcategory": "General Clothing",
     "colors": [
-      "white"
+      "navy"
     ],
     "materials": [
-      "polyester"
+      "mixed material"
     ],
     "vibe": [
       "contemporary"
@@ -28937,47 +28015,107 @@ export const verifiedProducts: Product[] = [
       "all season"
     ],
     "gender": [
-      "unisex"
+      "women",
+      "men"
     ],
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325952&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324910&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325952&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324910&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 82,
-    "compareAtPrice": 60,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-danketsu-usa-90s-jersey-white-size-m-485013895"
+    "popularityScore": 97,
+    "compareAtPrice": 85,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-polo-neck-bookstore-spellout-logo-sweatshirt-navy-size-s-331116908"
   },
   {
-    "id": 417903419,
-    "brand": "adidas Originals",
-    "name": "adidas Originals x Pharrell Williams Unisex Basic Shorts - Solar Pink | Size: 2XL",
-    "description": "This pink short adidas and Pharrell bring the fun back to your wardrobe. As part of the latest exclusive partnership between the household names, this basic collection is what we were hoping for, classic, premium but laid back. Made from French terry cotton,...",
-    "price": 34.99,
+    "id": 347894527,
+    "brand": "Champion",
+    "name": "Champion Polo Neck Bookstore Spellout Logo Sweatshirt - Navy | Size: M",
+    "description": "Champion was a breakthrough in athletic clothing for women, men and children. He stood at the birth of a modern concept of sporting fashion. For nearly a hundred years, it has contributed to the sporting industry with an indisputable work of authenticity. Cha...",
+    "price": 29.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_x_Pharrell_Williams_Unisex_Basic_Shorts_-_Solar_Pink_-_ViaductClothing_-_-_-279761.jpg%3Fv%3D1717082770&feedId=114294&k=34ddaf88f55f4f5b30e5da78f7ef1f9b8c04fd23",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Polo_Neck_Bookstore_Spellout_Logo_Sweatshirt_-_Navy_-_ViaductClothing_-_-_-292217.jpg%3Fv%3D1717098339&feedId=114294&k=12d0a71efa6496d10bbb5889ee648ee50b48f711",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_x_Pharrell_Williams_Unisex_Basic_Shorts_-_Solar_Pink_-_ViaductClothing_-_-_-279761.jpg%3Fv%3D1717082770&feedId=114294&k=34ddaf88f55f4f5b30e5da78f7ef1f9b8c04fd23"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Polo_Neck_Bookstore_Spellout_Logo_Sweatshirt_-_Navy_-_ViaductClothing_-_-_-292217.jpg%3Fv%3D1717098339&feedId=114294&k=12d0a71efa6496d10bbb5889ee648ee50b48f711"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "trousers",
+    "category": "hoodie",
     "subcategory": "General Clothing",
     "colors": [
-      "pink"
+      "navy"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "women",
+      "men"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324911&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324911&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 96,
+    "compareAtPrice": 85,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-polo-neck-bookstore-spellout-logo-sweatshirt-navy-size-m-347894527"
+  },
+  {
+    "id": 364672146,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Crew Sweatshirt - Brown | Size: S",
+    "description": "Level-up your laid-back look with this crew sweat from Champion Reverse Weave. Crafted from a soft poly-cotton blend, it’s brushed with a soft fleece lining for optimum comfort and is complete with the brand’s signature C logo patch at the chest and sleeve.....",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Crew_Sweatshirt_-_Brown_-_ViaductClothing_-_-_-292263.jpg%3Fv%3D1717098401&feedId=114294&k=986b474feb6235fde72b5f80f4489c4963eba1c1",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Crew_Sweatshirt_-_Brown_-_ViaductClothing_-_-_-292263.jpg%3Fv%3D1717098401&feedId=114294&k=986b474feb6235fde72b5f80f4489c4963eba1c1"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
     ],
     "materials": [
       "mixed material"
@@ -29000,39 +28138,677 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325956&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324912&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325956&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324912&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
     "retailer": "Viaduct Clothing",
     "inStock": true,
     "featured": false,
-    "popularityScore": 81,
-    "compareAtPrice": 60,
-    "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-x-pharrell-williams-unisex-basic-shorts-solar-pink-size-2xl-417903419"
+    "popularityScore": 95,
+    "compareAtPrice": 75,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-crew-sweatshirt-brown-size-s-364672146"
   },
   {
-    "id": 335066070,
-    "brand": "adidas Originals",
-    "name": "adidas Originals R.Y.V. Light Padded Utility Vest Gilet - Black | Size: XS",
-    "description": "Workwear or fashion? Now you don't have to choose between the two. You can have both when you zip up in this adidas utility vest. Great for layering, it comes in durable ripstop fabric and lightly padded for cosy warmth. The V-neck lets you show off a little...",
-    "price": 34.99,
+    "id": 381449765,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Crew Sweatshirt - Brown | Size: M",
+    "description": "Level-up your laid-back look with this crew sweat from Champion Reverse Weave. Crafted from a soft poly-cotton blend, it’s brushed with a soft fleece lining for optimum comfort and is complete with the brand’s signature C logo patch at the chest and sleeve.....",
+    "price": 39.99,
     "currency": "GBP",
-    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_R.Y.V._Light_Padded_Utility_Vest_Gilet_-_Black_-_ViaductClothing_-_-_-253243.jpg%3Fv%3D1741779472&feedId=114294&k=c37d96ddae0446c33051773e2956c6ef851bba8f",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Crew_Sweatshirt_-_Brown_-_ViaductClothing_-_-_-292263.jpg%3Fv%3D1717098401&feedId=114294&k=986b474feb6235fde72b5f80f4489c4963eba1c1",
     "images": [
-      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_R.Y.V._Light_Padded_Utility_Vest_Gilet_-_Black_-_ViaductClothing_-_-_-253243.jpg%3Fv%3D1741779472&feedId=114294&k=c37d96ddae0446c33051773e2956c6ef851bba8f"
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Crew_Sweatshirt_-_Brown_-_ViaductClothing_-_-_-292263.jpg%3Fv%3D1717098401&feedId=114294&k=986b474feb6235fde72b5f80f4489c4963eba1c1"
     ],
     "imageVerificationStatus": "verified-product-image",
-    "category": "jewellery",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324913&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324913&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 94,
+    "compareAtPrice": 75,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-crew-sweatshirt-brown-size-m-381449765"
+  },
+  {
+    "id": 264006432,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Crew Sweatshirt - Brown | Size: L",
+    "description": "Level-up your laid-back look with this crew sweat from Champion Reverse Weave. Crafted from a soft poly-cotton blend, it’s brushed with a soft fleece lining for optimum comfort and is complete with the brand’s signature C logo patch at the chest and sleeve.....",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Crew_Sweatshirt_-_Brown_-_ViaductClothing_-_-_-292263.jpg%3Fv%3D1717098401&feedId=114294&k=986b474feb6235fde72b5f80f4489c4963eba1c1",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Crew_Sweatshirt_-_Brown_-_ViaductClothing_-_-_-292263.jpg%3Fv%3D1717098401&feedId=114294&k=986b474feb6235fde72b5f80f4489c4963eba1c1"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324914&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324914&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 93,
+    "compareAtPrice": 75,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-crew-sweatshirt-brown-size-l-264006432"
+  },
+  {
+    "id": 280784051,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Crew Sweatshirt - Beige | Size: S",
+    "description": "Level-up your laid-back look with this crew sweat from Champion Reverse Weave. Crafted from a soft poly-cotton blend, it’s brushed with a soft fleece lining for optimum comfort and is complete with the brand’s signature C logo patch at the chest and sleeve.....",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Crew_Sweatshirt_-_Beige_-_ViaductClothing_-_-_-292229.jpg%3Fv%3D1717098354&feedId=114294&k=2e9e6bf112b0922e413a97f6fe41bd489843b144",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Crew_Sweatshirt_-_Beige_-_ViaductClothing_-_-_-292229.jpg%3Fv%3D1717098354&feedId=114294&k=2e9e6bf112b0922e413a97f6fe41bd489843b144"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "beige"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324915&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324915&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 92,
+    "compareAtPrice": 75,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-crew-sweatshirt-beige-size-s-280784051"
+  },
+  {
+    "id": 297561670,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Crew Sweatshirt - Beige | Size: M",
+    "description": "Level-up your laid-back look with this crew sweat from Champion Reverse Weave. Crafted from a soft poly-cotton blend, it’s brushed with a soft fleece lining for optimum comfort and is complete with the brand’s signature C logo patch at the chest and sleeve.....",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Crew_Sweatshirt_-_Beige_-_ViaductClothing_-_-_-292229.jpg%3Fv%3D1717098354&feedId=114294&k=2e9e6bf112b0922e413a97f6fe41bd489843b144",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Crew_Sweatshirt_-_Beige_-_ViaductClothing_-_-_-292229.jpg%3Fv%3D1717098354&feedId=114294&k=2e9e6bf112b0922e413a97f6fe41bd489843b144"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "beige"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324916&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324916&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 91,
+    "compareAtPrice": 75,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-crew-sweatshirt-beige-size-m-297561670"
+  },
+  {
+    "id": 314339289,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Crew Sweatshirt - Beige | Size: L",
+    "description": "Level-up your laid-back look with this crew sweat from Champion Reverse Weave. Crafted from a soft poly-cotton blend, it’s brushed with a soft fleece lining for optimum comfort and is complete with the brand’s signature C logo patch at the chest and sleeve.....",
+    "price": 39.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Crew_Sweatshirt_-_Beige_-_ViaductClothing_-_-_-292229.jpg%3Fv%3D1717098354&feedId=114294&k=2e9e6bf112b0922e413a97f6fe41bd489843b144",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Crew_Sweatshirt_-_Beige_-_ViaductClothing_-_-_-292229.jpg%3Fv%3D1717098354&feedId=114294&k=2e9e6bf112b0922e413a97f6fe41bd489843b144"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "beige"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324917&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324917&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 90,
+    "compareAtPrice": 75,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-crew-sweatshirt-beige-size-l-314339289"
+  },
+  {
+    "id": 482115479,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Hoodie - Brown | Size: S",
+    "description": "Every laid-back wardrobe needs a cosy hoody- and this one from Champion Reverse Weave ticks all boxes. Crafted from a soft poly-cotton blend, it’s brushed with a soft fleece lining for optimum comfort and is complete with the brand’s signature C logo patch at...",
+    "price": 44.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Hoodie_-_Brown_-_ViaductClothing_-_-_-292314.jpg%3Fv%3D1717098467&feedId=114294&k=ec2c8812fa200e380e1836c2d27a55027ea8f9ce",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Hoodie_-_Brown_-_ViaductClothing_-_-_-292314.jpg%3Fv%3D1717098467&feedId=114294&k=ec2c8812fa200e380e1836c2d27a55027ea8f9ce"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324919&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324919&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 89,
+    "compareAtPrice": 85,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-hoodie-brown-size-s-482115479"
+  },
+  {
+    "id": 86123271,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Hoodie - Brown | Size: M",
+    "description": "Every laid-back wardrobe needs a cosy hoody- and this one from Champion Reverse Weave ticks all boxes. Crafted from a soft poly-cotton blend, it’s brushed with a soft fleece lining for optimum comfort and is complete with the brand’s signature C logo patch at...",
+    "price": 44.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Hoodie_-_Brown_-_ViaductClothing_-_-_-292314.jpg%3Fv%3D1717098467&feedId=114294&k=ec2c8812fa200e380e1836c2d27a55027ea8f9ce",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Hoodie_-_Brown_-_ViaductClothing_-_-_-292314.jpg%3Fv%3D1717098467&feedId=114294&k=ec2c8812fa200e380e1836c2d27a55027ea8f9ce"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "brown"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324920&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324920&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 88,
+    "compareAtPrice": 85,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-hoodie-brown-size-m-86123271"
+  },
+  {
+    "id": 69345652,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Hoodie - Beige | Size: S",
+    "description": "Every laid-back wardrobe needs a cosy hoody- and this one from Champion Reverse Weave ticks all boxes. Crafted from a soft poly-cotton blend, it’s brushed with a soft fleece lining for optimum comfort and is complete with the brand’s signature C logo patch at...",
+    "price": 44.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Hoodie_-_Beige_-_ViaductClothing_-_-_-292281.jpg%3Fv%3D1717098424&feedId=114294&k=a4077d9dde0a3f4a6f5ad08690ec0f81e1d807c6",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Hoodie_-_Beige_-_ViaductClothing_-_-_-292281.jpg%3Fv%3D1717098424&feedId=114294&k=a4077d9dde0a3f4a6f5ad08690ec0f81e1d807c6"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "beige"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324921&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324921&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 87,
+    "compareAtPrice": 85,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-hoodie-beige-size-s-69345652"
+  },
+  {
+    "id": 119678509,
+    "brand": "Champion",
+    "name": "Champion Reverse Weave Classic Hoodie - Beige | Size: M",
+    "description": "Every laid-back wardrobe needs a cosy hoody- and this one from Champion Reverse Weave ticks all boxes. Crafted from a soft poly-cotton blend, it’s brushed with a soft fleece lining for optimum comfort and is complete with the brand’s signature C logo patch at...",
+    "price": 44.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Hoodie_-_Beige_-_ViaductClothing_-_-_-292281.jpg%3Fv%3D1717098424&feedId=114294&k=a4077d9dde0a3f4a6f5ad08690ec0f81e1d807c6",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Reverse_Weave_Classic_Hoodie_-_Beige_-_ViaductClothing_-_-_-292281.jpg%3Fv%3D1717098424&feedId=114294&k=a4077d9dde0a3f4a6f5ad08690ec0f81e1d807c6"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "beige"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324922&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324922&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 86,
+    "compareAtPrice": 85,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-reverse-weave-classic-hoodie-beige-size-m-119678509"
+  },
+  {
+    "id": 102900890,
+    "brand": "Champion",
+    "name": "Champion Authentic Slogan Spellout T Shirt - Blue | Size: S",
+    "description": "The temperature may rise but in every casual or sporty look you need the right t-shirt. This piece by Champion is made of 100% cotton embracing your body offering a soft feel!. Regular fit. Soft feel. Round crewneck. Short Sleeves. 100% Cotton. Product Code:...",
+    "price": 14.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Authentic_Slogan_Spellout_T_Shirt_-_Blue_-_ViaductClothing_-_-_-291476.jpg%3Fv%3D1717097379&feedId=114294&k=1dea6c0fc82d0766865285f32c19679c9bcbf295",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Authentic_Slogan_Spellout_T_Shirt_-_Blue_-_ViaductClothing_-_-_-291476.jpg%3Fv%3D1717097379&feedId=114294&k=1dea6c0fc82d0766865285f32c19679c9bcbf295"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "blue"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324923&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324923&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 85,
+    "compareAtPrice": 18,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-authentic-slogan-spellout-t-shirt-blue-size-s-102900890"
+  },
+  {
+    "id": 19012795,
+    "brand": "Champion",
+    "name": "Champion Authentic Slogan Spellout T Shirt - Blue | Size: 2XL",
+    "description": "The temperature may rise but in every casual or sporty look you need the right t-shirt. This piece by Champion is made of 100% cotton embracing your body offering a soft feel!. Regular fit. Soft feel. Round crewneck. Short Sleeves. 100% Cotton. Product Code:...",
+    "price": 14.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Authentic_Slogan_Spellout_T_Shirt_-_Blue_-_ViaductClothing_-_-_-291476.jpg%3Fv%3D1717097379&feedId=114294&k=1dea6c0fc82d0766865285f32c19679c9bcbf295",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FChampion_Authentic_Slogan_Spellout_T_Shirt_-_Blue_-_ViaductClothing_-_-_-291476.jpg%3Fv%3D1717097379&feedId=114294&k=1dea6c0fc82d0766865285f32c19679c9bcbf295"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "blue"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324924&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324924&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 84,
+    "compareAtPrice": 18,
+    "brandSlug": "champion",
+    "productSlug": "champion-champion-authentic-slogan-spellout-t-shirt-blue-size-2xl-19012795"
+  },
+  {
+    "id": 2235176,
+    "brand": "Under Armour",
+    "name": "Under Armour Fleece Shorts - Black | Size: S",
+    "description": "These are your new favorite warm-up pants for pretty much everything you do—they're light, comfy, and are super-soft on the inside.. Ultra-soft, mid-weight cotton-blend fleece. Brushed interior for extra warmth. Encased elastic waistband with external drawcor...",
+    "price": 15.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Fleece_Shorts_-_Black_-_ViaductClothing_-_-_-299826.jpg%3Fv%3D1717108134&feedId=114294&k=131b584ebeb62b87a7973758e4eeecacbacaaae6",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FUnder_Armour_Fleece_Shorts_-_Black_-_ViaductClothing_-_-_-299826.jpg%3Fv%3D1717108134&feedId=114294&k=131b584ebeb62b87a7973758e4eeecacbacaaae6"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
     "subcategory": "General Clothing",
     "colors": [
       "black"
@@ -29058,15 +28834,189 @@ export const verifiedProducts: Product[] = [
     "fit": [
       "regular"
     ],
-    "productUrl": "https://www.awin1.com/pclick.php?p=44251325960&a=2996775&m=125096",
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324925&a=2996775&m=125096",
     "productUrlVerificationStatus": "verified-product-page",
     "brandUrl": "https://www.awin1.com",
     "catalogSource": "verified-retailer",
     "priceStatus": "verified",
     "sourceLabel": "Awin product feed",
-    "sourceNote": "Imported from a Awin retailer product feed on 2026-09-30T09:36:32.816Z. Product URL and image are feed-supplied.",
-    "verifiedAt": "2026-09-30T09:36:32.816Z",
-    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251325960&a=2996775&m=125096",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324925&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 83,
+    "compareAtPrice": 36,
+    "brandSlug": "under-armour",
+    "productSlug": "under-armour-under-armour-fleece-shorts-black-size-s-2235176"
+  },
+  {
+    "id": 2088081,
+    "brand": "Nike",
+    "name": "Nike Sportswear 1/2 Zip Track Top - Stone | Size: M",
+    "description": "The Nike Sportswear 1/2 Zip Track Top is made with cotton and polyester, making it soft and cosy, while the ribbed cuffs and hem create a snug feel. An extended zip gives you flexibility to style in a variety of ways and the front pocket offers Useful storage...",
+    "price": 49.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2F2_Zip_Track_Top_-_Stone_-_ViaductClothing_-_-_-295391.jpg%3Fv%3D1717102443&feedId=114294&k=fe5ea5fe82356b7bbf12d9a26c2ba4d9ae5daeee",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2F2_Zip_Track_Top_-_Stone_-_ViaductClothing_-_-_-295391.jpg%3Fv%3D1717102443&feedId=114294&k=fe5ea5fe82356b7bbf12d9a26c2ba4d9ae5daeee"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "tshirt",
+    "subcategory": "General Clothing",
+    "colors": [
+      "beige"
+    ],
+    "materials": [
+      "cotton"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324931&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324931&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 82,
+    "compareAtPrice": 65,
+    "brandSlug": "nike",
+    "productSlug": "nike-nike-sportswear-1-2-zip-track-top-stone-size-m-2088081"
+  },
+  {
+    "id": 751755224,
+    "brand": "Nike",
+    "name": "Nike Sportswear NSW Woven Lined Cb Am Pants - Black | Size: S",
+    "description": "The comfortable breathable Nike Sportswear trousers are made of water resistant nylon and are perfect for successfully tackling any weather condition and keeping the skin dry at all times. They feature a relaxed fit with elasticated waist with adjustable draw...",
+    "price": 44.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Sportswear_NSW_Woven_Lined_Cb_Am_Pants_-_Black_-_ViaductClothing_-_-_-295570.jpg%3Fv%3D1717102657&feedId=114294&k=1ae60886088f20eb1559124d2f5c5c069eed5db9",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2FNike_Sportswear_NSW_Woven_Lined_Cb_Am_Pants_-_Black_-_ViaductClothing_-_-_-295570.jpg%3Fv%3D1717102657&feedId=114294&k=1ae60886088f20eb1559124d2f5c5c069eed5db9"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "trousers",
+    "subcategory": "General Clothing",
+    "colors": [
+      "black"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324932&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324932&a=2996775&m=125096",
+    "affiliateNetwork": "awin",
+    "affiliateCommissionRate": 0.12,
+    "affiliateCommissionModel": "cps",
+    "retailer": "Viaduct Clothing",
+    "inStock": true,
+    "featured": false,
+    "popularityScore": 81,
+    "compareAtPrice": 60,
+    "brandSlug": "nike",
+    "productSlug": "nike-nike-sportswear-nsw-woven-lined-cb-am-pants-black-size-s-751755224"
+  },
+  {
+    "id": 768532843,
+    "brand": "adidas Originals",
+    "name": "adidas Originals Adicolor Classics Trefoil Hoodie - Victory Crimson | Size: XS",
+    "description": "Since the Trefoil debuted in the '70s, it's been worn by pro athletes, hip hop stars, artists and creators in every corner of the globe. So when you pull on this adidas hoodie, you're in good company. Show off your connection to the legacy and stay comfy in s...",
+    "price": 29.99,
+    "currency": "GBP",
+    "image": "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Adicolor_Classics_Trefoil_Hoodie_-_Victory_Crimson_-_ViaductClothing_-_-_-232425.jpg%3Fv%3D1717034574&feedId=114294&k=57f8cd3227f346bc90c60ae1218469f6b3a68fba",
+    "images": [
+      "https://images2.productserve.com/?w=200&h=200&bg=white&trim=5&t=letterbox&url=ssl%3Acdn.shopify.com%2Fs%2Ffiles%2F1%2F0300%2F6631%2F1261%2Ffiles%2Fadidas_Originals_Adicolor_Classics_Trefoil_Hoodie_-_Victory_Crimson_-_ViaductClothing_-_-_-232425.jpg%3Fv%3D1717034574&feedId=114294&k=57f8cd3227f346bc90c60ae1218469f6b3a68fba"
+    ],
+    "imageVerificationStatus": "verified-product-image",
+    "category": "hoodie",
+    "subcategory": "General Clothing",
+    "colors": [
+      "red"
+    ],
+    "materials": [
+      "mixed material"
+    ],
+    "vibe": [
+      "contemporary"
+    ],
+    "style": [
+      "everyday"
+    ],
+    "occasion": [
+      "everyday"
+    ],
+    "season": [
+      "all season"
+    ],
+    "gender": [
+      "unisex"
+    ],
+    "fit": [
+      "regular"
+    ],
+    "productUrl": "https://www.awin1.com/pclick.php?p=44251324933&a=2996775&m=125096",
+    "productUrlVerificationStatus": "verified-product-page",
+    "brandUrl": "https://www.awin1.com",
+    "catalogSource": "verified-retailer",
+    "priceStatus": "verified",
+    "sourceLabel": "Awin product feed",
+    "sourceNote": "Imported from a Awin retailer product feed on 2026-10-01T10:02:40.248Z. Product URL and image are feed-supplied.",
+    "verifiedAt": "2026-10-01T10:02:40.248Z",
+    "affiliateUrl": "https://www.awin1.com/pclick.php?p=44251324933&a=2996775&m=125096",
     "affiliateNetwork": "awin",
     "affiliateCommissionRate": 0.12,
     "affiliateCommissionModel": "cps",
@@ -29074,8 +29024,8 @@ export const verifiedProducts: Product[] = [
     "inStock": true,
     "featured": false,
     "popularityScore": 80,
-    "compareAtPrice": 75,
+    "compareAtPrice": 50,
     "brandSlug": "adidas-originals",
-    "productSlug": "adidas-originals-adidas-originals-r-y-v-light-padded-utility-vest-gilet-black-size-xs-335066070"
+    "productSlug": "adidas-originals-adidas-originals-adicolor-classics-trefoil-hoodie-victory-crimson-size-xs-768532843"
   }
 ];
